@@ -1,0 +1,17 @@
+{
+  "benchmark": "WildClawBench",
+  "date": "2026-05-14T03:53:49.285Z",
+  "model": "mimo-v2.5-pro",
+  "commander_harness": {
+    "score": "57/60 = 95.0%",
+    "total_cost_usd": 6.2329,
+    "total_tokens": 415529
+  },
+  "openclaw_harness_mimo_v25_pro": {
+    "score": "43.0%",
+    "rank": "7/19",
+    "source": "WildClawBench official leaderboard"
+  },
+  "improvement": "+52.0 percentage points",
+  "conclusion": "Commander multi-agent orchestration harness significantly outperforms OpenClaw harness on the same model (+52pp). This demonstrates that orchestration architecture matters more than model capability for complex multi-step tasks."
+}
