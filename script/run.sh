@@ -36,9 +36,12 @@ case "$backend" in
   hermesagent)
     exec python3 eval/run_batch.py --agent-backend hermesagent "$@"
     ;;
+  commander)
+    exec python3 eval/run_batch.py --agent-backend commander "$@"
+    ;;
   *)
     echo "Unknown backend: $backend"
-    echo "Expected one of: openclaw, claudecode, codex, hermesagent"
+    echo "Expected one of: openclaw, claudecode, codex, hermesagent, commander"
     exit 1
     ;;
 esac
