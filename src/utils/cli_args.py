@@ -20,7 +20,7 @@ def build_run_batch_parser(default_model: str, default_parallel: int) -> argpars
     parser.add_argument(
         "--agent-backend",
         default="openclaw",
-        choices=["openclaw", "claudecode", "codex", "hermesagent"],
+        choices=["openclaw", "claudecode", "codex", "hermesagent", "commander"],
         help="Agent backend implementation (default: openclaw)",
     )
     parser.add_argument(
