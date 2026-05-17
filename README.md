@@ -246,6 +246,12 @@ BRAVE_API_KEY=your_brave_key_here  # required for search tasks
 - **Brave Search API Key** — Required for Search & Retrieval tasks. Get one (with free monthly credits) at [brave.com/search/api](https://brave.com/search/api/).
 - **Judge model** (optional) — `JUDGE_MODEL` controls the LLM used by judge-based grading metrics. Defaults to `openai/gpt-5.4`.
 
+Optionally run the setup checker before launching containers:
+
+```bash
+python3 eval/check_setup.py --agent-backend openclaw --category all
+```
+
 Then run one of the four harnesses:
 
 ```bash
