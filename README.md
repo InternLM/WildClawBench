@@ -226,7 +226,7 @@ The script will:
 - Download SAM3 model weights for Code Intelligence tasks
 
 
-Prerequisites: `yt-dlp`, `ffmpeg`, `gdown`.
+Prerequisites: `yt-dlp`, `ffmpeg`, `modelscope`.
 
 > **Note:** YouTube downloads may require authentication. If you encounter a "Sign in to confirm you're not a bot" error, try one of the following:
 > - [Get cookies.txt locally](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc?pli=1).
@@ -235,9 +235,13 @@ Prerequisites: `yt-dlp`, `ffmpeg`, `gdown`.
 
 ### Run
 
-Set your API keys in the `.env` file:
+Create a local `.env` file from the example, then set your API keys:
 
+```bash
+cp .env.example .env
 ```
+
+```bash
 OPENROUTER_API_KEY=your_api_key_here
 BRAVE_API_KEY=your_brave_key_here  # required for search tasks
 ```
