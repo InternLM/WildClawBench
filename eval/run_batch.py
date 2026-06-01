@@ -384,9 +384,14 @@ def _write_pass_summary(model_dir: Path, model_type: str, run_index: int, reward
     }, indent=2), encoding="utf-8")
 
 
-def _condense_transcript_for_judge(traj: dict, limit: int = 24_000) -> str:
+def _condense_transcript_for_judge(traj: dict, limit: int = 40_000) -> str:
     """Flatten the trajectory messages into a compact text the judge can read:
-    assistant text, tool calls (name + short args), and tool-result snippets."""
+    assistant text, tool calls (name + short args), and tool-result snippets.
+
+    Caps are deliberately generous: aggressive truncation dropped mid-transcript
+    evidence (e.g. a GET to courseWorkMaterials), causing the judge to report
+    false negatives for actions the agent actually took. The whole blob is still
+    bounded by _JUDGE_MAX_EVIDENCE (60k) in grading._gather_evidence."""
     out: list[str] = []
     for m in traj.get("messages") or []:
         msg = m.get("message", m) if isinstance(m, dict) else {}
@@ -405,12 +410,12 @@ def _condense_transcript_for_judge(traj: dict, limit: int = 24_000) -> str:
             if t == "text" and b.get("text", "").strip():
                 out.append(f"[{role}] {b['text'].strip()}")
             elif t == "toolCall":
-                args = json.dumps(b.get("arguments", {}))[:300]
+                args = json.dumps(b.get("arguments", {}))[:600]
                 out.append(f"[{role}:tool] {b.get('name')} {args}")
             elif t == "toolResult" or role == "toolResult":
                 txt = b.get("text") or b.get("content") or ""
                 if isinstance(txt, str) and txt.strip():
-                    out.append(f"[toolResult] {txt.strip()[:400]}")
+                    out.append(f"[toolResult] {txt.strip()[:1000]}")
     text = "\n".join(out)
     if len(text) > limit:                     # keep head + tail (setup + outcome)
         text = text[: limit // 2] + "\n...[transcript truncated]...\n" + text[-limit // 2:]

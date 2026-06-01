@@ -20,9 +20,15 @@ from src.utils.store import Task
 
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 
+# Match any agent-written file path under a known workspace root. The char
+# class stops at shell terminators so paths embedded in exec commands
+# (`python3 x.py > /tmp_workspace/out.csv && ...`) are captured cleanly.
 _CONTAINER_PATH_RE = re.compile(
-    r"/home/node/\.openclaw/(?:workspace|uploads|media)/[^\s\"']+",
+    r"(?:/home/node/\.openclaw/(?:workspace|uploads|media)"
+    r"|/tmp_workspace|/root/workspace)/[^\s\"'`,;|&)>]+",
 )
+# Workspace prefixes accepted for structured path args from write-style tools.
+_WORKSPACE_PREFIXES = ("/home/node/.openclaw/", "/tmp_workspace", "/root/workspace")
 
 _MIME_TO_ARTIFACT_TYPE = {
     "image/": "generated_image",
@@ -55,6 +61,10 @@ _INPUT_MIME_TO_MODALITY_TAG = {
 }
 
 _WRITE_TOOL_NAMES = {"write", "save_file", "create_file", "write_file"}
+# Tools that run shell/python: deliverables written through them (redirection,
+# open().write, df.to_csv(...)) have no structured path arg, so we regex the
+# command string instead.
+_EXEC_TOOL_NAMES = {"exec", "bash", "shell", "sh", "run", "execute", "terminal"}
 _WRITE_PATH_KEYS = ("path", "file_path", "filePath", "filename")
 
 _VALID_L1 = {
@@ -167,21 +177,32 @@ def build_output_artifacts(
     s3_prefix: str = "",
     s3_region: str = "",
     task_id: str = "",
+    input_filenames: Iterable[str] = (),
 ) -> List[dict]:
     """Walk turns (.response + .tool_calls + .trajectory_messages JSON) and
     emit one `OutputArtifact` per detected agent-written file.
 
     Each turn is a Mapping with keys: response, tool_calls (JSON str),
     trajectory_messages (JSON str). Missing keys are tolerated.
+
+    `input_filenames` are the task's supplied input files (attachments). Paths
+    whose basename matches an input are skipped — the agent READING an input is
+    not an output artifact. Extensionless paths (e.g. `mkdir`'d directories) are
+    also skipped so only concrete files are emitted.
     """
+    input_set = {os.path.basename(str(n)) for n in (input_filenames or []) if n}
     artifacts: List[dict] = []
     seen_paths = set()
 
     def push(container_path: str, source_hint: str = ""):
         if not container_path or container_path in seen_paths:
             return
-        seen_paths.add(container_path)
         filename = os.path.basename(container_path)
+        if filename in input_set:        # the agent READING an input is not an output
+            return
+        if "." not in filename:          # skip directories / extensionless paths
+            return
+        seen_paths.add(container_path)
         mime = mimetypes.guess_type(filename)[0] or "application/octet-stream"
         entry: dict = {
             "filename": filename,
@@ -211,24 +232,30 @@ def build_output_artifacts(
         if isinstance(response_text, str):
             for m in _CONTAINER_PATH_RE.findall(response_text):
                 push(m)
-        # tool_calls JSON \u2014 extract path args from write-style tools
+        # tool_calls JSON \u2014 extract paths from write-style AND exec/shell tools
         for call in _walk_tool_calls(turn.get("tool_calls", "")):
             name = (call.get("name") or "").lower()
-            if name not in _WRITE_TOOL_NAMES:
-                continue
-            args = call.get("args") or call.get("arguments") or {}
-            if isinstance(args, str):
+            raw_args = call.get("args") or call.get("arguments") or {}
+            if isinstance(raw_args, str):
+                raw_args_str = raw_args
                 try:
-                    args = json.loads(args)
+                    args = json.loads(raw_args)
                 except ValueError:
                     args = {}
-            if not isinstance(args, dict):
-                continue
-            for key in _WRITE_PATH_KEYS:
-                v = args.get(key)
-                if isinstance(v, str) and v.startswith("/home/node/.openclaw/"):
-                    push(v)
-                    break
+            else:
+                args = raw_args
+                raw_args_str = json.dumps(raw_args, default=str)
+            if name in _WRITE_TOOL_NAMES and isinstance(args, dict):
+                for key in _WRITE_PATH_KEYS:
+                    v = args.get(key)
+                    if isinstance(v, str) and v.startswith(_WORKSPACE_PREFIXES):
+                        push(v)
+                        break
+            elif name in _EXEC_TOOL_NAMES:
+                # No structured path arg \u2014 recover any workspace path mentioned
+                # in the serialized command (redirections, to_csv, open().write).
+                for m in _CONTAINER_PATH_RE.findall(raw_args_str):
+                    push(m)
         # trajectory_messages JSON \u2014 same regex sweep
         traj_json = turn.get("trajectory_messages") or ""
         if isinstance(traj_json, str) and traj_json:

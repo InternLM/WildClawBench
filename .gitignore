@@ -8,6 +8,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.venv/
+venv/
+work/
+
 
 *.tar
 *.zip

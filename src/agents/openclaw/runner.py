@@ -392,12 +392,28 @@ p.write_text(json.dumps(d, indent=2))
             f"echo -n 'per='; openclaw config get agents.defaults.bootstrapMaxChars; "
             f"echo -n 'total='; openclaw config get agents.defaults.bootstrapTotalMaxChars"
         )
-        result = subprocess.run(
-            ["docker", "exec", task_id, "/bin/bash", "-c", cmd],
-            capture_output=True,
-            text=True,
-            timeout=15,
-        )
+        # Best-effort: raising the bootstrap caps is an optimization (it prevents
+        # MEMORY.md truncation), NOT a precondition for the run. A slow/hung
+        # `openclaw config` call must never abort the task — under qemu x86
+        # emulation the CLI can take far longer than a native invocation, so the
+        # timeout is generous and any failure (timeout, non-zero rc) is swallowed.
+        try:
+            result = subprocess.run(
+                ["docker", "exec", task_id, "/bin/bash", "-c", cmd],
+                capture_output=True,
+                text=True,
+                timeout=90,
+            )
+        except subprocess.TimeoutExpired:
+            logger.warning(
+                "[%s] Bootstrap-limit tuning timed out; continuing with binary "
+                "defaults (MEMORY.md may be truncated at 20k chars)", task_id,
+            )
+            return
+        except OSError as exc:
+            logger.warning("[%s] Bootstrap-limit tuning failed to exec (%s); "
+                           "continuing", task_id, exc)
+            return
         applied_per = f"per={per_file_chars}" in result.stdout
         applied_total = f"total={total_chars}" in result.stdout
         if result.returncode == 0 and applied_per and applied_total:

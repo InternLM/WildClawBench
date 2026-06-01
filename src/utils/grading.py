@@ -76,6 +76,27 @@ def _judge_user_prompt(task_description: str, rubrics: list, evidence: str) -> s
 # trajectory failure report — wrote to deliverables/, scored 0/18).
 _DELIVERABLE_DIR_NAMES = ("results", "deliverables", "output", "out", "artifacts")
 
+# Text-readable deliverable formats. Used only for the workspace-ROOT scan
+# below (files saved directly under /tmp_workspace rather than in a named
+# subdir). Binary formats (pdf/docx/xlsx/png) would inject decode garbage into
+# the judge evidence and are almost always supplied inputs, not agent output.
+_DELIVERABLE_EXTS = {
+    ".csv", ".tsv", ".md", ".markdown", ".json", ".txt", ".text",
+    ".yaml", ".yml", ".html", ".htm", ".xml", ".log",
+}
+_ROOT_SCAN_MAX_FILE_BYTES = 512_000   # skip oversized files in the root scan
+
+
+def _looks_like_deliverable(path: Path, root: Path) -> bool:
+    """True if a workspace-root file looks like agent output (text-readable
+    extension) rather than an oversized blob or binary input."""
+    if path.suffix.lower() not in _DELIVERABLE_EXTS:
+        return False
+    try:
+        return path.stat().st_size <= _ROOT_SCAN_MAX_FILE_BYTES
+    except OSError:
+        return False
+
 
 def _collect_deliverable_files(workspace_results: Path) -> list[Path]:
     files: list[Path] = []
@@ -101,6 +122,14 @@ def _collect_deliverable_files(workspace_results: Path) -> list[Path]:
                 continue
             for name in _DELIVERABLE_DIR_NAMES:
                 _add_from(sibling / name)
+            # Some agents save deliverables at the workspace ROOT (e.g.
+            # /tmp_workspace/foo.csv) rather than in a named subdir. Recover
+            # text-like deliverable files sitting directly under the sweep root,
+            # without recursing into input/scaffold subtrees.
+            for f in sorted(sibling.glob("*")):
+                if f.is_file() and f not in seen and _looks_like_deliverable(f, sibling):
+                    seen.add(f)
+                    files.append(f)
     return files
 
 
@@ -291,10 +320,18 @@ def grade_with_rubric(
         score = float(c.get("score", 0.0) or 0.0)
         score = max(0.0, min(1.0, score))
         weighted += wt * score                       # negative weights penalize
-        if score >= 0.5:
+        # Pass/fail tally must respect the weight sign. A negative-weight
+        # criterion is a guardrail: the judge scores it 1.0 only when the
+        # forbidden behavior OCCURRED, so a clean run scores 0.0 — which is a
+        # PASS, not a failure. Counting `score >= 0.5` for negatives mislabels
+        # un-triggered guardrails as failed and inflates tests_failed.
+        triggered = score >= 0.5
+        criterion_passed = (not triggered) if wt < 0 else triggered
+        if criterion_passed:
             passed += 1
         crit_out.append({
             "id": i, "weight": wt, "score": round(score, 3),
+            "passed": criterion_passed,
             "criterion": (r.get("criterion") if isinstance(r, dict) else str(r)),
             "reason": c.get("reason", ""),
         })

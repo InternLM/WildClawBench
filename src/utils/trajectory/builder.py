@@ -8,6 +8,7 @@ with Odoo recordsets replaced by plain mappings.
 
 from __future__ import annotations
 
+import json
 import logging
 from typing import Callable, Iterable, List, Mapping, Optional
 
@@ -140,6 +141,37 @@ def _unwrap_trajectory_messages(messages: List[dict]) -> List[dict]:
     return unwrapped
 
 
+def _artifact_turns_from_entries(entries: List[dict]) -> List[dict]:
+    """Reshape OpenClaw JSONL message entries into the {response, tool_calls}
+    turn shape that build_output_artifacts consumes, so deliverables written via
+    write/exec tools (whose paths live in the tool-call args, not in the
+    feedback `turns`) are actually discovered."""
+    out: List[dict] = []
+    for e in entries or []:
+        msg = e.get("message", e) if isinstance(e, dict) else {}
+        if not isinstance(msg, dict) or msg.get("role") != "assistant":
+            continue
+        content = msg.get("content")
+        if not isinstance(content, list):
+            continue
+        tool_calls, texts = [], []
+        for b in content:
+            if not isinstance(b, dict):
+                continue
+            if b.get("type") == "toolCall":
+                tool_calls.append({"name": b.get("name"), "arguments": b.get("arguments")})
+            elif b.get("type") == "text" and (b.get("text") or "").strip():
+                texts.append(b["text"])
+        turn: dict = {}
+        if tool_calls:
+            turn["tool_calls"] = json.dumps(tool_calls, default=str)
+        if texts:
+            turn["response"] = "\n".join(texts)
+        if turn:
+            out.append(turn)
+    return out
+
+
 def build_trajectory_from_jsonl(
     task: Task,
     entries: List[dict],
@@ -161,12 +193,20 @@ def build_trajectory_from_jsonl(
     attachments_list = list(attachments or [])
     turns_list = list(turns or [])
 
+    # Detect deliverables from the actual conversation (tool calls + responses),
+    # not the feedback `turns` (which carry no tool calls). Exclude the task's
+    # input files so reading an attachment isn't mistaken for an output.
+    artifact_turns = _artifact_turns_from_entries(entries) + turns_list
+    input_filenames = [
+        (a.get("storedAs") or a.get("name") or "") for a in attachments_list
+    ]
     output_artifacts = build_output_artifacts(
-        turns_list,
+        artifact_turns,
         s3_bucket=s3_bucket,
         s3_prefix=s3_prefix,
         s3_region=s3_region,
         task_id=task.task_id,
+        input_filenames=input_filenames,
     )
     meta_info = {
         "task_type": slugify_task_type(task.l1, task.l2),

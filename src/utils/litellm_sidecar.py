@@ -65,6 +65,30 @@ def build_litellm_config_yaml(
             "      model: openai/whisper-1\n"
             "      api_key: os.environ/OPENAI_API_KEY"
         )
+    # OpenClaw's image tool falls back to a built-in default model id
+    # ("anthropic/gpt-4o") when its own imageModel override isn't applied inside
+    # the container. The gateway doesn't expose that id, so multimodal calls die
+    # with "Unknown model: anthropic/gpt-4o" (see failure reports). Alias it to a
+    # real vision-capable model that IS registered so image tasks resolve instead
+    # of erroring. Prefer GPT-5.5 (OpenAI), else the Opus inference profile.
+    if openai_api_key:
+        image_alias = (
+            "      model: openai/gpt-5.5\n"
+            "      api_key: os.environ/OPENAI_API_KEY"
+        )
+    elif bedrock_arn:
+        image_alias = (
+            f"      model: bedrock/converse/{bedrock_arn}\n"
+            f"      aws_region_name: {aws_region or 'ap-south-1'}"
+        )
+    else:
+        image_alias = ""
+    if image_alias:
+        model_blocks.append(
+            "  - model_name: anthropic/gpt-4o\n"
+            "    litellm_params:\n"
+            + image_alias
+        )
     if not model_blocks:
         return ""
     # Real per-call usage from the proxy itself (not the agent's chat.jsonl
