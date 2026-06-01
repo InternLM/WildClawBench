@@ -1,0 +1,20 @@
+playlist_item_id,playlistId,videoId,channelId,title,position,publishedAt
+PLitem_grilling_001,PLDanielle_HomeGrilling,vid_pmu_smoker_basics_001,UC_PitMasterUniv,Getting Started with Backyard Smoking: Gas Grill Edition,0,2023-07-15T10:00:00Z
+PLitem_grilling_002,PLDanielle_HomeGrilling,vid_ss_brisket_lowslow_001,UC_SmokedSunday,Texas Brisket from Scratch: 12 Hour Low and Slow,1,2023-09-02T18:30:00Z
+PLitem_grilling_003,PLDanielle_HomeGrilling,vid_gt_beer_can_chicken_001,UC_GrillTime,Beer Can Chicken on the Gas Grill: Perfectly Juicy Every Time,2,2024-02-18T14:00:00Z
+PLitem_grilling_004,PLDanielle_HomeGrilling,vid_GFB_ribs_crowd_001,UC_GrilfatherBBQ,Backyard Smoked Ribs & Sides for a Crowd (Serves 15-20),3,2026-04-15T22:14:33Z
+PLitem_grilling_005,PLDanielle_HomeGrilling,vid_GFB_pulled_pork_001,UC_GrilfatherBBQ,Pulled Pork Shoulder for a Party (Serves 20+): Gas Grill Smoker Box,4,2025-06-08T19:45:00Z
+PLitem_grilling_006,PLDanielle_HomeGrilling,vid_GFB_brisket_flat_001,UC_GrilfatherBBQ,Flat Cut Brisket for Beginners: Gas Grill Method Step by Step,5,2025-08-22T16:20:00Z
+PLitem_grilling_007,PLDanielle_HomeGrilling,vid_ss_mac_smoked_001,UC_SmokedSunday,Smoked Mac and Cheese That Actually Slaps,6,2024-05-30T20:00:00Z
+PLitem_grilling_008,PLDanielle_HomeGrilling,vid_gt_dry_rub_scratch_001,UC_GrillTime,How to Make Your Own BBQ Dry Rub: Never Buy Pre-Made Again,7,2024-09-14T13:00:00Z
+PLitem_grilling_009,PLDanielle_HomeGrilling,vid_tsr_sides_bbq_001,UC_TheSmokeRing,The Best BBQ Sides: Cornbread Coleslaw Baked Beans Done Right,8,2025-03-07T17:30:00Z
+PLitem_grilling_010,PLDanielle_HomeGrilling,vid_GFB_wings_game_001,UC_GrilfatherBBQ,Game Day Wings: 3 Sauces 1 Grill,9,2025-09-15T21:00:00Z
+PLitem_grilling_011,PLDanielle_HomeGrilling,vid_pmu_charcoal_setup_001,UC_PitMasterUniv,How to Set Up a Charcoal Grill for Low and Slow Smoking,10,2024-03-20T12:00:00Z
+PLitem_grilling_012,PLDanielle_HomeGrilling,vid_gt_sauces_three_001,UC_GrillTime,3 BBQ Sauces from Scratch: Vinegar Sweet and Spicy,11,2025-01-11T15:45:00Z
+PLitem_grilling_013,PLDanielle_HomeGrilling,vid_tsr_ribs_beef_001,UC_TheSmokeRing,Beef Back Ribs on the Gas Grill: The Underrated Cut,12,2025-10-03T18:00:00Z
+PLitem_grilling_014,PLDanielle_HomeGrilling,vid_pmu_temp_guide_001,UC_PitMasterUniv,Internal Temp Guide for Pork Beef and Chicken: Never Guess Again,13,2026-01-27T20:30:00Z
+PLitem_minecraft_001,PLDanielle_KidsMinecraft,vid_mc_survival_ep1_001,UC_MinecraftKids,Minecraft Survival for Beginners: Episode 1 First Night,0,2024-01-10T15:30:00Z
+PLitem_minecraft_002,PLDanielle_KidsMinecraft,vid_mc_survival_ep2_001,UC_MinecraftKids,Minecraft Survival: Episode 2 Building Your First House,1,2024-01-10T15:31:00Z
+PLitem_minecraft_003,PLDanielle_KidsMinecraft,vid_mc_diamonds_001,UC_MinecraftKids,How to Find Diamonds Fast in Minecraft 1.21,2,2024-03-15T16:00:00Z
+PLitem_minecraft_004,PLDanielle_KidsMinecraft,vid_mc_nether_001,UC_MinecraftKids,Going to the Nether: What You Need to Know First,3,2024-06-01T14:30:00Z
+PLitem_minecraft_005,PLDanielle_KidsMinecraft,vid_mc_redstone_001,UC_MinecraftKids,Easy Redstone Contraptions for Beginners,4,2024-09-20T17:00:00Z

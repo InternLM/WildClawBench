@@ -289,7 +289,7 @@ def create_item(data: dict):
         "Name": data.get("Name", ""),
         "Description": data.get("Description"),
         "Type": data.get("Type", "Service"),
-        "UnitPrice": float(data.get("UnitPrice", 0)),
+        "UnitPrice": float(data.get("UnitPrice") or 0),
         "IncomeAccountRef": data.get("IncomeAccountRef", {"value": "1", "name": "Landscaping Services Revenue"}),
         "Active": True,
         "Taxable": data.get("Taxable", False),
@@ -350,7 +350,7 @@ def get_invoice(invoice_id: str):
 def create_invoice(data: dict):
     global _next_invoice_id
     now = _now()
-    lines = data.get("Line", [])
+    lines = list(data.get("Line") or [])
     total = sum(l.get("Amount", 0) for l in lines if l.get("DetailType") != "SubTotalLineDetail")
     lines.append({"Amount": total, "DetailType": "SubTotalLineDetail", "SubTotalLineDetail": {}})
 

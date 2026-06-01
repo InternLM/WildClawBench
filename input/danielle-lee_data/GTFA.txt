@@ -1,0 +1,175 @@
+ANSWER
+The three images cover all cookout purchases: Costco receipt, Kroger
+receipt, and UPS packing slip. Costco and Kroger together cover all
+tutorial ingredients with four issues: ribs are 2 lb short of the
+recipe's 18 lb requirement, charcoal was bought for a recipe that
+explicitly uses a gas grill and needs none, baked beans were over-bought
+by 4 cans, and the online dry rub kit duplicates a scratch rub already
+built from individual Kroger spices. The packing slip (Image 3) confirms
+the online order (hickory wood chips and dry rub kit at $33.98 total)
+and Ring confirms the UPS delivery arrived May 21, four days ahead of
+the cookout. The week's nutrition spiked hard on Memorial Day across all
+three cholesterol markers and recovered through the rest of the week,
+but the weekly average dietary cholesterol still finished above Dr.
+Simmons' limit. Total cookout spend across all three receipts is
+$275.16, split across grocery and misc budgets.
+
+========================================================================
+IMAGE TRIAGE
+------------------------------------------------------------------------
+Image 1: Costco receipt (05/23):      RELEVANT: grocery + entertaining
+                                        purchases for the cookout
+Image 2: Kroger receipt (05/23):      RELEVANT: spices and sides for
+                                        the cookout
+Image 3: UPS packing slip:            RELEVANT: confirms online order
+                                        contents and cost ($33.98)
+
+========================================================================
+RECONCILIATION METHOD
+------------------------------------------------------------------------
+Baseline  = ingredient list from saved YouTube tutorial (saved Apr 15, 2026)
+            "Backyard Smoked Ribs & Sides for a Crowd" -- The Grillfather BBQ
+            Serves: 15-20 | Method: gas grill + smoker box (no charcoal)
+Sources   = Image 1 (Costco) + Image 2 (Kroger) + Image 3 (packing slip)
+Verified  = item found at or above tutorial quantity across all sources
+Short     = tutorial calls for item; quantity is below requirement
+Over-buy  = purchased well above tutorial quantity
+Not-in-recipe = item present in receipts but absent from tutorial
+
+========================================================================
+PER-INGREDIENT RECONCILIATION
+------------------------------------------------------------------------
+INGREDIENT              TUTORIAL QTY     SOURCE + QTY FOUND    STATUS
+St. Louis spare ribs    18 lb            Image 1: 16 lb         SHORT
+                        (3 racks~6lb ea) (3-rack pkg, 16 lb)    Serves ~14-17
+                                                                 not 15-20
+Hickory wood chips      4 cups           Image 3: 8 lb bag      VERIFIED
+Apple cider vinegar     1 cup            Image 1: 2L bottle     VERIFIED
+Yellow mustard          2 tbsp           Image 2: 20 oz         VERIFIED
+Brown sugar             2 cups           Image 1: 4 lb          VERIFIED
+Kosher salt             4 tbsp           Image 2: 3 lb          VERIFIED
+Black pepper            3 tbsp           Image 2: 3 oz          VERIFIED
+Garlic powder           2 tbsp           Image 2: 2.75 oz       VERIFIED
+Onion powder            2 tbsp           Image 2: 2.62 oz       VERIFIED
+Smoked paprika          2 tbsp           Image 2: 1.62 oz       VERIFIED
+Cayenne pepper          1 tsp            Image 2: 1.5 oz        VERIFIED
+BBQ sauce               2 x 18 oz        Image 1: 2-pk 18 oz    VERIFIED
+Coleslaw mix            2 bags           Image 1: 2-pk          VERIFIED
+                                         (broccoli slaw --
+                                         minor variation)
+Cornbread mix           3 boxes          Image 2: 3-pk          VERIFIED
+Baked beans             2 x 28 oz cans   Image 1: 6-pk 28 oz    OVER-BUY
+                                                                 4 extra cans
+Mac & cheese            3 boxes          Image 2: 3-pk          VERIFIED
+Butter                  2 sticks         Image 1: 8 sticks      Over (minor,
+                                                                 pantry)
+Heavy cream             1 pint           Image 1: 2-pk          Over (minor,
+                                                                 pantry)
+Sharp cheddar           1 lb             Image 1: 2 lb          Over (minor,
+                                                                 pantry)
+MISSING FROM ALL SOURCES: None. All core tutorial ingredients accounted for.
+
+========================================================================
+NOT-IN-RECIPE PURCHASES
+------------------------------------------------------------------------
+ITEM                    IMAGE   COST    FLAG
+Kingsford charcoal 2-pk  Img 1  $32.99  Tutorial: gas grill + smoker box --
+                                        charcoal not needed. Unnecessary.
+                                        Eligible for Costco return.
+
+Party plates/napkins     Img 1  $19.99  Entertaining supply -- not a food
+                                        item. Recode to Misc/Entertaining.
+
+Canada Dry ginger ale    Img 2   $5.99  Family beverage -- not in tutorial.
+                                        Stays in Groceries/Food.
+
+Goldfish crackers 6-pk   Img 2   $4.99  Kids' snack -- not in tutorial.
+                                        Stays in Groceries/Food.
+
+Cowboy dry rub kit       Img 3  $14.99  REDUNDANT -- tutorial uses scratch
+                                        rub; all 7 spices already bought
+                                        in Image 2. One was unnecessary.
+
+========================================================================
+RING API -- ONLINE ORDER DELIVERY VERIFICATION
+------------------------------------------------------------------------
+Package detected: May 21, 2026 at 3:08 PM ET | Carrier: UPS
+Status: Delivered -- 4 days before the Memorial Day cookout
+
+Ring delivery timestamp matches packing slip (Image 3) ship date of
+May 19 / delivery May 21. Order contents and cost confirmed by Image 3:
+hickory wood chips $18.99 + dry rub kit $14.99 = $33.98. No discrepancy.
+
+========================================================================
+MYFITNESSPAL -- WEEKLY NUTRITION REVIEW
+------------------------------------------------------------------------
+Dr. Simmons limits: Sat Fat <20g | Sodium <2300mg | Cholesterol <200mg
+
+May 25 (cookout)   Sat fat 38g OVER   Sodium 3200mg OVER   Chol 320mg OVER
+May 26             Sat fat 18g ok     Sodium 2400mg OVER   Chol 195mg ok
+May 27-29          All within limits on all three markers
+
+Weekly averages: Sat fat 18.5g (just under) | Sodium 2270mg (just under)
+                 Cholesterol 206mg -- OVER the 200mg daily limit
+
+The Memorial Day meal (ribs + mac and cheese + BBQ sauce + baked beans)
+is a high-sat-fat, high-sodium, high-cholesterol combination. Single-day
+spike is expected. May 26 sodium stayed elevated -- consistent with
+leftover consumption. Weekly average cholesterol finished above limit.
+Four extra baked bean cans and likely remaining ribs are still in the
+house. Monitor through the weekend.
+
+========================================================================
+BUDGET RECONCILIATION
+------------------------------------------------------------------------
+CATEGORY SPLIT ACROSS ALL THREE IMAGES:
+
+                              Source    Amount
+Cookout food items (tutorial):
+  Costco food purchases        Img 1   $145.41
+  Kroger tutorial food         Img 2    $28.69
+  Online order (packing slip)  Img 3    $33.98
+  Cookout food subtotal:                $208.08
+
+Non-tutorial food (family):
+  Kroger -- ginger ale, Goldfish, tax   $11.98
+
+Non-food / entertaining:
+  Costco -- charcoal, plates, tax       $55.10
+
+TOTAL COOKOUT-RELATED (all 3 images):  $275.16
+
+                    Budget    Pre-Cookout  +New      New Total   Remaining
+Groceries-Food     $950.00    $311.47     +$220.06  $531.53     $418.47
+Misc/Entertaining  $250.00    $103.73     +$55.10   $158.83      $91.17
+Dining Out         $120.00     $67.00       $0.00    $67.00      $53.00
+
+All budgets remain within monthly limits.
+
+========================================================================
+FLAGS SUMMARY
+------------------------------------------------------------------------
+1. RIBS SHORT: 16 lb vs. 18 lb in recipe. Served ~14-17 guests.
+   Note for next time.
+
+2. CHARCOAL UNNECESSARY: $32.99 for a gas-grill recipe. Unused.
+   Return to Costco or store.
+
+3. BAKED BEANS OVER-BUY: 4 extra cans in pantry. No action needed.
+
+4. DRY RUB REDUNDANT: Scratch rub (Kroger spices) + pre-made kit
+   (Image 3) both purchased. ~$14.99 unnecessary.
+
+5. NUTRITION: Weekly average cholesterol (206mg) over limit. Leftover
+   cookout food still in the house -- monitor through weekend.
+
+========================================================================
+REQUIRED ACTIONS (over $40 threshold -- confirm before logging)
+------------------------------------------------------------------------
+  [ ] Log $145.41 to Groceries-Food (Costco food items -- Image 1)
+  [ ] Log $55.10 to Misc/Entertaining (charcoal + plates + tax -- Image 1)
+  [ ] Log $28.69 to Groceries-Food (Kroger tutorial food -- Image 2)
+  [ ] Log $11.98 to Groceries-Food (Kroger family items -- Image 2)
+  [ ] Log $33.98 to Groceries-Food (online order -- Image 3)
+  [ ] Decide on charcoal ($32.99): return to Costco or keep
+========================================================================

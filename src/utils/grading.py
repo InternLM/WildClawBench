@@ -70,19 +70,55 @@ def _judge_user_prompt(task_description: str, rubrics: list, evidence: str) -> s
     )
 
 
+# Per real-task forensics, agents intuit several different deliverable-root
+# names (results, deliverables, output, out, artifacts). Hard-coding only
+# results/ silently zeros out otherwise-correct runs (see Claude run in the
+# trajectory failure report — wrote to deliverables/, scored 0/18).
+_DELIVERABLE_DIR_NAMES = ("results", "deliverables", "output", "out", "artifacts")
+
+
+def _collect_deliverable_files(workspace_results: Path) -> list[Path]:
+    files: list[Path] = []
+    seen: set[Path] = set()
+
+    def _add_from(root: Path) -> None:
+        if not root.is_dir():
+            return
+        for f in sorted(root.rglob("*")):
+            if f.is_file() and f not in seen:
+                seen.add(f)
+                files.append(f)
+
+    if workspace_results:
+        results_path = Path(workspace_results)
+        _add_from(results_path)
+        # Sibling sweep: workspace_full/<deliverable-name>/ written by the agent
+        # outside results/ — collect_output_from_container always preserves the
+        # full /tmp_workspace tree under workspace_full/ for exactly this case.
+        workspace_root = results_path.parent.parent if results_path.name == "results" else results_path.parent
+        for sibling in (workspace_root / "workspace_full", workspace_root):
+            if not sibling.is_dir():
+                continue
+            for name in _DELIVERABLE_DIR_NAMES:
+                _add_from(sibling / name)
+    return files
+
+
 def _gather_evidence(workspace_results: Path, transcript_text: str) -> str:
-    """Concatenate deliverable files (results/) + transcript into a bounded blob."""
     parts: list[str] = []
-    if workspace_results and Path(workspace_results).is_dir():
-        for f in sorted(Path(workspace_results).rglob("*")):
-            if f.is_file():
-                try:
-                    body = f.read_text(encoding="utf-8", errors="replace")
-                except Exception:
-                    continue
-                parts.append(f"\n----- DELIVERABLE: {f.name} -----\n{body}")
+    deliverables = _collect_deliverable_files(workspace_results)
+    for f in deliverables:
+        try:
+            body = f.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            continue
+        parts.append(f"\n----- DELIVERABLE: {f.name} -----\n{body}")
     if not parts:
-        parts.append("\n(no deliverable files were collected under results/)\n")
+        parts.append(
+            "\n(no deliverable files were collected under any of: "
+            + ", ".join(f"{n}/" for n in _DELIVERABLE_DIR_NAMES)
+            + ")\n"
+        )
     if transcript_text:
         parts.append(f"\n----- TRANSCRIPT (condensed) -----\n{transcript_text}")
     blob = "".join(parts)
@@ -538,6 +574,60 @@ def _estimate_tokens(text: str) -> int:
     if not text:
         return 0
     return max(1, (len(text) + 3) // 4)
+
+
+def extract_usage_from_litellm_log(
+    log_path: Path, window_start: float, window_end: float
+) -> dict:
+    totals = {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "total_tokens": 0,
+        "cost_usd": 0.0,
+        "request_count": 0,
+        "usage_source": "litellm",
+    }
+    if not log_path or not log_path.exists():
+        return totals
+
+    from datetime import datetime as _dt
+
+    pad = 2.0
+    lo = window_start - pad
+    hi = window_end + pad
+
+    try:
+        lines = log_path.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return totals
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        ts_str = row.get("ts", "")
+        try:
+            ts = _dt.fromisoformat(ts_str.replace("Z", "+00:00")).timestamp()
+        except (ValueError, AttributeError):
+            continue
+        if ts < lo or ts > hi:
+            continue
+        totals["request_count"] += 1
+        totals["input_tokens"]       += int(row.get("input_tokens", 0) or 0)
+        totals["output_tokens"]      += int(row.get("output_tokens", 0) or 0)
+        totals["cache_read_tokens"]  += int(row.get("cache_read_tokens", 0) or 0)
+        totals["cache_write_tokens"] += int(row.get("cache_write_tokens", 0) or 0)
+        totals["total_tokens"]       += int(row.get("total_tokens", 0) or 0)
+        totals["cost_usd"]           += float(row.get("cost_usd", 0.0) or 0.0)
+
+    totals["cost_usd"] = round(totals["cost_usd"], 6)
+    return totals
 
 
 def extract_usage_from_jsonl(jsonl_path: Path) -> dict:

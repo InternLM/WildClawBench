@@ -1,0 +1,88 @@
+entry_id,date,meal,food_id,food_name,brand,serving_size,serving_unit,servings,calories,total_fat_g,saturated_fat_g,cholesterol_mg,sodium_mg,total_carbs_g,dietary_fiber_g,sugars_g,protein_g
+1,2026-05-22,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+2,2026-05-22,Breakfast,102,Oatmeal cooked,,1.5,cup,1,230,4.5,0.8,0,10,41,5,1,8
+3,2026-05-22,Breakfast,103,Banana,,1,medium,1,105,0.3,0.1,0,1,27,3.1,14.4,1.3
+4,2026-05-22,Lunch,104,Grilled chicken breast (staff meal),,6,oz,1,280,6.0,1.5,85,390,0,0,0,52
+5,2026-05-22,Lunch,105,Brown rice,,1,cup,1,215,1.8,0.2,0,10,45,3,0,5
+6,2026-05-22,Lunch,106,Steamed broccoli,,1,cup,1,55,0.6,0.1,0,65,11,5,3,4
+7,2026-05-22,Dinner,107,Atlantic salmon (staff meal),,5,oz,1,310,14.0,2.5,80,300,0,0,0,42
+8,2026-05-22,Dinner,108,Mixed green salad with olive oil,,1,cup,1,90,7.0,1.0,0,160,5,2,2,2
+9,2026-05-22,Snacks,109,Kirkland beef jerky,Kirkland Signature,1,oz,1,70,1.0,0.5,25,590,4,0,2,11
+10,2026-05-22,Snacks,103,Tangerine,,1,medium,1,47,0.3,0.0,0,1,12,2,8,0.7
+11,2026-05-23,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+12,2026-05-23,Breakfast,110,Scrambled eggs,,2,large,1,180,12.0,3.5,370,180,2,0,1,12
+13,2026-05-23,Breakfast,111,Whole wheat toast with butter,,1,slice,1,120,4.5,2.0,10,200,18,2,2,3
+14,2026-05-23,Snacks,112,Kirkland trail mix,Kirkland Signature,1,oz,1,140,8.0,1.5,0,85,13,2,5,4
+15,2026-05-23,Lunch,113,Hot dog with bun (gas station stop),,1,each,1,310,18.0,6.0,35,820,25,1,5,12
+16,2026-05-23,Dinner,104,Grilled chicken thigh (staff meal),,6,oz,1,310,16.0,4.5,120,380,0,0,0,40
+17,2026-05-23,Dinner,105,Brown rice,,1,cup,1,215,1.8,0.2,0,10,45,3,0,5
+18,2026-05-23,Dinner,106,Steamed vegetables mixed,,1,cup,1,60,0.5,0.1,0,150,12,4,5,3
+19,2026-05-23,Snacks,103,Goldfish crackers,Pepperidge Farm,1,oz,1,140,5.0,1.0,0,190,19,1,2,3
+20,2026-05-24,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+21,2026-05-24,Breakfast,110,Scrambled eggs,,2,large,1,180,12.0,3.5,370,180,2,0,1,12
+22,2026-05-24,Breakfast,114,Buttermilk pancakes (Sunday ritual with Amara),,3,medium,1,390,9.0,3.0,65,680,65,2,14,9
+23,2026-05-24,Breakfast,115,Maple syrup,,2,tbsp,1,104,0.0,0.0,0,4,27,0,24,0
+24,2026-05-24,Lunch,116,Turkey sandwich (light lunch before dinner cook),,1,each,1,380,10.0,2.5,50,820,42,3,6,28
+25,2026-05-24,Dinner,117,Baked chicken thighs (Sunday dinner),,8,oz,1,380,20.0,5.5,160,420,0,0,0,48
+26,2026-05-24,Dinner,105,Brown rice,,1.5,cup,1,323,2.7,0.3,0,15,68,4.5,0,7.5
+27,2026-05-24,Dinner,118,Collard greens (Gloria's recipe),,1,cup,1,50,1.5,0.3,0,380,8,4,1,4
+28,2026-05-24,Dinner,119,Cornbread (1 square),,1,piece,1,210,8.0,2.5,18,320,28,1,5,4
+29,2026-05-24,Snacks,101,Black coffee,,8,oz,1,3,0.0,0.0,0,3,1,0,0,0.1
+30,2026-05-25,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+31,2026-05-25,Breakfast,103,Banana,,1,medium,1,105,0.3,0.1,0,1,27,3.1,14.4,1.3
+32,2026-05-25,Snacks,103,Goldfish crackers,Pepperidge Farm,1,oz,1,140,5.0,1.0,0,190,19,1,2,3
+33,2026-05-25,Dinner,120,"BBQ pork spare ribs (smoked, cookout)",,12,oz,1,850,52.0,20.0,230,640,6,0,4,55
+34,2026-05-25,Dinner,121,Smoked mac and cheese (homemade),,1.5,cup,1,520,25.0,10.0,55,600,54,2,8,20
+35,2026-05-25,Dinner,122,Bush's Best Baked Beans,Bush's,1,cup,1,235,1.5,0.5,0,550,45,8,16,12
+36,2026-05-25,Dinner,123,Cornbread with butter (2 squares),,2,piece,1,420,16.0,5.0,35,640,56,2,10,8
+37,2026-05-25,Dinner,124,Broccoli coleslaw with mayo dressing,,1,cup,1,185,15.0,1.5,0,250,11,3,5,2
+38,2026-05-25,Dinner,125,Kirkland BBQ sauce,Kirkland Signature,2,tbsp,1,50,0.0,0.0,0,280,12,0,10,0
+39,2026-05-25,Snacks,126,Canada Dry Ginger Ale,Canada Dry,12,oz,1,140,0.0,0.0,0,35,35,0,35,0
+40,2026-05-25,Dinner,127,Bulleit Bourbon,Bulleit,1.5,oz,1,105,0.0,0.0,0,0,0,0,0,0
+41,2026-05-25,Dinner,128,Beer light,Budweiser Select,12,oz,1,85,0.0,0.0,0,10,3,0,0,0.5
+42,2026-05-26,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+43,2026-05-26,Breakfast,129,Protein granola bar,Kirkland Signature,1,bar,1,260,7.0,3.5,5,140,36,3,12,10
+44,2026-05-26,Lunch,120,BBQ spare ribs leftover,,6,oz,1,425,26.0,10.0,90,320,3,0,2,28
+45,2026-05-26,Lunch,122,Baked beans leftover,Bush's,1,cup,1,235,1.5,0.5,0,550,45,8,16,12
+46,2026-05-26,Lunch,124,Broccoli coleslaw leftover,,1,cup,1,185,15.0,1.5,0,250,11,3,5,2
+47,2026-05-26,Dinner,104,Grilled chicken breast (work staff meal),,8,oz,1,373,8.0,2.0,100,520,0,0,0,69
+48,2026-05-26,Dinner,105,Brown rice,,1,cup,1,215,1.8,0.2,0,10,45,3,0,5
+49,2026-05-26,Dinner,106,Steamed broccoli,,1,cup,1,55,0.6,0.1,0,65,11,5,3,4
+50,2026-05-26,Snacks,130,Apple,,1,medium,1,95,0.3,0.0,0,2,25,4,19,0.5
+51,2026-05-26,Snacks,109,Kirkland beef jerky,Kirkland Signature,1,oz,1,72,1.0,0.7,0,538,5,0,3,11
+52,2026-05-27,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+53,2026-05-27,Breakfast,102,Oatmeal cooked with blueberries,,1.5,cup,1,270,5.0,0.5,0,10,53,6,8,9
+54,2026-05-27,Lunch,104,Grilled chicken thigh (staff meal),,6,oz,1,310,16.0,5.0,95,392,0,0,0,40
+55,2026-05-27,Lunch,105,Brown rice,,1,cup,1,215,1.8,0.2,0,10,45,3,0,5
+56,2026-05-27,Lunch,108,Mixed green salad with olive oil,,1,cup,1,90,7.0,1.5,0,245,5,2,2,2
+57,2026-05-27,Dinner,107,Atlantic salmon (staff meal),,5,oz,1,310,14.0,2.5,65,300,0,0,0,42
+58,2026-05-27,Dinner,106,Roasted vegetables mixed,,1,cup,1,80,3.0,0.5,0,178,12,4,5,3
+59,2026-05-27,Snacks,130,Apple,,1,medium,1,95,0.3,0.0,0,2,25,4,19,0.5
+60,2026-05-27,Snacks,131,Omega-3 fish oil supplement,,2,softgel,1,20,2.0,0.5,0,0,0,0,0,0
+61,2026-05-27,Snacks,109,Kirkland beef jerky,Kirkland Signature,1,oz,1,70,1.0,0.5,0,600,4,0,2,11
+62,2026-05-28,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+63,2026-05-28,Breakfast,102,Oatmeal cooked with blueberries,,1.5,cup,1,270,5.0,0.8,0,15,53,6,8,9
+64,2026-05-28,Breakfast,103,Banana,,1,medium,1,105,0.3,0.1,0,1,27,3.1,14.4,1.3
+65,2026-05-28,Lunch,132,Pasta with creamy chicken sauce (staff meal),,1.5,cup,1,540,18.0,8.5,90,680,58,3,5,28
+66,2026-05-28,Lunch,108,Side salad with vinaigrette,,1,cup,1,80,5.0,1.0,0,220,7,2,3,2
+67,2026-05-28,Dinner,107,Atlantic salmon (staff meal),,5,oz,1,310,14.0,2.5,95,380,0,0,0,44
+68,2026-05-28,Dinner,105,Brown rice,,1,cup,1,215,1.8,0.2,0,10,45,3,0,5
+69,2026-05-28,Dinner,106,Steamed vegetables,,1,cup,1,60,0.5,0.1,0,145,12,4,5,3
+70,2026-05-28,Snacks,130,Apple,,1,medium,1,95,0.3,0.0,0,2,25,4,19,0.5
+71,2026-05-28,Snacks,131,Omega-3 fish oil supplement,,2,softgel,1,20,2.0,0.5,0,0,0,0,0,0
+72,2026-05-28,Snacks,109,Kirkland beef jerky,Kirkland Signature,1,oz,1,70,1.0,0.5,0,460,4,0,2,11
+73,2026-05-28,Snacks,133,Tangerine,,1,medium,1,47,0.3,0.0,0,1,12,2,8,0.7
+74,2026-05-28,Snacks,112,Trail mix small handful,Kirkland Signature,0.5,oz,1,70,4.0,0.7,0,40,7,1,3,2
+75,2026-05-29,Breakfast,101,Black coffee,,12,oz,1,5,0.0,0.0,0,5,1,0,0,0.1
+76,2026-05-29,Breakfast,102,Oatmeal cooked,,1.5,cup,1,230,4.5,0.8,0,10,41,5,1,8
+77,2026-05-29,Breakfast,103,Banana,,1,medium,1,105,0.3,0.1,0,1,27,3.1,14.4,1.3
+78,2026-05-29,Lunch,134,Caesar salad with grilled chicken (staff),,1,plate,1,420,18.0,4.0,90,810,20,3,4,38
+79,2026-05-29,Lunch,101,Black coffee,,8,oz,1,3,0.0,0.0,0,3,1,0,0,0.1
+80,2026-05-29,Dinner,104,Grilled salmon (staff meal),,5,oz,1,310,14.0,2.5,80,300,0,0,0,42
+81,2026-05-29,Dinner,105,Brown rice,,1,cup,1,215,1.8,0.2,0,10,45,3,0,5
+82,2026-05-29,Dinner,106,Roasted asparagus,,8,spear,1,40,2.0,0.3,0,140,5,2,2,3
+83,2026-05-29,Snacks,131,Omega-3 fish oil supplement,,2,softgel,1,20,2.0,0.5,0,0,0,0,0,0
+84,2026-05-29,Snacks,109,Kirkland beef jerky,Kirkland Signature,1,oz,1,70,1.0,0.5,0,590,4,0,2,11
+85,2026-05-29,Snacks,133,Tangerine,,1,medium,1,47,0.3,0.0,0,1,12,2,8,0.7
+86,2026-05-29,Snacks,103,Goldfish crackers,Pepperidge Farm,0.75,oz,1,105,3.8,0.8,0,143,14,1,2,2.3
+87,2026-05-29,Snacks,126,Canada Dry Ginger Ale,Canada Dry,12,oz,1,140,0.0,0.0,0,35,35,0,35,0

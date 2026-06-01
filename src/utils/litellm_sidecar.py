@@ -15,6 +15,7 @@ def build_litellm_config_yaml(
     aws_region: str = "ap-south-1",
     openai_api_key: str = "",
     bedrock_sonnet_arn: str = "",
+    enable_usage_callback: bool = False,
 ) -> str:
     model_blocks: list[str] = []
     if bedrock_arn:
@@ -55,8 +56,24 @@ def build_litellm_config_yaml(
             "      input_cost_per_token: 0.000005\n"
             "      output_cost_per_token: 0.00003"
         )
+        # Without this, /v1/audio/transcriptions returns HTTP 400 "Invalid
+        # model name passed in model=whisper-1" (see failure report §6a) and
+        # the agent burns its budget on broken pip-install whisper fallbacks.
+        model_blocks.append(
+            "  - model_name: whisper-1\n"
+            "    litellm_params:\n"
+            "      model: openai/whisper-1\n"
+            "      api_key: os.environ/OPENAI_API_KEY"
+        )
     if not model_blocks:
         return ""
+    # Real per-call usage from the proxy itself (not the agent's chat.jsonl
+    # which openclaw writes with all-zero usage). Loaded by the LiteLLM
+    # callback file mounted at /app/litellm_usage_callback.py.
+    callback_line = (
+        '  callbacks: ["litellm_usage_callback.proxy_handler_instance"]\n'
+        if enable_usage_callback else ""
+    )
     return (
         "model_list:\n"
         + "\n".join(model_blocks)
@@ -69,7 +86,8 @@ def build_litellm_config_yaml(
         "  request_timeout: 900\n"
         "  stream_timeout: 60\n"
         "  reasoning_auto_summary: true\n"
-        "general_settings:\n"
+        + callback_line
+        + "general_settings:\n"
         "  master_key: os.environ/LITELLM_MASTER_KEY\n"
         "  store_model_in_db: false\n"
     )
@@ -105,6 +123,8 @@ def start_litellm(
     aws_region: str = "ap-south-1",
     openai_api_key: str = "",
     port: int = LITELLM_INTERNAL_PORT,
+    usage_callback_host_path: str = "",
+    usage_log_host_dir: str = "",
 ) -> None:
     env_args: list[str] = ["-e", f"LITELLM_MASTER_KEY={master_key}"]
     if aws_bearer_token:
@@ -115,11 +135,23 @@ def start_litellm(
     if openai_api_key:
         env_args += ["-e", f"OPENAI_API_KEY={openai_api_key}"]
 
+    # Mount the callback module + writable log dir so UsageWriter can write
+    # real provider-side usage rows from inside the sidecar. The env var name
+    # is also read by litellm_usage_callback.py:_write_row.
+    callback_args: list[str] = []
+    if usage_callback_host_path and usage_log_host_dir:
+        callback_args = [
+            "-v", f"{usage_callback_host_path}:/app/litellm_usage_callback.py:ro",
+            "-v", f"{usage_log_host_dir}:/var/litellm_usage",
+            "-e", "LITELLM_USAGE_LOG_PATH=/var/litellm_usage/usage.jsonl",
+        ]
+
     cmd = [
         "docker", "run", "-d",
         "--name", container_name,
         "--network", network,
         *env_args,
+        *callback_args,
         "-v", f"{host_config_path}:/app/config.yaml:ro",
         LITELLM_IMAGE,
         "--config", "/app/config.yaml",

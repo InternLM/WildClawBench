@@ -20,7 +20,7 @@ from src.utils.docker_utils import (
     setup_workspace,
     start_container,
 )
-from src.utils.grading import extract_usage_from_jsonl
+from src.utils.grading import extract_usage_from_jsonl, extract_usage_from_litellm_log
 
 load_dotenv()
 
@@ -67,6 +67,7 @@ class OpenClawAgent(BaseAgent):
         litellm_container_name: str = "",
         litellm_network: str = "",
         image_model: str | None = None,
+        litellm_usage_log: str = "",
     ) -> None:
         self.gateway_port = gateway_port
         self.openrouter_api_key = openrouter_api_key
@@ -82,6 +83,8 @@ class OpenClawAgent(BaseAgent):
             if image_model is not None
             else os.environ.get("OPENCLAW_IMAGE_MODEL", "").strip()
         )
+        self.litellm_usage_log = litellm_usage_log
+        self._task_windows: dict[str, tuple[float, float]] = {}
 
     @property
     def expects_gateway(self) -> bool:
@@ -113,6 +116,11 @@ class OpenClawAgent(BaseAgent):
                 extra_env_dict=spec.task.get("env_dict") or None,
                 network=self.litellm_network,
             )
+
+            # Raise openclaw binary's bootstrap-file caps before the gateway
+            # starts. Default is 20k chars/file + 150k total, which truncates
+            # MEMORY.md and persona files for any non-trivial task.
+            self._set_bootstrap_limits(spec.task_id)
 
             if spec.lobster:
                 inject_lobster_workspace(spec.task_id, spec.lobster["workspace"])
@@ -168,6 +176,7 @@ class OpenClawAgent(BaseAgent):
 
             safe_prompt = spec.prompt.replace("'", "'\\''")
             start_time = time.perf_counter()
+            wall_start = time.time()
             agent_proc = run_background(
                 spec.task_id,
                 bash_cmd=(
@@ -188,6 +197,7 @@ class OpenClawAgent(BaseAgent):
                 elapsed_time = float(spec.timeout_seconds)
                 agent_proc.kill()
                 agent_proc.wait()
+            self._task_windows[spec.task_id] = (wall_start, time.time())
 
             logger.info("[%s] Agent exit code: %s", spec.task_id, agent_proc.returncode)
             return AgentExecution(
@@ -214,20 +224,33 @@ class OpenClawAgent(BaseAgent):
             capture_output=True,
             text=True,
         )
-        if r_cp.returncode == 0 and transcript_host.exists():
-            usage = extract_usage_from_jsonl(transcript_host)
+
+        usage: dict
+        if self.litellm_usage_log:
+            window = self._task_windows.get(task_id)
+            if window is None:
+                window = (time.time() - max(elapsed_time, 1.0), time.time())
+            usage = extract_usage_from_litellm_log(Path(self.litellm_usage_log), window[0], window[1])
         else:
-            logger.warning("[%s] Transcript copy failed: %s", task_id, r_cp.stderr.strip())
-            usage = {
-                "input_tokens": 0,
-                "output_tokens": 0,
-                "cache_read_tokens": 0,
-                "cache_write_tokens": 0,
-                "total_tokens": 0,
-                "cost_usd": 0.0,
-                "request_count": 0,
-                "usage_source": "none",
-            }
+            usage = {"request_count": 0}
+
+        if usage.get("request_count", 0) == 0:
+            if r_cp.returncode == 0 and transcript_host.exists():
+                usage = extract_usage_from_jsonl(transcript_host)
+            else:
+                logger.warning("[%s] Transcript copy failed: %s", task_id, r_cp.stderr.strip())
+                usage = {
+                    "input_tokens": 0,
+                    "output_tokens": 0,
+                    "cache_read_tokens": 0,
+                    "cache_write_tokens": 0,
+                    "total_tokens": 0,
+                    "cost_usd": 0.0,
+                    "request_count": 0,
+                    "usage_source": "none",
+                }
+
+        self._task_windows.pop(task_id, None)
         usage["elapsed_time"] = round(elapsed_time, 2)
         return usage
 
@@ -346,9 +369,7 @@ p.write_text(json.dumps(d, indent=2))
 
     def _set_image_model(self, task_id: str, model: str) -> None:
         if self.litellm_config_yaml:
-            if model:
-                logger.warning("[%s] image model %r ignored in LiteLLM mode; "
-                               "imageModel mirrors the chat model", task_id, model)
+            logger.info("[%s] imageModel already set via _set_model (litellm mode)", task_id)
             return
         subprocess.run(
             ["docker", "exec", task_id, "/bin/bash", "-c",
@@ -357,6 +378,45 @@ p.write_text(json.dumps(d, indent=2))
             text=True,
         )
         logger.info("[%s] imageModel set: %s", task_id, model)
+
+    def _set_bootstrap_limits(
+        self,
+        task_id: str,
+        *,
+        per_file_chars: int = 10_000_000,
+        total_chars: int = 50_000_000,
+    ) -> None:
+        # Round-trip the set with a get-back-and-compare. Silent failure here
+        # silently truncates MEMORY.md to 20k chars (binary default) and the
+        # agent has no in-context signal it lost its tail.
+        cmd = (
+            f"openclaw config set agents.defaults.bootstrapMaxChars {per_file_chars} >/dev/null 2>&1 && "
+            f"openclaw config set agents.defaults.bootstrapTotalMaxChars {total_chars} >/dev/null 2>&1 && "
+            f"echo -n 'per='; openclaw config get agents.defaults.bootstrapMaxChars; "
+            f"echo -n 'total='; openclaw config get agents.defaults.bootstrapTotalMaxChars"
+        )
+        result = subprocess.run(
+            ["docker", "exec", task_id, "/bin/bash", "-c", cmd],
+            capture_output=True,
+            text=True,
+            timeout=15,
+        )
+        applied_per = f"per={per_file_chars}" in result.stdout
+        applied_total = f"total={total_chars}" in result.stdout
+        if result.returncode == 0 and applied_per and applied_total:
+            logger.info(
+                "[%s] Bootstrap limits raised: per_file=%d total=%d (verified)",
+                task_id,
+                per_file_chars,
+                total_chars,
+            )
+        else:
+            logger.warning(
+                "[%s] Failed to raise bootstrap limits (rc=%d): %s",
+                task_id,
+                result.returncode,
+                (result.stderr or result.stdout)[:200],
+            )
 
     def _index_memory(self, task_id: str) -> None:
         cmd = (

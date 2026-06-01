@@ -1,0 +1,74 @@
+{
+  "doorbots": [
+    {
+      "id": 500001,
+      "description": "Front Door",
+      "device_id": "doorbell_front",
+      "address": "4518 Ridgecrest Terrace",
+      "kind": "lpd_v2",
+      "firmware_version": "3.24.1",
+      "battery_life": 91,
+      "external_connection": true,
+      "latitude": 33.7258,
+      "longitude": -84.3428,
+      "location_id": "loc_lee_001",
+      "time_zone": "America/New_York",
+      "alerts": {"connection": "online"},
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "advanced_motion_enabled": true,
+        "people_only_enabled": false,
+        "shadow_correction_enabled": true,
+        "motion_message_enabled": true,
+        "package_detection_enabled": true
+      },
+      "motion_snooze": null,
+      "ring_snooze": null,
+      "owned": true,
+      "owner": {"id": 200001, "first_name": "Danielle", "last_name": "Lee"},
+      "led_status": "on",
+      "night_mode_status": "enabled",
+      "settings": {
+        "doorbell_volume": 9,
+        "chime_settings": {"type": "digital", "enabled": true, "duration": 5},
+        "motion_detection_enabled": true,
+        "motion_sensitivity": 6,
+        "people_detection_enabled": false,
+        "package_detection_enabled": true
+      },
+      "created_at": "2022-11-18T14:00:00.000Z"
+    }
+  ],
+  "stickup_cams": [],
+  "chimes": [
+    {
+      "id": 500002,
+      "description": "Kitchen Chime",
+      "device_id": "chime_kitchen",
+      "address": "4518 Ridgecrest Terrace",
+      "kind": "chime_v2",
+      "firmware_version": "3.18.0",
+      "latitude": 33.7258,
+      "longitude": -84.3428,
+      "location_id": "loc_lee_001",
+      "time_zone": "America/New_York",
+      "alerts": {"connection": "online"},
+      "features": {
+        "ringtones_enabled": true,
+        "wifi_extender_enabled": false
+      },
+      "owned": true,
+      "owner": {"id": 200001, "first_name": "Danielle", "last_name": "Lee"},
+      "settings": {
+        "volume": 8,
+        "ding_audio_id": "ring_classic",
+        "motion_audio_id": null,
+        "linked_doorbots": [500001]
+      },
+      "wifi_signal_strength": -48,
+      "wifi_signal_category": "good",
+      "created_at": "2022-11-18T14:10:00.000Z"
+    }
+  ]
+}

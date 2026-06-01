@@ -1,0 +1,29 @@
+{
+  "location_id": "loc_lee_001",
+  "name": "Lee Home",
+  "address": {
+    "street1": "4518 Ridgecrest Terrace",
+    "street2": "",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30316",
+    "country": "US"
+  },
+  "latitude": 33.7258,
+  "longitude": -84.3428,
+  "time_zone": "America/New_York",
+  "mode": "home",
+  "owner": {
+    "id": 200001,
+    "first_name": "Danielle",
+    "last_name": "Lee",
+    "email": "danielle.lee@gmail.com"
+  },
+  "subscription": {
+    "plan": "protect_basic",
+    "status": "active",
+    "video_history_days": 60
+  },
+  "created_at": "2022-11-18T13:00:00.000Z",
+  "updated_at": "2026-05-23T20:00:00.000Z"
+}

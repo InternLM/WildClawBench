@@ -1,0 +1,38 @@
+{
+  "id": "UC_DLeeAtlanta",
+  "snippet": {
+    "title": "Danielle Lee",
+    "description": "Personal account. Mostly grilling tutorials and Minecraft for the kids.",
+    "customUrl": "@dleeatl",
+    "publishedAt": "2016-03-10T00:00:00Z",
+    "thumbnails": {
+      "default": {"url": "https://yt3.ggpht.com/ytc/dleeatl_default.jpg", "width": 88, "height": 88},
+      "medium": {"url": "https://yt3.ggpht.com/ytc/dleeatl_medium.jpg", "width": 240, "height": 240},
+      "high": {"url": "https://yt3.ggpht.com/ytc/dleeatl_high.jpg", "width": 800, "height": 800}
+    },
+    "country": "US"
+  },
+  "statistics": {
+    "viewCount": "3812",
+    "subscriberCount": "0",
+    "hiddenSubscriberCount": true,
+    "videoCount": "0"
+  },
+  "contentDetails": {
+    "relatedPlaylists": {
+      "likes": "LL_DLeeAtlanta",
+      "uploads": "UU_DLeeAtlanta"
+    }
+  },
+  "brandingSettings": {
+    "channel": {
+      "title": "Danielle Lee",
+      "description": "Personal account.",
+      "keywords": "grilling bbq backyard cooking",
+      "country": "US"
+    },
+    "image": {
+      "bannerExternalUrl": ""
+    }
+  }
+}

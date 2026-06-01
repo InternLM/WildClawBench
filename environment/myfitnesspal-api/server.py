@@ -162,7 +162,10 @@ def get_daily_totals(date: str):
 
 @app.get("/v1/user/nutrition/weekly/{end_date}")
 def get_weekly_summary(end_date: str):
-    return myfitnesspal_data.get_weekly_summary(end_date)
+    try:
+        return myfitnesspal_data.get_weekly_summary(end_date)
+    except ValueError as exc:
+        return JSONResponse(status_code=400, content={"error": str(exc)})
 
 
 @app.get("/v1/user/progress")

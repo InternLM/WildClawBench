@@ -5,3 +5,8 @@ yt-dlp
 modelscope
 python-dotenv
 pyyaml
+httpx
+fastapi
+pytest
+openai
+litellm

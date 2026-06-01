@@ -1,0 +1,4 @@
+L1: Operations & QA
+L2: Document / Receipt Processing
+Persona: Danielle Lee
+APIs: YouTube API, MyFitnessPal API, Ring API

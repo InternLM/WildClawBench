@@ -1,0 +1,45 @@
+{
+  "user_id": 2,
+  "username": "danielle_lee_atl",
+  "display_name": "Danielle Lee",
+  "email": "danielle.lee@gmail.com",
+  "date_of_birth": "1986-07-22",
+  "sex": "male",
+  "height_cm": 182.9,
+  "current_weight_lbs": 198.0,
+  "goal_weight_lbs": 192.0,
+  "activity_level": "very_active",
+  "profile_image_url": "https://mfp-static.example.com/avatars/danielle_lee_atl.jpg",
+  "location": "Atlanta, GA",
+  "joined_date": "2023-09-04",
+  "daily_calorie_goal": 2400,
+  "macro_goals": {
+    "carbs_pct": 45,
+    "fat_pct": 30,
+    "protein_pct": 25
+  },
+  "nutrient_goals": {
+    "calories": 2400,
+    "total_fat_g": 80,
+    "saturated_fat_g": 20,
+    "cholesterol_mg": 200,
+    "sodium_mg": 2300,
+    "total_carbs_g": 270,
+    "dietary_fiber_g": 35,
+    "sugars_g": 60,
+    "protein_g": 150,
+    "potassium_mg": 3500,
+    "vitamin_a_pct": 100,
+    "vitamin_c_pct": 100,
+    "calcium_pct": 100,
+    "iron_pct": 100
+  },
+  "physician_notes": "Borderline elevated cholesterol flagged at physical; Dr. Andre Simmons, Peachtree Wellness Clinic. Monitor saturated fat, dietary cholesterol, and sodium. Fish oil supplement added.",
+  "weekly_weight_goal_lbs": -0.5,
+  "units": {
+    "weight": "lbs",
+    "height": "inches",
+    "water": "cups",
+    "energy": "calories"
+  }
+}

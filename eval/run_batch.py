@@ -833,11 +833,12 @@ def _run_cleanups(cleanups: list) -> None:
 def _setup_litellm_and_mocks(args, config: Config, cleanups: list):
     """For the openclaw backend, optionally bring up a per-batch shared LiteLLM
     sidecar + docker network (+ mock-API stack). Returns
-    (use_litellm, litellm_yaml, network, sidecar, mock_env_dict). Registers
-    teardown callables onto `cleanups`. Falls back gracefully to OpenRouter."""
+    (use_litellm, litellm_yaml, network, sidecar, mock_env_dict, usage_log_path).
+    Registers teardown callables onto `cleanups`. Falls back gracefully to
+    OpenRouter."""
     use_litellm = args.litellm if args.litellm is not None else config.litellm_enabled()
     if not use_litellm:
-        return False, "", "", "", {}
+        return False, "", "", "", {}, ""
 
     import uuid as _uuid
     batch_id = _uuid.uuid4().hex[:12]
@@ -849,16 +850,29 @@ def _setup_litellm_and_mocks(args, config: Config, cleanups: list):
         bedrock_arn=config.bedrock_inference_arn if config.aws_bearer_token else "",
         aws_region=config.bedrock_region,
         openai_api_key=config.openai_api_key,
+        enable_usage_callback=True,
     )
     if not litellm_yaml:
         logger.error("LiteLLM requested but no Bedrock/OpenAI creds resolved; using OpenRouter")
-        return False, "", "", "", {}
+        return False, "", "", "", {}, ""
 
     create_network(network)
     cleanups.append(lambda: remove_network(network))
     config.work_dir.mkdir(parents=True, exist_ok=True)
     cfg_path = config.work_dir / f"litellm-config-{batch_id}.yaml"
     cfg_path.write_text(litellm_yaml, encoding="utf-8")
+
+    callback_src = Path(__file__).resolve().parent.parent / "src" / "utils" / "litellm_usage_callback.py"
+    usage_dir = config.work_dir / f"litellm-usage-{batch_id}"
+    usage_dir.mkdir(parents=True, exist_ok=True)
+    usage_log_path = usage_dir / "usage.jsonl"
+    usage_log_path.touch(exist_ok=True)
+    try:
+        os.chmod(usage_log_path, 0o666)
+        os.chmod(usage_dir, 0o777)
+    except OSError:
+        pass
+
     start_litellm(
         container_name=sidecar,
         network=network,
@@ -867,12 +881,13 @@ def _setup_litellm_and_mocks(args, config: Config, cleanups: list):
         aws_bearer_token=config.aws_bearer_token,
         aws_region=config.bedrock_region,
         openai_api_key=config.openai_api_key,
-        port=config.litellm_port,
+        usage_callback_host_path=str(callback_src),
+        usage_log_host_dir=str(usage_dir),
     )
     cleanups.append(lambda: stop_litellm(sidecar))
-    if not wait_for_litellm_healthy(sidecar, config.litellm_port, timeout=90.0):
+    if not wait_for_litellm_healthy(sidecar, timeout=90.0):
         logger.error("LiteLLM sidecar %s not healthy; using OpenRouter", sidecar)
-        return False, "", "", "", {}
+        return False, "", "", "", {}, ""
     logger.info("LiteLLM sidecar %s ready on network %s", sidecar, network)
 
     mock_env_dict: dict[str, str] = {}
@@ -897,7 +912,7 @@ def _setup_litellm_and_mocks(args, config: Config, cleanups: list):
         else:
             logger.error("Mock image build failed; continuing without mock stack")
 
-    return True, litellm_yaml, network, sidecar, mock_env_dict
+    return True, litellm_yaml, network, sidecar, mock_env_dict, str(usage_log_path)
 
 
 def _start_task_mock_stack(task: dict, network: str, environment_dir) -> tuple[dict, str | None]:
@@ -971,6 +986,7 @@ def main() -> None:
     use_litellm = False
     litellm_yaml = network = sidecar = ""
     mock_env_dict: dict[str, str] = {}
+    usage_log_path = ""
 
     if args.agent_backend == "claudecode":
         backend: BaseAgent = ClaudeCodeAgent(
@@ -987,7 +1003,7 @@ def main() -> None:
         )
     else:
         try:
-            use_litellm, litellm_yaml, network, sidecar, mock_env_dict = (
+            use_litellm, litellm_yaml, network, sidecar, mock_env_dict, usage_log_path = (
                 _setup_litellm_and_mocks(args, config, cleanups)
             )
         except Exception:
@@ -1006,6 +1022,7 @@ def main() -> None:
                 litellm_container_name=sidecar,
                 litellm_network=network,
                 image_model=args.openclaw_image_model,
+                litellm_usage_log=usage_log_path,
             )
         else:
             backend = OpenClawAgent(
