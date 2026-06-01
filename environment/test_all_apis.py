@@ -98,7 +98,7 @@ def discover_envs():
         toml = entry / "service.toml"
         server = entry / "server.py"
         if not toml.is_file() or not server.is_file():
-            continue  # flat-file envs (shopify/fintrack) have no server
+            continue  # skip dirs without a runnable server
         name, port, health = parse_service_toml(toml)
         collections = sorted(entry.glob("*postman_collection.json"))
         envs.append({
