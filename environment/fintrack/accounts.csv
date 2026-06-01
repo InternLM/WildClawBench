@@ -1,9 +1,0 @@
-account_id,name,type,institution,balance,credit_limit,apr,opened_at
-acc-checking,Everyday Checking,checking,Cascade Bank,8412.55,,0,2018-06-01
-acc-savings,High-yield savings,savings,Cascade Bank,22150.30,,4.25,2020-09-12
-acc-cc-visa,Cascade Visa Signature,credit_card,Cascade Bank,-1842.18,15000.00,21.49,2022-04-20
-acc-cc-amex,Amex Gold,credit_card,Amex,-612.04,,0,2023-10-05
-acc-brokerage,Fidelity Brokerage,investment,Fidelity,68290.18,,0,2019-01-15
-acc-roth,Roth IRA,investment,Fidelity,42180.55,,0,2019-01-15
-acc-401k,Orbit Labs 401(k),investment,Empower,128440.10,,0,2024-04-01
-acc-mortgage,Mortgage — 412 Maple Grove,loan,Wells Fargo,-462180.00,,5.875,2024-08-12
