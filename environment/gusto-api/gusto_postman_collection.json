@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "Gusto Payroll API Mock",
+    "description": "Test collection for the mock Gusto Payroll API service. Base URL defaults to http://localhost:8074. In docker-compose, the service is reachable at http://gusto-api:8074.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8074"},
+    {"key": "companyId", "value": "comp-001"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get company", "request": {"method": "GET", "url": "{{baseUrl}}/v1/companies/{{companyId}}"}},
+    {"name": "list company employees", "request": {"method": "GET", "url": "{{baseUrl}}/v1/companies/{{companyId}}/employees"}},
+    {"name": "get employee", "request": {"method": "GET", "url": "{{baseUrl}}/v1/employees/gemp-202"}},
+    {"name": "list company payrolls", "request": {"method": "GET", "url": "{{baseUrl}}/v1/companies/{{companyId}}/payrolls"}},
+    {"name": "list unprocessed payrolls", "request": {"method": "GET", "url": "{{baseUrl}}/v1/companies/{{companyId}}/payrolls?processed=false"}},
+    {"name": "get payroll", "request": {"method": "GET", "url": "{{baseUrl}}/v1/payrolls/pay-401"}},
+    {"name": "create payroll", "request": {"method": "POST", "url": "{{baseUrl}}/v1/companies/{{companyId}}/payrolls",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"pay_period_start\": \"2026-06-01\", \"pay_period_end\": \"2026-06-15\", \"check_date\": \"2026-06-20\"}"}}},
+    {"name": "submit payroll", "request": {"method": "PUT", "url": "{{baseUrl}}/v1/payrolls/pay-404/submit"}},
+    {"name": "list company contractors", "request": {"method": "GET", "url": "{{baseUrl}}/v1/companies/{{companyId}}/contractors"}}
+  ]
+}

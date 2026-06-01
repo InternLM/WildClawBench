@@ -1,0 +1,7 @@
+id,name,box_art_url,rank,viewer_count
+30001,Just Chatting,https://static.example.com/box/justchatting.jpg,1,420000
+30002,Software and Game Development,https://static.example.com/box/gamedev.jpg,2,38000
+30003,Elden Ring,https://static.example.com/box/eldenring.jpg,3,156000
+30004,Cities: Skylines II,https://static.example.com/box/cities2.jpg,4,21000
+30005,Speedrunning,https://static.example.com/box/speedrun.jpg,5,64000
+30006,Strategy,https://static.example.com/box/strategy.jpg,6,18000

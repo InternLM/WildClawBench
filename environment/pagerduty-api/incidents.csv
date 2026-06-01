@@ -1,0 +1,7 @@
+incident_id,incident_number,title,status,urgency,service_id,escalation_policy_id,assigned_to,created_at,resolved_at
+PI001,1042,auth-api token refresh latency above 2s p99,triggered,high,PS001,EP001,PU004,2026-05-27T09:14:00Z,
+PI002,1043,billing-api invoice job backlog growing,acknowledged,high,PS002,EP002,PU002,2026-05-27T07:48:00Z,
+PI003,1041,auth-api elevated 401 rate after deploy,acknowledged,high,PS001,EP001,PU003,2026-05-26T22:05:00Z,
+PI004,1039,notifications-api SMTP timeouts,resolved,low,PS003,EP001,PU004,2026-05-25T14:30:00Z,2026-05-25T15:12:00Z
+PI005,1038,billing-api stale webhook signatures,resolved,low,PS002,EP002,PU002,2026-05-24T11:20:00Z,2026-05-24T12:05:00Z
+PI006,1040,auth-api cookie issuer misconfig in staging,triggered,low,PS001,EP001,,2026-05-26T18:42:00Z,

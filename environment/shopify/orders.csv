@@ -1,0 +1,9 @@
+order_id,order_number,customer_id,financial_status,fulfillment_status,total,subtotal,shipping,tax,discount_total,discount_code,currency,placed_at,fulfilled_at,cancelled_at
+ord-9001,MP-9001,cus-1001,paid,fulfilled,180.00,168.00,8.00,4.00,0.00,,USD,2026-05-02T11:00:00Z,2026-05-03T14:00:00Z,
+ord-9002,MP-9002,cus-1004,paid,fulfilled,148.00,148.00,0.00,0.00,0.00,,USD,2026-05-10T12:30:00Z,2026-05-11T16:00:00Z,
+ord-9003,MP-9003,cus-1002,paid,partially_fulfilled,108.00,96.00,12.00,0.00,0.00,,USD,2026-05-18T09:00:00Z,2026-05-19T11:00:00Z,
+ord-9004,MP-9004,cus-1003,paid,unfulfilled,48.00,48.00,0.00,0.00,0.00,,USD,2026-05-22T10:00:00Z,,
+ord-9005,MP-9005,cus-1001,paid,unfulfilled,168.00,148.00,8.00,12.00,0.00,,USD,2026-05-25T14:00:00Z,,
+ord-9006,MP-9006,cus-1006,paid,unfulfilled,32.00,28.00,4.00,0.00,0.00,WELCOME10,USD,2026-05-20T09:30:00Z,,
+ord-9007,MP-9007,cus-1005,refunded,fulfilled,150.00,150.00,0.00,0.00,0.00,,USD,2026-04-22T10:00:00Z,2026-04-23T12:00:00Z,
+ord-9008,MP-9008,cus-1004,paid,cancelled,0.00,0.00,0.00,0.00,0.00,,USD,2026-05-12T08:00:00Z,,2026-05-12T11:00:00Z

@@ -1,0 +1,7 @@
+id,number,customer_id,status,currency,total,subtotal,total_tax,payment_method,payment_method_title,billing_first_name,billing_last_name,billing_email,date_created
+401,401,301,completed,USD,40.00,36.00,4.00,stripe,Credit Card (Stripe),Emma,Wright,emma.wright@example.com,2026-04-03T10:05:00
+402,402,302,processing,USD,29.99,27.27,2.72,paypal,PayPal,Noah,Kim,noah.kim@example.com,2026-04-16T13:30:00
+403,403,303,on-hold,USD,68.00,61.82,6.18,bacs,Direct Bank Transfer,Ava,Martinez,ava.martinez@example.com,2026-04-21T09:50:00
+404,404,304,pending,USD,14.00,12.73,1.27,stripe,Credit Card (Stripe),Lucas,Brown,lucas.brown@example.com,2026-05-02T16:12:00
+405,405,305,completed,USD,52.00,47.27,4.73,paypal,PayPal,Mia,Chen,mia.chen@example.com,2026-05-11T11:25:00
+406,406,301,refunded,USD,42.00,38.18,3.82,stripe,Credit Card (Stripe),Emma,Wright,emma.wright@example.com,2026-05-19T08:40:00

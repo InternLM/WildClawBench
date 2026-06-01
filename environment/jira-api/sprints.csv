@@ -1,0 +1,5 @@
+id,board_id,name,state,start_date,end_date,goal
+101,1,ENG Sprint 21,closed,2026-05-05T09:00:00Z,2026-05-19T09:00:00Z,Stabilize auth service
+102,1,ENG Sprint 22,active,2026-05-19T09:00:00Z,2026-06-02T09:00:00Z,Ship dual-write shim
+103,1,ENG Sprint 23,future,2026-06-02T09:00:00Z,2026-06-16T09:00:00Z,gRPC migration
+201,2,OPS Continuous,active,2026-05-01T09:00:00Z,,Keep the lights on

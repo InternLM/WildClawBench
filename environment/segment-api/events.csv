@@ -1,0 +1,11 @@
+messageId,type,userId,event,timestamp,properties
+msg_0a1b2c3d01,track,user_1001,Order Completed,2026-05-02T09:14:22Z,order_id=ord_5501;revenue=129.99;currency=USD
+msg_0a1b2c3d02,track,user_1002,Product Viewed,2026-05-03T11:42:05Z,product_id=sku_204;category=footwear
+msg_0a1b2c3d03,identify,user_1003,,2026-05-04T08:30:11Z,email=ana@example.com;plan=pro
+msg_0a1b2c3d04,page,user_1001,,2026-05-05T16:01:48Z,name=Pricing;url=/pricing
+msg_0a1b2c3d05,track,user_1004,Signed Up,2026-05-06T13:25:33Z,source=organic;plan=free
+msg_0a1b2c3d06,track,user_1002,Added to Cart,2026-05-07T10:09:57Z,product_id=sku_204;quantity=2
+msg_0a1b2c3d07,page,user_1005,,2026-05-08T19:44:12Z,name=Home;url=/
+msg_0a1b2c3d08,identify,user_1004,,2026-05-09T07:55:40Z,email=lee@example.com;plan=free
+msg_0a1b2c3d09,track,user_1003,Subscription Started,2026-05-10T14:18:26Z,plan=pro;mrr=49.00;currency=USD
+msg_0a1b2c3d10,track,user_1005,Order Completed,2026-05-11T20:33:09Z,order_id=ord_5502;revenue=58.50;currency=USD

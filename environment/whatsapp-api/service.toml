@@ -1,0 +1,11 @@
+[service]
+name = "whatsapp-api"
+port = 8015
+env_var_name = "WHATSAPP_API_URL"
+healthcheck_path = "/health"
+
+[k8s]
+image = ""
+cpu_request = "25m"
+memory_request = "128Mi"
+memory_limit = "256Mi"

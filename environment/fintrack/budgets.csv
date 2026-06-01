@@ -1,0 +1,17 @@
+month,category_id,limit,spent,remaining
+2026-05,cat-groceries,750,412.18,337.82
+2026-05,cat-dining,400,288.40,111.60
+2026-05,cat-rent,3120,3120.00,0.00
+2026-05,cat-utilities,220,148.62,71.38
+2026-05,cat-fuel,150,92.40,57.60
+2026-05,cat-rideshare,80,46.20,33.80
+2026-05,cat-subscriptions,180,164.92,15.08
+2026-05,cat-fitness,90,90.00,0.00
+2026-05,cat-travel,400,560.00,-160.00
+2026-05,cat-shopping,300,418.55,-118.55
+2026-05,cat-healthcare,200,75.00,125.00
+2026-05,cat-charity,250,250.00,0.00
+2026-04,cat-groceries,750,711.05,38.95
+2026-04,cat-dining,400,402.10,-2.10
+2026-04,cat-shopping,300,189.00,111.00
+2026-04,cat-travel,400,0.00,400.00

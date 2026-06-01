@@ -1,0 +1,6 @@
+sys_id,number,short_description,description,state,priority,assigned_to,opened_by,opened_at,related_incident
+prb-0003001,PRB0003001,Recurring email disconnects,Root cause analysis for repeated Outlook disconnection incidents.,2,1,usr-priya,usr-amelia,2026-05-20T11:00:00Z,inc-0001001
+prb-0003002,PRB0003002,VPN gateway instability after patches,Investigating VPN tunnel failures following gateway updates.,2,2,usr-helena,usr-amelia,2026-05-21T10:00:00Z,inc-0001002
+prb-0003003,PRB0003003,Analytics DB query timeouts,Known error candidate for reporting database timeouts.,4,1,usr-rohit,usr-amelia,2026-05-23T13:00:00Z,inc-0001006
+prb-0003004,PRB0003004,Floor 2 access point reboots,Identifying firmware defect causing AP reboots.,1,3,usr-priya,usr-helena,2026-05-25T11:30:00Z,inc-0001008
+prb-0003005,PRB0003005,VoIP one-way audio pattern,Recurring one-way audio on calls routed through edge SBC.,1,2,usr-helena,usr-jonas,2026-05-26T17:00:00Z,inc-0001010

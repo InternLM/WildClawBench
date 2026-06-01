@@ -1,0 +1,24 @@
+exercise_type_id,exercise_name,category,calories_per_minute_low,calories_per_minute_high,met_value
+1,Running (6 mph / 10 min mile),cardio,10.0,12.0,9.8
+2,Running (7.5 mph / 8 min mile),cardio,12.5,15.0,11.5
+3,Cycling (moderate 12-14 mph),cardio,7.0,9.0,8.0
+4,Cycling (vigorous 14-16 mph),cardio,9.5,12.0,10.0
+5,Walking (3.5 mph brisk),cardio,4.0,5.5,4.3
+6,Weight Training (moderate),strength,5.0,7.0,5.0
+7,Weight Training (vigorous),strength,7.0,9.5,6.0
+8,Swimming (moderate laps),cardio,7.5,10.0,7.0
+9,Elliptical Trainer (moderate),cardio,7.0,9.0,7.0
+10,Yoga (Vinyasa),flexibility,4.5,6.5,4.0
+11,Jump Rope (moderate),cardio,10.0,13.0,10.0
+12,Rowing Machine (moderate),cardio,7.0,9.5,7.0
+13,HIIT (High Intensity Interval Training),cardio,10.0,14.0,12.0
+14,Hiking (moderate terrain),cardio,5.5,8.0,6.0
+15,Basketball (recreational),cardio,6.5,9.0,6.5
+16,Stretching (general),flexibility,2.0,3.0,2.3
+17,Stair Climbing,cardio,8.0,11.0,9.0
+18,Push-ups (moderate effort),strength,5.5,7.5,5.0
+101,Walking (easy pace),cardio,3,4,3
+102,Walking (brisk pace),cardio,4,5.5,4.3
+103,Stationary Bike (light),cardio,4,6,4
+104,Resistance Training (light),strength,3,5,3.5
+105,Stretching / Mobility,flexibility,2,3,2.3

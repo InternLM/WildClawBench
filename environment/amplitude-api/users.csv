@@ -1,0 +1,6 @@
+user_id,device_id,country,platform,version,first_seen,last_seen
+user_2001,dev_aa01,United States,web,4.2.0,2026-04-20T08:00:00Z,2026-05-05T09:45:51Z
+user_2002,dev_bb02,United Kingdom,web,4.2.0,2026-04-25T10:00:00Z,2026-05-03T10:30:05Z
+user_2003,dev_cc03,Canada,web,4.1.8,2026-04-28T14:00:00Z,2026-05-07T11:27:44Z
+user_2004,dev_dd04,Germany,ios,3.9.1,2026-05-01T18:00:00Z,2026-05-06T18:10:09Z
+user_2005,dev_ee05,Australia,android,3.9.1,2026-05-02T07:00:00Z,2026-05-08T07:14:02Z

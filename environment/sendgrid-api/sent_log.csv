@@ -1,0 +1,7 @@
+message_id,to_email,from_email,subject,template_id,status,opens,clicks,sent_at
+msg-aa01,amelia.ortega@example.com,no-reply@orbit-labs.com,"Welcome to Orbit Labs, Amelia!",d-1a2b3c4d5e6f7081,delivered,2,1,2026-05-20T10:01:00Z
+msg-aa02,jonas.pereira@example.com,no-reply@orbit-labs.com,"Reset your Orbit Labs password",d-2b3c4d5e6f708192,delivered,1,1,2026-05-21T09:30:00Z
+msg-aa03,helena.park@example.com,news@orbit-labs.com,"Orbit Labs — May highlights",d-3c4d5e6f70819203,delivered,3,0,2026-05-22T08:00:00Z
+msg-aa04,rohit.bansal@example.com,news@orbit-labs.com,"Orbit Labs — May highlights",d-3c4d5e6f70819203,bounced,0,0,2026-05-22T08:00:05Z
+msg-aa05,noor.aziz@example.com,billing@orbit-labs.com,"Your receipt for invoice INV-9001",d-4d5e6f7081920314,delivered,1,0,2026-05-23T14:00:00Z
+msg-aa06,sofia.rossi@example.com,no-reply@orbit-labs.com,"Welcome to Orbit Labs, Sofia!",d-1a2b3c4d5e6f7081,opened,4,2,2026-05-24T10:00:00Z

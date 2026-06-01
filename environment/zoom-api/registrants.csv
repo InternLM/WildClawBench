@@ -1,0 +1,8 @@
+id,meeting_id,email,first_name,last_name,status,join_time,create_time
+reg-0001,85012345679,jonas.pereira@orbit-labs.com,Jonas,Pereira,approved,,2026-05-21T12:00:00Z
+reg-0002,85012345679,helena.park@orbit-labs.com,Helena,Park,approved,,2026-05-21T12:05:00Z
+reg-0003,85012345679,rohit.bansal@orbit-labs.com,Rohit,Bansal,pending,,2026-05-21T13:00:00Z
+reg-0004,85012345680,buyer@acme.example.com,Dana,Reed,approved,,2026-05-22T10:00:00Z
+reg-0005,85012345680,cto@acme.example.com,Marco,Vidal,approved,,2026-05-22T10:10:00Z
+reg-0006,85012345670,jonas.pereira@orbit-labs.com,Jonas,Pereira,approved,2026-05-22T16:00:30Z,2026-05-15T11:00:00Z
+reg-0007,85012345670,noor.aziz@orbit-labs.com,Noor,Aziz,approved,2026-05-22T16:02:10Z,2026-05-15T11:10:00Z

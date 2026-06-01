@@ -1,0 +1,11 @@
+id,business_id,rating,text,user_name,time_created
+rev-0000000001,biz-the-grove-001,5,Best brunch spot in Pac Heights. The lattes are perfect.,Dana W,2026-04-02T10:15:00
+rev-0000000002,biz-the-grove-001,4,Great food but it gets very busy on weekends.,Marcus T,2026-03-18T09:30:00
+rev-0000000003,biz-the-grove-001,4,Solid menu and friendly staff.,Priya N,2026-02-25T11:00:00
+rev-0000000004,biz-tartine-0002,5,The morning bun is life-changing. Worth the line.,Helena P,2026-04-20T08:45:00
+rev-0000000005,biz-tartine-0002,5,Best bakery in the city, hands down.,Jonas R,2026-03-30T07:50:00
+rev-0000000006,biz-tartine-0002,4,Amazing bread but pricey and always crowded.,Aisha B,2026-01-12T09:10:00
+rev-0000000007,biz-hop-prime-04,5,Old-school prime rib done right. The salad cart is iconic.,Rohit B,2026-05-01T19:30:00
+rev-0000000008,biz-hop-prime-04,4,Great cuts, a bit heavy on the wallet.,Noor A,2026-04-14T20:00:00
+rev-0000000009,biz-la-taq-0007,5,The dorado burrito is unbeatable. Cash only heads up.,Sofia M,2026-05-10T13:20:00
+rev-0000000010,biz-la-taq-0007,4,Authentic and cheap, lines move fast.,Daniel C,2026-04-28T12:45:00

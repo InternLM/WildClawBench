@@ -1,0 +1,7 @@
+id,name,type,color,position,teamId,description
+state-port-backlog,Backlog,backlog,#bec2c8,0,team-ux,Issues that are not yet prioritized
+state-port-todo,Todo,unstarted,#e2e2e2,1,team-ux,Issues ready to be picked up
+state-port-inprogress,In Progress,started,#f2c94c,2,team-ux,Issues actively being worked on
+state-port-inreview,In Review,started,#f2994a,3,team-ux,Issues in code review
+state-port-done,Done,completed,#5e6ad2,4,team-ux,Completed issues
+state-port-canceled,Canceled,canceled,#95a2b3,5,team-ux,Won't fix or otherwise canceled

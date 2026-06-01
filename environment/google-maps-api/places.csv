@@ -1,0 +1,11 @@
+place_id,name,formatted_address,lat,lng,rating,user_ratings_total,types,business_status,price_level
+ChIJplace0000001,Blue Bottle Coffee,66 Mint St San Francisco CA 94103,37.7825,-122.4061,4.4,1820,cafe|food|point_of_interest,OPERATIONAL,2
+ChIJplace0000002,Tartine Bakery,600 Guerrero St San Francisco CA 94110,37.7614,-122.4241,4.5,5400,bakery|food|store,OPERATIONAL,2
+ChIJplace0000003,Ferry Building Marketplace,1 Ferry Building San Francisco CA 94111,37.7955,-122.3937,4.7,21000,shopping_mall|food|point_of_interest,OPERATIONAL,2
+ChIJplace0000004,Golden Gate Park,501 Stanyan St San Francisco CA 94117,37.7694,-122.4862,4.8,42000,park|tourist_attraction|point_of_interest,OPERATIONAL,0
+ChIJplace0000005,SFMOMA,151 3rd St San Francisco CA 94103,37.7857,-122.4011,4.6,18000,museum|tourist_attraction|point_of_interest,OPERATIONAL,2
+ChIJplace0000006,Zuni Cafe,1658 Market St San Francisco CA 94102,37.7726,-122.4218,4.3,3100,restaurant|food|point_of_interest,OPERATIONAL,3
+ChIJplace0000007,Dolores Park,Dolores St and 19th St San Francisco CA 94114,37.7596,-122.4269,4.8,9800,park|point_of_interest,OPERATIONAL,0
+ChIJplace0000008,Philz Coffee,3101 24th St San Francisco CA 94110,37.7525,-122.4127,4.5,2600,cafe|food|store,OPERATIONAL,1
+ChIJplace0000009,House of Prime Rib,1906 Van Ness Ave San Francisco CA 94109,37.7937,-122.4225,4.6,7200,restaurant|food|point_of_interest,OPERATIONAL,4
+ChIJplace0000010,Exploratorium,Pier 15 Embarcadero San Francisco CA 94111,37.8017,-122.3973,4.7,15000,museum|tourist_attraction|point_of_interest,OPERATIONAL,2

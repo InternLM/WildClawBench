@@ -1,0 +1,6 @@
+Id,FirstName,LastName,Company,Email,Phone,Status,LeadSource,Industry,Rating
+00QAx000001AAAAAA1,Sofia,Bauer,Bauer Analytics,sofia.bauer@bauer.example.com,+1-303-555-0201,Open - Not Contacted,Web,Technology,Warm
+00QAx000002BBBBBB2,Liam,Okafor,Okafor Retail Group,liam.okafor@okafor.example.com,+1-404-555-0202,Working - Contacted,Trade Show,Retail,Hot
+00QAx000003CCCCCC3,Aiko,Tanaka,Tanaka Robotics,aiko.tanaka@tanaka.example.com,+1-510-555-0203,Qualified,Referral,Manufacturing,Hot
+00QAx000004DDDDDD4,Noah,Reyes,Reyes Clinics,noah.reyes@reyes.example.com,+1-786-555-0204,Open - Not Contacted,Web,Healthcare,Cold
+00QAx000005EEEEEE5,Emma,Larsson,Larsson Freight,emma.larsson@larsson.example.com,+1-503-555-0205,Working - Contacted,Email,Transportation,Warm

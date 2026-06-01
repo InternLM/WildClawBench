@@ -1,0 +1,6 @@
+id,broadcaster_id,broadcaster_name,creator_id,creator_name,game_id,title,view_count,duration,created_at,url
+ClipAlpha01,40001,PixelPaladin,40004,TacticalTurtle,30003,Insane last-second parry,48200,28.5,2026-05-25T19:12:00Z,https://clips.example.com/ClipAlpha01
+ClipBeta02,40003,SprintQueen,40006,CasualCartographer,30005,New world record by 0.3s,132000,15.0,2026-05-26T11:40:00Z,https://clips.example.com/ClipBeta02
+ClipGamma03,40005,OrbitDev,40002,NightOwlCodes,30002,Live debugging a heisenbug,7600,42.0,2026-05-27T15:48:00Z,https://clips.example.com/ClipGamma03
+ClipDelta04,40001,PixelPaladin,40003,SprintQueen,30003,Chat trolls the boss fight,21900,33.2,2026-05-24T20:05:00Z,https://clips.example.com/ClipDelta04
+ClipEpsilon05,40002,NightOwlCodes,40005,OrbitDev,30002,Rust borrow checker wins again,3100,19.8,2026-05-23T22:30:00Z,https://clips.example.com/ClipEpsilon05

@@ -1,0 +1,7 @@
+id,subject,organizer_name,organizer_address,location,start_date,end_date,is_all_day,is_online,attendees
+AAMkAGevt0000001,Sprint Planning,Alex Carter,alex.carter@contoso.com,Teams Meeting,2026-05-11T14:00:00Z,2026-05-11T15:00:00Z,false,true,priya.nair@contoso.com;diego.santos@contoso.com
+AAMkAGevt0000002,1:1 with Priya,Priya Nair,priya.nair@contoso.com,Office 4B,2026-05-12T10:00:00Z,2026-05-12T10:30:00Z,false,false,alex.carter@contoso.com
+AAMkAGevt0000003,Q3 Roadmap Workshop,Lena Fischer,lena.fischer@contoso.com,Boardroom,2026-05-18T13:00:00Z,2026-05-18T16:00:00Z,false,false,alex.carter@contoso.com;sam.okoro@contoso.com
+AAMkAGevt0000004,Company Holiday,HR,hr@contoso.com,,2026-05-25T00:00:00Z,2026-05-26T00:00:00Z,true,false,
+AAMkAGevt0000005,Customer Demo - Vandelay,Grace Lee,grace.lee@contoso.com,Teams Meeting,2026-05-22T17:00:00Z,2026-05-22T18:00:00Z,false,true,alex.carter@contoso.com;omar.haddad@contoso.com
+AAMkAGevt0000006,All Hands,Alex Carter,alex.carter@contoso.com,Auditorium,2026-05-29T10:00:00Z,2026-05-29T11:00:00Z,false,true,

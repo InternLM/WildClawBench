@@ -1,0 +1,6 @@
+Id,Name,Industry,AnnualRevenue,Phone,Website,BillingCity,BillingState,NumberOfEmployees
+001Ax000001AAAAAA1,Northwind Traders,Retail,5400000,+1-415-555-0190,https://northwind.example.com,San Francisco,CA,120
+001Ax000002BBBBBB2,Initech Systems,Technology,18200000,+1-512-555-0142,https://initech.example.com,Austin,TX,540
+001Ax000003CCCCCC3,Globex Corporation,Manufacturing,76500000,+1-312-555-0173,https://globex.example.com,Chicago,IL,2100
+001Ax000004DDDDDD4,Soylent Health,Healthcare,9800000,+1-617-555-0128,https://soylent.example.com,Boston,MA,310
+001Ax000005EEEEEE5,Umbrella Logistics,Transportation,33400000,+1-206-555-0155,https://umbrella.example.com,Seattle,WA,870

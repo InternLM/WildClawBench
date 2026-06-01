@@ -1,0 +1,6 @@
+id,name,slug,description,url,roles,avatar_url
+1,Amelia Ortega,amelia-ortega,Editor in chief and platform lead.,https://blog.example.com/author/amelia,administrator,https://gravatar.example.com/amelia.png
+2,Jonas Pereira,jonas-pereira,Infrastructure writer and SRE.,https://blog.example.com/author/jonas,editor,https://gravatar.example.com/jonas.png
+3,Helena Park,helena-park,Frontend and accessibility contributor.,https://blog.example.com/author/helena,author,https://gravatar.example.com/helena.png
+4,Noor Aziz,noor-aziz,Developer advocate and tutorial author.,https://blog.example.com/author/noor,author,https://gravatar.example.com/noor.png
+5,Guest Contributor,guest-contributor,Occasional guest posts.,https://blog.example.com/author/guest,contributor,https://gravatar.example.com/guest.png

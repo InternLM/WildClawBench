@@ -1,0 +1,4 @@
+baseId,id,name,primaryFieldId,records_csv
+appNW1studio0001,tblProjects00001,Projects,fldProjName00001,records_projects.csv
+appNW1studio0001,tblTasks00000001,Tasks,fldTaskName00001,records_tasks.csv
+appNW1studio0001,tblContacts00001,Contacts,fldContactNm0001,records_contacts.csv

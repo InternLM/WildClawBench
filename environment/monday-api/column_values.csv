@@ -1,0 +1,26 @@
+item_id,column_id,text,value
+item-1001,status,In Progress,
+item-1001,owner,Helena Park,usr-2
+item-1001,due,2026-05-30,
+item-1001,notes,Blocked on auth service deploy,
+item-1002,status,Todo,
+item-1002,owner,Marco Bianchi,usr-3
+item-1002,due,2026-06-02,
+item-1003,status,Done,
+item-1003,owner,Helena Park,usr-2
+item-1003,due,2026-05-14,
+item-1004,status,Todo,
+item-1004,owner,Amelia Stone,usr-1
+item-1004,due,2026-06-05,
+item-2001,status,Working on it,
+item-2001,owner,Marco Bianchi,usr-3
+item-2001,severity,High,
+item-2002,status,Done,
+item-2002,owner,Helena Park,usr-2
+item-2002,severity,Medium,
+item-3001,status,Todo,
+item-3001,owner,Sara Okonkwo,usr-4
+item-3001,launch,2026-07-01,
+item-3002,status,Done,
+item-3002,owner,Tom Becker,usr-5
+item-3002,launch,2026-05-09,

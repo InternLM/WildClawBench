@@ -1,0 +1,9 @@
+id,candidate_id,job_id,status,current_stage,applied_at,last_activity_at
+app-4001,cand-7001,job-3001,active,Application Review,2026-04-02T10:05:00Z,2026-04-03T09:00:00Z
+app-4002,cand-7005,job-3001,active,Interview,2026-04-15T08:25:00Z,2026-04-20T11:00:00Z
+app-4003,cand-7002,job-3002,active,Interview,2026-04-05T11:35:00Z,2026-04-18T15:30:00Z
+app-4004,cand-7003,job-3003,active,Offer,2026-04-09T09:20:00Z,2026-04-25T10:00:00Z
+app-4005,cand-7007,job-3003,active,Application Review,2026-04-22T13:15:00Z,2026-04-23T08:00:00Z
+app-4006,cand-7004,job-3004,active,Interview,2026-04-12T14:50:00Z,2026-04-21T09:30:00Z
+app-4007,cand-7006,job-3005,active,Application Review,2026-04-18T16:05:00Z,2026-04-19T10:00:00Z
+app-4008,cand-7008,job-3006,rejected,Interview,2026-02-01T10:00:00Z,2026-03-15T12:00:00Z

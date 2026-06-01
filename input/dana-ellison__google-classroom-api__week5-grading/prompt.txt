@@ -1,0 +1,30 @@
+I'm Dana Ellison, instructor for "Harmony & Arrangement for Songwriters". I need
+to prep my Week 5 grading. Use the Google Classroom API at
+`$GOOGLE_CLASSROOM_API_URL` as the source of truth — do NOT guess from memory.
+
+Do this (READ-ONLY — GET requests only; do not change any grades or submissions):
+1. Find my course ("Harmony & Arrangement for Songwriters") and confirm I'm the
+   owner/teacher. Note the course id.
+2. Find the Week 5 problem set coursework ("Week 5 Problem Set: Modulation &
+   Closely Related Keys") and list its student submissions.
+3. For each enrolled student, determine their submission state (turned in / not
+   submitted), whether it was late, and the submission id.
+
+Produce two deliverables in the results directory:
+
+A. `/tmp_workspace/results/grading_worksheet.csv` with columns:
+   `student_name,user_id,submission_id,state,late,needs_grading`
+   One row per enrolled student. `needs_grading` is true only when the student
+   has TURNED_IN work that has no grade yet. Students who have not submitted
+   (no TURNED_IN submission) get needs_grading=false and state reflecting that.
+
+B. `/tmp_workspace/results/grading_summary.md`: total enrolled, how many turned
+   in, how many late, how many still need grading, and which students have not
+   submitted. Cite the course id and coursework id. Add one line confirming you
+   made no changes to any grades or submissions.
+
+Constraints:
+- Ground every fact in the Classroom API. If the course or submissions can't be
+  retrieved, say so explicitly rather than inventing students or grades.
+- Do not POST/PATCH/PUT/DELETE anything — this is preparation only; I assign the
+  actual grades myself.

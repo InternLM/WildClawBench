@@ -1,0 +1,5 @@
+id,workspace_id,display_name,short_name,preview_url,time_zone,created_on,last_published,custom_domains
+650a1f0000000000000001a1,ws_000001,Northwind Studio,northwind-studio,https://northwind-studio.webflow.io,America/New_York,2026-01-15T10:00:00.000Z,2026-05-20T14:30:00.000Z,www.northwind.example.com
+650a1f0000000000000001a2,ws_000001,Acme Docs,acme-docs,https://acme-docs.webflow.io,America/Los_Angeles,2026-02-02T09:20:00.000Z,2026-05-22T11:05:00.000Z,docs.acme.example.com
+650a1f0000000000000001a3,ws_000002,Lumen Bakery,lumen-bakery,https://lumen-bakery.webflow.io,Europe/Berlin,2026-03-11T13:45:00.000Z,2026-05-18T08:15:00.000Z,
+650a1f0000000000000001a4,ws_000002,Trailhead Outdoors,trailhead-outdoors,https://trailhead-outdoors.webflow.io,America/Denver,2026-04-01T16:00:00.000Z,2026-05-25T19:40:00.000Z,shop.trailhead.example.com

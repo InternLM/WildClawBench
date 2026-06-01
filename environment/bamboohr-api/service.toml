@@ -1,0 +1,11 @@
+[service]
+name = "bamboohr-api"
+port = 8072
+env_var_name = "BAMBOOHR_API_URL"
+healthcheck_path = "/health"
+
+[k8s]
+image = ""
+cpu_request = "25m"
+memory_request = "128Mi"
+memory_limit = "256Mi"

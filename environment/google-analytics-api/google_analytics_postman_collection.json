@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Google Analytics Mock API",
+    "description": "Test collection for the mock GA4 Analytics Data API service. Base URL defaults to http://localhost:8068. In docker-compose, the service is reachable at http://google-analytics-api:8068.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8068"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get property", "request": {"method": "GET", "url": "{{baseUrl}}/v1beta/properties/412233445"}},
+    {"name": "get metadata", "request": {"method": "GET", "url": "{{baseUrl}}/v1beta/properties/412233445/metadata"}},
+    {"name": "run report by country", "request": {"method": "POST", "url": "{{baseUrl}}/v1beta/properties/412233445:runReport",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"dimensions\": [{\"name\": \"country\"}], \"metrics\": [{\"name\": \"sessions\"}, {\"name\": \"activeUsers\"}], \"dateRanges\": [{\"startDate\": \"2026-05-20\", \"endDate\": \"2026-05-23\"}]}"}}},
+    {"name": "run report by date and device", "request": {"method": "POST", "url": "{{baseUrl}}/v1beta/properties/412233445:runReport",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"dimensions\": [{\"name\": \"date\"}, {\"name\": \"deviceCategory\"}], \"metrics\": [{\"name\": \"screenPageViews\"}, {\"name\": \"eventCount\"}]}"}}},
+    {"name": "run realtime report", "request": {"method": "POST", "url": "{{baseUrl}}/v1beta/properties/412233445:runRealtimeReport",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"dimensions\": [{\"name\": \"country\"}], \"metrics\": [{\"name\": \"activeUsers\"}]}"}}},
+    {"name": "batch run reports", "request": {"method": "POST", "url": "{{baseUrl}}/v1beta/properties/412233445:batchRunReports",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"requests\": [{\"dimensions\": [{\"name\": \"country\"}], \"metrics\": [{\"name\": \"sessions\"}]}, {\"dimensions\": [{\"name\": \"pagePath\"}], \"metrics\": [{\"name\": \"screenPageViews\"}]}]}"}}}
+  ]
+}

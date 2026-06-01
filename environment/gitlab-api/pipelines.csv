@@ -1,0 +1,8 @@
+id,project_id,ref,sha,status,source,duration,created_at,updated_at
+9001,101,main,a1b2c3d4e5f6,success,push,412,2026-05-26T08:30:00.000Z,2026-05-26T08:37:00.000Z
+9002,101,feature/dual-write-shim,b2c3d4e5f6a1,running,merge_request_event,0,2026-05-26T09:05:00.000Z,2026-05-26T09:05:00.000Z
+9003,101,feature/session-cleanup,c3d4e5f6a1b2,failed,push,188,2026-05-25T17:00:00.000Z,2026-05-25T17:03:00.000Z
+9010,102,main,d4e5f6a1b2c3,success,push,520,2026-05-25T14:30:00.000Z,2026-05-25T14:39:00.000Z
+9011,102,feature/grpc-dual-serve,e5f6a1b2c3d4,failed,merge_request_event,240,2026-05-23T09:00:00.000Z,2026-05-23T09:04:00.000Z
+9020,103,main,f6a1b2c3d4e5,success,push,305,2026-05-26T07:45:00.000Z,2026-05-26T07:50:00.000Z
+9021,103,feature/router-v2,a1c3e5b2d4f6,running,merge_request_event,0,2026-05-26T08:10:00.000Z,2026-05-26T08:10:00.000Z

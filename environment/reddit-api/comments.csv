@@ -1,0 +1,12 @@
+id,post_id,parent_id,author,body,score,created_utc
+t1_c001,t3_p001,t3_p001,grpcfan,Streaming and codegen alone made the switch worth it for us.,140,1716801000
+t1_c002,t3_p001,t1_c001,skeptic9,Did you measure latency wins or was it mostly DX?,38,1716801500
+t1_c003,t3_p001,t3_p001,oldschool,REST with proper caching still wins for public APIs imo.,72,1716802000
+t1_c004,t3_p002,t3_p002,monorepoer,We use Bazel with one package per service and shared libs at the root.,55,1716811000
+t1_c005,t3_p002,t1_c004,curiousdev,How long are your CI runs with that setup?,21,1716811800
+t1_c006,t3_p003,t3_p003,quietpc,What drives did you go with for the 8 bays?,44,1716701000
+t1_c007,t3_p003,t1_c006,rackmonkey,Four refurb enterprise drives plus four new ones for balance.,30,1716701600
+t1_c008,t3_p004,t3_p004,labeledlife,Learned this the hard way too. Brother label maker changed my life.,18,1716721000
+t1_c009,t3_p005,t3_p005,greenthumb,Those look great. Which variety did you grow?,25,1716651000
+t1_c010,t3_p005,t1_c009,leafyleo,Sungold cherries. They thrive in containers.,12,1716651500
+t1_c011,t3_p006,t3_p006,botanybob,Looks like a squash seedling from your compost.,9,1716661000

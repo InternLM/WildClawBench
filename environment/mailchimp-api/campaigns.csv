@@ -1,0 +1,5 @@
+id,list_id,type,status,subject_line,from_name,reply_to,title,emails_sent,send_time,create_time
+camp-sep-news,list-newsletter,regular,sent,September Highlights,Orbit Labs,news@orbit-labs.com,September Newsletter,5,2025-09-28T15:00:00.000Z,2025-09-25T10:00:00.000Z
+camp-oct-news,list-newsletter,regular,sent,October Roundup,Orbit Labs,news@orbit-labs.com,October Newsletter,5,2025-10-30T15:00:00.000Z,2025-10-27T10:00:00.000Z
+camp-launch,list-product,regular,sent,Introducing Smart Sync,Orbit Product,product@orbit-labs.com,Smart Sync Launch,4,2025-10-15T16:00:00.000Z,2025-10-12T10:00:00.000Z
+camp-nov-draft,list-newsletter,regular,save,November Preview,Orbit Labs,news@orbit-labs.com,November Newsletter,0,,2025-11-01T10:00:00.000Z

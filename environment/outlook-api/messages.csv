@@ -1,0 +1,9 @@
+id,subject,from_name,from_address,to_name,to_address,body_preview,content_type,is_read,importance,received_date
+AAMkAGmsg0000001,Q2 Budget Review,Priya Nair,priya.nair@contoso.com,Alex Carter,alex.carter@contoso.com,Please find attached the Q2 budget for your review before Friday.,html,false,high,2026-05-04T08:30:00Z
+AAMkAGmsg0000002,Re: Sprint Planning,Diego Santos,diego.santos@contoso.com,Alex Carter,alex.carter@contoso.com,Sounds good I will prepare the backlog ahead of the meeting.,html,true,normal,2026-05-05T13:10:00Z
+AAMkAGmsg0000003,Welcome to the team!,Mei Tanaka,mei.tanaka@contoso.com,Alex Carter,alex.carter@contoso.com,Excited to have you onboard. Here is your first-week guide.,html,true,normal,2026-05-06T09:00:00Z
+AAMkAGmsg0000004,Invoice INV-2041 Past Due,Billing,billing@vandelay.com,Alex Carter,alex.carter@contoso.com,Our records show invoice INV-2041 is now 15 days past due.,html,false,high,2026-05-09T11:45:00Z
+AAMkAGmsg0000005,Lunch next week?,Sam Okoro,sam.okoro@contoso.com,Alex Carter,alex.carter@contoso.com,Are you free for lunch on Tuesday or Wednesday next week?,text,true,low,2026-05-12T16:20:00Z
+AAMkAGmsg0000006,Security advisory: rotate keys,Security Team,security@contoso.com,Alex Carter,alex.carter@contoso.com,Please rotate your API keys before the end of the month.,html,false,high,2026-05-15T07:55:00Z
+AAMkAGmsg0000007,Conference travel approved,Lena Fischer,lena.fischer@contoso.com,Alex Carter,alex.carter@contoso.com,Your travel request for the May conference has been approved.,html,true,normal,2026-05-18T10:30:00Z
+AAMkAGmsg0000008,Weekly metrics digest,Analytics,analytics@contoso.com,Alex Carter,alex.carter@contoso.com,Signups are up 12 percent week over week. Full report inside.,html,true,normal,2026-05-25T06:00:00Z

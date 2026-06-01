@@ -1,0 +1,9 @@
+id,company_id,first_name,last_name,email,department,job_title,rate,payment_unit,flsa_status,start_date,terminated
+gemp-201,comp-001,Amelia,Ortega,amelia.ortega@orbitlabs.com,Engineering,VP of Engineering,210000.00,Year,Exempt,2019-03-04,false
+gemp-202,comp-001,Jonas,Pereira,jonas.pereira@orbitlabs.com,Engineering,Staff Software Engineer,185000.00,Year,Exempt,2020-06-15,false
+gemp-203,comp-001,Helena,Park,helena.park@orbitlabs.com,Engineering,Senior Software Engineer,165000.00,Year,Exempt,2021-01-11,false
+gemp-204,comp-001,Rohit,Bansal,rohit.bansal@orbitlabs.com,Engineering,Software Engineer,140000.00,Year,Exempt,2022-09-19,false
+gemp-205,comp-001,Noor,Aziz,noor.aziz@orbitlabs.com,People,People Operations Manager,120000.00,Year,Exempt,2020-02-03,false
+gemp-206,comp-001,Diego,Santos,diego.santos@orbitlabs.com,Sales,Account Executive,95000.00,Year,Exempt,2021-11-08,false
+gemp-207,comp-001,Tariq,Hassan,tariq.hassan@orbitlabs.com,Support,Support Specialist,32.50,Hour,Nonexempt,2022-03-14,false
+gemp-208,comp-001,Lena,Fischer,lena.fischer@orbitlabs.com,People,Recruiter,90000.00,Year,Exempt,2023-10-02,false

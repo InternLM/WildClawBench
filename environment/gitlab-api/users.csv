@@ -1,0 +1,6 @@
+id,username,name,email,state,is_admin,created_at
+201,amelia-ortega,Amelia Ortega,amelia.ortega@orbit-labs.com,active,true,2024-01-10T10:00:00.000Z
+202,jonas-pereira,Jonas Pereira,jonas.pereira@orbit-labs.com,active,false,2024-02-04T11:30:00.000Z
+203,helena-park,Helena Park,helena.park@orbit-labs.com,active,false,2024-03-12T14:20:00.000Z
+204,rohit-bansal,Rohit Bansal,rohit.bansal@orbit-labs.com,active,false,2024-05-02T09:10:00.000Z
+205,noor-aziz,Noor Aziz,noor.aziz@orbit-labs.com,blocked,false,2024-06-18T16:45:00.000Z

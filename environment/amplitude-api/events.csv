@@ -1,0 +1,11 @@
+event_id,user_id,device_id,event_type,event_time,event_properties
+ev_900001,user_2001,dev_aa01,session_start,2026-05-02T08:00:00Z,platform=web
+ev_900002,user_2001,dev_aa01,page_view,2026-05-02T08:01:12Z,page=home
+ev_900003,user_2002,dev_bb02,signup_completed,2026-05-03T10:22:40Z,plan=free
+ev_900004,user_2002,dev_bb02,feature_used,2026-05-03T10:30:05Z,feature=export
+ev_900005,user_2003,dev_cc03,purchase,2026-05-04T14:11:19Z,revenue=89.00;currency=USD
+ev_900006,user_2001,dev_aa01,purchase,2026-05-05T09:45:51Z,revenue=24.50;currency=USD
+ev_900007,user_2004,dev_dd04,session_start,2026-05-06T18:02:33Z,platform=ios
+ev_900008,user_2004,dev_dd04,feature_used,2026-05-06T18:10:09Z,feature=share
+ev_900009,user_2003,dev_cc03,page_view,2026-05-07T11:27:44Z,page=pricing
+ev_900010,user_2005,dev_ee05,signup_completed,2026-05-08T07:14:02Z,plan=pro

@@ -1,0 +1,4 @@
+template_id,name,description,shared,owner_name,created_time
+tmpl-msa,Master Services Agreement,Standard MSA for new enterprise customers,true,Amelia Ortega,2026-01-10T09:00:00Z
+tmpl-nda,Mutual NDA,Two-way confidentiality agreement,true,Jonas Pereira,2026-01-12T10:30:00Z
+tmpl-vendor,Vendor Onboarding Form,Vendor compliance and banking details,false,Helena Park,2026-02-01T13:00:00Z

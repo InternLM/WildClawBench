@@ -1,0 +1,4 @@
+id,title,description,layout_type,author,widget_count,is_read_only,created,modified
+abc-123-def,Platform Overview,Top-level platform health and SLOs,ordered,amelia-ortega,12,false,2025-11-01T10:00:00+00:00,2026-05-26T09:00:00+00:00
+ghi-456-jkl,Auth Service Deep Dive,Latency and error breakdown for auth-service,ordered,helena-park,8,false,2025-11-10T10:00:00+00:00,2026-05-25T15:00:00+00:00
+mno-789-pqr,Infra Hosts,CPU memory and disk across hosts,free,rohit-bansal,15,true,2025-12-01T10:00:00+00:00,2026-05-24T12:00:00+00:00

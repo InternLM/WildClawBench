@@ -1,0 +1,9 @@
+id,firstName,lastName,headline,location,industry,connectedAt,organizationId
+urn:li:person:jonas-pereira,Jonas,Pereira,Senior Infrastructure Engineer at Orbit Labs,Lisbon Portugal,Software Development,2024-02-11T10:00:00.000Z,5001
+urn:li:person:helena-park,Helena,Park,Staff Frontend Engineer | Accessibility,Austin Texas,Software Development,2023-08-19T14:30:00.000Z,5001
+urn:li:person:rohit-bansal,Rohit,Bansal,Site Reliability Engineer,Bangalore India,Software Development,2024-05-02T09:15:00.000Z,5001
+urn:li:person:noor-aziz,Noor,Aziz,Developer Advocate at Orbit Labs,Dubai UAE,Software Development,2023-11-30T16:00:00.000Z,5001
+urn:li:person:dana-li,Dana,Li,Engineering Manager at Northwind Systems,San Francisco California,Software Development,2022-06-14T11:00:00.000Z,5002
+urn:li:person:marco-ferri,Marco,Ferri,Product Lead at Helix Analytics,Milan Italy,Computer Software,2023-03-21T08:45:00.000Z,5003
+urn:li:person:sara-koenig,Sara,Koenig,CTO and Co-founder at Brightloop,Berlin Germany,Software Development,2021-09-09T13:20:00.000Z,5004
+urn:li:person:tom-becker,Tom,Becker,Recruiter at Orbit Labs,Remote,Staffing and Recruiting,2024-01-05T10:30:00.000Z,5001

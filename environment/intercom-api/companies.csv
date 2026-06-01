@@ -1,0 +1,5 @@
+id,company_id,name,plan,monthly_spend,user_count,industry,created_at
+company-brightpath,BP-001,Brightpath,Pro,499.0,2,Software,2025-09-01T08:00:00.000Z
+company-nimbus,NB-002,Nimbus Co,Growth,199.0,2,Marketing,2025-09-20T08:00:00.000Z
+company-helio,HL-003,Helio Labs,Enterprise,1499.0,2,Hardware,2025-10-05T08:00:00.000Z
+company-vela,VT-004,Vela Tech,Starter,49.0,1,Consulting,2025-11-10T08:00:00.000Z

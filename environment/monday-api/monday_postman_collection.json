@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "monday.com Mock API",
+    "description": "Test collection for the mock monday.com work-OS API service (REST-shaped). Base URL defaults to http://localhost:8080. In docker-compose, the service is reachable at http://monday-api:8080.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8080"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list workspaces", "request": {"method": "GET", "url": "{{baseUrl}}/v2/workspaces"}},
+    {"name": "list boards", "request": {"method": "GET", "url": "{{baseUrl}}/v2/boards?workspace_id=ws-1"}},
+    {"name": "get board", "request": {"method": "GET", "url": "{{baseUrl}}/v2/boards/board-101"}},
+    {"name": "board items", "request": {"method": "GET", "url": "{{baseUrl}}/v2/boards/board-101/items"}},
+    {"name": "list items", "request": {"method": "GET", "url": "{{baseUrl}}/v2/items?board_id=board-101&group_id=grp-todo"}},
+    {"name": "get item", "request": {"method": "GET", "url": "{{baseUrl}}/v2/items/item-1001"}},
+    {"name": "create item", "request": {"method": "POST", "url": "{{baseUrl}}/v2/items",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"board_id\": \"board-101\", \"item_name\": \"Add rate limiting to API gateway\", \"group_id\": \"grp-todo\", \"column_values\": {\"status\": {\"text\": \"Todo\"}, \"owner\": {\"text\": \"Helena Park\", \"value\": \"usr-2\"}}}"}}},
+    {"name": "update item (change status)", "request": {"method": "PUT", "url": "{{baseUrl}}/v2/items/item-1002",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"column_id\": \"status\", \"text\": \"In Progress\"}"}}},
+    {"name": "update item (move group)", "request": {"method": "PUT", "url": "{{baseUrl}}/v2/items/item-1002",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"group_id\": \"grp-doing\"}"}}},
+    {"name": "delete item", "request": {"method": "DELETE", "url": "{{baseUrl}}/v2/items/item-1004"}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/v2/users"}}
+  ]
+}

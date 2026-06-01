@@ -1,0 +1,30 @@
+exercise_id,date,exercise_type_id,exercise_name,duration_minutes,calories_burned,notes
+1,2025-03-30,1,Running (6 mph / 10 min mile),35,385,Morning run around the lake
+2,2025-03-31,6,Weight Training (moderate),45,270,Upper body - bench press and rows
+3,2025-04-01,3,Cycling (moderate 12-14 mph),40,320,Stationary bike at gym
+4,2025-04-03,1,Running (6 mph / 10 min mile),30,330,Easy pace neighborhood run
+5,2025-04-04,6,Weight Training (moderate),50,300,Leg day - squats and deadlifts
+6,2025-04-05,5,Walking (3.5 mph brisk),60,285,Weekend hike at Barton Creek
+7,2025-04-07,1,Running (6 mph / 10 min mile),40,440,Tempo run intervals
+8,2025-04-08,6,Weight Training (moderate),45,270,Push day - shoulders and chest
+9,2025-04-10,3,Cycling (moderate 12-14 mph),35,280,Morning spin class
+10,2025-04-11,6,Weight Training (moderate),50,300,Pull day - back and biceps
+11,2025-04-12,14,Hiking (moderate terrain),90,585,Weekend trail hike
+12,2025-04-14,1,Running (6 mph / 10 min mile),35,385,Recovery pace run
+13,2025-04-15,6,Weight Training (moderate),45,270,Full body circuit
+14,2025-04-17,1,Running (6 mph / 10 min mile),45,495,Long run - felt great
+15,2025-04-18,6,Weight Training (moderate),40,240,Upper body focus
+16,2025-04-20,5,Walking (3.5 mph brisk),45,214,Sunday walk with dog
+17,2025-04-21,1,Running (6 mph / 10 min mile),30,330,Quick morning run
+18,2025-04-22,6,Weight Training (moderate),50,300,Leg day
+19,2025-04-24,3,Cycling (moderate 12-14 mph),45,360,Evening bike ride
+20,2025-04-25,6,Weight Training (moderate),45,270,Push pull combo
+21,2025-04-27,1,Running (6 mph / 10 min mile),40,440,Sunday morning run - new PR on 5K segment
+22,2025-04-28,6,Weight Training (moderate),45,270,Upper body and core
+101,2026-03-01,101,Walking (easy pace),20,70,Short neighborhood walk
+102,2026-03-05,105,Stretching / Mobility,15,35,Light mobility work
+103,2026-03-10,101,Walking (easy pace),25,88,Post-dinner walk
+104,2026-03-15,102,Walking (brisk pace),20,95,Brisk walk
+105,2026-03-21,103,Stationary Bike (light),20,100,Light cycling
+23,2026-05-17,16,Stretching (general),30,75,PT rotator cuff rehab - session 1/2 this week (mfp_001)
+24,2026-05-19,16,Stretching (general),30,75,PT rotator cuff rehab - session 2/2 this week (mfp_001)

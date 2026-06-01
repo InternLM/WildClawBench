@@ -1,0 +1,6 @@
+id,event_id,name,quantity_total,quantity_sold,cost,fee,free,sales_start,sales_end
+tc-001,evt-7000001,Standard,120,86,2500,250,false,2026-04-01T10:00:00Z,2026-06-04T01:00:00Z
+tc-002,evt-7000001,Student,30,18,1000,100,false,2026-04-01T10:00:00Z,2026-06-04T01:00:00Z
+tc-003,evt-7000002,Workshop seat,40,32,7500,650,false,2026-04-15T10:00:00Z,2026-06-11T17:00:00Z
+tc-004,evt-7000003,RSVP,80,0,0,0,true,2026-05-20T10:00:00Z,2026-07-09T01:00:00Z
+tc-005,evt-7000004,RSVP,30,21,0,0,true,2026-05-10T10:00:00Z,2026-05-31T15:00:00Z

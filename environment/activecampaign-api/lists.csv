@@ -1,0 +1,6 @@
+id,name,stringid,subscriber_count,sender_url,sender_reminder,created_timestamp
+1,Newsletter Subscribers,newsletter-subscribers,5210,https://acme.example.com,You signed up on our website.,2026-01-10T09:00:00-05:00
+2,Product Updates,product-updates,3140,https://acme.example.com/product,You opted in for product news.,2026-02-01T09:00:00-05:00
+3,Webinar Leads,webinar-leads,880,https://acme.example.com/webinars,You registered for a webinar.,2026-03-12T09:00:00-05:00
+4,Trial Users,trial-users,1420,https://acme.example.com/trial,You started a free trial.,2026-04-02T09:00:00-05:00
+5,Churned Customers,churned-customers,640,https://acme.example.com/winback,We miss you - here are updates.,2026-04-22T09:00:00-05:00

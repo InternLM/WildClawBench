@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "PayPal Mock API",
+    "description": "Test collection for the mock PayPal API service. Base URL defaults to http://localhost:8042. In docker-compose, the service is reachable at http://paypal-api:8042.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8042"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "create checkout order", "request": {"method": "POST", "url": "{{baseUrl}}/v2/checkout/orders",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"intent\": \"CAPTURE\", \"purchase_units\": [{\"amount\": {\"currency_code\": \"USD\", \"value\": \"42.00\"}, \"description\": \"New order\"}]}"}}},
+    {"name": "get checkout order", "request": {"method": "GET", "url": "{{baseUrl}}/v2/checkout/orders/ORDER-8AB54321CD987654E"}},
+    {"name": "capture order", "request": {"method": "POST", "url": "{{baseUrl}}/v2/checkout/orders/ORDER-8AB54321CD987654E/capture",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{}"}}},
+    {"name": "create refund", "request": {"method": "POST", "url": "{{baseUrl}}/v2/payments/refunds",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"capture_id\": \"CAP_3C679384HN8401234\", \"amount\": {\"currency_code\": \"USD\", \"value\": \"5.00\"}, \"note_to_payer\": \"Goodwill credit\"}"}}},
+    {"name": "get refund", "request": {"method": "GET", "url": "{{baseUrl}}/v2/payments/refunds/REF_1A234567BC890123"}},
+    {"name": "list invoices", "request": {"method": "GET", "url": "{{baseUrl}}/v2/invoicing/invoices?status=PAID"}},
+    {"name": "create invoice", "request": {"method": "POST", "url": "{{baseUrl}}/v2/invoicing/invoices",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"detail\": {\"currency_code\": \"USD\", \"note\": \"Net 30\"}, \"primary_recipients\": [{\"billing_info\": {\"email_address\": \"priya.kapoor@example.com\"}}], \"amount\": {\"currency_code\": \"USD\", \"value\": \"60.00\"}, \"due_date\": \"2026-06-30\"}"}}},
+    {"name": "create payout", "request": {"method": "POST", "url": "{{baseUrl}}/v1/payments/payouts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"sender_batch_header\": {\"sender_batch_id\": \"Payouts_2026_05_28\", \"email_subject\": \"You have a payout\"}, \"items\": [{\"amount\": {\"currency_code\": \"USD\", \"value\": \"100.00\"}, \"receiver\": \"partner@orbit-labs.com\"}]}"}}}
+  ]
+}

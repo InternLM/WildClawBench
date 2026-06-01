@@ -1,0 +1,11 @@
+id,email,phone_number,first_name,last_name,organization,title,city,region,country,created,updated
+01HZPROF000000000000000001,jane.doe@example.com,+14155550101,Jane,Doe,Contoso,Marketing Lead,San Francisco,California,United States,2026-03-01T09:00:00Z,2026-05-10T12:00:00Z
+01HZPROF000000000000000002,john.smith@example.com,+14155550102,John,Smith,Initech,Sales Rep,Austin,Texas,United States,2026-03-05T10:30:00Z,2026-05-12T08:15:00Z
+01HZPROF000000000000000003,amara.okafor@example.com,+447700900103,Amara,Okafor,Globex,Designer,London,England,United Kingdom,2026-03-10T14:20:00Z,2026-05-15T16:40:00Z
+01HZPROF000000000000000004,liu.wei@example.com,+8613800000104,Liu,Wei,Stark,Engineer,Shanghai,Shanghai,China,2026-03-15T07:45:00Z,2026-05-18T09:05:00Z
+01HZPROF000000000000000005,maria.garcia@example.com,+34600000105,Maria,Garcia,Wonka,Buyer,Madrid,Madrid,Spain,2026-03-20T11:10:00Z,2026-05-20T13:25:00Z
+01HZPROF000000000000000006,noah.cohen@example.com,+972500000106,Noah,Cohen,Hooli,Analyst,Tel Aviv,Tel Aviv,Israel,2026-04-01T08:00:00Z,2026-05-22T10:50:00Z
+01HZPROF000000000000000007,sophie.martin@example.com,+33600000107,Sophie,Martin,Acme,Owner,Paris,Ile-de-France,France,2026-04-08T15:30:00Z,2026-05-24T17:00:00Z
+01HZPROF000000000000000008,raj.patel@example.com,+919800000108,Raj,Patel,Vandelay,CTO,Mumbai,Maharashtra,India,2026-04-12T06:20:00Z,2026-05-25T07:30:00Z
+01HZPROF000000000000000009,emma.wilson@example.com,+61400000109,Emma,Wilson,Contoso,Coordinator,Sydney,New South Wales,Australia,2026-04-18T22:00:00Z,2026-05-26T19:15:00Z
+01HZPROF000000000000000010,lucas.silva@example.com,+5511900000110,Lucas,Silva,Globex,Manager,Sao Paulo,Sao Paulo,Brazil,2026-04-25T13:40:00Z,2026-05-27T11:00:00Z

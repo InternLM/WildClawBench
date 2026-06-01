@@ -1,0 +1,15 @@
+{
+  "id": "ACCT-9f8a1c2b-3d4e-5f60-7a8b-9c0d1e2f3a4b",
+  "account_number": "PA3XYZ7QWERT",
+  "status": "ACTIVE",
+  "currency": "USD",
+  "cash": "25340.75",
+  "portfolio_value": "98765.40",
+  "buying_power": "50681.50",
+  "equity": "98765.40",
+  "long_market_value": "73424.65",
+  "pattern_day_trader": false,
+  "trading_blocked": false,
+  "account_blocked": false,
+  "created_at": "2025-07-15T13:00:00Z"
+}

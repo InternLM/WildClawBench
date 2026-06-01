@@ -1,0 +1,10 @@
+id,file_id,type,role,email,display_name
+perm-001,folder-eng,user,owner,amelia@orbit-labs.com,Amelia Ortega
+perm-002,folder-eng,user,writer,jonas@orbit-labs.com,Jonas Pereira
+perm-003,folder-eng,user,writer,helena@orbit-labs.com,Helena Park
+perm-004,file-rfc-auth,user,owner,amelia@orbit-labs.com,Amelia Ortega
+perm-005,file-rfc-auth,user,commenter,jonas@orbit-labs.com,Jonas Pereira
+perm-006,file-rfc-billing,user,owner,jonas@orbit-labs.com,Jonas Pereira
+perm-007,file-rfc-billing,user,writer,amelia@orbit-labs.com,Amelia Ortega
+perm-008,file-budget,domain,reader,orbit-labs.com,Orbit Labs
+perm-009,file-trace,user,owner,helena@orbit-labs.com,Helena Park

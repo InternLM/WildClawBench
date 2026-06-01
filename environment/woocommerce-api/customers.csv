@@ -1,0 +1,6 @@
+id,first_name,last_name,email,username,role,billing_city,billing_country,is_paying_customer,date_created
+301,Emma,Wright,emma.wright@example.com,emmaw,customer,Portland,US,true,2026-01-03T10:00:00
+302,Noah,Kim,noah.kim@example.com,noahk,customer,Seattle,US,true,2026-01-19T11:20:00
+303,Ava,Martinez,ava.martinez@example.com,avam,customer,Austin,US,false,2026-02-07T09:15:00
+304,Lucas,Brown,lucas.brown@example.com,lucasb,customer,Denver,US,true,2026-03-02T14:45:00
+305,Mia,Chen,mia.chen@example.com,miac,customer,Boston,US,false,2026-03-28T08:30:00

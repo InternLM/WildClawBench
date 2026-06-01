@@ -1,0 +1,6 @@
+component_key,file_key,node_id,name,description
+comp-btn-primary,FK004vwxyz12,10:21,Button / Primary,Primary call to action button
+comp-btn-secondary,FK004vwxyz12,10:22,Button / Secondary,Secondary action button
+comp-input-text,FK004vwxyz12,10:30,Input / Text,Single line text input field
+comp-card-basic,FK004vwxyz12,10:41,Card / Basic,Basic content card container
+comp-nav-bar,FK001abcdefg,5:12,Nav / Bottom Bar,Bottom navigation bar for mobile

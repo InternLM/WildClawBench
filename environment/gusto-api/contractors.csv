@@ -1,0 +1,5 @@
+id,company_id,first_name,last_name,business_name,type,email,hourly_rate,wage_type,start_date
+gcon-501,comp-001,Sam,Whitaker,,Individual,sam.whitaker@example.com,85.00,Hourly,2025-02-01
+gcon-502,comp-001,,,Brightline Design LLC,Business,billing@brightlinedesign.com,0.00,Fixed,2025-06-15
+gcon-503,comp-001,Ingrid,Solberg,,Individual,ingrid.solberg@example.com,95.00,Hourly,2025-09-10
+gcon-504,comp-001,,,Northgate Consulting Group,Business,accounts@northgate.example.com,0.00,Fixed,2026-01-20

@@ -1,0 +1,6 @@
+user_id,name,email,role,time_zone,job_title
+PU001,Amelia Ortega,amelia.ortega@orbit-labs.com,admin,America/Los_Angeles,SRE Lead
+PU002,Jonas Pereira,jonas.pereira@orbit-labs.com,user,America/Los_Angeles,Backend Engineer
+PU003,Helena Park,helena.park@orbit-labs.com,user,Europe/Berlin,Platform Engineer
+PU004,Rohit Bansal,rohit.bansal@orbit-labs.com,user,Asia/Kolkata,Site Reliability Engineer
+PU005,Noor Aziz,noor.aziz@orbit-labs.com,manager,America/New_York,Engineering Manager

@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "Amplitude Mock API",
+    "description": "Test collection for the mock Amplitude API service (HTTP V2 event upload, event segmentation, user activity). Base URL defaults to http://localhost:8091. In docker-compose, the service is reachable at http://amplitude-api:8091.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8091"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "httpapi upload", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/2/httpapi", "body": {"mode": "raw", "raw": "{\"api_key\": \"test\", \"events\": [{\"user_id\": \"user_2001\", \"event_type\": \"purchase\", \"event_properties\": {\"revenue\": 19.99}}]}"}}},
+    {"name": "segmentation", "request": {"method": "GET", "url": "{{baseUrl}}/api/2/events/segmentation?e=purchase&start=2026-05-02&end=2026-05-06"}},
+    {"name": "segmentation all", "request": {"method": "GET", "url": "{{baseUrl}}/api/2/events/segmentation"}},
+    {"name": "user activity", "request": {"method": "GET", "url": "{{baseUrl}}/api/2/useractivity?user=user_2001"}}
+  ]
+}

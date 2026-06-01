@@ -1,0 +1,9 @@
+account_id,code,name,type,tax_type,status,description,enable_payments_to_account
+a0000001-0000-0000-0000-000000000001,200,Sales,REVENUE,OUTPUT,ACTIVE,Income from any normal business activity,false
+a0000002-0000-0000-0000-000000000002,260,Other Revenue,REVENUE,OUTPUT,ACTIVE,Any other income that does not relate to normal business,false
+a0000003-0000-0000-0000-000000000003,400,Advertising,EXPENSE,INPUT,ACTIVE,Expenses incurred for advertising,false
+a0000004-0000-0000-0000-000000000004,404,Bank Fees,EXPENSE,NONE,ACTIVE,Fees charged by your bank,false
+a0000005-0000-0000-0000-000000000005,090,Business Bank Account,BANK,NONE,ACTIVE,Primary operating bank account,true
+a0000006-0000-0000-0000-000000000006,610,Accounts Receivable,CURRENT,NONE,ACTIVE,Outstanding invoices owed to the business,false
+a0000007-0000-0000-0000-000000000007,800,Accounts Payable,CURRLIAB,NONE,ACTIVE,Outstanding bills owed by the business,false
+a0000008-0000-0000-0000-000000000008,477,Salaries,EXPENSE,NONE,ACTIVE,Payment to employees for services,false

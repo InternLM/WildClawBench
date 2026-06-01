@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "Algolia Mock API",
+    "description": "Test collection for the mock Algolia search API service. Base URL defaults to http://localhost:8067. In docker-compose, the service is reachable at http://algolia-api:8067.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8067"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list indexes", "request": {"method": "GET", "url": "{{baseUrl}}/1/indexes"}},
+    {"name": "query products", "request": {"method": "POST", "url": "{{baseUrl}}/1/indexes/products/query",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"query\": \"aurora\", \"hitsPerPage\": 10, \"page\": 0}"}}},
+    {"name": "query products with filter", "request": {"method": "POST", "url": "{{baseUrl}}/1/indexes/products/query",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"query\": \"\", \"filters\": \"category:displays\", \"hitsPerPage\": 10}"}}},
+    {"name": "query docs", "request": {"method": "POST", "url": "{{baseUrl}}/1/indexes/docs/query",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"query\": \"index\"}"}}},
+    {"name": "get object", "request": {"method": "GET", "url": "{{baseUrl}}/1/indexes/products/prod-001"}},
+    {"name": "get settings", "request": {"method": "GET", "url": "{{baseUrl}}/1/indexes/products/settings"}},
+    {"name": "add object", "request": {"method": "POST", "url": "{{baseUrl}}/1/indexes/products",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"objectID\": \"prod-009\", \"name\": \"Vela Cable Kit\", \"description\": \"Braided USB-C cables\", \"category\": \"accessories\", \"brand\": \"Vela\", \"price\": 24.99, \"in_stock\": true}"}}},
+    {"name": "update object", "request": {"method": "PUT", "url": "{{baseUrl}}/1/indexes/products/prod-004",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Nimbus Curved Monitor\", \"in_stock\": true, \"price\": 549.0}"}}},
+    {"name": "delete object", "request": {"method": "DELETE", "url": "{{baseUrl}}/1/indexes/products/prod-008"}}
+  ]
+}

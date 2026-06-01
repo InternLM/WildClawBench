@@ -1,0 +1,7 @@
+id,author_id,commentary,visibility,created_at,like_count,comment_count,share_count
+6001,urn:li:person:amelia-ortega,"We just open-sourced our internal feature-flag library. Battle-tested across three years of rollouts. Link in comments.",PUBLIC,2026-05-19T15:00:00.000Z,318,42,57
+6002,urn:li:person:amelia-ortega,"Hiring two senior backend engineers for the platform team. Remote-friendly across EU and US time zones. DM me.",PUBLIC,2026-05-22T09:30:00.000Z,156,38,21
+6003,urn:li:organization:orbit-labs,"Orbit CLI 2.0 is live. Faster cold starts and a new plugin system. Read the launch post on our blog.",PUBLIC,2026-05-21T17:00:00.000Z,904,112,210
+6004,urn:li:person:helena-park,"Accessibility is not a feature you bolt on at the end. Sharing the audit checklist my team uses every sprint.",PUBLIC,2026-05-23T12:00:00.000Z,421,55,68
+6005,urn:li:person:noor-aziz,"New migration guide is up: moving to the Orbit plugin API without downtime. Took us a week to get right.",CONNECTIONS,2026-05-24T11:00:00.000Z,87,12,9
+6006,urn:li:person:amelia-ortega,"Reliability tip: gate every rollout on p95 latency, not averages. Averages hide the pain your users feel.",PUBLIC,2026-05-25T08:15:00.000Z,512,71,94

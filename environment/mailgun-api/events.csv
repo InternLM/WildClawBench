@@ -1,0 +1,13 @@
+id,domain,message_id,event,recipient,timestamp,reason
+ev_0001,sandbox.mailgun.org,20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org,accepted,alice@example.com,2026-05-01T09:30:12Z,
+ev_0002,sandbox.mailgun.org,20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org,delivered,alice@example.com,2026-05-01T09:30:18Z,
+ev_0003,sandbox.mailgun.org,20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org,opened,alice@example.com,2026-05-01T10:02:41Z,
+ev_0004,sandbox.mailgun.org,20260503141522.2.B2C3D4E5F6A7@sandbox.mailgun.org,accepted,bob@example.com,2026-05-03T14:15:22Z,
+ev_0005,sandbox.mailgun.org,20260503141522.2.B2C3D4E5F6A7@sandbox.mailgun.org,delivered,bob@example.com,2026-05-03T14:15:30Z,
+ev_0006,sandbox.mailgun.org,20260507081005.3.C3D4E5F6A7B8@sandbox.mailgun.org,accepted,carol@example.com,2026-05-07T08:10:05Z,
+ev_0007,sandbox.mailgun.org,20260507081005.3.C3D4E5F6A7B8@sandbox.mailgun.org,failed,carol@example.com,2026-05-07T08:10:09Z,mailbox full
+ev_0008,sandbox.mailgun.org,20260512162844.4.D4E5F6A7B8C9@sandbox.mailgun.org,delivered,dave@example.com,2026-05-12T16:28:50Z,
+ev_0009,sandbox.mailgun.org,20260515104733.5.E5F6A7B8C9D0@sandbox.mailgun.org,delivered,erin@example.com,2026-05-15T10:47:39Z,
+ev_0010,sandbox.mailgun.org,20260515104733.5.E5F6A7B8C9D0@sandbox.mailgun.org,clicked,erin@example.com,2026-05-15T11:20:14Z,
+ev_0011,sandbox.mailgun.org,20260520113900.6.F6A7B8C9D0E1@sandbox.mailgun.org,delivered,frank@example.com,2026-05-20T11:39:06Z,
+ev_0012,sandbox.mailgun.org,20260524175611.7.A7B8C9D0E1F2@sandbox.mailgun.org,accepted,grace@example.com,2026-05-24T17:56:11Z,

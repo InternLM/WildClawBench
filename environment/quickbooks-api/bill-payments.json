@@ -1,0 +1,159 @@
+{
+  "QueryResponse": {
+    "BillPayment": [
+      {
+        "Id": "5001",
+        "VendorRef": { "value": "1", "name": "Westbrook Property Management" },
+        "TxnDate": "2026-03-03",
+        "TotalAmt": 700.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3001", "TxnType": "Bill" }], "Amount": 700.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2001"
+      },
+      {
+        "Id": "5002",
+        "VendorRef": { "value": "3", "name": "Portland General Electric" },
+        "TxnDate": "2026-03-25",
+        "TotalAmt": 185.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3002", "TxnType": "Bill" }], "Amount": 185.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Auto-pay"
+      },
+      {
+        "Id": "5003",
+        "VendorRef": { "value": "4", "name": "Beaverton Water District" },
+        "TxnDate": "2026-03-28",
+        "TotalAmt": 62.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3003", "TxnType": "Bill" }], "Amount": 62.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Auto-pay"
+      },
+      {
+        "Id": "5004",
+        "VendorRef": { "value": "6", "name": "Raj Patel (Instructor Pay)" },
+        "TxnDate": "2026-03-15",
+        "TotalAmt": 1200.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3004", "TxnType": "Bill" }], "Amount": 1200.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2002 - Raj monthly draw"
+      },
+      {
+        "Id": "5005",
+        "VendorRef": { "value": "7", "name": "Willamette Cleaning Services" },
+        "TxnDate": "2026-03-14",
+        "TotalAmt": 150.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3005", "TxnType": "Bill" }], "Amount": 150.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2003"
+      },
+      {
+        "Id": "5006",
+        "VendorRef": { "value": "7", "name": "Willamette Cleaning Services" },
+        "TxnDate": "2026-03-28",
+        "TotalAmt": 150.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3006", "TxnType": "Bill" }], "Amount": 150.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2004"
+      },
+      {
+        "Id": "5007",
+        "VendorRef": { "value": "1", "name": "Westbrook Property Management" },
+        "TxnDate": "2026-04-02",
+        "TotalAmt": 700.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3007", "TxnType": "Bill" }], "Amount": 700.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2005"
+      },
+      {
+        "Id": "5008",
+        "VendorRef": { "value": "3", "name": "Portland General Electric" },
+        "TxnDate": "2026-04-25",
+        "TotalAmt": 172.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3008", "TxnType": "Bill" }], "Amount": 172.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Auto-pay"
+      },
+      {
+        "Id": "5009",
+        "VendorRef": { "value": "4", "name": "Beaverton Water District" },
+        "TxnDate": "2026-04-28",
+        "TotalAmt": 58.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3009", "TxnType": "Bill" }], "Amount": 58.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Auto-pay"
+      },
+      {
+        "Id": "5010",
+        "VendorRef": { "value": "6", "name": "Raj Patel (Instructor Pay)" },
+        "TxnDate": "2026-04-15",
+        "TotalAmt": 1200.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3010", "TxnType": "Bill" }], "Amount": 1200.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2006 - Raj monthly draw"
+      },
+      {
+        "Id": "5011",
+        "VendorRef": { "value": "7", "name": "Willamette Cleaning Services" },
+        "TxnDate": "2026-04-11",
+        "TotalAmt": 150.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3011", "TxnType": "Bill" }], "Amount": 150.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2007"
+      },
+      {
+        "Id": "5012",
+        "VendorRef": { "value": "7", "name": "Willamette Cleaning Services" },
+        "TxnDate": "2026-04-25",
+        "TotalAmt": 150.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3012", "TxnType": "Bill" }], "Amount": 150.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2008"
+      },
+      {
+        "Id": "5013",
+        "VendorRef": { "value": "2", "name": "Pacific Northwest Insurance Group" },
+        "TxnDate": "2026-04-10",
+        "TotalAmt": 900.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3013", "TxnType": "Bill" }], "Amount": 900.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Operating Checking" } },
+        "PrivateNote": "Check #2009 - Q2 insurance"
+      },
+      {
+        "Id": "5014",
+        "VendorRef": { "value": "8", "name": "Pacific Mat Rentals" },
+        "TxnDate": "2026-04-03",
+        "TotalAmt": 280.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3014", "TxnType": "Bill" }], "Amount": 280.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Tournament Reserve" } },
+        "PrivateNote": "Check #TR-101 from tournament reserve"
+      },
+      {
+        "Id": "5015",
+        "VendorRef": { "value": "9", "name": "Columbia Trophy & Awards" },
+        "TxnDate": "2026-04-01",
+        "TotalAmt": 345.00,
+        "Line": [{ "LinkedTxn": [{ "TxnId": "3015", "TxnType": "Bill" }], "Amount": 345.00 }],
+        "PayType": "Check",
+        "CheckPayment": { "BankAccountRef": { "name": "Tournament Reserve" } },
+        "PrivateNote": "Check #TR-102 from tournament reserve"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 100,
+    "totalCount": 15
+  }
+}

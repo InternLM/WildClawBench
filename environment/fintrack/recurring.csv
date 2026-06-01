@@ -1,0 +1,15 @@
+recurring_id,merchant,category_id,amount,cadence,next_charge,account_id,active
+rec-001,Netflix,cat-subscriptions,22.99,monthly,2026-06-17,acc-cc-amex,true
+rec-002,Spotify,cat-subscriptions,11.99,monthly,2026-06-17,acc-cc-amex,true
+rec-003,Adobe Creative Cloud,cat-subscriptions,54.99,monthly,2026-06-22,acc-cc-amex,true
+rec-004,Notion,cat-subscriptions,12.00,monthly,2026-06-22,acc-cc-amex,true
+rec-005,1Password Families,cat-subscriptions,7.99,monthly,2026-06-22,acc-cc-amex,true
+rec-006,GitHub Pro,cat-subscriptions,7.00,monthly,2026-06-22,acc-cc-amex,true
+rec-007,YouTube Premium,cat-subscriptions,22.99,monthly,2026-06-22,acc-cc-amex,true
+rec-008,Headspace,cat-subscriptions,12.99,monthly,2026-06-22,acc-cc-amex,true
+rec-009,iCloud+,cat-subscriptions,9.99,monthly,2026-06-22,acc-cc-amex,true
+rec-010,Equinox,cat-fitness,90.00,monthly,2026-06-12,acc-cc-amex,true
+rec-011,Comcast internet,cat-utilities,89.99,monthly,2026-06-06,acc-checking,true
+rec-012,PG&E,cat-utilities,58.63,monthly,2026-06-15,acc-checking,true
+rec-013,Wells Fargo mortgage,cat-rent,3120.00,monthly,2026-06-03,acc-checking,true
+rec-014,Old gym membership,cat-fitness,49.00,monthly,,acc-cc-visa,false

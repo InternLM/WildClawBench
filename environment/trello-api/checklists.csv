@@ -1,0 +1,4 @@
+id,name,id_card,id_board,items
+63e1000000000000000000e1,Design doc tasks,62d1000000000000000000d2,60b1000000000000000000b1,Threat model:incomplete;API surface:complete;Migration path:incomplete
+63e1000000000000000000e2,Acceptance criteria,62d1000000000000000000d3,60b1000000000000000000b1,Zero downtime:incomplete;Rollback plan:incomplete
+63e1000000000000000000e3,Newsletter checklist,62d1000000000000000000d7,60b1000000000000000000b2,Draft copy:complete;Design banner:complete;Send test:complete

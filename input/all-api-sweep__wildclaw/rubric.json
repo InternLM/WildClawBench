@@ -1,0 +1,22 @@
+[
+  {
+    "criterion": "results/api_sweep_report.csv exists, is valid CSV with header name,env_var,base_url,health_status,probe_route,probe_status,records,ok, and contains a row for a large majority of the 101 target services.",
+    "weight": 0.3
+  },
+  {
+    "criterion": "The agent resolved each base URL from the environment variable named in api_targets.csv (e.g. $GITHUB_API_URL) rather than hardcoding hosts, and called <base_url>/health for the services it covered.",
+    "weight": 0.25
+  },
+  {
+    "criterion": "results/api_sweep_summary.md exists and reports totals: number of services checked out of 101, count healthy vs failed, and lists any failures with a reason.",
+    "weight": 0.2
+  },
+  {
+    "criterion": "The sweep was resilient \u2014 individual unreachable services did not abort the run; the report distinguishes healthy from failed services.",
+    "weight": 0.15
+  },
+  {
+    "criterion": "Only read (GET) calls were made against the APIs; no POST/PATCH/PUT/DELETE and no mutation of any service.",
+    "weight": 0.1
+  }
+]

@@ -1,0 +1,5 @@
+uuid,owner,name,slug,duration,kind,color,active,description,scheduling_url,created_at
+et-intro-15,user-amelia-ortega,Intro Call,intro-call,15,solo,#0069ff,true,Quick 15-minute introduction call,https://calendly.com/amelia-ortega/intro-call,2025-09-02T10:00:00.000000Z
+et-discovery-30,user-amelia-ortega,Discovery Session,discovery-session,30,solo,#1aa763,true,30-minute product discovery session,https://calendly.com/amelia-ortega/discovery-session,2025-09-02T10:05:00.000000Z
+et-deepdive-60,user-amelia-ortega,Technical Deep Dive,technical-deep-dive,60,solo,#f1684e,true,60-minute technical architecture review,https://calendly.com/amelia-ortega/technical-deep-dive,2025-09-02T10:10:00.000000Z
+et-archived-45,user-amelia-ortega,Legacy Demo,legacy-demo,45,solo,#8247f5,false,Retired 45-minute demo slot,https://calendly.com/amelia-ortega/legacy-demo,2025-09-15T10:00:00.000000Z

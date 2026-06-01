@@ -1,0 +1,6 @@
+id,type,title,username,first_name,last_name,description,member_count
+1001,private,,amelia_o,Amelia,Ortega,,2
+1002,private,,jonas_p,Jonas,Pereira,,2
+-200500,group,Orbit Eng Standup,,,,"Daily standup and incident coordination for the platform team.",6
+-200501,supergroup,Orbit Deploys,,,,"Automated deploy and alerting notifications.",12
+-200502,group,Orbit Random,,,,"Off-topic chatter and memes.",9

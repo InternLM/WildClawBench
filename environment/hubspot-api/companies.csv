@@ -1,0 +1,5 @@
+id,name,domain,industry,city,state,numberofemployees,annualrevenue,createdate
+301,Helix Robotics Inc,helixrobotics.io,Robotics,Austin,TX,240,42000000,2025-09-15T09:30:00Z
+302,Lumen Design Studio,lumendesign.co,Design Services,Portland,OR,28,3200000,2026-01-10T14:00:00Z
+303,Pelagic Freight Co,pelagicfreight.com,Logistics,Long Beach,CA,510,88000000,2026-02-20T16:00:00Z
+304,Quanta Analytics,quanta.ai,Software,San Francisco,CA,75,11000000,2025-12-01T08:00:00Z

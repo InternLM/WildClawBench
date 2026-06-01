@@ -1,0 +1,11 @@
+id,key,project_key,issue_type,summary,description,status,priority,assignee,reporter,sprint_id,story_points,created,updated
+20001,ENG-101,ENG,Story,Implement dual-write shim,"Write behind the auth_v2_rollout flag.",Done,High,user-amelia,user-amelia,101,5,2026-05-05T10:00:00Z,2026-05-18T14:00:00Z
+20002,ENG-102,ENG,Bug,Refresh-token latency spike under load,"p95 issuance latency exceeds 600ms.",In Progress,Highest,user-jonas,user-helena,102,3,2026-05-20T11:00:00Z,2026-05-26T09:00:00Z
+20003,ENG-103,ENG,Story,Add dual-writer queue depth metric,"Gauge + alert for queue depth.",In Progress,Medium,user-helena,user-amelia,102,2,2026-05-20T10:00:00Z,2026-05-23T16:00:00Z
+20004,ENG-104,ENG,Task,Backfill session store,"One-off backfill job for legacy sessions.",To Do,Medium,user-rohit,user-amelia,102,3,2026-05-21T09:00:00Z,2026-05-21T09:00:00Z
+20005,ENG-105,ENG,Story,gRPC dual-serve scaffold,"REST + gRPC dual-serve scaffold.",To Do,High,user-jonas,user-jonas,103,8,2026-05-22T13:00:00Z,2026-05-22T13:00:00Z
+20006,ENG-106,ENG,Bug,Safari 17 settings page crash,"TypeError in profile-avatar hook.",In Progress,High,user-rohit,user-noor,102,2,2026-05-25T08:00:00Z,2026-05-26T07:30:00Z
+20007,ENG-107,ENG,Story,Document feature flag playbook,"Rollout playbook for flags.",Done,Low,user-amelia,user-amelia,101,2,2026-04-15T10:00:00Z,2026-05-10T14:00:00Z
+20008,OPS-201,OPS,Bug,Terraform drift in eu-west-2,"Persistent NAT gateway drift.",In Progress,High,user-helena,user-helena,201,3,2026-05-23T13:00:00Z,2026-05-26T08:00:00Z
+20009,OPS-202,OPS,Task,Rotate TLS certs prod,"Quarterly cert rotation.",To Do,Medium,user-helena,user-amelia,201,1,2026-05-24T09:00:00Z,2026-05-24T09:00:00Z
+20010,OPS-203,OPS,Incident,Pager noise from flapping alert,"Alert flaps every 5 min; tune thresholds.",Done,Highest,user-helena,user-noor,201,2,2026-05-18T02:00:00Z,2026-05-19T11:00:00Z

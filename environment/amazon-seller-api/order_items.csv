@@ -1,0 +1,26 @@
+OrderItemId,AmazonOrderId,ASIN,SellerSKU,Title,QuantityOrdered,QuantityShipped,ItemPrice_CurrencyCode,ItemPrice_Amount,ItemTax_Amount,PromotionDiscount_Amount,IsGift,Condition
+OI-001,114-3941689-8772200,B0EXAMPLE01,VE-CASE-IP15,VoltEdge Slim Armor Case for iPhone 15 - Matte Black,1,1,USD,19.99,0.00,0.00,false,New
+OI-002,114-5578234-9921100,B0EXAMPLE06,VE-EARBUD-PRO,VoltEdge AirPulse Pro Wireless Earbuds - Active Noise Cancelling,1,1,USD,49.99,0.00,0.00,false,New
+OI-003,114-7723891-3345600,B0EXAMPLE04,VE-CHRG-USB3,VoltEdge 6ft USB-C to USB-C Fast Charging Cable (2-Pack),1,1,USD,16.99,0.00,0.00,false,New
+OI-004,114-7723891-3345600,B0EXAMPLE12,VE-PWR-20K,VoltEdge PowerVault Pro 20000mAh with 65W USB-C,1,1,USD,44.99,0.00,1.00,false,New
+OI-005,114-9981234-5567800,B0EXAMPLE07,VE-EARBUD-SPT,VoltEdge FitPulse Sport Wireless Earbuds - IPX7,1,1,USD,34.99,0.00,0.00,false,New
+OI-006,114-2234567-8901200,B0EXAMPLE09,VE-STAND-LSB,VoltEdge ErgoRise Pro Laptop Stand with Cooling Fan - Black,1,1,USD,44.99,0.00,0.00,false,New
+OI-007,114-3345678-1234500,B0EXAMPLE08,VE-STAND-LSA,VoltEdge ErgoRise Adjustable Laptop Stand - Silver Aluminum,1,1,USD,29.99,0.00,0.00,false,New
+OI-008,114-4456789-2345600,B0EXAMPLE10,VE-USBHUB-7P,VoltEdge 7-in-1 USB-C Hub - HDMI 4K SD Card Reader,1,0,USD,39.99,0.00,0.00,false,New
+OI-009,114-5567890-3456700,B0EXAMPLE06,VE-EARBUD-PRO,VoltEdge AirPulse Pro Wireless Earbuds - Active Noise Cancelling,1,1,USD,49.99,0.00,0.00,true,New
+OI-010,114-5567890-3456700,B0EXAMPLE12,VE-PWR-20K,VoltEdge PowerVault Pro 20000mAh with 65W USB-C,1,1,USD,44.99,0.00,0.00,false,New
+OI-011,114-6678901-4567800,B0EXAMPLE16,VE-CHRG-MAG,VoltEdge MagSnap 15W Wireless Charger Pad - Black,1,1,USD,22.99,0.00,0.00,false,New
+OI-012,114-7789012-5678900,B0EXAMPLE09,VE-STAND-LSB,VoltEdge ErgoRise Pro Laptop Stand with Cooling Fan - Black,1,1,USD,44.99,0.00,0.00,false,New
+OI-013,114-8890123-6789000,B0EXAMPLE03,VE-SCRN-IP15,VoltEdge Tempered Glass Screen Protector for iPhone 15 (3-Pack),1,1,USD,12.99,0.00,0.00,false,New
+OI-014,114-9901234-7890100,B0EXAMPLE13,VE-CHRG-WALL,VoltEdge 65W GaN USB-C Wall Charger - Dual Port,1,1,USD,32.99,0.00,0.00,false,New
+OI-015,114-1012345-8901200,B0EXAMPLE06,VE-EARBUD-PRO,VoltEdge AirPulse Pro Wireless Earbuds - Active Noise Cancelling,1,1,USD,49.99,0.00,0.00,false,New
+OI-016,114-1123456-9012300,B0EXAMPLE18,VE-CABLE-MAG,VoltEdge Magnetic USB-C Charging Cable 6ft - 100W PD,1,1,USD,27.99,0.00,0.00,false,New
+OI-017,114-1234567-0123400,B0EXAMPLE01,VE-CASE-IP15,VoltEdge Slim Armor Case for iPhone 15 - Matte Black,1,1,USD,19.99,0.00,0.00,false,New
+OI-018,114-1234567-0123400,B0EXAMPLE03,VE-SCRN-IP15,VoltEdge Tempered Glass Screen Protector for iPhone 15 (3-Pack),1,1,USD,12.99,0.00,0.00,false,New
+OI-019,114-1234567-0123400,B0EXAMPLE11,VE-PWR-10K,VoltEdge PowerVault 10000mAh Portable Charger - USB-C PD 20W,1,1,USD,24.99,0.00,0.00,false,New
+OI-020,114-1345678-1234500,B0EXAMPLE17,VE-CHRG-CAR,VoltEdge 45W Dual USB-C Car Charger with LED,1,0,USD,18.99,0.00,0.00,false,New
+OI-021,114-1456789-2345600,B0EXAMPLE04,VE-CHRG-USB3,VoltEdge 6ft USB-C to USB-C Fast Charging Cable (2-Pack),1,0,USD,16.99,0.00,0.00,false,New
+OI-022,114-1567890-3456700,B0EXAMPLE11,VE-PWR-10K,VoltEdge PowerVault 10000mAh Portable Charger - USB-C PD 20W,1,1,USD,24.99,0.00,0.00,false,New
+OI-023,114-1678901-4567800,B0EXAMPLE06,VE-EARBUD-PRO,VoltEdge AirPulse Pro Wireless Earbuds - Active Noise Cancelling,1,0,USD,49.99,0.00,0.00,false,New
+OI-024,114-1678901-4567800,B0EXAMPLE08,VE-STAND-LSA,VoltEdge ErgoRise Adjustable Laptop Stand - Silver Aluminum,1,0,USD,29.99,0.00,0.00,false,New
+OI-025,114-1789012-5678900,B0EXAMPLE09,VE-STAND-LSB,VoltEdge ErgoRise Pro Laptop Stand with Cooling Fan - Black,1,0,USD,44.99,0.00,0.00,false,New

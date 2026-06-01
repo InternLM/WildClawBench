@@ -1,0 +1,6 @@
+id,name,generation,subject,html_content,active,updated_at
+d-1a2b3c4d5e6f7081,Welcome Email,dynamic,"Welcome to Orbit Labs, {{first_name}}!","<h1>Welcome {{first_name}}</h1><p>Glad to have you.</p>",true,2026-05-10T10:00:00Z
+d-2b3c4d5e6f708192,Password Reset,dynamic,"Reset your Orbit Labs password","<p>Click <a href='{{reset_url}}'>here</a> to reset.</p>",true,2026-05-12T11:30:00Z
+d-3c4d5e6f70819203,Monthly Newsletter,dynamic,"Orbit Labs — {{month}} highlights","<h2>{{month}} Newsletter</h2><p>{{body}}</p>",true,2026-05-20T09:15:00Z
+d-4d5e6f7081920314,Invoice Receipt,dynamic,"Your receipt for invoice {{invoice_id}}","<p>Thanks for your payment of {{amount}}.</p>",true,2026-05-22T14:00:00Z
+d-5e6f708192031425,Trial Ending Soon,dynamic,"Your trial ends in {{days}} days","<p>Upgrade now to keep your data.</p>",false,2026-04-30T08:00:00Z

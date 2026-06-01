@@ -1,0 +1,8 @@
+22:39:31 [INFO] Network k3net-a69bb1cde71a created
+22:39:31 [INFO] [ll-a69bb1cde71a] Starting LiteLLM sidecar on network k3net-a69bb1cde71a
+22:41:09 [WARNING] [ll-a69bb1cde71a] LiteLLM did not become healthy within 90s
+22:41:09 [ERROR] LiteLLM sidecar ll-a69bb1cde71a not healthy; using OpenRouter
+22:41:09 [INFO] Single task mode: dana-ellison__google-classroom-api__week5-grading (format=native)
+22:41:09 [INFO] [dana-ellison__google-classroom-api__week5-grading_gpt-5.5_20260530_2241_8505fe] Starting container, mounting /Users/apple/Desktop/WildClaw/Wildclow_forked_image/work/dana-ellison__google-classroom-api__week5-grading/exec → /app (ro)
+22:41:13 [INFO] [dana-ellison__google-classroom-api__week5-grading_gpt-5.5_20260530_2241_8505fe] Container ID: 5f74af6f4079
+22:41:14 [INFO] [dana-ellison__google-classroom-api__week5-grading_gpt-5.5_20260530_2241_8505fe] Lobster workspace copied: input/dana-ellison__google-classroom-api__week5-grading/persona → /root/

@@ -1,0 +1,8 @@
+id,name,email,role,organization_id,active,created_at
+601,Amelia Ortega,amelia.ortega@orbit-labs.com,admin,,true,2025-09-01T10:00:00Z
+602,Jonas Pereira,jonas.pereira@orbit-labs.com,agent,,true,2025-09-04T11:30:00Z
+603,Helena Park,helena.park@orbit-labs.com,agent,,true,2025-09-12T14:20:00Z
+604,Maya Fernandez,maya.fernandez@aurorabistro.com,end-user,501,true,2025-11-02T10:00:00Z
+605,Daniel Cho,daniel.cho@helixrobotics.io,end-user,502,true,2025-09-15T09:30:00Z
+606,Priya Nair,priya.nair@lumendesign.co,end-user,503,true,2026-01-10T14:00:00Z
+607,Tomas Reyes,tomas.reyes@pelagicfreight.com,end-user,504,true,2026-02-20T16:00:00Z

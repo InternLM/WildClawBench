@@ -1,0 +1,5 @@
+conversation_id,wa_id,started_at,last_message_at,origin,within_24h_window
+conv-001,15551550101,2026-05-26T08:55:00Z,2026-05-26T09:00:00Z,user_initiated,true
+conv-002,15551550102,2026-05-25T18:00:00Z,2026-05-25T18:30:00Z,business_initiated,true
+conv-003,15551550103,2026-05-22T13:00:00Z,2026-05-22T14:15:00Z,user_initiated,false
+conv-004,15551550105,2026-05-26T07:30:00Z,2026-05-26T07:45:00Z,user_initiated,true

@@ -1,0 +1,4 @@
+host_id,name,superhost,joined_year,response_rate,languages
+host-ava,Ava Lindqvist,true,2017,99,"English,Swedish"
+host-diego,Diego Fernandez,true,2015,97,"English,Spanish"
+host-mei,Mei Chen,false,2019,92,"English,Mandarin"

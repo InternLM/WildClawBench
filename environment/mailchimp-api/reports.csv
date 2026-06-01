@@ -1,0 +1,4 @@
+campaign_id,emails_sent,opens_total,unique_opens,open_rate,clicks_total,unique_clicks,click_rate,unsubscribed,bounces
+camp-sep-news,5,18,4,0.8,7,3,0.6,0,0
+camp-oct-news,5,22,5,1.0,9,4,0.8,1,0
+camp-launch,4,15,4,1.0,11,4,1.0,0,0

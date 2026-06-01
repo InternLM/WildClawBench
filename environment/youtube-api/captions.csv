@@ -1,0 +1,21 @@
+caption_id,videoId,language,name,trackKind,isDraft,lastUpdated
+cap_001,vid_001,en,English (auto-generated),ASR,false,2025-04-10T13:30:00Z
+cap_002,vid_002,en,English (auto-generated),ASR,false,2025-04-03T13:30:00Z
+cap_003,vid_003,en,English (auto-generated),ASR,false,2025-03-27T13:30:00Z
+cap_004,vid_003,es,Spanish,standard,false,2025-04-01T10:00:00Z
+cap_005,vid_004,en,English (auto-generated),ASR,false,2025-03-20T13:30:00Z
+cap_006,vid_005,en,English (auto-generated),ASR,false,2025-03-13T13:30:00Z
+cap_007,vid_006,en,English (auto-generated),ASR,false,2025-03-06T13:30:00Z
+cap_008,vid_008,en,English (auto-generated),ASR,false,2025-02-27T13:30:00Z
+cap_009,vid_009,en,English (auto-generated),ASR,false,2025-02-20T13:30:00Z
+cap_010,vid_010,en,English (auto-generated),ASR,false,2025-02-13T13:30:00Z
+cap_011,vid_012,en,English (auto-generated),ASR,false,2025-02-06T13:30:00Z
+cap_012,vid_013,en,English (auto-generated),ASR,false,2025-01-30T13:30:00Z
+cap_013,vid_014,en,English (auto-generated),ASR,false,2025-01-23T13:30:00Z
+cap_014,vid_015,en,English (auto-generated),ASR,false,2025-01-16T13:30:00Z
+cap_015,vid_016,en,English (auto-generated),ASR,false,2025-01-09T13:30:00Z
+cap_016,vid_016,es,Spanish,standard,false,2025-01-15T10:00:00Z
+cap_017,vid_018,en,English (auto-generated),ASR,false,2025-01-02T13:30:00Z
+cap_018,vid_020,en,English (auto-generated),ASR,false,2024-12-19T13:30:00Z
+cap_019,vid_021,en,English (auto-generated),ASR,false,2024-12-12T13:30:00Z
+cap_020,vid_029,en,English (auto-generated),ASR,false,2024-10-24T13:30:00Z

@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Google Calendar API Mock v3",
+    "description": "Mock Google Calendar API v3. Base URL: http://localhost:8016. In docker-compose: http://google-calendar-api:8016.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8016"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list calendars", "request": {"method": "GET", "url": "{{baseUrl}}/calendar/v3/users/me/calendarList"}},
+    {"name": "get primary calendar", "request": {"method": "GET", "url": "{{baseUrl}}/calendar/v3/calendars/primary"}},
+    {"name": "list events this week", "request": {"method": "GET", "url": "{{baseUrl}}/calendar/v3/calendars/primary/events?timeMin=2026-05-26T00:00:00Z&timeMax=2026-05-31T23:59:59Z&orderBy=startTime"}},
+    {"name": "search events", "request": {"method": "GET", "url": "{{baseUrl}}/calendar/v3/calendars/primary/events?q=auth"}},
+    {"name": "get event", "request": {"method": "GET", "url": "{{baseUrl}}/calendar/v3/calendars/primary/events/evt-003"}},
+    {"name": "create event", "request": {"method": "POST", "url": "{{baseUrl}}/calendar/v3/calendars/primary/events",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"summary\": \"RFC review: billing gRPC\", \"location\": \"Zoom\", \"start\": {\"dateTime\": \"2026-05-30T15:00:00-07:00\", \"timeZone\": \"America/Los_Angeles\"}, \"end\": {\"dateTime\": \"2026-05-30T16:00:00-07:00\", \"timeZone\": \"America/Los_Angeles\"}, \"attendees\": [{\"email\": \"jonas@orbit-labs.com\"}, {\"email\": \"helena@orbit-labs.com\"}]}"}}},
+    {"name": "patch event", "request": {"method": "PATCH", "url": "{{baseUrl}}/calendar/v3/calendars/primary/events/evt-003",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"confirmed\"}"}}},
+    {"name": "delete event", "request": {"method": "DELETE", "url": "{{baseUrl}}/calendar/v3/calendars/amelia.personal@gmail.com/events/evt-006"}},
+    {"name": "freeBusy", "request": {"method": "POST", "url": "{{baseUrl}}/calendar/v3/freeBusy",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"timeMin\": \"2026-05-26T00:00:00Z\", \"timeMax\": \"2026-05-31T00:00:00Z\", \"items\": [{\"id\": \"amelia@orbit-labs.com\"}, {\"id\": \"orbit-labs.com_eng@group.calendar.google.com\"}]}"}}}
+  ]
+}

@@ -1,0 +1,8 @@
+review_id,listing_id,guest_name,rating,comment,created_at
+rev-001,lst-101,Tomas R.,5,"Bright and spotless, great location near taquerias.",2026-04-12
+rev-002,lst-101,Hana K.,5,"Ava was a wonderful host, super responsive.",2026-04-28
+rev-003,lst-103,Liam O.,5,"The bay views are unreal. Would book again.",2026-03-30
+rev-004,lst-103,Sara M.,4,"Lovely place, a bit of street noise at night.",2026-05-02
+rev-005,lst-106,Greg P.,5,"Perfect lake getaway, cabin was cozy and clean.",2026-05-10
+rev-006,lst-105,Yuki T.,4,"Comfortable room, shared kitchen was tidy.",2026-04-19
+rev-007,lst-108,Marie L.,5,"Steps from the beach, hammock was a nice touch.",2026-05-15

@@ -1,0 +1,4 @@
+schedule_id,name,time_zone,escalation_policy_id,current_oncall_user_id,oncall_start,oncall_end
+SCH001,Platform Primary,America/Los_Angeles,EP001,PU004,2026-05-26T17:00:00Z,2026-06-02T17:00:00Z
+SCH002,Platform Secondary,Europe/Berlin,EP001,PU003,2026-05-26T17:00:00Z,2026-06-02T17:00:00Z
+SCH003,Billing Primary,America/New_York,EP002,PU002,2026-05-25T17:00:00Z,2026-06-01T17:00:00Z

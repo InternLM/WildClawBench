@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "LinkedIn Mock API v2",
+    "description": "Test collection for the mock LinkedIn API v2 service. Base URL defaults to http://localhost:8062. In docker-compose, the service is reachable at http://linkedin-api:8062.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8062"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/v2/me"}},
+    {"name": "list connections", "request": {"method": "GET", "url": "{{baseUrl}}/v2/connections?count=10"}},
+    {"name": "list posts", "request": {"method": "GET", "url": "{{baseUrl}}/v2/posts"}},
+    {"name": "list posts by author", "request": {"method": "GET", "url": "{{baseUrl}}/v2/posts?author_id=urn:li:person:amelia-ortega"}},
+    {"name": "get post", "request": {"method": "GET", "url": "{{baseUrl}}/v2/posts/6003"}},
+    {"name": "create post", "request": {"method": "POST", "url": "{{baseUrl}}/v2/posts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"commentary\": \"Thrilled to share our team shipped the new plugin API today.\", \"visibility\": \"PUBLIC\"}"}}},
+    {"name": "get organization", "request": {"method": "GET", "url": "{{baseUrl}}/v2/organizations/5001"}},
+    {"name": "search jobs", "request": {"method": "GET", "url": "{{baseUrl}}/v2/jobs?keywords=backend&location=Remote"}},
+    {"name": "get job", "request": {"method": "GET", "url": "{{baseUrl}}/v2/jobs/7001"}}
+  ]
+}

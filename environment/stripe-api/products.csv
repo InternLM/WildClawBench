@@ -1,0 +1,5 @@
+id,name,description,active,created
+prod_Starter,Starter Plan,Up to 3 seats and basic reporting,true,1700000000
+prod_Pro,Pro Plan,Unlimited seats and advanced analytics,true,1700000000
+prod_Enterprise,Enterprise Plan,Dedicated support and SSO,true,1700000000
+prod_POS,POS Hardware Bundle,Card reader plus stand,true,1702000000

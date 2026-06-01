@@ -1,0 +1,6 @@
+id,employeeId,name,type,start,end
+who-9001,emp-102,Jonas Pereira,Vacation,2026-06-08,2026-06-12
+who-9002,emp-107,Yuki Tanaka,Vacation,2026-05-28,2026-05-30
+who-9003,emp-105,Noor Aziz,Sick,2026-05-26,2026-05-26
+who-9004,emp-103,Helena Park,Vacation,2026-12-22,2026-12-31
+who-9005,emp-110,Sofia Lindqvist,Holiday,2026-07-04,2026-07-04

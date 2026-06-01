@@ -1,0 +1,10 @@
+message_id,chat_id,from_id,text,date,reply_to_message_id
+5001,-200500,9001,"Standup in 5. Drop blockers in the thread.",1748240000,
+5002,-200500,9002,"Blocked on the billing migration freeze. Need sign-off.",1748240120,5001
+5003,-200500,9003,"Frontend tokens migration is done. No drift left.",1748240240,5001
+5004,-200501,7654321098,"deploy: billing-api v1.42.0 to prod succeeded in 3m12s",1748241000,
+5005,-200501,7654321098,"deploy: auth-api v2.18.0 to staging succeeded in 2m08s",1748241300,
+5006,1001,7654321098,"Your on-call shift starts tomorrow at 09:00 UTC.",1748242000,
+5007,1001,9001,"Got it, thanks bot.",1748242060,5006
+5008,-200502,9004,"Who broke the coffee machine integration again?",1748243000,
+5009,-200502,9005,"Not me this time, promise.",1748243120,5008

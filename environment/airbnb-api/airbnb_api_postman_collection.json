@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Airbnb Mock API v2",
+    "description": "Test collection for the mock Airbnb lodging API service. Base URL defaults to http://localhost:8038. In docker-compose, the service is reachable at http://airbnb-api:8038.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8038"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "search listings", "request": {"method": "GET", "url": "{{baseUrl}}/v2/listings/search?location=San Francisco&checkin=2026-06-05&checkout=2026-06-09&guests=2&max_price=400"}},
+    {"name": "get listing", "request": {"method": "GET", "url": "{{baseUrl}}/v2/listings/lst-101"}},
+    {"name": "get availability", "request": {"method": "GET", "url": "{{baseUrl}}/v2/listings/lst-101/availability"}},
+    {"name": "get reviews", "request": {"method": "GET", "url": "{{baseUrl}}/v2/listings/lst-101/reviews"}},
+    {"name": "create reservation", "request": {"method": "POST", "url": "{{baseUrl}}/v2/reservations",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"listing_id\": \"lst-101\", \"checkin\": \"2026-06-05\", \"checkout\": \"2026-06-09\", \"guests\": 2, \"guest_name\": \"Tomas R.\"}"}}},
+    {"name": "get reservation", "request": {"method": "GET", "url": "{{baseUrl}}/v2/reservations/{{reservationId}}"}},
+    {"name": "cancel reservation", "request": {"method": "DELETE", "url": "{{baseUrl}}/v2/reservations/{{reservationId}}"}}
+  ]
+}

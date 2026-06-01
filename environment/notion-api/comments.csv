@@ -1,0 +1,5 @@
+id,parent_page_id,parent_block_id,author_id,text,created_time,resolved
+comment-001,page-task-001,block-005,user-jonas,Can we land the shim behind a feature flag?,2026-05-15T11:00:00.000Z,false
+comment-002,page-task-001,block-005,user-amelia,Yes, gating on `auth_v2_rollout`.,2026-05-15T11:05:00.000Z,false
+comment-003,page-okr-q2-2,,user-amelia,Multi-region failover is blocked on capacity in eu-west-2.,2026-05-11T11:00:00.000Z,false
+comment-004,page-task-004,,user-noor,Closing — vendor report signed off.,2026-05-12T12:00:00.000Z,true

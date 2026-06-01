@@ -1,0 +1,10 @@
+id,team_id,display_name,description,membership_type,web_url,created_date
+19:chan-eng-gen01@thread.tacv2,19:team-eng0001@thread.tacv2,General,Default channel for the Engineering team,standard,https://teams.microsoft.com/l/channel/19%3Achan-eng-gen01,2026-01-12T09:00:00Z
+19:chan-eng-plat02@thread.tacv2,19:team-eng0001@thread.tacv2,Platform,Platform services discussion,standard,https://teams.microsoft.com/l/channel/19%3Achan-eng-plat02,2026-02-03T10:15:00Z
+19:chan-eng-infra3@thread.tacv2,19:team-eng0001@thread.tacv2,Infra,Infrastructure on-call and incidents,private,https://teams.microsoft.com/l/channel/19%3Achan-eng-infra3,2026-02-20T14:30:00Z
+19:chan-prod-gen04@thread.tacv2,19:team-prod0002@thread.tacv2,General,Default channel for the Product team,standard,https://teams.microsoft.com/l/channel/19%3Achan-prod-gen04,2026-01-15T08:45:00Z
+19:chan-prod-road5@thread.tacv2,19:team-prod0002@thread.tacv2,Roadmap,Quarterly roadmap planning,standard,https://teams.microsoft.com/l/channel/19%3Achan-prod-road5,2026-03-01T11:00:00Z
+19:chan-mktg-gen06@thread.tacv2,19:team-mktg0003@thread.tacv2,General,Default channel for Marketing,standard,https://teams.microsoft.com/l/channel/19%3Achan-mktg-gen06,2026-01-20T13:20:00Z
+19:chan-mktg-camp7@thread.tacv2,19:team-mktg0003@thread.tacv2,Campaigns,Active campaign coordination,standard,https://teams.microsoft.com/l/channel/19%3Achan-mktg-camp7,2026-04-05T09:30:00Z
+19:chan-sales-gen8@thread.tacv2,19:team-sales004@thread.tacv2,General,Default channel for Sales,standard,https://teams.microsoft.com/l/channel/19%3Achan-sales-gen8,2026-02-01T16:00:00Z
+19:chan-allco-gen9@thread.tacv2,19:team-allco005@thread.tacv2,General,Company-wide announcements,standard,https://teams.microsoft.com/l/channel/19%3Achan-allco-gen9,2026-01-05T07:00:00Z

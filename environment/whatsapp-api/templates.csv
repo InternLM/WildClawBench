@@ -1,0 +1,6 @@
+name,language,category,status,body_text,header_text
+order_shipped,en_US,UTILITY,APPROVED,"Hi {{1}}, your order {{2}} has shipped and will arrive by {{3}}.","Order update"
+appointment_reminder,en_US,UTILITY,APPROVED,"Reminder: your appointment on {{1}} at {{2}} is confirmed.",""
+welcome_offer,en_US,MARKETING,APPROVED,"Welcome, {{1}}! Use code {{2}} for 10% off your first order.","Welcome to Orbit"
+otp_verify,en_US,AUTHENTICATION,APPROVED,"Your verification code is {{1}}. It expires in 10 minutes.",""
+support_followup,en_US,UTILITY,PENDING,"Hi {{1}}, did our support resolve your issue today?",""

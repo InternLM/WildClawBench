@@ -1,0 +1,17 @@
+{
+  "team": {
+    "id": "team-501",
+    "name": "Orbit Labs Design"
+  },
+  "me": {
+    "id": "user-1001",
+    "handle": "Priya Nair",
+    "email": "priya@orbit-labs.example.com",
+    "img_url": "https://figma-avatars.example.com/user-1001.png"
+  },
+  "users": [
+    {"id": "user-1001", "handle": "Priya Nair", "email": "priya@orbit-labs.example.com", "img_url": "https://figma-avatars.example.com/user-1001.png"},
+    {"id": "user-1002", "handle": "Diego Alvarez", "email": "diego@orbit-labs.example.com", "img_url": "https://figma-avatars.example.com/user-1002.png"},
+    {"id": "user-1003", "handle": "Mara Lindqvist", "email": "mara@orbit-labs.example.com", "img_url": "https://figma-avatars.example.com/user-1003.png"}
+  ]
+}

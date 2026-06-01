@@ -1,0 +1,9 @@
+sys_id,user_name,name,email,title,department,active
+usr-amelia,amelia.ortega,Amelia Ortega,amelia.ortega@orbitlabs.com,IT Service Manager,IT Service Management,true
+usr-jonas,jonas.pereira,Jonas Pereira,jonas.pereira@orbitlabs.com,Senior Support Engineer,IT Support,true
+usr-helena,helena.park,Helena Park,helena.park@orbitlabs.com,Network Engineer,Infrastructure,true
+usr-rohit,rohit.bansal,Rohit Bansal,rohit.bansal@orbitlabs.com,Database Administrator,Infrastructure,true
+usr-noor,noor.aziz,Noor Aziz,noor.aziz@orbitlabs.com,Service Desk Analyst,IT Support,true
+usr-diego,diego.santos,Diego Santos,diego.santos@orbitlabs.com,Change Manager,IT Service Management,true
+usr-yuki,yuki.tanaka,Yuki Tanaka,yuki.tanaka@orbitlabs.com,Security Analyst,Information Security,true
+usr-priya,priya.nair,Priya Nair,priya.nair@orbitlabs.com,Problem Coordinator,IT Service Management,false

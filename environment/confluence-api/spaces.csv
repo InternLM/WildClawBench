@@ -1,0 +1,3 @@
+id,key,name,type,status,description
+98001,ENG,Engineering,global,current,Engineering team space for design docs and runbooks
+98002,PROD,Product,global,current,Product specs roadmaps and release notes

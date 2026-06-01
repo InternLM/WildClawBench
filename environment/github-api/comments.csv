@@ -1,0 +1,6 @@
+id,issue_number,repo,user,body,created_at
+4000001,142,auth-api,jonas-pereira,"Suspecting we need a write batch — every refresh kicks a SET. Let me try an N=8 batch on the dual-writer.",2026-05-22T14:00:00Z
+4000002,142,auth-api,amelia-ortega,"Agree. Once the batch lands let's re-run the load test from baseline.",2026-05-26T09:00:00Z
+4000003,144,auth-api,jonas-pereira,"Looks great — couple of nits inline. Approving once the metric in #143 lands.",2026-05-25T14:00:00Z
+4000004,90,billing-api,helena-park,"Marked draft until we wire the gRPC retry config (blocked by #89).",2026-05-23T10:00:00Z
+4000005,205,web-app,noor-aziz,"Repro steps in the linked Loom. Logs attached.",2026-05-25T08:30:00Z

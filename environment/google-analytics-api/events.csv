@@ -1,0 +1,17 @@
+date,country,pagePath,deviceCategory,sessions,activeUsers,screenPageViews,eventCount
+20260520,United States,/home,desktop,120,98,340,1280
+20260520,United States,/pricing,mobile,85,72,210,640
+20260520,United Kingdom,/home,mobile,60,51,150,470
+20260520,Germany,/blog,desktop,40,33,95,300
+20260521,United States,/home,desktop,135,110,372,1390
+20260521,United States,/blog,mobile,72,60,168,520
+20260521,United Kingdom,/pricing,desktop,48,40,120,360
+20260521,Canada,/home,tablet,22,18,55,160
+20260522,United States,/home,mobile,150,128,410,1530
+20260522,Germany,/pricing,desktop,55,46,140,420
+20260522,United Kingdom,/blog,mobile,38,31,88,275
+20260522,Canada,/home,desktop,30,25,72,210
+20260523,United States,/pricing,desktop,98,80,250,900
+20260523,United States,/home,tablet,28,23,70,205
+20260523,Germany,/home,mobile,44,37,110,330
+20260523,France,/blog,desktop,33,27,80,240

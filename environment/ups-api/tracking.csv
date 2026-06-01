@@ -1,0 +1,6 @@
+tracking_number,status_type,status_code,status_description,service_name,ship_date,scheduled_delivery,latest_activity,latest_activity_location,latest_activity_time
+1Z999AA10123456784,D,011,Delivered,UPS Ground,2026-05-20,2026-05-25,Delivered,"Los Angeles, CA, US",2026-05-25T14:07:00Z
+1Z999AA10123456795,I,005,In Transit,UPS 2nd Day Air,2026-05-21,2026-05-23,Departed from Facility,"Chicago, IL, US",2026-05-22T02:40:00Z
+1Z999AA10123456806,O,021,Out For Delivery,UPS Next Day Air,2026-05-22,2026-05-23,Out For Delivery Today,"Los Angeles, CA, US",2026-05-23T06:55:00Z
+1Z999AA10123456817,M,003,Label Created,UPS 3 Day Select,2026-05-23,2026-05-28,Shipper created a label,"New York, NY, US",2026-05-23T18:12:00Z
+1Z999AA10123456828,I,005,In Transit,UPS Ground,2026-05-24,2026-05-27,Arrived at Facility,"Chicago, IL, US",2026-05-25T09:33:00Z

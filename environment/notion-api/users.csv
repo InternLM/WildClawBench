@@ -1,0 +1,7 @@
+id,name,email,avatar_url,type,bot,owner_workspace,created_time
+user-amelia,Amelia Ortega,amelia.ortega@orbit-labs.com,https://avatars.example.com/amelia.png,person,false,workspace-orbit-labs,2025-09-01T10:00:00.000Z
+user-jonas,Jonas Pereira,jonas.pereira@orbit-labs.com,https://avatars.example.com/jonas.png,person,false,workspace-orbit-labs,2025-09-04T11:30:00.000Z
+user-helena,Helena Park,helena.park@orbit-labs.com,https://avatars.example.com/helena.png,person,false,workspace-orbit-labs,2025-09-12T14:20:00.000Z
+user-rohit,Rohit Bansal,rohit.bansal@orbit-labs.com,https://avatars.example.com/rohit.png,person,false,workspace-orbit-labs,2025-10-02T09:10:00.000Z
+user-noor,Noor Aziz,noor.aziz@orbit-labs.com,https://avatars.example.com/noor.png,person,false,workspace-orbit-labs,2025-10-18T16:45:00.000Z
+bot-notebot,Orbit Sync Bot,,https://avatars.example.com/bot.png,bot,true,workspace-orbit-labs,2025-09-02T08:00:00.000Z

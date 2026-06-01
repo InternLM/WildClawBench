@@ -1,0 +1,5 @@
+id,company_id,pay_period_start,pay_period_end,check_date,processed,gross_pay,net_pay,employee_count
+pay-401,comp-001,2026-04-01,2026-04-15,2026-04-20,true,48750.00,35420.50,8
+pay-402,comp-001,2026-04-16,2026-04-30,2026-05-05,true,48975.25,35610.10,8
+pay-403,comp-001,2026-05-01,2026-05-15,2026-05-20,true,49120.00,35740.75,8
+pay-404,comp-001,2026-05-16,2026-05-31,2026-06-05,false,0.00,0.00,8

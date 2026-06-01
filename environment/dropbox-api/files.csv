@@ -1,0 +1,11 @@
+id,name,path_lower,path_display,is_folder,size,client_modified,rev
+id:a4ayc_80000000000000000000001,Documents,/documents,/Documents,true,0,2026-05-02T09:14:00Z,
+id:a4ayc_80000000000000000000002,Photos,/photos,/Photos,true,0,2026-05-03T11:20:00Z,
+id:a4ayc_80000000000000000000003,Projects,/projects,/Projects,true,0,2026-05-04T08:05:00Z,
+id:a4ayc_80000000000000000000004,Q2-Report.pdf,/documents/q2-report.pdf,/Documents/Q2-Report.pdf,false,284517,2026-05-10T14:32:00Z,0123456789abcdef01000001
+id:a4ayc_80000000000000000000005,Budget-2026.xlsx,/documents/budget-2026.xlsx,/Documents/Budget-2026.xlsx,false,51230,2026-05-12T16:48:00Z,0123456789abcdef01000002
+id:a4ayc_80000000000000000000006,Roadmap.docx,/documents/roadmap.docx,/Documents/Roadmap.docx,false,38912,2026-05-14T10:11:00Z,0123456789abcdef01000003
+id:a4ayc_80000000000000000000007,launch.png,/photos/launch.png,/Photos/launch.png,false,1048576,2026-05-15T18:22:00Z,0123456789abcdef01000004
+id:a4ayc_80000000000000000000008,team-offsite.jpg,/photos/team-offsite.jpg,/Photos/team-offsite.jpg,false,2097152,2026-05-16T12:40:00Z,0123456789abcdef01000005
+id:a4ayc_80000000000000000000009,proposal.pdf,/projects/proposal.pdf,/Projects/proposal.pdf,false,156789,2026-05-18T09:55:00Z,0123456789abcdef01000006
+id:a4ayc_80000000000000000000010,notes.txt,/projects/notes.txt,/Projects/notes.txt,false,4096,2026-05-20T13:07:00Z,0123456789abcdef01000007

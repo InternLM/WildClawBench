@@ -1,0 +1,11 @@
+column_id,board_id,title,type,position
+status,board-101,Status,status,1
+owner,board-101,Owner,person,2
+due,board-101,Due Date,date,3
+notes,board-101,Notes,text,4
+status,board-102,Status,status,1
+owner,board-102,Assignee,person,2
+severity,board-102,Severity,text,3
+status,board-201,Status,status,1
+owner,board-201,Lead,person,2
+launch,board-201,Launch Date,date,3

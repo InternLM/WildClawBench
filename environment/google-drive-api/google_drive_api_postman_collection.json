@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "Google Drive API Mock v3",
+    "description": "Mock Google Drive API v3. Base URL: http://localhost:8018. In docker-compose: http://google-drive-api:8018.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8018"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "about", "request": {"method": "GET", "url": "{{baseUrl}}/drive/v3/about"}},
+    {"name": "list files in Engineering", "request": {"method": "GET", "url": "{{baseUrl}}/drive/v3/files?q='folder-eng' in parents and trashed = false"}},
+    {"name": "search PDFs", "request": {"method": "GET", "url": "{{baseUrl}}/drive/v3/files?q=mimeType = 'application/pdf' and trashed = false"}},
+    {"name": "search starred", "request": {"method": "GET", "url": "{{baseUrl}}/drive/v3/files?q=starred = true"}},
+    {"name": "get file", "request": {"method": "GET", "url": "{{baseUrl}}/drive/v3/files/file-rfc-auth"}},
+    {"name": "create folder", "request": {"method": "POST", "url": "{{baseUrl}}/drive/v3/files",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Postmortems\", \"mimeType\": \"application/vnd.google-apps.folder\", \"parents\": [\"folder-eng\"]}"}}},
+    {"name": "rename file", "request": {"method": "PATCH", "url": "{{baseUrl}}/drive/v3/files/file-trace",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Trace export 2026-05-20 (auth.refresh).json\"}"}}},
+    {"name": "star file", "request": {"method": "PATCH", "url": "{{baseUrl}}/drive/v3/files/file-budget",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"starred\": true}"}}},
+    {"name": "trash file", "request": {"method": "POST", "url": "{{baseUrl}}/drive/v3/files/file-personal/trash"}},
+    {"name": "delete file", "request": {"method": "DELETE", "url": "{{baseUrl}}/drive/v3/files/file-trashed"}},
+    {"name": "list permissions", "request": {"method": "GET", "url": "{{baseUrl}}/drive/v3/files/file-rfc-auth/permissions"}},
+    {"name": "share with writer", "request": {"method": "POST", "url": "{{baseUrl}}/drive/v3/files/file-rfc-auth/permissions",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"type\": \"user\", \"role\": \"writer\", \"emailAddress\": \"helena@orbit-labs.com\"}"}}},
+    {"name": "remove permission", "request": {"method": "DELETE", "url": "{{baseUrl}}/drive/v3/files/file-budget/permissions/perm-008"}}
+  ]
+}

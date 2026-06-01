@@ -1,0 +1,7 @@
+id,email,first_name,last_name,country,list_ids,created_at,updated_at
+contact-00a1,amelia.ortega@example.com,Amelia,Ortega,US,list-7788aa11;list-7788aa22,2025-09-02T10:00:00Z,2026-05-20T10:00:00Z
+contact-00a2,jonas.pereira@example.com,Jonas,Pereira,PT,list-7788aa11;list-7788aa22,2025-09-04T11:00:00Z,2026-05-18T09:00:00Z
+contact-00a3,helena.park@example.com,Helena,Park,KR,list-7788aa11,2025-09-12T14:00:00Z,2026-05-15T16:00:00Z
+contact-00a4,rohit.bansal@example.com,Rohit,Bansal,IN,list-7788aa22;list-7788aa33,2025-10-02T09:00:00Z,2026-05-22T11:00:00Z
+contact-00a5,noor.aziz@example.com,Noor,Aziz,AE,list-7788aa33,2025-10-18T16:00:00Z,2026-05-19T13:00:00Z
+contact-00a6,sofia.rossi@example.com,Sofia,Rossi,IT,list-7788aa11;list-7788aa44,2026-01-15T09:00:00Z,2026-05-21T08:00:00Z

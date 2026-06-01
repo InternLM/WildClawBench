@@ -1,0 +1,13 @@
+id,firstName,lastName,workEmail,department,jobTitle,location,hireDate,status,supervisorId
+emp-101,Amelia,Ortega,amelia.ortega@orbitlabs.com,Engineering,VP of Engineering,San Francisco,2019-03-04,Active,
+emp-102,Jonas,Pereira,jonas.pereira@orbitlabs.com,Engineering,Staff Software Engineer,San Francisco,2020-06-15,Active,emp-101
+emp-103,Helena,Park,helena.park@orbitlabs.com,Engineering,Senior Software Engineer,Remote,2021-01-11,Active,emp-101
+emp-104,Rohit,Bansal,rohit.bansal@orbitlabs.com,Engineering,Software Engineer,Austin,2022-09-19,Active,emp-102
+emp-105,Noor,Aziz,noor.aziz@orbitlabs.com,People,People Operations Manager,San Francisco,2020-02-03,Active,emp-110
+emp-106,Diego,Santos,diego.santos@orbitlabs.com,Sales,Account Executive,New York,2021-11-08,Active,emp-109
+emp-107,Yuki,Tanaka,yuki.tanaka@orbitlabs.com,Marketing,Content Strategist,Remote,2023-04-17,Active,emp-108
+emp-108,Priya,Nair,priya.nair@orbitlabs.com,Marketing,Director of Marketing,New York,2019-08-26,Active,emp-110
+emp-109,Marcus,Reed,marcus.reed@orbitlabs.com,Sales,VP of Sales,New York,2018-05-21,Active,emp-110
+emp-110,Sofia,Lindqvist,sofia.lindqvist@orbitlabs.com,Executive,Chief Operating Officer,San Francisco,2017-01-09,Active,
+emp-111,Tariq,Hassan,tariq.hassan@orbitlabs.com,Engineering,QA Engineer,Austin,2022-03-14,Inactive,emp-102
+emp-112,Lena,Fischer,lena.fischer@orbitlabs.com,People,Recruiter,Remote,2023-10-02,Active,emp-105

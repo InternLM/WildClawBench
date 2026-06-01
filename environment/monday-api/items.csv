@@ -1,0 +1,9 @@
+item_id,board_id,group_id,name,created_at
+item-1001,board-101,grp-doing,Implement OAuth token refresh,2026-05-18T09:00:00Z
+item-1002,board-101,grp-todo,Add pagination to users endpoint,2026-05-19T10:30:00Z
+item-1003,board-101,grp-done,Migrate logging to structured JSON,2026-05-12T14:00:00Z
+item-1004,board-101,grp-todo,Write integration tests for billing,2026-05-20T11:15:00Z
+item-2001,board-102,grp-open,Checkout button unresponsive on iOS,2026-05-21T08:45:00Z
+item-2002,board-102,grp-closed,Avatar upload fails over 5MB,2026-05-15T16:20:00Z
+item-3001,board-201,grp-planned,Launch summer newsletter series,2026-05-17T13:00:00Z
+item-3002,board-201,grp-live,Refresh homepage hero campaign,2026-05-10T09:30:00Z

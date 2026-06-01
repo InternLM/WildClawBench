@@ -1,0 +1,19 @@
+category_id,name,parent_id,default_budget
+cat-groceries,Groceries,cat-food,750
+cat-dining,Dining out,cat-food,400
+cat-food,Food,,1150
+cat-rent,Rent / Mortgage,cat-housing,3120
+cat-utilities,Utilities,cat-housing,220
+cat-housing,Housing,,3340
+cat-fuel,Fuel,cat-transportation,150
+cat-rideshare,Rideshare / Transit,cat-transportation,80
+cat-transportation,Transportation,,230
+cat-subscriptions,Subscriptions,,180
+cat-fitness,Fitness,,90
+cat-travel,Travel,,400
+cat-shopping,Shopping,,300
+cat-healthcare,Healthcare,,200
+cat-charity,Charity,,250
+cat-income-salary,Salary,cat-income,
+cat-income,Income,,
+cat-transfer,Transfer,,

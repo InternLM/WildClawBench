@@ -1,0 +1,4 @@
+campaign_id,ad_account_id,name,status,objective_type,daily_spend_cap_micro,lifetime_spend_cap_micro,start_time,end_time,created_at,updated_at
+camp_8001,ad_acct_7001,Orchid Show Awareness June 2026,ACTIVE,AWARENESS,2000000,60000000,2026-05-01T00:00:00,2026-06-14T23:59:59,2026-04-20T10:00:00,2026-05-10T08:30:00
+camp_8002,ad_acct_7001,Orchid Care Content Boost,ACTIVE,TRAFFIC,1500000,45000000,2026-03-01T00:00:00,2026-06-30T23:59:59,2026-02-20T14:00:00,2026-04-20T11:00:00
+camp_8003,ad_acct_7001,Holiday Macaron Pins,PAUSED,TRAFFIC,3000000,75000000,2025-11-15T00:00:00,2025-12-31T23:59:59,2025-11-01T09:00:00,2025-12-31T23:59:59

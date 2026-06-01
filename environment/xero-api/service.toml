@@ -1,0 +1,11 @@
+[service]
+name = "xero-api"
+port = 8088
+env_var_name = "XERO_API_URL"
+healthcheck_path = "/health"
+
+[k8s]
+image = ""
+cpu_request = "25m"
+memory_request = "128Mi"
+memory_limit = "256Mi"

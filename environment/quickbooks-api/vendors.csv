@@ -1,0 +1,12 @@
+Id,DisplayName,CompanyName,PrimaryEmailAddr,PrimaryPhone,BillAddr_Line1,BillAddr_City,BillAddr_CountrySubDivisionCode,BillAddr_PostalCode,Balance,Active,AcctNum,Vendor1099
+1,Northway Lodge Syracuse,Northway Lodge Syracuse,receipts@northwaylodge.example,(315) 555-2014,100 Northway Lodge Rd,Syracuse,NY,13208,418.22,true,FCV-014,false
+2,Sunoco,Sunoco,receipts@sunoco.example,(315) 555-2015,200 Fuel Route,Syracuse,NY,13204,0.00,true,FCV-015,false
+3,Walmart Supercenter,Walmart Supercenter,receipts@walmart.example,(315) 555-2016,300 Erie Blvd E,Syracuse,NY,13210,152.87,true,FCV-016,false
+4,Maple Creek Inn,Maple Creek Inn,billing@maplecreekinn.example,(315) 555-2017,400 Maple Creek Dr,Syracuse,NY,13206,0.00,true,FCV-017,false
+5,Exxon,Exxon,receipts@exxon.example,(315) 555-2018,500 Travel Center Ln,Syracuse,NY,13212,204.51,true,FCV-018,false
+6,Eastview Motel,Eastview Motel,billing@eastviewmotel.example,(315) 555-2019,600 Eastview Rd,Syracuse,NY,13205,0.00,true,FCV-019,false
+7,Harbor House Extended Stay,Harbor House Extended Stay,billing@harborhouse.example,(315) 555-2020,700 Harbor House Ave,Syracuse,NY,13207,624.00,true,FCV-020,false
+8,U-Haul Moving & Storage,U-Haul Moving & Storage,receipts@uhaul.example,(315) 555-2021,800 Erie Blvd W,Syracuse,NY,13204,312.45,true,FCV-021,false
+9,National Grid,National Grid,billing@nationalgrid.example,(800) 555-2023,PO Box 11742,Newark,NJ,07101,950.00,true,FCV-023,false
+10,Pine Ridge Apartments,Pine Ridge Apartments,leasing@pineridge.example,(315) 555-2024,1000 Pine Ridge Dr,Syracuse,NY,13211,1280.00,true,FCV-024,false
+11,Speedway,Speedway,receipts@speedway.example,(315) 555-2025,1100 State Route 11,Syracuse,NY,13212,184.20,true,FCV-025,false

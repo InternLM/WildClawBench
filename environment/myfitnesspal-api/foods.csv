@@ -1,0 +1,89 @@
+food_id,food_name,brand,serving_size,serving_unit,calories,total_fat_g,saturated_fat_g,cholesterol_mg,sodium_mg,total_carbs_g,dietary_fiber_g,sugars_g,protein_g,potassium_mg,is_verified
+1,Grilled Chicken Breast,,4,oz,165,3.6,1.0,85,74,0,0,0,31,256,true
+2,Brown Rice (cooked),,1,cup,216,1.8,0.4,0,10,45,3.5,0.7,5,84,true
+3,Banana,,1,medium (118g),105,0.4,0.1,0,1,27,3.1,14.4,1.3,422,true
+4,Large Egg,,1,large,72,5.0,1.6,186,71,0.4,0,0.2,6.3,69,true
+5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),90,0,0,5,60,6,0,4,15,240,true
+6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),110,1.5,0,0,170,22,5,5,5,80,true
+7,Extra Virgin Olive Oil,,1,tbsp,119,14,1.9,0,0,0,0,0,0,0,true
+8,Broccoli (steamed),,1,cup,55,0.6,0.1,0,64,11,5.1,2.2,3.7,457,true
+9,Sweet Potato (baked),,1,medium (130g),103,0.1,0,0,41,24,3.8,7.4,2.3,542,true
+10,Salmon Fillet (baked),,4,oz,233,14,2.6,63,62,0,0,0,25,534,true
+11,Avocado,,0.5,medium,120,11,1.5,0,5,6,5,0.5,1.5,345,true
+12,Almonds (raw),,1,oz (28g),164,14,1.1,0,0,6,3.5,1.2,6,208,true
+13,Oatmeal (cooked),,1,cup,154,2.6,0.4,0,9,27,4,1.1,5.4,143,true
+14,Whole Milk,,1,cup,149,8,5,24,105,12,0,12,8,322,true
+15,Baby Spinach,,2,cups (60g),14,0.2,0,0,47,2.2,1.3,0.3,1.7,334,true
+16,Black Beans (canned),,0.5,cup,114,0.5,0.1,0,461,20,7.5,0.3,7.6,305,true
+17,Ground Turkey (93% lean),,4,oz,170,9,2.5,80,80,0,0,0,21,240,true
+18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),120,1.5,0.5,30,130,3,1,1,24,160,true
+19,Apple,,1,medium (182g),95,0.3,0.1,0,2,25,4.4,19,0.5,195,true
+20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),190,16,2.5,0,65,7,2,3,7,180,true
+21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,665,22,8,120,1695,60,12,5,50,820,true
+22,Quest Protein Bar (Chocolate Chip Cookie Dough),Quest Nutrition,1,bar (60g),200,9,3.5,10,260,22,14,1,21,85,true
+23,Cottage Cheese (2% Low Fat),,0.5,cup (113g),92,2.5,1.5,15,348,5,0,4,12,97,true
+24,White Rice (cooked),,1,cup,206,0.4,0.1,0,2,45,0.6,0.1,4.3,55,true
+25,Canned Tuna (in water),StarKist,1,can (142g),191,1.4,0.4,60,558,0,0,0,42,360,true
+26,Mixed Greens Salad (no dressing),,2,cups,18,0.2,0,0,35,3.5,1.8,0.8,1.5,200,true
+27,Ranch Dressing,Hidden Valley,2,tbsp (30g),140,14,2.5,5,260,2,0,1,0.5,30,true
+28,Spaghetti (whole wheat cooked),,1,cup,174,0.8,0.1,0,4,37,6.3,0.8,7.5,62,true
+29,Marinara Sauce,Rao's Homemade,0.5,cup (125g),80,5,0.5,0,390,7,2,5,1,0,true
+30,Cheddar Cheese,,1,oz (28g),113,9.3,5.3,28,176,0.9,0,0.3,7,21,true
+31,Greek Salad,,1,serving,220,16,6,25,580,8,2,4,8,280,true
+32,Turkey Sandwich (whole wheat),,1,sandwich,350,8,2.5,45,890,42,5,6,24,300,true
+33,Protein Pancakes (homemade),,3,pancakes,320,8,2,95,480,32,3,6,30,350,true
+34,Trail Mix,,0.25,cup (35g),175,11,1.5,0,45,15,2,9,5,180,true
+35,Beef Stir Fry (homemade),,1.5,cups,380,15,4,75,780,22,4,8,35,520,true
+36,Lentil Soup (homemade),,1.5,cups,280,4,0.5,0,650,40,15,4,18,600,true
+37,Iced Coffee (black),,16,oz,5,0,0,0,10,0,0,0,0.5,120,true
+38,Honey,,1,tbsp,64,0,0,0,1,17,0,17,0.1,11,true
+39,Blueberries (fresh),,1,cup (148g),84,0.5,0,0,1,21,3.6,15,1.1,114,true
+40,String Cheese,Sargento,1,stick (28g),80,6,3.5,15,200,1,0,0,7,20,true
+41,Grilled Shrimp,,4,oz,120,1.8,0.3,170,805,1,0,0,23,180,true
+42,Quinoa (cooked),,1,cup,222,3.6,0.4,0,13,39,5.2,1.6,8.1,318,true
+43,Rotisserie Chicken Thigh (skin removed),,1,thigh (95g),170,8,2.3,95,75,0,0,0,23,220,true
+44,Clif Bar (Chocolate Chip),Clif Bar,1,bar (68g),250,5,1.5,0,150,44,5,21,10,210,true
+45,Steamed Vegetables (mixed),,1,cup,45,0.3,0.1,0,30,9,3.5,3.5,2.5,250,true
+1001,White bread toast,,1,serving,160,6.1,0,0,0,16.7,0.5,4,5,0,true
+1002,Scrambled eggs,,1,serving,180,6.8,0,0,0,18.8,0.6,4.6,12,0,true
+1003,Orange juice (8oz),,1,serving,110,4.2,0,0,0,11.5,0.4,2.8,1.5,0,true
+1004,Ham sandwich on white bread,,1,serving,340,12.9,0,0,0,35.5,1.1,8.6,18,0,true
+1005,Potato chips (1oz bag),,1,serving,152,5.8,0,0,0,15.9,0.5,3.8,2,0,true
+1006,Diet Coke (12oz),,1,serving,0,0,0,0,0,0,0,0,0,0,true
+1007,Fried chicken thigh,,1,serving,440,16.7,0,0,0,45.9,1.4,11.1,34,0,true
+1008,White rice (1 cup cooked),,1,serving,306,11.6,0,0,0,31.9,1,7.7,6,0,true
+1009,Canned green beans,,1,serving,20,0.8,0,0,0,2.1,0.1,0.5,1,0,true
+1010,Peanut butter crackers,,1,serving,190,7.2,0,0,0,19.8,0.6,4.8,4,0,true
+1011,Instant oatmeal packet,,1,serving,130,4.9,0,0,0,15.1,0.2,5.6,4,0,true
+1012,Black coffee,,1,serving,10,0.4,0,0,0,1.2,0,0.4,0,0,true
+1013,McDonald's Quarter Pounder,,1,serving,520,19.6,0,0,0,60.5,0.8,22.3,30,0,true
+1014,McDonald's Medium Fries,,1,serving,320,12,0,0,0,37.2,0.5,13.7,4,0,true
+1015,Sweet tea (large),,1,serving,280,10.5,0,0,0,32.6,0.4,12,0,0,true
+1016,Frozen TV dinner — Salisbury steak,,1,serving,380,14.3,0,0,0,44.2,0.6,16.3,19,0,true
+1017,White dinner roll,,1,serving,160,6,0,0,0,18.6,0.2,6.9,5,0,true
+1018,Vanilla ice cream (1 cup),,1,serving,273,10.3,0,0,0,31.7,0.4,11.7,4.5,0,true
+1019,Skipped breakfast,,1,serving,0,0,0,0,0,0,0,0,0,0,true
+1020,Canned chicken noodle soup,,1,serving,225,9.9,0,0,0,23.1,1,4.5,12,0,true
+1021,Saltine crackers (10),,1,serving,130,5.7,0,0,0,13.3,0.6,2.6,2.5,0,true
+1022,Pork chop (pan fried),,1,serving,290,12.8,0,0,0,29.8,1.3,5.8,28,0,true
+1023,Mashed potatoes with butter,,1,serving,210,9.2,0,0,0,21.6,0.9,4.2,3.5,0,true
+1024,Canned corn,,1,serving,66,2.9,0,0,0,6.8,0.3,1.3,2,0,true
+1025,Honey roasted peanuts (1oz),,1,serving,170,7.5,0,0,0,17.5,0.7,3.4,5,0,true
+1026,Bacon (3 strips),,1,serving,130,5,0,0,0,10.1,0.4,2.7,9,0,true
+1027,Fried egg,,1,serving,180,6.9,0,0,0,14,0.6,3.7,12,0,true
+1028,White toast with butter,,1,serving,200,7.7,0,0,0,15.6,0.7,4.1,5,0,true
+1029,Tuna fish sandwich,,1,serving,310,11.9,0,0,0,24.1,1,6.3,24,0,true
+1030,Dill pickle spear,,1,serving,8,0.3,0,0,0,0.6,0,0.2,0.4,0,true
+1031,Beef pot roast,,1,serving,420,16.1,0,0,0,32.7,1.4,8.6,42,0,true
+1032,Boiled carrots,,1,serving,27,1,0,0,0,2.1,0.1,0.6,0.6,0,true
+1033,White dinner roll,,1,serving,80,3.1,0,0,0,6.2,0.3,1.6,2.5,0,true
+1034,Oreo cookies (3),,1,serving,160,6.1,0,0,0,12.5,0.5,3.3,2,0,true
+1035,Skipped breakfast,,1,serving,0,0,0,0,0,0,0,0,0,0,true
+1036,Wendy's Baconator,,1,serving,950,37.6,0,0,0,98.4,2.2,27.5,57,0,true
+1037,Wendy's small fries,,1,serving,230,9.1,0,0,0,23.8,0.5,6.7,3,0,true
+1038,Diet Coke (medium),,1,serving,0,0,0,0,0,0,0,0,0,0,true
+1039,Canned beef stew,,1,serving,315,12.5,0,0,0,32.6,0.7,9.1,18,0,true
+1040,White bread (2 slices),,1,serving,160,6.3,0,0,0,16.6,0.4,4.6,5,0,true
+1041,Chocolate chip cookies (2),,1,serving,140,5.5,0,0,0,14.5,0.3,4.1,2,0,true
+46,Ladder 24 Firehouse Beef Stew,Ladder 24 Firehouse,2,cups,520,22,8,110,1850,38,6,6,42,680,false
+47,Ladder 24 Firehouse Chili,Ladder 24 Firehouse,1.5,cups,480,18,6,95,1650,35,8,5,38,720,false

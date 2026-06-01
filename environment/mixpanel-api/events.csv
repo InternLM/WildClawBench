@@ -1,0 +1,19 @@
+event_id,event,distinct_id,time,country,plan,platform,utm_source
+evt-0001,Signup,user-aria,2025-05-01T08:12:00Z,US,free,web,google
+evt-0002,Signup,user-bode,2025-05-01T09:40:00Z,DE,free,ios,organic
+evt-0003,App Open,user-aria,2025-05-01T10:05:00Z,US,free,web,google
+evt-0004,Product Viewed,user-aria,2025-05-01T10:08:00Z,US,free,web,google
+evt-0005,Add to Cart,user-aria,2025-05-01T10:12:00Z,US,free,web,google
+evt-0006,Checkout,user-aria,2025-05-01T10:18:00Z,US,paid,web,google
+evt-0007,Signup,user-cleo,2025-05-02T07:55:00Z,GB,free,android,facebook
+evt-0008,App Open,user-bode,2025-05-02T11:30:00Z,DE,free,ios,organic
+evt-0009,Product Viewed,user-bode,2025-05-02T11:33:00Z,DE,free,ios,organic
+evt-0010,Add to Cart,user-bode,2025-05-02T11:40:00Z,DE,free,ios,organic
+evt-0011,App Open,user-cleo,2025-05-02T13:20:00Z,GB,free,android,facebook
+evt-0012,Product Viewed,user-cleo,2025-05-02T13:24:00Z,GB,free,android,facebook
+evt-0013,Checkout,user-bode,2025-05-03T09:10:00Z,DE,paid,ios,organic
+evt-0014,App Open,user-aria,2025-05-03T18:02:00Z,US,paid,web,google
+evt-0015,Product Viewed,user-cleo,2025-05-03T19:45:00Z,GB,free,android,facebook
+evt-0016,Add to Cart,user-cleo,2025-05-03T19:50:00Z,GB,free,android,facebook
+evt-0017,Signup,user-dane,2025-05-03T20:11:00Z,US,free,web,google
+evt-0018,App Open,user-dane,2025-05-04T08:30:00Z,US,free,web,google

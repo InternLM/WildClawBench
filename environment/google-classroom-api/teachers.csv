@@ -1,0 +1,9 @@
+courseId,userId,fullName,emailAddress,photoUrl
+course_001,teacher_001,Rachel Torres,rtorres@westlake.edu,https://lh3.googleusercontent.com/a/teacher001
+course_002,teacher_001,Rachel Torres,rtorres@westlake.edu,https://lh3.googleusercontent.com/a/teacher001
+course_003,teacher_001,Rachel Torres,rtorres@westlake.edu,https://lh3.googleusercontent.com/a/teacher001
+course_004,teacher_001,Rachel Torres,rtorres@westlake.edu,https://lh3.googleusercontent.com/a/teacher001
+course_002,teacher_002,Marcus Chen,mchen@westlake.edu,https://lh3.googleusercontent.com/a/teacher002
+course_005,teacher_003,Mike Crawford,mcrawford@cascobay-marine.edu,https://lh3.googleusercontent.com/a/teacher003
+uscg-charter-inspection-2026,teacher_004,Carlos Bennett,cbennett@luckystrike-charters.com,https://lh3.googleusercontent.com/a/teacher003
+uscg-charter-inspection-2025,teacher_004,Carlos Bennett,cbennett@luckystrike-charters.com,https://lh3.googleusercontent.com/a/teacher003

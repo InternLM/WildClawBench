@@ -1,0 +1,6 @@
+tracking_number,service_type,service_name,ship_date,origin_zip,dest_zip,weight_lb,currency,net_charge,label_url
+794612035840,FEDEX_GROUND,FedEx Ground,2026-05-20,38116,10001,5.0,USD,18.45,https://fedex.example/labels/794612035840.pdf
+794612035851,FEDEX_2_DAY,FedEx 2Day,2026-05-21,38116,90001,3.2,USD,49.30,https://fedex.example/labels/794612035851.pdf
+794612035862,PRIORITY_OVERNIGHT,FedEx Priority Overnight,2026-05-22,38116,10001,1.5,USD,96.55,https://fedex.example/labels/794612035862.pdf
+794612035873,FEDEX_EXPRESS_SAVER,FedEx Express Saver,2026-05-23,38116,60601,7.8,USD,33.40,https://fedex.example/labels/794612035873.pdf
+794612035884,STANDARD_OVERNIGHT,FedEx Standard Overnight,2026-05-24,38116,10001,2.0,USD,78.20,https://fedex.example/labels/794612035884.pdf

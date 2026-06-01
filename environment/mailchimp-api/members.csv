@@ -1,0 +1,10 @@
+list_id,email_address,full_name,status,timestamp_signup,member_rating
+list-newsletter,mara@brightpath.io,Mara Lindgren,subscribed,2025-09-02T08:00:00.000Z,4
+list-newsletter,tomas@brightpath.io,Tomas Vega,subscribed,2025-09-05T09:00:00.000Z,3
+list-newsletter,yara@nimbus-co.com,Yara Khalil,unsubscribed,2025-09-10T10:00:00.000Z,2
+list-newsletter,ethan@nimbus-co.com,Ethan Walsh,subscribed,2025-09-18T11:00:00.000Z,5
+list-newsletter,grace@helio-labs.com,Grace Okafor,cleaned,2025-10-01T12:00:00.000Z,1
+list-product,sven@helio-labs.com,Sven Nyberg,subscribed,2025-09-20T08:00:00.000Z,4
+list-product,lucia@orbit-mark.com,Lucia Romano,subscribed,2025-09-22T09:00:00.000Z,3
+list-product,kenji@orbit-mark.com,Kenji Sato,subscribed,2025-10-05T10:00:00.000Z,4
+list-product,hannah@vela-tech.com,Hannah Frost,subscribed,2025-10-12T11:00:00.000Z,5

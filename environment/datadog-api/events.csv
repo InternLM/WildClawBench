@@ -1,0 +1,5 @@
+id,title,text,alert_type,priority,host,tags,date_happened
+500001,Deployment auth-service 2.0.3,"Deployed auth-service version 2.0.3 to production.",info,normal,web-01,service:auth-service;event:deploy,1748250000
+500002,Monitor alert: High API p95 latency,"Monitor triggered: avg latency exceeded 0.6s.",error,normal,web-01,service:auth-service;monitor:1001,1748250600
+500003,Monitor recovered: Host CPU saturation,"Monitor recovered: CPU back under threshold on web-01.",success,low,web-01,host:web-01;monitor:1003,1748190000
+500004,Scaling event web-frontend,"Autoscaler added 2 pods to web-frontend.",warning,normal,web-02,service:web-frontend;event:autoscale,1748232000

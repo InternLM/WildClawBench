@@ -1,0 +1,12 @@
+product_id,variant_id,handle,title,variant_title,sku,vendor,product_type,price,compare_at_price,weight_grams,published,tags
+prod-001,var-001-a,linen-table-runner,Linen table runner,Sand · 72 in,LIN-RUN-72-SAND,Marigold & Pine,Tabletop,48.00,,420,true,linen;tabletop;bestseller
+prod-001,var-001-b,linen-table-runner,Linen table runner,Olive · 72 in,LIN-RUN-72-OLIVE,Marigold & Pine,Tabletop,48.00,,420,true,linen;tabletop
+prod-002,var-002-a,ceramic-vase-mini,Ceramic vase (mini),Cream,CER-VASE-MINI-CREAM,Studio Yara,Ceramics,32.00,,510,true,ceramic;vase
+prod-002,var-002-b,ceramic-vase-mini,Ceramic vase (mini),Charcoal,CER-VASE-MINI-CHAR,Studio Yara,Ceramics,32.00,,510,true,ceramic;vase
+prod-003,var-003-a,beeswax-candle-set,Beeswax candle set (4 ct),,BEE-CAN-4,Pacific Hive Co.,Candles,28.00,34.00,840,true,candles;gift
+prod-004,var-004-a,merino-throw,Merino wool throw,Charcoal · 50x60,MER-THR-CHAR,Olin Mills,Textiles,148.00,,1620,true,wool;throw;winter
+prod-004,var-004-b,merino-throw,Merino wool throw,Oat · 50x60,MER-THR-OAT,Olin Mills,Textiles,148.00,,1620,true,wool;throw;winter
+prod-005,var-005-a,kitchen-apron,Heavyweight kitchen apron,Indigo,APR-IND,Marigold & Pine,Kitchen,42.00,,380,true,kitchen;apron
+prod-006,var-006-a,wooden-cutting-board,Walnut cutting board,Large,WOOD-CB-LG,Northcrest Wood,Kitchen,68.00,,1820,true,kitchen;wood;walnut
+prod-006,var-006-b,wooden-cutting-board,Walnut cutting board,Small,WOOD-CB-SM,Northcrest Wood,Kitchen,38.00,,820,true,kitchen;wood;walnut
+prod-007,var-007-a,winter-sale-bundle,Winter sale bundle,,WINTER-BUNDLE,Marigold & Pine,Bundles,120.00,180.00,2400,false,bundle;archive

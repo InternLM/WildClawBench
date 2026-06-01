@@ -1,0 +1,11 @@
+[service]
+name = "contentful-api"
+port = 8066
+env_var_name = "CONTENTFUL_API_URL"
+healthcheck_path = "/health"
+
+[k8s]
+image = ""
+cpu_request = "25m"
+memory_request = "128Mi"
+memory_limit = "256Mi"

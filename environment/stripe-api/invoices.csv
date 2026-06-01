@@ -1,0 +1,8 @@
+id,customer,subscription,amount_due,amount_paid,currency,status,number,charge,created,due_date
+in_Aurora001,cus_Nb1Aurora,sub_Aurora,1900,1900,usd,paid,ORBIT-0001,ch_3Aurora01,1717286400,1717286400
+in_Helix001,cus_Nb2Helix,sub_Helix,29900,29900,usd,paid,ORBIT-0002,ch_3Helix01,1717372800,1717372800
+in_Lumen001,cus_Nb3Lumen,sub_Lumen,4900,4900,usd,paid,ORBIT-0003,ch_3Lumen01,1717459200,1717459200
+in_Pelagic001,cus_Nb4Pelagic,,12500,0,usd,open,ORBIT-0004,,1717545600,1720137600
+in_Quanta001,cus_Nb6Quanta,sub_Quanta,49000,49000,usd,paid,ORBIT-0005,ch_3Quanta01,1717632000,1717632000
+in_Verdant001,cus_Nb5Verdant,sub_Verdant,4900,0,usd,open,ORBIT-0006,,1717804800,1720483200
+in_Lumen002,cus_Nb3Lumen,sub_Lumen,4900,0,usd,draft,ORBIT-0007,,1719792000,1722384000

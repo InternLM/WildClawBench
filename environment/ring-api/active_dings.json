@@ -1,0 +1,26 @@
+[
+  {
+    "id": 456789012345679,
+    "id_str": "456789012345679",
+    "state": "ringing",
+    "protocol": "sip",
+    "doorbot_id": 987007,
+    "doorbot_description": "Garage",
+    "device_kind": "stickup_cam_v3",
+    "motion": true,
+    "snapshot_url": "",
+    "kind": "motion",
+    "sip_server_ip": "192.168.1.1",
+    "sip_server_port": 15063,
+    "sip_server_tls": true,
+    "sip_session_id": "r.ms.ghi456jkl789",
+    "sip_from": "sip:ring007@ring.com",
+    "sip_to": "sip:bennett001@ring.com",
+    "sip_endpoints": [],
+    "expires_in": 130,
+    "now": 1744581660.0,
+    "optimization_level": 3,
+    "sip_ding_id": "456789012345679",
+    "is_sharing": false
+  }
+]

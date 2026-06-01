@@ -1,0 +1,1241 @@
+{
+  "info": {
+    "name": "Instagram Graph API (Mock)",
+    "description": "Complete test collection for the mock Instagram Graph API service (Brewed Awakening @brewedawakening_). Base URL defaults to http://localhost:8007 for local testing. Also includes example data for Russell's Pastries @russells_pastries.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8007"
+    },
+    {
+      "key": "user_id",
+      "value": "17841400123456789"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "GET User Profile",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Profile - with fields",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}?fields=id,username,name,followers_count,media_count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}"
+              ],
+              "query": [
+                {
+                  "key": "fields",
+                  "value": "id,username,name,followers_count,media_count"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Profile - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "99999999"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "item": [
+        {
+          "name": "GET User Media (list)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Media - with limit",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media?limit=5",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Media - filter by type VIDEO",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media?media_type=VIDEO",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ],
+              "query": [
+                {
+                  "key": "media_type",
+                  "value": "VIDEO"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Media - filter by type CAROUSEL_ALBUM",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media?media_type=CAROUSEL_ALBUM",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ],
+              "query": [
+                {
+                  "key": "media_type",
+                  "value": "CAROUSEL_ALBUM"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Media - with fields",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media?fields=id,caption,media_type,like_count,timestamp",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ],
+              "query": [
+                {
+                  "key": "fields",
+                  "value": "id,caption,media_type,like_count,timestamp"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Media",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Media - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "99999999"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE Media",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/media/17900001028",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001028"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE Media - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/media/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "99999999"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Carousel Children",
+      "item": [
+        {
+          "name": "GET Carousel Children",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/17900001005/children",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001005",
+                "children"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Carousel Children - non-carousel 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/17900001001/children",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001001",
+                "children"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Carousel Children - media 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/99999999/children",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "99999999",
+                "children"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "item": [
+        {
+          "name": "GET Media Comments",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Media Comments - with limit",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments?limit=3",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "3"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Media Comments - media 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/99999999/comments",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "99999999",
+                "comments"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Comment",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/comment/17800001001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "comment",
+                "17800001001"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Comment - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/comment/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "comment",
+                "99999999"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Comment Replies",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/comment/17800001001/replies",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "comment",
+                "17800001001",
+                "replies"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST Create Comment Reply",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Thanks for the love! Come visit us this weekend!\",\n  \"parent_id\": \"17800001003\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Comment (top-level)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/media/17900001001/comments",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001001",
+                "comments"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Thanks for the support everyone! New batch dropping next week.\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Comment",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments/17800001006",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments",
+                "17800001006"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE Comment - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments",
+                "99999999"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT Hide Comment",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments/17800001003/hide",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments",
+                "17800001003",
+                "hide"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"hide\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Unhide Comment",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments/17800001003/hide",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments",
+                "17800001003",
+                "hide"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"hide\": false\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Comment Reply (Bakery Variant)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/comments",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "comments"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Thanks for the support! Fresh croissants coming out at sunrise tomorrow.\",\n  \"parent_id\": \"17800001003\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Comment (top-level) (Bakery Variant)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/media/17900001001/comments",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001001",
+                "comments"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Thanks everyone Mother\u2019s Day pastry boxes open again Friday morning.\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stories",
+      "item": [
+        {
+          "name": "GET User Stories",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/stories",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "stories"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Stories - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/99999999/stories",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "99999999",
+                "stories"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Story",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/stories/17950001001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "stories",
+                "17950001001"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Story - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/stories/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "stories",
+                "99999999"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Insights",
+      "item": [
+        {
+          "name": "GET User Insights (all metrics)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/insights",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "insights"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Insights - specific metrics",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/insights?metric=impressions,reach",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "insights"
+              ],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "impressions,reach"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Insights - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/99999999/insights",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "99999999",
+                "insights"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Media Insights",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/insights",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "insights"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Media Insights - specific metrics",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/17900001002/insights?metric=impressions,reach,saved",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "17900001002",
+                "insights"
+              ],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "impressions,reach,saved"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Media Insights - media 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/media/99999999/insights",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "media",
+                "99999999",
+                "insights"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hashtags",
+      "item": [
+        {
+          "name": "GET Search Hashtags",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/ig_hashtag_search?q=coffee",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ig_hashtag_search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "coffee"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Search Hashtags - specific",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/ig_hashtag_search?q=latteart",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ig_hashtag_search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "latteart"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Hashtag by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/hashtag/17840001001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "hashtag",
+                "17840001001"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Hashtag - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/hashtag/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "hashtag",
+                "99999999"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Hashtag Recent Media",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/hashtag/17840001001/recent_media?user_id={{user_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "hashtag",
+                "17840001001",
+                "recent_media"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "{{user_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Hashtag Recent Media - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/hashtag/99999999/recent_media?user_id={{user_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "hashtag",
+                "99999999",
+                "recent_media"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "{{user_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Search Hashtags (Bakery Variant)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/ig_hashtag_search?q=pastry",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ig_hashtag_search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "pastry"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Search Hashtags - specific (Bakery Variant)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/ig_hashtag_search?q=croissantlove",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ig_hashtag_search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "croissantlove"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mentions",
+      "item": [
+        {
+          "name": "GET User Mentions (tags)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/tags",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "tags"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Mentions - with limit",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/tags?limit=3",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "tags"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "3"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET User Mentions - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/99999999/tags",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "99999999",
+                "tags"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Content Publishing",
+      "item": [
+        {
+          "name": "POST Create Media Container (IMAGE)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"image_url\": \"https://example.com/new_coffee_photo.jpg\",\n  \"caption\": \"Fresh roast Friday! Our new Costa Rica Tarrazu is here \\u2615\\n\\n#specialtycoffee #freshroast #costarica\",\n  \"media_type\": \"IMAGE\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Media Container (VIDEO)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"video_url\": \"https://example.com/latte_art_reel.mp4\",\n  \"caption\": \"Sunday latte art session \\ud83c\\udf37\\n\\n#latteart #baristalife\",\n  \"media_type\": \"VIDEO\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Publish Media Container",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media_publish",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media_publish"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"creation_id\": \"17920001001\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Publish - container 404",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media_publish",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media_publish"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"creation_id\": \"99999999\"\n}"
+            }
+          }
+        },
+        {
+          "name": "GET Container Status",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/container/17920001001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "container",
+                "17920001001"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Container Status - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/container/99999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "container",
+                "99999999"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST Create Media Container (IMAGE) (Bakery Variant)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"image_url\": \"https://example.com/new_pastry_photo.jpg\",\n  \"caption\": \"Fresh roast Friday! Our new Costa Rica Tarrazu is here \\u2615\\n\\n#specialtypastry #freshroast #costarica\",\n  \"media_type\": \"IMAGE\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Media Container (VIDEO) (Bakery Variant)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/{{user_id}}/media",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{user_id}}",
+                "media"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"video_url\": \"https://example.com/latte_art_reel.mp4\",\n  \"caption\": \"Sunday latte art session \\ud83c\\udf37\\n\\n#croissantlove #baristalife\",\n  \"media_type\": \"VIDEO\"\n}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

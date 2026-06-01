@@ -1,0 +1,9 @@
+id,subject,description,status,priority,type,requester_id,assignee_id,organization_id,tags,created_at,updated_at
+701,POS terminal not printing receipts,Receipts fail to print after the latest update,open,high,problem,604,602,501,pos;hardware,2026-05-10T09:00:00Z,2026-05-20T12:00:00Z
+702,Cannot log into dashboard,SSO redirect loops back to login,pending,urgent,incident,605,603,502,sso;login,2026-05-12T11:00:00Z,2026-05-22T08:00:00Z
+703,Request for invoice copy,Need a PDF copy of last month invoice,solved,low,question,606,602,503,billing,2026-05-05T14:00:00Z,2026-05-08T16:00:00Z
+704,API rate limit too low,We hit 429s during nightly sync,new,normal,task,607,,504,api;rate-limit,2026-05-24T10:00:00Z,2026-05-24T10:00:00Z
+705,Refund not received,Refund issued 5 days ago not showing,open,high,problem,604,603,501,billing;refund,2026-05-18T15:00:00Z,2026-05-25T09:00:00Z
+706,Feature request dark mode,Customers asking for a dark theme,new,low,task,606,,503,feature-request,2026-05-26T08:00:00Z,2026-05-26T08:00:00Z
+707,Mobile app crashes on launch,App crashes immediately on Android 14,open,urgent,incident,605,603,502,mobile;crash,2026-05-21T13:00:00Z,2026-05-26T11:00:00Z
+708,How to add a team member,Where do I invite a new agent,solved,normal,question,607,602,504,onboarding,2026-05-02T09:30:00Z,2026-05-03T10:00:00Z

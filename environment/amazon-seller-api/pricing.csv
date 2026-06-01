@@ -1,0 +1,7 @@
+asin,sellerSku,competitivePrice_Amount,competitivePrice_CurrencyCode,competitivePrice_Condition,listingPrice_Amount,listingPrice_CurrencyCode,landedPrice_Amount,shipping_Amount,numberOfOffers,buyBoxPrice_Amount,buyBoxPrice_CurrencyCode,buyBoxWinner
+B0FURN00001,FN-SOFA-RVT01,869.99,USD,New,899.99,USD,899.99,49.99,6,899.99,USD,true
+B0FURN00002,FN-CTBL-NJW01,169.99,USD,New,179.99,USD,179.99,0.00,14,169.99,USD,false
+B0FURN00003,FN-BED-ZNS01,284.99,USD,New,299.99,USD,299.99,29.99,11,284.99,USD,false
+B0FURN00004,FN-SHOE-SMG01,179.99,USD,New,189.99,USD,189.99,0.00,9,189.99,USD,true
+B0FURN00005,FN-DESK-TRB01,314.99,USD,New,329.99,USD,329.99,39.99,7,329.99,USD,true
+B0FURN00006,FN-CHAIR-HBD01,234.99,USD,New,249.99,USD,249.99,0.00,13,234.99,USD,false

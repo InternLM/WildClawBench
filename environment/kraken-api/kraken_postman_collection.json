@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Kraken Mock API",
+    "description": "Test collection for the mock Kraken API service (Ticker, OHLC, AssetPairs, Assets, Balance). Base URL defaults to http://localhost:8098. In docker-compose, the service is reachable at http://kraken-api:8098.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8098"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "ticker single", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/Ticker?pair=XBTUSD"}},
+    {"name": "ticker multi", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/Ticker?pair=XBTUSD,ETHUSD"}},
+    {"name": "ticker all", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/Ticker"}},
+    {"name": "ohlc", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/OHLC?pair=XBTUSD&interval=60"}},
+    {"name": "asset pairs all", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/AssetPairs"}},
+    {"name": "asset pairs filter", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/AssetPairs?pair=ETHUSD"}},
+    {"name": "assets all", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/Assets"}},
+    {"name": "assets filter", "request": {"method": "GET", "url": "{{baseUrl}}/0/public/Assets?asset=XBT,ETH"}},
+    {"name": "balance", "request": {"method": "POST", "url": "{{baseUrl}}/0/private/Balance", "body": {"mode": "raw", "options": {"raw": {"language": "json"}}, "raw": "{\"nonce\": \"1716900000000\"}"}}}
+  ]
+}

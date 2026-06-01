@@ -1,0 +1,8 @@
+id,guild_id,name,type,position,topic,nsfw
+800100200300400001,900100200300400001,general,0,0,General chatter and announcements,false
+800100200300400002,900100200300400001,support,0,1,Ask for help with Orbit Labs products,false
+800100200300400003,900100200300400001,off-topic,0,2,Anything goes (within reason),false
+800100200300400004,900100200300400001,Voice Lounge,2,3,,false
+800100200300400005,900100200300400002,general,0,0,Welcome indie devs,false
+800100200300400006,900100200300400002,showcase,0,1,Share your work-in-progress builds,false
+800100200300400007,900100200300400002,Standup VC,2,2,,false

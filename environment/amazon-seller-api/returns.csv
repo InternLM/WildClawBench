@@ -1,0 +1,6 @@
+returnId,AmazonOrderId,sellerSKU,asin,returnDate,returnReason,returnStatus,returnQuantity,resolution,refundAmount,refundCurrency,buyerComments
+RET-001,114-3941689-8772200,VE-CASE-IP15,B0EXAMPLE01,2026-02-18T10:00:00Z,DEFECTIVE,Completed,1,REFUND,19.99,USD,Case cracked on first drop. Not what I expected from military grade protection.
+RET-002,114-5578234-9921100,VE-EARBUD-PRO,B0EXAMPLE06,2026-02-20T14:30:00Z,NOT_AS_DESCRIBED,Completed,1,REFUND,49.99,USD,ANC is not as strong as described. Can still hear traffic clearly.
+RET-003,114-7723891-3345600,VE-CHRG-USB3,B0EXAMPLE04,2026-02-25T09:00:00Z,SWITCHEROO,Authorized,1,PENDING,16.99,USD,Received only one cable instead of 2-pack.
+RET-004,114-9981234-5567800,VE-EARBUD-SPT,B0EXAMPLE07,2026-03-05T11:00:00Z,NO_LONGER_NEEDED,Completed,1,REFUND,34.99,USD,Changed my mind. Got a different brand.
+RET-005,114-8890123-6789000,VE-SCRN-IP15,B0EXAMPLE03,2026-04-10T16:00:00Z,DEFECTIVE,Authorized,1,PENDING,12.99,USD,Screen protector has tiny bubbles that won't go away even with the alignment frame.

@@ -1,0 +1,9 @@
+id,name,sku,type,price,sale_price,cost_price,weight,inventory_level,inventory_tracking,is_visible,brand_id,categories,description,date_created
+101,Aurora Wireless Headphones,AUR-WH-001,physical,149.99,129.99,72.50,0.45,120,product,true,11,21;24,Over-ear wireless headphones with ANC,2026-01-12T08:00:00Z
+102,Nimbus Bluetooth Speaker,NIM-BS-002,physical,89.00,0,41.00,0.80,75,product,true,11,21,Portable waterproof bluetooth speaker,2026-01-20T09:30:00Z
+103,Vertex Mechanical Keyboard,VTX-KB-003,physical,119.50,99.99,55.00,1.10,40,product,true,12,22,Hot-swappable mechanical keyboard,2026-02-03T10:15:00Z
+104,Pulse Fitness Tracker,PLS-FT-004,physical,59.99,0,28.00,0.05,200,product,true,13,23,Heart-rate fitness tracker,2026-02-18T11:45:00Z
+105,Lumen Desk Lamp,LUM-DL-005,physical,42.00,34.99,18.00,1.50,60,product,true,14,24,Dimmable LED desk lamp,2026-03-05T07:20:00Z
+106,Cascade Ebook Bundle,CAS-EB-006,digital,24.99,0,0,0,0,none,true,15,25,Digital ebook bundle download,2026-03-22T14:00:00Z
+107,Orbit Webcam 4K,ORB-WC-007,physical,79.99,69.99,35.00,0.20,90,product,true,12,22,4K webcam with privacy shutter,2026-04-10T13:10:00Z
+108,Drift Office Chair,DRF-OC-008,physical,229.00,0,110.00,12.00,15,product,true,14,24,Ergonomic mesh office chair,2026-04-28T16:40:00Z

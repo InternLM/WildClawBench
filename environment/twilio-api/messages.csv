@@ -1,0 +1,11 @@
+sid,from_number,to_number,body,status,direction,num_segments,price,price_unit,error_code,date_sent,date_created
+SM0a1b2c3d4e5f60718293a4b5c6d7e801,+14155550123,+14155557001,"Your Orbit Labs verification code is 482910.",delivered,outbound-api,1,-0.0075,USD,,2026-05-26T09:01:12Z,2026-05-26T09:01:10Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e802,+14155557001,+14155550123,"STOP",received,inbound,1,-0.0075,USD,,2026-05-26T09:05:00Z,2026-05-26T09:05:00Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e803,+14155550199,+14155557042,"Flash sale: 20% off all plans this weekend only.",delivered,outbound-api,1,-0.0075,USD,,2026-05-25T14:30:21Z,2026-05-25T14:30:20Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e804,+14155550199,+14155557099,"Flash sale: 20% off all plans this weekend only.",undelivered,outbound-api,1,-0.0075,USD,30005,2026-05-25T14:30:25Z,2026-05-25T14:30:20Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e805,+14155550123,+14155557003,"Your appointment is confirmed for 27 May 3pm.",sent,outbound-api,1,-0.0075,USD,,2026-05-26T10:15:00Z,2026-05-26T10:14:58Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e806,+14155557010,+14155550123,"Can someone call me back about my invoice?",received,inbound,1,-0.0075,USD,,2026-05-26T11:02:00Z,2026-05-26T11:02:00Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e807,+442071838750,+447700900123,"Your UK support ticket ORB-5521 was resolved.",delivered,outbound-api,1,-0.04,GBP,,2026-05-24T16:45:00Z,2026-05-24T16:44:58Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e808,+14155550123,+14155557200,"Reminder: payment of $49 due tomorrow.",queued,outbound-api,1,,USD,,,2026-05-27T08:00:00Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e809,+14155557011,+14155550123,"YES confirm",received,inbound,1,-0.0075,USD,,2026-05-26T12:20:00Z,2026-05-26T12:20:00Z
+SM0a1b2c3d4e5f60718293a4b5c6d7e810,+14155550199,+14155557300,"Welcome to Orbit Labs! Reply HELP for support.",failed,outbound-api,1,,USD,21610,,2026-05-23T09:00:00Z

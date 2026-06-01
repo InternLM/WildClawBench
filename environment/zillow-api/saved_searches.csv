@@ -1,0 +1,4 @@
+search_id,user_id,name,city,state,min_price,max_price,min_beds,min_baths,home_type,created_at
+search-001,user-buyer-001,Bellevue family homes,Bellevue,WA,800000,1600000,4,2.5,SingleFamily,2026-04-10
+search-002,user-buyer-001,Eastside condos under 700k,,WA,400000,700000,2,1.0,Condo,2026-04-22
+search-003,user-buyer-002,Seattle waterfront,Seattle,WA,1000000,3500000,3,2.0,SingleFamily,2026-05-05

@@ -1,0 +1,6 @@
+retailer_id,name,logo_url,delivers_to_zips,min_basket,delivery_fee,service_fee_pct,eta_minutes
+ret-safeway,Safeway,https://logos.example.com/safeway.png,"94103,94110,94114",10.00,3.99,5.0,75
+ret-wholefoods,Whole Foods Market,https://logos.example.com/wholefoods.png,"94103,94110,94117",10.00,4.99,5.0,90
+ret-costco,Costco,https://logos.example.com/costco.png,"94110,94114",35.00,9.99,5.0,120
+ret-traderjoes,Trader Joe's,https://logos.example.com/tj.png,"94110,94117",10.00,5.99,5.0,90
+ret-cvs,CVS Pharmacy,https://logos.example.com/cvs.png,"94103,94110,94114,94117",10.00,3.99,5.0,60

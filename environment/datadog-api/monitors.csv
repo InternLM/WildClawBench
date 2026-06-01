@@ -1,0 +1,6 @@
+id,name,type,query,message,overall_state,priority,tags,created,modified
+1001,High API p95 latency,metric alert,avg(last_5m):avg:trace.http.request.duration{service:auth-service} > 0.6,Auth API latency is high,Alert,1,service:auth-service;team:platform,2025-11-01T10:00:00+00:00,2026-05-26T09:00:00+00:00
+1002,Error rate above threshold,metric alert,sum(last_5m):sum:trace.http.request.errors{service:web-frontend}.as_count() > 50,Web error rate elevated,Warn,2,service:web-frontend;team:frontend,2025-11-05T10:00:00+00:00,2026-05-26T07:30:00+00:00
+1003,Host CPU saturation,metric alert,avg(last_10m):avg:system.cpu.user{host:web-01} > 90,CPU saturated on web-01,OK,3,host:web-01;team:infra,2025-12-01T10:00:00+00:00,2026-05-25T18:00:00+00:00
+1004,Billing queue backlog,metric alert,avg(last_15m):avg:billing.queue.depth{service:billing-service} > 1000,Billing queue is backing up,OK,2,service:billing-service;team:platform,2026-01-10T10:00:00+00:00,2026-05-24T12:00:00+00:00
+1005,Disk space low,service check,"avg(last_5m):avg:system.disk.in_use{host:db-01} > 0.9",Disk usage high on db-01,Warn,1,host:db-01;team:infra,2026-02-01T10:00:00+00:00,2026-05-26T06:00:00+00:00

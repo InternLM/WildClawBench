@@ -1,0 +1,8 @@
+id,symbol,name,exchange,asset_class,tradable,fractionable
+b0b6dd9d-8b9b-48a9-ba46-b9d54906e415,AAPL,Apple Inc. Common Stock,NASDAQ,us_equity,true,true
+f30d734c-2806-4d0d-b145-f9fee271c5cd,MSFT,Microsoft Corporation Common Stock,NASDAQ,us_equity,true,true
+b6d1aa75-5c14-4920-aef3-7eb33a01c123,TSLA,Tesla Inc. Common Stock,NASDAQ,us_equity,true,true
+69b6d1aa-5c14-4920-aef3-7eb33a01c456,NVDA,NVIDIA Corporation Common Stock,NASDAQ,us_equity,true,true
+0d1aa75b-5c14-4920-aef3-7eb33a01c789,AMZN,Amazon.com Inc. Common Stock,NASDAQ,us_equity,true,true
+1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d,GOOGL,Alphabet Inc. Class A,NASDAQ,us_equity,true,true
+2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e,SPY,SPDR S&P 500 ETF Trust,ARCA,us_equity,true,false

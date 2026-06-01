@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Twilio Mock API",
+    "description": "Test collection for the mock Twilio programmable SMS/Voice/Lookup API. Base URL defaults to http://localhost:8026. In docker-compose, the service is reachable at http://twilio-api:8026. Account SID: ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8026"},
+    {"key": "accountSid", "value": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list messages", "request": {"method": "GET", "url": "{{baseUrl}}/2010-04-01/Accounts/{{accountSid}}/Messages.json?PageSize=10"}},
+    {"name": "list inbound messages", "request": {"method": "GET", "url": "{{baseUrl}}/2010-04-01/Accounts/{{accountSid}}/Messages.json?Status=received"}},
+    {"name": "get message", "request": {"method": "GET", "url": "{{baseUrl}}/2010-04-01/Accounts/{{accountSid}}/Messages/SM0a1b2c3d4e5f60718293a4b5c6d7e801.json"}},
+    {"name": "create message", "request": {"method": "POST", "url": "{{baseUrl}}/2010-04-01/Accounts/{{accountSid}}/Messages.json?To=%2B14155557777&From=%2B14155550123&Body=Hello%20from%20the%20mock"}},
+    {"name": "list calls", "request": {"method": "GET", "url": "{{baseUrl}}/2010-04-01/Accounts/{{accountSid}}/Calls.json"}},
+    {"name": "create call", "request": {"method": "POST", "url": "{{baseUrl}}/2010-04-01/Accounts/{{accountSid}}/Calls.json?To=%2B14155557777&From=%2B14155550123"}},
+    {"name": "list incoming phone numbers", "request": {"method": "GET", "url": "{{baseUrl}}/2010-04-01/Accounts/{{accountSid}}/IncomingPhoneNumbers.json"}},
+    {"name": "lookup phone number", "request": {"method": "GET", "url": "{{baseUrl}}/v1/PhoneNumbers/+14155550123"}}
+  ]
+}

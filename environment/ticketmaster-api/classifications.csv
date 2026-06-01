@@ -1,0 +1,8 @@
+id,segment,genre,subgenre
+cls-music-rock,Music,Rock,Alternative Rock
+cls-music-pop,Music,Pop,Pop
+cls-music-jazz,Music,Jazz,Jazz
+cls-sports-basketball,Sports,Basketball,NBA
+cls-sports-soccer,Sports,Soccer,MLS
+cls-arts-theatre,Arts & Theatre,Theatre,Musical
+cls-arts-comedy,Arts & Theatre,Comedy,Comedy

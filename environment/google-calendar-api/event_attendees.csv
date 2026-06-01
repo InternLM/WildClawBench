@@ -1,0 +1,13 @@
+event_id,email,display_name,response_status,optional,organizer
+evt-001,amelia@orbit-labs.com,Amelia Ortega,accepted,false,true
+evt-001,jonas@orbit-labs.com,Jonas Pereira,accepted,false,false
+evt-002,amelia@orbit-labs.com,Amelia Ortega,accepted,false,false
+evt-002,helena@orbit-labs.com,Helena Park,accepted,false,true
+evt-002,jonas@orbit-labs.com,Jonas Pereira,accepted,false,false
+evt-002,rohit@orbit-labs.com,Rohit Bansal,tentative,false,false
+evt-003,amelia@orbit-labs.com,Amelia Ortega,accepted,false,true
+evt-003,helena@orbit-labs.com,Helena Park,needsAction,false,false
+evt-003,jonas@orbit-labs.com,Jonas Pereira,accepted,false,false
+evt-004,helena@orbit-labs.com,Helena Park,accepted,false,true
+evt-004,amelia@orbit-labs.com,Amelia Ortega,accepted,false,false
+evt-004,jonas@orbit-labs.com,Jonas Pereira,accepted,true,false

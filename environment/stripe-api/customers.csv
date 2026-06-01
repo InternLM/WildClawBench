@@ -1,0 +1,7 @@
+id,name,email,description,currency,delinquent,balance,created,phone
+cus_Nb1Aurora,Aurora Bistro LLC,billing@aurorabistro.com,Monthly POS subscription,usd,false,0,1714579200,+14155550101
+cus_Nb2Helix,Helix Robotics Inc,ap@helixrobotics.io,Enterprise plan,usd,false,-2500,1709251200,+14155550102
+cus_Nb3Lumen,Lumen Design Studio,accounts@lumendesign.co,Pro plan,usd,false,0,1717200000,+14155550103
+cus_Nb4Pelagic,Pelagic Freight Co,finance@pelagicfreight.com,Net-30 invoicing,usd,true,15000,1701388800,+14155550104
+cus_Nb5Verdant,Verdant Farms,hello@verdantfarms.org,Seasonal billing,usd,false,0,1719792000,+14155550105
+cus_Nb6Quanta,Quanta Analytics,billing@quanta.ai,Annual plan,usd,false,0,1706745600,+14155550106

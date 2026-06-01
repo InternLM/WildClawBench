@@ -1,0 +1,3 @@
+order_id,store_id,customer_name,status,subtotal,delivery_fee,service_fee,tip,total,placed_at,dasher_name
+order-90aa12,store-sakura,Priya Nair,delivered,38.50,2.99,3.85,6.00,51.34,2026-05-22T19:14:00Z,Carlos M.
+order-90bb47,store-tacolibre,Priya Nair,in_progress,21.75,1.99,2.18,4.00,29.92,2026-05-27T12:40:00Z,Jordan P.

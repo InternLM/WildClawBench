@@ -1,0 +1,8 @@
+id,account_id,type,status,amount,currency,native_amount,native_currency,description,created_at
+txn-btc-001,acct-btc-001,buy,completed,0.10000000,BTC,6500.00,USD,Bought 0.1 BTC,2026-02-01T10:00:00Z
+txn-btc-002,acct-btc-001,buy,completed,0.20000000,BTC,12800.00,USD,Bought 0.2 BTC,2026-03-15T14:30:00Z
+txn-btc-003,acct-btc-001,sell,completed,-0.05000000,BTC,-3250.00,USD,Sold 0.05 BTC,2026-04-10T09:15:00Z
+txn-eth-001,acct-eth-002,buy,completed,2.00000000,ETH,6200.00,USD,Bought 2 ETH,2026-02-20T11:00:00Z
+txn-eth-002,acct-eth-002,buy,pending,1.20000000,ETH,3720.00,USD,Bought 1.2 ETH,2026-05-22T08:30:00Z
+txn-usd-001,acct-usd-003,fiat_deposit,completed,2000.00,USD,2000.00,USD,Bank deposit,2026-01-15T08:00:00Z
+txn-sol-001,acct-sol-004,buy,completed,18.50000000,SOL,2664.00,USD,Bought 18.5 SOL,2026-03-01T09:00:00Z

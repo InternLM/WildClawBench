@@ -1,0 +1,30 @@
+[
+  {
+    "criterion": "The agent queried the Google Classroom API at $GOOGLE_CLASSROOM_API_URL, located the course 'Harmony & Arrangement for Songwriters' (id 820145006677), and confirmed Dana Ellison is the owner/teacher. It did NOT claim the course was missing.",
+    "weight": 0.20
+  },
+  {
+    "criterion": "The agent found the Week 5 Problem Set coursework (CW-5301) and listed its student submissions from the API rather than inventing them.",
+    "weight": 0.15
+  },
+  {
+    "criterion": "results/grading_worksheet.csv exists, is valid CSV with header student_name,user_id,submission_id,state,late,needs_grading, and has one row per enrolled student (4 students: Stephanie Walker, Marcus Reyes, Priya Nadkarni, Tomas Vel).",
+    "weight": 0.20
+  },
+  {
+    "criterion": "The worksheet correctly marks the three TURNED_IN students (Stephanie SUB-9001, Marcus SUB-9002, Priya SUB-9003) as needs_grading=true, and marks Marcus's submission (SUB-9002) as late=true.",
+    "weight": 0.20
+  },
+  {
+    "criterion": "The worksheet correctly shows Tomas Vel (205500110026) as not having turned in work (state CREATED / not submitted) with needs_grading=false.",
+    "weight": 0.10
+  },
+  {
+    "criterion": "results/grading_summary.md exists and reports totals: enrolled count, turned-in count, late count, needs-grading count, and names the student(s) who have not submitted; it cites the course id and coursework id.",
+    "weight": 0.10
+  },
+  {
+    "criterion": "The agent made only read (GET) calls and did not modify any grade or submission (no POST/PATCH/PUT/DELETE); the summary confirms no changes were made.",
+    "weight": 0.05
+  }
+]

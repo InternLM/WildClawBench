@@ -1,0 +1,2 @@
+id,capture_id,status,amount_value,currency_code,note_to_payer,create_time
+REF_1A234567BC890123,CAP_3C679384HN8401234,COMPLETED,10.00,USD,Partial refund for late delivery,2026-05-12T10:00:00Z

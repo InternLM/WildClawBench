@@ -1,0 +1,9 @@
+objectID,name,description,category,brand,price,in_stock
+prod-001,Aurora Wireless Headphones,Over-ear noise cancelling wireless headphones,audio,Aurora,199.99,true
+prod-002,Aurora Earbuds Mini,Compact true wireless earbuds with charging case,audio,Aurora,89.99,true
+prod-003,Nimbus 4K Monitor,27 inch 4K UHD monitor with USB-C,displays,Nimbus,449.0,true
+prod-004,Nimbus Curved Monitor,34 inch ultrawide curved gaming monitor,displays,Nimbus,599.0,false
+prod-005,Helio Mechanical Keyboard,Hot-swappable mechanical keyboard with RGB,peripherals,Helio,129.99,true
+prod-006,Helio Wireless Mouse,Ergonomic wireless mouse with silent clicks,peripherals,Helio,49.99,true
+prod-007,Vela USB-C Hub,Seven-port USB-C hub with HDMI and ethernet,accessories,Vela,69.99,true
+prod-008,Vela Laptop Stand,Adjustable aluminum laptop stand,accessories,Vela,39.99,false

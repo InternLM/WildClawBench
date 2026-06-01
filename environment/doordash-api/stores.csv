@@ -1,0 +1,6 @@
+store_id,name,cuisine,rating,review_count,price_range,delivery_fee,eta_minutes,latitude,longitude,address,is_open
+store-sakura,Sakura Ramen House,Japanese,4.7,1284,$$,2.99,28,37.7842,-122.4078,512 Geary St San Francisco,true
+store-bellaroma,Bella Roma Trattoria,Italian,4.5,876,$$$,3.99,38,37.7990,-122.4014,233 Columbus Ave San Francisco,true
+store-tacolibre,Taco Libre,Mexican,4.6,2031,$,1.99,22,37.7599,-122.4148,2800 Mission St San Francisco,true
+store-greenfork,Green Fork Salads,Healthy,4.3,512,$$,2.49,18,37.7906,-122.4011,88 Kearny St San Francisco,true
+store-dragongate,Dragon Gate Dim Sum,Chinese,4.4,1567,$$,2.99,33,37.7941,-122.4078,640 Jackson St San Francisco,false

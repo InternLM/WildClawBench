@@ -1,0 +1,4 @@
+id,name,path,path_with_namespace,namespace,description,visibility,default_branch,star_count,forks_count,open_issues_count,created_at,last_activity_at
+101,auth-service,auth-service,orbit-labs/auth-service,orbit-labs,Authentication and session service,private,main,42,8,2,2024-04-12T10:00:00.000Z,2026-05-26T09:00:00.000Z
+102,billing-service,billing-service,orbit-labs/billing-service,orbit-labs,Billing and invoicing service,private,main,28,4,1,2024-06-01T10:00:00.000Z,2026-05-25T15:00:00.000Z
+103,web-frontend,web-frontend,orbit-labs/web-frontend,orbit-labs,Customer-facing web application,internal,main,18,3,1,2024-03-20T10:00:00.000Z,2026-05-26T08:00:00.000Z

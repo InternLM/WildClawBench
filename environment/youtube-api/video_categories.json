@@ -1,0 +1,16 @@
+[
+  {"id": "1", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Film & Animation", "assignable": true}},
+  {"id": "2", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Autos & Vehicles", "assignable": true}},
+  {"id": "10", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Music", "assignable": true}},
+  {"id": "15", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Pets & Animals", "assignable": true}},
+  {"id": "17", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Sports", "assignable": true}},
+  {"id": "20", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Gaming", "assignable": true}},
+  {"id": "22", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "People & Blogs", "assignable": true}},
+  {"id": "23", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Comedy", "assignable": true}},
+  {"id": "24", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Entertainment", "assignable": true}},
+  {"id": "25", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "News & Politics", "assignable": true}},
+  {"id": "26", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Howto & Style", "assignable": true}},
+  {"id": "27", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Education", "assignable": true}},
+  {"id": "28", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Science & Technology", "assignable": true}},
+  {"id": "29", "snippet": {"channelId": "UC_EquineHealthChannel", "title": "Nonprofits & Activism", "assignable": true}}
+]

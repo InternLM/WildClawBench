@@ -1,0 +1,6 @@
+id,name,slug,enabled,type,created_at
+src_web01,Marketing Website,marketing-website,true,javascript,2026-04-12T09:00:00Z
+src_ios01,iOS App,ios-app,true,ios,2026-04-14T09:00:00Z
+src_and01,Android App,android-app,true,android,2026-04-16T09:00:00Z
+src_srv01,Backend Server,backend-server,true,server,2026-04-18T09:00:00Z
+src_old01,Legacy Portal,legacy-portal,false,javascript,2026-03-01T09:00:00Z

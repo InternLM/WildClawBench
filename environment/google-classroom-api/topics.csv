@@ -1,0 +1,31 @@
+courseId,topicId,name,updateTime
+course_001,topic_101,Unit 1: Primitive Types,2025-01-10T08:00:00Z
+course_001,topic_102,Unit 2: Using Objects,2025-01-27T08:00:00Z
+course_001,topic_103,Unit 3: Boolean Expressions and if Statements,2025-02-10T08:00:00Z
+course_001,topic_104,Unit 4: Iteration,2025-02-24T08:00:00Z
+course_001,topic_105,Unit 5: Writing Classes,2025-03-10T08:00:00Z
+course_001,topic_106,Unit 6: Arrays,2025-03-24T08:00:00Z
+course_001,topic_107,Unit 7: ArrayList,2025-04-07T08:00:00Z
+course_002,topic_201,Unit 1: HTML Fundamentals,2025-01-10T08:00:00Z
+course_002,topic_202,Unit 2: CSS Styling,2025-01-27T08:00:00Z
+course_002,topic_203,Unit 3: CSS Layout (Flexbox and Grid),2025-02-10T08:00:00Z
+course_002,topic_204,Unit 4: JavaScript Basics,2025-02-24T08:00:00Z
+course_002,topic_205,Unit 5: DOM Manipulation,2025-03-10T08:00:00Z
+course_002,topic_206,Unit 6: APIs and Fetch,2025-03-31T08:00:00Z
+course_003,topic_301,Unit 1: Digital Information,2025-01-10T08:00:00Z
+course_003,topic_302,Unit 2: The Internet,2025-01-27T08:00:00Z
+course_003,topic_303,Unit 3: Algorithms and Programming,2025-02-17T08:00:00Z
+course_003,topic_304,Unit 4: Big Data and Privacy,2025-03-10T08:00:00Z
+course_003,topic_305,Unit 5: Computing Innovations,2025-03-31T08:00:00Z
+course_005,topic_501,Protocols & Methods,2025-01-20T09:00:00Z
+course_005,topic_502,Mackworth 2024,2025-04-10T14:00:00Z
+uscg-charter-inspection-2026,topic_401,Fire Safety Equipment,2026-04-21T08:00:00Z
+uscg-charter-inspection-2026,topic_402,Personal Flotation & Throwable Devices,2026-04-21T08:00:00Z
+uscg-charter-inspection-2026,topic_403,Visual & Sound Distress Signals,2026-04-21T08:00:00Z
+uscg-charter-inspection-2026,topic_404,Navigation & Communication,2026-04-21T08:00:00Z
+uscg-charter-inspection-2026,topic_405,Hull Pumps & Pollution Compliance,2026-04-21T08:00:00Z
+uscg-charter-inspection-2025,topic_406,Fire Safety Equipment,2025-04-23T08:00:00Z
+uscg-charter-inspection-2025,topic_407,Personal Flotation & Throwable Devices,2025-04-23T08:00:00Z
+uscg-charter-inspection-2025,topic_408,Visual & Sound Distress Signals,2025-04-23T08:00:00Z
+uscg-charter-inspection-2025,topic_409,Navigation & Communication,2025-04-23T08:00:00Z
+uscg-charter-inspection-2025,topic_410,Hull Pumps & Pollution Compliance,2025-04-23T08:00:00Z

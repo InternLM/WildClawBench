@@ -1,0 +1,8 @@
+group_id,board_id,title,color,position
+grp-todo,board-101,To Do,#fdab3d,1
+grp-doing,board-101,In Progress,#0086c0,2
+grp-done,board-101,Done,#00c875,3
+grp-open,board-102,Open Bugs,#e2445c,1
+grp-closed,board-102,Resolved,#00c875,2
+grp-planned,board-201,Planned,#a25ddc,1
+grp-live,board-201,Live,#00c875,2

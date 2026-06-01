@@ -1,0 +1,5 @@
+name,status,role,cpu_capacity,memory_capacity,kubelet_version,os_image,internal_ip,created_time
+node-control-1,Ready,control-plane,4,16Gi,v1.29.4,Ubuntu 22.04.4 LTS,10.0.1.10,2025-08-01T08:55:00Z
+node-worker-1,Ready,worker,8,32Gi,v1.29.4,Ubuntu 22.04.4 LTS,10.0.1.11,2025-08-01T08:56:00Z
+node-worker-2,Ready,worker,8,32Gi,v1.29.4,Ubuntu 22.04.4 LTS,10.0.1.12,2025-08-01T08:57:00Z
+node-worker-3,Ready,worker,8,32Gi,v1.29.4,Ubuntu 22.04.4 LTS,10.0.1.13,2025-08-14T10:20:00Z

@@ -1,0 +1,9 @@
+message_id,conversation_id,direction,from_wa_id,to_wa_id,type,text,template_name,status,sent_at
+msg-001,conv-001,inbound,15551550101,15551550100,text,Hi — my order #SF-220 still shows as preparing. Any update?,,delivered,2026-05-26T08:55:00Z
+msg-002,conv-001,outbound,15551550100,15551550101,template,,order_shipped,delivered,2026-05-26T09:00:00Z
+msg-003,conv-002,outbound,15551550100,15551550102,template,,appointment_reminder,read,2026-05-25T18:00:00Z
+msg-004,conv-002,inbound,15551550102,15551550100,text,Thanks — confirmed!,,delivered,2026-05-25T18:30:00Z
+msg-005,conv-003,inbound,15551550103,15551550100,text,Can I exchange my recent purchase?,,read,2026-05-22T13:00:00Z
+msg-006,conv-003,outbound,15551550100,15551550103,text,Of course! Reply with the order number and we'll get that going.,,read,2026-05-22T14:15:00Z
+msg-007,conv-004,inbound,15551550105,15551550100,text,Order #WC-414 — any tracking yet?,,delivered,2026-05-26T07:30:00Z
+msg-008,conv-004,outbound,15551550100,15551550105,template,,order_shipped,sent,2026-05-26T07:45:00Z

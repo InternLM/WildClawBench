@@ -1,0 +1,11 @@
+[service]
+name = "binance-api"
+port = 8097
+env_var_name = "BINANCE_API_URL"
+healthcheck_path = "/health"
+
+[k8s]
+image = ""
+cpu_request = "25m"
+memory_request = "128Mi"
+memory_limit = "256Mi"

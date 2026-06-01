@@ -1,0 +1,4 @@
+id,name,login,role,status,language,timezone,space_amount,space_used,max_upload_size,job_title,phone,created_at
+11446498,Aaron Levie,aaron@example.com,admin,active,en,America/Los_Angeles,10995116277760,2147483648,5368709120,CEO,+1-650-555-0100,2025-09-01T10:00:00-07:00
+22893011,Priya Nair,priya@example.com,user,active,en,America/New_York,5497558138880,1073741824,2147483648,Product Manager,+1-212-555-0144,2025-10-15T09:30:00-04:00
+33102847,Diego Santos,diego@example.com,user,active,pt,America/Sao_Paulo,5497558138880,524288000,2147483648,Designer,+55-11-5555-0188,2026-01-20T11:45:00-03:00

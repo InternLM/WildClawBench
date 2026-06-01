@@ -1,0 +1,8 @@
+carrier,tracking_number,status,status_detail,location_city,location_state,status_time
+USPS,9400111202555842761023,DELIVERED,Delivered front porch,Austin,TX,2026-05-27T16:20:00Z
+USPS,9400111202555842761023,TRANSIT,Out for delivery,Austin,TX,2026-05-27T08:10:00Z
+USPS,9400111202555842761023,TRANSIT,Arrived at facility,Dallas,TX,2026-05-26T22:00:00Z
+USPS,9400111202555842761023,PRE_TRANSIT,Shipping label created,San Francisco,CA,2026-05-25T14:05:00Z
+UPS,1Z999AA10123456784,TRANSIT,On the way,Memphis,TN,2026-05-27T11:45:00Z
+UPS,1Z999AA10123456784,PRE_TRANSIT,Label created,San Francisco,CA,2026-05-26T10:00:00Z
+FedEx,794611112222,PRE_TRANSIT,Shipment information sent to FedEx,San Francisco,CA,2026-05-26T12:00:00Z

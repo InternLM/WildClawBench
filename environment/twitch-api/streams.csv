@@ -1,0 +1,7 @@
+id,user_id,user_login,user_name,game_id,game_name,type,title,viewer_count,started_at,language,is_live
+80001,40001,pixelpaladin,PixelPaladin,30003,Elden Ring,live,Blind Elden Ring run - no spoilers please,18400,2026-05-27T14:00:00Z,en,true
+80002,40003,sprintqueen,SprintQueen,30005,Speedrunning,live,WR attempts all morning,9200,2026-05-27T13:30:00Z,en,true
+80003,40005,orbit_dev,OrbitDev,30002,Software and Game Development,live,Orbit CLI 2.0 launch stream and live Q&A,2600,2026-05-27T15:00:00Z,en,true
+80004,40002,nightowlcodes,NightOwlCodes,30002,Software and Game Development,,Building a roguelike in Rust - day 14,0,,en,false
+80005,40004,tacticalturtle,TacticalTurtle,30004,Cities: Skylines II,,Building the perfect transit network,0,,en,false
+80006,40006,casualcartographer,CasualCartographer,30006,Strategy,,Map making sunday,0,,en,false

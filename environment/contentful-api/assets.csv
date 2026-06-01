@@ -1,0 +1,5 @@
+id,created_at,updated_at,published_version,title,description,file_url,content_type,file_name,size
+asset-hero-1,2025-09-09T08:00:00.000Z,2025-09-09T08:00:00.000Z,2,Headless diagram,Diagram of headless architecture,https://assets.example.com/headless-diagram.png,image/png,headless-diagram.png,184320
+asset-hero-2,2025-09-30T08:00:00.000Z,2025-09-30T08:00:00.000Z,1,Content model board,Whiteboard of a content model,https://assets.example.com/content-model.jpg,image/jpeg,content-model.jpg,256000
+asset-author-mara,2025-09-01T10:00:00.000Z,2025-09-01T10:00:00.000Z,1,Mara headshot,Author headshot for Mara,https://assets.example.com/mara.jpg,image/jpeg,mara.jpg,64512
+asset-author-tomas,2025-09-02T11:00:00.000Z,2025-09-02T11:00:00.000Z,1,Tomas headshot,Author headshot for Tomas,https://assets.example.com/tomas.jpg,image/jpeg,tomas.jpg,61440

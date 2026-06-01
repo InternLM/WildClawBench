@@ -1,0 +1,10 @@
+chat_id,user_id,status
+-200500,9001,creator
+-200500,9002,administrator
+-200500,9003,member
+-200500,9004,member
+-200500,7654321098,administrator
+-200501,9001,creator
+-200501,7654321098,administrator
+-200502,9004,creator
+-200502,9005,member

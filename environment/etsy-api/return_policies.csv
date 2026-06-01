@@ -1,0 +1,2 @@
+return_policy_id,shop_id,accepts_returns,accepts_exchanges,return_deadline
+60001,29457183,true,true,30

@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Dropbox API v2 Mock",
+    "description": "Test collection for the mock Dropbox API v2 service (users, files, sharing). Base URL defaults to http://localhost:8082. In docker-compose, the service is reachable at http://dropbox-api:8082.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8082"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get current account", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/2/users/get_current_account"}},
+    {"name": "list folder root", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"path\": \"\"}"}, "url": "{{baseUrl}}/2/files/list_folder"}},
+    {"name": "list folder documents", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"path\": \"/Documents\"}"}, "url": "{{baseUrl}}/2/files/list_folder"}},
+    {"name": "get metadata", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"path\": \"/Documents/Q2-Report.pdf\"}"}, "url": "{{baseUrl}}/2/files/get_metadata"}},
+    {"name": "search v2", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"query\": \"report\"}"}, "url": "{{baseUrl}}/2/files/search_v2"}},
+    {"name": "list shared links", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{}"}, "url": "{{baseUrl}}/2/sharing/list_shared_links"}}
+  ]
+}

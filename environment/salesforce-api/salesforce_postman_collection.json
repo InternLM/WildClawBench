@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "Salesforce REST Mock API v59.0",
+    "description": "Test collection for the mock Salesforce REST API service. Base URL defaults to http://localhost:8044. In docker-compose, the service is reachable at http://salesforce-api:8044.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8044"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list accounts", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Account"}},
+    {"name": "get account", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Account/001Ax000001AAAAAA1"}},
+    {"name": "create account", "request": {"method": "POST", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Account",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"Name\": \"Stark Industries\", \"Industry\": \"Manufacturing\", \"AnnualRevenue\": 42000000}"}}},
+    {"name": "update account", "request": {"method": "PATCH", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Account/001Ax000001AAAAAA1",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"Phone\": \"+1-415-555-0999\", \"NumberOfEmployees\": 130}"}}},
+    {"name": "list contacts", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Contact"}},
+    {"name": "get contact", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Contact/003Ax000002BBBBBB2"}},
+    {"name": "create contact", "request": {"method": "POST", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Contact",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"FirstName\": \"Pepper\", \"LastName\": \"Potts\", \"Email\": \"pepper.potts@stark.example.com\", \"AccountId\": \"001Ax000001AAAAAA1\"}"}}},
+    {"name": "list leads", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Lead"}},
+    {"name": "get lead", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Lead/00QAx000001AAAAAA1"}},
+    {"name": "create lead", "request": {"method": "POST", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Lead",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"FirstName\": \"Bruce\", \"LastName\": \"Banner\", \"Company\": \"Gamma Labs\", \"Status\": \"Open - Not Contacted\"}"}}},
+    {"name": "update lead", "request": {"method": "PATCH", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Lead/00QAx000001AAAAAA1",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"Status\": \"Qualified\", \"Rating\": \"Hot\"}"}}},
+    {"name": "list opportunities", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Opportunity"}},
+    {"name": "get opportunity", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Opportunity/006Ax000001AAAAAA1"}},
+    {"name": "create opportunity", "request": {"method": "POST", "url": "{{baseUrl}}/services/data/v59.0/sobjects/Opportunity",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"Name\": \"Stark Reactor Deal\", \"AccountId\": \"001Ax000001AAAAAA1\", \"StageName\": \"Prospecting\", \"Amount\": 500000, \"CloseDate\": \"2026-12-01\"}"}}},
+    {"name": "soql query accounts", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/query?q=SELECT Id, Name, Industry FROM Account WHERE Industry = 'Technology'"}},
+    {"name": "soql query opportunities", "request": {"method": "GET", "url": "{{baseUrl}}/services/data/v59.0/query?q=SELECT Id, Name, Amount FROM Opportunity WHERE StageName = 'Closed Won'"}}
+  ]
+}

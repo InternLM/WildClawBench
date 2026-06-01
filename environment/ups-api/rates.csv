@@ -1,0 +1,9 @@
+service_code,service_name,origin_zip,dest_zip,weight_lb,currency,total_charge,transit_days,delivery_date
+03,UPS Ground,10001,90001,5.0,USD,16.20,5,2026-05-30
+03,UPS Ground,10001,60601,5.0,USD,13.85,3,2026-05-28
+02,UPS 2nd Day Air,10001,90001,5.0,USD,38.95,2,2026-05-27
+02,UPS 2nd Day Air,10001,60601,5.0,USD,32.40,2,2026-05-27
+01,UPS Next Day Air,10001,90001,5.0,USD,89.75,1,2026-05-26
+01,UPS Next Day Air,10001,60601,5.0,USD,74.50,1,2026-05-26
+12,UPS 3 Day Select,10001,90001,5.0,USD,28.60,3,2026-05-28
+07,UPS Worldwide Express,10001,SW1A1AA,5.0,USD,128.30,3,2026-05-28

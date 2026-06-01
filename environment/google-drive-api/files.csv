@@ -1,0 +1,12 @@
+id,name,mime_type,parent_id,size,created_time,modified_time,owner_email,starred,trashed,web_view_link
+folder-root,My Drive,application/vnd.google-apps.folder,,0,2024-01-01T00:00:00Z,2024-01-01T00:00:00Z,amelia@orbit-labs.com,false,false,
+folder-eng,Engineering,application/vnd.google-apps.folder,folder-root,0,2025-09-01T10:00:00Z,2026-05-20T11:00:00Z,amelia@orbit-labs.com,true,false,https://drive.google.com/drive/folders/folder-eng
+folder-docs,Docs,application/vnd.google-apps.folder,folder-eng,0,2025-09-05T10:00:00Z,2026-05-22T09:00:00Z,amelia@orbit-labs.com,false,false,https://drive.google.com/drive/folders/folder-docs
+folder-rfcs,RFCs,application/vnd.google-apps.folder,folder-docs,0,2025-09-10T10:00:00Z,2026-05-22T09:00:00Z,amelia@orbit-labs.com,false,false,https://drive.google.com/drive/folders/folder-rfcs
+file-rfc-auth,RFC: Auth v2.gdoc,application/vnd.google-apps.document,folder-rfcs,0,2025-10-05T11:00:00Z,2026-05-22T09:00:00Z,amelia@orbit-labs.com,true,false,https://docs.google.com/document/d/file-rfc-auth
+file-rfc-billing,RFC: Billing gRPC migration.gdoc,application/vnd.google-apps.document,folder-rfcs,0,2025-11-12T13:00:00Z,2026-05-19T11:00:00Z,jonas@orbit-labs.com,false,false,https://docs.google.com/document/d/file-rfc-billing
+file-budget,2026 Eng budget.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,folder-eng,184320,2025-12-01T09:00:00Z,2026-04-30T15:00:00Z,amelia@orbit-labs.com,false,false,https://drive.google.com/file/d/file-budget
+file-allhands,Q2 all-hands deck.pdf,application/pdf,folder-eng,2456789,2026-05-01T10:00:00Z,2026-05-01T10:00:00Z,helena@orbit-labs.com,false,false,https://drive.google.com/file/d/file-allhands
+file-trace,Trace export 2026-05-20.json,application/json,folder-eng,1024000,2026-05-20T15:00:00Z,2026-05-20T15:00:00Z,helena@orbit-labs.com,false,false,https://drive.google.com/file/d/file-trace
+file-personal,tax_returns_2025.pdf,application/pdf,folder-root,512000,2026-02-14T12:00:00Z,2026-02-14T12:00:00Z,amelia@orbit-labs.com,false,false,https://drive.google.com/file/d/file-personal
+file-trashed,old_offer_letter.gdoc,application/vnd.google-apps.document,folder-root,0,2024-06-01T09:00:00Z,2025-08-12T16:00:00Z,amelia@orbit-labs.com,false,true,

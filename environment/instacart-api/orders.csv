@@ -1,0 +1,4 @@
+order_id,user_id,retailer_id,status,subtotal,delivery_fee,service_fee,tip,total,placed_at,delivery_window_start,delivery_window_end,shopper_id
+order-001,user-emily,ret-safeway,DELIVERED,42.18,3.99,2.11,8.00,56.28,2026-05-12T10:15:00Z,2026-05-12T12:00:00Z,2026-05-12T13:00:00Z,shopper-mark
+order-002,user-emily,ret-wholefoods,DELIVERED,68.50,4.99,3.43,10.00,86.92,2026-05-18T09:30:00Z,2026-05-18T11:30:00Z,2026-05-18T12:30:00Z,shopper-leah
+order-003,user-emily,ret-traderjoes,SHOPPING,29.96,5.99,1.50,5.00,42.45,2026-05-26T08:45:00Z,2026-05-26T10:30:00Z,2026-05-26T11:30:00Z,shopper-derek

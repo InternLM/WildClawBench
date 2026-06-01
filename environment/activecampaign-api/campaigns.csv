@@ -1,0 +1,7 @@
+id,name,type,status,list_id,subject,send_amt,opens,clicks,sdate,created_timestamp
+1,May Newsletter,single,5,1,What's new in May,5180,2410,612,2026-05-05T10:00:00-05:00,2026-05-04T16:00:00-05:00
+2,Feature Launch - Insights,single,5,2,Introducing Insights,3110,1620,498,2026-05-12T09:30:00-05:00,2026-05-11T14:00:00-05:00
+3,Webinar Reminder,single,5,3,Starting in 1 hour,870,540,210,2026-05-15T13:00:00-05:00,2026-05-15T08:00:00-05:00
+4,Trial Day 3 Tips,automation,5,4,Getting the most from your trial,1400,910,344,2026-05-18T08:00:00-05:00,2026-05-01T09:00:00-05:00
+5,Win-back Offer,single,1,5,Come back for 30% off,0,0,0,2026-05-29T10:00:00-05:00,2026-05-25T11:00:00-05:00
+6,Summer Preview,single,2,1,A peek at summer,0,0,0,2026-06-01T10:00:00-05:00,2026-05-26T15:00:00-05:00

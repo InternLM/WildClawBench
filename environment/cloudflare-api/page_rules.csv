@@ -1,0 +1,4 @@
+id,zone_id,target,setting,value,status,priority,created_on
+pr0001aaaa,zone1aaaa1111bbbb2222cccc3333dddd,*.orbit-labs.com/static/*,cache_level,cache_everything,active,1,2024-04-01T10:00:00.000Z
+pr0002bbbb,zone1aaaa1111bbbb2222cccc3333dddd,orbit-labs.com/admin/*,security_level,high,active,2,2024-04-02T10:00:00.000Z
+pr0003cccc,zone2eeee4444ffff5555gggg6666hhhh,orbit-cdn.net/*,ssl,full,active,1,2024-04-10T10:00:00.000Z

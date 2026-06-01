@@ -1,0 +1,6 @@
+name,namespace,replicas,available_replicas,ready_replicas,updated_replicas,image,strategy,created_time
+api-gateway,prod,2,2,2,2,orbit-labs/api-gateway:2.4.1,RollingUpdate,2026-05-01T10:00:00Z
+billing-worker,prod,1,0,0,1,orbit-labs/billing-worker:1.8.0,RollingUpdate,2026-05-10T11:00:00Z
+auth-service,prod,1,0,0,1,orbit-labs/auth-service:3.1.0,RollingUpdate,2026-05-15T13:20:00Z
+web-frontend,default,2,2,2,2,orbit-labs/web-frontend:5.2.0,RollingUpdate,2026-04-22T09:00:00Z
+coredns,kube-system,1,1,1,1,registry.k8s.io/coredns/coredns:v1.11.1,RollingUpdate,2025-08-01T09:00:00Z

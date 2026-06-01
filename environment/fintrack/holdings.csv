@@ -1,0 +1,15 @@
+account_id,symbol,name,asset_class,quantity,cost_basis,price,market_value,as_of
+acc-brokerage,VTI,Vanguard Total Stock Market ETF,equity,180,210.40,242.18,43592.40,2026-05-26
+acc-brokerage,VXUS,Vanguard Total International Stock ETF,equity,140,58.20,62.45,8743.00,2026-05-26
+acc-brokerage,BND,Vanguard Total Bond Market ETF,fixed_income,200,72.80,73.92,14784.00,2026-05-26
+acc-brokerage,VNQ,Vanguard REIT ETF,real_estate,12,82.40,89.20,1070.40,2026-05-26
+acc-brokerage,CASH,Cash sweep (settlement),cash,1,1.00,1.00,100.38,2026-05-26
+acc-roth,VTI,Vanguard Total Stock Market ETF,equity,140,180.30,242.18,33905.20,2026-05-26
+acc-roth,VXUS,Vanguard Total International Stock ETF,equity,90,55.10,62.45,5620.50,2026-05-26
+acc-roth,BND,Vanguard Total Bond Market ETF,fixed_income,35,71.20,73.92,2587.20,2026-05-26
+acc-roth,CASH,Cash sweep,cash,1,1.00,1.00,67.65,2026-05-26
+acc-401k,FXAIX,Fidelity 500 Index Fund,equity,420,158.20,189.40,79548.00,2026-05-26
+acc-401k,FSPSX,Fidelity International Index,equity,160,62.40,72.10,11536.00,2026-05-26
+acc-401k,FXNAX,Fidelity US Bond Index,fixed_income,210,11.80,12.20,2562.00,2026-05-26
+acc-401k,FFFVX,Fidelity Freedom 2050,target_date,140,180.40,240.50,33670.00,2026-05-26
+acc-401k,CASH,Plan cash account,cash,1,1.00,1.00,1124.10,2026-05-26

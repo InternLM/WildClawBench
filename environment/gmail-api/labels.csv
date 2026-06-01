@@ -1,0 +1,9 @@
+id,name,type,messages_total,messages_unread,threads_total,threads_unread
+INBOX,INBOX,system,6,2,5,2
+SENT,SENT,system,3,0,3,0
+DRAFTS,DRAFT,system,1,0,1,0
+TRASH,TRASH,system,0,0,0,0
+SPAM,SPAM,system,1,1,1,1
+Label_orbit,Orbit Labs,user,4,1,4,1
+Label_followup,Follow up,user,2,1,2,1
+Label_oncall,On-call,user,1,0,1,0

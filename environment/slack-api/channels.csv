@@ -1,0 +1,7 @@
+id,name,is_private,is_archived,topic,purpose,creator,created,num_members
+C01GENERAL,general,false,false,Company-wide announcements,Default channel for all,U01AMELIA,1700000000,5
+C01ENG,eng,false,false,All engineering discussion,Engineering team chat,U01AMELIA,1700000100,5
+C01DEPLOY,deploys,false,false,Deploy notifications,Automated deploy + incident notifications,U01AMELIA,1700000200,5
+C01RANDOM,random,false,false,Off-topic,Memes welcome,U01JONAS,1700000300,5
+C01AUTHV2,proj-auth-v2,false,false,Auth v2 rollout tracking,Project channel for auth migration,U01AMELIA,1740000000,3
+G01LEADS,leads,true,false,Engineering leads sync,Private leads channel,U01AMELIA,1740000100,2

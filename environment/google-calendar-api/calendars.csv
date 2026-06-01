@@ -1,0 +1,5 @@
+id,summary,description,time_zone,access_role,primary,color_id
+amelia@orbit-labs.com,Amelia Ortega,Primary calendar,America/Los_Angeles,owner,true,1
+orbit-labs.com_eng@group.calendar.google.com,Engineering,Team-wide engineering events,America/Los_Angeles,writer,false,2
+orbit-labs.com_holidays@group.calendar.google.com,Company holidays,Holidays and PTO,America/Los_Angeles,reader,false,8
+amelia.personal@gmail.com,Personal,,America/Los_Angeles,owner,false,5

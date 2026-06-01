@@ -1,0 +1,7 @@
+id,application_id,candidate_id,interviewer,stage,overall_recommendation,rating,submitted_at,notes
+sc-6001,app-4002,cand-7005,Amelia Ortega,Interview,strong_yes,5,2026-04-20T11:30:00Z,Excellent system design depth.
+sc-6002,app-4003,cand-7002,Jonas Pereira,Interview,yes,4,2026-04-18T16:00:00Z,Solid React fundamentals; good communication.
+sc-6003,app-4004,cand-7003,Priya Nair,Interview,strong_yes,5,2026-04-24T14:00:00Z,Outstanding portfolio and craft.
+sc-6004,app-4006,cand-7004,Rohit Bansal,Interview,no,2,2026-04-21T10:00:00Z,Weak on statistics fundamentals.
+sc-6005,app-4008,cand-7008,Amelia Ortega,Interview,no,2,2026-03-14T15:00:00Z,Leadership examples lacked depth.
+sc-6006,app-4002,cand-7005,Helena Park,Interview,yes,4,2026-04-19T13:00:00Z,Strong coding; clarify scaling tradeoffs.

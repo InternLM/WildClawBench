@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "ServiceNow Table API Mock",
+    "description": "Test collection for the mock ServiceNow Table API service. Base URL defaults to http://localhost:8071. In docker-compose, the service is reachable at http://servicenow-api:8071.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8071"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list incidents", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/incident"}},
+    {"name": "list incidents filtered", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/incident?sysparm_query=state=2^priority=1&sysparm_limit=5"}},
+    {"name": "get incident", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/incident/inc-0001001"}},
+    {"name": "create incident", "request": {"method": "POST", "url": "{{baseUrl}}/api/now/table/incident",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"short_description\": \"New monitor flickering\", \"description\": \"Desk monitor flickers intermittently.\", \"priority\": \"4\", \"category\": \"hardware\", \"assigned_to\": \"usr-jonas\", \"opened_by\": \"usr-noor\"}"}}},
+    {"name": "update incident", "request": {"method": "PATCH", "url": "{{baseUrl}}/api/now/table/incident/inc-0001003",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"state\": \"2\", \"assigned_to\": \"usr-helena\"}"}}},
+    {"name": "list change requests", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/change_request"}},
+    {"name": "get change request", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/change_request/chg-0002001"}},
+    {"name": "list problems", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/problem"}},
+    {"name": "get problem", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/problem/prb-0003001"}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/sys_user"}},
+    {"name": "get user", "request": {"method": "GET", "url": "{{baseUrl}}/api/now/table/sys_user/usr-amelia"}}
+  ]
+}

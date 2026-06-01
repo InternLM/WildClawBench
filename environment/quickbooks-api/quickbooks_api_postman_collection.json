@@ -1,0 +1,136 @@
+{
+  "info": {
+    "name": "QuickBooks Online Mock API",
+    "description": "Complete test collection for the mock QuickBooks Online API service (Greenleaf Landscaping LLC). Base URL defaults to http://localhost:8012 for local testing.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "base_url", "value": "http://localhost:8012"},
+    {"key": "realm_id", "value": "4620816365272861350"}
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {"name": "GET /health", "request": {"method": "GET", "url": {"raw": "{{base_url}}/health", "host": ["{{base_url}}"], "path": ["health"]}}}
+      ]
+    },
+    {
+      "name": "Company Info",
+      "item": [
+        {"name": "GET Company Info", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/companyinfo/1", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "companyinfo", "1"]}}}
+      ]
+    },
+    {
+      "name": "Customers",
+      "item": [
+        {"name": "GET Query All Customers", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Customer", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Customer"}]}}},
+        {"name": "GET Customer by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/customer/1", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "customer", "1"]}}},
+        {"name": "GET Customer 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/customer/999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "customer", "999"]}}},
+        {"name": "POST Create Customer", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/customer", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "customer"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"DisplayName\": \"Test Customer LLC\", \"GivenName\": \"Test\", \"FamilyName\": \"Customer\", \"PrimaryEmailAddr\": {\"Address\": \"test@example.com\"}, \"PrimaryPhone\": {\"FreeFormNumber\": \"(704) 555-9999\"}}"}}},
+        {"name": "POST Update Customer", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/customer", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "customer"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"Id\": \"1\", \"DisplayName\": \"Mark Thompson (Updated)\", \"SyncToken\": \"0\"}"}}}
+      ]
+    },
+    {
+      "name": "Vendors",
+      "item": [
+        {"name": "GET Query All Vendors", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Vendor", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Vendor"}]}}},
+        {"name": "GET Vendor by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/vendor/1", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "vendor", "1"]}}},
+        {"name": "GET Vendor 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/vendor/999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "vendor", "999"]}}},
+        {"name": "POST Create Vendor", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/vendor", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "vendor"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"DisplayName\": \"New Vendor Inc\", \"CompanyName\": \"New Vendor Inc\", \"PrimaryEmailAddr\": {\"Address\": \"vendor@newvendor.com\"}}"}}},
+        {"name": "POST Update Vendor", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/vendor", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "vendor"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"Id\": \"2\", \"DisplayName\": \"SunPro Nursery (Updated)\", \"SyncToken\": \"0\"}"}}}
+      ]
+    },
+    {
+      "name": "Items",
+      "item": [
+        {"name": "GET Query All Items", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Item", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Item"}]}}},
+        {"name": "GET Item by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/item/1", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "item", "1"]}}},
+        {"name": "GET Item 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/item/999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "item", "999"]}}},
+        {"name": "POST Create Item", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/item", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "item"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"Name\": \"Snow Removal\", \"Description\": \"Snow removal and salting service\", \"Type\": \"Service\", \"UnitPrice\": 150.00}"}}},
+        {"name": "POST Update Item", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/item", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "item"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"Id\": \"1\", \"UnitPrice\": 80.00, \"SyncToken\": \"0\"}"}}}
+      ]
+    },
+    {
+      "name": "Accounts",
+      "item": [
+        {"name": "GET Query All Accounts", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Account", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Account"}]}}},
+        {"name": "GET Account by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/account/3", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "account", "3"]}}},
+        {"name": "GET Account 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/account/999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "account", "999"]}}}
+      ]
+    },
+    {
+      "name": "Invoices",
+      "item": [
+        {"name": "GET Query All Invoices", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Invoice", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Invoice"}]}}},
+        {"name": "GET Query Unpaid Invoices", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Invoice WHERE Balance > '0'", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Invoice WHERE Balance > '0'"}]}}},
+        {"name": "GET Query Invoices by Customer", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Invoice WHERE Status = 'Paid'", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Invoice WHERE Status = 'Paid'"}]}}},
+        {"name": "GET Invoice by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/invoice/1001", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "invoice", "1001"]}}},
+        {"name": "GET Invoice 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/invoice/9999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "invoice", "9999"]}}},
+        {"name": "GET Invoice PDF", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/invoice/1001/pdf", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "invoice", "1001", "pdf"]}}},
+        {"name": "POST Create Invoice", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/invoice", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "invoice"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"CustomerRef\": {\"value\": \"1\", \"name\": \"Mark Thompson\"}, \"Line\": [{\"Amount\": 150.00, \"DetailType\": \"SalesItemLineDetail\", \"Description\": \"Test mowing service\", \"SalesItemLineDetail\": {\"ItemRef\": {\"value\": \"1\", \"name\": \"Weekly Lawn Mowing\"}, \"UnitPrice\": 75.00, \"Qty\": 2}}], \"TxnDate\": \"2025-05-01\", \"DueDate\": \"2025-05-31\"}"}}},
+        {"name": "POST Update Invoice", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/invoice", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "invoice"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"Id\": \"1001\", \"DueDate\": \"2025-04-15\", \"SyncToken\": \"1\"}"}}},
+        {"name": "POST Void Invoice", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/invoice/1028?operation=void", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "invoice", "1028"], "query": [{"key": "operation", "value": "void"}]}}},
+        {"name": "POST Send Invoice", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/invoice/1009?include=send", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "invoice", "1009"], "query": [{"key": "include", "value": "send"}]}}}
+      ]
+    },
+    {
+      "name": "Bills",
+      "item": [
+        {"name": "GET Query All Bills", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Bill", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Bill"}]}}},
+        {"name": "GET Query Open Bills", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Bill WHERE Balance > '0'", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Bill WHERE Balance > '0'"}]}}},
+        {"name": "GET Bill by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/bill/2001", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "bill", "2001"]}}},
+        {"name": "GET Bill 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/bill/9999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "bill", "9999"]}}},
+        {"name": "POST Create Bill", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/bill", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "bill"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"VendorRef\": {\"value\": \"1\", \"name\": \"Charlotte Fuel Depot\"}, \"Line\": [{\"Amount\": 350.00, \"DetailType\": \"AccountBasedExpenseLineDetail\", \"Description\": \"Diesel fuel - test\", \"AccountBasedExpenseLineDetail\": {\"AccountRef\": {\"value\": \"7\", \"name\": \"Fuel Expense\"}}}], \"TxnDate\": \"2025-05-01\", \"DueDate\": \"2025-05-31\"}"}}},
+        {"name": "POST Pay Bill", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/bill/2002?operation=pay", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "bill", "2002"], "query": [{"key": "operation", "value": "pay"}]}}}
+      ]
+    },
+    {
+      "name": "Payments",
+      "item": [
+        {"name": "GET Query All Payments", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Payment", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Payment"}]}}},
+        {"name": "GET Payment by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/payment/3001", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "payment", "3001"]}}},
+        {"name": "GET Payment 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/payment/9999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "payment", "9999"]}}},
+        {"name": "POST Record Payment", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/payment", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "payment"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"CustomerRef\": {\"value\": \"4\", \"name\": \"Patricia Nguyen\"}, \"TotalAmt\": 150.00, \"Line\": [{\"Amount\": 150.00, \"LinkedTxn\": [{\"TxnId\": \"1009\", \"TxnType\": \"Invoice\"}]}], \"TxnDate\": \"2025-05-01\"}"}}}
+      ]
+    },
+    {
+      "name": "Estimates",
+      "item": [
+        {"name": "GET Query All Estimates", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Estimate", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Estimate"}]}}},
+        {"name": "GET Estimate by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/estimate/4001", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "estimate", "4001"]}}},
+        {"name": "GET Estimate 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/estimate/9999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "estimate", "9999"]}}},
+        {"name": "POST Create Estimate", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/estimate", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "estimate"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"CustomerRef\": {\"value\": \"18\", \"name\": \"Daniel Harris\"}, \"Line\": [{\"Amount\": 500.00, \"DetailType\": \"SalesItemLineDetail\", \"Description\": \"Spring cleanup and mulching\", \"SalesItemLineDetail\": {\"ItemRef\": {\"value\": \"4\", \"name\": \"Spring Cleanup\"}, \"UnitPrice\": 250.00, \"Qty\": 2}}], \"TxnDate\": \"2025-05-01\", \"ExpirationDate\": \"2025-05-31\"}"}}},
+        {"name": "POST Convert Estimate to Invoice", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/estimate/4004?operation=convert", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "estimate", "4004"], "query": [{"key": "operation", "value": "convert"}]}}}
+      ]
+    },
+    {
+      "name": "Expenses (Purchases)",
+      "item": [
+        {"name": "GET Query All Purchases", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Purchase", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Purchase"}]}}},
+        {"name": "GET Expense by ID", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/purchase/5001", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "purchase", "5001"]}}},
+        {"name": "GET Expense 404", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/purchase/9999", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "purchase", "9999"]}}},
+        {"name": "POST Create Expense", "request": {"method": "POST", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/purchase", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "purchase"]}, "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"AccountRef\": {\"value\": \"7\", \"name\": \"Fuel Expense\"}, \"PaymentType\": \"Cash\", \"Line\": [{\"Amount\": 60.00, \"DetailType\": \"AccountBasedExpenseLineDetail\", \"Description\": \"Gas for equipment\", \"AccountBasedExpenseLineDetail\": {\"AccountRef\": {\"value\": \"7\", \"name\": \"Fuel Expense\"}}}], \"TxnDate\": \"2025-05-01\"}"}}}
+      ]
+    },
+    {
+      "name": "Query",
+      "item": [
+        {"name": "Query - Active Customers", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Customer WHERE Active = true", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Customer WHERE Active = true"}]}}},
+        {"name": "Query - Overdue Invoices", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM Invoice WHERE Status = 'Overdue'", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM Invoice WHERE Status = 'Overdue'"}]}}},
+        {"name": "Query - Invalid Query", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=INVALID QUERY", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "INVALID QUERY"}]}}},
+        {"name": "Query - Unknown Entity", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/query?query=SELECT * FROM UnknownEntity", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "query"], "query": [{"key": "query", "value": "SELECT * FROM UnknownEntity"}]}}}
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {"name": "GET Profit & Loss", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/reports/ProfitAndLoss?start_date=2025-01-01&end_date=2025-04-30", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "reports", "ProfitAndLoss"], "query": [{"key": "start_date", "value": "2025-01-01"}, {"key": "end_date", "value": "2025-04-30"}]}}},
+        {"name": "GET Profit & Loss (no date range)", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/reports/ProfitAndLoss", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "reports", "ProfitAndLoss"]}}},
+        {"name": "GET Balance Sheet", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/reports/BalanceSheet?start_date=2025-01-01&end_date=2025-04-30", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "reports", "BalanceSheet"], "query": [{"key": "start_date", "value": "2025-01-01"}, {"key": "end_date", "value": "2025-04-30"}]}}},
+        {"name": "GET AR Aging", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/reports/AgedReceivableDetail", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "reports", "AgedReceivableDetail"]}}},
+        {"name": "GET AP Aging", "request": {"method": "GET", "url": {"raw": "{{base_url}}/v3/company/{{realm_id}}/reports/AgedPayableDetail", "host": ["{{base_url}}"], "path": ["v3", "company", "{{realm_id}}", "reports", "AgedPayableDetail"]}}}
+      ]
+    }
+  ]
+}

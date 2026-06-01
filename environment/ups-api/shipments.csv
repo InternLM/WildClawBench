@@ -1,0 +1,6 @@
+tracking_number,service_code,service_name,ship_date,origin_zip,dest_zip,weight_lb,currency,total_charge,label_url
+1Z999AA10123456784,03,UPS Ground,2026-05-20,10001,90001,5.0,USD,16.20,https://ups.example/labels/1Z999AA10123456784.gif
+1Z999AA10123456795,02,UPS 2nd Day Air,2026-05-21,10001,60601,3.4,USD,32.40,https://ups.example/labels/1Z999AA10123456795.gif
+1Z999AA10123456806,01,UPS Next Day Air,2026-05-22,10001,90001,1.8,USD,89.75,https://ups.example/labels/1Z999AA10123456806.gif
+1Z999AA10123456817,12,UPS 3 Day Select,2026-05-23,10001,90001,6.2,USD,28.60,https://ups.example/labels/1Z999AA10123456817.gif
+1Z999AA10123456828,03,UPS Ground,2026-05-24,10001,60601,4.0,USD,13.85,https://ups.example/labels/1Z999AA10123456828.gif

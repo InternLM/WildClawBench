@@ -1,0 +1,6 @@
+user_id,name,email,title,is_admin
+usr-1,Amelia Stone,amelia@orbit-labs.example.com,Engineering Manager,true
+usr-2,Helena Park,helena@orbit-labs.example.com,Backend Engineer,false
+usr-3,Marco Bianchi,marco@orbit-labs.example.com,Frontend Engineer,false
+usr-4,Sara Okonkwo,sara@orbit-labs.example.com,Marketing Lead,false
+usr-5,Tom Becker,tom@orbit-labs.example.com,Content Strategist,false

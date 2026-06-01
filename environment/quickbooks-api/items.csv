@@ -1,0 +1,10 @@
+Id,Name,Description,Type,UnitPrice,IncomeAccountRef_value,IncomeAccountRef_name,Active,Taxable
+1,Emergency Motel Stay,Temporary motel reimbursement for tenant relocation support,Service,418.22,1,Reimbursement Grant Revenue,true,false
+2,Volunteer Travel Mileage,Verified volunteer mileage reimbursement,Service,93.10,1,Reimbursement Grant Revenue,true,false
+3,Food & Essentials,Emergency household food and essential supplies reimbursement,Service,152.87,1,Reimbursement Grant Revenue,true,false
+4,Temporary Housing,Temporary housing reimbursement for relocation case,Service,624.00,1,Reimbursement Grant Revenue,true,false
+5,Fuel Reimbursement,Volunteer or coalition fuel reimbursement,Service,204.51,1,Reimbursement Grant Revenue,true,false
+6,Relocation Truck Rental,Truck rental reimbursement for relocation support,Service,312.45,1,Reimbursement Grant Revenue,true,false
+7,Utility Deposit,Utility deposit reimbursement for stabilized housing placement,Service,950.00,1,Reimbursement Grant Revenue,true,false
+8,Security Deposit,Security deposit reimbursement for relocation intake case,Service,1280.00,1,Reimbursement Grant Revenue,true,false
+9,Duplicate Review Adjustment,Administrative line used to track duplicate reimbursement review,Service,0.00,1,Reimbursement Grant Revenue,true,false

@@ -1,0 +1,7 @@
+id,username,name,description,verified,protected,location,profile_image_url,created_at,followers_count,following_count,tweet_count
+2001,maya_dev,Maya Chen,Backend engineer. Distributed systems and coffee.,true,false,Seattle WA,https://pbs.example.com/maya.png,2018-03-12T09:00:00.000Z,18432,312,1840
+2002,orbit_labs,Orbit Labs,Building developer tooling for the modern stack.,true,false,Remote,https://pbs.example.com/orbit.png,2019-06-01T10:00:00.000Z,54210,128,920
+2003,jonas_p,Jonas Pereira,Infra @ Orbit Labs. Opinions are my own.,false,false,Lisbon,https://pbs.example.com/jonas.png,2020-01-22T14:30:00.000Z,3120,540,2310
+2004,helena_park,Helena Park,Frontend dev. Accessibility advocate.,false,false,Austin TX,https://pbs.example.com/helena.png,2019-11-08T11:15:00.000Z,7820,410,1605
+2005,rohit_b,Rohit Bansal,SRE. On-call survivor.,false,true,Bangalore,https://pbs.example.com/rohit.png,2021-04-19T08:45:00.000Z,980,220,640
+2006,noor_codes,Noor Aziz,DevRel. I write docs so you don't have to.,true,false,Dubai,https://pbs.example.com/noor.png,2017-09-30T16:00:00.000Z,29870,1042,5120

@@ -1,0 +1,11 @@
+id,name,rating,price,category,category_title,latitude,longitude,city,state,address,phone,review_count,is_closed,image_url
+biz-the-grove-001,The Grove Cafe,4.5,$$,cafes,Cafes,37.7825,-122.4061,San Francisco,CA,2016 Fillmore St,+14155551001,1820,false,https://img.example.com/grove.jpg
+biz-tartine-0002,Tartine Bakery,4.5,$$,bakeries,Bakeries,37.7614,-122.4241,San Francisco,CA,600 Guerrero St,+14155551002,5400,false,https://img.example.com/tartine.jpg
+biz-zuni-00003,Zuni Cafe,4.0,$$$,restaurants,Restaurants,37.7726,-122.4218,San Francisco,CA,1658 Market St,+14155551003,3100,false,https://img.example.com/zuni.jpg
+biz-hop-prime-04,House of Prime Rib,4.6,$$$$,steak,Steakhouses,37.7937,-122.4225,San Francisco,CA,1906 Van Ness Ave,+14155551004,7200,false,https://img.example.com/hop.jpg
+biz-philz-00005,Philz Coffee,4.5,$,coffee,Coffee & Tea,37.7525,-122.4127,San Francisco,CA,3101 24th St,+14155551005,2600,false,https://img.example.com/philz.jpg
+biz-mission-006,Mission Chinese Food,4.0,$$,chinese,Chinese,37.7596,-122.4127,San Francisco,CA,2234 Mission St,+14155551006,2900,false,https://img.example.com/mcf.jpg
+biz-la-taq-0007,La Taqueria,4.5,$,mexican,Mexican,37.7509,-122.4180,San Francisco,CA,2889 Mission St,+14155551007,4100,false,https://img.example.com/lataq.jpg
+biz-swans-0008,Swans Oyster Depot,4.5,$$$,seafood,Seafood,37.7905,-122.4220,San Francisco,CA,1517 Polk St,+14155551008,3300,false,https://img.example.com/swans.jpg
+biz-burma-0009,Burma Superstar,4.0,$$,burmese,Burmese,37.7821,-122.4636,San Francisco,CA,309 Clement St,+14155551009,5600,false,https://img.example.com/burma.jpg
+biz-old-rite-10,Old Right Diner,3.5,$,diners,Diners,37.7699,-122.4131,San Francisco,CA,500 Valencia St,+14155551010,640,true,https://img.example.com/oldrite.jpg

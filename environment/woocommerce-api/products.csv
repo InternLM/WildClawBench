@@ -1,0 +1,9 @@
+id,name,slug,sku,type,status,price,regular_price,sale_price,on_sale,stock_quantity,stock_status,manage_stock,categories,description,date_created
+201,Handcrafted Ceramic Mug,handcrafted-ceramic-mug,WC-MUG-201,simple,publish,18.00,22.00,18.00,true,150,instock,true,Kitchen;Drinkware,Stoneware mug glazed by hand,2026-01-08T09:00:00
+202,Organic Cotton T-Shirt,organic-cotton-t-shirt,WC-TSH-202,variable,publish,29.99,29.99,0,false,80,instock,true,Apparel,Soft organic cotton tee,2026-01-22T10:30:00
+203,Bamboo Cutting Board,bamboo-cutting-board,WC-BCB-203,simple,publish,34.50,34.50,0,false,45,instock,true,Kitchen,Sustainable bamboo board,2026-02-11T08:15:00
+204,Soy Wax Candle,soy-wax-candle,WC-CDL-204,simple,publish,14.00,16.00,14.00,true,200,instock,true,Home;Decor,Hand-poured soy candle,2026-02-27T11:45:00
+205,Leather Journal,leather-journal,WC-JRN-205,simple,publish,42.00,42.00,0,false,0,outofstock,true,Stationery,Full-grain leather journal,2026-03-14T07:20:00
+206,Stainless Water Bottle,stainless-water-bottle,WC-BTL-206,simple,publish,26.00,32.00,26.00,true,120,instock,true,Outdoors;Drinkware,Insulated 750ml bottle,2026-03-30T14:00:00
+207,Wool Throw Blanket,wool-throw-blanket,WC-BLK-207,simple,publish,68.00,68.00,0,false,30,instock,true,Home;Decor,Merino wool throw,2026-04-12T13:10:00
+208,Digital Recipe Ebook,digital-recipe-ebook,WC-EBK-208,simple,publish,9.99,9.99,0,false,0,instock,false,Books,Downloadable recipe collection,2026-04-29T16:40:00

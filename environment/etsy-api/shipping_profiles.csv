@@ -1,0 +1,4 @@
+shipping_profile_id,shop_id,title,origin_country,origin_postal_code,processing_min,processing_max,min_delivery_days,max_delivery_days,cost,secondary_cost
+50001,29457183,Standard Shipping - Small Items,US,98402,5,10,3,5,5.99,3.99
+50002,29457183,Standard Shipping - Large/Heavy Items,US,98402,10,21,3,7,11.99,7.99
+50003,29457183,Express Shipping - Priority Mail Express,US,98402,5,10,1,2,24.99,18.99

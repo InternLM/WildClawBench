@@ -1,0 +1,6 @@
+id,product,unit_amount,currency,recurring_interval,active,nickname
+price_Starter_M,prod_Starter,1900,usd,month,true,Starter Monthly
+price_Pro_M,prod_Pro,4900,usd,month,true,Pro Monthly
+price_Pro_Y,prod_Pro,49000,usd,year,true,Pro Annual
+price_Ent_M,prod_Enterprise,29900,usd,month,true,Enterprise Monthly
+price_POS,prod_POS,9900,usd,,true,POS Bundle One-time

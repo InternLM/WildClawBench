@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Spotify Mock API v1",
+    "description": "Test collection for the mock Spotify Web API service. Base URL defaults to http://localhost:8039. In docker-compose, the service is reachable at http://spotify-api:8039.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8039"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/v1/me"}},
+    {"name": "my playlists", "request": {"method": "GET", "url": "{{baseUrl}}/v1/me/playlists"}},
+    {"name": "get playlist", "request": {"method": "GET", "url": "{{baseUrl}}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M"}},
+    {"name": "playlist tracks", "request": {"method": "GET", "url": "{{baseUrl}}/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks"}},
+    {"name": "create playlist", "request": {"method": "POST", "url": "{{baseUrl}}/v1/users/user-leo/playlists",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Road Trip 2026\", \"description\": \"Long drive mix\", \"public\": false}"}}},
+    {"name": "add tracks", "request": {"method": "POST", "url": "{{baseUrl}}/v1/playlists/2v3iNvBX8Ay1Gt2uXtUKUg/tracks",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"uris\": [\"spotify:track:9jI0kJ1lK2mL3nM4oN5pO6\"]}"}}},
+    {"name": "search", "request": {"method": "GET", "url": "{{baseUrl}}/v1/search?q=neon&type=track,artist"}},
+    {"name": "player state", "request": {"method": "GET", "url": "{{baseUrl}}/v1/me/player"}},
+    {"name": "play", "request": {"method": "PUT", "url": "{{baseUrl}}/v1/me/player/play",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"context_uri\": \"spotify:playlist:1hP3rT9sNuVbXc2Yd9Lm4q\"}"}}}
+  ]
+}

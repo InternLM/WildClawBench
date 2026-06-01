@@ -1,0 +1,11 @@
+id,name,color,description,teamId,createdAt,updatedAt
+label-bug,Bug,#eb5757,Something isn't working correctly,,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-critical,Critical,#eb5757,Critical severity,,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-high,High,#f2994a,High severity,,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-medium,Medium,#f2c94c,Medium severity,,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-low,Low,#bdbdbd,Low severity,,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-dark-mode,Dark Mode,#5e6ad2,Dark mode contrast and theming issues,team-ux,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-form-validation,Form Validation,#26b5ce,Form validation behavior and copy,team-ux,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-medications,Medications,#bb6bd9,Medications module of the patient portal,team-ux,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-dashboard,Dashboard,#6fcf97,Dashboard module of the patient portal,team-ux,2026-01-15T09:00:00,2026-01-15T09:00:00
+label-charge-nurse-review,Charge Nurse Review,#f2c94c,Requires charge nurse spot-test sign-off,team-ux,2026-01-15T09:00:00,2026-01-15T09:00:00

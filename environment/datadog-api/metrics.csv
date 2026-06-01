@@ -1,0 +1,6 @@
+metric,scope,base_value,amplitude,unit
+trace.http.request.duration,service:auth-service,0.42,0.18,second
+trace.http.request.errors,service:web-frontend,38.0,22.0,error
+system.cpu.user,host:web-01,68.0,15.0,percent
+billing.queue.depth,service:billing-service,640.0,210.0,job
+system.disk.in_use,host:db-01,0.82,0.06,fraction

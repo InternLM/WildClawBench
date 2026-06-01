@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Greenhouse Harvest API Mock",
+    "description": "Test collection for the mock Greenhouse Harvest API service. Base URL defaults to http://localhost:8073. In docker-compose, the service is reachable at http://greenhouse-api:8073.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8073"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list candidates", "request": {"method": "GET", "url": "{{baseUrl}}/v1/candidates"}},
+    {"name": "get candidate", "request": {"method": "GET", "url": "{{baseUrl}}/v1/candidates/cand-7001"}},
+    {"name": "create candidate", "request": {"method": "POST", "url": "{{baseUrl}}/v1/candidates",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"first_name\": \"Priya\", \"last_name\": \"Sharma\", \"email\": \"priya.sharma@example.com\", \"company\": \"Vandelay\", \"title\": \"Backend Engineer\", \"source\": \"Referral\"}"}}},
+    {"name": "list jobs open", "request": {"method": "GET", "url": "{{baseUrl}}/v1/jobs?status=open"}},
+    {"name": "get job", "request": {"method": "GET", "url": "{{baseUrl}}/v1/jobs/job-3001"}},
+    {"name": "list applications", "request": {"method": "GET", "url": "{{baseUrl}}/v1/applications?job_id=job-3001"}},
+    {"name": "get application", "request": {"method": "GET", "url": "{{baseUrl}}/v1/applications/app-4001"}},
+    {"name": "advance application", "request": {"method": "POST", "url": "{{baseUrl}}/v1/applications/app-4001/advance"}},
+    {"name": "reject application", "request": {"method": "POST", "url": "{{baseUrl}}/v1/applications/app-4007/reject",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"reason\": \"Position filled internally\"}"}}},
+    {"name": "list scorecards", "request": {"method": "GET", "url": "{{baseUrl}}/v1/scorecards?application_id=app-4002"}}
+  ]
+}

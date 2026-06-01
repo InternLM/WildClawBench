@@ -1,0 +1,8 @@
+contact_id,name,first_name,last_name,email,is_customer,is_supplier,status,account_number
+c0000001-0000-0000-0000-000000000001,Vandelay Industries,Omar,Haddad,ap@vandelay.com,true,false,ACTIVE,VAND-001
+c0000002-0000-0000-0000-000000000002,Initech LLC,Bill,Lumbergh,accounts@initech.com,true,false,ACTIVE,INIT-002
+c0000003-0000-0000-0000-000000000003,Globex Corporation,Hank,Scorpio,billing@globex.com,true,false,ACTIVE,GLOB-003
+c0000004-0000-0000-0000-000000000004,Acme Supplies,Wile,Coyote,sales@acmesupplies.com,false,true,ACTIVE,ACME-004
+c0000005-0000-0000-0000-000000000005,Stark Industries,Pepper,Potts,finance@stark.com,true,false,ACTIVE,STARK-005
+c0000006-0000-0000-0000-000000000006,Wonka Distribution,Charlie,Bucket,orders@wonka.com,false,true,ACTIVE,WONK-006
+c0000007-0000-0000-0000-000000000007,Hooli Inc,Gavin,Belson,ar@hooli.com,true,false,ARCHIVED,HOOL-007

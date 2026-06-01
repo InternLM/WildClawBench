@@ -1,0 +1,7 @@
+id,login,display_name,type,broadcaster_type,description,view_count,created_at,profile_image_url
+40001,pixelpaladin,PixelPaladin,,partner,Variety RPG streamer and speedrunner.,4210000,2016-02-10T18:00:00Z,https://static.example.com/pixelpaladin.png
+40002,nightowlcodes,NightOwlCodes,,affiliate,Live coding and game dev every night.,182000,2019-08-22T21:30:00Z,https://static.example.com/nightowl.png
+40003,sprintqueen,SprintQueen,,partner,Speedrunning world records and chill runs.,7650000,2014-11-03T16:00:00Z,https://static.example.com/sprintqueen.png
+40004,tacticalturtle,TacticalTurtle,,affiliate,Slow and steady strategy gameplay.,95400,2021-05-14T19:45:00Z,https://static.example.com/turtle.png
+40005,orbit_dev,OrbitDev,staff,partner,Official Orbit Labs dev streams and tooling demos.,330000,2018-01-09T17:00:00Z,https://static.example.com/orbitdev.png
+40006,casualcartographer,CasualCartographer,,,Map making and city builders.,12800,2022-09-01T20:15:00Z,https://static.example.com/cartographer.png

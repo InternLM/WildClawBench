@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Eventbrite API Mock v3",
+    "description": "Mock Eventbrite API v3. Base URL: http://localhost:8020. In docker-compose: http://eventbrite-api:8020.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8020"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "my organizations", "request": {"method": "GET", "url": "{{baseUrl}}/v3/users/me/organizations"}},
+    {"name": "org events", "request": {"method": "GET", "url": "{{baseUrl}}/v3/organizations/org-cascade/events?status=live"}},
+    {"name": "search events", "request": {"method": "GET", "url": "{{baseUrl}}/v3/events/search?q=postgres"}},
+    {"name": "get event", "request": {"method": "GET", "url": "{{baseUrl}}/v3/events/evt-7000001"}},
+    {"name": "create draft event", "request": {"method": "POST", "url": "{{baseUrl}}/v3/events",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"organization_id\": \"org-cascade\", \"name\": \"Service-mesh deep dive\", \"summary\": \"Half-day service mesh deep dive\", \"start_utc\": \"2026-08-15T17:00:00Z\", \"end_utc\": \"2026-08-15T21:00:00Z\", \"venue_id\": \"venue-soma\", \"capacity\": 60, \"is_free\": false}"}}},
+    {"name": "publish event", "request": {"method": "POST", "url": "{{baseUrl}}/v3/events/evt-7000003/publish"}},
+    {"name": "cancel event", "request": {"method": "POST", "url": "{{baseUrl}}/v3/events/evt-7000004/cancel"}},
+    {"name": "list venues", "request": {"method": "GET", "url": "{{baseUrl}}/v3/venues"}},
+    {"name": "ticket classes", "request": {"method": "GET", "url": "{{baseUrl}}/v3/events/evt-7000001/ticket_classes"}},
+    {"name": "create ticket class", "request": {"method": "POST", "url": "{{baseUrl}}/v3/events/evt-7000003/ticket_classes",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Early bird\", \"quantity_total\": 30, \"cost\": 1500, \"free\": false}"}}},
+    {"name": "list attendees", "request": {"method": "GET", "url": "{{baseUrl}}/v3/events/evt-7000001/attendees"}},
+    {"name": "register attendee", "request": {"method": "POST", "url": "{{baseUrl}}/v3/events/evt-7000004/attendees",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"ticket_class_id\": \"tc-005\", \"name\": \"Helena Park\", \"email\": \"helena@orbit-labs.com\"}"}}},
+    {"name": "check in", "request": {"method": "POST", "url": "{{baseUrl}}/v3/attendees/att-001/check_in"}}
+  ]
+}

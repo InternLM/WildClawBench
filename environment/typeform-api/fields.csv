@@ -1,0 +1,11 @@
+field_id,form_id,title,field_type,ref,required,choices,order
+fld-csat-name,frm-csat-01,What is your name?,short_text,name,true,,1
+fld-csat-rating,frm-csat-01,How would you rate our service?,rating,service_rating,true,,2
+fld-csat-recommend,frm-csat-01,Would you recommend us?,multiple_choice,recommend,true,Definitely|Probably|Not sure|No,3
+fld-csat-email,frm-csat-01,Your email,email,contact_email,false,,4
+fld-onb-role,frm-onboard-02,What is your role?,multiple_choice,role,true,Engineer|Product Manager|Designer|Executive|Other,1
+fld-onb-ease,frm-onboard-02,How easy was setup?,rating,setup_ease,true,,2
+fld-onb-comments,frm-onboard-02,Any additional comments?,short_text,comments,false,,3
+fld-evt-name,frm-event-03,Full name,short_text,attendee_name,true,,1
+fld-evt-email,frm-event-03,Email address,email,attendee_email,true,,2
+fld-evt-track,frm-event-03,Which track will you attend?,multiple_choice,track,true,Platform|Frontend|Data|Security,3

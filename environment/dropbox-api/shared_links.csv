@@ -1,0 +1,5 @@
+id,url,name,path_lower,visibility,file_id
+sl_0001,https://www.dropbox.com/s/abc123def456/Q2-Report.pdf?dl=0,Q2-Report.pdf,/documents/q2-report.pdf,public,id:a4ayc_80000000000000000000004
+sl_0002,https://www.dropbox.com/s/ghi789jkl012/Budget-2026.xlsx?dl=0,Budget-2026.xlsx,/documents/budget-2026.xlsx,team_only,id:a4ayc_80000000000000000000005
+sl_0003,https://www.dropbox.com/s/mno345pqr678/launch.png?dl=0,launch.png,/photos/launch.png,public,id:a4ayc_80000000000000000000007
+sl_0004,https://www.dropbox.com/s/stu901vwx234/proposal.pdf?dl=0,proposal.pdf,/projects/proposal.pdf,password,id:a4ayc_80000000000000000000009

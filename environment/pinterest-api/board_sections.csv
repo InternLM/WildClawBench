@@ -1,0 +1,12 @@
+section_id,board_id,name,pin_count
+section_2001,board_1002,Phalaenopsis,7
+section_2002,board_1002,Cattleya,6
+section_2003,board_1002,Paphiopedilum,5
+section_2004,board_1003,Flavors & Recipes,8
+section_2005,board_1003,Techniques,5
+section_2006,board_1004,Layout & Benches,4
+section_2007,board_1004,Climate Systems,3
+section_2008,board_1005,Weeknight Meals,5
+section_2009,board_1005,Sunday Baking,4
+section_2010,board_1006,Perennials,5
+section_2011,board_1006,Container Gardens,3

@@ -1,0 +1,5 @@
+product_id,display_name,description,capacity,base_fare,cost_per_mile,cost_per_minute,booking_fee,minimum_fare,image_url,shared
+uberx,UberX,Affordable everyday rides,4,2.55,1.75,0.35,2.30,7.65,https://img.example.com/uberx.png,false
+uberxl,UberXL,Affordable rides for groups up to 6,6,3.85,2.85,0.45,2.30,9.95,https://img.example.com/uberxl.png,false
+uberblack,Uber Black,Premium rides in luxury cars,4,8.00,3.75,0.65,0.00,15.00,https://img.example.com/uberblack.png,false
+uberpool,Uber Pool,Share your ride and split the cost,2,1.95,1.25,0.25,1.50,5.50,https://img.example.com/uberpool.png,true

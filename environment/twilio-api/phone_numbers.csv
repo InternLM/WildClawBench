@@ -1,0 +1,5 @@
+sid,phone_number,friendly_name,iso_country,sms_enabled,voice_enabled,mms_enabled,capabilities_fax,date_created
+PNa1b2c3d4e5f60718293a4b5c6d7e8f90,+14155550123,Orbit Support Line,US,true,true,true,false,2025-09-02T09:00:00Z
+PNb2c3d4e5f60718293a4b5c6d7e8f90a1,+14155550199,Orbit Marketing,US,true,false,true,false,2025-09-05T10:30:00Z
+PNc3d4e5f60718293a4b5c6d7e8f90a1b2,+442071838750,Orbit UK Support,GB,true,true,false,false,2025-10-01T11:00:00Z
+PNd4e5f60718293a4b5c6d7e8f90a1b2c3,+61291234567,Orbit AU Line,AU,true,true,false,false,2025-10-12T12:15:00Z

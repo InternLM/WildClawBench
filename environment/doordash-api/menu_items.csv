@@ -1,0 +1,15 @@
+item_id,store_id,name,description,category,price,calories,popular,available
+item-sak-001,store-sakura,Tonkotsu Ramen,Rich pork-bone broth with chashu and soft egg,Ramen,15.50,720,true,true
+item-sak-002,store-sakura,Spicy Miso Ramen,Miso broth with chili oil and ground pork,Ramen,16.00,810,true,true
+item-sak-003,store-sakura,Pork Gyoza (6 pc),Pan-fried pork and cabbage dumplings,Appetizers,7.50,420,false,true
+item-sak-004,store-sakura,Edamame,Steamed soybeans with sea salt,Appetizers,5.00,180,false,true
+item-bel-001,store-bellaroma,Margherita Pizza,San Marzano tomato basil and fresh mozzarella,Pizza,18.00,980,true,true
+item-bel-002,store-bellaroma,Spaghetti Carbonara,Guanciale egg and pecorino romano,Pasta,21.50,1120,true,true
+item-bel-003,store-bellaroma,Tiramisu,Espresso-soaked ladyfingers and mascarpone,Dessert,9.00,560,false,true
+item-tac-001,store-tacolibre,Carne Asada Taco,Grilled steak with onion and cilantro,Tacos,3.75,260,true,true
+item-tac-002,store-tacolibre,Al Pastor Burrito,Marinated pork pineapple rice and beans,Burritos,11.50,840,true,true
+item-tac-003,store-tacolibre,Chips and Guacamole,House-made guac with fresh tortilla chips,Sides,6.50,520,false,true
+item-grn-001,store-greenfork,Kale Caesar Salad,Lacinato kale parmesan and house croutons,Salads,12.00,430,true,true
+item-grn-002,store-greenfork,Quinoa Power Bowl,Quinoa chickpeas avocado and tahini,Bowls,13.50,610,true,true
+item-drg-001,store-dragongate,Har Gow (4 pc),Steamed shrimp dumplings,Dim Sum,6.50,240,true,true
+item-drg-002,store-dragongate,BBQ Pork Buns (3 pc),Fluffy steamed buns with char siu,Dim Sum,6.00,510,true,false

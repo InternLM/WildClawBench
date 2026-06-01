@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Mailgun Mock API",
+    "description": "Test collection for the mock Mailgun Email API service (send messages, events, stats, mailing-list members). Base URL defaults to http://localhost:8094. In docker-compose, the service is reachable at http://mailgun-api:8094.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8094"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "send message", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/v3/sandbox.mailgun.org/messages", "body": {"mode": "raw", "raw": "{\n  \"from\": \"noreply@sandbox.mailgun.org\",\n  \"to\": \"alice@example.com\",\n  \"subject\": \"Hello\",\n  \"text\": \"Testing the mock\"\n}"}}},
+    {"name": "events", "request": {"method": "GET", "url": "{{baseUrl}}/v3/sandbox.mailgun.org/events"}},
+    {"name": "events by type", "request": {"method": "GET", "url": "{{baseUrl}}/v3/sandbox.mailgun.org/events?event=delivered"}},
+    {"name": "stats total", "request": {"method": "GET", "url": "{{baseUrl}}/v3/sandbox.mailgun.org/stats/total"}},
+    {"name": "list members", "request": {"method": "GET", "url": "{{baseUrl}}/v3/lists/newsletter@sandbox.mailgun.org/members"}},
+    {"name": "list members subscribed", "request": {"method": "GET", "url": "{{baseUrl}}/v3/lists/newsletter@sandbox.mailgun.org/members?subscribed=true"}}
+  ]
+}

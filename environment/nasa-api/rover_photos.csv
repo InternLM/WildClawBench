@@ -1,0 +1,12 @@
+id,rover,sol,camera,camera_full_name,img_src,earth_date
+1000201,curiosity,4100,FHAZ,Front Hazard Avoidance Camera,https://mars.nasa.gov/msl-raw-images/FHAZ/4100_0001.jpg,2026-04-12
+1000202,curiosity,4100,MAST,Mast Camera,https://mars.nasa.gov/msl-raw-images/MAST/4100_0002.jpg,2026-04-12
+1000203,curiosity,4100,NAVCAM,Navigation Camera,https://mars.nasa.gov/msl-raw-images/NAV/4100_0003.jpg,2026-04-12
+1000204,curiosity,4101,MAST,Mast Camera,https://mars.nasa.gov/msl-raw-images/MAST/4101_0004.jpg,2026-04-13
+1000205,curiosity,4101,RHAZ,Rear Hazard Avoidance Camera,https://mars.nasa.gov/msl-raw-images/RHAZ/4101_0005.jpg,2026-04-13
+2000301,perseverance,1110,FRONT_HAZCAM_LEFT_A,Front Hazard Avoidance Camera - Left,https://mars.nasa.gov/m20-raw-images/FLA/1110_0001.png,2026-04-30
+2000302,perseverance,1110,MCZ_RIGHT,Mastcam-Z Right,https://mars.nasa.gov/m20-raw-images/MCZ/1110_0002.png,2026-04-30
+2000303,perseverance,1110,NAVCAM_LEFT,Navigation Camera - Left,https://mars.nasa.gov/m20-raw-images/NAV/1110_0003.png,2026-04-30
+2000304,perseverance,1111,MCZ_LEFT,Mastcam-Z Left,https://mars.nasa.gov/m20-raw-images/MCZ/1111_0004.png,2026-05-01
+3000401,opportunity,5111,PANCAM,Panoramic Camera,https://mars.nasa.gov/mer-raw-images/PANCAM/5111_0001.jpg,2018-06-10
+3000402,opportunity,5111,NAVCAM,Navigation Camera,https://mars.nasa.gov/mer-raw-images/NAV/5111_0002.jpg,2018-06-10

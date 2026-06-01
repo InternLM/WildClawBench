@@ -1,0 +1,5 @@
+comment_id,file_key,user_id,user_handle,message,node_id,resolved,created_at
+cmt-9001,FK001abcdefg,user-1001,Priya Nair,Can we increase the tap target on this button?,5:12,false,2026-05-22T15:01:00Z
+cmt-9002,FK001abcdefg,user-1002,Diego Alvarez,Agreed; bumping to 48px height.,5:12,true,2026-05-22T16:20:00Z
+cmt-9003,FK002hijklmn,user-1001,Priya Nair,The error state color fails contrast.,12:5,false,2026-05-24T10:00:00Z
+cmt-9004,FK003opqrstu,user-1003,Mara Lindqvist,Hero copy is too long on mobile.,3:8,false,2026-05-20T19:10:00Z

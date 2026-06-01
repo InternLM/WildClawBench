@@ -1,0 +1,4 @@
+board_id,workspace_id,name,description,state,board_kind
+board-101,ws-1,Sprint Backlog,Current sprint work items,active,public
+board-102,ws-1,Bug Tracker,Reported defects and triage,active,public
+board-201,ws-2,Q3 Campaigns,Marketing campaign planning,active,public

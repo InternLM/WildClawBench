@@ -1,0 +1,7 @@
+id,first_name,last_name,email,login,status,created,activated,last_login
+00u1amelia,Amelia,Ortega,amelia.ortega@orbit-labs.com,amelia.ortega@orbit-labs.com,ACTIVE,2024-01-10T10:00:00.000Z,2024-01-10T10:05:00.000Z,2026-05-26T08:00:00.000Z
+00u2jonas,Jonas,Pereira,jonas.pereira@orbit-labs.com,jonas.pereira@orbit-labs.com,ACTIVE,2024-02-04T11:30:00.000Z,2024-02-04T11:35:00.000Z,2026-05-25T17:00:00.000Z
+00u3helena,Helena,Park,helena.park@orbit-labs.com,helena.park@orbit-labs.com,ACTIVE,2024-03-12T14:20:00.000Z,2024-03-12T14:25:00.000Z,2026-05-26T07:30:00.000Z
+00u4rohit,Rohit,Bansal,rohit.bansal@orbit-labs.com,rohit.bansal@orbit-labs.com,SUSPENDED,2024-05-02T09:10:00.000Z,2024-05-02T09:15:00.000Z,2026-04-30T12:00:00.000Z
+00u5noor,Noor,Aziz,noor.aziz@orbit-labs.com,noor.aziz@orbit-labs.com,PROVISIONED,2026-05-20T16:45:00.000Z,,
+00u6priya,Priya,Nair,priya.nair@orbit-labs.com,priya.nair@orbit-labs.com,ACTIVE,2024-08-15T10:00:00.000Z,2024-08-15T10:05:00.000Z,2026-05-24T09:00:00.000Z

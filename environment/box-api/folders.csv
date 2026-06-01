@@ -1,0 +1,6 @@
+id,name,parent_id,owner_id,description,created_at,modified_at,item_count
+0,All Files,,11446498,Root folder,2025-09-01T10:00:00-07:00,2026-05-20T14:00:00-07:00,3
+160001,Marketing,0,11446498,Marketing collateral and assets,2025-10-01T09:00:00-07:00,2026-05-18T16:20:00-07:00,3
+160002,Engineering,0,11446498,Engineering docs and specs,2025-10-02T09:00:00-07:00,2026-05-19T10:10:00-07:00,2
+160003,Finance,0,11446498,Financial reports,2025-10-03T09:00:00-07:00,2026-05-15T13:45:00-07:00,1
+160004,Campaigns,160001,22893011,Active campaign folder,2026-02-10T11:00:00-08:00,2026-05-10T12:00:00-08:00,1

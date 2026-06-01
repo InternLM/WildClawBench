@@ -1,0 +1,13 @@
+Id,Name,AccountType,AccountSubType,CurrentBalance,Active,Classification,Description
+1,Reimbursement Grant Revenue,Income,NonProfitIncome,5211.92,true,Revenue,Grant or contract funds allocated to Franklin County housing reimbursements
+2,Emergency Housing Reimbursements,Expense,OtherBusinessExpenses,2290.22,true,Expense,Motel and temporary housing reimbursements for tenant relocation cases
+3,Volunteer Travel Reimbursements,Expense,Travel,481.81,true,Expense,Mileage and fuel reimbursements for coalition volunteer support
+4,Food & Essentials Reimbursements,Expense,SuppliesMaterials,305.74,true,Expense,Food and essential supply reimbursements for supported households
+5,Reimbursement Clearing,Bank,Checking,25000.00,true,Asset,Clearing account for approved reimbursement payments
+6,Accounts Receivable,Accounts Receivable,AccountsReceivable,4245.43,true,Asset,Pending reimbursement documentation awaiting review or clarification
+7,Accounts Payable,Accounts Payable,AccountsPayable,4245.43,true,Liability,Outstanding reimbursements not yet approved for payment
+8,Duplicate Review Reserve,Other Current Liability,OtherCurrentLiabilities,1293.28,true,Liability,Held amount for duplicate-flagged uploads and repeated reimbursement trails
+9,Document Reconciliation,Expense,OtherBusinessExpenses,0.00,true,Expense,Administrative review for missing dates and mixed household documents
+10,Retained Earnings,Equity,RetainedEarnings,0.00,true,Equity,Accumulated net assets for the reimbursement workspace
+11,Relocation Transportation Reimbursements,Expense,Travel,624.90,true,Expense,Truck rental and relocation transportation reimbursements
+12,Utility and Deposit Reimbursements,Expense,OtherBusinessExpenses,2230.00,true,Expense,Utility deposit and security deposit reimbursements subject to intake limits

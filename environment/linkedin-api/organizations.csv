@@ -1,0 +1,5 @@
+id,name,vanityName,industry,website,location,staffCountRange,followerCount,description
+5001,Orbit Labs,orbit-labs,Software Development,https://orbit-labs.com,Remote,51-200,48210,"Developer tooling for the modern stack. Makers of the Orbit CLI and platform."
+5002,Northwind Systems,northwind-systems,Information Technology,https://northwind.example.com,San Francisco California,201-500,12300,"Enterprise data integration and ETL pipelines."
+5003,Helix Analytics,helix-analytics,Computer Software,https://helix.example.com,Milan Italy,11-50,4120,"Product analytics for B2B SaaS teams."
+5004,Brightloop,brightloop,Software Development,https://brightloop.example.com,Berlin Germany,11-50,2890,"Customer feedback loops, automated."

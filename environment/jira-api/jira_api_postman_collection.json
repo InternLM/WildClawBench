@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Jira Mock API",
+    "description": "Test collection for the mock Jira Cloud platform API v3 + Agile API v1.0 (projects, issues, transitions, search, boards, sprints). Base URL defaults to http://localhost:8029. In docker-compose, the service is reachable at http://jira-api:8029.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8029"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list projects", "request": {"method": "GET", "url": "{{baseUrl}}/rest/api/3/project"}},
+    {"name": "create issue", "request": {"method": "POST", "url": "{{baseUrl}}/rest/api/3/issue",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"fields\": {\"project\": {\"key\": \"ENG\"}, \"summary\": \"Add request id to auth logs\", \"issuetype\": {\"name\": \"Task\"}, \"priority\": {\"name\": \"Medium\"}, \"assignee\": {\"accountId\": \"user-rohit\"}}}"}}},
+    {"name": "get issue", "request": {"method": "GET", "url": "{{baseUrl}}/rest/api/3/issue/ENG-102"}},
+    {"name": "update issue", "request": {"method": "PUT", "url": "{{baseUrl}}/rest/api/3/issue/ENG-102",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"fields\": {\"priority\": {\"name\": \"Highest\"}, \"summary\": \"Refresh-token latency spike under heavy load\"}}"}}},
+    {"name": "get transitions", "request": {"method": "GET", "url": "{{baseUrl}}/rest/api/3/issue/ENG-104/transitions"}},
+    {"name": "transition issue", "request": {"method": "POST", "url": "{{baseUrl}}/rest/api/3/issue/ENG-104/transitions",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"transition\": {\"id\": \"11\"}}"}}},
+    {"name": "search jql", "request": {"method": "GET", "url": "{{baseUrl}}/rest/api/3/search?jql=project %3D ENG AND status %3D \"In Progress\""}},
+    {"name": "list boards", "request": {"method": "GET", "url": "{{baseUrl}}/rest/agile/1.0/board"}},
+    {"name": "list sprints", "request": {"method": "GET", "url": "{{baseUrl}}/rest/agile/1.0/board/1/sprint?state=active"}}
+  ]
+}

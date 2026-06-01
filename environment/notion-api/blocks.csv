@@ -1,0 +1,11 @@
+id,page_id,parent_block_id,type,text,order,created_time,last_edited_time,has_children,checked
+block-001,page-task-001,,heading_2,Rollout plan,0,2025-10-04T09:05:00.000Z,2026-05-20T14:00:00.000Z,false,
+block-002,page-task-001,,paragraph,Migrate session storage to Redis and ship cookie-based refresh tokens.,1,2025-10-04T09:06:00.000Z,2026-05-20T14:00:00.000Z,false,
+block-003,page-task-001,,to_do,Audit current login flow,2,2025-10-04T09:07:00.000Z,2026-04-29T11:00:00.000Z,false,true
+block-004,page-task-001,,to_do,Draft RFC,3,2025-10-04T09:08:00.000Z,2026-05-02T11:00:00.000Z,false,true
+block-005,page-task-001,,to_do,Build dual-write shim,4,2025-10-04T09:09:00.000Z,2026-05-20T14:00:00.000Z,false,false
+block-101,page-meeting-001,,heading_2,Agenda,0,2026-05-26T08:31:00.000Z,2026-05-26T08:31:00.000Z,false,
+block-102,page-meeting-001,,bulleted_list_item,Auth v2 status,1,2026-05-26T08:32:00.000Z,2026-05-26T08:32:00.000Z,false,
+block-103,page-meeting-001,,bulleted_list_item,Billing migration blockers,2,2026-05-26T08:33:00.000Z,2026-05-26T08:33:00.000Z,false,
+block-104,page-meeting-001,,bulleted_list_item,Vendor review wrap-up,3,2026-05-26T08:34:00.000Z,2026-05-26T08:34:00.000Z,false,
+block-201,page-research-001,,callout,12 customer interviews completed; full notes in linked database.,0,2025-10-25T10:05:00.000Z,2026-05-08T11:00:00.000Z,false,

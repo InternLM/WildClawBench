@@ -1,0 +1,7 @@
+id,intent,status,amount_value,currency_code,payee_email,description,create_time
+ORDER-5O190127TN364715T,CAPTURE,COMPLETED,49.99,USD,merchant@orbit-labs.com,Pro plan annual,2026-05-10T09:00:00Z
+ORDER-8AB54321CD987654E,CAPTURE,APPROVED,19.00,USD,merchant@orbit-labs.com,Starter plan monthly,2026-05-18T11:15:00Z
+ORDER-2KL98765MN123456F,CAPTURE,CREATED,129.00,USD,merchant@orbit-labs.com,Team seats add-on,2026-05-22T14:30:00Z
+ORDER-9PQ11223RS445566G,CAPTURE,COMPLETED,7.50,USD,merchant@orbit-labs.com,Usage overage,2026-05-23T08:45:00Z
+ORDER-4UV77889WX001122H,CAPTURE,VOIDED,250.00,USD,merchant@orbit-labs.com,Cancelled bulk order,2026-05-24T16:00:00Z
+ORDER-6YZ33445AB667788I,CAPTURE,CREATED,84.25,USD,merchant@orbit-labs.com,Hardware accessory,2026-05-25T10:20:00Z

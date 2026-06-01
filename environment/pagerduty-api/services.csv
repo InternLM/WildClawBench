@@ -1,0 +1,4 @@
+service_id,name,description,status,escalation_policy_id,auto_resolve_timeout
+PS001,auth-api,Authentication and session service,critical,EP001,14400
+PS002,billing-api,Subscription billing and invoicing,active,EP002,14400
+PS003,notifications-api,Email and push notification dispatch,active,EP001,14400

@@ -1,0 +1,4 @@
+id,name,title,public_description,subscribers,created_utc,over18
+t5_aaa001,programming,Programming,Computer programming news and discussion,6800000,1201234567,false
+t5_aaa002,homelab,r/homelab,For people who run servers and labs at home,920000,1301234567,false
+t5_aaa003,gardening,Gardening,A place to grow your green thumb,5400000,1251234567,false

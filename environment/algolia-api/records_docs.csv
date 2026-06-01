@@ -1,0 +1,7 @@
+objectID,title,body,section,tags
+doc-quickstart,Quickstart Guide,Get up and running with the search API in minutes,getting-started,intro
+doc-indexing,Indexing Records,How to add and update records in an index,guides,indexing
+doc-querying,Querying an Index,Search records using query and filters,guides,search
+doc-settings,Configuring Settings,Set searchable attributes and ranking,guides,settings
+doc-pagination,Pagination,Use page and hitsPerPage to paginate results,guides,search
+doc-faq,Frequently Asked Questions,Answers to common questions about the API,reference,faq

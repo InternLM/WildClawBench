@@ -1,0 +1,7 @@
+Id,Name,AccountId,StageName,Amount,Probability,CloseDate,Type
+006Ax000001AAAAAA1,Northwind POS Rollout,001Ax000001AAAAAA1,Prospecting,120000,20,2026-07-15,New Business
+006Ax000002BBBBBB2,Initech Platform Upgrade,001Ax000002BBBBBB2,Proposal/Price Quote,450000,60,2026-06-30,Existing Business
+006Ax000003CCCCCC3,Globex Factory Automation,001Ax000003CCCCCC3,Negotiation/Review,1250000,75,2026-08-10,New Business
+006Ax000004DDDDDD4,Soylent Telehealth Suite,001Ax000004DDDDDD4,Closed Won,210000,100,2026-05-01,New Business
+006Ax000005EEEEEE5,Umbrella Fleet Tracking,001Ax000005EEEEEE5,Qualification,340000,40,2026-09-20,New Business
+006Ax000006FFFFFF6,Initech Support Renewal,001Ax000002BBBBBB2,Closed Lost,85000,0,2026-04-22,Existing Business

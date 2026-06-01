@@ -1,0 +1,7 @@
+id,title,slug,media_type,mime_type,source_url,alt_text,author,post,date
+401,latency-graph,latency-graph,image,image/png,https://cdn.example.com/uploads/latency-graph.png,Graph showing p95 latency dropping,1,101,2026-05-20T14:50:00
+402,memory-flat,memory-flat,image,image/png,https://cdn.example.com/uploads/memory-flat.png,Flat memory usage graph,2,102,2026-05-22T08:55:00
+403,orbit-cli-banner,orbit-cli-banner,image,image/jpeg,https://cdn.example.com/uploads/orbit-cli-banner.jpg,Orbit CLI 2.0 launch banner,1,104,2026-05-21T16:55:00
+404,a11y-checklist,a11y-checklist,image,image/png,https://cdn.example.com/uploads/a11y-checklist.png,Accessibility checklist screenshot,3,103,2026-05-23T11:55:00
+405,team-photo,team-photo,image,image/jpeg,https://cdn.example.com/uploads/team-photo.jpg,Engineering team group photo,1,0,2025-02-01T10:55:00
+406,plugin-diagram,plugin-diagram,image,image/svg+xml,https://cdn.example.com/uploads/plugin-diagram.svg,Plugin API architecture diagram,4,105,2026-05-24T10:55:00

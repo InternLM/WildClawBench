@@ -1,0 +1,5 @@
+account_id,name,official_name,mask,type,subtype,available,current,limit,iso_currency_code
+acc_chk_001,Everyday Checking,Cascade Everyday Checking,0123,depository,checking,4218.55,4318.55,,USD
+acc_sav_002,High-Yield Savings,Cascade High-Yield Savings,4455,depository,savings,15230.10,15230.10,,USD
+acc_crd_003,Cascade Rewards Card,Cascade Visa Rewards,7788,credit,credit card,3100.00,1900.00,5000.00,USD
+acc_lon_004,Auto Loan,Cascade Auto Loan,9901,loan,auto,,18450.00,,USD

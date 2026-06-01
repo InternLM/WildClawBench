@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "TMDB Mock API v3",
+    "description": "Test collection for the mock TMDB API service. Base URL defaults to http://localhost:8059. In docker-compose, the service is reachable at http://tmdb-api:8059.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8059"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "search movie", "request": {"method": "GET", "url": "{{baseUrl}}/3/search/movie?query=orbit"}},
+    {"name": "movie popular", "request": {"method": "GET", "url": "{{baseUrl}}/3/movie/popular"}},
+    {"name": "get movie", "request": {"method": "GET", "url": "{{baseUrl}}/3/movie/101"}},
+    {"name": "movie credits", "request": {"method": "GET", "url": "{{baseUrl}}/3/movie/101/credits"}},
+    {"name": "get tv", "request": {"method": "GET", "url": "{{baseUrl}}/3/tv/201"}},
+    {"name": "genre movie list", "request": {"method": "GET", "url": "{{baseUrl}}/3/genre/movie/list"}},
+    {"name": "trending all week", "request": {"method": "GET", "url": "{{baseUrl}}/3/trending/all/week"}}
+  ]
+}

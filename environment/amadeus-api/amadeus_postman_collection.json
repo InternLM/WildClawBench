@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "Amadeus Mock API",
+    "description": "Test collection for the mock Amadeus Self-Service API service. Base URL defaults to http://localhost:8076. In docker-compose, the service is reachable at http://amadeus-api:8076.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8076"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "flight offers search", "request": {"method": "GET", "url": "{{baseUrl}}/v2/shopping/flight-offers?originLocationCode=JFK&destinationLocationCode=LHR&departureDate=2026-06-15&adults=2"}},
+    {"name": "flight offers search (no date)", "request": {"method": "GET", "url": "{{baseUrl}}/v2/shopping/flight-offers?originLocationCode=LAX&destinationLocationCode=NRT&adults=1"}},
+    {"name": "price flight offer", "request": {"method": "POST", "url": "{{baseUrl}}/v1/shopping/flight-offers/pricing",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"data\": {\"type\": \"flight-offers-pricing\", \"flightOffers\": [{\"id\": \"1\", \"type\": \"flight-offer\"}]}}"}}},
+    {"name": "search locations", "request": {"method": "GET", "url": "{{baseUrl}}/v1/reference-data/locations?keyword=London&subType=AIRPORT,CITY"}},
+    {"name": "get location", "request": {"method": "GET", "url": "{{baseUrl}}/v1/reference-data/locations/AJFK"}},
+    {"name": "get airlines", "request": {"method": "GET", "url": "{{baseUrl}}/v1/reference-data/airlines?airlineCodes=BA,AF"}}
+  ]
+}

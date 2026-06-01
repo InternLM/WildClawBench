@@ -1,0 +1,38 @@
+{
+  "title": "FW2026 Buying Notes – Alder & Finch Contemporary Womenswear",
+  "updated": "2026-05-05",
+  "submitted_by": "Naomi Crane, Head Buyer",
+  "pricing_limits": {
+    "max_retail_cap_per_unit": 650,
+    "max_category_budget_percent": 35,
+    "opening_price_point_min": 180
+  },
+  "category_restrictions": {
+    "knitwear_max_skus": 8,
+    "outerwear_max_skus": 5,
+    "blazers_max_skus": 3,
+    "no_leather_outerwear": true
+  },
+  "fabrication_exclusions": {
+    "max_acrylic_percent": 20,
+    "no_fur": true,
+    "no_faux_fur": true,
+    "max_mohair_percent": 40
+  },
+  "color_exclusions": {
+    "no_neon_or_fluorescent": true,
+    "max_black_percent_of_assortment": 30,
+    "preferred_tones": ["earth tones", "muted pastels"]
+  },
+  "delivery_and_timeline": {
+    "final_submission_date": "2026-05-30",
+    "vendor_delivery_deadline": "2026-10-01",
+    "max_lead_time_months_without_vp_approval": 5,
+    "priority_reorder_brands": ["COS", "Toteme", "Sandro"]
+  },
+  "notes": {
+    "korean_designers_premium_positioning": ["Ader Error", "Low Classic"],
+    "mijeong_park_max_skus_without_sizing_confirmation": 3,
+    "total_sku_budget": 12
+  }
+}

@@ -1,0 +1,11 @@
+sys_id,number,short_description,description,state,priority,impact,urgency,category,assigned_to,opened_by,opened_at,updated_at
+inc-0001001,INC0001001,Email service intermittently unavailable,Users report Outlook disconnecting every few minutes since 9am.,2,1,1,1,software,usr-jonas,usr-noor,2026-05-20T09:12:00Z,2026-05-20T10:40:00Z
+inc-0001002,INC0001002,VPN cannot connect from home offices,Remote staff unable to establish VPN tunnel after gateway patch.,2,2,2,2,network,usr-helena,usr-noor,2026-05-21T08:05:00Z,2026-05-21T09:30:00Z
+inc-0001003,INC0001003,Laptop will not boot after BIOS update,Finance laptop shows black screen following overnight update.,1,3,3,3,hardware,usr-jonas,usr-noor,2026-05-22T11:20:00Z,2026-05-22T11:20:00Z
+inc-0001004,INC0001004,Shared drive permission denied,Marketing team locked out of shared marketing folder.,6,4,3,4,software,usr-noor,usr-noor,2026-05-18T14:00:00Z,2026-05-19T16:10:00Z
+inc-0001005,INC0001005,Printer on floor 3 offline,Network printer not responding to print jobs.,6,5,4,4,hardware,usr-noor,usr-jonas,2026-05-15T13:45:00Z,2026-05-16T08:20:00Z
+inc-0001006,INC0001006,Database query timeouts on reporting server,Nightly reports failing with timeout errors against analytics DB.,2,1,1,2,software,usr-rohit,usr-amelia,2026-05-23T07:30:00Z,2026-05-23T12:15:00Z
+inc-0001007,INC0001007,Suspicious login attempts detected,Multiple failed logins from foreign IP on admin account.,2,2,1,2,security,usr-yuki,usr-yuki,2026-05-24T02:10:00Z,2026-05-24T03:00:00Z
+inc-0001008,INC0001008,Wi-Fi dropping in conference rooms,Access points on floor 2 rebooting intermittently.,1,3,3,3,network,usr-helena,usr-noor,2026-05-25T10:00:00Z,2026-05-25T10:00:00Z
+inc-0001009,INC0001009,Password reset portal error,Self-service reset returns 500 error for some users.,6,3,3,3,software,usr-noor,usr-noor,2026-05-17T09:00:00Z,2026-05-18T11:30:00Z
+inc-0001010,INC0001010,Phone system one-way audio,Some VoIP calls have no inbound audio.,2,2,2,2,network,usr-helena,usr-jonas,2026-05-26T15:20:00Z,2026-05-26T16:45:00Z

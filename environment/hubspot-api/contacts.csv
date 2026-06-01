@@ -1,0 +1,9 @@
+id,firstname,lastname,email,phone,jobtitle,company,lifecyclestage,createdate,lastmodifieddate
+201,Maya,Fernandez,maya.fernandez@aurorabistro.com,+14155551201,Owner,Aurora Bistro LLC,customer,2025-11-02T10:00:00Z,2026-05-20T12:00:00Z
+202,Daniel,Cho,daniel.cho@helixrobotics.io,+14155551202,VP Engineering,Helix Robotics Inc,customer,2025-09-15T09:30:00Z,2026-05-18T08:00:00Z
+203,Priya,Nair,priya.nair@lumendesign.co,+14155551203,Creative Director,Lumen Design Studio,opportunity,2026-01-10T14:00:00Z,2026-05-22T11:00:00Z
+204,Tomas,Reyes,tomas.reyes@pelagicfreight.com,+14155551204,CFO,Pelagic Freight Co,lead,2026-02-20T16:00:00Z,2026-05-10T09:00:00Z
+205,Sara,Lindqvist,sara.lindqvist@verdantfarms.org,+14155551205,Operations Lead,Verdant Farms,marketingqualifiedlead,2026-03-05T11:30:00Z,2026-05-12T15:00:00Z
+206,Kenji,Watanabe,kenji.watanabe@quanta.ai,+14155551206,Head of Data,Quanta Analytics,customer,2025-12-01T08:00:00Z,2026-05-25T10:00:00Z
+207,Olivia,Brandt,olivia.brandt@nimbus.coffee,+14155551207,Founder,Nimbus Coffee,lead,2026-04-12T13:00:00Z,2026-05-26T09:00:00Z
+208,Marcus,Webb,marcus.webb@driftwood.co,+14155551208,Procurement Manager,Driftwood Co,salesqualifiedlead,2026-04-25T10:15:00Z,2026-05-24T14:00:00Z

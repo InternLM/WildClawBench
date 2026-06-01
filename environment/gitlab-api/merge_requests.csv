@@ -1,0 +1,6 @@
+id,iid,project_id,title,description,state,source_branch,target_branch,author,assignee,merge_status,draft,created_at,updated_at,merged_at
+6001,1,101,Introduce dual-write shim,"Adds the dual-write shim behind the auth_v2_rollout flag.",opened,feature/dual-write-shim,main,amelia-ortega,jonas-pereira,can_be_merged,false,2026-05-18T11:00:00.000Z,2026-05-25T14:00:00.000Z,
+6002,2,101,Bump session-store client to 3.2,"Routine dependency bump for the session-store client.",merged,chore/bump-session-client,main,helena-park,amelia-ortega,can_be_merged,false,2026-05-01T09:00:00.000Z,2026-05-03T10:00:00.000Z,2026-05-03T10:00:00.000Z
+6010,1,102,Dual-serve REST and gRPC,"Initial dual-serve scaffold; integration tests pending.",opened,feature/grpc-dual-serve,main,jonas-pereira,helena-park,cannot_be_merged,true,2026-05-19T11:00:00.000Z,2026-05-23T10:00:00.000Z,
+6011,2,102,Fix invoice rounding,"Correct half-even rounding on line-item totals.",merged,fix/invoice-rounding,main,amelia-ortega,jonas-pereira,can_be_merged,false,2026-04-20T09:00:00.000Z,2026-04-22T11:00:00.000Z,2026-04-22T11:00:00.000Z
+6020,1,103,Migrate to new router,"Swap the legacy router for the v2 router with lazy routes.",opened,feature/router-v2,main,rohit-bansal,noor-aziz,can_be_merged,false,2026-05-24T08:00:00.000Z,2026-05-26T08:00:00.000Z,

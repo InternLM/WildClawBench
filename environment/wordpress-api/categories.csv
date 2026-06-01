@@ -1,0 +1,6 @@
+id,name,slug,description,parent,count
+10,Engineering,engineering,Posts about how we build software.,0,4
+11,Reliability,reliability,"On-call, incidents, and SLOs.",10,2
+12,Frontend,frontend,"UI, design systems, and accessibility.",10,1
+13,Announcements,announcements,Product and company news.,0,2
+14,Tutorials,tutorials,Step-by-step guides.,0,1

@@ -1,0 +1,8 @@
+id,domain,sender,recipient,subject,body,timestamp
+20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org,sandbox.mailgun.org,noreply@sandbox.mailgun.org,alice@example.com,Welcome to Acme,Thanks for signing up!,2026-05-01T09:30:12Z
+20260503141522.2.B2C3D4E5F6A7@sandbox.mailgun.org,sandbox.mailgun.org,billing@sandbox.mailgun.org,bob@example.com,Your invoice is ready,Invoice #1042 is attached.,2026-05-03T14:15:22Z
+20260507081005.3.C3D4E5F6A7B8@sandbox.mailgun.org,sandbox.mailgun.org,support@sandbox.mailgun.org,carol@example.com,Password reset,Click the link to reset your password.,2026-05-07T08:10:05Z
+20260512162844.4.D4E5F6A7B8C9@sandbox.mailgun.org,sandbox.mailgun.org,news@sandbox.mailgun.org,dave@example.com,May Newsletter,Here is what is new this month.,2026-05-12T16:28:44Z
+20260515104733.5.E5F6A7B8C9D0@sandbox.mailgun.org,sandbox.mailgun.org,noreply@sandbox.mailgun.org,erin@example.com,Order shipped,Your order is on the way.,2026-05-15T10:47:33Z
+20260520113900.6.F6A7B8C9D0E1@sandbox.mailgun.org,sandbox.mailgun.org,team@sandbox.mailgun.org,frank@example.com,Meeting reminder,Standup at 10am tomorrow.,2026-05-20T11:39:00Z
+20260524175611.7.A7B8C9D0E1F2@sandbox.mailgun.org,sandbox.mailgun.org,noreply@sandbox.mailgun.org,grace@example.com,Survey request,We value your feedback.,2026-05-24T17:56:11Z

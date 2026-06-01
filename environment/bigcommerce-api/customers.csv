@@ -1,0 +1,6 @@
+id,first_name,last_name,email,company,phone,customer_group_id,date_created
+1001,Olivia,Bennett,olivia.bennett@example.com,Bennett Studio,+1-415-555-0110,2,2026-01-05T10:00:00Z
+1002,Marcus,Lee,marcus.lee@example.com,,+1-206-555-0133,0,2026-01-18T11:20:00Z
+1003,Sofia,Garcia,sofia.garcia@example.com,Garcia Imports,+1-305-555-0177,2,2026-02-09T09:15:00Z
+1004,Liam,Okafor,liam.okafor@example.com,,+1-312-555-0199,0,2026-03-01T14:45:00Z
+1005,Hana,Tanaka,hana.tanaka@example.com,Tanaka Design,+1-650-555-0144,3,2026-03-27T08:30:00Z

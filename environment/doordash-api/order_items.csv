@@ -1,0 +1,6 @@
+order_id,item_id,quantity,unit_price,line_total
+order-90aa12,item-sak-001,2,15.50,31.00
+order-90aa12,item-sak-003,1,7.50,7.50
+order-90bb47,item-tac-002,1,11.50,11.50
+order-90bb47,item-tac-001,2,3.75,7.50
+order-90bb47,item-tac-003,1,6.50,6.50

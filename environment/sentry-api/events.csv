@@ -1,0 +1,6 @@
+id,issue_id,event_id,message,platform,environment,release,user_email,date_created
+70001,40001,a1b2c3d4e5f64718a1b2c3d4e5f64718,DeadlineExceeded refreshing session token,go,production,auth-service@2.0.3,user-1842@example.com,2026-05-26T09:00:00.000Z
+70002,40001,b2c3d4e5f6471801b2c3d4e5f6471801,DeadlineExceeded refreshing session token,go,production,auth-service@2.0.3,user-1801@example.com,2026-05-26T08:55:00.000Z
+70003,40010,c3d4e5f64718012ac3d4e5f64718012a,TypeError reading property avatar of null,javascript,production,web-frontend@5.4.1,user-701@example.com,2026-05-26T07:30:00.000Z
+70004,40020,d4e5f64718012a3bd4e5f64718012a3b,gRPC UNAVAILABLE during deploy,java,production,billing-service@3.1.0,user-12@example.com,2026-05-25T11:00:00.000Z
+70005,40002,e5f64718012a3b4ce5f64718012a3b4c,NilPointer in token validator,go,staging,auth-service@2.1.0-rc1,user-40@example.com,2026-05-26T07:00:00.000Z

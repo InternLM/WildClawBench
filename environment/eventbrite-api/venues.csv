@@ -1,0 +1,4 @@
+id,name,address1,city,region,postal_code,country,latitude,longitude
+venue-soma,GitHub Loft,532 Folsom St,San Francisco,CA,94105,US,37.7853,-122.3970
+venue-mission,Mission Bay Conference Center,1675 Owens St,San Francisco,CA,94158,US,37.7679,-122.3925
+venue-presidio,Presidio Main Post,Lincoln Blvd,San Francisco,CA,94129,US,37.7989,-122.4662

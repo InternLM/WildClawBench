@@ -1,0 +1,2 @@
+object_id,rate,shipment,status,tracking_number,tracking_status,carrier,label_url,created_time
+txn-9001,rate-usps-prio-01,ship-1001,SUCCESS,9400111202555842761023,DELIVERED,USPS,https://shippo-delivery.s3.amazonaws.com/labels/txn-9001.pdf,2026-05-25T14:05:00Z

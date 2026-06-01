@@ -1,0 +1,10 @@
+board_id,name,description,privacy,created_at,updated_at,pin_count,follower_count,collaborator_count
+board_1001,Orchid Show Mood,Greenhouse setups and display ideas for orchid society shows and competitions,PUBLIC,2025-11-03T09:10:00,2026-05-12T14:30:00,18,324,0
+board_1002,Orchid Care & Growing Tips,Cultivation advice potting techniques watering schedules and troubleshooting for Phalaenopsis Cattleya and Paphiopedilum,PUBLIC,2023-01-10T08:00:00,2026-05-15T11:00:00,20,512,1
+board_1003,Spring Macaron Collection,Inspo and product shots for seasonal macarons. Flavors techniques and styling ideas,PUBLIC,2026-02-10T14:22:00,2026-04-18T09:45:00,15,189,0
+board_1004,Greenhouse Design Ideas,Layouts bench configurations climate control systems and lighting for hobby greenhouses,PUBLIC,2023-06-20T11:30:00,2026-04-22T16:00:00,8,145,0
+board_1005,Comfort Food Recipes,Southern comfort cooking weeknight meals Sunday baking and family favorites,PUBLIC,2023-03-15T10:00:00,2026-04-10T12:15:00,12,203,0
+board_1006,Garden & Outdoor Spaces,Perennial gardens container planting outdoor living and native Charlotte plants,PUBLIC,2023-08-01T15:45:00,2026-04-19T10:30:00,10,167,0
+board_1007,Reading Nook & Cozy Corners,Cozy reading spots book displays and quiet space inspiration,PUBLIC,2023-09-12T10:15:00,2026-04-21T08:00:00,6,88,0
+board_1008,Yoga & Wellness,Morning routines stretches for desk workers and wrist-friendly yoga flows,PUBLIC,2024-02-05T09:00:00,2026-04-17T15:20:00,5,72,0
+board_1009,Show Prep Private Notes,Private planning board for June Southeast Regional Orchid Show entry prep,SECRET,2026-01-15T08:00:00,2026-05-18T11:45:00,4,0,0

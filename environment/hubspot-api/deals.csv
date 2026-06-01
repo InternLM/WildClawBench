@@ -1,0 +1,7 @@
+id,dealname,pipeline,dealstage,amount,closedate,dealtype,associated_company,associated_contact,createdate,lastmodifieddate
+401,Helix Enterprise Renewal,default,closedwon,358800,2026-04-30T00:00:00Z,existingbusiness,301,202,2026-02-01T10:00:00Z,2026-04-30T12:00:00Z
+402,Lumen Pro Upgrade,default,decisionmakerboughtin,11760,2026-06-15T00:00:00Z,existingbusiness,302,203,2026-03-10T14:00:00Z,2026-05-22T11:00:00Z
+403,Pelagic Logistics Pilot,default,qualifiedtobuy,45000,2026-07-01T00:00:00Z,newbusiness,303,204,2026-02-25T16:00:00Z,2026-05-10T09:00:00Z
+404,Quanta Annual Expansion,default,presentationscheduled,98000,2026-06-30T00:00:00Z,existingbusiness,304,206,2026-04-01T08:00:00Z,2026-05-25T10:00:00Z
+405,Nimbus POS Deal,default,appointmentscheduled,9900,2026-08-01T00:00:00Z,newbusiness,,207,2026-04-15T13:00:00Z,2026-05-26T09:00:00Z
+406,Driftwood Trial,default,closedlost,15000,2026-05-01T00:00:00Z,newbusiness,,208,2026-04-25T10:15:00Z,2026-05-24T14:00:00Z

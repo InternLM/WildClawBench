@@ -1,0 +1,4 @@
+object_id,length,width,height,distance_unit,weight,mass_unit,template
+parcel-01,10,8,4,in,2.5,lb,
+parcel-02,16,12,8,in,7.0,lb,
+parcel-03,5,5,5,in,0.75,lb,USPS_FlatRatePaddedEnvelope

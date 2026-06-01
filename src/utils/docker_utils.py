@@ -22,20 +22,25 @@ def remove_container(name: str) -> None:
     subprocess.run(["docker", "rm", "-f", name], capture_output=True)
 
 def start_container(task_id: str, workspace_path: str, extra_env: str = "",
-                    tmp_path: str = "", lobster_env: list[str] | None = None) -> None:
+                    tmp_path: str = "", lobster_env: list[str] | None = None,
+                    extra_env_dict: dict[str, str] | None = None,
+                    network: str = "") -> None:
     workspace = Path(workspace_path).expanduser()
     if not workspace.is_dir():
         raise RuntimeError(f"Workspace path does not exist or is not a directory: {workspace}")
 
     proxy_http = os.environ.get('HTTP_PROXY_INNER', '')
     proxy_https = os.environ.get('HTTPS_PROXY_INNER', '')
+    # When no proxy is configured, bypass any inherited proxy entirely (no_proxy="*").
+    no_proxy_value = os.environ.get("NO_PROXY_INNER", "*") if not proxy_http else os.environ.get("NO_PROXY_INNER", "")
     env_args = [
         "-e", f"http_proxy={proxy_http}",
         "-e", f"https_proxy={proxy_https}",
         "-e", f"HTTP_PROXY={proxy_http}",
         "-e", f"HTTPS_PROXY={proxy_https}",
         "-e", f"BRAVE_API_KEY={BRAVE_API_KEY}",
-        "-e", f"no_proxy={'' if not proxy_http else os.environ.get('NO_PROXY_INNER', '')}",
+        "-e", f"no_proxy={no_proxy_value}",
+        "-e", f"NO_PROXY={no_proxy_value}",
     ]
     for line in extra_env.splitlines():
         key = line.strip()
@@ -54,13 +59,20 @@ def start_container(task_id: str, workspace_path: str, extra_env: str = "",
         env_args += ["-e", f"{key}={value}"]
         masked = value[:4] + "***"
         logger.info("[%s] Injecting lobster env: %s=%s", task_id, key, masked)
- 
+
+    for k, v in (extra_env_dict or {}).items():
+        env_args += ["-e", f"{k}={v}"]
+        logger.info("[%s] Injecting extra env: %s=%s", task_id, k, v)
+
+    image = os.environ.get("DOCKER_IMAGE", DOCKER_IMAGE)
+    network_args = ["--network", network] if network else []
     cmd = [
         "docker", "run", "-d",
         "--name", task_id,
+        *network_args,
         *env_args,
         "-v", f"{workspace}:/app:ro",
-        DOCKER_IMAGE,
+        image,
         "/bin/bash", "-c", "tail -f /dev/null",
     ]
     logger.info("[%s] Starting container, mounting %s → /app (ro)", task_id, workspace)
@@ -110,6 +122,19 @@ def setup_workspace(task_id: str, thinking: str | None = None) -> None:
     subprocess.run(
         ["docker", "exec", task_id, "/bin/bash", "-c",
          f"rm -rf /root/.openclaw/workspace && ln -s {TMP_WORKSPACE} /root/.openclaw/workspace"],
+        capture_output=True, text=True,
+    )
+
+    # Expose the workspace at /root/workspace too (kensei-native flow reads
+    # deliverables from here). Use a SYMLINK to TMP_WORKSPACE, not a copy: the
+    # in-container grader runs against TMP_WORKSPACE, so anything an agent writes
+    # to /root/workspace/... must land in TMP_WORKSPACE to be graded/collected.
+    # A copy drifts after setup and silently hides those deliverables (the
+    # /root/workspace/<subdir> → empty /tmp_workspace/results mismatch). Mirrors
+    # the /root/.openclaw/workspace symlink above.
+    subprocess.run(
+        ["docker", "exec", task_id, "/bin/bash", "-c",
+         f"rm -rf /root/workspace && ln -s {TMP_WORKSPACE} /root/workspace"],
         capture_output=True, text=True,
     )
 
@@ -163,6 +188,152 @@ def setup_skills(
                 dest_name,
                 r.stderr.strip(),
             )
+
+
+def inject_api_connectors(
+    task_id: str,
+    env_dir: str,
+    required_apis: list[str],
+    container_skills_root: str = "/root/skills",
+) -> None:
+    """Copy <env_dir>/skills/<api>-connector dirs into the container's skills
+    root, plus API_DOCUMENTATION.md into /root/. No-op if env_dir or required
+    APIs are empty."""
+    if not env_dir or not required_apis:
+        return
+    env_root = Path(env_dir)
+    if not env_root.is_dir():
+        return
+    container_skills_root = container_skills_root.rstrip("/")
+    subprocess.run(
+        ["docker", "exec", task_id, "mkdir", "-p", container_skills_root],
+        capture_output=True, text=True,
+    )
+    injected: list[str] = []
+    for api in required_apis:
+        connector = env_root / "skills" / f"{api}-connector"
+        if not connector.is_dir():
+            continue
+        dest = f"{container_skills_root}/{api}-connector"
+        subprocess.run(
+            ["docker", "exec", task_id, "mkdir", "-p", dest],
+            capture_output=True, text=True,
+        )
+        r = subprocess.run(
+            ["docker", "cp", f"{connector}/.", f"{task_id}:{dest}/"],
+            capture_output=True, text=True,
+        )
+        if r.returncode != 0:
+            logger.warning("[%s] Failed to inject connector %s: %s", task_id, api, r.stderr.strip())
+        else:
+            injected.append(api)
+    api_doc = env_root / "API_DOCUMENTATION.md"
+    if api_doc.is_file():
+        subprocess.run(
+            ["docker", "cp", str(api_doc), f"{task_id}:/root/API_DOCUMENTATION.md"],
+            capture_output=True, text=True,
+        )
+    if injected:
+        logger.info("[%s] Injected API connectors: %s", task_id, ",".join(injected))
+
+
+def _parse_service_toml(path: Path) -> dict:
+    result: dict = {}
+    in_service = False
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line == "[service]":
+            in_service = True
+            continue
+        if line.startswith("["):
+            in_service = False
+            continue
+        if in_service and "=" in line:
+            k, v = line.split("=", 1)
+            key = k.strip()
+            val = v.strip().strip('"').strip("'")
+            result[key] = int(val) if key == "port" and val.isdigit() else val
+    return result
+
+
+def discover_services(environment_dir: Path) -> list[dict]:
+    """Return [{name, port, env_var_name}] for every <env>/<svc>/service.toml."""
+    services: list[dict] = []
+    environment_dir = Path(environment_dir)
+    if not environment_dir.is_dir():
+        return services
+    for entry in sorted(environment_dir.iterdir()):
+        if not entry.is_dir():
+            continue
+        toml_path = entry / "service.toml"
+        if not toml_path.is_file():
+            continue
+        try:
+            cfg = _parse_service_toml(toml_path)
+        except Exception:
+            continue
+        port = cfg.get("port")
+        if not port:
+            continue
+        services.append({
+            "name": entry.name,
+            "port": port,
+            "env_var_name": cfg.get("env_var_name", ""),
+        })
+    return services
+
+
+def setup_mock_apis(task_id: str, environment_dir: Path,
+                    required_apis: list[str]) -> dict[str, str]:
+    """Per-task (non-stack) mode: copy each required mock API into the agent
+    container under /opt/mock_apis/<name>, returning a {env_var_name: url} map
+    for localhost ports. Use warmup_for_mock_apis() to start them."""
+    env_vars: dict[str, str] = {}
+    for api_name in required_apis:
+        api_dir = Path(environment_dir) / api_name
+        if not api_dir.is_dir():
+            logger.warning("[%s] Mock API dir not found: %s", task_id, api_dir)
+            continue
+        service_toml = api_dir / "service.toml"
+        if not service_toml.is_file():
+            logger.warning("[%s] service.toml missing for %s", task_id, api_name)
+            continue
+        try:
+            cfg = _parse_service_toml(service_toml)
+        except Exception as exc:
+            logger.warning("[%s] Failed to parse service.toml for %s: %s", task_id, api_name, exc)
+            continue
+        port = cfg.get("port")
+        env_var_name = cfg.get("env_var_name")
+        if not port or not env_var_name:
+            logger.warning("[%s] Missing port/env_var_name for %s", task_id, api_name)
+            continue
+        dest = f"/opt/mock_apis/{api_name}"
+        subprocess.run(["docker", "exec", task_id, "mkdir", "-p", dest], capture_output=True)
+        r = subprocess.run(
+            ["docker", "cp", f"{api_dir}/.", f"{task_id}:{dest}/"],
+            capture_output=True, text=True,
+        )
+        if r.returncode != 0:
+            logger.warning("[%s] Failed to copy mock API %s: %s", task_id, api_name, r.stderr)
+            continue
+        env_vars[env_var_name] = f"http://localhost:{port}"
+        logger.info("[%s] Mock API %s copied → %s (port %s)", task_id, api_name, dest, port)
+    return env_vars
+
+
+def warmup_for_mock_apis(required_apis: list[str], environment_dir: Path) -> str:
+    lines: list[str] = []
+    for api_name in required_apis:
+        api_dir = Path(environment_dir) / api_name
+        if not (api_dir / "service.toml").is_file():
+            continue
+        dest = f"/opt/mock_apis/{api_name}"
+        lines.append(f"pip install -q -r {dest}/requirements.txt 2>/dev/null || true")
+        lines.append(f"cd {dest} && python server.py &")
+    return "\n".join(lines)
 
 
 def inject_openclaw_models(task_id: str, models_config: dict) -> None:
@@ -286,8 +457,10 @@ def collect_output_from_container(
     Collection strategy:
       1. All files under /tmp/openclaw/ (agent session logs, etc.)
       2. Task output files under /tmp_workspace/results/
-      3. Optionally, the full /tmp_workspace/ tree for runners that may write
-         deliverables outside results/
+      3. The full /tmp_workspace/ tree (into workspace_full/) so deliverables an
+         agent wrote outside results/ are never lost. /root/workspace is a
+         symlink to /tmp_workspace (see setup_workspace), so writes to either
+         path are captured here.
     """
     task_output_dir = output_dir / "task_output"
     task_output_dir.mkdir(parents=True, exist_ok=True)
@@ -310,6 +483,15 @@ def collect_output_from_container(
     )
     if not ok:
         logger.warning("[%s] results/ directory does not exist or is empty", task_id)
+
+    # Additively sweep the full workspace into a distinct subdir so deliverables
+    # written outside results/ (e.g. /root/workspace/<subdir>/, which resolves
+    # into TMP_WORKSPACE via the symlink) are still captured. Strictly additive:
+    # never overwrites or shadows workspace/results/. Best-effort, not a warning.
+    full_out = task_output_dir / "workspace_full"
+    full_out.mkdir(parents=True, exist_ok=True)
+    if not _copy_dir_from_container(task_id, f"{TMP_WORKSPACE}/.", str(full_out)):
+        logger.debug("[%s] full workspace sweep found nothing to collect", task_id)
 
 
 def snapshot_workspace_state(task_id: str) -> None:

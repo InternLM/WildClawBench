@@ -1,0 +1,13 @@
+order_id,variant_id,sku,title,quantity,unit_price,line_total,fulfillment_status
+ord-9001,var-001-a,LIN-RUN-72-SAND,Linen table runner — Sand · 72 in,1,48.00,48.00,fulfilled
+ord-9001,var-006-a,WOOD-CB-LG,Walnut cutting board — Large,1,68.00,68.00,fulfilled
+ord-9001,var-005-a,APR-IND,Heavyweight kitchen apron — Indigo,1,42.00,42.00,fulfilled
+ord-9002,var-004-a,MER-THR-CHAR,Merino wool throw — Charcoal · 50x60,1,148.00,148.00,fulfilled
+ord-9003,var-003-a,BEE-CAN-4,Beeswax candle set (4 ct),2,28.00,56.00,fulfilled
+ord-9003,var-002-b,CER-VASE-MINI-CHAR,Ceramic vase (mini) — Charcoal,1,32.00,32.00,unfulfilled
+ord-9004,var-001-b,LIN-RUN-72-OLIVE,Linen table runner — Olive · 72 in,1,48.00,48.00,unfulfilled
+ord-9005,var-004-b,MER-THR-OAT,Merino wool throw — Oat · 50x60,1,148.00,148.00,unfulfilled
+ord-9006,var-003-a,BEE-CAN-4,Beeswax candle set (4 ct),1,28.00,28.00,unfulfilled
+ord-9007,var-006-a,WOOD-CB-LG,Walnut cutting board — Large,1,68.00,68.00,fulfilled
+ord-9007,var-005-a,APR-IND,Heavyweight kitchen apron — Indigo,2,42.00,84.00,fulfilled
+ord-9008,var-007-a,WINTER-BUNDLE,Winter sale bundle,1,120.00,120.00,cancelled

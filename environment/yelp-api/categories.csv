@@ -1,0 +1,11 @@
+alias,title,parent
+cafes,Cafes,food
+bakeries,Bakeries,food
+coffee,Coffee & Tea,food
+restaurants,Restaurants,restaurants
+steak,Steakhouses,restaurants
+chinese,Chinese,restaurants
+mexican,Mexican,restaurants
+seafood,Seafood,restaurants
+burmese,Burmese,restaurants
+diners,Diners,restaurants

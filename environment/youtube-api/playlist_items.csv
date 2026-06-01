@@ -1,0 +1,43 @@
+playlist_item_id,playlistId,videoId,channelId,title,position,publishedAt
+PLI_001,PL_001,vid_001,UC_EquineHealthChannel,Equine Skin Lesions - What Every Owner Should Know,0,2025-04-10T13:00:00Z
+PLI_002,PL_001,vid_002,UC_EquineHealthChannel,Early Signs of Skin Disease in Horses - Do Not Ignore These,1,2025-04-03T13:00:00Z
+PLI_003,PL_001,vid_003,UC_EquineHealthChannel,Ringworm in Horses - Identification Treatment and Biosecurity,2,2025-03-27T13:00:00Z
+PLI_004,PL_001,vid_004,UC_EquineHealthChannel,Rain Rot vs Ringworm - How to Tell the Difference,3,2025-03-20T13:00:00Z
+PLI_005,PL_001,vid_006,UC_EquineHealthChannel,Understanding Your Horse's Skin Scraping Results,4,2025-03-06T13:00:00Z
+PLI_006,PL_001,vid_022,UC_EquineHealthChannel,Normal Horse Skin vs Concerning - Quick Reference #shorts,5,2025-03-18T16:00:00Z
+PLI_007,PL_001,vid_027,UC_EquineHealthChannel,Cellulitis in Horses - That Suddenly Swollen Leg,6,2024-11-07T13:00:00Z
+PLI_008,PL_001,vid_030,UC_EquineHealthChannel,Scratches and Pastern Dermatitis - Full Management Guide,7,2024-10-17T13:00:00Z
+PLI_009,PL_002,vid_005,UC_EquineHealthChannel,Horse First Aid Kit - What Your Barn Actually Needs,0,2025-03-13T13:00:00Z
+PLI_010,PL_002,vid_008,UC_EquineHealthChannel,Equine Nutrition Fundamentals - Getting the Basics Right,1,2025-02-27T13:00:00Z
+PLI_011,PL_002,vid_012,UC_EquineHealthChannel,Seasonal Horse Health Calendar - Month by Month Guide,2,2025-02-06T13:00:00Z
+PLI_012,PL_002,vid_014,UC_EquineHealthChannel,Equine Dental Care - What Owners Need to Know,3,2025-01-23T13:00:00Z
+PLI_013,PL_002,vid_015,UC_EquineHealthChannel,Reading Your Horse's Vital Signs at Home,4,2025-01-16T13:00:00Z
+PLI_014,PL_002,vid_028,UC_EquineHealthChannel,When to Blanket Your Horse - The Real Answer,5,2024-10-31T13:00:00Z
+PLI_015,PL_003,vid_016,UC_EquineHealthChannel,Colic in Horses - What to Do While Waiting for the Vet,0,2025-01-09T13:00:00Z
+PLI_016,PL_003,vid_020,UC_EquineHealthChannel,Equine Eye Emergencies - Do Not Wait on These,1,2024-12-19T13:00:00Z
+PLI_017,PL_003,vid_025,UC_EquineHealthChannel,Heat Stroke in Horses - Prevention and Emergency Response,2,2024-11-21T13:00:00Z
+PLI_018,PL_003,vid_013,UC_EquineHealthChannel,Wound Care for Horses - Clean Bandage or Leave It Open,3,2025-01-30T13:00:00Z
+PLI_019,PL_004,vid_009,UC_EquineHealthChannel,Hoof Abscess - Signs Treatment and Recovery Timeline,0,2025-02-20T13:00:00Z
+PLI_020,PL_004,vid_024,UC_EquineHealthChannel,Thrush in Horses - Treatment That Actually Resolves It,1,2024-11-28T13:00:00Z
+PLI_021,PL_004,vid_018,UC_EquineHealthChannel,Spring Pasture Transition - Avoiding Laminitis,2,2025-01-02T13:00:00Z
+PLI_022,PL_005,vid_010,UC_EquineHealthChannel,Biosecurity for Small Barns - Preventing Disease Spread,0,2025-02-13T13:00:00Z
+PLI_023,PL_005,vid_021,UC_EquineHealthChannel,Deworming in 2025 - Fecal Egg Counts Explained,1,2024-12-12T13:00:00Z
+PLI_024,PL_005,vid_029,UC_EquineHealthChannel,Strangles - What Every Barn Needs to Know,2,2024-10-24T13:00:00Z
+PLI_025,PL_006,vid_006,UC_EquineHealthChannel,Understanding Your Horse's Skin Scraping Results,0,2025-03-06T13:00:00Z
+PLI_026,PL_006,vid_026,UC_EquineHealthChannel,Understanding Equine Blood Work - A Plain Language Guide,1,2024-11-14T13:00:00Z
+PLI_027,PL_006,vid_021,UC_EquineHealthChannel,Deworming in 2025 - Fecal Egg Counts Explained,2,2024-12-12T13:00:00Z
+PLI_028,PL_007,vid_018,UC_EquineHealthChannel,Spring Pasture Transition - Avoiding Laminitis,0,2025-01-02T13:00:00Z
+PLI_029,PL_007,vid_019,UC_EquineHealthChannel,Fly Management That Actually Works - 2025 Update,1,2024-12-26T13:00:00Z
+PLI_030,PL_007,vid_028,UC_EquineHealthChannel,When to Blanket Your Horse - The Real Answer,2,2024-10-31T13:00:00Z
+PLI_031,PL_007,vid_012,UC_EquineHealthChannel,Seasonal Horse Health Calendar - Month by Month Guide,3,2025-02-06T13:00:00Z
+PLI_032,PL_008,vid_007,UC_EquineHealthChannel,5 Things to Check on Your Horse Every Day #shorts,0,2025-04-08T16:00:00Z
+PLI_033,PL_008,vid_011,UC_EquineHealthChannel,How to Take Good Photos of Your Horse's Injury #shorts,1,2025-04-05T16:00:00Z
+PLI_034,PL_008,vid_017,UC_EquineHealthChannel,Is This Lump on My Horse Normal? #shorts,2,2025-03-25T16:00:00Z
+PLI_035,PL_008,vid_022,UC_EquineHealthChannel,Normal Horse Skin vs Concerning - Quick Reference #shorts,3,2025-03-18T16:00:00Z
+PLI_036,PL_009,vid_003,UC_EquineHealthChannel,Ringworm in Horses - Identification Treatment and Biosecurity,0,2025-03-27T13:00:00Z
+PLI_037,PL_009,vid_029,UC_EquineHealthChannel,Strangles - What Every Barn Needs to Know,1,2024-10-24T13:00:00Z
+PLI_038,PL_009,vid_004,UC_EquineHealthChannel,Rain Rot vs Ringworm - How to Tell the Difference,2,2025-03-20T13:00:00Z
+PLI_039,PL_009,vid_010,UC_EquineHealthChannel,Biosecurity for Small Barns - Preventing Disease Spread,3,2025-02-13T13:00:00Z
+PLI_040,PL_010,vid_023,UC_EquineHealthChannel,Preparing for Your Vet Visit - Get More From the Appointment,0,2024-12-05T13:00:00Z
+PLI_041,PL_010,vid_006,UC_EquineHealthChannel,Understanding Your Horse's Skin Scraping Results,1,2025-03-06T13:00:00Z
+PLI_042,PL_010,vid_026,UC_EquineHealthChannel,Understanding Equine Blood Work - A Plain Language Guide,2,2024-11-14T13:00:00Z

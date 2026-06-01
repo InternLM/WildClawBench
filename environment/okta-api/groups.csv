@@ -1,0 +1,5 @@
+id,name,description,type,created
+00g1eng,Engineering,All engineering staff,OKTA_GROUP,2024-01-10T10:00:00.000Z
+00g2plat,Platform Team,Platform and infrastructure engineers,OKTA_GROUP,2024-01-12T10:00:00.000Z
+00g3admins,Administrators,Tenant administrators,OKTA_GROUP,2024-01-10T10:00:00.000Z
+00g4everyone,Everyone,All users in the org,BUILT_IN,2024-01-10T10:00:00.000Z

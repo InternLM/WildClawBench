@@ -1,0 +1,8 @@
+query,formatted_address,lat,lng,place_id,location_type
+san francisco,"San Francisco, CA, USA",37.7749,-122.4194,ChIJgeo0000000001,APPROXIMATE
+union square,"Union Square, San Francisco, CA 94108, USA",37.7880,-122.4075,ChIJgeo0000000002,ROOFTOP
+fishermans wharf,"Fisherman's Wharf, San Francisco, CA 94133, USA",37.8080,-122.4177,ChIJgeo0000000003,ROOFTOP
+mission district,"Mission District, San Francisco, CA, USA",37.7599,-122.4148,ChIJgeo0000000004,APPROXIMATE
+oakland,"Oakland, CA, USA",37.8044,-122.2712,ChIJgeo0000000005,APPROXIMATE
+berkeley,"Berkeley, CA, USA",37.8715,-122.2730,ChIJgeo0000000006,APPROXIMATE
+palo alto,"Palo Alto, CA, USA",37.4419,-122.1430,ChIJgeo0000000007,APPROXIMATE

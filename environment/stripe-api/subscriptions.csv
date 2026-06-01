@@ -1,0 +1,7 @@
+id,customer,price,status,quantity,current_period_start,current_period_end,cancel_at_period_end,created
+sub_Aurora,cus_Nb1Aurora,price_Starter_M,active,1,1717286400,1719878400,false,1714579200
+sub_Helix,cus_Nb2Helix,price_Ent_M,active,5,1717372800,1719964800,false,1709251200
+sub_Lumen,cus_Nb3Lumen,price_Pro_M,active,2,1717459200,1720051200,true,1717200000
+sub_Quanta,cus_Nb6Quanta,price_Pro_Y,active,3,1717632000,1749168000,false,1706745600
+sub_Verdant,cus_Nb5Verdant,price_Pro_M,past_due,1,1717804800,1720396800,false,1719792000
+sub_Pelagic,cus_Nb4Pelagic,price_Starter_M,canceled,1,1701388800,1703980800,false,1701388800

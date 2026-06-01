@@ -1,0 +1,5 @@
+uuid,event,name,email,status,timezone,created_at,questions_and_answers
+inv-5001,sev-1001,Maria Chen,maria.chen@acme-corp.com,active,America/New_York,2026-05-25T09:00:00.000000Z,What would you like to discuss?|Pricing and onboarding
+inv-5002,sev-1002,Tomas Reyes,tomas.reyes@partner.io,active,Europe/Madrid,2026-05-26T11:30:00.000000Z,Company size?|50-100 employees
+inv-5003,sev-1003,Lena Voss,lena.voss@vendorco.com,active,America/Los_Angeles,2026-05-26T15:45:00.000000Z,Main technical concern?|Multi-region failover
+inv-5004,sev-1004,Devon Clark,devon.clark@contractor.dev,canceled,America/Chicago,2026-05-20T08:00:00.000000Z,

@@ -1,0 +1,5 @@
+id,name,primary,type,currency_code,currency_name,balance_amount,native_balance_amount,native_currency,created_at,updated_at
+acct-btc-001,BTC Wallet,true,wallet,BTC,Bitcoin,0.45120000,29328.00,USD,2025-01-10T09:00:00Z,2026-05-20T12:00:00Z
+acct-eth-002,ETH Wallet,false,wallet,ETH,Ethereum,3.20000000,9920.00,USD,2025-01-10T09:00:00Z,2026-05-22T08:30:00Z
+acct-usd-003,USD Wallet,false,fiat,USD,US Dollar,1450.75,1450.75,USD,2025-01-10T09:00:00Z,2026-05-25T16:45:00Z
+acct-sol-004,SOL Wallet,false,wallet,SOL,Solana,18.50000000,2664.00,USD,2025-03-01T09:00:00Z,2026-05-18T10:15:00Z

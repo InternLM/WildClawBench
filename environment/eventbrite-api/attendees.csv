@@ -1,0 +1,8 @@
+id,event_id,ticket_class_id,name,email,status,checked_in,created
+att-001,evt-7000001,tc-001,Amelia Ortega,amelia@orbit-labs.com,attending,false,2026-04-05T10:00:00Z
+att-002,evt-7000001,tc-001,Jonas Pereira,jonas@orbit-labs.com,attending,false,2026-04-06T10:00:00Z
+att-003,evt-7000001,tc-002,Noor Aziz,noor@orbit-labs.com,attending,false,2026-04-10T10:00:00Z
+att-004,evt-7000002,tc-003,Helena Park,helena@orbit-labs.com,attending,false,2026-04-20T10:00:00Z
+att-005,evt-7000002,tc-003,Rohit Bansal,rohit@orbit-labs.com,attending,false,2026-04-21T10:00:00Z
+att-006,evt-7000004,tc-005,Amelia Ortega,amelia@orbit-labs.com,attending,false,2026-05-15T10:00:00Z
+att-007,evt-7000005,tc-001,Helena Park,helena@orbit-labs.com,attending,true,2026-04-10T10:00:00Z

@@ -1,0 +1,11 @@
+playlist_id,channelId,title,description,publishedAt,privacyStatus,itemCount
+PL_001,UC_EquineHealthChannel,Equine Skin Conditions,Comprehensive guides to identifying and managing skin problems in horses. From fungal infections to allergic reactions.,2021-09-15T10:00:00Z,public,8
+PL_002,UC_EquineHealthChannel,Horse Owner Basics,Essential knowledge for every horse owner. Vital signs nutrition daily care and when to call the vet.,2021-08-01T10:00:00Z,public,10
+PL_003,UC_EquineHealthChannel,Emergency and First Aid,What to do before the vet arrives. Colic eye emergencies wounds and heat stroke.,2022-01-20T10:00:00Z,public,7
+PL_004,UC_EquineHealthChannel,Hoof Health,Everything below the coronet band. Abscesses thrush laminitis and working with your farrier.,2022-04-10T10:00:00Z,public,5
+PL_005,UC_EquineHealthChannel,Preventive Care and Biosecurity,Vaccination deworming quarantine protocols and disease prevention strategies for barn managers.,2022-06-15T10:00:00Z,public,6
+PL_006,UC_EquineHealthChannel,Lab Work and Diagnostics,Understanding blood work skin scrapings fecal tests and other diagnostic results in plain language.,2023-02-01T10:00:00Z,public,4
+PL_007,UC_EquineHealthChannel,Seasonal Management,Month by month guides for spring pasture summer heat winter blanketing and everything in between.,2023-05-01T10:00:00Z,public,5
+PL_008,UC_EquineHealthChannel,Quick Tips and Shorts,Bite-sized horse care reminders under 60 seconds.,2023-08-15T10:00:00Z,public,4
+PL_009,UC_EquineHealthChannel,Infectious Disease,Strangles ringworm rain rot and other contagious conditions. Recognition isolation and treatment.,2024-01-10T10:00:00Z,public,5
+PL_010,UC_EquineHealthChannel,Working With Your Vet,How to prepare for appointments communicate effectively and get the most from professional care.,2024-04-01T10:00:00Z,public,3

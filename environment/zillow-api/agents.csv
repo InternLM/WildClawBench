@@ -1,0 +1,4 @@
+agent_id,name,brokerage,phone,email,license_number,active_listings,sold_last_12mo,rating,reviews
+agent-001,Sarah Whitfield,Cascade Realty Group,206-555-0118,sarah.whitfield@cascaderealty.com,WA-1284991,4,28,4.9,142
+agent-002,Daniel Reyes,Evergreen Properties,425-555-0204,daniel.reyes@evergreenprop.com,WA-1300218,3,22,4.8,98
+agent-003,Maya Okafor,Pinecrest Realty,425-555-0319,maya.okafor@pinecrestrealty.com,WA-1342877,3,17,4.7,76

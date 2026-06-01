@@ -1,0 +1,74 @@
+[
+  {
+    "id": "section_001",
+    "snippet": {
+      "type": "singlePlaylist",
+      "channelId": "UC_EquineHealthChannel",
+      "title": "Equine Skin Conditions",
+      "position": 0
+    },
+    "contentDetails": {
+      "playlists": ["PL_001"]
+    }
+  },
+  {
+    "id": "section_002",
+    "snippet": {
+      "type": "singlePlaylist",
+      "channelId": "UC_EquineHealthChannel",
+      "title": "Horse Owner Basics",
+      "position": 1
+    },
+    "contentDetails": {
+      "playlists": ["PL_002"]
+    }
+  },
+  {
+    "id": "section_003",
+    "snippet": {
+      "type": "singlePlaylist",
+      "channelId": "UC_EquineHealthChannel",
+      "title": "Emergency and First Aid",
+      "position": 2
+    },
+    "contentDetails": {
+      "playlists": ["PL_003"]
+    }
+  },
+  {
+    "id": "section_004",
+    "snippet": {
+      "type": "popularUploads",
+      "channelId": "UC_EquineHealthChannel",
+      "title": "Popular Uploads",
+      "position": 3
+    },
+    "contentDetails": {
+      "playlists": []
+    }
+  },
+  {
+    "id": "section_005",
+    "snippet": {
+      "type": "singlePlaylist",
+      "channelId": "UC_EquineHealthChannel",
+      "title": "Infectious Disease",
+      "position": 4
+    },
+    "contentDetails": {
+      "playlists": ["PL_009"]
+    }
+  },
+  {
+    "id": "section_006",
+    "snippet": {
+      "type": "singlePlaylist",
+      "channelId": "UC_EquineHealthChannel",
+      "title": "Quick Tips and Shorts",
+      "position": 5
+    },
+    "contentDetails": {
+      "playlists": ["PL_008"]
+    }
+  }
+]

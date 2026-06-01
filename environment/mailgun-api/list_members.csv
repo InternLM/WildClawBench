@@ -1,0 +1,8 @@
+list_address,address,name,subscribed,vars
+newsletter@sandbox.mailgun.org,alice@example.com,Alice Adams,true,{"plan":"pro"}
+newsletter@sandbox.mailgun.org,bob@example.com,Bob Brown,true,{"plan":"free"}
+newsletter@sandbox.mailgun.org,carol@example.com,Carol Clark,false,{"plan":"free"}
+newsletter@sandbox.mailgun.org,dave@example.com,Dave Davis,true,{"plan":"enterprise"}
+developers@sandbox.mailgun.org,erin@example.com,Erin Evans,true,{"team":"backend"}
+developers@sandbox.mailgun.org,frank@example.com,Frank Foster,true,{"team":"frontend"}
+developers@sandbox.mailgun.org,grace@example.com,Grace Green,false,{"team":"qa"}

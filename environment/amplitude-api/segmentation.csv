@@ -1,0 +1,11 @@
+event_type,date,count
+purchase,2026-05-02,3
+purchase,2026-05-03,5
+purchase,2026-05-04,8
+purchase,2026-05-05,6
+purchase,2026-05-06,9
+session_start,2026-05-02,120
+session_start,2026-05-03,134
+session_start,2026-05-04,128
+session_start,2026-05-05,141
+session_start,2026-05-06,150

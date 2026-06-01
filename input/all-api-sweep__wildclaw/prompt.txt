@@ -1,0 +1,16 @@
+You are running an infrastructure smoke test across 101 mock API services.
+
+The file `data/api_targets.csv` lists every service: columns name, env_var, port, health_path, probe_route. Each service's base URL is published in the environment variable named in the `env_var` column (e.g. the row with env_var=GITHUB_API_URL means the base URL is in $GITHUB_API_URL).
+
+Do this efficiently in a single pass, READ-ONLY (GET requests only — never POST/PATCH/PUT/DELETE):
+1. Read data/api_targets.csv.
+2. For EACH of the 101 services: resolve its base URL from the named environment variable, then GET <base_url><health_path>. If the env var is set and health returns ok, also GET <base_url><probe_route> and note the HTTP status and how many records/items came back.
+3. Be resilient: if one service is unreachable or its env var is unset, record that and CONTINUE to the next — do not stop the whole sweep.
+
+Write TWO deliverables to the results directory:
+A. `/tmp_workspace/results/api_sweep_report.csv` with columns:
+   `name,env_var,base_url,health_status,probe_route,probe_status,records,ok`
+   one row per service (all 101). `ok` is true only if health AND probe both succeeded.
+B. `/tmp_workspace/results/api_sweep_summary.md`: total services, how many healthy, how many failed (list the failures with the reason), and any env vars that were unset.
+
+Aim to cover all 101 services. If you are running low on time, prioritize breadth (one health check each) over depth, and still write the report for every row you attempted.

@@ -1,0 +1,13 @@
+iata_code,name,city_name,city_code,country_name,country_code,latitude,longitude,timezone
+JFK,John F Kennedy International Airport,New York,NYC,United States,US,40.6413,-73.7781,America/New_York
+LAX,Los Angeles International Airport,Los Angeles,LAX,United States,US,33.9416,-118.4085,America/Los_Angeles
+LHR,Heathrow Airport,London,LON,United Kingdom,GB,51.4700,-0.4543,Europe/London
+CDG,Charles de Gaulle Airport,Paris,PAR,France,FR,49.0097,2.5479,Europe/Paris
+FRA,Frankfurt Airport,Frankfurt,FRA,Germany,DE,50.0379,8.5622,Europe/Berlin
+DXB,Dubai International Airport,Dubai,DXB,United Arab Emirates,AE,25.2532,55.3657,Asia/Dubai
+SIN,Singapore Changi Airport,Singapore,SIN,Singapore,SG,1.3644,103.9915,Asia/Singapore
+NRT,Narita International Airport,Tokyo,TYO,Japan,JP,35.7720,140.3929,Asia/Tokyo
+SFO,San Francisco International Airport,San Francisco,SFO,United States,US,37.6213,-122.3790,America/Los_Angeles
+BOS,Logan International Airport,Boston,BOS,United States,US,42.3656,-71.0096,America/New_York
+ORD,Ohare International Airport,Chicago,CHI,United States,US,41.9742,-87.9073,America/Chicago
+AMS,Amsterdam Schiphol Airport,Amsterdam,AMS,Netherlands,NL,52.3105,4.7683,Europe/Amsterdam

@@ -1,0 +1,4 @@
+name,status,labels,created_time
+default,Active,kubernetes.io/metadata.name=default,2025-08-01T09:00:00Z
+kube-system,Active,kubernetes.io/metadata.name=kube-system,2025-08-01T09:00:00Z
+prod,Active,kubernetes.io/metadata.name=prod;team=platform,2025-08-12T11:30:00Z

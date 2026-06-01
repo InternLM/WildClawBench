@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "Discord Mock API v10",
+    "description": "Test collection for the mock Discord API service. Base URL defaults to http://localhost:8057. In docker-compose, the service is reachable at http://discord-api:8057.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8057"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/users/@me"}},
+    {"name": "my guilds", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/users/@me/guilds"}},
+    {"name": "get guild", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/guilds/900100200300400001"}},
+    {"name": "guild channels", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/guilds/900100200300400001/channels"}},
+    {"name": "guild members", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/guilds/900100200300400001/members?limit=10"}},
+    {"name": "guild roles", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/guilds/900100200300400001/roles"}},
+    {"name": "get channel", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/channels/800100200300400001"}},
+    {"name": "channel messages", "request": {"method": "GET", "url": "{{baseUrl}}/api/v10/channels/800100200300400001/messages?limit=10"}},
+    {"name": "create message", "request": {"method": "POST", "url": "{{baseUrl}}/api/v10/channels/800100200300400001/messages",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"content\": \"Posting from the mock API.\", \"author_id\": \"500100200300400001\"}"}}}
+  ]
+}

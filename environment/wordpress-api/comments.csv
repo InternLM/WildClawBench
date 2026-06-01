@@ -1,0 +1,8 @@
+id,post,author_name,author_email,content,status,date,parent
+301,101,Dana Li,dana.li@example.com,"Great write-up. The missing index gotcha bites everyone eventually.",approved,2026-05-20T16:10:00,0
+302,101,Marco Ferri,marco.ferri@example.com,"Did you consider a partial index instead?",approved,2026-05-20T17:00:00,0
+303,101,Amelia Ortega,amelia.ortega@example.com,"We did, but the query patterns made a full index simpler to reason about.",approved,2026-05-20T17:30:00,302
+304,104,Sara Koenig,sara.koenig@example.com,"Congrats on the launch! The plugin system looks slick.",approved,2026-05-21T18:00:00,0
+305,103,Tom Becker,tom.becker@example.com,"Bookmarking this checklist for our next sprint.",approved,2026-05-23T13:00:00,0
+306,102,spammer,spam@example.com,"Buy cheap followers now!!!",hold,2026-05-22T10:00:00,0
+307,105,Jonas Pereira,jonas.pereira@example.com,"The downtime-free approach saved us during our own migration.",approved,2026-05-24T12:00:00,0

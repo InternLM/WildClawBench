@@ -1,0 +1,23 @@
+page_id,property_name,property_type,value
+page-task-001,Status,status,In progress
+page-task-001,Priority,select,High
+page-task-001,Assignee,people,user-amelia
+page-task-001,Due,date,2026-06-10
+page-task-002,Status,status,In progress
+page-task-002,Priority,select,High
+page-task-002,Assignee,people,user-jonas
+page-task-002,Due,date,2026-06-30
+page-task-003,Status,status,Todo
+page-task-003,Priority,select,Medium
+page-task-003,Assignee,people,user-helena
+page-task-003,Due,date,2026-07-05
+page-task-004,Status,status,Done
+page-task-004,Priority,select,Low
+page-task-004,Assignee,people,user-amelia
+page-task-004,Due,date,2026-05-12
+page-okr-q2-1,Status,status,On track
+page-okr-q2-1,Owner,people,user-jonas
+page-okr-q2-1,Progress,number,0.62
+page-okr-q2-2,Status,status,At risk
+page-okr-q2-2,Owner,people,user-jonas
+page-okr-q2-2,Progress,number,0.35

@@ -1,0 +1,7 @@
+id,is_bot,first_name,last_name,username,language_code
+9001,false,Amelia,Ortega,amelia_o,en
+9002,false,Jonas,Pereira,jonas_p,pt
+9003,false,Helena,Park,helena_park,en
+9004,false,Rohit,Bansal,rohit_b,en
+9005,false,Noor,Aziz,noor_codes,ar
+7654321098,true,Orbit Ops Bot,,orbit_ops_bot,en

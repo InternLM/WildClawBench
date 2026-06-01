@@ -1,0 +1,12 @@
+{
+  "id": 5500200,
+  "name": "Marigold & Pine",
+  "myshopify_domain": "marigold-pine.myshopify.com",
+  "primary_domain": "shop.marigoldandpine.com",
+  "email": "hello@marigoldandpine.com",
+  "currency": "USD",
+  "country_code": "US",
+  "timezone": "America/Los_Angeles",
+  "plan_name": "shopify",
+  "created_at": "2024-03-12T10:00:00Z"
+}

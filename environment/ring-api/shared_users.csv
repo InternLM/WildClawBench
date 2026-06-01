@@ -1,0 +1,3 @@
+user_id,first_name,last_name,email,role,device_access,shared_at
+100004,Daniel,Bennett,daniel.bennett@email.com,owner,all,2024-03-15T10:00:00.000Z
+100005,Sarah,Bennett,sarah.bennett@email.com,owner,all,2024-03-15T10:05:00.000Z

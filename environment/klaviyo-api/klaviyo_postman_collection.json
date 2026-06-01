@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Klaviyo Mock API",
+    "description": "Test collection for the mock Klaviyo API service (profiles, lists, campaigns). Base URL defaults to http://localhost:8089. In docker-compose, the service is reachable at http://klaviyo-api:8089. Responses use the JSON:API envelope, e.g. {\"data\": [{\"type\": \"profile\", \"id\": ..., \"attributes\": {...}}]}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8089"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list profiles", "request": {"method": "GET", "url": "{{baseUrl}}/api/profiles"}},
+    {"name": "filter profiles by email", "request": {"method": "GET", "url": "{{baseUrl}}/api/profiles?email=jane.doe@example.com"}},
+    {"name": "get profile", "request": {"method": "GET", "url": "{{baseUrl}}/api/profiles/01HZPROF000000000000000001"}},
+    {"name": "create profile", "request": {"method": "POST", "url": "{{baseUrl}}/api/profiles",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"data\": {\"type\": \"profile\", \"attributes\": {\"email\": \"new.lead@example.com\", \"first_name\": \"New\", \"last_name\": \"Lead\", \"organization\": \"Contoso\", \"location\": {\"city\": \"Seattle\", \"region\": \"Washington\", \"country\": \"United States\"}}}}"}}},
+    {"name": "list lists", "request": {"method": "GET", "url": "{{baseUrl}}/api/lists"}},
+    {"name": "list campaigns", "request": {"method": "GET", "url": "{{baseUrl}}/api/campaigns"}},
+    {"name": "list sent email campaigns", "request": {"method": "GET", "url": "{{baseUrl}}/api/campaigns?status=Sent&channel=email"}}
+  ]
+}

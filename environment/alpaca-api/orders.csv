@@ -1,0 +1,7 @@
+id,client_order_id,symbol,qty,filled_qty,side,type,time_in_force,limit_price,status,filled_avg_price,submitted_at,filled_at
+ORD-aurora-0001,cli-0001,AAPL,40,40,buy,market,day,,filled,178.50,2026-04-02T14:30:00Z,2026-04-02T14:30:02Z
+ORD-boreal-0002,cli-0002,MSFT,25,25,buy,limit,day,402.10,filled,402.10,2026-04-10T15:00:00Z,2026-04-10T15:01:10Z
+ORD-citron-0003,cli-0003,TSLA,30,30,buy,market,day,,filled,242.00,2026-04-18T13:45:00Z,2026-04-18T13:45:05Z
+ORD-delta-0004,cli-0004,NVDA,18,0,buy,limit,gtc,118.40,new,,2026-05-20T16:00:00Z,
+ORD-echo-0005,cli-0005,AMZN,10,0,sell,limit,day,195.00,new,,2026-05-22T14:10:00Z,
+ORD-fjord-0006,cli-0006,AAPL,15,15,sell,market,day,,filled,189.90,2026-05-23T17:30:00Z,2026-05-23T17:30:03Z

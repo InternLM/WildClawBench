@@ -1,0 +1,8 @@
+funnel_id,name,step_order,step_event,count
+7461001,Purchase Funnel,1,App Open,1200
+7461001,Purchase Funnel,2,Product Viewed,860
+7461001,Purchase Funnel,3,Add to Cart,430
+7461001,Purchase Funnel,4,Checkout,180
+7461002,Activation Funnel,1,Signup,2000
+7461002,Activation Funnel,2,App Open,1450
+7461002,Activation Funnel,3,Product Viewed,940

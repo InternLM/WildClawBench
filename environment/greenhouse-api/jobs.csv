@@ -1,0 +1,7 @@
+id,title,status,department,location,opened_at,closed_at
+job-3001,Senior Backend Engineer,open,Engineering,San Francisco,2026-03-01T00:00:00Z,
+job-3002,Frontend Engineer,open,Engineering,Remote,2026-03-10T00:00:00Z,
+job-3003,Product Designer,open,Design,New York,2026-03-15T00:00:00Z,
+job-3004,Data Scientist,open,Data,Remote,2026-03-20T00:00:00Z,
+job-3005,DevOps Engineer,open,Engineering,Austin,2026-04-01T00:00:00Z,
+job-3006,Engineering Manager,closed,Engineering,San Francisco,2026-01-05T00:00:00Z,2026-03-28T00:00:00Z

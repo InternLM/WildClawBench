@@ -1,0 +1,5 @@
+id,contact_id,state,title,created_at,updated_at,assignee_id,open
+conv-1001,contact-mara,open,Cannot export reports to CSV,2026-05-20T09:00:00.000Z,2026-05-25T14:00:00.000Z,admin-jonas,true
+conv-1002,contact-ethan,closed,Billing question about Growth plan,2026-05-15T10:00:00.000Z,2026-05-18T11:00:00.000Z,admin-helena,false
+conv-1003,contact-grace,open,Request for SSO setup,2026-05-22T13:00:00.000Z,2026-05-23T13:00:00.000Z,admin-jonas,true
+conv-1004,contact-yara,closed,Trial extension request,2026-05-10T08:00:00.000Z,2026-05-12T09:00:00.000Z,admin-helena,false

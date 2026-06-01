@@ -1,0 +1,7 @@
+id,host_id,topic,type,status,start_time,duration,timezone,join_url,agenda,created_at
+85012345678,u-amelia-9f4b2e8d,Weekly Engineering Sync,2,waiting,2026-05-29T16:00:00Z,60,America/Los_Angeles,https://zoom.us/j/85012345678,Sprint progress and blockers,2026-05-20T10:00:00Z
+85012345679,u-amelia-9f4b2e8d,Q2 Roadmap Review,2,waiting,2026-05-30T18:00:00Z,90,America/Los_Angeles,https://zoom.us/j/85012345679,Review Q2 OKRs and roadmap,2026-05-21T11:00:00Z
+85012345680,u-amelia-9f4b2e8d,Customer Onboarding - Acme,2,waiting,2026-06-02T15:00:00Z,45,America/Los_Angeles,https://zoom.us/j/85012345680,Walk Acme through setup,2026-05-22T09:00:00Z
+85012345670,u-amelia-9f4b2e8d,Sprint Retro 21,2,finished,2026-05-22T16:00:00Z,55,America/Los_Angeles,https://zoom.us/j/85012345670,Retrospective for sprint 21,2026-05-15T10:00:00Z
+85012345671,u-amelia-9f4b2e8d,Architecture Deep Dive,2,finished,2026-05-19T17:00:00Z,75,America/Los_Angeles,https://zoom.us/j/85012345671,Auth service redesign,2026-05-12T10:00:00Z
+85012345672,u-amelia-9f4b2e8d,All Hands May,8,finished,2026-05-16T20:00:00Z,40,America/Los_Angeles,https://zoom.us/j/85012345672,Monthly all hands,2026-05-09T10:00:00Z

@@ -1,0 +1,8 @@
+object_id,shipment,provider,servicelevel_token,servicelevel_name,amount,currency,estimated_days
+rate-usps-prio-01,ship-1001,USPS,usps_priority,Priority Mail,8.45,USD,2
+rate-usps-first-01,ship-1001,USPS,usps_first,First Class Package,5.20,USD,3
+rate-ups-ground-01,ship-1001,UPS,ups_ground,UPS Ground,11.30,USD,3
+rate-fedex-2day-01,ship-1001,FedEx,fedex_2day,FedEx 2Day,18.75,USD,2
+rate-usps-prio-02,ship-1002,USPS,usps_priority,Priority Mail,12.60,USD,2
+rate-ups-ground-02,ship-1002,UPS,ups_ground,UPS Ground,14.10,USD,4
+rate-fedex-exp-02,ship-1002,FedEx,fedex_express_saver,FedEx Express Saver,21.40,USD,3

@@ -1,0 +1,9 @@
+{
+  "subdomain": "orbitlabs",
+  "name": "Orbit Labs Inc.",
+  "employeeCount": 12,
+  "industry": "Software",
+  "headquarters": "San Francisco, CA",
+  "fiscalYearStart": "01-01",
+  "timeOffPolicies": ["Vacation", "Sick", "Personal", "Holiday"]
+}

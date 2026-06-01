@@ -1,0 +1,5 @@
+id,meeting_id,recording_type,file_type,file_size,recording_start,recording_end,play_url,status
+rec-0001,85012345670,shared_screen_with_speaker_view,MP4,524288000,2026-05-22T16:01:00Z,2026-05-22T16:55:00Z,https://zoom.us/rec/play/aaa111,completed
+rec-0002,85012345670,audio_only,M4A,31457280,2026-05-22T16:01:00Z,2026-05-22T16:55:00Z,https://zoom.us/rec/play/aaa112,completed
+rec-0003,85012345671,shared_screen_with_speaker_view,MP4,734003200,2026-05-19T17:02:00Z,2026-05-19T18:15:00Z,https://zoom.us/rec/play/bbb221,completed
+rec-0004,85012345672,gallery_view,MP4,419430400,2026-05-16T20:01:00Z,2026-05-16T20:39:00Z,https://zoom.us/rec/play/ccc331,completed

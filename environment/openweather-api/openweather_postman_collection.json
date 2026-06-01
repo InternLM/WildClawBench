@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "OpenWeather Mock API",
+    "description": "Test collection for the mock OpenWeather API service. Base URL defaults to http://localhost:8035. In docker-compose, the service is reachable at http://openweather-api:8035.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8035"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "current weather by city", "request": {"method": "GET", "url": "{{baseUrl}}/data/2.5/weather?q=London"}},
+    {"name": "current weather by coords", "request": {"method": "GET", "url": "{{baseUrl}}/data/2.5/weather?lat=40.7143&lon=-74.0060"}},
+    {"name": "forecast", "request": {"method": "GET", "url": "{{baseUrl}}/data/2.5/forecast?q=Tokyo"}},
+    {"name": "geocode direct", "request": {"method": "GET", "url": "{{baseUrl}}/geo/1.0/direct?q=Paris&limit=5"}}
+  ]
+}

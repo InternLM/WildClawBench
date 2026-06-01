@@ -1,0 +1,8 @@
+id,type,name,description,category,variation_id,variation_name,price_amount,currency
+ITEM_LATTE,ITEM,Caffe Latte,Espresso with steamed milk,Drinks,VAR_LATTE_R,Regular,450,USD
+ITEM_COLDBREW,ITEM,Cold Brew,Slow-steeped cold brew coffee,Drinks,VAR_COLDBREW_R,Regular,500,USD
+ITEM_CROISSANT,ITEM,Butter Croissant,Flaky all-butter croissant,Bakery,VAR_CROISSANT_R,Regular,375,USD
+ITEM_BAGEL,ITEM,Sesame Bagel,Hand-rolled sesame bagel,Bakery,VAR_BAGEL_R,Regular,300,USD
+ITEM_MUG,ITEM,Ceramic Mug,Branded 12oz ceramic mug,Merch,VAR_MUG_R,Standard,1200,USD
+ITEM_BEANS,ITEM,House Blend Beans,Whole bean coffee 12oz bag,Merch,VAR_BEANS_12,12oz,1600,USD
+ITEM_TEA,ITEM,Loose Leaf Tea,Single-origin loose leaf tea tin,Drinks,VAR_TEA_TIN,Tin,900,USD

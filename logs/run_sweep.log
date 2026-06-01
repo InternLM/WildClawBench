@@ -1,0 +1,136 @@
+22:07:19 [INFO] Network k3net-90f5bbcb2b2b created
+22:07:19 [INFO] [ll-90f5bbcb2b2b] Starting LiteLLM sidecar on network k3net-90f5bbcb2b2b
+22:07:34 [INFO] [ll-90f5bbcb2b2b] LiteLLM healthy
+22:07:34 [INFO] LiteLLM sidecar ll-90f5bbcb2b2b ready on network k3net-90f5bbcb2b2b
+22:07:34 [INFO] Mock image kensei3-mocks:v1 already built
+22:07:34 [INFO] [mocks-90f5bbcb2b2b] mock-stack container started
+22:08:07 [INFO] [mocks-90f5bbcb2b2b] mock-stack healthy
+22:08:07 [INFO] Mock stack mocks-90f5bbcb2b2b ready (101 service URLs)
+22:08:07 [INFO] Single task mode: all-api-sweep__wildclaw (format=native)
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ACTIVECAMPAIGN_API_URL=http://mocks-90f5bbcb2b2b:8101
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: AIRBNB_API_URL=http://mocks-90f5bbcb2b2b:8038
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: AIRTABLE_API_URL=http://mocks-90f5bbcb2b2b:8032
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ALGOLIA_API_URL=http://mocks-90f5bbcb2b2b:8067
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ALPACA_API_URL=http://mocks-90f5bbcb2b2b:8043
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: AMADEUS_API_URL=http://mocks-90f5bbcb2b2b:8076
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: AMAZON_SELLER_API_URL=http://mocks-90f5bbcb2b2b:8000
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: AMPLITUDE_API_URL=http://mocks-90f5bbcb2b2b:8091
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ASANA_API_URL=http://mocks-90f5bbcb2b2b:8031
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: BAMBOOHR_API_URL=http://mocks-90f5bbcb2b2b:8072
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: BIGCOMMERCE_API_URL=http://mocks-90f5bbcb2b2b:8084
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: BINANCE_API_URL=http://mocks-90f5bbcb2b2b:8097
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: BOX_API_URL=http://mocks-90f5bbcb2b2b:8083
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: CALENDLY_API_URL=http://mocks-90f5bbcb2b2b:8054
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: CLOUDFLARE_API_URL=http://mocks-90f5bbcb2b2b:8050
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: COINBASE_API_URL=http://mocks-90f5bbcb2b2b:8023
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: CONFLUENCE_API_URL=http://mocks-90f5bbcb2b2b:8045
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: CONTENTFUL_API_URL=http://mocks-90f5bbcb2b2b:8066
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: DATADOG_API_URL=http://mocks-90f5bbcb2b2b:8048
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: DISCORD_API_URL=http://mocks-90f5bbcb2b2b:8057
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: DOCUSIGN_API_URL=http://mocks-90f5bbcb2b2b:8053
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: DOORDASH_API_URL=http://mocks-90f5bbcb2b2b:8037
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: DROPBOX_API_URL=http://mocks-90f5bbcb2b2b:8082
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ETSY_API_URL=http://mocks-90f5bbcb2b2b:8001
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: EVENTBRITE_API_URL=http://mocks-90f5bbcb2b2b:8020
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: FEDEX_API_URL=http://mocks-90f5bbcb2b2b:8095
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: FIGMA_API_URL=http://mocks-90f5bbcb2b2b:8079
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: FRESHDESK_API_URL=http://mocks-90f5bbcb2b2b:8093
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GITHUB_API_URL=http://mocks-90f5bbcb2b2b:8019
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GITLAB_API_URL=http://mocks-90f5bbcb2b2b:8046
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GMAIL_API_URL=http://mocks-90f5bbcb2b2b:8017
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GOOGLE_ANALYTICS_API_URL=http://mocks-90f5bbcb2b2b:8068
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GOOGLE_CALENDAR_API_URL=http://mocks-90f5bbcb2b2b:8016
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GOOGLE_CLASSROOM_API_URL=http://mocks-90f5bbcb2b2b:8002
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GOOGLE_DRIVE_API_URL=http://mocks-90f5bbcb2b2b:8018
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GOOGLE_MAPS_API_URL=http://mocks-90f5bbcb2b2b:8033
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GREENHOUSE_API_URL=http://mocks-90f5bbcb2b2b:8073
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: GUSTO_API_URL=http://mocks-90f5bbcb2b2b:8074
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: HUBSPOT_API_URL=http://mocks-90f5bbcb2b2b:8024
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: INSTACART_API_URL=http://mocks-90f5bbcb2b2b:8012
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: INSTAGRAM_API_URL=http://mocks-90f5bbcb2b2b:8003
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: INTERCOM_API_URL=http://mocks-90f5bbcb2b2b:8070
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: JIRA_API_URL=http://mocks-90f5bbcb2b2b:8029
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: KLAVIYO_API_URL=http://mocks-90f5bbcb2b2b:8089
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: KRAKEN_API_URL=http://mocks-90f5bbcb2b2b:8098
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: KUBERNETES_API_URL=http://mocks-90f5bbcb2b2b:8051
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: LINEAR_API_URL=http://mocks-90f5bbcb2b2b:8004
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: LINKEDIN_API_URL=http://mocks-90f5bbcb2b2b:8062
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: MAILCHIMP_API_URL=http://mocks-90f5bbcb2b2b:8081
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: MAILGUN_API_URL=http://mocks-90f5bbcb2b2b:8094
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: MICROSOFT_TEAMS_API_URL=http://mocks-90f5bbcb2b2b:8086
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: MIXPANEL_API_URL=http://mocks-90f5bbcb2b2b:8056
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: MONDAY_API_URL=http://mocks-90f5bbcb2b2b:8080
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: MYFITNESSPAL_API_URL=http://mocks-90f5bbcb2b2b:8005
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: NASA_API_URL=http://mocks-90f5bbcb2b2b:8077
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: NOTION_API_URL=http://mocks-90f5bbcb2b2b:8010
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: OBSIDIAN_API_URL=http://mocks-90f5bbcb2b2b:8014
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: OKTA_API_URL=http://mocks-90f5bbcb2b2b:8049
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: OPENLIBRARY_API_URL=http://mocks-90f5bbcb2b2b:8078
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: OPENWEATHER_API_URL=http://mocks-90f5bbcb2b2b:8035
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: OUTLOOK_API_URL=http://mocks-90f5bbcb2b2b:8087
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: PAGERDUTY_API_URL=http://mocks-90f5bbcb2b2b:8040
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: PAYPAL_API_URL=http://mocks-90f5bbcb2b2b:8042
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: PINTEREST_API_URL=http://mocks-90f5bbcb2b2b:8006
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: PLAID_API_URL=http://mocks-90f5bbcb2b2b:8022
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: POSTHOG_API_URL=http://mocks-90f5bbcb2b2b:8092
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: QUICKBOOKS_API_URL=http://mocks-90f5bbcb2b2b:8007
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: REDDIT_API_URL=http://mocks-90f5bbcb2b2b:8058
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: RING_API_URL=http://mocks-90f5bbcb2b2b:8008
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SALESFORCE_API_URL=http://mocks-90f5bbcb2b2b:8044
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SEGMENT_API_URL=http://mocks-90f5bbcb2b2b:8090
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SENDGRID_API_URL=http://mocks-90f5bbcb2b2b:8027
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SENTRY_API_URL=http://mocks-90f5bbcb2b2b:8047
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SERVICENOW_API_URL=http://mocks-90f5bbcb2b2b:8071
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SHIPPO_API_URL=http://mocks-90f5bbcb2b2b:8052
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SLACK_API_URL=http://mocks-90f5bbcb2b2b:8013
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SPOTIFY_API_URL=http://mocks-90f5bbcb2b2b:8039
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: SQUARE_API_URL=http://mocks-90f5bbcb2b2b:8041
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: STRAVA_API_URL=http://mocks-90f5bbcb2b2b:8060
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: STRIPE_API_URL=http://mocks-90f5bbcb2b2b:8021
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TELEGRAM_API_URL=http://mocks-90f5bbcb2b2b:8063
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TICKETMASTER_API_URL=http://mocks-90f5bbcb2b2b:8075
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TMDB_API_URL=http://mocks-90f5bbcb2b2b:8059
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TRELLO_API_URL=http://mocks-90f5bbcb2b2b:8030
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TWILIO_API_URL=http://mocks-90f5bbcb2b2b:8026
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TWITCH_API_URL=http://mocks-90f5bbcb2b2b:8064
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TWITTER_API_URL=http://mocks-90f5bbcb2b2b:8061
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: TYPEFORM_API_URL=http://mocks-90f5bbcb2b2b:8055
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: UBER_API_URL=http://mocks-90f5bbcb2b2b:8036
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: UPS_API_URL=http://mocks-90f5bbcb2b2b:8096
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: VIMEO_API_URL=http://mocks-90f5bbcb2b2b:8099
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: WEBFLOW_API_URL=http://mocks-90f5bbcb2b2b:8100
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: WHATSAPP_API_URL=http://mocks-90f5bbcb2b2b:8015
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: WOOCOMMERCE_API_URL=http://mocks-90f5bbcb2b2b:8085
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: WORDPRESS_API_URL=http://mocks-90f5bbcb2b2b:8065
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: XERO_API_URL=http://mocks-90f5bbcb2b2b:8088
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: YELP_API_URL=http://mocks-90f5bbcb2b2b:8034
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: YOUTUBE_API_URL=http://mocks-90f5bbcb2b2b:8009
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ZENDESK_API_URL=http://mocks-90f5bbcb2b2b:8025
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ZILLOW_API_URL=http://mocks-90f5bbcb2b2b:8011
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injecting extra env: ZOOM_API_URL=http://mocks-90f5bbcb2b2b:8028
+22:08:07 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Starting container, mounting /Users/apple/Desktop/WildClaw/Wildclow_forked_image/work/all-api-sweep__wildclaw/exec → /app (ro)
+22:08:08 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Container ID: 18f08ee7fb87
+22:08:08 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Lobster workspace copied: input/all-api-sweep__wildclaw/persona → /root/
+22:08:18 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Memory indexed: Memory index updated (main).
+22:08:18 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Copying /app → /tmp_workspace
+22:08:18 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Setting thinkingDefault to high
+22:08:27 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Injected API connectors: instagram-api,myfitnesspal-api
+22:08:27 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Model set in openclaw.json: litellm/claude-opus-4.7
+22:08:27 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] imageModel already set via _set_model (litellm mode)
+22:08:27 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Started process PID=51921 → /Users/apple/Desktop/WildClaw/Wildclow_forked_image/output/openclaw/all-api-sweep__wildclaw/trajectories/claude/run_1/gateway.log
+22:08:27 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Waiting for gateway (2s)...
+22:08:29 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Started process PID=51928 → /Users/apple/Desktop/WildClaw/Wildclow_forked_image/output/openclaw/all-api-sweep__wildclaw/trajectories/claude/run_1/agent.log
+22:08:29 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Waiting for agent to finish...
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Agent finished (82.06s)
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Agent exit code: 0
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] No Automated Checks, skipping grading
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Token usage - input:6598 output:344 cache_read:0 total:6942 cost:$0.0416
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Usage written to /Users/apple/Desktop/WildClaw/Wildclow_forked_image/output/openclaw/all-api-sweep__wildclaw/trajectories/claude/run_1/usage.json
+22:09:51 [INFO] [THINKING-DEBUG] sanitize BEFORE: role=assistant thinking_blocks=1 first_thinking_len=86 has_signature=True
+22:09:51 [INFO] [THINKING-DEBUG] sanitize AFTER: role=assistant thinking_blocks=1 first_thinking_len=86 has_signature=True
+22:09:51 [INFO] [THINKING-DEBUG] build_trajectory task=all-api-sweep__wildclaw thinking_blocks=1 samples=[{'len': 86, 'has_signature': True}]
+22:09:51 [INFO] [all-api-sweep__wildclaw] Trajectory written: /Users/apple/Desktop/WildClaw/Wildclow_forked_image/output/openclaw/all-api-sweep__wildclaw/trajectories/claude/run_1/output.json (thinking_blocks=1)
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Collected container directory /tmp/openclaw/. → /Users/apple/Desktop/WildClaw/Wildclow_forked_image/output/openclaw/all-api-sweep__wildclaw/trajectories/claude/run_1/task_output
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Collected container directory /tmp_workspace/results/. → /Users/apple/Desktop/WildClaw/Wildclow_forked_image/output/openclaw/all-api-sweep__wildclaw/trajectories/claude/run_1/task_output/workspace/results
+22:09:51 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Collected container directory /tmp_workspace/. → /Users/apple/Desktop/WildClaw/Wildclow_forked_image/output/openclaw/all-api-sweep__wildclaw/trajectories/claude/run_1/task_output/workspace_full
+22:09:52 [INFO] [all-api-sweep__wildclaw_claude-opus-4.7_20260530_2208_8359cd] Container cleaned up

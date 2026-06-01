@@ -1,0 +1,11 @@
+id,project_id,distinct_id,event,timestamp,properties
+evt_30001,1,user_3001,$pageview,2026-05-02T09:00:00Z,$current_url=/dashboard
+evt_30002,1,user_3001,button_clicked,2026-05-02T09:02:11Z,name=export;plan=pro
+evt_30003,1,user_3002,$pageview,2026-05-03T12:14:40Z,$current_url=/settings
+evt_30004,1,user_3003,signup,2026-05-04T08:31:05Z,source=referral
+evt_30005,1,user_3002,feature_flag_called,2026-05-05T10:45:22Z,flag=new-onboarding
+evt_30006,1,user_3004,$pageview,2026-05-06T15:09:18Z,$current_url=/pricing
+evt_30007,1,user_3003,purchase,2026-05-07T11:55:47Z,amount=49.00;currency=USD
+evt_30008,2,user_3005,$pageview,2026-05-08T07:22:33Z,$current_url=/home
+evt_30009,2,user_3005,form_submitted,2026-05-09T14:38:51Z,form=contact
+evt_30010,1,user_3001,purchase,2026-05-10T18:01:29Z,amount=120.00;currency=USD

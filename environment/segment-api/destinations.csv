@@ -1,0 +1,7 @@
+id,name,slug,enabled,source_id,created_at
+dst_ga4001,Google Analytics 4,google-analytics-4,true,src_web01,2026-04-13T09:00:00Z
+dst_ampl01,Amplitude,amplitude,true,src_web01,2026-04-13T10:00:00Z
+dst_bq001,BigQuery Warehouse,bigquery,true,src_srv01,2026-04-19T09:00:00Z
+dst_slk001,Slack Alerts,slack,true,src_srv01,2026-04-20T09:00:00Z
+dst_mkt001,Mixpanel,mixpanel,false,src_ios01,2026-04-15T09:00:00Z
+dst_fb001,Facebook Conversions,facebook-conversions,true,src_web01,2026-04-21T09:00:00Z

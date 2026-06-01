@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Vimeo Mock API",
+    "description": "Test collection for the mock Vimeo API service (me, videos, users). Base URL defaults to http://localhost:8099. In docker-compose, the service is reachable at http://vimeo-api:8099.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8099"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "me", "request": {"method": "GET", "url": "{{baseUrl}}/me"}},
+    {"name": "my videos", "request": {"method": "GET", "url": "{{baseUrl}}/me/videos?page=1&per_page=25"}},
+    {"name": "video by id", "request": {"method": "GET", "url": "{{baseUrl}}/videos/901000103"}},
+    {"name": "video not found", "request": {"method": "GET", "url": "{{baseUrl}}/videos/999999999"}},
+    {"name": "user by id", "request": {"method": "GET", "url": "{{baseUrl}}/users/12000002"}},
+    {"name": "user videos", "request": {"method": "GET", "url": "{{baseUrl}}/users/12000004/videos?page=1&per_page=25"}}
+  ]
+}

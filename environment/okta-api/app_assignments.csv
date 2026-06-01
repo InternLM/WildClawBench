@@ -1,0 +1,7 @@
+app_id,user_id,scope
+0oa1github,00u1amelia,USER
+0oa1github,00u2jonas,USER
+0oa2slack,00u1amelia,USER
+0oa2slack,00u3helena,USER
+0oa3aws,00u1amelia,USER
+0oa4datadog,00u3helena,USER

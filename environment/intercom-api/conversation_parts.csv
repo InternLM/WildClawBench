@@ -1,0 +1,10 @@
+id,conversation_id,part_type,author_type,author_id,body,created_at
+part-1,conv-1001,comment,user,contact-mara,The CSV export button does nothing when I click it.,2026-05-20T09:00:00.000Z
+part-2,conv-1001,comment,admin,admin-jonas,Thanks for flagging. Which browser are you using?,2026-05-20T10:30:00.000Z
+part-3,conv-1001,comment,user,contact-mara,I am on the latest Chrome on macOS.,2026-05-25T14:00:00.000Z
+part-4,conv-1002,comment,user,contact-ethan,Why was I charged twice this month?,2026-05-15T10:00:00.000Z
+part-5,conv-1002,comment,admin,admin-helena,One charge was a proration for your upgrade; I have refunded the duplicate.,2026-05-16T09:00:00.000Z
+part-6,conv-1002,close,admin,admin-helena,,2026-05-18T11:00:00.000Z
+part-7,conv-1003,comment,user,contact-grace,We need SAML SSO for our team of 30.,2026-05-22T13:00:00.000Z
+part-8,conv-1004,comment,user,contact-yara,Could we get two more weeks on the trial?,2026-05-10T08:00:00.000Z
+part-9,conv-1004,close,admin,admin-helena,,2026-05-12T09:00:00.000Z

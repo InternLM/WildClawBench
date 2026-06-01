@@ -1,0 +1,6 @@
+tracking_number,status_code,status_description,carrier_code,service_name,ship_date,estimated_delivery,latest_event,latest_event_location,latest_event_time
+794612035840,DL,Delivered,FDXG,FedEx Ground,2026-05-20,2026-05-24,Delivered,"New York, NY",2026-05-24T13:42:00Z
+794612035851,IT,In transit,FDXE,FedEx 2Day,2026-05-21,2026-05-23,Departed FedEx hub,"Memphis, TN",2026-05-22T03:15:00Z
+794612035862,OD,Out for delivery,FDXE,FedEx Priority Overnight,2026-05-22,2026-05-23,On FedEx vehicle for delivery,"New York, NY",2026-05-23T07:05:00Z
+794612035873,PU,Picked up,FDXG,FedEx Express Saver,2026-05-23,2026-05-28,Picked up,"Memphis, TN",2026-05-23T17:30:00Z
+794612035884,DL,Delivered,FDXE,FedEx Standard Overnight,2026-05-24,2026-05-25,Delivered,"New York, NY",2026-05-25T09:18:00Z

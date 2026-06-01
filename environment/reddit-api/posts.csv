@@ -1,0 +1,7 @@
+id,subreddit,title,author,url,selftext,score,num_comments,created_utc,is_self
+t3_p001,programming,Why I switched from REST to gRPC for internal services,devkat,https://example.com/grpc-post,,1820,3,1716800000,false
+t3_p002,programming,Ask: how do you structure a monorepo for 30 microservices?,buildbot,,Looking for real-world layouts and tooling that scaled past 30 services.,640,2,1716810000,true
+t3_p003,homelab,My quiet 8-bay NAS build for under 600 dollars,rackmonkey,https://example.com/nas-build,,2310,2,1716700000,false
+t3_p004,homelab,PSA: label your cables before you regret it,cablechaos,,A cautionary tale about an unlabeled patch panel and a long debugging night.,990,1,1716720000,true
+t3_p005,gardening,First tomato harvest from my balcony containers,leafyleo,https://example.com/tomatoes,,1450,2,1716650000,false
+t3_p006,gardening,Identify this volunteer sprout in my raised bed?,sprouthunter,,It came up on its own and I have no idea what it is. Photos in comments.,210,1,1716660000,true

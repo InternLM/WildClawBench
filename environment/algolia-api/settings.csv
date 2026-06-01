@@ -1,0 +1,3 @@
+index,searchableAttributes,attributesForFaceting,hitsPerPage,ranking
+products,"name,description,brand,category","category,brand,in_stock",20,"typo,geo,words,proximity,attribute,exact,custom"
+docs,"title,body,section,tags","section,tags",20,"typo,geo,words,proximity,attribute,exact,custom"

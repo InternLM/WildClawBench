@@ -1,0 +1,11 @@
+[service]
+name = "myfitnesspal-api"
+port = 8005
+env_var_name = "MYFITNESSPAL_API_URL"
+healthcheck_path = "/health"
+
+[k8s]
+image = ""
+cpu_request = "25m"
+memory_request = "128Mi"
+memory_limit = "256Mi"

@@ -1,0 +1,9 @@
+id,first_name,last_name,email,phone,company,title,source,created_at
+cand-7001,Maya,Robinson,maya.robinson@example.com,+1-415-555-0101,Northwind,Backend Engineer,LinkedIn,2026-04-02T10:00:00Z
+cand-7002,Liam,Chen,liam.chen@example.com,+1-415-555-0102,Acme Corp,Frontend Engineer,Referral,2026-04-05T11:30:00Z
+cand-7003,Sara,Okafor,sara.okafor@example.com,+1-415-555-0103,Globex,Product Designer,Company Website,2026-04-09T09:15:00Z
+cand-7004,Daniel,Murphy,daniel.murphy@example.com,+1-415-555-0104,Initech,Data Scientist,LinkedIn,2026-04-12T14:45:00Z
+cand-7005,Elena,Vargas,elena.vargas@example.com,+1-415-555-0105,Hooli,Backend Engineer,Recruiter,2026-04-15T08:20:00Z
+cand-7006,Omar,Haddad,omar.haddad@example.com,+1-415-555-0106,Umbrella,DevOps Engineer,Referral,2026-04-18T16:00:00Z
+cand-7007,Grace,Lindholm,grace.lindholm@example.com,+1-415-555-0107,Stark Industries,Product Designer,Company Website,2026-04-22T13:10:00Z
+cand-7008,Noah,Adeyemi,noah.adeyemi@example.com,+1-415-555-0108,Wayne Enterprises,Engineering Manager,LinkedIn,2026-04-26T10:40:00Z

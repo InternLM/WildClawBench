@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "GitLab Mock API v4",
+    "description": "Test collection for the mock GitLab API service. Base URL defaults to http://localhost:8046. In docker-compose, the service is reachable at http://gitlab-api:8046.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8046"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get current user", "request": {"method": "GET", "url": "{{baseUrl}}/api/v4/user"}},
+    {"name": "list projects", "request": {"method": "GET", "url": "{{baseUrl}}/api/v4/projects"}},
+    {"name": "get project", "request": {"method": "GET", "url": "{{baseUrl}}/api/v4/projects/101"}},
+    {"name": "list issues", "request": {"method": "GET", "url": "{{baseUrl}}/api/v4/projects/101/issues?state=opened"}},
+    {"name": "get issue", "request": {"method": "GET", "url": "{{baseUrl}}/api/v4/projects/101/issues/1"}},
+    {"name": "create issue", "request": {"method": "POST", "url": "{{baseUrl}}/api/v4/projects/101/issues",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"Add rate limiting to token endpoint\", \"description\": \"Protect /token from brute force.\", \"assignee\": \"helena-park\", \"labels\": [\"security\"]}"}}},
+    {"name": "update issue (close)", "request": {"method": "PUT", "url": "{{baseUrl}}/api/v4/projects/101/issues/2",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"state_event\": \"close\"}"}}},
+    {"name": "list merge requests", "request": {"method": "GET", "url": "{{baseUrl}}/api/v4/projects/101/merge_requests?state=opened"}},
+    {"name": "create merge request", "request": {"method": "POST", "url": "{{baseUrl}}/api/v4/projects/101/merge_requests",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"Add token rate limiter\", \"source_branch\": \"feature/token-rate-limit\", \"target_branch\": \"main\"}"}}},
+    {"name": "merge merge request", "request": {"method": "PUT", "url": "{{baseUrl}}/api/v4/projects/101/merge_requests/1/merge"}},
+    {"name": "list pipelines", "request": {"method": "GET", "url": "{{baseUrl}}/api/v4/projects/101/pipelines"}}
+  ]
+}

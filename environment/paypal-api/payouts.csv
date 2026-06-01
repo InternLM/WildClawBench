@@ -1,0 +1,3 @@
+payout_batch_id,sender_batch_id,status,amount_value,currency_code,recipient_email,create_time
+PAYOUT-BATCH-001,Payouts_2026_05_01,SUCCESS,500.00,USD,partner@orbit-labs.com,2026-05-01T12:00:00Z
+PAYOUT-BATCH-002,Payouts_2026_05_15,PENDING,275.50,USD,affiliate@orbit-labs.com,2026-05-15T12:00:00Z

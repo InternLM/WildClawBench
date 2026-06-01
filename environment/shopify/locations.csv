@@ -1,0 +1,4 @@
+id,name,address1,city,province,country,active
+loc-oakland,Oakland Warehouse,2200 7th St,Oakland,CA,US,true
+loc-sf-store,SF Hayes Valley Store,488 Hayes St,San Francisco,CA,US,true
+loc-3pl-tx,3PL — Texas,1455 Commerce St,Dallas,TX,US,true

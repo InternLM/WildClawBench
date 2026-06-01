@@ -1,0 +1,11 @@
+id,name,classification_id,venue_id,attraction_id,start_datetime,status,price_min,price_max,currency
+evt-1001,The Midnight Echoes Live,cls-music-rock,ven-001,att-001,2026-07-12T20:00:00Z,onsale,55.00,180.00,USD
+evt-1002,Aria Sloane World Tour,cls-music-pop,ven-002,att-002,2026-08-03T19:30:00Z,onsale,75.00,250.00,USD
+evt-1003,Blue Note Collective Evening,cls-music-jazz,ven-006,att-003,2026-06-21T21:00:00Z,onsale,40.00,95.00,USD
+evt-1004,Metro City Hoops vs Bay United Classic,cls-sports-basketball,ven-001,att-004,2026-06-15T18:00:00Z,onsale,30.00,400.00,USD
+evt-1005,Bay United FC Home Match,cls-sports-soccer,ven-002,att-005,2026-07-05T16:00:00Z,onsale,25.00,150.00,USD
+evt-1006,Starlight Musical Premiere,cls-arts-theatre,ven-003,att-006,2026-09-10T19:00:00Z,onsale,60.00,200.00,USD
+evt-1007,Danny Vega Comedy Special,cls-arts-comedy,ven-005,att-007,2026-06-28T20:30:00Z,onsale,45.00,120.00,USD
+evt-1008,The Midnight Echoes Acoustic Night,cls-music-rock,ven-005,att-001,2026-10-02T20:00:00Z,onsale,50.00,140.00,USD
+evt-1009,Metro City Hoops Playoff Game,cls-sports-basketball,ven-004,att-004,2026-06-22T19:00:00Z,onsale,80.00,650.00,USD
+evt-1010,Aria Sloane Intimate Session,cls-music-pop,ven-006,att-002,2026-11-14T20:00:00Z,offsale,90.00,300.00,USD

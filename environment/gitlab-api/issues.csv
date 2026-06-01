@@ -1,0 +1,8 @@
+id,iid,project_id,title,description,state,author,assignee,labels,created_at,updated_at,closed_at
+5001,1,101,Refresh-token rotation latency spike,"Refresh-token issuance p95 latency spikes past 600ms during load tests; suspected lock contention.",opened,helena-park,jonas-pereira,bug;perf,2026-05-22T11:00:00.000Z,2026-05-26T09:00:00.000Z,
+5002,2,101,Add queue-depth metric for dual-writer,"Need a gauge for the dual-writer queue depth so we can alert when it grows.",opened,amelia-ortega,helena-park,enhancement,2026-05-20T10:00:00.000Z,2026-05-23T16:00:00.000Z,
+5003,3,101,Document session-store failover,"Runbook for failing over the session store between regions.",closed,jonas-pereira,jonas-pereira,documentation,2026-04-10T09:00:00.000Z,2026-05-02T14:00:00.000Z,2026-05-02T14:00:00.000Z
+5010,1,102,gRPC retry config missing for UNAVAILABLE,"Java gRPC client does not retry on UNAVAILABLE; we drop calls during deploys.",opened,jonas-pereira,jonas-pereira,bug,2026-05-12T13:00:00.000Z,2026-05-25T11:00:00.000Z,
+5011,2,102,Backfill invoice tax fields,"One-off migration to backfill tax fields on historical invoices.",closed,amelia-ortega,amelia-ortega,migration,2026-03-15T10:00:00.000Z,2026-04-01T12:00:00.000Z,2026-04-01T12:00:00.000Z
+5020,1,103,Settings page crashes on Safari 17,"TypeError in profile-avatar hook reproduced on Safari 17.4.",opened,noor-aziz,rohit-bansal,bug,2026-05-25T08:00:00.000Z,2026-05-26T07:30:00.000Z,
+5021,2,103,Dark-mode contrast audit,"Audit color contrast ratios for the new dark theme.",closed,noor-aziz,noor-aziz,a11y,2026-02-20T10:00:00.000Z,2026-03-05T16:00:00.000Z,2026-03-05T16:00:00.000Z

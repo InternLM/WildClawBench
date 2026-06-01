@@ -1,0 +1,31 @@
+transaction_id,account_id,amount,iso_currency_code,date,name,merchant_name,category,pending,payment_channel
+txn_0001,acc_chk_001,3200.00,USD,2026-04-01,Direct Deposit Payroll,Helix Robotics,Transfer;Payroll,false,other
+txn_0002,acc_chk_001,1450.00,USD,2026-04-02,Rent Payment,Pinecrest Property Mgmt,Payment;Rent,false,online
+txn_0003,acc_chk_001,86.43,USD,2026-04-03,Whole Foods Market,Whole Foods,Food and Drink;Groceries,false,in store
+txn_0004,acc_chk_001,12.50,USD,2026-04-04,Blue Bottle Coffee,Blue Bottle,Food and Drink;Coffee Shop,false,in store
+txn_0005,acc_crd_003,54.99,USD,2026-04-05,Amazon Marketplace,Amazon,Shops;Online Marketplaces,false,online
+txn_0006,acc_chk_001,40.00,USD,2026-04-06,Shell Gas Station,Shell,Travel;Gas Stations,false,in store
+txn_0007,acc_crd_003,118.20,USD,2026-04-07,Costco Wholesale,Costco,Shops;Warehouses,false,in store
+txn_0008,acc_chk_001,9.99,USD,2026-04-08,Netflix Subscription,Netflix,Service;Subscription,false,online
+txn_0009,acc_chk_001,25.00,USD,2026-04-09,Uber Trip,Uber,Travel;Ride Share,false,online
+txn_0010,acc_crd_003,210.75,USD,2026-04-10,Best Buy,Best Buy,Shops;Electronics,false,in store
+txn_0011,acc_chk_001,500.00,USD,2026-04-11,Transfer to Savings,Cascade Federal Bank,Transfer;Internal,false,other
+txn_0012,acc_sav_002,500.00,USD,2026-04-11,Transfer from Checking,Cascade Federal Bank,Transfer;Internal,false,other
+txn_0013,acc_chk_001,62.30,USD,2026-04-12,Trader Joes,Trader Joes,Food and Drink;Groceries,false,in store
+txn_0014,acc_crd_003,15.49,USD,2026-04-13,Spotify Premium,Spotify,Service;Subscription,false,online
+txn_0015,acc_chk_001,33.10,USD,2026-04-14,Chipotle,Chipotle,Food and Drink;Restaurants,false,in store
+txn_0016,acc_crd_003,89.00,USD,2026-04-15,Nike Store,Nike,Shops;Clothing,false,in store
+txn_0017,acc_chk_001,450.00,USD,2026-04-16,Auto Loan Payment,Cascade Federal Bank,Payment;Loan,false,online
+txn_0018,acc_chk_001,72.84,USD,2026-04-17,PG&E Utility,PG&E,Service;Utilities,false,online
+txn_0019,acc_crd_003,27.40,USD,2026-04-18,Walgreens,Walgreens,Shops;Pharmacies,false,in store
+txn_0020,acc_chk_001,18.00,USD,2026-04-19,Lyft Ride,Lyft,Travel;Ride Share,false,online
+txn_0021,acc_chk_001,3200.00,USD,2026-04-20,Direct Deposit Payroll,Helix Robotics,Transfer;Payroll,false,other
+txn_0022,acc_crd_003,64.12,USD,2026-04-21,Target,Target,Shops;Department Stores,false,in store
+txn_0023,acc_chk_001,11.25,USD,2026-04-22,Starbucks,Starbucks,Food and Drink;Coffee Shop,false,in store
+txn_0024,acc_chk_001,95.60,USD,2026-04-23,Safeway,Safeway,Food and Drink;Groceries,false,in store
+txn_0025,acc_crd_003,320.00,USD,2026-04-24,Delta Air Lines,Delta,Travel;Airlines,false,online
+txn_0026,acc_chk_001,14.99,USD,2026-04-25,iCloud Storage,Apple,Service;Subscription,false,online
+txn_0027,acc_chk_001,48.75,USD,2026-04-26,Olive Garden,Olive Garden,Food and Drink;Restaurants,false,in store
+txn_0028,acc_crd_003,72.00,USD,2026-04-27,Home Depot,Home Depot,Shops;Hardware,false,in store
+txn_0029,acc_chk_001,22.40,USD,2026-04-28,DoorDash,DoorDash,Food and Drink;Delivery,true,online
+txn_0030,acc_chk_001,9.99,USD,2026-04-29,Hulu Subscription,Hulu,Service;Subscription,true,online

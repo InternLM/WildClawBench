@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Shippo Mock API",
+    "description": "Test collection for the mock Shippo shipping API service. Base URL defaults to http://localhost:8052. In docker-compose, the service is reachable at http://shippo-api:8052.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8052"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "create address", "request": {"method": "POST", "url": "{{baseUrl}}/addresses",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Noor Aziz\", \"street1\": \"22 Greenway Dr\", \"city\": \"Seattle\", \"state\": \"WA\", \"zip\": \"98101\", \"country\": \"US\", \"is_residential\": true}"}}},
+    {"name": "get address", "request": {"method": "GET", "url": "{{baseUrl}}/addresses/addr-recv-01"}},
+    {"name": "create shipment", "request": {"method": "POST", "url": "{{baseUrl}}/shipments",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"address_from\": \"addr-sender-01\", \"address_to\": \"addr-recv-02\", \"parcels\": \"parcel-01\"}"}}},
+    {"name": "get shipment", "request": {"method": "GET", "url": "{{baseUrl}}/shipments/ship-1001"}},
+    {"name": "list shipment rates", "request": {"method": "GET", "url": "{{baseUrl}}/shipments/ship-1001/rates"}},
+    {"name": "buy label", "request": {"method": "POST", "url": "{{baseUrl}}/transactions",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"rate\": \"rate-ups-ground-01\", \"label_file_type\": \"PDF\"}"}}},
+    {"name": "get transaction", "request": {"method": "GET", "url": "{{baseUrl}}/transactions/txn-9001"}},
+    {"name": "track shipment", "request": {"method": "GET", "url": "{{baseUrl}}/tracks/USPS/9400111202555842761023"}}
+  ]
+}

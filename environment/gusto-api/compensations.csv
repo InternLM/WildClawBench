@@ -1,0 +1,9 @@
+id,employee_id,job_title,rate,payment_unit,flsa_status,effective_date
+gcomp-301,gemp-201,VP of Engineering,210000.00,Year,Exempt,2024-01-01
+gcomp-302,gemp-202,Staff Software Engineer,185000.00,Year,Exempt,2024-01-01
+gcomp-303,gemp-203,Senior Software Engineer,165000.00,Year,Exempt,2024-01-01
+gcomp-304,gemp-204,Software Engineer,140000.00,Year,Exempt,2024-09-19
+gcomp-305,gemp-205,People Operations Manager,120000.00,Year,Exempt,2024-01-01
+gcomp-306,gemp-206,Account Executive,95000.00,Year,Exempt,2024-01-01
+gcomp-307,gemp-207,Support Specialist,32.50,Hour,Nonexempt,2024-03-14
+gcomp-308,gemp-208,Recruiter,90000.00,Year,Exempt,2024-10-02

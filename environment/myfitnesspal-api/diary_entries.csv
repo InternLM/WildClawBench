@@ -1,0 +1,342 @@
+entry_id,date,meal,food_id,food_name,brand,serving_size,serving_unit,servings,calories,total_fat_g,saturated_fat_g,cholesterol_mg,sodium_mg,total_carbs_g,dietary_fiber_g,sugars_g,protein_g
+1,2025-03-30,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+2,2025-03-30,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+3,2025-03-30,Breakfast,5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),1,90,0,0,5,60,6,0,4,15
+4,2025-03-30,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+5,2025-03-30,Lunch,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+6,2025-03-30,Lunch,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+7,2025-03-30,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+8,2025-03-30,Dinner,9,Sweet Potato (baked),,1,medium (130g),1,103,0.1,0,0,41,24,3.8,7.4,2.3
+9,2025-03-30,Dinner,15,Baby Spinach,,2,cups (60g),1,14,0.2,0,0,47,2.2,1.3,0.3,1.7
+10,2025-03-30,Snacks,12,Almonds (raw),,1,oz (28g),1,164,14,1.1,0,0,6,3.5,1.2,6
+11,2025-03-30,Snacks,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+12,2025-03-31,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+13,2025-03-31,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+14,2025-03-31,Breakfast,11,Avocado,,0.5,medium,1,120,11,1.5,0,5,6,5,0.5,1.5
+15,2025-03-31,Lunch,32,Turkey Sandwich (whole wheat),,1,sandwich,1,350,8,2.5,45,890,42,5,6,24
+16,2025-03-31,Lunch,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+17,2025-03-31,Dinner,17,Ground Turkey (93% lean),,4,oz,1.5,255,13.5,3.8,120,120,0,0,0,31.5
+18,2025-03-31,Dinner,28,Spaghetti (whole wheat cooked),,1,cup,1,174,0.8,0.1,0,4,37,6.3,0.8,7.5
+19,2025-03-31,Dinner,29,Marinara Sauce,Rao's Homemade,0.5,cup (125g),1,80,5,0.5,0,390,7,2,5,1
+20,2025-03-31,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+21,2025-03-31,Snacks,40,String Cheese,Sargento,1,stick (28g),1,80,6,3.5,15,200,1,0,0,7
+22,2025-04-01,Breakfast,33,Protein Pancakes (homemade),,3,pancakes,1,320,8,2,95,480,32,3,6,30
+23,2025-04-01,Breakfast,38,Honey,,1,tbsp,1,64,0,0,0,1,17,0,17,0.1
+24,2025-04-01,Breakfast,39,Blueberries (fresh),,1,cup (148g),0.5,42,0.3,0,0,1,10.5,1.8,7.5,0.6
+25,2025-04-01,Lunch,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+26,2025-04-01,Dinner,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+27,2025-04-01,Dinner,42,Quinoa (cooked),,1,cup,1,222,3.6,0.4,0,13,39,5.2,1.6,8.1
+28,2025-04-01,Dinner,45,Steamed Vegetables (mixed),,1,cup,1,45,0.3,0.1,0,30,9,3.5,3.5,2.5
+29,2025-04-01,Snacks,22,Quest Protein Bar (Chocolate Chip Cookie Dough),Quest Nutrition,1,bar (60g),1,200,9,3.5,10,260,22,14,1,21
+30,2025-04-01,Snacks,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+31,2025-04-02,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+32,2025-04-02,Breakfast,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+33,2025-04-02,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+34,2025-04-02,Lunch,25,Canned Tuna (in water),StarKist,1,can (142g),1,191,1.4,0.4,60,558,0,0,0,42
+35,2025-04-02,Lunch,26,Mixed Greens Salad (no dressing),,2,cups,1,18,0.2,0,0,35,3.5,1.8,0.8,1.5
+36,2025-04-02,Lunch,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+37,2025-04-02,Dinner,35,Beef Stir Fry (homemade),,1.5,cups,1,380,15,4,75,780,22,4,8,35
+38,2025-04-02,Dinner,24,White Rice (cooked),,1,cup,1,206,0.4,0.1,0,2,45,0.6,0.1,4.3
+39,2025-04-02,Snacks,34,Trail Mix,,0.25,cup (35g),1,175,11,1.5,0,45,15,2,9,5
+40,2025-04-02,Snacks,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+41,2025-04-03,Breakfast,4,Large Egg,,1,large,3,216,15,4.8,558,213,1.2,0,0.6,18.9
+42,2025-04-03,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+43,2025-04-03,Breakfast,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+44,2025-04-03,Lunch,36,Lentil Soup (homemade),,1.5,cups,1,280,4,0.5,0,650,40,15,4,18
+45,2025-04-03,Lunch,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),1,110,1.5,0,0,170,22,5,5,5
+46,2025-04-03,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+47,2025-04-03,Dinner,2,Brown Rice (cooked),,1,cup,0.75,162,1.4,0.3,0,8,33.8,2.6,0.5,3.8
+48,2025-04-03,Dinner,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+49,2025-04-03,Snacks,5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),1,90,0,0,5,60,6,0,4,15
+50,2025-04-03,Snacks,39,Blueberries (fresh),,1,cup (148g),0.5,42,0.3,0,0,1,10.5,1.8,7.5,0.6
+51,2025-04-04,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+52,2025-04-04,Breakfast,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+53,2025-04-04,Breakfast,39,Blueberries (fresh),,1,cup (148g),1,84,0.5,0,0,1,21,3.6,15,1.1
+54,2025-04-04,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+55,2025-04-04,Lunch,26,Mixed Greens Salad (no dressing),,2,cups,1,18,0.2,0,0,35,3.5,1.8,0.8,1.5
+56,2025-04-04,Lunch,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+57,2025-04-04,Dinner,41,Grilled Shrimp,,4,oz,1.5,180,2.7,0.5,255,1208,1.5,0,0,34.5
+58,2025-04-04,Dinner,42,Quinoa (cooked),,1,cup,1,222,3.6,0.4,0,13,39,5.2,1.6,8.1
+59,2025-04-04,Dinner,45,Steamed Vegetables (mixed),,1,cup,1,45,0.3,0.1,0,30,9,3.5,3.5,2.5
+60,2025-04-04,Snacks,22,Quest Protein Bar (Chocolate Chip Cookie Dough),Quest Nutrition,1,bar (60g),1,200,9,3.5,10,260,22,14,1,21
+61,2025-04-05,Breakfast,33,Protein Pancakes (homemade),,3,pancakes,1,320,8,2,95,480,32,3,6,30
+62,2025-04-05,Breakfast,38,Honey,,1,tbsp,1,64,0,0,0,1,17,0,17,0.1
+63,2025-04-05,Lunch,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+64,2025-04-05,Dinner,43,Rotisserie Chicken Thigh (skin removed),,1,thigh (95g),2,340,16,4.6,190,150,0,0,0,46
+65,2025-04-05,Dinner,9,Sweet Potato (baked),,1,medium (130g),1,103,0.1,0,0,41,24,3.8,7.4,2.3
+66,2025-04-05,Dinner,15,Baby Spinach,,2,cups (60g),1,14,0.2,0,0,47,2.2,1.3,0.3,1.7
+67,2025-04-05,Snacks,44,Clif Bar (Chocolate Chip),Clif Bar,1,bar (68g),1,250,5,1.5,0,150,44,5,21,10
+68,2025-04-05,Snacks,14,Whole Milk,,1,cup,1,149,8,5,24,105,12,0,12,8
+69,2025-04-06,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+70,2025-04-06,Breakfast,30,Cheddar Cheese,,1,oz (28g),1,113,9.3,5.3,28,176,0.9,0,0.3,7
+71,2025-04-06,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+72,2025-04-06,Lunch,31,Greek Salad,,1,serving,1,220,16,6,25,580,8,2,4,8
+73,2025-04-06,Lunch,1,Grilled Chicken Breast,,4,oz,1,165,3.6,1.0,85,74,0,0,0,31
+74,2025-04-06,Dinner,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+75,2025-04-06,Snacks,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+76,2025-04-06,Snacks,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+77,2025-04-06,Snacks,14,Whole Milk,,1,cup,1,149,8,5,24,105,12,0,12,8
+78,2025-04-07,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+79,2025-04-07,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+80,2025-04-07,Breakfast,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+81,2025-04-07,Lunch,17,Ground Turkey (93% lean),,4,oz,1.5,255,13.5,3.8,120,120,0,0,0,31.5
+82,2025-04-07,Lunch,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+83,2025-04-07,Lunch,45,Steamed Vegetables (mixed),,1,cup,1,45,0.3,0.1,0,30,9,3.5,3.5,2.5
+84,2025-04-07,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+85,2025-04-07,Dinner,9,Sweet Potato (baked),,1,medium (130g),1,103,0.1,0,0,41,24,3.8,7.4,2.3
+86,2025-04-07,Snacks,12,Almonds (raw),,1,oz (28g),1,164,14,1.1,0,0,6,3.5,1.2,6
+87,2025-04-07,Snacks,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+88,2025-04-08,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+89,2025-04-08,Breakfast,11,Avocado,,0.5,medium,1,120,11,1.5,0,5,6,5,0.5,1.5
+90,2025-04-08,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),1,110,1.5,0,0,170,22,5,5,5
+91,2025-04-08,Lunch,25,Canned Tuna (in water),StarKist,1,can (142g),1,191,1.4,0.4,60,558,0,0,0,42
+92,2025-04-08,Lunch,26,Mixed Greens Salad (no dressing),,2,cups,1,18,0.2,0,0,35,3.5,1.8,0.8,1.5
+93,2025-04-08,Lunch,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+94,2025-04-08,Dinner,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+95,2025-04-08,Dinner,28,Spaghetti (whole wheat cooked),,1,cup,1,174,0.8,0.1,0,4,37,6.3,0.8,7.5
+96,2025-04-08,Dinner,29,Marinara Sauce,Rao's Homemade,0.5,cup (125g),1.5,120,7.5,0.8,0,585,10.5,3,7.5,1.5
+97,2025-04-08,Snacks,40,String Cheese,Sargento,1,stick (28g),2,160,12,7,30,400,2,0,0,14
+98,2025-04-08,Snacks,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+99,2025-04-09,Breakfast,5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),1,90,0,0,5,60,6,0,4,15
+100,2025-04-09,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+101,2025-04-09,Breakfast,38,Honey,,1,tbsp,1,64,0,0,0,1,17,0,17,0.1
+102,2025-04-09,Lunch,32,Turkey Sandwich (whole wheat),,1,sandwich,1,350,8,2.5,45,890,42,5,6,24
+103,2025-04-09,Lunch,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+104,2025-04-09,Dinner,35,Beef Stir Fry (homemade),,1.5,cups,1,380,15,4,75,780,22,4,8,35
+105,2025-04-09,Dinner,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+106,2025-04-09,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+107,2025-04-09,Snacks,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+108,2025-04-10,Breakfast,33,Protein Pancakes (homemade),,3,pancakes,1,320,8,2,95,480,32,3,6,30
+109,2025-04-10,Breakfast,39,Blueberries (fresh),,1,cup (148g),0.5,42,0.3,0,0,1,10.5,1.8,7.5,0.6
+110,2025-04-10,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+111,2025-04-10,Lunch,42,Quinoa (cooked),,1,cup,1,222,3.6,0.4,0,13,39,5.2,1.6,8.1
+112,2025-04-10,Lunch,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+113,2025-04-10,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+114,2025-04-10,Dinner,15,Baby Spinach,,2,cups (60g),2,28,0.4,0,0,94,4.4,2.6,0.6,3.4
+115,2025-04-10,Dinner,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+116,2025-04-10,Snacks,12,Almonds (raw),,1,oz (28g),1,164,14,1.1,0,0,6,3.5,1.2,6
+117,2025-04-11,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+118,2025-04-11,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+119,2025-04-11,Breakfast,11,Avocado,,0.5,medium,1,120,11,1.5,0,5,6,5,0.5,1.5
+120,2025-04-11,Lunch,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+121,2025-04-11,Dinner,17,Ground Turkey (93% lean),,4,oz,1.5,255,13.5,3.8,120,120,0,0,0,31.5
+122,2025-04-11,Dinner,9,Sweet Potato (baked),,1,medium (130g),1,103,0.1,0,0,41,24,3.8,7.4,2.3
+123,2025-04-11,Dinner,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+124,2025-04-11,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+125,2025-04-11,Snacks,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+126,2025-04-12,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+127,2025-04-12,Breakfast,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+128,2025-04-12,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+129,2025-04-12,Lunch,31,Greek Salad,,1,serving,1,220,16,6,25,580,8,2,4,8
+130,2025-04-12,Lunch,1,Grilled Chicken Breast,,4,oz,1,165,3.6,1.0,85,74,0,0,0,31
+131,2025-04-12,Dinner,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+132,2025-04-12,Dinner,14,Whole Milk,,1,cup,1,149,8,5,24,105,12,0,12,8
+133,2025-04-12,Snacks,44,Clif Bar (Chocolate Chip),Clif Bar,1,bar (68g),1,250,5,1.5,0,150,44,5,21,10
+134,2025-04-12,Snacks,34,Trail Mix,,0.25,cup (35g),2,350,22,3,0,90,30,4,18,10
+135,2025-04-13,Breakfast,33,Protein Pancakes (homemade),,3,pancakes,1,320,8,2,95,480,32,3,6,30
+136,2025-04-13,Breakfast,38,Honey,,1,tbsp,1,64,0,0,0,1,17,0,17,0.1
+137,2025-04-13,Breakfast,14,Whole Milk,,1,cup,1,149,8,5,24,105,12,0,12,8
+138,2025-04-13,Lunch,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+139,2025-04-13,Lunch,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+140,2025-04-13,Dinner,43,Rotisserie Chicken Thigh (skin removed),,1,thigh (95g),2,340,16,4.6,190,150,0,0,0,46
+141,2025-04-13,Dinner,24,White Rice (cooked),,1,cup,1.5,309,0.6,0.2,0,3,67.5,0.9,0.2,6.5
+142,2025-04-13,Dinner,45,Steamed Vegetables (mixed),,1,cup,1,45,0.3,0.1,0,30,9,3.5,3.5,2.5
+143,2025-04-13,Snacks,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+144,2025-04-13,Snacks,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+145,2025-04-14,Breakfast,4,Large Egg,,1,large,3,216,15,4.8,558,213,1.2,0,0.6,18.9
+146,2025-04-14,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+147,2025-04-14,Breakfast,30,Cheddar Cheese,,1,oz (28g),1,113,9.3,5.3,28,176,0.9,0,0.3,7
+148,2025-04-14,Lunch,36,Lentil Soup (homemade),,1.5,cups,1,280,4,0.5,0,650,40,15,4,18
+149,2025-04-14,Lunch,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),1,110,1.5,0,0,170,22,5,5,5
+150,2025-04-14,Dinner,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+151,2025-04-14,Dinner,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+152,2025-04-14,Dinner,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+153,2025-04-14,Snacks,5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),1,90,0,0,5,60,6,0,4,15
+154,2025-04-14,Snacks,39,Blueberries (fresh),,1,cup (148g),0.5,42,0.3,0,0,1,10.5,1.8,7.5,0.6
+155,2025-04-15,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+156,2025-04-15,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+157,2025-04-15,Breakfast,5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),1,90,0,0,5,60,6,0,4,15
+158,2025-04-15,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+159,2025-04-15,Lunch,15,Baby Spinach,,2,cups (60g),2,28,0.4,0,0,94,4.4,2.6,0.6,3.4
+160,2025-04-15,Lunch,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+161,2025-04-15,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+162,2025-04-15,Dinner,42,Quinoa (cooked),,1,cup,1,222,3.6,0.4,0,13,39,5.2,1.6,8.1
+163,2025-04-15,Dinner,45,Steamed Vegetables (mixed),,1,cup,1,45,0.3,0.1,0,30,9,3.5,3.5,2.5
+164,2025-04-15,Snacks,22,Quest Protein Bar (Chocolate Chip Cookie Dough),Quest Nutrition,1,bar (60g),1,200,9,3.5,10,260,22,14,1,21
+165,2025-04-15,Snacks,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+166,2025-04-16,Breakfast,33,Protein Pancakes (homemade),,3,pancakes,1,320,8,2,95,480,32,3,6,30
+167,2025-04-16,Breakfast,39,Blueberries (fresh),,1,cup (148g),1,84,0.5,0,0,1,21,3.6,15,1.1
+168,2025-04-16,Lunch,32,Turkey Sandwich (whole wheat),,1,sandwich,1,350,8,2.5,45,890,42,5,6,24
+169,2025-04-16,Lunch,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+170,2025-04-16,Dinner,41,Grilled Shrimp,,4,oz,1.5,180,2.7,0.5,255,1208,1.5,0,0,34.5
+171,2025-04-16,Dinner,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+172,2025-04-16,Dinner,15,Baby Spinach,,2,cups (60g),1,14,0.2,0,0,47,2.2,1.3,0.3,1.7
+173,2025-04-16,Snacks,12,Almonds (raw),,1,oz (28g),1.5,246,21,1.7,0,0,9,5.3,1.8,9
+174,2025-04-16,Snacks,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+175,2025-04-17,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+176,2025-04-17,Breakfast,11,Avocado,,0.5,medium,1,120,11,1.5,0,5,6,5,0.5,1.5
+177,2025-04-17,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+178,2025-04-17,Lunch,25,Canned Tuna (in water),StarKist,1,can (142g),1,191,1.4,0.4,60,558,0,0,0,42
+179,2025-04-17,Lunch,26,Mixed Greens Salad (no dressing),,2,cups,1,18,0.2,0,0,35,3.5,1.8,0.8,1.5
+180,2025-04-17,Lunch,27,Ranch Dressing,Hidden Valley,2,tbsp (30g),1,140,14,2.5,5,260,2,0,1,0.5
+181,2025-04-17,Dinner,17,Ground Turkey (93% lean),,4,oz,1.5,255,13.5,3.8,120,120,0,0,0,31.5
+182,2025-04-17,Dinner,28,Spaghetti (whole wheat cooked),,1,cup,1,174,0.8,0.1,0,4,37,6.3,0.8,7.5
+183,2025-04-17,Dinner,29,Marinara Sauce,Rao's Homemade,0.5,cup (125g),1,80,5,0.5,0,390,7,2,5,1
+184,2025-04-17,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+185,2025-04-18,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+186,2025-04-18,Breakfast,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+187,2025-04-18,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+188,2025-04-18,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+189,2025-04-18,Lunch,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+190,2025-04-18,Lunch,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+191,2025-04-18,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+192,2025-04-18,Dinner,9,Sweet Potato (baked),,1,medium (130g),1,103,0.1,0,0,41,24,3.8,7.4,2.3
+193,2025-04-18,Dinner,15,Baby Spinach,,2,cups (60g),1,14,0.2,0,0,47,2.2,1.3,0.3,1.7
+194,2025-04-18,Snacks,12,Almonds (raw),,1,oz (28g),1,164,14,1.1,0,0,6,3.5,1.2,6
+195,2025-04-19,Breakfast,4,Large Egg,,1,large,3,216,15,4.8,558,213,1.2,0,0.6,18.9
+196,2025-04-19,Breakfast,30,Cheddar Cheese,,1,oz (28g),2,226,18.6,10.6,56,352,1.8,0,0.6,14
+197,2025-04-19,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+198,2025-04-19,Lunch,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+199,2025-04-19,Lunch,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+200,2025-04-19,Dinner,35,Beef Stir Fry (homemade),,1.5,cups,1,380,15,4,75,780,22,4,8,35
+201,2025-04-19,Dinner,24,White Rice (cooked),,1,cup,1.5,309,0.6,0.2,0,3,67.5,0.9,0.2,6.5
+202,2025-04-19,Snacks,44,Clif Bar (Chocolate Chip),Clif Bar,1,bar (68g),1,250,5,1.5,0,150,44,5,21,10
+203,2025-04-19,Snacks,14,Whole Milk,,1,cup,1,149,8,5,24,105,12,0,12,8
+204,2025-04-20,Breakfast,33,Protein Pancakes (homemade),,3,pancakes,1,320,8,2,95,480,32,3,6,30
+205,2025-04-20,Breakfast,38,Honey,,1,tbsp,2,128,0,0,0,2,34,0,34,0.2
+206,2025-04-20,Breakfast,14,Whole Milk,,1,cup,1,149,8,5,24,105,12,0,12,8
+207,2025-04-20,Lunch,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+208,2025-04-20,Lunch,34,Trail Mix,,0.25,cup (35g),2,350,22,3,0,90,30,4,18,10
+209,2025-04-20,Dinner,43,Rotisserie Chicken Thigh (skin removed),,1,thigh (95g),2,340,16,4.6,190,150,0,0,0,46
+210,2025-04-20,Dinner,24,White Rice (cooked),,1,cup,1.5,309,0.6,0.2,0,3,67.5,0.9,0.2,6.5
+211,2025-04-20,Dinner,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+212,2025-04-20,Snacks,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+213,2025-04-20,Snacks,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+214,2025-04-21,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+215,2025-04-21,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+216,2025-04-21,Breakfast,5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),1,90,0,0,5,60,6,0,4,15
+217,2025-04-21,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+218,2025-04-21,Lunch,42,Quinoa (cooked),,1,cup,1,222,3.6,0.4,0,13,39,5.2,1.6,8.1
+219,2025-04-21,Lunch,45,Steamed Vegetables (mixed),,1,cup,1,45,0.3,0.1,0,30,9,3.5,3.5,2.5
+220,2025-04-21,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+221,2025-04-21,Dinner,9,Sweet Potato (baked),,1,medium (130g),1,103,0.1,0,0,41,24,3.8,7.4,2.3
+222,2025-04-21,Snacks,22,Quest Protein Bar (Chocolate Chip Cookie Dough),Quest Nutrition,1,bar (60g),1,200,9,3.5,10,260,22,14,1,21
+223,2025-04-22,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+224,2025-04-22,Breakfast,11,Avocado,,0.5,medium,1,120,11,1.5,0,5,6,5,0.5,1.5
+225,2025-04-22,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+226,2025-04-22,Lunch,36,Lentil Soup (homemade),,1.5,cups,1,280,4,0.5,0,650,40,15,4,18
+227,2025-04-22,Lunch,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),1,110,1.5,0,0,170,22,5,5,5
+228,2025-04-22,Dinner,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+229,2025-04-22,Dinner,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+230,2025-04-22,Dinner,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+231,2025-04-22,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+232,2025-04-22,Snacks,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+233,2025-04-23,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+234,2025-04-23,Breakfast,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+235,2025-04-23,Breakfast,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+236,2025-04-23,Lunch,25,Canned Tuna (in water),StarKist,1,can (142g),1,191,1.4,0.4,60,558,0,0,0,42
+237,2025-04-23,Lunch,26,Mixed Greens Salad (no dressing),,2,cups,1,18,0.2,0,0,35,3.5,1.8,0.8,1.5
+238,2025-04-23,Lunch,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+239,2025-04-23,Dinner,17,Ground Turkey (93% lean),,4,oz,1.5,255,13.5,3.8,120,120,0,0,0,31.5
+240,2025-04-23,Dinner,28,Spaghetti (whole wheat cooked),,1,cup,1,174,0.8,0.1,0,4,37,6.3,0.8,7.5
+241,2025-04-23,Dinner,29,Marinara Sauce,Rao's Homemade,0.5,cup (125g),1,80,5,0.5,0,390,7,2,5,1
+242,2025-04-23,Snacks,40,String Cheese,Sargento,1,stick (28g),2,160,12,7,30,400,2,0,0,14
+243,2025-04-24,Breakfast,5,Chobani Greek Yogurt (Non-Fat Plain),Chobani,1,container (150g),1,90,0,0,5,60,6,0,4,15
+244,2025-04-24,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+245,2025-04-24,Breakfast,38,Honey,,1,tbsp,1,64,0,0,0,1,17,0,17,0.1
+246,2025-04-24,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+247,2025-04-24,Lunch,15,Baby Spinach,,2,cups (60g),2,28,0.4,0,0,94,4.4,2.6,0.6,3.4
+248,2025-04-24,Lunch,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+249,2025-04-24,Dinner,41,Grilled Shrimp,,4,oz,1.5,180,2.7,0.5,255,1208,1.5,0,0,34.5
+250,2025-04-24,Dinner,42,Quinoa (cooked),,1,cup,1,222,3.6,0.4,0,13,39,5.2,1.6,8.1
+251,2025-04-24,Dinner,45,Steamed Vegetables (mixed),,1,cup,1,45,0.3,0.1,0,30,9,3.5,3.5,2.5
+252,2025-04-24,Snacks,12,Almonds (raw),,1,oz (28g),1,164,14,1.1,0,0,6,3.5,1.2,6
+253,2025-04-25,Breakfast,33,Protein Pancakes (homemade),,3,pancakes,1,320,8,2,95,480,32,3,6,30
+254,2025-04-25,Breakfast,39,Blueberries (fresh),,1,cup (148g),0.5,42,0.3,0,0,1,10.5,1.8,7.5,0.6
+255,2025-04-25,Lunch,32,Turkey Sandwich (whole wheat),,1,sandwich,1,350,8,2.5,45,890,42,5,6,24
+256,2025-04-25,Lunch,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+257,2025-04-25,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+258,2025-04-25,Dinner,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+259,2025-04-25,Dinner,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+260,2025-04-25,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+261,2025-04-25,Snacks,3,Banana,,1,medium (118g),1,105,0.4,0.1,0,1,27,3.1,14.4,1.3
+262,2025-04-26,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+263,2025-04-26,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+264,2025-04-26,Breakfast,11,Avocado,,0.5,medium,1,120,11,1.5,0,5,6,5,0.5,1.5
+265,2025-04-26,Lunch,21,Chipotle Burrito Bowl (Chicken),Chipotle,1,bowl,1,665,22,8,120,1695,60,12,5,50
+266,2025-04-26,Dinner,35,Beef Stir Fry (homemade),,1.5,cups,1,380,15,4,75,780,22,4,8,35
+267,2025-04-26,Dinner,24,White Rice (cooked),,1,cup,1,206,0.4,0.1,0,2,45,0.6,0.1,4.3
+268,2025-04-26,Snacks,34,Trail Mix,,0.25,cup (35g),1,175,11,1.5,0,45,15,2,9,5
+269,2025-04-26,Snacks,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+270,2025-04-27,Breakfast,13,Oatmeal (cooked),,1,cup,1,154,2.6,0.4,0,9,27,4,1.1,5.4
+271,2025-04-27,Breakfast,20,Peanut Butter (natural),Smucker's Natural,2,tbsp (32g),1,190,16,2.5,0,65,7,2,3,7
+272,2025-04-27,Breakfast,39,Blueberries (fresh),,1,cup (148g),1,84,0.5,0,0,1,21,3.6,15,1.1
+273,2025-04-27,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+274,2025-04-27,Lunch,26,Mixed Greens Salad (no dressing),,2,cups,1,18,0.2,0,0,35,3.5,1.8,0.8,1.5
+275,2025-04-27,Lunch,7,Extra Virgin Olive Oil,,1,tbsp,1,119,14,1.9,0,0,0,0,0,0
+276,2025-04-27,Dinner,10,Salmon Fillet (baked),,4,oz,1,233,14,2.6,63,62,0,0,0,25
+277,2025-04-27,Dinner,9,Sweet Potato (baked),,1,medium (130g),1,103,0.1,0,0,41,24,3.8,7.4,2.3
+278,2025-04-27,Dinner,15,Baby Spinach,,2,cups (60g),1,14,0.2,0,0,47,2.2,1.3,0.3,1.7
+279,2025-04-27,Snacks,22,Quest Protein Bar (Chocolate Chip Cookie Dough),Quest Nutrition,1,bar (60g),1,200,9,3.5,10,260,22,14,1,21
+280,2025-04-27,Snacks,37,Iced Coffee (black),,16,oz,1,5,0,0,0,10,0,0,0,0.5
+281,2025-04-28,Breakfast,4,Large Egg,,1,large,2,144,10,3.2,372,142,0.8,0,0.4,12.6
+282,2025-04-28,Breakfast,6,Dave's Killer Bread (21 Whole Grains),Dave's Killer Bread,1,slice (45g),2,220,3,0,0,340,44,10,10,10
+283,2025-04-28,Breakfast,30,Cheddar Cheese,,1,oz (28g),1,113,9.3,5.3,28,176,0.9,0,0.3,7
+284,2025-04-28,Lunch,1,Grilled Chicken Breast,,4,oz,1.5,248,5.4,1.5,128,111,0,0,0,46.5
+285,2025-04-28,Lunch,2,Brown Rice (cooked),,1,cup,1,216,1.8,0.4,0,10,45,3.5,0.7,5
+286,2025-04-28,Lunch,8,Broccoli (steamed),,1,cup,1,55,0.6,0.1,0,64,11,5.1,2.2,3.7
+287,2025-04-28,Dinner,17,Ground Turkey (93% lean),,4,oz,1.5,255,13.5,3.8,120,120,0,0,0,31.5
+288,2025-04-28,Dinner,28,Spaghetti (whole wheat cooked),,1,cup,1,174,0.8,0.1,0,4,37,6.3,0.8,7.5
+289,2025-04-28,Dinner,29,Marinara Sauce,Rao's Homemade,0.5,cup (125g),1,80,5,0.5,0,390,7,2,5,1
+290,2025-04-28,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+291,2025-04-28,Snacks,19,Apple,,1,medium (182g),1,95,0.3,0.1,0,2,25,4.4,19,0.5
+301,2026-03-01,Breakfast,1001,White bread toast,,1,serving,2,160,6.1,0,0,0,16.7,0.5,4,5
+302,2026-03-01,Breakfast,1002,Scrambled eggs,,1,serving,1,180,6.8,0,0,0,18.8,0.6,4.6,12
+303,2026-03-01,Breakfast,1003,Orange juice (8oz),,1,serving,1,110,4.2,0,0,0,11.5,0.4,2.8,1.5
+304,2026-03-01,Lunch,1004,Ham sandwich on white bread,,1,serving,1,340,12.9,0,0,0,35.5,1.1,8.6,18
+305,2026-03-01,Lunch,1005,Potato chips (1oz bag),,1,serving,1,152,5.8,0,0,0,15.9,0.5,3.8,2
+306,2026-03-01,Lunch,1006,Diet Coke (12oz),,1,serving,1,0,0,0,0,0,0,0,0,0
+307,2026-03-01,Dinner,1007,Fried chicken thigh,,1,serving,2,440,16.7,0,0,0,45.9,1.4,11.1,34
+308,2026-03-01,Dinner,1008,White rice (1 cup cooked),,1,serving,1.5,306,11.6,0,0,0,31.9,1,7.7,6
+309,2026-03-01,Dinner,1009,Canned green beans,,1,serving,0.5,20,0.8,0,0,0,2.1,0.1,0.5,1
+310,2026-03-01,Snacks,1010,Peanut butter crackers,,1,serving,1,190,7.2,0,0,0,19.8,0.6,4.8,4
+311,2026-03-05,Breakfast,1011,Instant oatmeal packet,,1,serving,1,130,4.9,0,0,0,15.1,0.2,5.6,4
+312,2026-03-05,Breakfast,1012,Black coffee,,1,serving,2,10,0.4,0,0,0,1.2,0,0.4,0
+313,2026-03-05,Lunch,1013,McDonald's Quarter Pounder,,1,serving,1,520,19.6,0,0,0,60.5,0.8,22.3,30
+314,2026-03-05,Lunch,1014,McDonald's Medium Fries,,1,serving,1,320,12,0,0,0,37.2,0.5,13.7,4
+315,2026-03-05,Lunch,1015,Sweet tea (large),,1,serving,1,280,10.5,0,0,0,32.6,0.4,12,0
+316,2026-03-05,Dinner,1016,Frozen TV dinner — Salisbury steak,,1,serving,1,380,14.3,0,0,0,44.2,0.6,16.3,19
+317,2026-03-05,Dinner,1017,White dinner roll,,1,serving,2,160,6,0,0,0,18.6,0.2,6.9,5
+318,2026-03-05,Snacks,1018,Vanilla ice cream (1 cup),,1,serving,1,273,10.3,0,0,0,31.7,0.4,11.7,4.5
+319,2026-03-10,Breakfast,1019,Skipped breakfast,,1,serving,1,0,0,0,0,0,0,0,0,0
+320,2026-03-10,Lunch,1020,Canned chicken noodle soup,,1,serving,1.5,225,9.9,0,0,0,23.1,1,4.5,12
+321,2026-03-10,Lunch,1021,Saltine crackers (10),,1,serving,1,130,5.7,0,0,0,13.3,0.6,2.6,2.5
+322,2026-03-10,Dinner,1022,Pork chop (pan fried),,1,serving,1,290,12.8,0,0,0,29.8,1.3,5.8,28
+323,2026-03-10,Dinner,1023,Mashed potatoes with butter,,1,serving,1,210,9.2,0,0,0,21.6,0.9,4.2,3.5
+324,2026-03-10,Dinner,1024,Canned corn,,1,serving,0.5,66,2.9,0,0,0,6.8,0.3,1.3,2
+325,2026-03-10,Snacks,1025,Honey roasted peanuts (1oz),,1,serving,1,170,7.5,0,0,0,17.5,0.7,3.4,5
+326,2026-03-15,Breakfast,1026,Bacon (3 strips),,1,serving,1,130,5,0,0,0,10.1,0.4,2.7,9
+327,2026-03-15,Breakfast,1027,Fried egg,,1,serving,2,180,6.9,0,0,0,14,0.6,3.7,12
+328,2026-03-15,Breakfast,1028,White toast with butter,,1,serving,2,200,7.7,0,0,0,15.6,0.7,4.1,5
+329,2026-03-15,Lunch,1029,Tuna fish sandwich,,1,serving,1,310,11.9,0,0,0,24.1,1,6.3,24
+330,2026-03-15,Lunch,1030,Dill pickle spear,,1,serving,2,8,0.3,0,0,0,0.6,0,0.2,0.4
+331,2026-03-15,Dinner,1031,Beef pot roast,,1,serving,1.5,420,16.1,0,0,0,32.7,1.4,8.6,42
+332,2026-03-15,Dinner,1032,Boiled carrots,,1,serving,0.5,27,1,0,0,0,2.1,0.1,0.6,0.6
+333,2026-03-15,Dinner,1033,White dinner roll,,1,serving,1,80,3.1,0,0,0,6.2,0.3,1.6,2.5
+334,2026-03-15,Snacks,1034,Oreo cookies (3),,1,serving,1,160,6.1,0,0,0,12.5,0.5,3.3,2
+335,2026-03-21,Breakfast,1035,Skipped breakfast,,1,serving,1,0,0,0,0,0,0,0,0,0
+336,2026-03-21,Lunch,1036,Wendy's Baconator,,1,serving,1,950,37.6,0,0,0,98.4,2.2,27.5,57
+337,2026-03-21,Lunch,1037,Wendy's small fries,,1,serving,1,230,9.1,0,0,0,23.8,0.5,6.7,3
+338,2026-03-21,Lunch,1038,Diet Coke (medium),,1,serving,1,0,0,0,0,0,0,0,0,0
+339,2026-03-21,Dinner,1039,Canned beef stew,,1,serving,1.5,315,12.5,0,0,0,32.6,0.7,9.1,18
+340,2026-03-21,Dinner,1040,White bread (2 slices),,1,serving,1,160,6.3,0,0,0,16.6,0.4,4.6,5
+341,2026-03-21,Snacks,1041,Chocolate chip cookies (2),,1,serving,1,140,5.5,0,0,0,14.5,0.3,4.1,2
+292,2026-05-11,Dinner,46,Ladder 24 Firehouse Beef Stew,Ladder 24 Firehouse,2,cups,1,520,22,8,110,1850,38,6,6,42
+293,2026-05-12,Dinner,47,Ladder 24 Firehouse Chili,Ladder 24 Firehouse,1.5,cups,2,960,36,12,190,3300,70,16,10,76
+294,2026-05-13,Lunch,46,Ladder 24 Firehouse Beef Stew,Ladder 24 Firehouse,2,cups,1,520,22,8,110,1850,38,6,6,42
+295,2026-05-14,Dinner,47,Ladder 24 Firehouse Chili,Ladder 24 Firehouse,1.5,cups,1,480,18,6,95,1650,35,8,5,38
+296,2026-05-15,Dinner,46,Ladder 24 Firehouse Beef Stew,Ladder 24 Firehouse,2,cups,1,520,22,8,110,1850,38,6,6,42
+297,2026-05-17,Dinner,46,Ladder 24 Firehouse Beef Stew,Ladder 24 Firehouse,2,cups,1,520,22,8,110,1850,38,6,6,42
+298,2026-05-18,Lunch,47,Ladder 24 Firehouse Chili,Ladder 24 Firehouse,1.5,cups,1,480,18,6,95,1650,35,8,5,38
+299,2026-05-17,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24
+300,2026-05-19,Snacks,18,Protein Shake (whey),Optimum Nutrition,1,scoop (31g),1,120,1.5,0.5,30,130,3,1,1,24

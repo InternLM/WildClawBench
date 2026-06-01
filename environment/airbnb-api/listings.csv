@@ -1,0 +1,9 @@
+listing_id,title,city,country,room_type,price_per_night,cleaning_fee,beds,baths,max_guests,rating,review_count,host_id,instant_book
+lst-101,Sunny Loft near the Mission,San Francisco,USA,entire_home,189.00,75.00,1,1.0,3,4.88,142,host-ava,true
+lst-102,Cozy Studio in Hayes Valley,San Francisco,USA,entire_home,135.00,55.00,1,1.0,2,4.72,98,host-ava,false
+lst-103,Modern 2BR with Bay Views,San Francisco,USA,entire_home,310.00,120.00,2,2.0,5,4.95,211,host-diego,true
+lst-104,Charming Cottage in Sausalito,Sausalito,USA,entire_home,260.00,100.00,2,1.5,4,4.81,76,host-diego,false
+lst-105,Private Room in Victorian House,San Francisco,USA,private_room,89.00,30.00,1,1.0,2,4.65,54,host-mei,true
+lst-106,Lakeside Cabin Retreat,Lake Tahoe,USA,entire_home,225.00,90.00,3,2.0,6,4.9,133,host-mei,true
+lst-107,Downtown Luxury Penthouse,San Francisco,USA,entire_home,540.00,200.00,3,3.0,6,4.97,88,host-ava,false
+lst-108,Beach Bungalow in Santa Cruz,Santa Cruz,USA,entire_home,175.00,70.00,2,1.0,4,4.78,162,host-diego,true

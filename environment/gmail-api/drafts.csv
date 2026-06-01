@@ -1,0 +1,2 @@
+id,thread_id,to_addr,cc_addr,subject,body,updated_at
+draft-001,thr-101,helena@orbit-labs.com,jonas@orbit-labs.com,Re: Latency spike alert — auth.refresh,"Helena — adding @jonas. Let's correlate the spike with the shim warmup. Can you pull the timing of the dual-writer flush?\n\n— Amelia",2026-05-23T11:35:00Z

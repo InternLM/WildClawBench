@@ -1,4 +1,0 @@
-interface:
-  display_name: "ArXiv Summarizer Orchestrator"
-  short_description: "Orchestrate collection, per-paper review, and batch reporting"
-  default_prompt: "Run the full arXiv summarizer workflow with sub-skills and outputs."

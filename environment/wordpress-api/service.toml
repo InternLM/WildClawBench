@@ -1,0 +1,11 @@
+[service]
+name = "wordpress-api"
+port = 8065
+env_var_name = "WORDPRESS_API_URL"
+healthcheck_path = "/health"
+
+[k8s]
+image = ""
+cpu_request = "25m"
+memory_request = "128Mi"
+memory_limit = "256Mi"

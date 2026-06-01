@@ -1,0 +1,11 @@
+id,employeeId,type,status,start,end,amount,unit,notes,created
+tor-5001,emp-102,Vacation,approved,2026-06-08,2026-06-12,5,days,Family trip,2026-05-10
+tor-5002,emp-103,Sick,approved,2026-05-19,2026-05-20,2,days,Flu recovery,2026-05-18
+tor-5003,emp-104,Vacation,requested,2026-07-01,2026-07-10,8,days,Summer holiday,2026-05-22
+tor-5004,emp-106,Personal,denied,2026-06-15,2026-06-16,2,days,Overlaps with quarter close,2026-05-12
+tor-5005,emp-107,Vacation,approved,2026-05-28,2026-05-30,3,days,Long weekend,2026-05-05
+tor-5006,emp-108,Vacation,requested,2026-08-04,2026-08-15,10,days,Annual leave,2026-05-25
+tor-5007,emp-105,Sick,approved,2026-05-26,2026-05-26,1,days,Doctor appointment,2026-05-25
+tor-5008,emp-112,Personal,requested,2026-06-20,2026-06-20,1,days,Moving day,2026-05-24
+tor-5009,emp-109,Vacation,denied,2026-09-01,2026-09-05,5,days,Sales kickoff conflict,2026-05-20
+tor-5010,emp-103,Vacation,approved,2026-12-22,2026-12-31,8,days,Winter break,2026-05-15

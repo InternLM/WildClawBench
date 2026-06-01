@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Strava Mock API v3",
+    "description": "Test collection for the mock Strava API service. Base URL defaults to http://localhost:8060. In docker-compose, the service is reachable at http://strava-api:8060.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8060"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get athlete", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/athlete"}},
+    {"name": "list activities", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/athlete/activities?per_page=5"}},
+    {"name": "get activity", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/activities/9002"}},
+    {"name": "update activity", "request": {"method": "PUT", "url": "{{baseUrl}}/api/v3/activities/9002",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Tempo Tuesday (renamed)\", \"type\": \"Run\"}"}}},
+    {"name": "activity kudos", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/activities/9002/kudos"}},
+    {"name": "get segment", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/segments/3302"}},
+    {"name": "athlete stats", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/athletes/4410022/stats"}}
+  ]
+}

@@ -1,0 +1,16 @@
+transaction_id,receipt_id,listing_id,shop_id,buyer_user_id,title,quantity,price,shipping_cost,is_digital,variations,created_timestamp
+3001,2001,1001,29457183,55001,Hand-Carved Mortar & Pestle Set - Red Cedar,1,180.00,11.99,false,"",2025-01-08T14:22:00
+3002,2002,1003,29457183,55002,Large Hand-Turned Grain Bowl - Hardwood,1,150.00,11.99,false,"",2025-01-22T10:05:00
+3003,2003,1002,29457183,55003,Traditional Pattern Rolling Pin - Carved Beechwood,2,45.00,5.99,false,"",2025-02-02T18:30:00
+3004,2004,1009,29457183,55004,Hand-Carved Eagle Sculpture - Western Red Cedar,1,450.00,11.99,false,"",2025-02-14T09:45:00
+3005,2005,1007,29457183,55005,Traditional Beaded Necklace - Multi-color,1,55.00,5.99,false,"",2025-02-20T12:15:00
+3006,2006,1004,29457183,55006,Ornate Floral Wood Panel - Wall Art,1,320.00,11.99,false,"",2025-03-05T16:40:00
+3007,2007,1016,29457183,55007,Carved Wood Ornament Set - Wildlife Series (4-pack),1,35.00,5.99,false,"",2025-03-28T20:10:00
+3008,2008,1014,29457183,55008,Hand-Carved Great Blue Heron - Driftwood Base,1,550.00,24.99,false,"wood_type:Western Red Cedar",2025-04-02T11:30:00
+3009,2009,1005,29457183,55009,Woven Reed Market Basket - Handwoven,1,65.00,5.99,false,"",2025-04-05T14:55:00
+3010,2010,1002,29457183,55010,Traditional Pattern Rolling Pin - Carved Beechwood,1,45.00,0.00,false,"",2025-04-10T08:20:00
+3011,2011,1011,29457183,55001,Carved Salmon Wall Mount - Alder Wood,1,280.00,11.99,false,"",2025-04-15T19:30:00
+3012,2012,1012,29457183,55011,Diamond Willow Walking Stick - Hand-Carved,1,95.00,11.99,false,"",2025-03-15T10:45:00
+3013,2013,1006,29457183,55012,Hand-Painted Holiday Tree Bell - Ceramic,2,25.00,5.99,false,"",2025-03-20T08:00:00
+3014,2014,1008,29457183,55013,Handmade Ektara Instrument - Gourd & Bamboo,1,85.00,0.00,false,"",2025-04-25T17:00:00
+3015,2015,1013,29457183,55014,Handcrafted Brass Bangle Set (6-piece),1,90.00,0.00,false,"",2025-03-01T12:00:00

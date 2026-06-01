@@ -1,0 +1,2 @@
+id,name,description,state,leadId,teamIds,startDate,targetDate,createdAt,updatedAt
+PROJ-PORTAL,Patient Portal UX Redesign,Cross-functional redesign of the Cumberland patient portal covering medications, dashboard, dark mode, and form validation flows. Charge nurse David Nelson signs off in this tracker before go-live.,started,user-patty,team-ux,2026-02-01,2026-05-30,2026-01-25T10:00:00,2026-05-10T14:00:00

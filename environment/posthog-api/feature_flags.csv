@@ -1,0 +1,6 @@
+id,project_id,key,name,active,rollout_percentage
+flag_4001,1,new-onboarding,New Onboarding Flow,true,100
+flag_4002,1,beta-dashboard,Beta Dashboard,true,50
+flag_4003,1,dark-mode,Dark Mode,false,0
+flag_4004,1,fast-checkout,Fast Checkout,true,25
+flag_4005,2,referral-program,Referral Program,true,100

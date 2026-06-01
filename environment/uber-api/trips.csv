@@ -1,0 +1,6 @@
+request_id,product_id,status,rider_id,driver_name,vehicle,license_plate,start_latitude,start_longitude,start_address,end_latitude,end_longitude,end_address,distance_miles,duration_minutes,fare,surge_multiplier,requested_at,completed_at
+req-7f0011aa,uberx,completed,rider-marco,Daniela Souza,Toyota Camry Silver,7XYZ221,37.7752,-122.4180,1455 Market St San Francisco,37.7956,-122.3934,Ferry Building San Francisco,2.10,11.0,12.80,1.0,2026-05-10T08:42:00Z,2026-05-10T08:54:00Z
+req-3c9920bd,uberxl,completed,rider-marco,Henry Liu,Honda Pilot Black,5ABC909,37.6213,-122.3790,SFO International Terminal,37.7853,-122.4011,701 Mission St San Francisco,13.40,24.0,52.30,1.2,2026-05-12T17:05:00Z,2026-05-12T17:30:00Z
+req-aa551207,uberblack,completed,rider-marco,Olivier Dubois,Mercedes E-Class Black,3PRO111,37.7899,-122.3970,Salesforce Tower San Francisco,37.8021,-122.4187,Lombard St San Francisco,1.90,13.0,29.50,1.0,2026-05-18T19:20:00Z,2026-05-18T19:34:00Z
+req-bb220944,uberx,canceled_rider,rider-marco,,,,37.7621,-122.4350,Castro District San Francisco,37.7699,-122.4660,Golden Gate Park San Francisco,0.00,0.0,0.00,1.0,2026-05-20T12:11:00Z,
+req-cd778833,uberpool,completed,rider-marco,Aisha Khan,Toyota Prius Blue,9POO456,37.7820,-122.4090,Union Square San Francisco,37.7340,-122.4480,Mission Dolores San Francisco,3.30,18.0,9.80,1.0,2026-05-24T10:02:00Z,2026-05-24T10:22:00Z

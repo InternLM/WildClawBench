@@ -1,0 +1,7 @@
+customer_id,email,first_name,last_name,phone,accepts_marketing,city,province,country,orders_count,total_spent,tags,created_at
+cus-1001,emily.carson@example.com,Emily,Carson,415-555-0118,true,San Francisco,CA,US,5,648.00,vip;repeat,2024-04-15T09:00:00Z
+cus-1002,daniel.reyes@example.com,Daniel,Reyes,510-555-0233,true,Oakland,CA,US,3,212.00,repeat,2024-07-22T09:00:00Z
+cus-1003,priya.shah@example.com,Priya,Shah,415-555-0344,false,San Francisco,CA,US,1,48.00,,2026-05-12T09:00:00Z
+cus-1004,marcus.lee@example.com,Marcus,Lee,206-555-0455,true,Seattle,WA,US,4,440.00,repeat;wholesale-prospect,2025-02-10T09:00:00Z
+cus-1005,yara.cohen@example.com,Yara,Cohen,415-555-0566,true,San Francisco,CA,US,2,150.00,,2025-11-08T09:00:00Z
+cus-1006,oliver.park@example.com,Oliver,Park,408-555-0677,false,San Jose,CA,US,1,28.00,,2026-05-20T09:00:00Z

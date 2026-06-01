@@ -1,0 +1,7 @@
+id,name,email,phone,company_id,active,created_at
+90001,Avery Collins,avery@acme.example,+1-202-555-0101,60001,true,2026-04-10T09:00:00Z
+90002,Bianca Ruiz,bianca@globex.example,+1-202-555-0102,60002,true,2026-04-12T09:00:00Z
+90003,Caleb Nguyen,caleb@initech.example,+1-202-555-0103,60003,true,2026-04-14T09:00:00Z
+90004,Dana Whitfield,dana@umbrella.example,+1-202-555-0104,60004,true,2026-04-16T09:00:00Z
+90005,Elias Park,elias@hooli.example,+1-202-555-0105,60005,true,2026-04-18T09:00:00Z
+90006,Farah Idris,farah@stark.example,+1-202-555-0106,60006,false,2026-04-20T09:00:00Z

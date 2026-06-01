@@ -1,0 +1,112 @@
+{
+  "FK001abcdefg": {
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "1:2",
+        "name": "Page 1",
+        "type": "CANVAS",
+        "backgroundColor": {"r": 0.96, "g": 0.96, "b": 0.96, "a": 1},
+        "children": [
+          {
+            "id": "5:10",
+            "name": "Welcome Screen",
+            "type": "FRAME",
+            "absoluteBoundingBox": {"x": 0, "y": 0, "width": 375, "height": 812},
+            "children": [
+              {"id": "5:11", "name": "Headline", "type": "TEXT", "characters": "Welcome to Orbit"},
+              {"id": "5:12", "name": "Nav / Bottom Bar", "type": "INSTANCE", "componentId": "comp-nav-bar"}
+            ]
+          },
+          {
+            "id": "5:20",
+            "name": "Sign Up Screen",
+            "type": "FRAME",
+            "absoluteBoundingBox": {"x": 420, "y": 0, "width": 375, "height": 812},
+            "children": [
+              {"id": "5:21", "name": "Email Field", "type": "INSTANCE", "componentId": "comp-input-text"},
+              {"id": "5:22", "name": "Continue", "type": "INSTANCE", "componentId": "comp-btn-primary"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "FK002hijklmn": {
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "1:2",
+        "name": "Checkout",
+        "type": "CANVAS",
+        "backgroundColor": {"r": 1, "g": 1, "b": 1, "a": 1},
+        "children": [
+          {
+            "id": "12:1",
+            "name": "Cart",
+            "type": "FRAME",
+            "absoluteBoundingBox": {"x": 0, "y": 0, "width": 1440, "height": 1024},
+            "children": [
+              {"id": "12:5", "name": "Error Banner", "type": "TEXT", "characters": "Payment failed"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "FK003opqrstu": {
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "1:2",
+        "name": "Home",
+        "type": "CANVAS",
+        "backgroundColor": {"r": 0.1, "g": 0.1, "b": 0.12, "a": 1},
+        "children": [
+          {
+            "id": "3:1",
+            "name": "Hero",
+            "type": "FRAME",
+            "absoluteBoundingBox": {"x": 0, "y": 0, "width": 1440, "height": 720},
+            "children": [
+              {"id": "3:8", "name": "Hero Copy", "type": "TEXT", "characters": "Build faster with Orbit"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "FK004vwxyz12": {
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "1:2",
+        "name": "Components",
+        "type": "CANVAS",
+        "backgroundColor": {"r": 0.98, "g": 0.98, "b": 0.98, "a": 1},
+        "children": [
+          {
+            "id": "10:1",
+            "name": "Atoms",
+            "type": "FRAME",
+            "absoluteBoundingBox": {"x": 0, "y": 0, "width": 800, "height": 600},
+            "children": [
+              {"id": "10:21", "name": "Button / Primary", "type": "COMPONENT", "componentId": "comp-btn-primary"},
+              {"id": "10:22", "name": "Button / Secondary", "type": "COMPONENT", "componentId": "comp-btn-secondary"},
+              {"id": "10:30", "name": "Input / Text", "type": "COMPONENT", "componentId": "comp-input-text"},
+              {"id": "10:41", "name": "Card / Basic", "type": "COMPONENT", "componentId": "comp-card-basic"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

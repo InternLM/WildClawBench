@@ -1,0 +1,5 @@
+name,up,apps,sources,cpu_pct,mem_pct,last_reported
+web-01,true,nginx;auth-service,agent,72.4,61.0,1748250600
+web-02,true,nginx;web-frontend,agent,48.1,55.3,1748250600
+db-01,true,postgres,agent,33.7,82.5,1748250600
+worker-01,false,billing-service,agent,0.0,0.0,1748160000

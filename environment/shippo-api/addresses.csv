@@ -1,0 +1,5 @@
+object_id,name,company,street1,street2,city,state,zip,country,phone,email,is_residential,validated
+addr-sender-01,Orbit Labs Fulfillment,Orbit Labs,500 Treat Ave,Suite 200,San Francisco,CA,94110,US,4155550111,ship@orbit-labs.com,false,true
+addr-recv-01,Amelia Ortega,,1842 Maple Grove Rd,Apt 4B,Austin,TX,78704,US,5125550182,amelia.ortega@example.com,true,true
+addr-recv-02,Jonas Pereira,Pereira Studio,77 Beacon St,,Boston,MA,02108,US,6175550199,jonas@example.com,false,true
+addr-recv-03,Helena Park,,940 NE 12th Ave,Unit 310,Portland,OR,97232,US,5035550144,helena.park@example.com,true,false

@@ -1,0 +1,7 @@
+id,name,city,state,country,postal_code,address,latitude,longitude
+ven-001,Madison Arc Arena,New York,NY,US,10001,4 Pennsylvania Plaza,40.7505,-73.9934
+ven-002,Golden Gate Pavilion,San Francisco,CA,US,94107,1 Warriors Way,37.7680,-122.3877
+ven-003,Lakeshore Amphitheater,Chicago,IL,US,60605,1300 S Lake Shore Dr,41.8676,-87.6140
+ven-004,Sunset Bowl Stadium,Los Angeles,CA,US,90012,1000 Elysian Park Ave,34.0739,-118.2400
+ven-005,Riverside Theatre,Austin,TX,US,78701,310 W 2nd St,30.2640,-97.7490
+ven-006,Harbor Jazz Club,Seattle,WA,US,98101,2033 6th Ave,47.6131,-122.3398

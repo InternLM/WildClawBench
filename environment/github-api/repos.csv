@@ -1,0 +1,6 @@
+id,name,full_name,owner,private,description,default_branch,language,stars,forks,open_issues,created_at,updated_at
+2100001,auth-api,orbit-labs/auth-api,orbit-labs,true,Authentication service for Orbit Labs,main,Go,42,8,7,2024-04-12T10:00:00Z,2026-05-22T11:00:00Z
+2100002,billing-api,orbit-labs/billing-api,orbit-labs,true,Billing + invoicing service,main,Java,28,4,12,2024-06-01T10:00:00Z,2026-05-19T15:00:00Z
+2100003,web-app,orbit-labs/web-app,orbit-labs,true,Customer-facing web app,main,TypeScript,18,3,21,2024-03-20T10:00:00Z,2026-05-26T08:00:00Z
+2100004,infra,orbit-labs/infra,orbit-labs,true,Terraform + k8s manifests,main,HCL,9,2,5,2024-02-10T10:00:00Z,2026-05-23T13:00:00Z
+2100005,docs,orbit-labs/docs,orbit-labs,false,Public engineering docs,main,Markdown,310,42,3,2024-09-15T10:00:00Z,2026-05-10T14:00:00Z

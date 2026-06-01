@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Plaid Mock API",
+    "description": "Test collection for the mock Plaid API service. Base URL defaults to http://localhost:8022. In docker-compose, the service is reachable at http://plaid-api:8022. Plaid uses POST for reads; client_id/secret/access_token are accepted but ignored.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8022"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "accounts get", "request": {"method": "POST", "url": "{{baseUrl}}/accounts/get",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"client_id\": \"demo\", \"secret\": \"demo\", \"access_token\": \"access-sandbox-001\"}"}}},
+    {"name": "accounts balance get", "request": {"method": "POST", "url": "{{baseUrl}}/accounts/balance/get",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"access_token\": \"access-sandbox-001\", \"options\": {\"account_ids\": [\"acc_chk_001\"]}}"}}},
+    {"name": "transactions get", "request": {"method": "POST", "url": "{{baseUrl}}/transactions/get",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"access_token\": \"access-sandbox-001\", \"start_date\": \"2026-04-01\", \"end_date\": \"2026-04-30\", \"options\": {\"count\": 10, \"offset\": 0}}"}}},
+    {"name": "institutions get by id", "request": {"method": "POST", "url": "{{baseUrl}}/institutions/get_by_id",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"institution_id\": \"ins_109512\", \"country_codes\": [\"US\"]}"}}},
+    {"name": "identity get", "request": {"method": "POST", "url": "{{baseUrl}}/identity/get",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"access_token\": \"access-sandbox-001\"}"}}}
+  ]
+}

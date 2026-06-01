@@ -1,0 +1,11 @@
+id,channel_id,team_id,from_user_id,from_display_name,content,content_type,importance,created_date
+1747900000001,19:chan-eng-gen01@thread.tacv2,19:team-eng0001@thread.tacv2,user-001,Alex Carter,Welcome to the Engineering General channel!,html,normal,2026-05-04T09:12:00Z
+1747900000002,19:chan-eng-gen01@thread.tacv2,19:team-eng0001@thread.tacv2,user-002,Priya Nair,Reminder: sprint planning at 2pm today.,html,high,2026-05-11T13:45:00Z
+1747900000003,19:chan-eng-plat02@thread.tacv2,19:team-eng0001@thread.tacv2,user-003,Diego Santos,Deployed the new caching layer to staging.,html,normal,2026-05-12T16:20:00Z
+1747900000004,19:chan-eng-plat02@thread.tacv2,19:team-eng0001@thread.tacv2,user-004,Mei Tanaka,Can someone review PR #482 for the auth refactor?,html,normal,2026-05-13T10:05:00Z
+1747900000005,19:chan-eng-infra3@thread.tacv2,19:team-eng0001@thread.tacv2,user-001,Alex Carter,Incident resolved: DB failover completed cleanly.,html,high,2026-05-15T22:40:00Z
+1747900000006,19:chan-prod-gen04@thread.tacv2,19:team-prod0002@thread.tacv2,user-005,Sam Okoro,Customer interview notes posted in the wiki.,html,normal,2026-05-06T11:30:00Z
+1747900000007,19:chan-prod-road5@thread.tacv2,19:team-prod0002@thread.tacv2,user-006,Lena Fischer,Q3 roadmap draft is ready for feedback.,html,high,2026-05-18T09:00:00Z
+1747900000008,19:chan-mktg-camp7@thread.tacv2,19:team-mktg0003@thread.tacv2,user-007,Omar Haddad,Spring campaign creatives are live.,html,normal,2026-05-20T14:15:00Z
+1747900000009,19:chan-sales-gen8@thread.tacv2,19:team-sales004@thread.tacv2,user-009,Grace Lee,Closed the Vandelay deal! Great work team.,html,high,2026-05-22T17:50:00Z
+1747900000010,19:chan-allco-gen9@thread.tacv2,19:team-allco005@thread.tacv2,user-001,Alex Carter,All-hands meeting moved to Friday 10am.,html,high,2026-05-25T08:30:00Z

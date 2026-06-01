@@ -1,0 +1,9 @@
+id,subject,description,status,priority,requester_id,responder_id,type,tags,created_at,updated_at
+70001,Cannot log in to dashboard,User reports a 403 error after password reset.,2,2,90001,80001,Incident,login;auth,2026-05-02T09:12:00Z,2026-05-02T10:01:00Z
+70002,Invoice charged twice,Customer was billed twice for the May subscription.,3,3,90002,80002,Problem,billing,2026-05-03T11:30:00Z,2026-05-04T08:45:00Z
+70003,Feature request: dark mode,Requesting a dark theme for the web app.,2,1,90003,,Feature Request,ui;enhancement,2026-05-04T14:05:00Z,2026-05-04T14:05:00Z
+70004,Export to CSV fails,Export button returns a 500 error for large reports.,4,3,90004,80001,Incident,export;bug,2026-05-05T16:22:00Z,2026-05-06T09:10:00Z
+70005,How to add a teammate,Customer asking how to invite additional users.,5,1,90005,80003,Question,onboarding,2026-05-06T08:40:00Z,2026-05-07T13:20:00Z
+70006,API rate limit too low,Requesting an increase to the API rate limit.,3,2,90001,80002,Question,api,2026-05-07T10:15:00Z,2026-05-07T15:55:00Z
+70007,Mobile app crashes on startup,App crashes immediately on iOS 18.,2,4,90006,80001,Incident,mobile;crash,2026-05-08T19:48:00Z,2026-05-08T20:30:00Z
+70008,Refund request,Customer requesting a refund for an annual plan.,4,2,90002,80002,Problem,billing;refund,2026-05-09T07:33:00Z,2026-05-10T11:00:00Z

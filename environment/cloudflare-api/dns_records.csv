@@ -1,0 +1,10 @@
+id,zone_id,type,name,content,ttl,proxied,priority,created_on,modified_on
+rec0001aaaa,zone1aaaa1111bbbb2222cccc3333dddd,A,orbit-labs.com,203.0.113.10,1,true,0,2024-01-10T10:00:00.000Z,2026-05-20T10:00:00.000Z
+rec0002bbbb,zone1aaaa1111bbbb2222cccc3333dddd,A,www.orbit-labs.com,203.0.113.10,1,true,0,2024-01-10T10:00:00.000Z,2026-05-20T10:00:00.000Z
+rec0003cccc,zone1aaaa1111bbbb2222cccc3333dddd,AAAA,orbit-labs.com,2001:db8::10,1,true,0,2024-01-10T10:00:00.000Z,2026-05-20T10:00:00.000Z
+rec0004dddd,zone1aaaa1111bbbb2222cccc3333dddd,CNAME,api.orbit-labs.com,orbit-labs.com,3600,true,0,2024-02-01T10:00:00.000Z,2026-05-22T10:00:00.000Z
+rec0005eeee,zone1aaaa1111bbbb2222cccc3333dddd,MX,orbit-labs.com,mail.orbit-labs.com,3600,false,10,2024-01-12T10:00:00.000Z,2026-04-01T10:00:00.000Z
+rec0006ffff,zone1aaaa1111bbbb2222cccc3333dddd,TXT,orbit-labs.com,v=spf1 include:_spf.orbit-labs.com ~all,3600,false,0,2024-01-12T10:00:00.000Z,2026-04-01T10:00:00.000Z
+rec0007gggg,zone2eeee4444ffff5555gggg6666hhhh,A,orbit-cdn.net,198.51.100.20,1,true,0,2024-03-15T10:00:00.000Z,2026-05-24T10:00:00.000Z
+rec0008hhhh,zone2eeee4444ffff5555gggg6666hhhh,CNAME,assets.orbit-cdn.net,orbit-cdn.net,3600,true,0,2024-03-16T10:00:00.000Z,2026-05-24T10:00:00.000Z
+rec0009iiii,zone2eeee4444ffff5555gggg6666hhhh,TXT,orbit-cdn.net,cf-verify=abc123,3600,false,0,2024-03-16T10:00:00.000Z,2026-03-20T10:00:00.000Z

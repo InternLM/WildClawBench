@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "GitHub REST API Mock",
+    "description": "Mock subset of the GitHub REST API. Base URL: http://localhost:8019. In docker-compose: http://github-api:8019.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8019"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "authenticated user", "request": {"method": "GET", "url": "{{baseUrl}}/user"}},
+    {"name": "org repos", "request": {"method": "GET", "url": "{{baseUrl}}/orgs/orbit-labs/repos"}},
+    {"name": "repo", "request": {"method": "GET", "url": "{{baseUrl}}/repos/orbit-labs/auth-api"}},
+    {"name": "open issues with bug label", "request": {"method": "GET", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/issues?state=open&labels=bug"}},
+    {"name": "get issue", "request": {"method": "GET", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/issues/142"}},
+    {"name": "create issue", "request": {"method": "POST", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/issues",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"Cookie issuer feature flag gating\", \"body\": \"Confirm cookie issuer is gated behind auth_v2_rollout.\", \"labels\": [\"enhancement\"], \"assignee\": \"amelia-ortega\"}"}}},
+    {"name": "close issue", "request": {"method": "PATCH", "url": "{{baseUrl}}/repos/orbit-labs/docs/issues/7",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"state\": \"closed\"}"}}},
+    {"name": "list open pulls", "request": {"method": "GET", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/pulls?state=open"}},
+    {"name": "get pull", "request": {"method": "GET", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/pulls/144"}},
+    {"name": "merge pull", "request": {"method": "PUT", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/pulls/144/merge"}},
+    {"name": "list issue comments", "request": {"method": "GET", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/issues/142/comments"}},
+    {"name": "post issue comment", "request": {"method": "POST", "url": "{{baseUrl}}/repos/orbit-labs/auth-api/issues/142/comments",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"body\": \"Re-running the load test on N=8 batch now.\"}"}}}
+  ]
+}

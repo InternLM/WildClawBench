@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "Square Mock API v2",
+    "description": "Test collection for the mock Square API service. Base URL defaults to http://localhost:8041. In docker-compose, the service is reachable at http://square-api:8041.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8041"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get merchant", "request": {"method": "GET", "url": "{{baseUrl}}/v2/merchants/me"}},
+    {"name": "list payments", "request": {"method": "GET", "url": "{{baseUrl}}/v2/payments?limit=10"}},
+    {"name": "get payment", "request": {"method": "GET", "url": "{{baseUrl}}/v2/payments/PAY_AURORA01"}},
+    {"name": "create payment", "request": {"method": "POST", "url": "{{baseUrl}}/v2/payments",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"amount_money\": {\"amount\": 750, \"currency\": \"USD\"}, \"source_id\": \"cnon:card-nonce-ok\", \"customer_id\": \"CUST_HARPER01\"}"}}},
+    {"name": "create refund", "request": {"method": "POST", "url": "{{baseUrl}}/v2/refunds",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"payment_id\": \"PAY_AURORA01\", \"amount_money\": {\"amount\": 825, \"currency\": \"USD\"}, \"reason\": \"Damaged item\"}"}}},
+    {"name": "list customers", "request": {"method": "GET", "url": "{{baseUrl}}/v2/customers?limit=10"}},
+    {"name": "get customer", "request": {"method": "GET", "url": "{{baseUrl}}/v2/customers/CUST_MAYA03"}},
+    {"name": "create customer", "request": {"method": "POST", "url": "{{baseUrl}}/v2/customers",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"given_name\": \"Nina\", \"family_name\": \"Costa\", \"email_address\": \"nina.costa@example.com\"}"}}},
+    {"name": "list catalog", "request": {"method": "GET", "url": "{{baseUrl}}/v2/catalog/list?types=ITEM"}},
+    {"name": "create order", "request": {"method": "POST", "url": "{{baseUrl}}/v2/orders",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"customer_id\": \"CUST_DIEGO02\", \"location_id\": \"LOC_MAIN\", \"line_items\": [{\"catalog_object_id\": \"VAR_LATTE_R\", \"quantity\": 2}, {\"catalog_object_id\": \"VAR_CROISSANT_R\", \"quantity\": 1}]}"}}},
+    {"name": "get order", "request": {"method": "GET", "url": "{{baseUrl}}/v2/orders/ORD_AURORA01"}},
+    {"name": "get inventory", "request": {"method": "GET", "url": "{{baseUrl}}/v2/inventory/VAR_BEANS_12"}}
+  ]
+}

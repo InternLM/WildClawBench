@@ -1,0 +1,6 @@
+distinct_id,name,email,country,plan,total_events,last_seen
+user-aria,Aria Mensah,aria.mensah@example.com,US,paid,6,2025-05-03T18:02:00Z
+user-bode,Bode Larsen,bode.larsen@example.com,DE,paid,5,2025-05-03T09:10:00Z
+user-cleo,Cleo Ferraro,cleo.ferraro@example.com,GB,free,5,2025-05-03T19:50:00Z
+user-dane,Dane Whitlock,dane.whitlock@example.com,US,free,2,2025-05-04T08:30:00Z
+user-esme,Esme Cardona,esme.cardona@example.com,FR,free,0,2025-04-28T12:00:00Z

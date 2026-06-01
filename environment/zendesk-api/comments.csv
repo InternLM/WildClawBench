@@ -1,0 +1,11 @@
+id,ticket_id,author_id,body,public,created_at
+801,701,604,The receipts stopped printing right after the v3.2 update.,true,2026-05-10T09:00:00Z
+802,701,602,Thanks for reporting. Can you share the printer model?,true,2026-05-11T10:00:00Z
+803,701,604,It is the Star TSP143 model.,true,2026-05-12T08:00:00Z
+804,702,605,The login just keeps redirecting in a loop.,true,2026-05-12T11:00:00Z
+805,702,603,We are investigating the SSO config on our side.,false,2026-05-13T09:00:00Z
+806,703,606,Could you send last month invoice as PDF?,true,2026-05-05T14:00:00Z
+807,703,602,Attached the invoice PDF. Marking this solved.,true,2026-05-08T16:00:00Z
+808,705,604,Still no sign of the refund after five days.,true,2026-05-18T15:00:00Z
+809,707,605,App crashes on a Pixel 8 running Android 14.,true,2026-05-21T13:00:00Z
+810,707,603,Reproduced on our side and escalating to engineering.,false,2026-05-22T10:00:00Z

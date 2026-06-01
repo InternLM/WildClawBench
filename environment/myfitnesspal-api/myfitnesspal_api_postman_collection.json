@@ -1,0 +1,633 @@
+{
+  "info": {
+    "name": "MyFitnessPal Mock API v1",
+    "description": "Complete test collection for the mock MyFitnessPal API service (Alex Rivera user). Base URL defaults to http://localhost:8006 for local testing.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8006"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "User Profile",
+      "item": [
+        {
+          "name": "GET User Profile",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/profile",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "profile"]
+            }
+          }
+        },
+        {
+          "name": "PUT Update Profile",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/user/profile",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "profile"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"activity_level\": \"very_active\",\n  \"daily_calorie_goal\": 2000\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Goals",
+      "item": [
+        {
+          "name": "GET Goals",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/goals",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "goals"]
+            }
+          }
+        },
+        {
+          "name": "PUT Update Goals",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/user/goals",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "goals"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"daily_calorie_goal\": 1900,\n  \"macro_goals\": {\"protein_pct\": 40, \"carbs_pct\": 35, \"fat_pct\": 25}\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Food Database",
+      "item": [
+        {
+          "name": "GET Search Foods - all",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/foods/search",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "foods", "search"]
+            }
+          }
+        },
+        {
+          "name": "GET Search Foods - query chicken",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/foods/search?q=chicken&limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "foods", "search"],
+              "query": [{"key": "q", "value": "chicken"}, {"key": "limit", "value": "10"}]
+            }
+          }
+        },
+        {
+          "name": "GET Search Foods - query brand",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/foods/search?q=chobani",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "foods", "search"],
+              "query": [{"key": "q", "value": "chobani"}]
+            }
+          }
+        },
+        {
+          "name": "GET Food by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/foods/1",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "foods", "1"]
+            }
+          }
+        },
+        {
+          "name": "GET Food - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/foods/9999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "foods", "9999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Food Diary",
+      "item": [
+        {
+          "name": "GET Diary for date",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary/2025-04-28",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary", "2025-04-28"]
+            }
+          }
+        },
+        {
+          "name": "GET Diary with meal filter",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary/2025-04-28?meal=Breakfast",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary", "2025-04-28"],
+              "query": [{"key": "meal", "value": "Breakfast"}]
+            }
+          }
+        },
+        {
+          "name": "GET Diary - no entries date",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary/2020-01-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary", "2020-01-01"]
+            }
+          }
+        },
+        {
+          "name": "GET Diary range",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary?start_date=2025-04-25&end_date=2025-04-28",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary"],
+              "query": [{"key": "start_date", "value": "2025-04-25"}, {"key": "end_date", "value": "2025-04-28"}]
+            }
+          }
+        },
+        {
+          "name": "POST Log food entry",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2025-04-28\",\n  \"meal\": \"Snacks\",\n  \"food_id\": 3,\n  \"servings\": 1.0\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Log food entry - bad food_id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2025-04-28\",\n  \"meal\": \"Lunch\",\n  \"food_id\": 9999,\n  \"servings\": 1.0\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update diary entry",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary/1",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary", "1"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"servings\": 2.0\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update diary entry - 404",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary", "99999"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"servings\": 2.0\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Diary entry",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary/291",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary", "291"]
+            }
+          }
+        },
+        {
+          "name": "DELETE Diary entry - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v1/user/diary/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "diary", "99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nutrition",
+      "item": [
+        {
+          "name": "GET Daily totals",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/nutrition/2025-04-28",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "nutrition", "2025-04-28"]
+            }
+          }
+        },
+        {
+          "name": "GET Daily totals - no data date",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/nutrition/2020-01-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "nutrition", "2020-01-01"]
+            }
+          }
+        },
+        {
+          "name": "GET Weekly summary",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/nutrition/weekly/2025-04-28",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "nutrition", "weekly", "2025-04-28"]
+            }
+          }
+        },
+        {
+          "name": "GET Progress (30 days)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/progress?days=30",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "progress"],
+              "query": [{"key": "days", "value": "30"}]
+            }
+          }
+        },
+        {
+          "name": "GET Progress (7 days)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/progress?days=7",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "progress"],
+              "query": [{"key": "days", "value": "7"}]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exercise Types",
+      "item": [
+        {
+          "name": "GET All exercise types",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/exercises/types",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "exercises", "types"]
+            }
+          }
+        },
+        {
+          "name": "GET Exercise types - cardio filter",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/exercises/types?category=cardio",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "exercises", "types"],
+              "query": [{"key": "category", "value": "cardio"}]
+            }
+          }
+        },
+        {
+          "name": "GET Exercise type by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/exercises/types/1",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "exercises", "types", "1"]
+            }
+          }
+        },
+        {
+          "name": "GET Exercise type - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/exercises/types/999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "exercises", "types", "999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exercise Log",
+      "item": [
+        {
+          "name": "GET All exercises",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/exercises",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "exercises"]
+            }
+          }
+        },
+        {
+          "name": "GET Exercises - date range",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/exercises?start_date=2025-04-20&end_date=2025-04-28",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "exercises"],
+              "query": [{"key": "start_date", "value": "2025-04-20"}, {"key": "end_date", "value": "2025-04-28"}]
+            }
+          }
+        },
+        {
+          "name": "GET Exercise by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/exercises/1",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "exercises", "1"]
+            }
+          }
+        },
+        {
+          "name": "GET Exercise - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/exercises/999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "exercises", "999"]
+            }
+          }
+        },
+        {
+          "name": "POST Log exercise",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/user/exercises",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "exercises"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2025-04-28\",\n  \"exercise_type_id\": 3,\n  \"duration_minutes\": 30,\n  \"calories_burned\": 240,\n  \"notes\": \"Evening ride around the neighborhood\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Log exercise - bad type_id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/user/exercises",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "exercises"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2025-04-28\",\n  \"exercise_type_id\": 999,\n  \"duration_minutes\": 30,\n  \"calories_burned\": 200\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Weight",
+      "item": [
+        {
+          "name": "GET All weight entries",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/weight",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "weight"]
+            }
+          }
+        },
+        {
+          "name": "GET Weight entry by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/weight/1",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "weight", "1"]
+            }
+          }
+        },
+        {
+          "name": "GET Weight entry - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/weight/999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "weight", "999"]
+            }
+          }
+        },
+        {
+          "name": "POST Log weight",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/user/weight",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "weight"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2025-04-29\",\n  \"weight_lbs\": 191.5,\n  \"notes\": \"Morning weigh-in\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Water",
+      "item": [
+        {
+          "name": "GET Water for date",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/water/2025-04-28",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "water", "2025-04-28"]
+            }
+          }
+        },
+        {
+          "name": "GET Water - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/user/water/2020-01-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "water", "2020-01-01"]
+            }
+          }
+        },
+        {
+          "name": "POST Log water",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/user/water",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "water"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2025-04-29\",\n  \"cups\": 8,\n  \"notes\": \"Good hydration day\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Log water - duplicate date",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/user/water",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "water"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"2025-04-28\",\n  \"cups\": 10\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update water",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/user/water/2025-04-28",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "water", "2025-04-28"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cups\": 10,\n  \"notes\": \"Updated - extra water after workout\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update water - 404",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/user/water/2020-01-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "user", "water", "2020-01-01"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cups\": 5\n}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

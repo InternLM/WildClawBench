@@ -1,0 +1,5 @@
+device_id,zone_id,zone_name,sensitivity,enabled,coordinates
+987007,zone_013,South Center Aisle,6,true,"0.2,0.4,0.8,0.9"
+987007,zone_014,Garage Door Threshold,7,true,"0.0,0.0,1.0,0.3"
+987007,zone_015,East Wall Bike Zone,5,true,"0.7,0.2,1.0,0.9"
+987007,zone_016,West Wall Storage,5,true,"0.0,0.2,0.3,0.9"

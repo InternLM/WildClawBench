@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "BigCommerce API Mock",
+    "description": "Test collection for the mock BigCommerce API service (catalog products v3, orders v2, customers v3). Base URL defaults to http://localhost:8084. In docker-compose, the service is reachable at http://bigcommerce-api:8084.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8084"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list products", "request": {"method": "GET", "url": "{{baseUrl}}/v3/catalog/products?limit=5&page=1"}},
+    {"name": "filter products by name", "request": {"method": "GET", "url": "{{baseUrl}}/v3/catalog/products?name=wireless"}},
+    {"name": "get product", "request": {"method": "GET", "url": "{{baseUrl}}/v3/catalog/products/101"}},
+    {"name": "list orders", "request": {"method": "GET", "url": "{{baseUrl}}/v2/orders?customer_id=1001"}},
+    {"name": "get order", "request": {"method": "GET", "url": "{{baseUrl}}/v2/orders/2001"}},
+    {"name": "create order", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"customer_id\": 1002, \"status_id\": 1, \"payment_method\": \"Credit Card\", \"billing_address\": {\"first_name\": \"Marcus\", \"last_name\": \"Lee\", \"email\": \"marcus.lee@example.com\"}, \"products\": [{\"product_id\": 103, \"quantity\": 2}]}"}, "url": "{{baseUrl}}/v2/orders"}},
+    {"name": "list customers", "request": {"method": "GET", "url": "{{baseUrl}}/v3/customers?email=olivia"}}
+  ]
+}

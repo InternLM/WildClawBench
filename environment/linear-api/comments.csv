@@ -1,0 +1,12 @@
+id,body,issueId,userId,createdAt,updatedAt
+cmt-201-1,PR #482 merged. Tested at 768px and 1024px breakpoints in Chrome and Safari - cards no longer overlap. Moving to Done.,BUG-201,user-tyler,2026-04-28T11:00:00,2026-04-28T11:00:00
+cmt-201-2,Pulled the dashboard on a tablet during break - cards holding their grid now at 768px. Signing off as charge nurse - safe to close for the ER floor.,BUG-201,user-david,2026-04-28T19:30:00,2026-04-28T19:30:00
+cmt-202-1,Still seeing long drug names cut off (Hydroxyzine Pamoate Metoprolol Succinate). Need tooltip on hover or a min column width.,BUG-202,user-david,2026-03-15T08:20:00,2026-03-15T08:20:00
+cmt-202-2,Picked this up. Will land tooltip on hover + ellipsis pattern next sprint.,BUG-202,user-mira,2026-05-04T09:30:00,2026-05-04T09:30:00
+cmt-204-1,PR #514 merged 2026-05-06. Password error now wraps above the submit button on iOS Safari and Android Chrome at 360px.,BUG-204,user-tyler,2026-05-06T10:45:00,2026-05-06T10:45:00
+cmt-204-2,Looks good in QA staging on my end. Moving to Done.,BUG-204,user-patty,2026-05-06T14:10:00,2026-05-06T14:10:00
+cmt-204-3,Confirmed on Android Chrome too. Closing.,BUG-204,user-mira,2026-05-06T15:20:00,2026-05-06T15:20:00
+cmt-205-1,Marking Wont Fix - design team says zebra striping is on the v2 roadmap not this sprint.,BUG-205,user-patty,2026-03-21T09:00:00,2026-03-21T09:00:00
+cmt-209-1,Reproduced on night shift - timestamps unreadable on the Recent Activity card under low-light ER lighting. Tagging Critical.,BUG-209,user-david,2026-04-01T22:15:00,2026-04-01T22:15:00
+cmt-209-2,Token swap landing in next theme refresh. Tracking for sprint 5.,BUG-209,user-tyler,2026-05-04T09:00:00,2026-05-04T09:00:00
+cmt-210-1,EHR vendor confirms the indication field is in the v3 payload. Waiting on integration ticket BKD-118 before we can wire it through.,BUG-210,user-mira,2026-04-12T10:00:00,2026-04-12T10:00:00

@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "WhatsApp Cloud API Mock",
+    "description": "Mock of the WhatsApp Cloud API (Graph v17.0). Base URL: http://localhost:8015. In docker-compose: http://whatsapp-api:8015.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8015"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "business", "request": {"method": "GET", "url": "{{baseUrl}}/v17.0/business"}},
+    {"name": "list contacts opted in", "request": {"method": "GET", "url": "{{baseUrl}}/v17.0/contacts?opted_in_only=true"}},
+    {"name": "get contact", "request": {"method": "GET", "url": "{{baseUrl}}/v17.0/contacts/15551550101"}},
+    {"name": "list approved templates", "request": {"method": "GET", "url": "{{baseUrl}}/v17.0/message_templates?status=APPROVED"}},
+    {"name": "get template", "request": {"method": "GET", "url": "{{baseUrl}}/v17.0/message_templates/order_shipped"}},
+    {"name": "list conversations", "request": {"method": "GET", "url": "{{baseUrl}}/v17.0/conversations"}},
+    {"name": "list messages", "request": {"method": "GET", "url": "{{baseUrl}}/v17.0/messages?conversation_id=conv-001"}},
+    {"name": "send text", "request": {"method": "POST", "url": "{{baseUrl}}/v17.0/messages",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"messaging_product\": \"whatsapp\", \"to\": \"15551550101\", \"type\": \"text\", \"text\": {\"body\": \"Tracking ETA Monday.\"}}"}}},
+    {"name": "send template", "request": {"method": "POST", "url": "{{baseUrl}}/v17.0/messages",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"messaging_product\": \"whatsapp\", \"to\": \"15551550104\", \"type\": \"template\", \"template\": {\"name\": \"welcome_offer\", \"language\": {\"code\": \"en_US\"}, \"components\": [{\"type\": \"body\", \"parameters\": [{\"type\": \"text\", \"text\": \"Marcus\"}, {\"type\": \"text\", \"text\": \"WELCOME10\"}]}]}}"}}},
+    {"name": "mark read", "request": {"method": "POST", "url": "{{baseUrl}}/v17.0/messages/status",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"messaging_product\": \"whatsapp\", \"status\": \"read\", \"message_id\": \"msg-001\"}"}}}
+  ]
+}

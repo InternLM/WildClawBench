@@ -1,0 +1,10 @@
+id,createdTime,Name,Email,Company,Role
+recCont0000000001,2026-01-05T08:00:00.000Z,Mara Lindgren,mara@brightpath.io,Brightpath,VP Product
+recCont0000000002,2026-01-09T09:15:00.000Z,Tomas Vega,tomas@brightpath.io,Brightpath,Engineer
+recCont0000000003,2026-01-18T11:00:00.000Z,Yara Khalil,yara@nimbus-co.com,Nimbus Co,Designer
+recCont0000000004,2026-02-02T14:20:00.000Z,Ethan Walsh,ethan@nimbus-co.com,Nimbus Co,CTO
+recCont0000000005,2026-02-19T10:45:00.000Z,Grace Okafor,grace@helio-labs.com,Helio Labs,Founder
+recCont0000000006,2026-03-03T13:30:00.000Z,Sven Nyberg,sven@helio-labs.com,Helio Labs,Ops Lead
+recCont0000000007,2026-03-22T09:00:00.000Z,Lucia Romano,lucia@orbit-mark.com,Orbit Marketing,Account Director
+recCont0000000008,2026-04-11T16:10:00.000Z,Kenji Sato,kenji@orbit-mark.com,Orbit Marketing,Strategist
+recCont0000000009,2026-05-06T12:00:00.000Z,Hannah Frost,hannah@vela-tech.com,Vela Tech,CEO

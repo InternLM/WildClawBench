@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "SendGrid Mock API v3",
+    "description": "Test collection for the mock SendGrid v3 API (mail send, templates, marketing contacts, lists, stats). Base URL defaults to http://localhost:8027. In docker-compose, the service is reachable at http://sendgrid-api:8027.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8027"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "send mail", "request": {"method": "POST", "url": "{{baseUrl}}/v3/mail/send",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"personalizations\": [{\"to\": [{\"email\": \"new.user@example.com\"}]}], \"from\": {\"email\": \"no-reply@orbit-labs.com\"}, \"template_id\": \"d-1a2b3c4d5e6f7081\"}"}}},
+    {"name": "list templates", "request": {"method": "GET", "url": "{{baseUrl}}/v3/templates?generations=dynamic"}},
+    {"name": "get template", "request": {"method": "GET", "url": "{{baseUrl}}/v3/templates/d-1a2b3c4d5e6f7081"}},
+    {"name": "create template", "request": {"method": "POST", "url": "{{baseUrl}}/v3/templates",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Re-engagement\", \"generation\": \"dynamic\", \"subject\": \"We miss you, {{first_name}}\", \"html_content\": \"<p>Come back!</p>\"}"}}},
+    {"name": "list marketing contacts", "request": {"method": "GET", "url": "{{baseUrl}}/v3/marketing/contacts"}},
+    {"name": "upsert marketing contacts", "request": {"method": "POST", "url": "{{baseUrl}}/v3/marketing/contacts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"contacts\": [{\"email\": \"lena.koch@example.com\", \"first_name\": \"Lena\", \"last_name\": \"Koch\", \"country\": \"DE\"}], \"list_ids\": [\"list-7788aa11\"]}"}}},
+    {"name": "list lists", "request": {"method": "GET", "url": "{{baseUrl}}/v3/marketing/lists"}},
+    {"name": "get stats", "request": {"method": "GET", "url": "{{baseUrl}}/v3/stats?start_date=2026-05-20&end_date=2026-05-26"}}
+  ]
+}

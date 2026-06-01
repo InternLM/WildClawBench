@@ -1,0 +1,5 @@
+file_key,project_id,name,thumbnail_url,last_modified,version,role,editor_type
+FK001abcdefg,proj-201,Onboarding Flow,https://figma-thumbs.example.com/FK001.png,2026-05-22T14:30:00Z,4920183,owner,figma
+FK002hijklmn,proj-201,Checkout Redesign,https://figma-thumbs.example.com/FK002.png,2026-05-24T09:12:00Z,4920455,editor,figma
+FK003opqrstu,proj-202,Landing Page,https://figma-thumbs.example.com/FK003.png,2026-05-20T18:45:00Z,4918002,owner,figma
+FK004vwxyz12,proj-203,Component Library,https://figma-thumbs.example.com/FK004.png,2026-05-25T11:05:00Z,4921330,owner,figma

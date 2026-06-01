@@ -1,0 +1,7 @@
+pipeline_id,pipeline_label,stage_id,stage_label,display_order,probability,closed
+default,Sales Pipeline,appointmentscheduled,Appointment Scheduled,0,0.2,false
+default,Sales Pipeline,qualifiedtobuy,Qualified To Buy,1,0.4,false
+default,Sales Pipeline,presentationscheduled,Presentation Scheduled,2,0.6,false
+default,Sales Pipeline,decisionmakerboughtin,Decision Maker Bought-In,3,0.8,false
+default,Sales Pipeline,closedwon,Closed Won,4,1.0,true
+default,Sales Pipeline,closedlost,Closed Lost,5,0.0,true

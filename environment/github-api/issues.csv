@@ -1,0 +1,9 @@
+id,number,repo,title,body,state,user,assignee,labels,milestone,created_at,updated_at,closed_at,is_pull_request
+3000001,142,auth-api,Refresh-token rotation under load,"During load tests we see refresh-token issuance latency spike beyond 600ms p95. Suspected lock contention in session-store write path.",open,helena-park,jonas-pereira,bug;perf,v2.0,2026-05-22T11:00:00Z,2026-05-26T09:00:00Z,,false
+3000002,143,auth-api,Add metrics for shim dual-writer queue depth,"Need a gauge for the dual-writer queue depth so we can alert when it's growing.",open,amelia-ortega,helena-park,enhancement,v2.0,2026-05-20T10:00:00Z,2026-05-23T16:00:00Z,,false
+3000003,144,auth-api,PR: introduce dual-write shim,"Adds the dual-write shim behind the auth_v2_rollout flag.",open,amelia-ortega,jonas-pereira,enhancement,v2.0,2026-05-18T11:00:00Z,2026-05-25T14:00:00Z,,true
+3000010,89,billing-api,gRPC retry config missing for UNAVAILABLE,"The Java gRPC client doesn't retry on UNAVAILABLE — we drop ~0.3% of calls during deploys.",open,jonas-pereira,jonas-pereira,bug,,2026-05-12T13:00:00Z,2026-05-19T11:00:00Z,,false
+3000011,90,billing-api,PR: dual-serve REST + gRPC,"Initial dual-serve scaffold. CI passing; integration tests pending.",open,jonas-pereira,helena-park,enhancement,,2026-05-19T11:00:00Z,2026-05-23T10:00:00Z,,true
+3000020,205,web-app,Account settings page crashes on Safari 17,"Reproduced on Safari 17.4 — TypeError in profile-avatar hook.",open,noor-aziz,rohit-bansal,bug,,2026-05-25T08:00:00Z,2026-05-26T07:30:00Z,,false
+3000030,12,infra,terraform plan drift in eu-west-2,"After bootstrapping eu-west-2 we see persistent drift on the NAT gateway count.",open,helena-park,helena-park,bug;infra,,2026-05-23T13:00:00Z,2026-05-26T08:00:00Z,,false
+3000040,7,docs,Document feature flag rollout playbook,"Closing the loop on the rollout playbook discussion.",closed,amelia-ortega,amelia-ortega,documentation,,2026-04-15T10:00:00Z,2026-05-10T14:00:00Z,2026-05-10T14:00:00Z,false

@@ -1,0 +1,43 @@
+{
+  "info": {
+    "name": "Stripe Mock API v1",
+    "description": "Test collection for the mock Stripe API service. Base URL defaults to http://localhost:8021. In docker-compose, the service is reachable at http://stripe-api:8021. Amounts are integer cents.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8021"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list customers", "request": {"method": "GET", "url": "{{baseUrl}}/v1/customers?limit=5"}},
+    {"name": "get customer", "request": {"method": "GET", "url": "{{baseUrl}}/v1/customers/cus_Nb1Aurora"}},
+    {"name": "create customer", "request": {"method": "POST", "url": "{{baseUrl}}/v1/customers",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Nimbus Coffee\", \"email\": \"billing@nimbus.coffee\", \"description\": \"New POS customer\"}"}}},
+    {"name": "list products", "request": {"method": "GET", "url": "{{baseUrl}}/v1/products"}},
+    {"name": "list prices", "request": {"method": "GET", "url": "{{baseUrl}}/v1/prices?product=prod_Pro"}},
+    {"name": "create payment intent", "request": {"method": "POST", "url": "{{baseUrl}}/v1/payment_intents",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"amount\": 4900, \"currency\": \"usd\", \"customer\": \"cus_Nb3Lumen\", \"confirm\": true, \"description\": \"Pro Monthly\"}"}}},
+    {"name": "get payment intent", "request": {"method": "GET", "url": "{{baseUrl}}/v1/payment_intents/pi_example"}},
+    {"name": "list charges", "request": {"method": "GET", "url": "{{baseUrl}}/v1/charges?customer=cus_Nb1Aurora"}},
+    {"name": "get charge", "request": {"method": "GET", "url": "{{baseUrl}}/v1/charges/ch_3Aurora01"}},
+    {"name": "create charge", "request": {"method": "POST", "url": "{{baseUrl}}/v1/charges",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"amount\": 9900, \"currency\": \"usd\", \"customer\": \"cus_Nb1Aurora\", \"description\": \"POS Bundle\"}"}}},
+    {"name": "create refund", "request": {"method": "POST", "url": "{{baseUrl}}/v1/refunds",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"charge\": \"ch_3Aurora01\", \"amount\": 1900, \"reason\": \"requested_by_customer\"}"}}},
+    {"name": "list invoices", "request": {"method": "GET", "url": "{{baseUrl}}/v1/invoices?status=open"}},
+    {"name": "get invoice", "request": {"method": "GET", "url": "{{baseUrl}}/v1/invoices/in_Aurora001"}},
+    {"name": "create invoice", "request": {"method": "POST", "url": "{{baseUrl}}/v1/invoices",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"customer\": \"cus_Nb1Aurora\", \"amount_due\": 4900, \"currency\": \"usd\"}"}}},
+    {"name": "list subscriptions", "request": {"method": "GET", "url": "{{baseUrl}}/v1/subscriptions?status=active"}},
+    {"name": "get subscription", "request": {"method": "GET", "url": "{{baseUrl}}/v1/subscriptions/sub_Aurora"}},
+    {"name": "create subscription", "request": {"method": "POST", "url": "{{baseUrl}}/v1/subscriptions",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"customer\": \"cus_Nb1Aurora\", \"price\": \"price_Pro_M\", \"quantity\": 1}"}}},
+    {"name": "get balance", "request": {"method": "GET", "url": "{{baseUrl}}/v1/balance"}}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Binance Mock API",
+    "description": "Test collection for the mock Binance Spot API (ticker price, 24hr ticker, order book depth, klines, account). Base URL defaults to http://localhost:8097. In docker-compose, the service is reachable at http://binance-api:8097.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8097"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "ticker price all", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/ticker/price"}},
+    {"name": "ticker price symbol", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/ticker/price?symbol=BTCUSDT"}},
+    {"name": "ticker 24hr", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/ticker/24hr?symbol=ETHUSDT"}},
+    {"name": "depth", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/depth?symbol=BTCUSDT&limit=5"}},
+    {"name": "klines", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/klines?symbol=BTCUSDT&interval=1h"}},
+    {"name": "account", "request": {"method": "GET", "url": "{{baseUrl}}/api/v3/account"}}
+  ]
+}

@@ -1,0 +1,4 @@
+id,name,activity_type,distance,average_grade,maximum_grade,elevation_high,elevation_low,climb_category,city,state
+3301,Waterfront Loop,Run,3200,0.4,2.1,18.2,9.5,0,Portland,OR
+3302,Powell Butte Climb,Run,1800,6.8,11.2,188.0,66.0,2,Portland,OR
+3303,Springwater Corridor,Ride,12400,0.6,3.4,42.0,11.0,0,Portland,OR

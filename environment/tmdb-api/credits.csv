@@ -1,0 +1,18 @@
+movie_id,person_id,credit_type,character,job,order
+101,501,cast,Commander Iris Vale,,0
+101,502,cast,Engineer Dak,,1
+101,504,crew,,Director,0
+101,507,crew,,Screenplay,1
+102,503,cast,Nima the cook,,0
+102,505,cast,Aunt Rosa,,1
+102,508,crew,,Director,0
+103,506,cast,Smuggler Corso,,0
+103,502,cast,Smuggler Bly,,1
+103,504,crew,,Director,0
+105,501,cast,Auditor Jane Hale,,0
+105,506,cast,Director Mwangi,,1
+105,508,crew,,Director,0
+110,503,cast,The Cartographer,,0
+110,505,cast,Valley Elder,,1
+110,504,crew,,Director,0
+110,507,crew,,Screenplay,1

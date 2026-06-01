@@ -1,0 +1,5 @@
+uuid,owner,event_type,name,status,start_time,end_time,location_type,location,created_at,canceled_reason
+sev-1001,user-amelia-ortega,et-intro-15,Intro Call,active,2026-05-28T17:00:00.000000Z,2026-05-28T17:15:00.000000Z,zoom,https://zoom.us/j/8801234567,2026-05-25T09:00:00.000000Z,
+sev-1002,user-amelia-ortega,et-discovery-30,Discovery Session,active,2026-05-29T20:00:00.000000Z,2026-05-29T20:30:00.000000Z,google_conference,https://meet.google.com/abc-defg-hij,2026-05-26T11:30:00.000000Z,
+sev-1003,user-amelia-ortega,et-deepdive-60,Technical Deep Dive,active,2026-06-01T18:00:00.000000Z,2026-06-01T19:00:00.000000Z,physical,Orbit Labs HQ Room 4,2026-05-26T15:45:00.000000Z,
+sev-1004,user-amelia-ortega,et-intro-15,Intro Call,canceled,2026-05-22T16:00:00.000000Z,2026-05-22T16:15:00.000000Z,zoom,https://zoom.us/j/8809999999,2026-05-20T08:00:00.000000Z,Invitee had a scheduling conflict

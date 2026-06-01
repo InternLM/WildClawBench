@@ -1,0 +1,9 @@
+{
+  "user_id": "user-amelia",
+  "name": "Amelia Ortega",
+  "email": "amelia.ortega@example.com",
+  "base_currency": "USD",
+  "tax_filing_status": "single",
+  "year": 2026,
+  "as_of_date": "2026-05-26"
+}

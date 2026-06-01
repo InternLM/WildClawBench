@@ -1,0 +1,6 @@
+name,namespace,type,cluster_ip,external_ip,port,target_port,protocol,selector,created_time
+kube-dns,kube-system,ClusterIP,10.96.0.10,,53,53,UDP,k8s-app=kube-dns,2025-08-01T09:00:00Z
+api-gateway,prod,LoadBalancer,10.96.12.40,34.120.55.10,80,8080,TCP,app=api-gateway,2026-05-01T10:05:00Z
+billing-worker,prod,ClusterIP,10.96.12.55,,9090,9090,TCP,app=billing-worker,2026-05-10T11:05:00Z
+auth-service,prod,ClusterIP,10.96.12.60,,8443,8443,TCP,app=auth-service,2026-05-15T13:25:00Z
+web-frontend,default,LoadBalancer,10.96.20.5,34.120.55.20,443,8443,TCP,app=web-frontend,2026-04-22T09:05:00Z

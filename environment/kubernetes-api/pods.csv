@@ -1,0 +1,10 @@
+name,namespace,status,phase,node,pod_ip,image,container_name,restart_count,ready,created_time
+coredns-7c9b6,kube-system,Running,Running,node-control-1,10.244.0.2,registry.k8s.io/coredns/coredns:v1.11.1,coredns,0,true,2025-08-01T09:01:00Z
+kube-proxy-2x4dz,kube-system,Running,Running,node-worker-1,10.0.1.11,registry.k8s.io/kube-proxy:v1.29.4,kube-proxy,0,true,2025-08-01T09:02:00Z
+api-gateway-5d8f7c,prod,Running,Running,node-worker-1,10.244.1.21,orbit-labs/api-gateway:2.4.1,gateway,0,true,2026-05-20T12:00:00Z
+api-gateway-5d8f7d,prod,Running,Running,node-worker-2,10.244.2.22,orbit-labs/api-gateway:2.4.1,gateway,1,true,2026-05-20T12:00:00Z
+billing-worker-9af21,prod,Pending,Pending,,,orbit-labs/billing-worker:1.8.0,worker,0,false,2026-05-27T08:15:00Z
+auth-service-77bd4c,prod,CrashLoopBackOff,Running,node-worker-3,10.244.3.31,orbit-labs/auth-service:3.1.0,auth,7,false,2026-05-26T22:40:00Z
+web-frontend-6c4ab1,default,Running,Running,node-worker-2,10.244.2.40,orbit-labs/web-frontend:5.2.0,web,0,true,2026-05-24T14:10:00Z
+web-frontend-6c4ab2,default,Running,Running,node-worker-3,10.244.3.41,orbit-labs/web-frontend:5.2.0,web,0,true,2026-05-24T14:10:00Z
+redis-cache-0,prod,Running,Running,node-worker-1,10.244.1.50,redis:7.2-alpine,redis,0,true,2026-05-18T09:30:00Z

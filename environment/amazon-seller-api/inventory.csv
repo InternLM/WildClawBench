@@ -1,0 +1,7 @@
+fnSku,sellerSku,asin,productName,condition,fulfillmentChannel,totalQuantity,inStockSupplyQuantity,inboundWorkingQuantity,inboundShippedQuantity,inboundReceivingQuantity,reservedQuantity,unfulfillableQuantity,lastUpdatedTime
+X001FURN0001,FN-SOFA-RVT01,B0FURN00001,Rivet Mid-Century Modern Sofa - Light Gray,NewItem,MFN,24,24,0,0,0,0,0,2026-05-20T10:30:00Z
+X001FURN0002,FN-CTBL-NJW01,B0FURN00002,Nathan James Walnut Coffee Table,NewItem,AFN,40,36,0,0,0,3,1,2026-05-20T10:30:00Z
+X001FURN0003,FN-BED-ZNS01,B0FURN00003,Zinus Modern Studio Bed Frame - Black,NewItem,MFN,30,30,0,0,0,0,0,2026-05-20T10:30:00Z
+X001FURN0004,FN-SHOE-SMG01,B0FURN00004,SONGMICS Sneaker Storage Cabinet - 48 Pair Capacity,NewItem,AFN,35,32,0,0,0,2,1,2026-05-20T10:30:00Z
+X001FURN0005,FN-DESK-TRB01,B0FURN00005,Tribesigns Executive Desk - Modern Workspace,NewItem,MFN,22,22,0,0,0,0,0,2026-05-20T10:30:00Z
+X001FURN0006,FN-CHAIR-HBD01,B0FURN00006,Hbada Ergonomic Office Chair,NewItem,AFN,38,34,0,0,0,3,1,2026-05-20T10:30:00Z

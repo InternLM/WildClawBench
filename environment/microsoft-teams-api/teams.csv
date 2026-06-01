@@ -1,0 +1,7 @@
+id,display_name,description,visibility,is_archived,web_url,member_ids
+19:team-eng0001@thread.tacv2,Engineering,Core engineering team for platform and infra,private,false,https://teams.microsoft.com/l/team/19%3Ateam-eng0001,user-001;user-002;user-003;user-004
+19:team-prod0002@thread.tacv2,Product,Product management and design collaboration,private,false,https://teams.microsoft.com/l/team/19%3Ateam-prod0002,user-002;user-005;user-006
+19:team-mktg0003@thread.tacv2,Marketing,Campaigns content and demand generation,public,false,https://teams.microsoft.com/l/team/19%3Ateam-mktg0003,user-006;user-007;user-008
+19:team-sales004@thread.tacv2,Sales,Account executives and SDR coordination,private,false,https://teams.microsoft.com/l/team/19%3Ateam-sales004,user-008;user-009;user-010
+19:team-allco005@thread.tacv2,All Company,Company-wide announcements and town halls,public,false,https://teams.microsoft.com/l/team/19%3Ateam-allco005,user-001;user-002;user-005;user-006;user-008
+19:team-arch0006@thread.tacv2,Architecture Guild,Cross-team architecture and standards,private,true,https://teams.microsoft.com/l/team/19%3Ateam-arch0006,user-001;user-003
