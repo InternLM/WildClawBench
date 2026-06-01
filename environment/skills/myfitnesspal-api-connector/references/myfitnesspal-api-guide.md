@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the MyFitnessPal nutrition track
 
 ## Base URL
 
-Set via the `MYFITNESSPAL_API_URL` environment variable (e.g. `http://myfitnesspal-api:8006`).
+Set via the `MYFITNESSPAL_API_URL` environment variable (e.g. `http://myfitnesspal-api:8005`).
 
 ## User Profile
 

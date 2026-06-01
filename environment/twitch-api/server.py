@@ -7,7 +7,11 @@ from fastapi import FastAPI, Query
 from typing import Optional, List
 
 import twitch_data
-from tracking_middleware import install_tracker
+try:
+    from tracking_middleware import install_tracker
+except ModuleNotFoundError:  # standalone run without the shared module on sys.path
+    def install_tracker(app):  # no-op fallback: audit endpoints disabled
+        return None
 
 app = FastAPI(title="Twitch Helix API (Mock)", version="1.0.0")
 install_tracker(app)

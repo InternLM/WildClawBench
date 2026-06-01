@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the Pinterest business account A
 
 ## Base URL
 
-Set via the `PINTEREST_API_URL` environment variable (e.g. `http://pinterest-api:8005`).
+Set via the `PINTEREST_API_URL` environment variable (e.g. `http://pinterest-api:8006`).
 
 ## User Account
 

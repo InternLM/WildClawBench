@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the Instagram Business/Creator a
 
 ## Base URL
 
-Set via the `INSTAGRAM_API_URL` environment variable (e.g. `http://instagram-api:8007`).
+Set via the `INSTAGRAM_API_URL` environment variable (e.g. `http://instagram-api:8003`).
 
 ## User / Account
 

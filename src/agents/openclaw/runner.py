@@ -248,6 +248,9 @@ class OpenClawAgent(BaseAgent):
                     {"id": "gpt-5.5", "name": "gpt-5.5",
                      "input": ["text", "image"], "reasoning": True,
                      "contextWindow": 1050000, "maxTokens": 128000},
+                    {"id": "claude-sonnet-4-6", "name": "claude-sonnet-4-6",
+                     "input": ["text", "image"], "reasoning": True,
+                     "contextWindow": 200000, "maxTokens": 128000},
                 ],
             }
             thinking_default = (thinking or "").strip()
@@ -343,7 +346,9 @@ p.write_text(json.dumps(d, indent=2))
 
     def _set_image_model(self, task_id: str, model: str) -> None:
         if self.litellm_config_yaml:
-            logger.info("[%s] imageModel already set via _set_model (litellm mode)", task_id)
+            if model:
+                logger.warning("[%s] image model %r ignored in LiteLLM mode; "
+                               "imageModel mirrors the chat model", task_id, model)
             return
         subprocess.run(
             ["docker", "exec", task_id, "/bin/bash", "-c",

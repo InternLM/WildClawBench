@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the Linear project management AP
 
 ## Base URL
 
-Set via the `LINEAR_API_URL` environment variable (e.g. `http://linear-api:8009`).
+Set via the `LINEAR_API_URL` environment variable (e.g. `http://linear-api:8004`).
 
 ## Teams
 

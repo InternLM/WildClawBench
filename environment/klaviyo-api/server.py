@@ -10,7 +10,11 @@ from fastapi.responses import JSONResponse
 from typing import Optional
 
 import klaviyo_data
-from tracking_middleware import install_tracker
+try:
+    from tracking_middleware import install_tracker
+except ModuleNotFoundError:  # standalone run without the shared module on sys.path
+    def install_tracker(app):  # no-op fallback: audit endpoints disabled
+        return None
 
 app = FastAPI(title="Klaviyo API (Mock)", version="2024-10-15")
 install_tracker(app)

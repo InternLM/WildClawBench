@@ -113,6 +113,15 @@ class Config:
             except ValueError:
                 return default
 
+        def f(key: str, default: float | None = None) -> float | None:
+            v = env.get(key)
+            if v in (None, ""):
+                return default
+            try:
+                return float(v)
+            except ValueError:
+                return default
+
         _wcsd = s("WILDCLAW_SKILLS_DIR")
         # Media-processing skills injected into every task by default (e.g.
         # video-frames = ffmpeg frame/clip extraction for multimodal inputs).
@@ -142,7 +151,7 @@ class Config:
             default_skills=[x.strip() for x in _ds.split(",") if x.strip()],
             litellm_master_key=s("KENSEI_LITELLM_MASTER_KEY", "KENSEI3_LITELLM_MASTER_KEY", "LITELLM_MASTER_KEY", default="sk-talos-litellm"),
             litellm_port=i("KENSEI3_LITELLM_PORT", i("LITELLM_PORT", 4000)),
-            min_harbor_score=float(s("MIN_HARBOR_SCORE")) if s("MIN_HARBOR_SCORE") else None,
+            min_harbor_score=f("MIN_HARBOR_SCORE"),
         )
 
     def litellm_enabled(self) -> bool:

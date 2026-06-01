@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the Ring home security API.
 
 ## Base URL
 
-Set via the `RING_API_URL` environment variable (e.g. `http://ring-api:8010`).
+Set via the `RING_API_URL` environment variable (e.g. `http://ring-api:8008`).
 
 ## Devices
 

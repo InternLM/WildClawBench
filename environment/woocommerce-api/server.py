@@ -8,7 +8,11 @@ from fastapi.responses import JSONResponse
 from typing import Optional
 
 import woocommerce_data
-from tracking_middleware import install_tracker
+try:
+    from tracking_middleware import install_tracker
+except ModuleNotFoundError:  # standalone run without the shared module on sys.path
+    def install_tracker(app):  # no-op fallback: audit endpoints disabled
+        return None
 
 app = FastAPI(title="WooCommerce REST API v3 (Mock)", version="wc/v3")
 install_tracker(app)

@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the Google Classroom teacher API
 
 ## Base URL
 
-Set via the `GOOGLE_CLASSROOM_API_URL` environment variable (e.g. `http://google-classroom-api:8011`).
+Set via the `GOOGLE_CLASSROOM_API_URL` environment variable (e.g. `http://google-classroom-api:8002`).
 
 ## Health
 

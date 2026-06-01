@@ -320,7 +320,8 @@ def _augment_task_with_mocks(task: dict, config, mock_env_dict: dict | None) -> 
     task["env_dir"] = env_dir
     task["required_apis"] = sorted(required)
     task["mock_overlays"] = overlays
-    # only expose mock URLs for the APIs this task actually needs
+    # Expose the shared mock-stack URLs to the task (the full service map; the
+    # extra entries are inert env vars for APIs this task doesn't call).
     if mock_env_dict:
         task["env_dict"] = dict(mock_env_dict)
     else:
@@ -816,7 +817,17 @@ def run_single_task(
     return result
 
 
-LITELLM_MODEL_IDS = {"claude-opus-4.7", "gpt-5.5"}
+LITELLM_MODEL_IDS = {"claude-opus-4.7", "gpt-5.5", "claude-sonnet-4-6"}
+
+
+def _run_cleanups(cleanups: list) -> None:
+    """Run registered teardown callables in reverse order, swallowing errors."""
+    for fn in reversed(cleanups):
+        try:
+            fn()
+        except Exception as exc:
+            logger.warning("cleanup error: %s", exc)
+    cleanups.clear()
 
 
 def _setup_litellm_and_mocks(args, config: Config, cleanups: list):
@@ -856,9 +867,10 @@ def _setup_litellm_and_mocks(args, config: Config, cleanups: list):
         aws_bearer_token=config.aws_bearer_token,
         aws_region=config.bedrock_region,
         openai_api_key=config.openai_api_key,
+        port=config.litellm_port,
     )
     cleanups.append(lambda: stop_litellm(sidecar))
-    if not wait_for_litellm_healthy(sidecar, timeout=90.0):
+    if not wait_for_litellm_healthy(sidecar, config.litellm_port, timeout=90.0):
         logger.error("LiteLLM sidecar %s not healthy; using OpenRouter", sidecar)
         return False, "", "", "", {}
     logger.info("LiteLLM sidecar %s ready on network %s", sidecar, network)
@@ -974,9 +986,16 @@ def main() -> None:
             openrouter_base_url=OPENROUTER_BASE_URL_OPENCLAW,
         )
     else:
-        use_litellm, litellm_yaml, network, sidecar, mock_env_dict = (
-            _setup_litellm_and_mocks(args, config, cleanups)
-        )
+        try:
+            use_litellm, litellm_yaml, network, sidecar, mock_env_dict = (
+                _setup_litellm_and_mocks(args, config, cleanups)
+            )
+        except Exception:
+            # Setup registers teardown callables before the main try/finally
+            # below, so a failure mid-setup (e.g. start_litellm / start_mock_stack
+            # raising) would otherwise orphan the docker network + containers.
+            _run_cleanups(cleanups)
+            raise
         if use_litellm:
             backend = OpenClawAgent(
                 gateway_port=GATEWAY_PORT,
@@ -1010,11 +1029,7 @@ def main() -> None:
         _run_dispatch(args, backend, config, mock_env_dict, effective_model,
                       network=network, enable_mock_stack=enable_mock_stack)
     finally:
-        for fn in reversed(cleanups):
-            try:
-                fn()
-            except Exception as exc:
-                logger.warning("cleanup error: %s", exc)
+        _run_cleanups(cleanups)
 
 
 def _run_dispatch(args, backend, config: Config, mock_env_dict: dict, effective_model: str,

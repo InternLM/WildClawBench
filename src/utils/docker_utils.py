@@ -321,6 +321,16 @@ def setup_mock_apis(task_id: str, environment_dir: Path,
             continue
         env_vars[env_var_name] = f"http://localhost:{port}"
         logger.info("[%s] Mock API %s copied → %s (port %s)", task_id, api_name, dest, port)
+    # Stage the shared tracking middleware alongside the copied APIs so that
+    # `from tracking_middleware import install_tracker` resolves when each server
+    # runs with PYTHONPATH=/opt/mock_apis (see warmup_for_mock_apis).
+    tracking_mw = Path(environment_dir) / "tracking_middleware.py"
+    if env_vars and tracking_mw.is_file():
+        subprocess.run(["docker", "exec", task_id, "mkdir", "-p", "/opt/mock_apis"],
+                       capture_output=True)
+        subprocess.run(["docker", "cp", str(tracking_mw),
+                        f"{task_id}:/opt/mock_apis/tracking_middleware.py"],
+                       capture_output=True)
     return env_vars
 
 
@@ -328,11 +338,26 @@ def warmup_for_mock_apis(required_apis: list[str], environment_dir: Path) -> str
     lines: list[str] = []
     for api_name in required_apis:
         api_dir = Path(environment_dir) / api_name
-        if not (api_dir / "service.toml").is_file():
+        toml_path = api_dir / "service.toml"
+        if not toml_path.is_file():
+            continue
+        try:
+            port = _parse_service_toml(toml_path).get("port")
+        except Exception:
+            port = None
+        if not port:
             continue
         dest = f"/opt/mock_apis/{api_name}"
         lines.append(f"pip install -q -r {dest}/requirements.txt 2>/dev/null || true")
-        lines.append(f"cd {dest} && python server.py &")
+        # server.py exposes `app` but has no __main__ block, so it must be served
+        # via uvicorn (not `python server.py`, which would import and exit without
+        # binding). PYTHONPATH=/opt/mock_apis lets the shared tracking_middleware
+        # module import (staged by setup_mock_apis).
+        lines.append(
+            f"cd {dest} && PYTHONPATH=/opt/mock_apis "
+            f"uvicorn server:app --host 0.0.0.0 --port {port} "
+            f"> /tmp/mock_{api_name}.log 2>&1 &"
+        )
     return "\n".join(lines)
 
 

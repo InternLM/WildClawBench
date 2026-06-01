@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the YouTube channel management A
 
 ## Base URL
 
-Set via the `YOUTUBE_API_URL` environment variable (e.g. `http://youtube-api:8008`).
+Set via the `YOUTUBE_API_URL` environment variable (e.g. `http://youtube-api:8009`).
 
 ## Channel Info
 

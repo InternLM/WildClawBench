@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the Amazon seller API.
 
 ## Base URL
 
-Set via the `AMAZON_SELLER_API_URL` environment variable (e.g. `http://amazon-seller-api:8004`).
+Set via the `AMAZON_SELLER_API_URL` environment variable (e.g. `http://amazon-seller-api:8000`).
 
 ## Seller Account
 

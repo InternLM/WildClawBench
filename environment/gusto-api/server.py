@@ -9,7 +9,11 @@ from pydantic import BaseModel
 from typing import Optional
 
 import gusto_data
-from tracking_middleware import install_tracker
+try:
+    from tracking_middleware import install_tracker
+except ModuleNotFoundError:  # standalone run without the shared module on sys.path
+    def install_tracker(app):  # no-op fallback: audit endpoints disabled
+        return None
 
 app = FastAPI(title="Gusto Payroll API (Mock)", version="v1")
 install_tracker(app)

@@ -4,7 +4,7 @@ Detailed patterns and examples for working with the Etsy seller API.
 
 ## Base URL
 
-Set via the `ETSY_API_URL` environment variable (e.g. `http://etsy-api:8003`).
+Set via the `ETSY_API_URL` environment variable (e.g. `http://etsy-api:8001`).
 
 ## Current User
 

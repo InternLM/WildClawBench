@@ -11,7 +11,11 @@ from pydantic import BaseModel
 from typing import Optional, Dict, Any
 
 import salesforce_data
-from tracking_middleware import install_tracker
+try:
+    from tracking_middleware import install_tracker
+except ModuleNotFoundError:  # standalone run without the shared module on sys.path
+    def install_tracker(app):  # no-op fallback: audit endpoints disabled
+        return None
 
 app = FastAPI(title="Salesforce REST API (Mock)", version="v59.0")
 install_tracker(app)

@@ -10,7 +10,11 @@ from pydantic import BaseModel
 from typing import Optional, Dict, Any
 
 import hubspot_data
-from tracking_middleware import install_tracker
+try:
+    from tracking_middleware import install_tracker
+except ModuleNotFoundError:  # standalone run without the shared module on sys.path
+    def install_tracker(app):  # no-op fallback: audit endpoints disabled
+        return None
 
 app = FastAPI(title="HubSpot CRM API (Mock)", version="v3")
 install_tracker(app)

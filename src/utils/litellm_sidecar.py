@@ -104,6 +104,7 @@ def start_litellm(
     aws_bearer_token: str = "",
     aws_region: str = "ap-south-1",
     openai_api_key: str = "",
+    port: int = LITELLM_INTERNAL_PORT,
 ) -> None:
     env_args: list[str] = ["-e", f"LITELLM_MASTER_KEY={master_key}"]
     if aws_bearer_token:
@@ -122,7 +123,7 @@ def start_litellm(
         "-v", f"{host_config_path}:/app/config.yaml:ro",
         LITELLM_IMAGE,
         "--config", "/app/config.yaml",
-        "--port", str(LITELLM_INTERNAL_PORT),
+        "--port", str(port),
     ]
     logger.info("[%s] Starting LiteLLM sidecar on network %s", container_name, network)
     subprocess.run(["docker", "rm", "-f", container_name], capture_output=True)
@@ -131,11 +132,12 @@ def start_litellm(
         raise RuntimeError(f"LiteLLM container start failed:\n{r.stderr}")
 
 
-def wait_for_litellm_healthy(container_name: str, timeout: float = 60.0) -> bool:
+def wait_for_litellm_healthy(container_name: str, port: int = LITELLM_INTERNAL_PORT,
+                             timeout: float = 60.0) -> bool:
     probe = (
         "import sys, urllib.request; "
         "urllib.request.urlopen("
-        f"'http://localhost:{LITELLM_INTERNAL_PORT}/health/liveliness', timeout=2"
+        f"'http://localhost:{port}/health/liveliness', timeout=2"
         ")"
     )
     deadline = time.time() + timeout
