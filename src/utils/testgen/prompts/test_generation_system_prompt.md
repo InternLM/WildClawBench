@@ -343,6 +343,8 @@ assert "summer sale" in body.get("title", "").lower(), "title doesn't match task
 
 The user message lists distractor APIs explicitly under **"Distractor APIs"**. You MUST generate at least one `TestNegativeWeight*` test method for EACH distractor API listed. Missing even one distractor is a lint failure.
 
+**HARD RULE — DO NOT INVENT DISTRACTORS**: The test method name and the test body MUST reference the EXACT distractor API name from the "Distractor APIs" section (e.g. if the section lists `paypal-api`, `mailchimp-api`, `notion-api`, `instacart-api`, the methods must be `test_paypal_distractor_touched`, `test_mailchimp_distractor_touched`, `test_notion_distractor_touched`, `test_instacart_distractor_touched` — each calling `api_get(PAYPAL_API_URL, ...)`, `api_get(MAILCHIMP_API_URL, ...)`, etc.). NEVER invent thematic categories like `TestNegativeWeightCryptoTradesPlaced`, `TestNegativeWeightHRDistractor`, `TestNegativeWeightUnauthorizedMedicalAdvice`. The system already maps the named APIs to mock servers; thematic placeholders cannot reach those servers and will silently no-op.
+
 For each distractor API and forbidden behavior, write tests inside `TestNegativeWeight*` classes:
 
 ```python

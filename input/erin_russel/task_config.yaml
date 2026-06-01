@@ -1,0 +1,134 @@
+# ============================================================
+# KenseiForge Task Configuration
+# ============================================================
+# This file defines metadata for the task. KenseiForge uses it
+# to generate task.toml, wire up the correct mock APIs, and
+# configure the Docker environment.
+#
+# Required fields: id, name, difficulty, category, taxonomy, mock_apis, required_skills
+# Optional fields: subcategory, tags, distractor_skills, modality_tags, dependency_tags
+
+# --- Identity ---
+id: erin_russell_orchid_01
+name: Orchid Show Prep Documentation Task
+
+# --- Difficulty ---
+# Options: easy | medium | hard | expert
+difficulty: hard
+
+# --- Category & Taxonomy ---
+# Category: free-form string describing the domain
+category: visual_learning
+subcategory: lab_fieldwork_documentation
+
+# Taxonomy must be one of the Kensei Multimodal taxonomy values:
+#   - Visual Learning
+#   - Commerce & Product
+#   - Creative & Media
+#   - Operations & QA
+#   - Health & Wellness
+#   - Property & Space
+taxonomy: "Visual Learning"
+
+# --- Tags ---
+tags:
+  - orchid
+  - multimodal
+  - document-generation
+  - cross-modal-reconciliation
+  - visual-inspection
+  - research
+
+# --- APIs & Skills ---
+# mock_apis: Which mock API services to include in the Docker environment.
+# These must match directory names under KenseiForge/environment/
+# Available: amazon-seller-api, etsy-api, google-classroom-api, instagram-api,
+#            linear-api, myfitnesspal-api, pinterest-api, quickbooks-api,
+#            ring-api, youtube-api
+mock_apis:
+  - pinterest-api
+
+# required_skills: Skills the agent needs to complete the task.
+# Available connector skills: amazon-seller-api-connector, etsy-api-connector,
+#   google-classroom-api-connector, instagram-api-connector, linear-api-connector,
+#   myfitnesspal-api-connector, pinterest-api-connector, quickbooks-api-connector,
+#   ring-api-connector, youtube-api-connector
+# Built-in skills: bash, browser, image-view
+required_skills:
+  - pinterest-api-connector
+  - bash
+  - image-view
+
+# distractor_skills: Extra skills provided to the agent that are NOT needed.
+# Tests whether the agent can focus on relevant tools.
+distractor_skills:
+  - instagram-api-connector
+  - youtube-api-connector
+
+# --- Multimodal ---
+# modality_tags: What types of media the task involves
+modality_tags:
+  - image_analysis
+  - screenshot_analysis
+  - ocr
+  - visual_artifact_generation
+
+# dependency_tags: How multimodal assets relate to task success
+dependency_tags:
+  - requires_visual_analysis
+  - requires_document_reading
+  - requires_cross_modal_reconciliation
+
+# --- Dimensions ---
+# Task complexity dimensions for [dimensions] section in task.toml.
+# Each key: "High" | "Mid" | "Low". Defaults to "Mid" if omitted.
+dimensions:
+  complex: High
+  long_horizon: High
+  objective: High
+  multimodal: High
+  cross_modal_cross_api: High
+  asset_complexity: High
+
+# --- Multimodal Assets (optional, auto-detected from data/ if omitted) ---
+# Explicitly list assets if you need custom descriptions or roles.
+# Descriptions intentionally state ONLY the role/context of each asset — they
+# must NOT leak the species IDs, sensor values, or anomalies the agent has to
+# derive by inspecting the image with image-view.
+multimodal_assets:
+  - filename: care_sheet.md
+    mime_type: text/markdown
+    role: reference
+    description: Erin's transcribed greenhouse care notes defining the hard rules (root-zone temperature ceiling, watering prohibitions, humidity band, repotting triggers) the visual evidence must be cross-referenced against
+  - filename: "Screenshot 2026-05-18 111756.png"
+    mime_type: image/png
+    role: primary
+    description: Bloom-stage cluster overview with multiple plants in frame
+  - filename: "Screenshot 2026-05-18 111835.png"
+    mime_type: image/png
+    role: primary
+    description: Single-plant bloom close-up
+  - filename: "Screenshot 2026-05-18 111855.png"
+    mime_type: image/png
+    role: primary
+    description: Tray inspection during a care event
+  - filename: "Screenshot 2026-05-18 111911.png"
+    mime_type: image/png
+    role: supporting
+    description: Greenhouse aisle wide-shot for general bench context, not assigned to a specific plant
+  - filename: "Screenshot 2026-05-18 111920.png"
+    mime_type: image/png
+    role: primary
+    description: Hand-held root inspection
+  - filename: "Screenshot 2026-05-18 111930.png"
+    mime_type: image/png
+    role: distractor
+    description: Non-orchid agronomic field scene included to test that the agent filters irrelevant inputs
+  - filename: "Screenshot 2026-05-18 111937.png"
+    mime_type: image/png
+    role: primary
+    description: Dual panel showing a plant close-up on the left and a bench bloom on the right
+  - filename: "Screenshot 2026-05-18 111946.png"
+    mime_type: image/png
+    role: primary
+    description: Environmental sensor display with bench bloom context

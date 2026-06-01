@@ -128,12 +128,78 @@ def load_task(path: str | Path) -> dict:
     raise ValueError(f"Unsupported task file format: {p.suffix}")
 
 
-def _load_native_task(task_dir: Path) -> dict:
-    """kensei-native task dir: prompt.txt + rubric.json + persona/ + data/ + mock_data/ + gt/.
+def _derive_taxonomy_for_native_task(
+    task_dir: Path, rubrics: list, attachments: list
+) -> tuple[str, str]:
+    # Persona-format native tasks (input/<task>/{prompt.txt,rubric.json,persona/,data/,mock_data/})
+    # carry no task.toml — the reference trajectory still expects non-empty
+    # taxonomy_l1/l2. Optional `<task_dir>/taxonomy.json` overrides; otherwise
+    # we derive L1 from the dominant rubric evaluation_target and L2 from the
+    # combination of attachment MIME families + per-task mock_data/<api>/ dirs.
+    override = task_dir / "taxonomy.json"
+    if override.is_file():
+        try:
+            data = json.loads(override.read_text(encoding="utf-8")) or {}
+            l1 = str(data.get("l1") or data.get("taxonomy_l1") or "")
+            l2 = str(data.get("l2") or data.get("taxonomy_l2") or "")
+            if l1 or l2:
+                return l1, l2
+        except (json.JSONDecodeError, OSError):
+            pass
 
-    workspace_path is left empty here; run_batch stages a workspace from
-    `attachments` so task solutions/tests under data/ are never exposed.
-    """
+    targets: dict[str, int] = {}
+    for r in rubrics if isinstance(rubrics, list) else []:
+        if isinstance(r, dict):
+            t = str(r.get("evaluation_target") or "").strip()
+            if t:
+                targets[t] = targets.get(t, 0) + 1
+    dominant_target = max(targets, key=lambda k: targets[k]) if targets else ""
+    l1 = {
+        "final_answer": "Information Synthesis",
+        "workspace_artifact": "File Generation",
+        "tool_call_audit": "Tool Use Audit",
+    }.get(dominant_target, "Multimodal Reasoning")
+
+    mime_families: set[str] = set()
+    for att in attachments if isinstance(attachments, list) else []:
+        if isinstance(att, dict):
+            mime = str(att.get("mimeType") or "")
+            if mime.startswith("image/"):
+                mime_families.add("image")
+            elif mime in ("text/csv", "application/vnd.ms-excel"):
+                mime_families.add("tabular")
+            elif mime == "application/pdf":
+                mime_families.add("pdf")
+            elif mime.startswith(("audio/", "video/")):
+                mime_families.add("media")
+    api_dirs: list[str] = []
+    mock_root = task_dir / "mock_data"
+    if mock_root.is_dir():
+        api_dirs = sorted(d.name.replace("-api", "") for d in mock_root.iterdir() if d.is_dir())
+
+    parts: list[str] = []
+    if "image" in mime_families and "tabular" in mime_families:
+        parts.append("receipt_reconciliation")
+    elif "image" in mime_families:
+        parts.append("image_grounded_analysis")
+    elif "tabular" in mime_families:
+        parts.append("tabular_data_analysis")
+    elif "pdf" in mime_families:
+        parts.append("pdf_extraction")
+    elif "media" in mime_families:
+        parts.append("media_processing")
+    else:
+        parts.append("text_analysis")
+    if api_dirs:
+        parts.append("with_" + "_".join(api_dirs[:3]) + "_apis")
+    l2 = "__".join(parts) if parts else "general"
+    return l1, l2
+
+
+def _load_native_task(task_dir: Path) -> dict:
+    # kensei-native task dir: prompt.txt + rubric.json + persona/ + data/ + mock_data/ + gt/.
+    # workspace_path is left empty here; run_batch stages a workspace from
+    # `attachments` so task solutions/tests under data/ are never exposed.
     prompt = (task_dir / "prompt.txt").read_text(encoding="utf-8").strip()
     try:
         rubrics = json.loads((task_dir / "rubric.json").read_text(encoding="utf-8")) or []
@@ -162,11 +228,12 @@ def _load_native_task(task_dir: Path) -> dict:
                 "path": str(f.resolve()),
                 "size": f.stat().st_size,
                 "storedAs": f.name,
-                "role": "primary_reference",
+                "role": "primary",
                 "description": "",
             })
 
     persona_dir = task_dir / "persona"
+    derived_l1, derived_l2 = _derive_taxonomy_for_native_task(task_dir, rubrics, attachments)
     return {
         "task_id": task_dir.name,
         "prompt": prompt,
@@ -178,8 +245,8 @@ def _load_native_task(task_dir: Path) -> dict:
         "rubrics": rubrics,
         "automated_checks": "",
         "difficulty": "medium",
-        "l1": "",
-        "l2": "",
+        "l1": derived_l1,
+        "l2": derived_l2,
         "task_type": "",
         "timeout_seconds": 1800,
         "category": "",
@@ -250,7 +317,7 @@ def _load_attachments_yaml(raw: dict, task_dir: Path) -> list[dict]:
             "path": str(p),
             "size": p.stat().st_size,
             "storedAs": p.name,
-            "role": spec.get("role") or "primary_reference",
+                "role": spec.get("role") or "primary",
             "description": spec.get("description") or "",
         })
     if not declared and att_dir.is_dir():
@@ -264,7 +331,7 @@ def _load_attachments_yaml(raw: dict, task_dir: Path) -> list[dict]:
                 "path": str(f),
                 "size": f.stat().st_size,
                 "storedAs": f.name,
-                "role": "primary_reference",
+                "role": "primary",
                 "description": "",
             })
     return attachments

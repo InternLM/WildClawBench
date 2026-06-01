@@ -1,10 +1,13 @@
-"""Schema-meta builders: task_type slug + multimodal metadata
-+ input file manifest + output artifact manifest.
+"""Schema-meta builders for the reference trajectory contract.
 
-Ports the corresponding helpers from custom_addons/kensei2/models/kensei2.py
-(L2128 _slugify_task_type, L2138 _build_multimodal_metadata,
- L2189 _build_input_files_manifest, L2234 _build_output_artifacts)
-with Odoo recordsets replaced by plain mappings.
+Reference shape (`/Users/apple/Downloads/output.json`) — `input_files` and
+`output_artifacts` live at the trajectory's TOP LEVEL (not nested under
+`meta_info`). Every record must carry `ref_id`, `filename`, `mime_type`,
+`size_bytes`, plus a polarity-fixed `source` field that documents WHERE
+the bytes came from (S3 key path for inputs, the literal
+`"agent_workspace"` tag for outputs). Ports the trimmed half of kensei2's
+`_build_input_files_manifest` + `_build_output_artifacts` with Odoo
+recordsets replaced by plain mappings.
 """
 
 from __future__ import annotations
@@ -30,17 +33,27 @@ _CONTAINER_PATH_RE = re.compile(
 # Workspace prefixes accepted for structured path args from write-style tools.
 _WORKSPACE_PREFIXES = ("/home/node/.openclaw/", "/tmp_workspace", "/root/workspace")
 
-_MIME_TO_ARTIFACT_TYPE = {
-    "image/": "generated_image",
-    "video/": "media",
-    "audio/": "media",
-    "application/pdf": "document",
-    "text/csv": "data_export",
-    "application/json": "data_export",
-    "text/markdown": "document",
-    "text/plain": "document",
-    "text/html": "document",
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "document",
+# MIME prefix → modality_tag emitted in `trajectory.meta_info.modality_tags`.
+# Reference uses processing-style verbs (image_ocr, pdf_extraction); do NOT
+# revert to the older upload_image/video/audio tags — those broke schema
+# parity with the canonical reference output.
+_INPUT_MIME_TO_MODALITY_TAG = {
+    "image/": "image_ocr",
+    "video/": "video_analysis",
+    "audio/": "audio_transcription",
+    "application/pdf": "pdf_extraction",
+}
+
+# Modality-fusion bucket. PDFs and image-bearing types collapse to "image"
+# because the agent's downstream processing fuses them with text reasoning.
+_INPUT_MIME_TO_FUSED = {
+    "image/": "image",
+    "video/": "video",
+    "audio/": "audio",
+    "application/pdf": "image",
+    "text/csv": "text",
+    "text/": "text",
+    "application/json": "text",
 }
 
 _OUTPUT_MIME_TO_MODALITY = {
@@ -53,29 +66,12 @@ _OUTPUT_MIME_TO_MODALITY = {
     "application/zip": "file",
 }
 
-_INPUT_MIME_TO_MODALITY_TAG = {
-    "image/": "upload_image",
-    "video/": "video",
-    "audio/": "audio",
-    "application/pdf": "pdf",
-}
-
 _WRITE_TOOL_NAMES = {"write", "save_file", "create_file", "write_file"}
 # Tools that run shell/python: deliverables written through them (redirection,
 # open().write, df.to_csv(...)) have no structured path arg, so we regex the
 # command string instead.
 _EXEC_TOOL_NAMES = {"exec", "bash", "shell", "sh", "run", "execute", "terminal"}
 _WRITE_PATH_KEYS = ("path", "file_path", "filePath", "filename")
-
-_VALID_L1 = {
-    "Small Business & Personal Docs",
-    "Creative & Media",
-    "Commerce & Product",
-    "Property & Space",
-    "Health & Wellness",
-    "Visual Learning",
-    "Operations & QA",
-}
 
 
 def slugify_task_type(l1_name: str, l2_name: str) -> str:
@@ -86,30 +82,34 @@ def slugify_task_type(l1_name: str, l2_name: str) -> str:
     return "%s__%s" % (slug(l1_name), slug(l2_name))
 
 
-def _classify_artifact_type(mime: str) -> str:
-    if not mime:
-        return "other"
-    for prefix, kind in _MIME_TO_ARTIFACT_TYPE.items():
-        if mime == prefix or mime.startswith(prefix):
-            return kind
-    return "other"
+def slug_taxonomy_l2(l2_name: str) -> str:
+    return _SLUG_RE.sub("_", (l2_name or "").lower()).strip("_")
 
 
-def _output_modality(mime: str) -> Optional[str]:
-    if not mime:
-        return None
-    for prefix, mod in _OUTPUT_MIME_TO_MODALITY.items():
-        if mime == prefix or mime.startswith(prefix):
-            return mod
-    return None
-
-
-def _modality_tag(mime: str) -> Optional[str]:
+def input_modality_tag(mime: str) -> Optional[str]:
     if not mime:
         return None
     for prefix, tag in _INPUT_MIME_TO_MODALITY_TAG.items():
         if mime == prefix or mime.startswith(prefix):
             return tag
+    return None
+
+
+def fused_modality(mime: str) -> Optional[str]:
+    if not mime:
+        return None
+    for prefix, mod in _INPUT_MIME_TO_FUSED.items():
+        if mime == prefix or mime.startswith(prefix):
+            return mod
+    return None
+
+
+def output_modality(mime: str) -> Optional[str]:
+    if not mime:
+        return None
+    for prefix, mod in _OUTPUT_MIME_TO_MODALITY.items():
+        if mime == prefix or mime.startswith(prefix):
+            return mod
     return None
 
 
@@ -119,41 +119,46 @@ def build_input_files_manifest(
     s3_bucket: str = "",
     s3_prefix: str = "",
 ) -> List[dict]:
-    """Build schema `meta_info.input_files` list.
+    """Build top-level `input_files` list matching reference schema.
 
-    `attachments` is an iterable of dicts with keys:
-        name        : filename
-        mimeType    : MIME type
-        storedAs    : opaque key under storage prefix
-        size        : optional byte size
+    Reference fields per entry: ref_id, filename, mime_type, role,
+    description, size_bytes, source. ALL six are always present.
 
-    When `s3_bucket` is empty, no `source` is emitted (local mode).
+    `source` is a RELATIVE key path (`input/tasks/<task_id>_<filename>`),
+    never an `s3://` URL — the bucket/region are implicit from harness
+    config; consumers reconstruct the full S3 URL on demand. `s3_bucket`
+    and `s3_prefix` kwargs are accepted but unused (kept for caller
+    compat; future may use them to override the key prefix).
     """
+    del s3_bucket, s3_prefix
     manifest: List[dict] = []
-    for idx, att in enumerate(attachments):
+    task_id = task.task_id or task.id or "task"
+    for idx, att in enumerate(attachments or []):
         if not isinstance(att, Mapping):
             continue
         filename = att.get("name") or att.get("filename") or ""
         if not filename:
             continue
-        mime = att.get("mimeType") or att.get("mime_type") \
-            or mimetypes.guess_type(filename)[0] or "application/octet-stream"
-        entry: dict = {
+        mime = (
+            att.get("mimeType")
+            or att.get("mime_type")
+            or mimetypes.guess_type(filename)[0]
+            or "application/octet-stream"
+        )
+        size_raw = att.get("size") or att.get("size_bytes") or 0
+        try:
+            size_bytes = int(size_raw or 0)
+        except (TypeError, ValueError):
+            size_bytes = 0
+        manifest.append({
             "ref_id": "input_%d" % idx,
             "filename": filename,
             "mime_type": mime,
-            "role": att.get("role", "primary_reference"),
-            "description": att.get("description") or "User-uploaded %s file" % mime,
-        }
-        size = att.get("size") or att.get("size_bytes")
-        if isinstance(size, int) and size > 0:
-            entry["size_bytes"] = size
-        stored = att.get("storedAs") or att.get("stored_as")
-        if s3_bucket and stored:
-            entry["source"] = "s3://%s/%s/input/tasks/%s/%s" % (
-                s3_bucket, (s3_prefix or "").strip("/"), task.task_id, stored,
-            )
-        manifest.append(entry)
+            "role": att.get("role") or "primary",
+            "description": att.get("description") or "",
+            "size_bytes": size_bytes,
+            "source": "input/tasks/%s_%s" % (task_id, filename),
+        })
     return manifest
 
 
@@ -179,22 +184,30 @@ def build_output_artifacts(
     task_id: str = "",
     input_filenames: Iterable[str] = (),
 ) -> List[dict]:
-    """Walk turns (.response + .tool_calls + .trajectory_messages JSON) and
-    emit one `OutputArtifact` per detected agent-written file.
+    """Walk turns for agent-written file paths; emit trimmed records.
 
     Each turn is a Mapping with keys: response, tool_calls (JSON str),
     trajectory_messages (JSON str). Missing keys are tolerated.
+
+    Reference fields per entry: ref_id, path, filename, mime_type,
+    size_bytes, source. `source` is the literal `"agent_workspace"`.
 
     `input_filenames` are the task's supplied input files (attachments). Paths
     whose basename matches an input are skipped — the agent READING an input is
     not an output artifact. Extensionless paths (e.g. `mkdir`'d directories) are
     also skipped so only concrete files are emitted.
+
+    Most artifacts are added by the caller in `run_batch.py` after the
+    workspace is collected (this scanner only catches paths explicitly
+    mentioned in tool calls / chat transcript). When turns is empty,
+    returns [].
     """
+    del s3_bucket, s3_prefix, s3_region, task_id
     input_set = {os.path.basename(str(n)) for n in (input_filenames or []) if n}
     artifacts: List[dict] = []
-    seen_paths = set()
+    seen_paths: set[str] = set()
 
-    def push(container_path: str, source_hint: str = ""):
+    def push(container_path: str) -> None:
         if not container_path or container_path in seen_paths:
             return
         filename = os.path.basename(container_path)
@@ -204,35 +217,23 @@ def build_output_artifacts(
             return
         seen_paths.add(container_path)
         mime = mimetypes.guess_type(filename)[0] or "application/octet-stream"
-        entry: dict = {
+        artifacts.append({
+            "ref_id": "artifact_%d" % (len(artifacts)),
+            "path": container_path,
             "filename": filename,
             "mime_type": mime,
-            "artifact_type": _classify_artifact_type(mime),
-            "description": "Agent-generated %s output" % (os.path.splitext(filename)[1].lstrip(".") or "file"),
-            "container_path": container_path,
-        }
-        if s3_bucket and task_id:
-            key = "%s/output/tasks/%s/%s" % (
-                (s3_prefix or "").strip("/"), task_id, filename,
-            )
-            entry["source"] = "s3://%s/%s" % (s3_bucket, key)
-            if s3_region:
-                entry["s3_url"] = "https://%s.s3.%s.amazonaws.com/%s" % (
-                    s3_bucket, s3_region, key,
-                )
-        elif source_hint:
-            entry["source"] = source_hint
-        artifacts.append(entry)
+            "size_bytes": 0,
+            "source": "agent_workspace",
+        })
 
     for turn in turns or []:
         if not isinstance(turn, Mapping):
             continue
-        # response text \u2014 regex any container paths
         response_text = turn.get("response") or ""
         if isinstance(response_text, str):
             for m in _CONTAINER_PATH_RE.findall(response_text):
                 push(m)
-        # tool_calls JSON \u2014 extract paths from write-style AND exec/shell tools
+        # tool_calls JSON — extract paths from write-style AND exec/shell tools
         for call in _walk_tool_calls(turn.get("tool_calls", "")):
             name = (call.get("name") or "").lower()
             raw_args = call.get("args") or call.get("arguments") or {}
@@ -252,11 +253,11 @@ def build_output_artifacts(
                         push(v)
                         break
             elif name in _EXEC_TOOL_NAMES:
-                # No structured path arg \u2014 recover any workspace path mentioned
+                # No structured path arg — recover any workspace path mentioned
                 # in the serialized command (redirections, to_csv, open().write).
                 for m in _CONTAINER_PATH_RE.findall(raw_args_str):
                     push(m)
-        # trajectory_messages JSON \u2014 same regex sweep
+        # trajectory_messages JSON — same regex sweep
         traj_json = turn.get("trajectory_messages") or ""
         if isinstance(traj_json, str) and traj_json:
             for m in _CONTAINER_PATH_RE.findall(traj_json):
@@ -265,58 +266,109 @@ def build_output_artifacts(
     return artifacts
 
 
+def build_trajectory_meta_info(
+    task: Task,
+    input_files: List[dict],
+    output_artifacts: List[dict],
+) -> dict:
+    """Build the `trajectory.meta_info` block.
+
+    Reference shape (exact 5 keys): platform, modality_tags, taxonomy_l1,
+    taxonomy_l2, modalities_fused. `platform` is always "linux" (containers
+    run linux). taxonomy_l1 preserves the original L1 string (case +
+    punctuation); taxonomy_l2 is the snake_case slug of L2.
+    """
+    modality_tags: List[str] = []
+    fused: List[str] = []
+    for f in input_files or []:
+        if not isinstance(f, Mapping):
+            continue
+        mime = f.get("mime_type", "")
+        tag = input_modality_tag(mime)
+        if tag and tag not in modality_tags:
+            modality_tags.append(tag)
+        bucket = fused_modality(mime)
+        if bucket and bucket not in fused:
+            fused.append(bucket)
+    for a in output_artifacts or []:
+        if not isinstance(a, Mapping):
+            continue
+        mime = a.get("mime_type", "")
+        bucket = fused_modality(mime)
+        if bucket and bucket not in fused:
+            fused.append(bucket)
+    if not fused:
+        fused = ["text"]
+
+    return {
+        "platform": "linux",
+        "modality_tags": modality_tags,
+        "taxonomy_l1": task.l1 or "",
+        "taxonomy_l2": slug_taxonomy_l2(task.l2 or ""),
+        "modalities_fused": fused,
+    }
+
+
+def build_input_modalities(input_files: List[dict]) -> List[str]:
+    seen: List[str] = []
+    for f in input_files or []:
+        if not isinstance(f, Mapping):
+            continue
+        mime = f.get("mime_type", "")
+        if mime and mime not in seen:
+            seen.append(mime)
+    return seen
+
+
+def build_output_modalities(output_artifacts: List[dict]) -> List[str]:
+    seen: List[str] = []
+    for a in output_artifacts or []:
+        if not isinstance(a, Mapping):
+            continue
+        mod = output_modality(a.get("mime_type", ""))
+        if mod and mod not in seen:
+            seen.append(mod)
+    if not seen:
+        seen = ["text"]
+    return seen
+
+
 def build_multimodal_metadata(
     task: Task,
     attachments: Iterable[Mapping],
     output_artifacts: Iterable[Mapping],
 ) -> dict:
-    """Build the `meta_info.multimodal_metadata` block.
-
-    Hard-coded narrative fields mirror the original Odoo behaviour
-    (`_build_multimodal_metadata` in kensei2.py L2138) so the trajectory
-    schema's `media_necessity >= 30` and `cross_modal_reasoning.description
-    >= 20` requirements are satisfied without per-task authoring.
+    """DEPRECATED: legacy nested metadata block; no longer emitted in the
+    reference schema. Retained for import-compat only. New code should
+    call `build_trajectory_meta_info` + `build_input_modalities` +
+    `build_output_modalities` directly.
     """
-    modality_tags: List[str] = []
-    input_modalities: List[str] = []
-    for att in attachments or []:
-        if not isinstance(att, Mapping):
-            continue
-        mime = att.get("mimeType") or att.get("mime_type") or ""
-        tag = _modality_tag(mime)
-        if tag and tag not in modality_tags:
-            modality_tags.append(tag)
-        if mime and mime not in input_modalities:
-            input_modalities.append(mime)
-    if not modality_tags:
-        modality_tags = ["upload_image"]
+    del task, attachments, output_artifacts
+    return {}
 
-    output_modalities: List[str] = []
-    for art in output_artifacts or []:
-        if not isinstance(art, Mapping):
-            continue
-        mod = _output_modality(art.get("mime_type", ""))
-        if mod and mod not in output_modalities:
-            output_modalities.append(mod)
-    if not output_modalities:
-        output_modalities = ["text"]
 
-    l1 = task.l1 if task.l1 in _VALID_L1 else "Visual Learning"
-    l2 = task.l2 or "Document Generation from Visual Input"
+def _classify_artifact_type(mime: str) -> str:
+    """Backward-compat helper (still referenced by s3_artifacts.py).
 
-    return {
-        "modality_tags": modality_tags,
-        "taxonomy_l1": l1,
-        "taxonomy_l2": l2,
-        "media_necessity": "Multimodal input required for visual understanding task.",
-        "cross_modal_reasoning": {
-            "percentage": 50,
-            "modalities_fused": ["text", "image"],
-            "description": "Agent processes visual and text inputs together.",
-        },
-        "input_modalities": input_modalities or ["text/plain"],
-        "output_modalities": output_modalities,
-        "asset_realism_notes": (
-            "Natural user-uploaded content with realistic filenames and varying quality."
-        ),
+    Maps a MIME type to a kensei2-style artifact_type bucket. This field
+    is no longer part of the persisted trajectory schema, but the
+    upload module keeps a rich internal record for debug/logging.
+    """
+    if not mime:
+        return "other"
+    table = {
+        "image/": "generated_image",
+        "video/": "media",
+        "audio/": "media",
+        "application/pdf": "document",
+        "text/csv": "data_export",
+        "application/json": "data_export",
+        "text/markdown": "document",
+        "text/plain": "document",
+        "text/html": "document",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "document",
     }
+    for prefix, kind in table.items():
+        if mime == prefix or mime.startswith(prefix):
+            return kind
+    return "other"

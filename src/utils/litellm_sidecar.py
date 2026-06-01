@@ -25,18 +25,20 @@ def build_litellm_config_yaml(
             f"      model: bedrock/converse/{bedrock_arn}\n"
             f"      aws_region_name: {aws_region or 'ap-south-1'}\n"
             "      thinking: {\"type\": \"adaptive\", \"display\": \"summarized\"}\n"
+            "      stream_options:\n"
+            "        include_usage: true\n"
             "      input_cost_per_token: 0.000005\n"
             "      output_cost_per_token: 0.000025"
         )
     if bedrock_sonnet_arn:
-        # Sonnet inference-profile — selectable by secondary personas / lighter
-        # tasks. Registered alongside Opus so a task can request claude-sonnet-4-6.
         model_blocks.append(
             "  - model_name: claude-sonnet-4-6\n"
             "    litellm_params:\n"
             f"      model: bedrock/converse/{bedrock_sonnet_arn}\n"
             f"      aws_region_name: {aws_region or 'ap-south-1'}\n"
             "      thinking: {\"type\": \"adaptive\", \"display\": \"summarized\"}\n"
+            "      stream_options:\n"
+            "        include_usage: true\n"
             "      input_cost_per_token: 0.000003\n"
             "      output_cost_per_token: 0.000015"
         )
@@ -107,8 +109,8 @@ def build_litellm_config_yaml(
         "  modify_params: true\n"
         "  telemetry: false\n"
         "  num_retries: 1\n"
-        "  request_timeout: 900\n"
-        "  stream_timeout: 60\n"
+"  request_timeout: 900\n"
+"  stream_timeout: 300\n"
         "  reasoning_auto_summary: true\n"
         + callback_line
         + "general_settings:\n"

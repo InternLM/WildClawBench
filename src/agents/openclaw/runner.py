@@ -385,7 +385,9 @@ p.write_text(json.dumps(d, indent=2))
     ) -> None:
         # Round-trip the set with a get-back-and-compare. Silent failure here
         # silently truncates MEMORY.md to 20k chars (binary default) and the
-        # agent has no in-context signal it lost its tail.
+        # agent has no in-context signal it lost its tail. We MUST NOT let a
+        # timeout/error propagate — gateway-start downstream is critical and
+        # must run regardless of whether this verification succeeded.
         cmd = (
             f"openclaw config set agents.defaults.bootstrapMaxChars {per_file_chars} >/dev/null 2>&1 && "
             f"openclaw config set agents.defaults.bootstrapTotalMaxChars {total_chars} >/dev/null 2>&1 && "
@@ -414,6 +416,7 @@ p.write_text(json.dumps(d, indent=2))
             logger.warning("[%s] Bootstrap-limit tuning failed to exec (%s); "
                            "continuing", task_id, exc)
             return
+
         applied_per = f"per={per_file_chars}" in result.stdout
         applied_total = f"total={total_chars}" in result.stdout
         if result.returncode == 0 and applied_per and applied_total:

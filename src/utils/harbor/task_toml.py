@@ -78,6 +78,7 @@ def build_task_toml(
     safety_critical: str = "",
     trajectory_modifier: str = "",
     pass_at_k: Optional[int] = None,
+    healthcheck_command: Optional[str] = None,
 ) -> str:
     """Emit a Harbor v1.1 task.toml string. Section order is strict."""
     env_vars = env_vars or {}
@@ -140,7 +141,7 @@ def build_task_toml(
     lines.append("")
 
     lines.append("[environment.healthcheck]")
-    lines.append("command = %s" % _q(_DEFAULTS["healthcheck_command"]))
+    lines.append("command = %s" % _q(healthcheck_command or _DEFAULTS["healthcheck_command"]))
     lines.append("interval_sec = %s" % _DEFAULTS["healthcheck_interval_sec"])
     lines.append("timeout_sec = %s" % _DEFAULTS["healthcheck_timeout_sec"])
     lines.append("retries = %d" % _DEFAULTS["healthcheck_retries"])

@@ -1,29 +1,35 @@
 """Schema-conformant trajectory builder.
 
-Ports `_build_trajectory_from_jsonl` from kensei2_sandbox.py (L3707)
-and the three wrap helpers from kensei2.py (L890 _wrap_trajectory_message,
-L914 _wrap_messages_with_turn_feedback, L1000 _unwrap_trajectory_messages)
-with Odoo recordsets replaced by plain mappings.
+Emits the reference output.json schema (top-level session_id / timestamp /
+trajectory / input_files / output_artifacts / messages / usage). Ports
+`_build_trajectory_from_jsonl` from kensei2_sandbox.py (L3707) and the
+three wrap helpers from kensei2.py (L890, L914, L1000) with Odoo
+recordsets replaced by plain mappings.
 """
 
 from __future__ import annotations
 
 import json
 import logging
-from typing import Callable, Iterable, List, Mapping, Optional
+import uuid
+from datetime import datetime, timezone
+from typing import Any, Callable, Iterable, List, Mapping, Optional
 
 from src.utils.jsonl_reader import sanitize_jsonl_message
-
-logger = logging.getLogger(__name__)
 from src.utils.store import Task
 
-logger = logging.getLogger(__name__)
 from .multimodal_meta import (
     build_input_files_manifest,
+    build_input_modalities,
     build_multimodal_metadata,
     build_output_artifacts,
+    build_output_modalities,
+    build_trajectory_meta_info,
     slugify_task_type,
 )
+
+
+logger = logging.getLogger(__name__)
 
 
 MediaHandler = Callable[[List[dict], str], List[dict]]
@@ -172,6 +178,35 @@ def _artifact_turns_from_entries(entries: List[dict]) -> List[dict]:
     return out
 
 
+_ZERO_TOP_USAGE: dict[str, Any] = {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cached_input_tokens": 0,
+    "cost_usd": 0.0,
+}
+
+
+def _coerce_top_usage(src: Optional[Mapping]) -> dict[str, Any]:
+    if not isinstance(src, Mapping):
+        return dict(_ZERO_TOP_USAGE)
+    def _int(k: str) -> int:
+        try:
+            return int(src.get(k, 0) or 0)
+        except (TypeError, ValueError):
+            return 0
+    cost_raw = src.get("cost_usd", 0)
+    try:
+        cost = float(cost_raw or 0)
+    except (TypeError, ValueError):
+        cost = 0.0
+    return {
+        "input_tokens": _int("input_tokens"),
+        "output_tokens": _int("output_tokens"),
+        "cached_input_tokens": _int("cached_input_tokens"),
+        "cost_usd": round(cost, 6),
+    }
+
+
 def build_trajectory_from_jsonl(
     task: Task,
     entries: List[dict],
@@ -181,18 +216,29 @@ def build_trajectory_from_jsonl(
     s3_bucket: str = "",
     s3_prefix: str = "",
     s3_region: str = "",
+    usage_top_level: Optional[Mapping] = None,
 ) -> dict:
-    """Produce schema-conformant delivery JSON from OpenClaw JSONL entries.
+    """Produce reference-schema delivery JSON from OpenClaw JSONL entries.
 
-    - `entries`: list of parsed JSONL dicts (one per OpenClaw event line).
-    - `attachments`: iterable of input file dicts (name, mimeType, storedAs, size).
-    - `turns`: optional list of turn-feedback dicts (prompt, hints, is_auto_hint, auto_hint_iteration).
-    - `media_handler`: callable(messages, task_id) -> messages, used to rewrite
-      inline media `source` fields (e.g. file:// or s3://). Defaults to no-op.
+    - `entries`: parsed JSONL dicts (one per OpenClaw event line).
+    - `attachments`: input file dicts (name, mimeType, storedAs, size).
+    - `turns`: optional turn-feedback dicts (prompt, hints, is_auto_hint).
+    - `media_handler`: callable(messages, task_id) -> messages, used to
+      rewrite inline media `source` fields. Defaults to no-op.
+    - `usage_top_level`: 4-key projection of agent usage. Coerced to
+      `{input_tokens, output_tokens, cached_input_tokens, cost_usd}`;
+      missing/malformed fields default to 0.
+
+    Output_artifacts is initially empty (or transcript-derived from turns).
+    The caller is expected to merge workspace-collected records before
+    persisting the trajectory.
     """
     attachments_list = list(attachments or [])
     turns_list = list(turns or [])
 
+    input_files = build_input_files_manifest(
+        task, attachments_list, s3_bucket=s3_bucket, s3_prefix=s3_prefix,
+    )
     # Detect deliverables from the actual conversation (tool calls + responses),
     # not the feedback `turns` (which carry no tool calls). Exclude the task's
     # input files so reading an attachment isn't mistaken for an output.
@@ -208,20 +254,6 @@ def build_trajectory_from_jsonl(
         task_id=task.task_id,
         input_filenames=input_filenames,
     )
-    meta_info = {
-        "task_type": slugify_task_type(task.l1, task.l2),
-        "task_description": task.task_description or "",
-        "task_completion_status": "success",
-        "system_prompt": task.system_prompt or "",
-        "platform": "macOS",
-        "multimodal_metadata": build_multimodal_metadata(
-            task, attachments_list, output_artifacts
-        ),
-        "input_files": build_input_files_manifest(
-            task, attachments_list, s3_bucket=s3_bucket, s3_prefix=s3_prefix,
-        ),
-        "output_artifacts": output_artifacts,
-    }
 
     messages: List[dict] = []
     last_kept_id: Optional[str] = None
@@ -264,23 +296,20 @@ def build_trajectory_from_jsonl(
     if media_handler is not None:
         messages = media_handler(messages, task.task_id or task.id)
 
-    n_thinking, samples = _count_thinking_blocks(messages)
-    if n_thinking:
-        logger.info(
-            "[THINKING-DEBUG] build_trajectory task=%s thinking_blocks=%d samples=%s",
-            task.task_id or task.id, n_thinking, samples[:3],
-        )
-    else:
-        logger.warning(
-            "[THINKING-DEBUG] build_trajectory task=%s thinking_blocks=0 "
-            "(no thinking content reached output.json)",
-            task.task_id or task.id,
-        )
-
     return {
-        "schema_version": "1.0.0",
-        "meta_info": meta_info,
+        "session_id": str(uuid.uuid4()),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "trajectory": {
+            "meta_info": build_trajectory_meta_info(
+                task, input_files, output_artifacts
+            ),
+            "input_modalities": build_input_modalities(input_files),
+            "output_modalities": build_output_modalities(output_artifacts),
+        },
+        "input_files": input_files,
+        "output_artifacts": output_artifacts,
         "messages": messages,
+        "usage": _coerce_top_usage(usage_top_level),
     }
 
 
