@@ -248,9 +248,6 @@ class OpenClawAgent(BaseAgent):
                     {"id": "gpt-5.5", "name": "gpt-5.5",
                      "input": ["text", "image"], "reasoning": True,
                      "contextWindow": 1050000, "maxTokens": 128000},
-                    {"id": "claude-sonnet-4-6", "name": "claude-sonnet-4-6",
-                     "input": ["text", "image"], "reasoning": True,
-                     "contextWindow": 200000, "maxTokens": 128000},
                 ],
             }
             thinking_default = (thinking or "").strip()

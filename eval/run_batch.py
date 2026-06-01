@@ -817,7 +817,7 @@ def run_single_task(
     return result
 
 
-LITELLM_MODEL_IDS = {"claude-opus-4.7", "gpt-5.5", "claude-sonnet-4-6"}
+LITELLM_MODEL_IDS = {"claude-opus-4.7", "gpt-5.5"}
 
 
 def _run_cleanups(cleanups: list) -> None:
