@@ -52,11 +52,29 @@ def _judge_system_prompt() -> str:
     )
 
 
+# Rubric schemas in this repo store the weight under either `weight` or
+# `score` (kensei2-style rubrics use `score`, with the SIGN encoding polarity
+# — negative for guardrail / forbidden-behavior criteria). The judge prompt's
+# polarity semantics live entirely in the weight sign, so missing this fallback
+# silently flattens all guardrail criteria to positive weight=1.0 and inverts
+# the pass-count for any criterion the agent CORRECTLY refrained from.
+def _extract_weight(r: dict) -> float:
+    w = r.get("weight")
+    if w is None:
+        w = r.get("score")
+    if w is None:
+        return 1.0
+    try:
+        return float(w)
+    except (TypeError, ValueError):
+        return 1.0
+
+
 def _judge_user_prompt(task_description: str, rubrics: list, evidence: str) -> str:
     crit_lines = []
     for i, r in enumerate(rubrics):
         crit = r.get("criterion") if isinstance(r, dict) else str(r)
-        wt = r.get("weight", 1.0) if isinstance(r, dict) else 1.0
+        wt = _extract_weight(r) if isinstance(r, dict) else 1.0
         crit_lines.append(f'  {{"id": {i}, "weight": {wt}, "criterion": {json.dumps(crit)}}}')
     schema = (
         '{"criteria": [{"id": <int>, "score": <0.0-1.0>, "reason": "<short>"}], '
@@ -175,15 +193,38 @@ def _call_judge_openai(model: str, system: str, user: str) -> tuple[str, dict]:
                      {"role": "user", "content": user}],
         "max_completion_tokens": 4000,
         "response_format": {"type": "json_object"},
+        "stream": True,
+        "stream_options": {"include_usage": True},
     }).encode()
     req = urllib.request.Request(
         "https://api.openai.com/v1/chat/completions", data=body, method="POST",
-        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
+                 "Accept": "text/event-stream"},
     )
+    text_parts: list[str] = []
+    u: dict = {}
     with urllib.request.urlopen(req, timeout=120) as r:
-        data = json.loads(r.read())
-    text = data["choices"][0]["message"]["content"]
-    u = data.get("usage", {}) or {}
+        for raw_line in r:
+            line = raw_line.decode("utf-8", errors="replace").rstrip("\r\n")
+            if not line.startswith("data:"):
+                continue
+            payload = line[5:].strip()
+            if payload == "[DONE]":
+                break
+            try:
+                obj = json.loads(payload)
+            except json.JSONDecodeError:
+                continue
+            choices = obj.get("choices") or []
+            if choices:
+                delta = choices[0].get("delta") or {}
+                content = delta.get("content")
+                if isinstance(content, str):
+                    text_parts.append(content)
+            usage_obj = obj.get("usage")
+            if isinstance(usage_obj, dict):
+                u = usage_obj
+    text = "".join(text_parts)
     details = u.get("prompt_tokens_details", {}) or {}
     prompt_tok = int(u.get("prompt_tokens", 0) or 0)
     comp_tok = int(u.get("completion_tokens", 0) or 0)
@@ -201,12 +242,13 @@ def _call_judge_openai(model: str, system: str, user: str) -> tuple[str, dict]:
 
 def _call_judge_bedrock(arn: str, system: str, user: str) -> tuple[str, dict]:
     import urllib.request, urllib.parse
+    from src.utils.bedrock_eventstream import iter_eventstream
     tok = os.environ.get("KENSEI_AWS_BEARER_TOKEN") or os.environ.get("AWS_BEARER_TOKEN_BEDROCK", "")
     reg = os.environ.get("KENSEI_AWS_REGION") or os.environ.get("AWS_REGION", "ap-south-1")
     if not tok:
         raise RuntimeError("no Bedrock bearer token for judge")
     mid = urllib.parse.quote(arn, safe="")
-    url = f"https://bedrock-runtime.{reg}.amazonaws.com/model/{mid}/converse"
+    url = f"https://bedrock-runtime.{reg}.amazonaws.com/model/{mid}/converse-stream"
     body = json.dumps({
         "system": [{"text": system}],
         "messages": [{"role": "user", "content": [{"text": user}]}],
@@ -214,16 +256,48 @@ def _call_judge_bedrock(arn: str, system: str, user: str) -> tuple[str, dict]:
     }).encode()
     req = urllib.request.Request(
         url, data=body, method="POST",
-        headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json"},
+        headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
+                 "Accept": "application/vnd.amazon.eventstream"},
     )
+    text_parts: list[str] = []
+    u: dict = {}
     with urllib.request.urlopen(req, timeout=120) as r:
-        data = json.loads(r.read())
-    text = data["output"]["message"]["content"][0]["text"]
-    u = data.get("usage", {}) or {}
+        def _chunks():
+            while True:
+                chunk = r.read(8192)
+                if not chunk:
+                    return
+                yield chunk
+        for evt_type, evt_payload in iter_eventstream(_chunks()):
+            if not isinstance(evt_payload, dict):
+                continue
+            if evt_type and evt_type.endswith("Exception"):
+                err = evt_payload.get("Message") or evt_payload.get("message") or ""
+                raise RuntimeError(f"Bedrock judge error ({evt_type}): {err}")
+            if evt_type == "contentBlockDelta":
+                delta = evt_payload.get("delta") or {}
+                txt = delta.get("text")
+                if isinstance(txt, str):
+                    text_parts.append(txt)
+            elif evt_type == "metadata":
+                usage_obj = evt_payload.get("usage")
+                if isinstance(usage_obj, dict):
+                    u = usage_obj
+    text = "".join(text_parts)
     in_tok = int(u.get("inputTokens", 0) or 0)
     out_tok = int(u.get("outputTokens", 0) or 0)
-    c_read = int(u.get("cacheReadInputTokens", 0) or 0)
-    c_write = int(u.get("cacheWriteInputTokens", 0) or 0)
+    c_read = int(
+        u.get("cacheReadInputTokens")
+        or u.get("cacheReadTokens")
+        or u.get("cache_read_input_tokens")
+        or 0
+    )
+    c_write = int(
+        u.get("cacheWriteInputTokens")
+        or u.get("cacheCreationInputTokens")
+        or u.get("cache_creation_input_tokens")
+        or 0
+    )
     usage = {
         "input_tokens": in_tok,
         "output_tokens": out_tok,
@@ -310,12 +384,12 @@ def grade_with_rubric(
     model = used_model
 
     by_id = {c.get("id"): c for c in parsed.get("criteria", []) if isinstance(c, dict)}
-    total_w = sum(abs(float(r.get("weight", 1.0))) for r in rubrics if isinstance(r, dict)) or 1.0
+    total_w = sum(abs(_extract_weight(r)) for r in rubrics if isinstance(r, dict)) or 1.0
     weighted = 0.0
     passed = 0
     crit_out = []
     for i, r in enumerate(rubrics):
-        wt = float(r.get("weight", 1.0)) if isinstance(r, dict) else 1.0
+        wt = _extract_weight(r) if isinstance(r, dict) else 1.0
         c = by_id.get(i, {})
         score = float(c.get("score", 0.0) or 0.0)
         score = max(0.0, min(1.0, score))
@@ -331,9 +405,10 @@ def grade_with_rubric(
             passed += 1
         crit_out.append({
             "id": i, "weight": wt, "score": round(score, 3),
-            "passed": criterion_passed,
             "criterion": (r.get("criterion") if isinstance(r, dict) else str(r)),
             "reason": c.get("reason", ""),
+            "is_positive": wt >= 0,
+            "passed": criterion_passed,
         })
     overall = weighted / total_w
     overall = max(0.0, min(1.0, overall))            # clamp (negatives can push <0)

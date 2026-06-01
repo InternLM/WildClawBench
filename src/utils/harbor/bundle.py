@@ -187,11 +187,27 @@ def write_bundle(
 
     (data_dir / "instruction.md").write_text(prompt_text, encoding="utf-8")
 
-    required = list(infer_required_apis(prompt_text))
+    # `used_apis` (line 158) is the canonical required-API set computed via
+    # `_discover_used_apis(task, task_dir, env_dir)` which fuses prompt-keyword
+    # matches with the task's mock_data/<api>/ overlay dirs. The bare
+    # `infer_required_apis(prompt)` call returns [] for persona-format tasks
+    # whose prompt has no literal API names, which silently wrote
+    # `required_skills = []` to data/task.toml — the b31 bug class.
+    required = sorted(used_apis) if used_apis else list(infer_required_apis(prompt_text))
     task_id_for_distractor = task.task_id or (str(task.id) if task.id else "")
     distractor = list(compute_distractor_skills(required, task_id_for_distractor))
     required_skills = [f"{name}-connector" for name in required]
     distractor_skills = [f"{name}-connector" for name in distractor]
+
+    # Per-service healthcheck. The default `curl -f http://localhost:8000/health`
+    # hits a stub port no real service listens on, masking liveness failures
+    # in CI. Chain one curl per filtered service so the mocks container is
+    # only "healthy" once every required API is actually serving traffic.
+    healthcheck_cmd = " && ".join(
+        f"curl -f http://localhost:{svc['port']}/health"
+        for svc in filtered_services
+        if svc.get("port")
+    ) or None
 
     toml_text = build_task_toml(
         task=task,
@@ -203,6 +219,7 @@ def write_bundle(
         verifier_env=env_vars,
         solution_env=env_vars,
         pass_at_k=pass_at_k,
+        healthcheck_command=healthcheck_cmd,
     )
     (data_dir / "task.toml").write_text(toml_text, encoding="utf-8")
 
@@ -210,18 +227,37 @@ def write_bundle(
     if env_out.exists():
         shutil.rmtree(env_out)
     env_out.mkdir(parents=True, exist_ok=True)
+    _bundle_ignore = shutil.ignore_patterns("__pycache__", "*.pyc", "*.pyo")
+    # `skills/` ships 100+ connector skills by default. Filtering to the union of
+    # required + distractor API connectors + the 3 multimodal helpers
+    # (video-frames, pdf-extract, audio-extract) cuts ~95% of the bundle size
+    # without losing anything an LLM agent could legitimately use for this task.
+    keep_skill_names: Set[str] = {f"{name}-connector" for name in (set(required) | set(distractor))}
+    keep_skill_names.update({"video-frames", "pdf-extract", "audio-extract", "self-improving"})
+    def _copy_skills_filtered(src: Path, dst: Path) -> None:
+        dst.mkdir(parents=True, exist_ok=True)
+        for child in src.iterdir():
+            if child.is_dir() and (not keep_skill_names or child.name in keep_skill_names):
+                shutil.copytree(child, dst / child.name, ignore=_bundle_ignore)
+            elif child.is_file():
+                shutil.copy2(child, dst / child.name)
     if config.environment_dir.is_dir():
         if used_apis:
             for item in config.environment_dir.iterdir():
                 if item.is_dir():
-                    if item.name in used_apis or item.name in _KEEP_TOP_LEVEL:
-                        shutil.copytree(item, env_out / item.name)
+                    if item.name == "skills":
+                        _copy_skills_filtered(item, env_out / item.name)
+                    elif item.name in used_apis or item.name in _KEEP_TOP_LEVEL:
+                        shutil.copytree(item, env_out / item.name, ignore=_bundle_ignore)
                 elif item.name in _KEEP_TOP_LEVEL:
                     shutil.copy2(item, env_out / item.name)
         else:
             for item in config.environment_dir.iterdir():
                 if item.is_dir():
-                    shutil.copytree(item, env_out / item.name)
+                    if item.name == "skills":
+                        _copy_skills_filtered(item, env_out / item.name)
+                    else:
+                        shutil.copytree(item, env_out / item.name, ignore=_bundle_ignore)
                 else:
                     shutil.copy2(item, env_out / item.name)
 
@@ -310,8 +346,12 @@ def write_bundle(
             run_dir = model_dir / f"run_{run_index}"
             run_dir.mkdir(parents=True, exist_ok=True)
 
+            clean_entry = (
+                {k: v for k, v in entry.items() if k != "__test_result__"}
+                if isinstance(entry, dict) else entry
+            )
             (run_dir / "output.json").write_text(
-                json.dumps(entry, indent=2, ensure_ascii=False), encoding="utf-8"
+                json.dumps(clean_entry, indent=2, ensure_ascii=False), encoding="utf-8"
             )
 
             tr = entry.get("__test_result__") if isinstance(entry, dict) else None

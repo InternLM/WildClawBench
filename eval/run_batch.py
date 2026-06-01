@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import mimetypes
 import os
 import re
 import subprocess
@@ -10,7 +11,7 @@ import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 from dotenv import load_dotenv
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
@@ -422,12 +423,85 @@ def _condense_transcript_for_judge(traj: dict, limit: int = 40_000) -> str:
     return text
 
 
+def _project_agent_usage_top_level(agent_usage: Mapping[str, Any] | None) -> dict[str, Any]:
+    if not agent_usage:
+        return {"input_tokens": 0, "output_tokens": 0, "cached_input_tokens": 0, "cost_usd": 0.0}
+    def _int(k: str) -> int:
+        v = agent_usage.get(k)
+        try:
+            return int(v or 0)
+        except (TypeError, ValueError):
+            return 0
+    try:
+        cost = float(agent_usage.get("cost_usd") or 0.0)
+    except (TypeError, ValueError):
+        cost = 0.0
+    return {
+        "input_tokens": _int("input_tokens"),
+        "output_tokens": _int("output_tokens"),
+        "cached_input_tokens": _int("cache_read_tokens"),
+        "cost_usd": round(cost, 6),
+    }
+
+
+def _project_artifact_record(rich: Mapping[str, Any], *, ref_id: str, run_dir: Path) -> dict[str, Any]:
+    container_path = str(rich.get("container_path", "") or "")
+    path_str = container_path
+    if container_path:
+        try:
+            abs_path = Path(container_path)
+            if abs_path.is_absolute():
+                try:
+                    path_str = str(abs_path.relative_to(run_dir))
+                except ValueError:
+                    path_str = container_path
+        except (OSError, ValueError):
+            path_str = container_path
+    try:
+        sz = int(rich.get("size_bytes", 0) or 0)
+    except (TypeError, ValueError):
+        sz = 0
+    return {
+        "ref_id": ref_id,
+        "path": path_str,
+        "filename": str(rich.get("filename", "") or ""),
+        "mime_type": str(rich.get("mime_type", "") or ""),
+        "size_bytes": sz,
+        "source": "agent_workspace",
+    }
+
+
+def _scan_verifier_artifacts(verifier_dir: Path, run_dir: Path, start_idx: int) -> list[dict[str, Any]]:
+    if not verifier_dir.is_dir():
+        return []
+    out: list[dict[str, Any]] = []
+    for f in sorted(verifier_dir.iterdir()):
+        if not f.is_file():
+            continue
+        try:
+            sz = f.stat().st_size
+        except OSError:
+            sz = 0
+        try:
+            rel = str(f.relative_to(run_dir))
+        except ValueError:
+            rel = str(f)
+        mime, _ = mimetypes.guess_type(f.name)
+        out.append({
+            "ref_id": f"artifact_{start_idx + len(out)}",
+            "path": rel,
+            "filename": f.name,
+            "mime_type": mime or "application/octet-stream",
+            "size_bytes": sz,
+            "source": "agent_workspace",
+        })
+    return out
+
+
 def _build_trajectory(task: dict, output_dir: Path, task_bundle_dir: Path,
                       model_type: str, run_index: int, result: dict,
-                      config: Config | None = None) -> None:
-    """Build the schema-1.0.0 trajectory (output.json) from the run's chat.jsonl,
-    write pass_summary.json, and copy prompt.txt/rubric.json to the task root —
-    matching the kensei out/<task_id>/trajectories/<model>/run_<n>/ layout."""
+                      config: Config | None = None,
+                      agent_usage: Mapping[str, Any] | None = None) -> None:
     chat = output_dir / "chat.jsonl"
     if not chat.is_file():
         logger.warning("[%s] no chat.jsonl; skipping trajectory", task.get("task_id"))
@@ -463,7 +537,50 @@ def _build_trajectory(task: dict, output_dir: Path, task_bundle_dir: Path,
 
     traj = build_trajectory_from_jsonl(
         st, entries, attachments=task.get("attachments") or [], media_handler=_media,
+        s3_bucket=(config.s3_bucket if config else ""),
+        s3_prefix=(config.s3_prefix if config else ""),
+        s3_region=(config.s3_region if config else ""),
+        usage_top_level=_project_agent_usage_top_level(agent_usage),
     )
+
+    # Project rich S3-upload records to the reference's trimmed schema
+    # {ref_id,path,filename,mime_type,size_bytes,source:'agent_workspace'}
+    # and append verifier artifacts (NOT uploaded). S3 URLs are implied by
+    # bucket+prefix config — not carried in JSON. Matches kensei2 reference.
+    artifacts_list: list[dict[str, Any]] = list(traj.get("output_artifacts") or [])
+    seen_paths: set[str] = {r.get("path", "") for r in artifacts_list if isinstance(r, dict)}
+    next_idx = len(artifacts_list)
+    if config and config.s3_bucket:
+        try:
+            from src.utils.s3_artifacts import upload_output_artifacts
+            s3_records = upload_output_artifacts(
+                config, task["task_id"],
+                workspace_roots=[
+                    output_dir / "task_output" / "workspace",
+                    output_dir / "task_output" / "workspace_full",
+                ],
+            )
+            for rich in s3_records or []:
+                proj = _project_artifact_record(rich, ref_id=f"artifact_{next_idx}", run_dir=output_dir)
+                if proj["path"] in seen_paths:
+                    continue
+                artifacts_list.append(proj)
+                seen_paths.add(proj["path"])
+                next_idx += 1
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("[%s] S3 artifact upload pipeline error: %s", task["task_id"], exc)
+
+    verifier_records = _scan_verifier_artifacts(
+        output_dir / "task_output" / "logs" / "verifier", output_dir, next_idx,
+    )
+    for rec in verifier_records:
+        if rec["path"] in seen_paths:
+            continue
+        artifacts_list.append(rec)
+        seen_paths.add(rec["path"])
+        next_idx += 1
+    traj["output_artifacts"] = artifacts_list
+
     (output_dir / "output.json").write_text(
         json.dumps(traj, indent=2, ensure_ascii=False), encoding="utf-8",
     )
@@ -782,7 +899,7 @@ def run_single_task(
         # Build the schema-1.0.0 trajectory (output.json) + pass_summary.json,
         # matching the kensei out/<task_id>/trajectories/<model>/run_<n>/ layout.
         try:
-            _build_trajectory(task, output_dir, task_bundle_dir, model_type, run_index, result, config=config)
+            _build_trajectory(task, output_dir, task_bundle_dir, model_type, run_index, result, config=config, agent_usage=usage)
         except Exception as exc:
             logger.warning("[%s] trajectory build failed: %s", task_id, exc)
 

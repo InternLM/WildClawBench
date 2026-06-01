@@ -115,6 +115,35 @@ def _clean_weights(raw_weights: object) -> dict:
     return out
 
 
+def _derive_task_output_format(rubrics: object) -> str:
+    if not isinstance(rubrics, list):
+        return "unknown"
+    counts: dict[str, int] = {}
+    for r in rubrics:
+        if isinstance(r, dict):
+            t = str(r.get("evaluation_target") or "").strip()
+            if t:
+                counts[t] = counts.get(t, 0) + 1
+    if not counts:
+        return "unknown"
+    dominant = max(counts, key=lambda k: counts[k])
+    # Only `workspace_artifact` and `file_output` evaluate against a file on
+    # disk. `state_change` and `trajectory` evaluate against the tool-use
+    # transcript (e.g. "did agent call this API?", "did agent NOT call this
+    # forbidden endpoint?") and are satisfied by `TestBehavioral*`/`TestNegativeWeight*`
+    # tests \u2014 not `file_exists()`. Misclassifying them as file targets would
+    # silently steer the LLM into emitting useless file-existence assertions
+    # for behavioral-audit criteria.
+    file_targets = ("workspace_artifact", "file_output")
+    has_file = any(k in counts for k in file_targets)
+    has_text = "final_answer" in counts or "user_facing_message" in counts
+    if dominant == "final_answer" and not has_file:
+        return "final_answer"
+    if dominant in file_targets and not has_text:
+        return "workspace_artifact"
+    return "mixed"
+
+
 def _build_user_message(
     *,
     prompt: str,
@@ -126,6 +155,7 @@ def _build_user_message(
     data_snapshot: str,
     lint_failures: list,
     attempt: int,
+    task_output_format: str = "unknown",
 ) -> str:
     parts = [
         "## Task Instruction (instruction.md)\n",
@@ -133,6 +163,35 @@ def _build_user_message(
         prompt[:8000] if len(prompt) > 8000 else prompt,
         "\n",
     ]
+    if task_output_format == "final_answer":
+        parts.append(
+            "\n## TASK OUTPUT FORMAT — TEXT-ONLY (CRITICAL)\n"
+            "This task's rubric evaluates the agent's FINAL CHAT MESSAGE, not files. "
+            "The agent will NOT produce a deliverable file under /tmp_workspace/results/. "
+            "DO NOT generate `TestOutcome*` classes that assert `file_exists(...)`, "
+            "`read_file(...)` against `/root/out/*`, `/tmp_workspace/results/*`, or any "
+            "report-file path. Every such test WILL fail trivially and waste positive weight. "
+            "Instead, generate `TestBehavioral*` API-call audits "
+            "(`api_get(.../audit/requests)`) to verify the agent USED the required APIs, "
+            "and `TestNegativeWeight*` distractor-not-touched checks. The rubric judge "
+            "scores the answer's CONTENT separately — your job is to prove the agent "
+            "exercised the right tools.\n"
+        )
+    elif task_output_format == "workspace_artifact":
+        parts.append(
+            "\n## TASK OUTPUT FORMAT — FILE DELIVERABLES\n"
+            "This task's rubric evaluates files the agent writes under "
+            "`/tmp_workspace/results/` (or `/root/out/`). `TestOutcome*` classes "
+            "asserting `file_exists(...)` and content checks against those paths "
+            "are appropriate.\n"
+        )
+    elif task_output_format == "mixed":
+        parts.append(
+            "\n## TASK OUTPUT FORMAT — MIXED (text answer + file artifacts)\n"
+            "The rubric evaluates BOTH the agent's final chat answer AND files it writes. "
+            "Generate a balanced mix of `TestBehavioral*` API audits and "
+            "`TestOutcome*` file-existence/content checks.\n"
+        )
     if task_toml:
         parts.append("\n## task.toml (metadata)\n")
         parts.append("```toml\n%s\n```\n" % task_toml)
@@ -236,9 +295,35 @@ def generate_task_tests(
 
     task_identifier = task.get("task_id") or task.get("id") or "wildclaw-task"
 
-    required_apis = infer_required_apis(prompt, environment_dir=env_dir) if prompt else []
-    if not required_apis and has_api_services:
-        required_apis = sorted(services.keys())
+    # Required-API discovery priority (most-trusted first):
+    #   1. task["required_apis"] — pre-computed by run_batch._augment_task_with_mocks
+    #      from prompt keywords + task_dir/mock_data/<api>/ subdirs. This is the
+    #      authoritative source for persona-format tasks whose prompt never
+    #      mentions API names (e.g. danielle-lee, dana-ellison).
+    #   2. infer_required_apis(prompt) — fallback for callers that bypass
+    #      run_batch (standalone testgen scripts).
+    #   3. mock_data/<api>/ subdir scan — last resort when task_dir is set but
+    #      step 1 didn't pre-populate.
+    # NEVER fall back to `sorted(services.keys())`: marking all 101 APIs as
+    # required leaves compute_distractor_skills with an empty candidate pool
+    # (distractors must NOT overlap required), so distractors=[] and the
+    # TestNegativeWeight* class for every distractor in lints L7/L26 has
+    # nothing to match.
+    required_apis: list[str] = []
+    pre_required = task.get("required_apis")
+    if isinstance(pre_required, list) and pre_required:
+        required_apis = sorted({a for a in pre_required if isinstance(a, str)})
+    if not required_apis and prompt:
+        required_apis = infer_required_apis(prompt, environment_dir=env_dir)
+    if not required_apis:
+        task_dir_str = task.get("task_dir") or ""
+        if task_dir_str:
+            mock_root = Path(task_dir_str) / "mock_data"
+            if mock_root.is_dir():
+                required_apis = sorted(
+                    d.name for d in mock_root.iterdir()
+                    if d.is_dir() and d.name in services
+                )
     distractor_apis = (
         compute_distractor_skills(required_apis, task_identifier, environment_dir=env_dir)
         if required_apis else []
@@ -246,9 +331,11 @@ def generate_task_tests(
 
     data_snapshot = collect_mock_data_snapshot(env_dir) if has_api_services else ""
 
+    task_output_format = _derive_task_output_format(task.get("rubrics"))
+
     _logger.info(
-        "[TESTGEN] task=%s required=%s distractors=%s services=%d",
-        task_identifier, required_apis, distractor_apis, len(services),
+        "[TESTGEN] task=%s required=%s distractors=%s services=%d output_format=%s",
+        task_identifier, required_apis, distractor_apis, len(services), task_output_format,
     )
 
     scoped = sorted(set(required_apis) | set(distractor_apis))
@@ -289,6 +376,7 @@ def generate_task_tests(
             data_snapshot=data_snapshot,
             lint_failures=lint_failures,
             attempt=attempt,
+            task_output_format=task_output_format,
         )
 
         try:
