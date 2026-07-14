@@ -1,0 +1,5 @@
+[service]
+name = "cloudflare-api"
+port = 8050
+env_var_name = "CLOUDFLARE_API_URL"
+healthcheck_path = "/health"

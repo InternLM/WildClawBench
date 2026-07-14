@@ -1,0 +1,6 @@
+tracking_number,service_code,service_name,ship_date,origin_zip,dest_zip,weight_lb,currency,total_charge,label_url
+1Z999AA10123456784,11,UPS Standard,2026-10-02,2000,1050,8.0,EUR,12.40,https://ups.example/l/1
+1Z999AA10987654321,07,UPS Express,2026-10-07,4000,1050,3.2,EUR,19.90,https://ups.example/l/2
+1Z88E5470390120010,11,UPS Standard,2026-10-01,1180,1050,5.5,EUR,9.80,https://ups.example/l/3
+1Z88E5470391245500,11,UPS Standard,2026-10-06,50667,1050,14.0,EUR,28.00,https://ups.example/l/4
+1Z88E5470392778120,07,UPS Express,2026-09-30,1050,1050,2.0,EUR,15.50,https://ups.example/l/5

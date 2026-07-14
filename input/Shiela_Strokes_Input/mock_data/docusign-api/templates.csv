@@ -1,0 +1,4 @@
+template_id,name,description,shared,owner_name,created_time
+tpl_ncc7b,NCC Form 7B Spectrum Application,Standard NCC spectrum application form,true,Fatima Musa,2024-08-12T09:00:00Z
+tpl_po,Standard Purchase Order,Procurement PO template,true,Amaka Obi,2024-06-15T10:00:00Z
+tpl_acceptance,Vendor Equipment Acceptance,Vendor equipment acceptance certificate,true,Amaka Obi,2025-03-12T11:00:00Z

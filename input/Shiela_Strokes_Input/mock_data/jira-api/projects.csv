@@ -1,0 +1,4 @@
+id,key,name,project_type_key,lead,description
+10001,NSW,Nasarawa Rural Coverage Expansion,software,sheila.stokes@Finthesiss.ai,45-site rural 4G deployment in Nasarawa State
+10002,FCBD,5G CBD Densification Pilot,software,sheila.stokes@Finthesiss.ai,Abuja CBD 5G small-cell deployment pilot
+10003,NQS,Niger State QoS Optimization,software,sheila.stokes@Finthesiss.ai,"Niger State 3G/4G optimization, 12 congestion hotspots"

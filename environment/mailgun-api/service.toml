@@ -1,0 +1,5 @@
+[service]
+name = "mailgun-api"
+port = 8094
+env_var_name = "MAILGUN_API_URL"
+healthcheck_path = "/health"

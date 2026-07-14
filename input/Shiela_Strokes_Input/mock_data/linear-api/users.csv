@@ -1,0 +1,6 @@
+id,name,displayName,email,avatarUrl,active,admin,teamId,createdAt,updatedAt
+luser_ola,ola.adeyemo,Ola Adeyemo,ola.adeyemo@tachyon-networks.ng,,true,true,team_5g,2025-06-01T10:00:00Z,2026-10-04T03:30:00Z
+luser_sheila,sheila.stokes,Sheila Stokes,sheila.stokes@Finthesiss.ai,,true,false,team_5g,2026-04-12T09:00:00Z,2026-10-01T15:00:00Z
+luser_tachfw1,raj.kumar,Raj Kumar,raj.kumar@tachyon-networks.ng,,true,false,team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+luser_tachfw2,nadia.farah,Nadia Farah,nadia.farah@tachyon-networks.ng,,true,false,team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+luser_tunde,tunde.bello,Tunde Bello,t.bello@telecorpng.com,,true,false,team_5g,2026-04-12T09:00:00Z,2026-09-30T15:00:00Z

@@ -1,0 +1,401 @@
+[
+  {
+    "Id": "4001",
+    "TxnDate": "2026-03-03",
+    "CustomerRef": {
+      "value": "1",
+      "name": "Abrams, Derek"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5001",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Check #1204"
+  },
+  {
+    "Id": "4002",
+    "TxnDate": "2026-03-04",
+    "CustomerRef": {
+      "value": "2",
+      "name": "Alvarez, Sofia"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5002",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Venmo transfer"
+  },
+  {
+    "Id": "4003",
+    "TxnDate": "2026-03-05",
+    "CustomerRef": {
+      "value": "6",
+      "name": "Chen, William"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5003",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Auto-pay"
+  },
+  {
+    "Id": "4004",
+    "TxnDate": "2026-03-06",
+    "CustomerRef": {
+      "value": "28",
+      "name": "Matsuda, Yuki"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5004",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Cash at dojo"
+  },
+  {
+    "Id": "4005",
+    "TxnDate": "2026-03-04",
+    "CustomerRef": {
+      "value": "17",
+      "name": "Hayashi, Kenji"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5005",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Auto-pay"
+  },
+  {
+    "Id": "4006",
+    "TxnDate": "2026-03-08",
+    "CustomerRef": {
+      "value": "0",
+      "name": "Multiple - See Batch Detail"
+    },
+    "TotalAmt": 5415.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5006",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 5415.0
+      }
+    ],
+    "PrivateNote": "Batch payment collection - 57 members. Mix of auto-pay, Venmo, checks. All cleared by 3/12."
+  },
+  {
+    "Id": "4007",
+    "TxnDate": "2026-03-05",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "TotalAmt": 80.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5007",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 80.0
+      }
+    ],
+    "PrivateNote": "Cash collected at door"
+  },
+  {
+    "Id": "4008",
+    "TxnDate": "2026-03-19",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "TotalAmt": 60.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "5008",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 60.0
+      }
+    ],
+    "PrivateNote": "Cash collected at door"
+  },
+  {
+    "Id": "4009",
+    "TxnDate": "2026-04-03",
+    "CustomerRef": {
+      "value": "1",
+      "name": "Abrams, Derek"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2001",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Check #1218"
+  },
+  {
+    "Id": "4010",
+    "TxnDate": "2026-04-04",
+    "CustomerRef": {
+      "value": "2",
+      "name": "Alvarez, Sofia"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2002",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Venmo transfer"
+  },
+  {
+    "Id": "4011",
+    "TxnDate": "2026-04-05",
+    "CustomerRef": {
+      "value": "6",
+      "name": "Chen, William"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2004",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Auto-pay"
+  },
+  {
+    "Id": "4012",
+    "TxnDate": "2026-04-08",
+    "CustomerRef": {
+      "value": "10",
+      "name": "Eriksson, Lars"
+    },
+    "TotalAmt": 50.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2005",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 50.0
+      }
+    ],
+    "PrivateNote": "Partial payment - Lars said $45 remainder will come with May dues. Aaron OK'd 4/9."
+  },
+  {
+    "Id": "4013",
+    "TxnDate": "2026-04-04",
+    "CustomerRef": {
+      "value": "17",
+      "name": "Hayashi, Kenji"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2006",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Auto-pay"
+  },
+  {
+    "Id": "4014",
+    "TxnDate": "2026-04-06",
+    "CustomerRef": {
+      "value": "31",
+      "name": "Morrison, Tyler"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2009",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Venmo transfer"
+  },
+  {
+    "Id": "4015",
+    "TxnDate": "2026-04-05",
+    "CustomerRef": {
+      "value": "42",
+      "name": "Rivera, Marco"
+    },
+    "TotalAmt": 95.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2010",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 95.0
+      }
+    ],
+    "PrivateNote": "Auto-pay"
+  },
+  {
+    "Id": "4016",
+    "TxnDate": "2026-04-08",
+    "CustomerRef": {
+      "value": "0",
+      "name": "Multiple - See Batch Detail"
+    },
+    "TotalAmt": 5035.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2011",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 5035.0
+      }
+    ],
+    "PrivateNote": "Batch payment collection - 53 members. All cleared by 4/14."
+  },
+  {
+    "Id": "4017",
+    "TxnDate": "2026-04-02",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "TotalAmt": 100.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2012",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 100.0
+      }
+    ],
+    "PrivateNote": "Cash collected at door"
+  },
+  {
+    "Id": "4018",
+    "TxnDate": "2026-04-05",
+    "CustomerRef": {
+      "value": "63",
+      "name": "Spring Tournament 2026 - Registrations"
+    },
+    "TotalAmt": 1560.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2013",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 1560.0
+      }
+    ],
+    "PrivateNote": "Cash + card at door. Tournament day collection."
+  },
+  {
+    "Id": "4019",
+    "TxnDate": "2026-04-16",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "TotalAmt": 60.0,
+    "Line": [
+      {
+        "LinkedTxn": [
+          {
+            "TxnId": "2014",
+            "TxnType": "Invoice"
+          }
+        ],
+        "Amount": 60.0
+      }
+    ],
+    "PrivateNote": "Cash collected at door"
+  }
+]

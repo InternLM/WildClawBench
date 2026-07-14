@@ -1,0 +1,212 @@
+[
+  {
+    "water_id": "1",
+    "date": "2025-03-30",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "2",
+    "date": "2025-03-31",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "3",
+    "date": "2025-04-01",
+    "cups": "9",
+    "notes": "Extra water after gym"
+  },
+  {
+    "water_id": "4",
+    "date": "2025-04-02",
+    "cups": "6",
+    "notes": "Forgot bottle at work"
+  },
+  {
+    "water_id": "5",
+    "date": "2025-04-03",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "6",
+    "date": "2025-04-04",
+    "cups": "10",
+    "notes": "Hot day"
+  },
+  {
+    "water_id": "7",
+    "date": "2025-04-05",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "8",
+    "date": "2025-04-06",
+    "cups": "6",
+    "notes": ""
+  },
+  {
+    "water_id": "9",
+    "date": "2025-04-07",
+    "cups": "9",
+    "notes": "Post-run hydration"
+  },
+  {
+    "water_id": "10",
+    "date": "2025-04-08",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "11",
+    "date": "2025-04-09",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "12",
+    "date": "2025-04-10",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "13",
+    "date": "2025-04-11",
+    "cups": "9",
+    "notes": ""
+  },
+  {
+    "water_id": "14",
+    "date": "2025-04-12",
+    "cups": "10",
+    "notes": "Hiking day"
+  },
+  {
+    "water_id": "15",
+    "date": "2025-04-13",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "16",
+    "date": "2025-04-14",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "17",
+    "date": "2025-04-15",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "18",
+    "date": "2025-04-16",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "19",
+    "date": "2025-04-17",
+    "cups": "9",
+    "notes": "Post-long-run"
+  },
+  {
+    "water_id": "20",
+    "date": "2025-04-18",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "21",
+    "date": "2025-04-19",
+    "cups": "6",
+    "notes": "Lazy weekend"
+  },
+  {
+    "water_id": "22",
+    "date": "2025-04-20",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "23",
+    "date": "2025-04-21",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "24",
+    "date": "2025-04-22",
+    "cups": "9",
+    "notes": ""
+  },
+  {
+    "water_id": "25",
+    "date": "2025-04-23",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "26",
+    "date": "2025-04-24",
+    "cups": "10",
+    "notes": "Hot weather"
+  },
+  {
+    "water_id": "27",
+    "date": "2025-04-25",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "28",
+    "date": "2025-04-26",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "29",
+    "date": "2025-04-27",
+    "cups": "9",
+    "notes": ""
+  },
+  {
+    "water_id": "30",
+    "date": "2025-04-28",
+    "cups": "8",
+    "notes": ""
+  },
+  {
+    "water_id": "101",
+    "date": "2026-03-01",
+    "cups": "6",
+    "notes": ""
+  },
+  {
+    "water_id": "102",
+    "date": "2026-03-05",
+    "cups": "5",
+    "notes": "Low intake"
+  },
+  {
+    "water_id": "103",
+    "date": "2026-03-10",
+    "cups": "6",
+    "notes": ""
+  },
+  {
+    "water_id": "104",
+    "date": "2026-03-15",
+    "cups": "7",
+    "notes": ""
+  },
+  {
+    "water_id": "105",
+    "date": "2026-03-21",
+    "cups": "6",
+    "notes": ""
+  }
+]

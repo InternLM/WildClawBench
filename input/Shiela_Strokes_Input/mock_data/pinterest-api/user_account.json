@@ -1,0 +1,15 @@
+[
+  {
+    "account_type": "personal",
+    "username": "sheila_quiet_pins",
+    "profile_image": "https://img.example-pinterest.com/sheila.jpg",
+    "website_url": "",
+    "business_name": "",
+    "board_count": 10,
+    "pin_count": 48,
+    "follower_count": 11,
+    "following_count": 24,
+    "monthly_views": 280000,
+    "created_at": "2024-09-12T07:00:00Z"
+  }
+]

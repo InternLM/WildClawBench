@@ -317,6 +317,13 @@ class CodexAgent(BaseAgent):
                 f"Workspace exec directory does not exist or is not a directory: {exec_path}"
             )
 
+        from src.utils.docker_utils import (
+            build_env_args,
+            _validate_docker_token,
+            _validate_env_arg,
+        )
+        _validate_docker_token("task_id", task_id)
+
         proxy_http = os.environ.get("HTTP_PROXY_INNER", "").strip()
         proxy_https = os.environ.get("HTTPS_PROXY_INNER", "").strip()
         no_proxy = "" if not proxy_http else os.environ.get("NO_PROXY_INNER", "").strip()
@@ -333,18 +340,21 @@ class CodexAgent(BaseAgent):
             "no_proxy": no_proxy,
         }
 
-        env_args: list[str] = []
-        for key, value in env_map.items():
-            if value:
-                env_args += ["-e", f"{key}={value}"]
+        # Static env_map: pairs with truthy values only (preserves original semantic).
+        env_pairs: list[tuple[str, str]] = [
+            (k, v) for k, v in env_map.items() if v
+        ]
 
+        # Attacker-influenced keys: task["env"] (newline list) + lobster["env"] (JSON list).
+        # _validate_env_arg rejects malformed keys (non-POSIX) before they reach docker argv.
         extra_env = task.get("env", "") if task else ""
         for line in extra_env.splitlines():
             key = line.strip()
             if not key or key.startswith("#"):
                 continue
             value = os.environ.get(key, "").strip()
-            env_args += ["-e", f"{key}={value}"]
+            _validate_env_arg(key, value)  # rejects bad key shapes / flag-leading values
+            env_pairs.append((key, value))
             masked = (value[:4] + "***") if value else "(empty)"
             logger.info("[%s] Injecting env var: %s=%s", task_id, key, masked)
 
@@ -355,8 +365,12 @@ class CodexAgent(BaseAgent):
                     "[%s] Lobster env key %s not found, skipping", task_id, key
                 )
                 continue
-            env_args += ["-e", f"{key}={value}"]
+            _validate_env_arg(key, value)
+            env_pairs.append((key, value))
             logger.info("[%s] Injecting lobster env: %s=%s***", task_id, key, value[:4])
+
+        env_args = build_env_args(env_pairs)
+        image = _validate_docker_token("image", self.image)
 
         cmd = [
             "docker",
@@ -367,12 +381,12 @@ class CodexAgent(BaseAgent):
             *env_args,
             "-v",
             f"{exec_path}:/workspace:ro",
-            self.image,
+            image,
             "/bin/bash",
             "-c",
             "tail -f /dev/null",
         ]
-        logger.info("[%s] Starting Codex container (%s)", task_id, self.image)
+        logger.info("[%s] Starting Codex container (%s)", task_id, image)
         r = subprocess.run(cmd, capture_output=True, text=True)
         if r.returncode != 0:
             raise RuntimeError(f"Codex container startup failed:\n{r.stderr}")
@@ -673,7 +687,7 @@ def main() -> int:
                 ],
             }}
         ],
-        "max_tokens": 800,
+        "max_tokens": 64000,
         "temperature": 0,
     }}
     request = urllib.request.Request(
@@ -810,12 +824,12 @@ if __name__ == "__main__":
         return (r.stdout or "") + ("\n" if r.stdout else "") + (r.stderr or "")
 
     @staticmethod
-    def _read_text_tail(path: Path, max_chars: int = 20000) -> str:
+    def _read_text_tail(path: Path, max_chars: int | None = None) -> str:
         try:
             text = path.read_text(encoding="utf-8", errors="replace")
         except OSError:
             return ""
-        if len(text) <= max_chars:
+        if max_chars is None or len(text) <= max_chars:
             return text
         return text[-max_chars:]
 

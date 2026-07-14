@@ -1,0 +1,41 @@
+[
+  {
+    "search_id": "search-001",
+    "user_id": "user-buyer-001",
+    "name": "Bellevue family homes",
+    "city": "Bellevue",
+    "state": "WA",
+    "min_price": "800000",
+    "max_price": "1600000",
+    "min_beds": "4",
+    "min_baths": "2.5",
+    "home_type": "SingleFamily",
+    "created_at": "2026-04-10"
+  },
+  {
+    "search_id": "search-002",
+    "user_id": "user-buyer-001",
+    "name": "Eastside condos under 700k",
+    "city": "",
+    "state": "WA",
+    "min_price": "400000",
+    "max_price": "700000",
+    "min_beds": "2",
+    "min_baths": "1.0",
+    "home_type": "Condo",
+    "created_at": "2026-04-22"
+  },
+  {
+    "search_id": "search-003",
+    "user_id": "user-buyer-002",
+    "name": "Seattle waterfront",
+    "city": "Seattle",
+    "state": "WA",
+    "min_price": "1000000",
+    "max_price": "3500000",
+    "min_beds": "3",
+    "min_baths": "2.0",
+    "home_type": "SingleFamily",
+    "created_at": "2026-05-05"
+  }
+]

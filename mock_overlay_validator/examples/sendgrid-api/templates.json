@@ -1,0 +1,47 @@
+[
+  {
+    "id": "d-1a2b3c4d5e6f7081",
+    "name": "Welcome Email",
+    "generation": "dynamic",
+    "subject": "Welcome to Orbit Labs, {{first_name}}!",
+    "html_content": "<h1>Welcome {{first_name}}</h1><p>Glad to have you.</p>",
+    "active": "true",
+    "updated_at": "2026-05-10T10:00:00Z"
+  },
+  {
+    "id": "d-2b3c4d5e6f708192",
+    "name": "Password Reset",
+    "generation": "dynamic",
+    "subject": "Reset your Orbit Labs password",
+    "html_content": "<p>Click <a href='{{reset_url}}'>here</a> to reset.</p>",
+    "active": "true",
+    "updated_at": "2026-05-12T11:30:00Z"
+  },
+  {
+    "id": "d-3c4d5e6f70819203",
+    "name": "Monthly Newsletter",
+    "generation": "dynamic",
+    "subject": "Orbit Labs — {{month}} highlights",
+    "html_content": "<h2>{{month}} Newsletter</h2><p>{{body}}</p>",
+    "active": "true",
+    "updated_at": "2026-05-20T09:15:00Z"
+  },
+  {
+    "id": "d-4d5e6f7081920314",
+    "name": "Invoice Receipt",
+    "generation": "dynamic",
+    "subject": "Your receipt for invoice {{invoice_id}}",
+    "html_content": "<p>Thanks for your payment of {{amount}}.</p>",
+    "active": "true",
+    "updated_at": "2026-05-22T14:00:00Z"
+  },
+  {
+    "id": "d-5e6f708192031425",
+    "name": "Trial Ending Soon",
+    "generation": "dynamic",
+    "subject": "Your trial ends in {{days}} days",
+    "html_content": "<p>Upgrade now to keep your data.</p>",
+    "active": "false",
+    "updated_at": "2026-04-30T08:00:00Z"
+  }
+]

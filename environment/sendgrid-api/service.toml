@@ -1,0 +1,5 @@
+[service]
+name = "sendgrid-api"
+port = 8027
+env_var_name = "SENDGRID_API_URL"
+healthcheck_path = "/health"

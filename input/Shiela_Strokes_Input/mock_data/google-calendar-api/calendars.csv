@@ -1,0 +1,5 @@
+id,summary,description,time_zone,access_role,primary,color_id
+primary,Sheila Stokes (Personal),Sheila's main calendar,Africa/Lagos,owner,true,1
+family.stokes.shared@gmail.com,Stokes Family Shared,Family-shared events,Africa/Lagos,writer,false,5
+work-calendar.sheila@telecorpng.com,Sheila Stokes (Work),Work calendar,Africa/Lagos,owner,false,9
+en.nigerian#holiday@group.v.calendar.google.com,Holidays in Nigeria,Public holidays,Africa/Lagos,reader,false,11

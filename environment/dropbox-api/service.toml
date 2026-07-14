@@ -1,0 +1,5 @@
+[service]
+name = "dropbox-api"
+port = 8082
+env_var_name = "DROPBOX_API_URL"
+healthcheck_path = "/health"

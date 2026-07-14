@@ -1,0 +1,26 @@
+id,author_id,text,created_at,lang,reply_to_tweet_id,like_count,retweet_count,reply_count,quote_count
+tw_001,tw_user_techpulse,Weekly digest dropping at 5 pm. Top stories from the regional regulator and a piece on rural 5G pilots.,2026-09-26T13:00:00Z,en,,220,84,32,6
+tw_002,tw_user_techpulse,Spectrum allocation hearings are picking up across the region. Watch the next two weeks.,2026-09-28T09:00:00Z,en,,185,71,22,4
+tw_003,tw_user_techpulse,Vendor consolidation in West Africa: a deep-dive from our analyst desk.,2026-09-22T15:00:00Z,en,,264,102,41,11
+tw_004,tw_user_techpulse,Submarine cable build-out roadmap. Map inside.,2026-09-19T10:00:00Z,en,,315,142,58,18
+tw_005,tw_user_telcomwk_af,"Weekly Africa telecom digest live. Headlines: rural coverage pilots, spectrum auctions, vendor news.",2026-09-26T11:00:00Z,en,,142,58,14,4
+tw_006,tw_user_telcomwk_af,Rural connectivity is heating up. Look out for North-Central pilots.,2026-09-22T08:00:00Z,en,,118,44,12,3
+tw_007,tw_user_wpc_africa,Spectrum policy roundtable later this month. Open to industry observers.,2026-09-24T07:00:00Z,en,,88,22,8,2
+tw_008,tw_user_wpc_africa,Reminder: comment window on the spectrum reform paper closes 5 October. Submit early.,2026-09-28T09:30:00Z,en,,72,18,6,1
+tw_009,tw_user_5g_global,5G fixed wireless picks up in sub-Saharan Africa. Three operators announced this week.,2026-09-21T08:00:00Z,en,,482,224,88,24
+tw_010,tw_user_5g_global,Open RAN small cell deployments in dense urban: a new report just dropped.,2026-09-26T10:00:00Z,en,,398,188,72,18
+tw_011,tw_user_5g_global,Spectrum harmonisation across regions: a step in the right direction.,2026-09-15T13:00:00Z,en,,220,98,36,8
+tw_012,tw_user_ieee_comsoc,ICC 2026 call for papers reminder. Submission deadline approaching.,2026-09-12T12:00:00Z,en,,142,84,24,6
+tw_013,tw_user_ieee_comsoc,ComSoc magazine: rural coverage article featured this issue.,2026-09-22T15:00:00Z,en,,88,42,14,3
+tw_014,tw_user_chimamanda,"On revisions, slowly.",2026-09-08T18:00:00Z,en,,18400,4200,1180,412
+tw_015,tw_user_chimamanda,Bookshelf snapshot.,2026-09-14T07:00:00Z,en,,24200,5800,1620,612
+tw_016,tw_user_lola_shon,Programme drop for the next festival cycle.,2026-09-04T11:00:00Z,en,,3400,720,188,44
+tw_017,tw_user_lola_shon,Reading recommendations for the rainy month.,2026-09-12T13:00:00Z,en,,2800,612,154,32
+tw_018,tw_user_nigeria_eng,Job opening thread for senior engineers in Abuja.,2026-09-22T09:00:00Z,en,,480,102,38,12
+tw_019,tw_user_nigeria_eng,Mentorship match window opens next month.,2026-09-28T10:00:00Z,en,,320,88,24,8
+tw_020,tw_user_nwit_tw,Meetup recap last Saturday. Photos and notes inside.,2026-09-08T15:00:00Z,en,,220,64,18,4
+tw_021,tw_user_nwit_tw,Q3 newsletter dropped. Spotlight piece on a North-Central engineer.,2026-09-22T11:00:00Z,en,,188,52,14,3
+tw_022,tw_user_lagos_traffic,Third mainland bridge slow this morning.,2026-09-29T07:00:00Z,en,,1200,184,88,32
+tw_023,tw_user_lagos_traffic,Ikeja GRA approach clear.,2026-09-25T07:30:00Z,en,,680,102,44,18
+tw_024,tw_user_naija_books,October pick is Eloghosa Osunde's new novel. Discussion Saturday.,2026-09-26T12:00:00Z,en,,220,44,18,6
+tw_025,tw_user_naija_books,September pick discussion notes posted.,2026-09-22T14:00:00Z,en,,142,28,12,3

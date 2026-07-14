@@ -1,0 +1,13 @@
+caption_id,videoId,language,name,trackKind,isDraft,lastUpdated
+cap_001,v_3gpp_01,en,English captions (auto),standard,false,2025-09-12T10:00:00Z
+cap_002,v_3gpp_02,en,English captions (auto),standard,false,2025-09-12T10:00:00Z
+cap_003,v_3gpp_05,en,English captions,standard,false,2025-10-04T12:00:00Z
+cap_004,v_3gpp_08,en,English captions,standard,false,2025-12-20T08:00:00Z
+cap_005,v_vrad_01,en,English captions,standard,false,2025-11-04T11:30:00Z
+cap_006,v_vrad_03,en,English captions,standard,false,2025-12-15T09:00:00Z
+cap_007,v_kid_01,en,English captions,standard,false,2026-01-22T07:30:00Z
+cap_008,v_kid_03,en,English captions,standard,false,2026-02-18T07:30:00Z
+cap_009,v_kid_05,en,English captions,standard,false,2026-03-22T07:30:00Z
+cap_010,v_kid_12,en,English captions,standard,false,2026-09-12T07:30:00Z
+cap_011,v_sci_01,en,English captions,standard,false,2026-04-20T09:00:00Z
+cap_012,v_news_02,en,English captions,standard,false,2026-09-04T10:00:00Z

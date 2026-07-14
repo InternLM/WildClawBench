@@ -1,0 +1,18 @@
+[
+  {
+    "id": "10001",
+    "key": "ENG",
+    "name": "Engineering",
+    "project_type_key": "software",
+    "lead": "user-amelia",
+    "description": "Core engineering delivery project"
+  },
+  {
+    "id": "10002",
+    "key": "OPS",
+    "name": "Operations",
+    "project_type_key": "software",
+    "lead": "user-helena",
+    "description": "Infrastructure and on-call operations"
+  }
+]

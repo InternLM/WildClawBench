@@ -1,0 +1,51 @@
+[
+  {
+    "funnel_id": "7461001",
+    "name": "Purchase Funnel",
+    "step_order": "1",
+    "step_event": "App Open",
+    "count": "1200"
+  },
+  {
+    "funnel_id": "7461001",
+    "name": "Purchase Funnel",
+    "step_order": "2",
+    "step_event": "Product Viewed",
+    "count": "860"
+  },
+  {
+    "funnel_id": "7461001",
+    "name": "Purchase Funnel",
+    "step_order": "3",
+    "step_event": "Add to Cart",
+    "count": "430"
+  },
+  {
+    "funnel_id": "7461001",
+    "name": "Purchase Funnel",
+    "step_order": "4",
+    "step_event": "Checkout",
+    "count": "180"
+  },
+  {
+    "funnel_id": "7461002",
+    "name": "Activation Funnel",
+    "step_order": "1",
+    "step_event": "Signup",
+    "count": "2000"
+  },
+  {
+    "funnel_id": "7461002",
+    "name": "Activation Funnel",
+    "step_order": "2",
+    "step_event": "App Open",
+    "count": "1450"
+  },
+  {
+    "funnel_id": "7461002",
+    "name": "Activation Funnel",
+    "step_order": "3",
+    "step_event": "Product Viewed",
+    "count": "940"
+  }
+]

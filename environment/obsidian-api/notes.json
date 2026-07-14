@@ -1,0 +1,65 @@
+[
+  {
+    "path": "Daily/2026-05-26.md",
+    "title": "2026-05-26 Daily",
+    "size_bytes": "612",
+    "modified_at": "2026-05-26T19:00:00Z",
+    "tags": "daily;journal"
+  },
+  {
+    "path": "Daily/2026-05-25.md",
+    "title": "2026-05-25 Daily",
+    "size_bytes": "488",
+    "modified_at": "2026-05-25T20:30:00Z",
+    "tags": "daily;journal"
+  },
+  {
+    "path": "Projects/Auth v2.md",
+    "title": "Auth v2",
+    "size_bytes": "1820",
+    "modified_at": "2026-05-22T14:00:00Z",
+    "tags": "project;security"
+  },
+  {
+    "path": "Projects/Billing gRPC migration.md",
+    "title": "Billing gRPC migration",
+    "size_bytes": "1240",
+    "modified_at": "2026-05-19T11:00:00Z",
+    "tags": "project;backend"
+  },
+  {
+    "path": "Projects/Multi-region failover.md",
+    "title": "Multi-region failover",
+    "size_bytes": "910",
+    "modified_at": "2026-05-11T13:00:00Z",
+    "tags": "project;infra"
+  },
+  {
+    "path": "References/SRE checklist.md",
+    "title": "SRE checklist",
+    "size_bytes": "2110",
+    "modified_at": "2026-04-30T10:00:00Z",
+    "tags": "reference;sre"
+  },
+  {
+    "path": "References/Postgres tuning notes.md",
+    "title": "Postgres tuning notes",
+    "size_bytes": "3045",
+    "modified_at": "2026-04-22T15:00:00Z",
+    "tags": "reference;db"
+  },
+  {
+    "path": "Inbox/quick capture.md",
+    "title": "quick capture",
+    "size_bytes": "210",
+    "modified_at": "2026-05-26T08:00:00Z",
+    "tags": "inbox"
+  },
+  {
+    "path": "Daily/2026-05-24.md",
+    "title": "2026-05-24 Daily",
+    "size_bytes": "520",
+    "modified_at": "2026-05-24T19:45:00Z",
+    "tags": "daily;journal"
+  }
+]

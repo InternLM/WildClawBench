@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1001",
+    "first_name": "Olivia",
+    "last_name": "Bennett",
+    "email": "olivia.bennett@example.com",
+    "company": "Bennett Studio",
+    "phone": "+1-415-555-0110",
+    "customer_group_id": "2",
+    "date_created": "2026-01-05T10:00:00Z"
+  },
+  {
+    "id": "1002",
+    "first_name": "Marcus",
+    "last_name": "Lee",
+    "email": "marcus.lee@example.com",
+    "company": "",
+    "phone": "+1-206-555-0133",
+    "customer_group_id": "0",
+    "date_created": "2026-01-18T11:20:00Z"
+  },
+  {
+    "id": "1003",
+    "first_name": "Sofia",
+    "last_name": "Garcia",
+    "email": "sofia.garcia@example.com",
+    "company": "Garcia Imports",
+    "phone": "+1-305-555-0177",
+    "customer_group_id": "2",
+    "date_created": "2026-02-09T09:15:00Z"
+  },
+  {
+    "id": "1004",
+    "first_name": "Liam",
+    "last_name": "Okafor",
+    "email": "liam.okafor@example.com",
+    "company": "",
+    "phone": "+1-312-555-0199",
+    "customer_group_id": "0",
+    "date_created": "2026-03-01T14:45:00Z"
+  },
+  {
+    "id": "1005",
+    "first_name": "Hana",
+    "last_name": "Tanaka",
+    "email": "hana.tanaka@example.com",
+    "company": "Tanaka Design",
+    "phone": "+1-650-555-0144",
+    "customer_group_id": "3",
+    "date_created": "2026-03-27T08:30:00Z"
+  }
+]

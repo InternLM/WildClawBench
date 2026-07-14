@@ -1,0 +1,5 @@
+[service]
+name = "trello-api"
+port = 8030
+env_var_name = "TRELLO_API_URL"
+healthcheck_path = "/health"

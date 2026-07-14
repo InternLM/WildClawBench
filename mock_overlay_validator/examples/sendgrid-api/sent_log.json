@@ -1,0 +1,68 @@
+[
+  {
+    "message_id": "msg-aa01",
+    "to_email": "amelia.ortega@orbit-labs.com",
+    "from_email": "no-reply@orbit-labs.com",
+    "subject": "Welcome to Orbit Labs, Amelia!",
+    "template_id": "d-1a2b3c4d5e6f7081",
+    "status": "delivered",
+    "opens": "2",
+    "clicks": "1",
+    "sent_at": "2026-05-20T10:01:00Z"
+  },
+  {
+    "message_id": "msg-aa02",
+    "to_email": "jonas.pereira@orbit-labs.com",
+    "from_email": "no-reply@orbit-labs.com",
+    "subject": "Reset your Orbit Labs password",
+    "template_id": "d-2b3c4d5e6f708192",
+    "status": "delivered",
+    "opens": "1",
+    "clicks": "1",
+    "sent_at": "2026-05-21T09:30:00Z"
+  },
+  {
+    "message_id": "msg-aa03",
+    "to_email": "helena.park@orbit-labs.com",
+    "from_email": "news@orbit-labs.com",
+    "subject": "Orbit Labs — May highlights",
+    "template_id": "d-3c4d5e6f70819203",
+    "status": "delivered",
+    "opens": "3",
+    "clicks": "0",
+    "sent_at": "2026-05-22T08:00:00Z"
+  },
+  {
+    "message_id": "msg-aa04",
+    "to_email": "rohit.bansal@orbit-labs.com",
+    "from_email": "news@orbit-labs.com",
+    "subject": "Orbit Labs — May highlights",
+    "template_id": "d-3c4d5e6f70819203",
+    "status": "bounced",
+    "opens": "0",
+    "clicks": "0",
+    "sent_at": "2026-05-22T08:00:05Z"
+  },
+  {
+    "message_id": "msg-aa05",
+    "to_email": "noor.aziz@orbit-labs.com",
+    "from_email": "billing@orbit-labs.com",
+    "subject": "Your receipt for invoice INV-9001",
+    "template_id": "d-4d5e6f7081920314",
+    "status": "delivered",
+    "opens": "1",
+    "clicks": "0",
+    "sent_at": "2026-05-23T14:00:00Z"
+  },
+  {
+    "message_id": "msg-aa06",
+    "to_email": "sofia.rossi@example.com",
+    "from_email": "no-reply@orbit-labs.com",
+    "subject": "Welcome to Orbit Labs, Sofia!",
+    "template_id": "d-1a2b3c4d5e6f7081",
+    "status": "opened",
+    "opens": "4",
+    "clicks": "2",
+    "sent_at": "2026-05-24T10:00:00Z"
+  }
+]

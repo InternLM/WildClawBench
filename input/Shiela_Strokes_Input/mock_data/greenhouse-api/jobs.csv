@@ -1,0 +1,8 @@
+id,title,status,department,location,opened_at,closed_at
+req_field_engineer_2026_q4,Field Engineer - Nasarawa Region,open,Network Planning - North Central,Nasarawa State Nigeria,2026-09-01,
+req_rf_specialist_2026_q4,RF Specialist - Abuja,open,Network Planning - North Central,Abuja Nigeria,2026-08-15,
+gjm_job_ran_planner_2025,Senior RAN Planner,filled,Network Planning,Maitama Abuja,2025-06-12,2025-09-22
+gjm_job_field_engineer_2025_q2,Field Engineer 2025 Q2,filled,Network Planning,Maitama Abuja,2025-03-12,2025-06-22
+gjm_job_regulatory_analyst_2025,Regulatory Affairs Analyst,filled,Regulatory Affairs,Maitama Abuja,2025-06-12,2025-08-22
+gjm_job_intern_2026_q2,Network Engineering Intern Q2,filled,Network Planning,Maitama Abuja,2026-01-12,2026-03-22
+gjm_job_qa_eng_2026,QA Engineer 2026,open,Network Operations,Maitama Abuja,2026-09-15,

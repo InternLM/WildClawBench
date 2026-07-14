@@ -1,0 +1,80 @@
+[
+  {
+    "id": "85012345678",
+    "host_id": "u-amelia-9f4b2e8d",
+    "topic": "Weekly Engineering Sync",
+    "type": "2",
+    "status": "waiting",
+    "start_time": "2026-05-29T16:00:00Z",
+    "duration": "60",
+    "timezone": "America/Los_Angeles",
+    "join_url": "https://zoom.us/j/85012345678",
+    "agenda": "Sprint progress and blockers",
+    "created_at": "2026-05-20T10:00:00Z"
+  },
+  {
+    "id": "85012345679",
+    "host_id": "u-amelia-9f4b2e8d",
+    "topic": "Q2 Roadmap Review",
+    "type": "2",
+    "status": "waiting",
+    "start_time": "2026-05-30T18:00:00Z",
+    "duration": "90",
+    "timezone": "America/Los_Angeles",
+    "join_url": "https://zoom.us/j/85012345679",
+    "agenda": "Review Q2 OKRs and roadmap",
+    "created_at": "2026-05-21T11:00:00Z"
+  },
+  {
+    "id": "85012345680",
+    "host_id": "u-amelia-9f4b2e8d",
+    "topic": "Customer Onboarding - Acme",
+    "type": "2",
+    "status": "waiting",
+    "start_time": "2026-06-02T15:00:00Z",
+    "duration": "45",
+    "timezone": "America/Los_Angeles",
+    "join_url": "https://zoom.us/j/85012345680",
+    "agenda": "Walk Acme through setup",
+    "created_at": "2026-05-22T09:00:00Z"
+  },
+  {
+    "id": "85012345670",
+    "host_id": "u-amelia-9f4b2e8d",
+    "topic": "Sprint Retro 21",
+    "type": "2",
+    "status": "finished",
+    "start_time": "2026-05-22T16:00:00Z",
+    "duration": "55",
+    "timezone": "America/Los_Angeles",
+    "join_url": "https://zoom.us/j/85012345670",
+    "agenda": "Retrospective for sprint 21",
+    "created_at": "2026-05-15T10:00:00Z"
+  },
+  {
+    "id": "85012345671",
+    "host_id": "u-amelia-9f4b2e8d",
+    "topic": "Architecture Deep Dive",
+    "type": "2",
+    "status": "finished",
+    "start_time": "2026-05-19T17:00:00Z",
+    "duration": "75",
+    "timezone": "America/Los_Angeles",
+    "join_url": "https://zoom.us/j/85012345671",
+    "agenda": "Auth service redesign",
+    "created_at": "2026-05-12T10:00:00Z"
+  },
+  {
+    "id": "85012345672",
+    "host_id": "u-amelia-9f4b2e8d",
+    "topic": "All Hands May",
+    "type": "8",
+    "status": "finished",
+    "start_time": "2026-05-16T20:00:00Z",
+    "duration": "40",
+    "timezone": "America/Los_Angeles",
+    "join_url": "https://zoom.us/j/85012345672",
+    "agenda": "Monthly all hands",
+    "created_at": "2026-05-09T10:00:00Z"
+  }
+]

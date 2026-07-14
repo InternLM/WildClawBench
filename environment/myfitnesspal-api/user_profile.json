@@ -1,0 +1,44 @@
+{
+  "user_id": 1,
+  "username": "alexrivera32",
+  "display_name": "Alex Rivera",
+  "email": "alex.rivera@email.com",
+  "date_of_birth": "1993-02-14",
+  "sex": "male",
+  "height_cm": 177.8,
+  "current_weight_lbs": 192.0,
+  "goal_weight_lbs": 175.0,
+  "activity_level": "moderately_active",
+  "profile_image_url": "https://mfp-static.example.com/avatars/alexrivera32.jpg",
+  "location": "Austin, TX",
+  "joined_date": "2024-11-15",
+  "daily_calorie_goal": 1800,
+  "macro_goals": {
+    "carbs_pct": 40,
+    "fat_pct": 25,
+    "protein_pct": 35
+  },
+  "nutrient_goals": {
+    "calories": 1800,
+    "total_fat_g": 50,
+    "saturated_fat_g": 16,
+    "cholesterol_mg": 300,
+    "sodium_mg": 2300,
+    "total_carbs_g": 180,
+    "dietary_fiber_g": 30,
+    "sugars_g": 50,
+    "protein_g": 158,
+    "potassium_mg": 3500,
+    "vitamin_a_pct": 100,
+    "vitamin_c_pct": 100,
+    "calcium_pct": 100,
+    "iron_pct": 100
+  },
+  "weekly_weight_goal_lbs": -1.0,
+  "units": {
+    "weight": "lbs",
+    "height": "inches",
+    "water": "cups",
+    "energy": "calories"
+  }
+}

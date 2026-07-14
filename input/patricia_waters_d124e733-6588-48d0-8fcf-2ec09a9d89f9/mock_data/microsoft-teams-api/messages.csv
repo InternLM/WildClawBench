@@ -1,0 +1,6 @@
+id,channel_id,team_id,from_user_id,from_display_name,content,content_type,importance,created_date
+tm-0,ch-mdt,team-hse,u-hse1,EI Coordinator,Team day agenda posted for Thursday.,text,normal,2026-10-05T08:00:00
+tm-1,ch-general,team-hse,u-patricia,Patricia Waters,"Out at the clinic Monday, in Renmore Tuesday.",text,normal,2026-10-05T08:05:00
+tm-2,ch-mdt,team-hse,u-hse2,Speech & Language,Joint session notes shared.,text,normal,2026-10-02T10:00:00
+tm-3,ch-general,team-hse,u-hse1,EI Coordinator,Room change for the team meeting.,text,normal,2026-10-01T09:00:00
+tm-4,ch-mdt,team-hse,u-patricia,Patricia Waters,Will bring the screening updates.,text,normal,2026-10-05T09:10:00

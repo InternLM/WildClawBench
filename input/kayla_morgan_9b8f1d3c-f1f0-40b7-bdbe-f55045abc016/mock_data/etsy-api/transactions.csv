@@ -1,0 +1,3 @@
+transaction_id,receipt_id,listing_id,shop_id,buyer_user_id,title,quantity,price,shipping_cost,is_digital,variations,created_timestamp
+90001,80001,1922033441,48211903,55001,Stoneware pie plate speckled cream,1,42.00,7.50,false,,2026-02-14T10:30:00
+90002,80002,1922050021,48211903,55002,Linen tea towel set hand-embroidered,1,28.00,7.50,false,,2026-04-01T14:20:00

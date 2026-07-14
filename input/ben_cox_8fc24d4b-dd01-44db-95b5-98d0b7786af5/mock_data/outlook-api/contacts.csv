@@ -1,0 +1,11 @@
+id,display_name,given_name,surname,email,job_title,company,mobile_phone
+C01,Hendrik Veldkamp,Hendrik,Veldkamp,h.veldkamp@home.nl,Hoogleraar,Rijksuniversiteit Groningen,050-555-0277
+C02,Groningen Houtcentrum,Groningen,Houtcentrum,verkoop@groningenhout.nl,Verkoop,Groningen Houtcentrum BV,050-555-0533
+C03,Diane Cox,Diane,Cox,diane.cox@outlook.com,,,06-5500-0112
+C04,Keith Cox,Keith,Cox,keith.cox@outlook.com,,,06-5500-0145
+C05,Marie Cox-Gagne,Marie,Cox-Gagne,marie.gagne@outlook.com,,,06-5500-0155
+C06,J. Bosman,J.,Bosman,j.bosman@haren-nl.net,,,06-5500-0500
+C07,De Vries IJzerwaren,De Vries,IJzerwaren,info@devriesijzerwaren.nl,,De Vries IJzerwaren,050-555-0712
+C08,Bouwmarkt Zuidhorn,Bouwmarkt,Zuidhorn,info@bouwmarktzuidhorn.nl,,Bouwmarkt Zuidhorn VOF,0594-555-118
+C09,Tandarts Mulder,Tandarts,Mulder,balie@tandartsmulder.nl,,Tandartspraktijk Zuidhorn,050-555-0425
+C10,Faber Olie en Lak,Faber,Olie en Lak,verkoop@faberlak.nl,,Faber Afwerkingsproducten,050-555-0990

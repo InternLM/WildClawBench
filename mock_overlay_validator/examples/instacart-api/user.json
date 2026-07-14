@@ -1,0 +1,15 @@
+{
+  "user_id": "user-emily",
+  "name": "Emily Carson",
+  "email": "emily.carson@example.com",
+  "default_zip": "94110",
+  "membership": "instacart_plus",
+  "default_address": {
+    "line1": "245 Folsom St",
+    "line2": "Apt 3",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110"
+  },
+  "default_payment_method_id": "pm-visa-1234"
+}

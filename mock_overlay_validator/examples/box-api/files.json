@@ -1,0 +1,86 @@
+[
+  {
+    "id": "500001",
+    "name": "brand-guidelines.pdf",
+    "parent_id": "160001",
+    "owner_id": "11446498",
+    "description": "Brand guidelines v3",
+    "size": "1843200",
+    "extension": "pdf",
+    "sha1": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345601",
+    "created_at": "2026-03-01T10:00:00-08:00",
+    "modified_at": "2026-05-12T09:00:00-07:00"
+  },
+  {
+    "id": "500002",
+    "name": "logo-pack.zip",
+    "parent_id": "160001",
+    "owner_id": "22893011",
+    "description": "Logo assets",
+    "size": "5242880",
+    "extension": "zip",
+    "sha1": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345602",
+    "created_at": "2026-03-05T14:00:00-08:00",
+    "modified_at": "2026-04-22T11:30:00-07:00"
+  },
+  {
+    "id": "500003",
+    "name": "q2-campaign-plan.docx",
+    "parent_id": "160004",
+    "owner_id": "22893011",
+    "description": "Q2 campaign plan",
+    "size": "72704",
+    "extension": "docx",
+    "sha1": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345603",
+    "created_at": "2026-04-15T09:20:00-07:00",
+    "modified_at": "2026-05-10T12:00:00-07:00"
+  },
+  {
+    "id": "500004",
+    "name": "architecture.pdf",
+    "parent_id": "160002",
+    "owner_id": "11446498",
+    "description": "System architecture",
+    "size": "983040",
+    "extension": "pdf",
+    "sha1": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345604",
+    "created_at": "2026-02-20T15:00:00-08:00",
+    "modified_at": "2026-05-08T08:45:00-07:00"
+  },
+  {
+    "id": "500005",
+    "name": "api-spec.yaml",
+    "parent_id": "160002",
+    "owner_id": "33102847",
+    "description": "OpenAPI spec",
+    "size": "28672",
+    "extension": "yaml",
+    "sha1": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345605",
+    "created_at": "2026-03-12T16:00:00-07:00",
+    "modified_at": "2026-05-19T10:10:00-07:00"
+  },
+  {
+    "id": "500006",
+    "name": "fy26-budget.xlsx",
+    "parent_id": "160003",
+    "owner_id": "11446498",
+    "description": "FY26 budget",
+    "size": "131072",
+    "extension": "xlsx",
+    "sha1": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345606",
+    "created_at": "2026-01-10T10:00:00-08:00",
+    "modified_at": "2026-05-15T13:45:00-07:00"
+  },
+  {
+    "id": "500007",
+    "name": "README.md",
+    "parent_id": "160001",
+    "owner_id": "11446498",
+    "description": "Workspace readme",
+    "size": "512",
+    "extension": "md",
+    "sha1": "a1b2c3d4e5f60718293a4b5c6d7e8f9012345607",
+    "created_at": "2026-04-01T09:00:00-07:00",
+    "modified_at": "2026-05-20T12:00:00-07:00"
+  }
+]

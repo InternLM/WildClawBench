@@ -1,0 +1,13 @@
+id,thread_id,from_addr,to_addr,cc_addr,subject,snippet,body,date,internal_date,size_estimate,labels,is_unread,is_starred
+g001,gt001,nieuwsbrief@finewoodworking.com,bencox.shop@gmail.com,,This week in Fine Woodworking,Dovetail jigs compared,New article roundup on dovetail jigs and hand-cut joinery techniques.,2026-09-30T07:00:00,1759210800000,18432,CATEGORY_PROMOTIONS,true,false
+g002,gt002,digest@reitdiep-hengelsport.nl,bencox.shop@gmail.com,,Forumdigest vissen Reitdiep,Snoekbaars najaar,Weekoverzicht van het forum: vangsten en weersverwachting voor het weekend.,2026-09-23T06:30:00,1758609000000,12288,CATEGORY_FORUMS,false,false
+g003,gt003,no-reply@npo.nl,bencox.shop@gmail.com,,NPO Radio nieuwsbrief,Programmatips,Tips voor documentaires en radioprogramma's deze week.,2026-09-28T08:15:00,1759040100000,9216,CATEGORY_UPDATES,true,false
+g004,gt004,service@rabobank.nl,bencox.shop@gmail.com,,Rabobank bericht,Log in via de app,Er staat een algemeen bericht voor u klaar in de Rabo App.,2026-09-27T09:00:00,1758956400000,7168,CATEGORY_UPDATES,false,false
+g005,gt005,nieuws@fcgroningen.nl,bencox.shop@gmail.com,,Seizoenkaart info,Verlenging,Informatie over verlenging van uw seizoenkaart voor volgend seizoen.,2026-09-25T10:00:00,1758787200000,11264,CATEGORY_PROMOTIONS,true,false
+g006,gt006,info@gereedschapdeals.nl,bencox.shop@gmail.com,,Najaarsdeals gereedschap,Kortingen,Kortingen op handgereedschap en machines deze maand.,2026-09-24T11:30:00,1758706200000,14336,CATEGORY_PROMOTIONS,false,false
+g007,gt007,verkoop@groningenhout.nl,bencox.shop@gmail.com,,Offerte eiken legborden - Groningen Houtcentrum,Offerte eiken legborden 27mm voor uw project,"Beste Ben,
+
+Hierbij onze offerte voor eiken legborden 27mm voor uw boekenkast project. Zie bijlage voor specificaties en prijs.
+
+Met vriendelijke groet,
+Groningen Houtcentrum",2026-09-15T10:30:00,1757903400000,8192,INBOX,false,false

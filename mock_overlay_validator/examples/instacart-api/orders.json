@@ -1,0 +1,47 @@
+[
+  {
+    "order_id": "order-001",
+    "user_id": "user-emily",
+    "retailer_id": "ret-safeway",
+    "status": "DELIVERED",
+    "subtotal": "42.18",
+    "delivery_fee": "3.99",
+    "service_fee": "2.11",
+    "tip": "8.00",
+    "total": "56.28",
+    "placed_at": "2026-05-12T10:15:00Z",
+    "delivery_window_start": "2026-05-12T12:00:00Z",
+    "delivery_window_end": "2026-05-12T13:00:00Z",
+    "shopper_id": "shopper-mark"
+  },
+  {
+    "order_id": "order-002",
+    "user_id": "user-emily",
+    "retailer_id": "ret-wholefoods",
+    "status": "DELIVERED",
+    "subtotal": "68.50",
+    "delivery_fee": "4.99",
+    "service_fee": "3.43",
+    "tip": "10.00",
+    "total": "86.92",
+    "placed_at": "2026-05-18T09:30:00Z",
+    "delivery_window_start": "2026-05-18T11:30:00Z",
+    "delivery_window_end": "2026-05-18T12:30:00Z",
+    "shopper_id": "shopper-leah"
+  },
+  {
+    "order_id": "order-003",
+    "user_id": "user-emily",
+    "retailer_id": "ret-traderjoes",
+    "status": "SHOPPING",
+    "subtotal": "29.96",
+    "delivery_fee": "5.99",
+    "service_fee": "1.50",
+    "tip": "5.00",
+    "total": "42.45",
+    "placed_at": "2026-05-26T08:45:00Z",
+    "delivery_window_start": "2026-05-26T10:30:00Z",
+    "delivery_window_end": "2026-05-26T11:30:00Z",
+    "shopper_id": "shopper-derek"
+  }
+]

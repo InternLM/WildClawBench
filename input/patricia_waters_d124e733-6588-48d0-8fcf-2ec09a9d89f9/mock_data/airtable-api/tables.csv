@@ -1,0 +1,4 @@
+baseId,id,name,primaryFieldId,records_json
+appWPADMIN,tblProjects,Projects,fldPName,records_projects.json
+appWPADMIN,tblTasks,Tasks,fldTName,records_tasks.json
+appWPADMIN,tblContacts,Contacts,fldCName,records_contacts.json

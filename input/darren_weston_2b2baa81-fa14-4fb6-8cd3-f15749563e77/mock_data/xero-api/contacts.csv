@@ -1,0 +1,13 @@
+contact_id,name,first_name,last_name,email,is_customer,is_supplier,status,account_number
+c0000001-0000-0000-0000-000000000001,Brasserie Flagey,Marc,Lambert,orders@brasserieflagey.be,true,false,ACTIVE,BF-001
+c0000002-0000-0000-0000-000000000002,Hotel des Galeries,Sofie,De Vries,fb@hoteldesgaleries.be,true,false,ACTIVE,HG-002
+c0000003-0000-0000-0000-000000000003,Cafe Maison,Hugo,Martin,hello@cafemaison.be,false,true,ACTIVE,CM-003
+c0000004-0000-0000-0000-000000000004,Le Phare du Kanaal,Nadia,Bouchra,contact@lephare.be,true,false,ACTIVE,LP-004
+c0000005-0000-0000-0000-000000000005,Maison Blanche Events,Pieter,Janssens,events@maisonblanche.be,true,false,ACTIVE,MB-005
+c0000006-0000-0000-0000-000000000006,The Avenue Bistro,Grace,Owusu,chef@avenuebistro.be,true,false,ACTIVE,AB-006
+c0000007-0000-0000-0000-000000000007,Galerie Cafe,Lina,Haddad,info@galeriecafe.be,true,false,ACTIVE,GC-007
+c0000008-0000-0000-0000-000000000008,Sucres et Decors,Yann,Dubois,ventes@sucresdecors.be,false,true,ACTIVE,SD-008
+c0000009-0000-0000-0000-000000000009,Brasserie du Parc,Tom,Peeters,resa@brasserieparc.be,true,false,ACTIVE,BP-009
+c0000010-0000-0000-0000-000000000010,Cafe Lumiere,Ines,Costa,bonjour@cafelumiere.be,true,false,ACTIVE,CL-010
+c0000011-0000-0000-0000-000000000011,Hotel Metropole,Karim,Saidi,banquet@metropole.be,true,false,ACTIVE,HM-011
+c0000012-0000-0000-0000-000000000012,Embal Express,Bart,Claes,sales@embalexpress.be,false,true,ACTIVE,EE-012

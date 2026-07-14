@@ -1,0 +1,5 @@
+[service]
+name = "google-classroom-api"
+port = 8002
+env_var_name = "GOOGLE_CLASSROOM_API_URL"
+healthcheck_path = "/health"

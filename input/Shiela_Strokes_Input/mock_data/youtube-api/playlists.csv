@@ -1,0 +1,7 @@
+playlist_id,channelId,title,description,publishedAt,privacyStatus,itemCount
+pl_3gpp_review,ch_3gpp_lab,3GPP TS 38 series tutorials,"Reference for catching up on 3GPP TS 38.211, 38.213, 38.214 quickly.",2025-06-12T08:00:00Z,private,10
+pl_vendor_reels,ch_vendor_radios,Vendor RAN webinars saved,Saved vendor webinars worth re-watching before annual planning cycles.,2025-06-12T08:00:00Z,private,8
+pl_kids_safe,ch_kids_curated,Kids safe educational queue,Family-plan queue for the children. Refreshed weekly by the parents.,2025-06-12T08:00:00Z,private,12
+pl_kids_science,ch_science_kids,Year 5 enrichment,Year 5 enrichment playlist for the term.,2025-06-12T08:00:00Z,private,4
+pl_news_weekly,ch_telco_news,Telco news weekly catch up,Quick-scan playlist for Friday afternoons.,2025-06-12T08:00:00Z,private,8
+pl_garden_plans,ch_garden_hour,Balcony garden ideas saved,Reference for the home balcony garden refresh in dry season.,2025-06-12T08:00:00Z,private,5

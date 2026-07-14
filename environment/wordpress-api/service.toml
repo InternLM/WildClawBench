@@ -1,0 +1,5 @@
+[service]
+name = "wordpress-api"
+port = 8065
+env_var_name = "WORDPRESS_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org",
+    "domain": "sandbox.mailgun.org",
+    "sender": "noreply@sandbox.mailgun.org",
+    "recipient": "alice@example.com",
+    "subject": "Welcome to Acme",
+    "body": "Thanks for signing up!",
+    "timestamp": "2026-05-01T09:30:12Z"
+  },
+  {
+    "id": "20260503141522.2.B2C3D4E5F6A7@sandbox.mailgun.org",
+    "domain": "sandbox.mailgun.org",
+    "sender": "billing@sandbox.mailgun.org",
+    "recipient": "bob@example.com",
+    "subject": "Your invoice is ready",
+    "body": "Invoice #1042 is attached.",
+    "timestamp": "2026-05-03T14:15:22Z"
+  },
+  {
+    "id": "20260507081005.3.C3D4E5F6A7B8@sandbox.mailgun.org",
+    "domain": "sandbox.mailgun.org",
+    "sender": "support@sandbox.mailgun.org",
+    "recipient": "carol@example.com",
+    "subject": "Password reset",
+    "body": "Click the link to reset your password.",
+    "timestamp": "2026-05-07T08:10:05Z"
+  },
+  {
+    "id": "20260512162844.4.D4E5F6A7B8C9@sandbox.mailgun.org",
+    "domain": "sandbox.mailgun.org",
+    "sender": "news@sandbox.mailgun.org",
+    "recipient": "dave@example.com",
+    "subject": "May Newsletter",
+    "body": "Here is what is new this month.",
+    "timestamp": "2026-05-12T16:28:44Z"
+  },
+  {
+    "id": "20260515104733.5.E5F6A7B8C9D0@sandbox.mailgun.org",
+    "domain": "sandbox.mailgun.org",
+    "sender": "noreply@sandbox.mailgun.org",
+    "recipient": "erin@example.com",
+    "subject": "Order shipped",
+    "body": "Your order is on the way.",
+    "timestamp": "2026-05-15T10:47:33Z"
+  },
+  {
+    "id": "20260520113900.6.F6A7B8C9D0E1@sandbox.mailgun.org",
+    "domain": "sandbox.mailgun.org",
+    "sender": "team@sandbox.mailgun.org",
+    "recipient": "frank@example.com",
+    "subject": "Meeting reminder",
+    "body": "Standup at 10am tomorrow.",
+    "timestamp": "2026-05-20T11:39:00Z"
+  },
+  {
+    "id": "20260524175611.7.A7B8C9D0E1F2@sandbox.mailgun.org",
+    "domain": "sandbox.mailgun.org",
+    "sender": "noreply@sandbox.mailgun.org",
+    "recipient": "grace@example.com",
+    "subject": "Survey request",
+    "body": "We value your feedback.",
+    "timestamp": "2026-05-24T17:56:11Z"
+  }
+]

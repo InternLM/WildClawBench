@@ -1,0 +1,58 @@
+[
+  {
+    "item_id": "item-1001",
+    "board_id": "board-101",
+    "group_id": "grp-doing",
+    "name": "Implement OAuth token refresh",
+    "created_at": "2026-05-18T09:00:00Z"
+  },
+  {
+    "item_id": "item-1002",
+    "board_id": "board-101",
+    "group_id": "grp-todo",
+    "name": "Add pagination to users endpoint",
+    "created_at": "2026-05-19T10:30:00Z"
+  },
+  {
+    "item_id": "item-1003",
+    "board_id": "board-101",
+    "group_id": "grp-done",
+    "name": "Migrate logging to structured JSON",
+    "created_at": "2026-05-12T14:00:00Z"
+  },
+  {
+    "item_id": "item-1004",
+    "board_id": "board-101",
+    "group_id": "grp-todo",
+    "name": "Write integration tests for billing",
+    "created_at": "2026-05-20T11:15:00Z"
+  },
+  {
+    "item_id": "item-2001",
+    "board_id": "board-102",
+    "group_id": "grp-open",
+    "name": "Checkout button unresponsive on iOS",
+    "created_at": "2026-05-21T08:45:00Z"
+  },
+  {
+    "item_id": "item-2002",
+    "board_id": "board-102",
+    "group_id": "grp-closed",
+    "name": "Avatar upload fails over 5MB",
+    "created_at": "2026-05-15T16:20:00Z"
+  },
+  {
+    "item_id": "item-3001",
+    "board_id": "board-201",
+    "group_id": "grp-planned",
+    "name": "Launch summer newsletter series",
+    "created_at": "2026-05-17T13:00:00Z"
+  },
+  {
+    "item_id": "item-3002",
+    "board_id": "board-201",
+    "group_id": "grp-live",
+    "name": "Refresh homepage hero campaign",
+    "created_at": "2026-05-10T09:30:00Z"
+  }
+]

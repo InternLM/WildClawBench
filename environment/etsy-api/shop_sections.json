@@ -1,0 +1,44 @@
+[
+  {
+    "shop_section_id": "40001",
+    "shop_id": "29457183",
+    "title": "Kitchenware & Fly Boxes",
+    "rank": "1",
+    "active_listing_count": "4"
+  },
+  {
+    "shop_section_id": "40002",
+    "shop_id": "29457183",
+    "title": "Home Decor & Sculptures",
+    "rank": "2",
+    "active_listing_count": "5"
+  },
+  {
+    "shop_section_id": "40003",
+    "shop_id": "29457183",
+    "title": "Accessories & Jewelry",
+    "rank": "3",
+    "active_listing_count": "5"
+  },
+  {
+    "shop_section_id": "40004",
+    "shop_id": "29457183",
+    "title": "Holiday & Ornaments",
+    "rank": "4",
+    "active_listing_count": "2"
+  },
+  {
+    "shop_section_id": "40005",
+    "shop_id": "29457183",
+    "title": "Instruments",
+    "rank": "5",
+    "active_listing_count": "1"
+  },
+  {
+    "shop_section_id": "40006",
+    "shop_id": "29457183",
+    "title": "Sale & Special Orders",
+    "rank": "6",
+    "active_listing_count": "2"
+  }
+]

@@ -1,0 +1,4 @@
+id,summary,description,time_zone,access_role,primary,color_id
+cal-primary,patricia.waters@Finthesiss.ai,Patricia primary,Europe/Dublin,owner,true,9
+cal-clinic,Waters Pediatric OT,Clinic sessions,Europe/Dublin,owner,false,5
+cal-hse,HSE Early Intervention,Renmore team days,Europe/Dublin,reader,false,7

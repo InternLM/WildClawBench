@@ -1,0 +1,5 @@
+[service]
+name = "gmail-api"
+port = 8017
+env_var_name = "GMAIL_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "author-mara",
+    "content_type": "author",
+    "created_at": "2025-09-01T10:00:00.000Z",
+    "updated_at": "2025-09-01T10:00:00.000Z",
+    "published_version": "3",
+    "fields_json": "{\"name\":\"Mara Lindgren\",\"bio\":\"Product writer covering headless CMS workflows.\",\"twitter\":\"@maralind\"}"
+  },
+  {
+    "id": "author-tomas",
+    "content_type": "author",
+    "created_at": "2025-09-02T11:00:00.000Z",
+    "updated_at": "2025-09-02T11:00:00.000Z",
+    "published_version": "2",
+    "fields_json": "{\"name\":\"Tomas Vega\",\"bio\":\"Engineer and occasional technical blogger.\",\"twitter\":\"@tvega\"}"
+  },
+  {
+    "id": "cat-engineering",
+    "content_type": "category",
+    "created_at": "2025-09-01T09:00:00.000Z",
+    "updated_at": "2025-09-01T09:00:00.000Z",
+    "published_version": "1",
+    "fields_json": "{\"title\":\"Engineering\",\"slug\":\"engineering\"}"
+  },
+  {
+    "id": "cat-product",
+    "content_type": "category",
+    "created_at": "2025-09-01T09:05:00.000Z",
+    "updated_at": "2025-09-01T09:05:00.000Z",
+    "published_version": "1",
+    "fields_json": "{\"title\":\"Product\",\"slug\":\"product\"}"
+  },
+  {
+    "id": "post-getting-started",
+    "content_type": "blogPost",
+    "created_at": "2025-09-10T08:00:00.000Z",
+    "updated_at": "2025-09-12T14:00:00.000Z",
+    "published_version": "5",
+    "fields_json": "{\"title\":\"Getting Started with Headless CMS\",\"slug\":\"getting-started\",\"body\":\"Headless CMS decouples content from presentation.\",\"author\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Entry\",\"id\":\"author-mara\"}},\"heroImage\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Asset\",\"id\":\"asset-hero-1\"}},\"published\":true}"
+  },
+  {
+    "id": "post-content-modeling",
+    "content_type": "blogPost",
+    "created_at": "2025-10-01T08:00:00.000Z",
+    "updated_at": "2025-10-03T09:30:00.000Z",
+    "published_version": "4",
+    "fields_json": "{\"title\":\"Content Modeling Best Practices\",\"slug\":\"content-modeling\",\"body\":\"Model your content around reuse and relationships.\",\"author\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Entry\",\"id\":\"author-tomas\"}},\"heroImage\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Asset\",\"id\":\"asset-hero-2\"}},\"published\":true}"
+  },
+  {
+    "id": "post-draft-webhooks",
+    "content_type": "blogPost",
+    "created_at": "2025-11-05T08:00:00.000Z",
+    "updated_at": "2025-11-05T08:00:00.000Z",
+    "published_version": "0",
+    "fields_json": "{\"title\":\"Using Webhooks Effectively\",\"slug\":\"using-webhooks\",\"body\":\"Draft post about webhook patterns.\",\"author\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Entry\",\"id\":\"author-mara\"}},\"published\":false}"
+  }
+]

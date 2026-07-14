@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "HubSpot Mock CRM API v3",
+    "description": "Test collection for the mock HubSpot CRM API service. Base URL defaults to http://localhost:8024. In docker-compose, the service is reachable at http://hubspot-api:8024.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8024"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list contacts", "request": {"method": "GET", "url": "{{baseUrl}}/crm/v3/objects/contacts?limit=5"}},
+    {"name": "get contact", "request": {"method": "GET", "url": "{{baseUrl}}/crm/v3/objects/contacts/201"}},
+    {"name": "create contact", "request": {"method": "POST", "url": "{{baseUrl}}/crm/v3/objects/contacts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"properties\": {\"firstname\": \"Lena\", \"lastname\": \"Vargas\", \"email\": \"lena.vargas@example.com\", \"jobtitle\": \"COO\", \"lifecyclestage\": \"lead\"}}"}}},
+    {"name": "update contact", "request": {"method": "PATCH", "url": "{{baseUrl}}/crm/v3/objects/contacts/204",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"properties\": {\"lifecyclestage\": \"opportunity\", \"jobtitle\": \"Chief Financial Officer\"}}"}}},
+    {"name": "list companies", "request": {"method": "GET", "url": "{{baseUrl}}/crm/v3/objects/companies"}},
+    {"name": "list deals", "request": {"method": "GET", "url": "{{baseUrl}}/crm/v3/objects/deals?limit=10"}},
+    {"name": "get deal", "request": {"method": "GET", "url": "{{baseUrl}}/crm/v3/objects/deals/402"}},
+    {"name": "create deal", "request": {"method": "POST", "url": "{{baseUrl}}/crm/v3/objects/deals",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"properties\": {\"dealname\": \"Driftwood Renewal\", \"pipeline\": \"default\", \"dealstage\": \"qualifiedtobuy\", \"amount\": \"20000\"}}"}}},
+    {"name": "move deal to new stage", "request": {"method": "PATCH", "url": "{{baseUrl}}/crm/v3/objects/deals/403",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"properties\": {\"dealstage\": \"presentationscheduled\"}}"}}},
+    {"name": "list deal pipelines", "request": {"method": "GET", "url": "{{baseUrl}}/crm/v3/pipelines/deals"}}
+  ]
+}

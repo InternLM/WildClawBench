@@ -1,0 +1,182 @@
+[
+  {
+    "event_id": "evt-0001",
+    "event": "Signup",
+    "distinct_id": "user-aria",
+    "time": "2025-05-01T08:12:00Z",
+    "country": "US",
+    "plan": "free",
+    "platform": "web",
+    "utm_source": "google"
+  },
+  {
+    "event_id": "evt-0002",
+    "event": "Signup",
+    "distinct_id": "user-bode",
+    "time": "2025-05-01T09:40:00Z",
+    "country": "DE",
+    "plan": "free",
+    "platform": "ios",
+    "utm_source": "organic"
+  },
+  {
+    "event_id": "evt-0003",
+    "event": "App Open",
+    "distinct_id": "user-aria",
+    "time": "2025-05-01T10:05:00Z",
+    "country": "US",
+    "plan": "free",
+    "platform": "web",
+    "utm_source": "google"
+  },
+  {
+    "event_id": "evt-0004",
+    "event": "Product Viewed",
+    "distinct_id": "user-aria",
+    "time": "2025-05-01T10:08:00Z",
+    "country": "US",
+    "plan": "free",
+    "platform": "web",
+    "utm_source": "google"
+  },
+  {
+    "event_id": "evt-0005",
+    "event": "Add to Cart",
+    "distinct_id": "user-aria",
+    "time": "2025-05-01T10:12:00Z",
+    "country": "US",
+    "plan": "free",
+    "platform": "web",
+    "utm_source": "google"
+  },
+  {
+    "event_id": "evt-0006",
+    "event": "Checkout",
+    "distinct_id": "user-aria",
+    "time": "2025-05-01T10:18:00Z",
+    "country": "US",
+    "plan": "paid",
+    "platform": "web",
+    "utm_source": "google"
+  },
+  {
+    "event_id": "evt-0007",
+    "event": "Signup",
+    "distinct_id": "user-cleo",
+    "time": "2025-05-02T07:55:00Z",
+    "country": "GB",
+    "plan": "free",
+    "platform": "android",
+    "utm_source": "facebook"
+  },
+  {
+    "event_id": "evt-0008",
+    "event": "App Open",
+    "distinct_id": "user-bode",
+    "time": "2025-05-02T11:30:00Z",
+    "country": "DE",
+    "plan": "free",
+    "platform": "ios",
+    "utm_source": "organic"
+  },
+  {
+    "event_id": "evt-0009",
+    "event": "Product Viewed",
+    "distinct_id": "user-bode",
+    "time": "2025-05-02T11:33:00Z",
+    "country": "DE",
+    "plan": "free",
+    "platform": "ios",
+    "utm_source": "organic"
+  },
+  {
+    "event_id": "evt-0010",
+    "event": "Add to Cart",
+    "distinct_id": "user-bode",
+    "time": "2025-05-02T11:40:00Z",
+    "country": "DE",
+    "plan": "free",
+    "platform": "ios",
+    "utm_source": "organic"
+  },
+  {
+    "event_id": "evt-0011",
+    "event": "App Open",
+    "distinct_id": "user-cleo",
+    "time": "2025-05-02T13:20:00Z",
+    "country": "GB",
+    "plan": "free",
+    "platform": "android",
+    "utm_source": "facebook"
+  },
+  {
+    "event_id": "evt-0012",
+    "event": "Product Viewed",
+    "distinct_id": "user-cleo",
+    "time": "2025-05-02T13:24:00Z",
+    "country": "GB",
+    "plan": "free",
+    "platform": "android",
+    "utm_source": "facebook"
+  },
+  {
+    "event_id": "evt-0013",
+    "event": "Checkout",
+    "distinct_id": "user-bode",
+    "time": "2025-05-03T09:10:00Z",
+    "country": "DE",
+    "plan": "paid",
+    "platform": "ios",
+    "utm_source": "organic"
+  },
+  {
+    "event_id": "evt-0014",
+    "event": "App Open",
+    "distinct_id": "user-aria",
+    "time": "2025-05-03T18:02:00Z",
+    "country": "US",
+    "plan": "paid",
+    "platform": "web",
+    "utm_source": "google"
+  },
+  {
+    "event_id": "evt-0015",
+    "event": "Product Viewed",
+    "distinct_id": "user-cleo",
+    "time": "2025-05-03T19:45:00Z",
+    "country": "GB",
+    "plan": "free",
+    "platform": "android",
+    "utm_source": "facebook"
+  },
+  {
+    "event_id": "evt-0016",
+    "event": "Add to Cart",
+    "distinct_id": "user-cleo",
+    "time": "2025-05-03T19:50:00Z",
+    "country": "GB",
+    "plan": "free",
+    "platform": "android",
+    "utm_source": "facebook"
+  },
+  {
+    "event_id": "evt-0017",
+    "event": "Signup",
+    "distinct_id": "user-dane",
+    "time": "2025-05-03T20:11:00Z",
+    "country": "US",
+    "plan": "free",
+    "platform": "web",
+    "utm_source": "google"
+  },
+  {
+    "event_id": "evt-0018",
+    "event": "App Open",
+    "distinct_id": "user-dane",
+    "time": "2025-05-04T08:30:00Z",
+    "country": "US",
+    "plan": "free",
+    "platform": "web",
+    "utm_source": "google"
+  }
+]

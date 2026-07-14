@@ -1,0 +1,30 @@
+[
+  {
+    "id": "5f1a000000000000000000a1",
+    "username": "amelia_ortega",
+    "full_name": "Amelia Ortega",
+    "email": "amelia.ortega@orbit-labs.com",
+    "initials": "AO"
+  },
+  {
+    "id": "5f1a000000000000000000a2",
+    "username": "jonas_pereira",
+    "full_name": "Jonas Pereira",
+    "email": "jonas.pereira@orbit-labs.com",
+    "initials": "JP"
+  },
+  {
+    "id": "5f1a000000000000000000a3",
+    "username": "helena_park",
+    "full_name": "Helena Park",
+    "email": "helena.park@orbit-labs.com",
+    "initials": "HP"
+  },
+  {
+    "id": "5f1a000000000000000000a4",
+    "username": "rohit_bansal",
+    "full_name": "Rohit Bansal",
+    "email": "rohit.bansal@orbit-labs.com",
+    "initials": "RB"
+  }
+]

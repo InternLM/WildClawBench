@@ -1,0 +1,1405 @@
+{
+  "info": {
+    "name": "Amazon Selling Partner API (Mock)",
+    "description": "Complete test collection for the mock Amazon SP-API seller service (VoltEdge Tech). Base URL defaults to http://localhost:8004 for local testing.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8004"
+    },
+    {
+      "key": "seller_id",
+      "value": "A3EXAMPLE1SELLER"
+    },
+    {
+      "key": "marketplace_id",
+      "value": "ATVPDKIKX0DER"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Seller Account",
+      "item": [
+        {
+          "name": "GET Seller Account",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/sellers/v1/account",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "sellers",
+                "v1",
+                "account"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Account Health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/sellers/v1/account/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "sellers",
+                "v1",
+                "account",
+                "health"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Performance Notifications",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/notifications/v1/notifications",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "notifications",
+                "v1",
+                "notifications"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Performance Notifications - Filter WARNING",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/notifications/v1/notifications?severity=WARNING",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "notifications",
+                "v1",
+                "notifications"
+              ],
+              "query": [
+                {
+                  "key": "severity",
+                  "value": "WARNING"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Catalog Items",
+      "item": [
+        {
+          "name": "GET Search Catalog Items - keywords",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/catalog/2022-04-01/items?keywords=earbuds&pageSize=10&marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "catalog",
+                "2022-04-01",
+                "items"
+              ],
+              "query": [
+                {
+                  "key": "keywords",
+                  "value": "earbuds"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                },
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Search Catalog Items - by ASIN identifier",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/catalog/2022-04-01/items?identifiers=B0FURN00001,B0FURN00006&identifiersType=ASIN&marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "catalog",
+                "2022-04-01",
+                "items"
+              ],
+              "query": [
+                {
+                  "key": "identifiers",
+                  "value": "B0FURN00001,B0FURN00006"
+                },
+                {
+                  "key": "identifiersType",
+                  "value": "ASIN"
+                },
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Search Catalog Items - all items",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/catalog/2022-04-01/items?pageSize=20&marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "catalog",
+                "2022-04-01",
+                "items"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "20"
+                },
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Catalog Item by ASIN",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/catalog/2022-04-01/items/B0FURN00006?marketplaceIds={{marketplace_id}}&includedData=summaries,images,attributes",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "catalog",
+                "2022-04-01",
+                "items",
+                "B0FURN00006"
+              ],
+              "query": [
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                },
+                {
+                  "key": "includedData",
+                  "value": "summaries,images,attributes"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Catalog Item - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/catalog/2022-04-01/items/B0NONEXIST?marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "catalog",
+                "2022-04-01",
+                "items",
+                "B0NONEXIST"
+              ],
+              "query": [
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Listings Items",
+      "item": [
+        {
+          "name": "GET Listing Item",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/listings/2021-08-01/items/{{seller_id}}/FN-SOFA-RVT01?marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "listings",
+                "2021-08-01",
+                "items",
+                "{{seller_id}}",
+                "FN-SOFA-RVT01"
+              ],
+              "query": [
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Listing Item - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/listings/2021-08-01/items/{{seller_id}}/NONEXISTENT-SKU?marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "listings",
+                "2021-08-01",
+                "items",
+                "{{seller_id}}",
+                "NONEXISTENT-SKU"
+              ],
+              "query": [
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT Create Listing Item",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/listings/2021-08-01/items/{{seller_id}}/FN-NEW-CABLE",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "listings",
+                "2021-08-01",
+                "items",
+                "{{seller_id}}",
+                "FN-NEW-CABLE"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productType\": \"USB_CABLE\",\n  \"title\": \"VoltEdge Ultra 10ft USB-C Cable - 240W PD\",\n  \"description\": \"Premium 10ft USB-C cable with 240W Power Delivery support.\",\n  \"brand\": \"VoltEdge Tech\",\n  \"bulletPoints\": [\"240W Power Delivery\", \"10ft braided cable\", \"USB 4.0 compatible\"],\n  \"price\": 24.99,\n  \"quantity\": 100,\n  \"fulfillmentChannel\": \"MFN\",\n  \"condition\": \"NEW\",\n  \"category\": \"Electronics\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Listing Item (existing)",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/listings/2021-08-01/items/{{seller_id}}/FN-SOFA-RVT01",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "listings",
+                "2021-08-01",
+                "items",
+                "{{seller_id}}",
+                "FN-SOFA-RVT01"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productType\": \"CELLULAR_PHONE_CASE\",\n  \"price\": 17.99,\n  \"quantity\": 200\n}"
+            }
+          }
+        },
+        {
+          "name": "PATCH Update Listing Price",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{base_url}}/listings/2021-08-01/items/{{seller_id}}/FN-CHAIR-HBD01",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "listings",
+                "2021-08-01",
+                "items",
+                "{{seller_id}}",
+                "FN-CHAIR-HBD01"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"price\": 44.99,\n  \"quantity\": 60\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Listing Item",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/listings/2021-08-01/items/{{seller_id}}/FN-NEW-CABLE?marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "listings",
+                "2021-08-01",
+                "items",
+                "{{seller_id}}",
+                "FN-NEW-CABLE"
+              ],
+              "query": [
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "GET Orders - all",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders?MarketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "MarketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Orders - filter by status Unshipped",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders?OrderStatuses=Unshipped&MarketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "OrderStatuses",
+                  "value": "Unshipped"
+                },
+                {
+                  "key": "MarketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Orders - filter by status Pending",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders?OrderStatuses=Pending&MarketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "OrderStatuses",
+                  "value": "Pending"
+                },
+                {
+                  "key": "MarketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Orders - filter AFN fulfillment",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders?FulfillmentChannels=AFN&MarketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "FulfillmentChannels",
+                  "value": "AFN"
+                },
+                {
+                  "key": "MarketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Orders - filter by date range",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders?CreatedAfter=2026-03-01T00:00:00Z&CreatedBefore=2026-04-01T00:00:00Z&MarketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "CreatedAfter",
+                  "value": "2026-03-01T00:00:00Z"
+                },
+                {
+                  "key": "CreatedBefore",
+                  "value": "2026-04-01T00:00:00Z"
+                },
+                {
+                  "key": "MarketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Orders - paginated",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders?MaxResultsPerPage=5&MarketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "MaxResultsPerPage",
+                  "value": "5"
+                },
+                {
+                  "key": "MarketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Order by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders/114-5578234-9921100",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders",
+                "114-5578234-9921100"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Order by ID - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders/999-0000000-0000000",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders",
+                "999-0000000-0000000"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Order Items",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders/114-5567890-3456700/orderItems",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders",
+                "114-5567890-3456700",
+                "orderItems"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Order Items - multi-item order",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders/114-1234567-0123400/orderItems",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders",
+                "114-1234567-0123400",
+                "orderItems"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST Confirm Shipment - Unshipped order",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders/114-1678901-4567800/shipmentConfirmation",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders",
+                "114-1678901-4567800",
+                "shipmentConfirmation"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"carrierCode\": \"UPS\",\n  \"trackingNumber\": \"1Z999AA10123456784\",\n  \"shipDate\": \"2026-04-29T10:00:00Z\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Confirm Shipment - already shipped (error)",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/orders/v0/orders/114-3941689-8772200/shipmentConfirmation",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "orders",
+                "v0",
+                "orders",
+                "114-3941689-8772200",
+                "shipmentConfirmation"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"carrierCode\": \"USPS\",\n  \"trackingNumber\": \"9400111899223100456789\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Inventory",
+      "item": [
+        {
+          "name": "GET Inventory Summaries - all",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/fba/inventory/v1/summaries?granularityType=Marketplace&granularityId={{marketplace_id}}&marketplaceIds={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "fba",
+                "inventory",
+                "v1",
+                "summaries"
+              ],
+              "query": [
+                {
+                  "key": "granularityType",
+                  "value": "Marketplace"
+                },
+                {
+                  "key": "granularityId",
+                  "value": "{{marketplace_id}}"
+                },
+                {
+                  "key": "marketplaceIds",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Inventory Summaries - filter by SKU",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/fba/inventory/v1/summaries?sellerSkus=FN-SOFA-RVT01,FN-CHAIR-HBD01&granularityType=Marketplace&granularityId={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "fba",
+                "inventory",
+                "v1",
+                "summaries"
+              ],
+              "query": [
+                {
+                  "key": "sellerSkus",
+                  "value": "FN-SOFA-RVT01,FN-CHAIR-HBD01"
+                },
+                {
+                  "key": "granularityType",
+                  "value": "Marketplace"
+                },
+                {
+                  "key": "granularityId",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Inventory - low stock item",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/fba/inventory/v1/summaries?sellerSkus=FN-SHOE-SMG01&granularityType=Marketplace&granularityId={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "fba",
+                "inventory",
+                "v1",
+                "summaries"
+              ],
+              "query": [
+                {
+                  "key": "sellerSkus",
+                  "value": "FN-SHOE-SMG01"
+                },
+                {
+                  "key": "granularityType",
+                  "value": "Marketplace"
+                },
+                {
+                  "key": "granularityId",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Inventory - out of stock item",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/fba/inventory/v1/summaries?sellerSkus=FN-SHOE-SMG01&granularityType=Marketplace&granularityId={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "fba",
+                "inventory",
+                "v1",
+                "summaries"
+              ],
+              "query": [
+                {
+                  "key": "sellerSkus",
+                  "value": "FN-SHOE-SMG01"
+                },
+                {
+                  "key": "granularityType",
+                  "value": "Marketplace"
+                },
+                {
+                  "key": "granularityId",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT Update Inventory Quantity",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/fba/inventory/v1/items/FN-SHOE-SMG01",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "fba",
+                "inventory",
+                "v1",
+                "items",
+                "FN-SHOE-SMG01"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sellerSku\": \"FN-SHOE-SMG01\",\n  \"quantity\": 75\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Inventory - 404",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/fba/inventory/v1/items/NONEXIST-SKU",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "fba",
+                "inventory",
+                "v1",
+                "items",
+                "NONEXIST-SKU"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sellerSku\": \"NONEXIST-SKU\",\n  \"quantity\": 10\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {
+          "name": "GET Reports - all",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/reports/2021-06-30/reports",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "reports",
+                "2021-06-30",
+                "reports"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Reports - filter by type",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/reports/2021-06-30/reports?reportTypes=GET_FBA_MYI_UNSUPPRESSED_INVENTORY_DATA",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "reports",
+                "2021-06-30",
+                "reports"
+              ],
+              "query": [
+                {
+                  "key": "reportTypes",
+                  "value": "GET_FBA_MYI_UNSUPPRESSED_INVENTORY_DATA"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Reports - filter by status",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/reports/2021-06-30/reports?processingStatuses=IN_PROGRESS",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "reports",
+                "2021-06-30",
+                "reports"
+              ],
+              "query": [
+                {
+                  "key": "processingStatuses",
+                  "value": "IN_PROGRESS"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Report by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/reports/2021-06-30/reports/REP-001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "reports",
+                "2021-06-30",
+                "reports",
+                "REP-001"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Report by ID - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/reports/2021-06-30/reports/REP-999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "reports",
+                "2021-06-30",
+                "reports",
+                "REP-999"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST Create Report",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/reports/2021-06-30/reports",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "reports",
+                "2021-06-30",
+                "reports"
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"reportType\": \"GET_FLAT_FILE_OPEN_LISTINGS_DATA\",\n  \"dataStartTime\": \"2026-05-01T00:00:00Z\",\n  \"dataEndTime\": \"2026-05-06T23:59:59Z\",\n  \"marketplaceIds\": [\"ATVPDKIKX0DER\"]\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product Pricing",
+      "item": [
+        {
+          "name": "GET Competitive Pricing - by ASIN",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/products/pricing/v0/competitivePrice?Asin=B0FURN00006&MarketplaceId={{marketplace_id}}&ItemType=Asin",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "products",
+                "pricing",
+                "v0",
+                "competitivePrice"
+              ],
+              "query": [
+                {
+                  "key": "Asin",
+                  "value": "B0FURN00006"
+                },
+                {
+                  "key": "MarketplaceId",
+                  "value": "{{marketplace_id}}"
+                },
+                {
+                  "key": "ItemType",
+                  "value": "Asin"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Competitive Pricing - by SKU",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/products/pricing/v0/competitivePrice?Sku=FN-SOFA-RVT01&MarketplaceId={{marketplace_id}}&ItemType=Sku",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "products",
+                "pricing",
+                "v0",
+                "competitivePrice"
+              ],
+              "query": [
+                {
+                  "key": "Sku",
+                  "value": "FN-SOFA-RVT01"
+                },
+                {
+                  "key": "MarketplaceId",
+                  "value": "{{marketplace_id}}"
+                },
+                {
+                  "key": "ItemType",
+                  "value": "Sku"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Competitive Pricing - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/products/pricing/v0/competitivePrice?Asin=B0NONEXIST&MarketplaceId={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "products",
+                "pricing",
+                "v0",
+                "competitivePrice"
+              ],
+              "query": [
+                {
+                  "key": "Asin",
+                  "value": "B0NONEXIST"
+                },
+                {
+                  "key": "MarketplaceId",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Item Offers",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/products/pricing/v0/items/B0FURN00006/offers?MarketplaceId={{marketplace_id}}&ItemCondition=New",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "products",
+                "pricing",
+                "v0",
+                "items",
+                "B0FURN00006",
+                "offers"
+              ],
+              "query": [
+                {
+                  "key": "MarketplaceId",
+                  "value": "{{marketplace_id}}"
+                },
+                {
+                  "key": "ItemCondition",
+                  "value": "New"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Item Offers - another ASIN",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/products/pricing/v0/items/B0FURN00001/offers?MarketplaceId={{marketplace_id}}&ItemCondition=New",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "products",
+                "pricing",
+                "v0",
+                "items",
+                "B0FURN00001",
+                "offers"
+              ],
+              "query": [
+                {
+                  "key": "MarketplaceId",
+                  "value": "{{marketplace_id}}"
+                },
+                {
+                  "key": "ItemCondition",
+                  "value": "New"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Item Offers - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/products/pricing/v0/items/B0NONEXIST/offers?MarketplaceId={{marketplace_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "products",
+                "pricing",
+                "v0",
+                "items",
+                "B0NONEXIST",
+                "offers"
+              ],
+              "query": [
+                {
+                  "key": "MarketplaceId",
+                  "value": "{{marketplace_id}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Returns",
+      "item": [
+        {
+          "name": "GET Returns - all",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Returns - filter Authorized",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns?status=Authorized",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "Authorized"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Returns - filter Completed",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns?status=Completed",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "Completed"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Returns - filter by order ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns?orderId=114-3941689-8772200",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns"
+              ],
+              "query": [
+                {
+                  "key": "orderId",
+                  "value": "114-3941689-8772200"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Return by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns/RET-001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns",
+                "RET-001"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Return by ID - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns/RET-999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns",
+                "RET-999"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST Authorize Return",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns/RET-003/authorize",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns",
+                "RET-003",
+                "authorize"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST Close Return",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/returns/v0/returns/RET-005/close",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "returns",
+                "v0",
+                "returns",
+                "RET-005",
+                "close"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

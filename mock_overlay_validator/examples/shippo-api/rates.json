@@ -1,0 +1,72 @@
+[
+  {
+    "object_id": "rate-usps-prio-01",
+    "shipment": "ship-1001",
+    "provider": "USPS",
+    "servicelevel_token": "usps_priority",
+    "servicelevel_name": "Priority Mail",
+    "amount": "8.45",
+    "currency": "USD",
+    "estimated_days": "2"
+  },
+  {
+    "object_id": "rate-usps-first-01",
+    "shipment": "ship-1001",
+    "provider": "USPS",
+    "servicelevel_token": "usps_first",
+    "servicelevel_name": "First Class Package",
+    "amount": "5.20",
+    "currency": "USD",
+    "estimated_days": "3"
+  },
+  {
+    "object_id": "rate-ups-ground-01",
+    "shipment": "ship-1001",
+    "provider": "UPS",
+    "servicelevel_token": "ups_ground",
+    "servicelevel_name": "UPS Ground",
+    "amount": "11.30",
+    "currency": "USD",
+    "estimated_days": "3"
+  },
+  {
+    "object_id": "rate-fedex-2day-01",
+    "shipment": "ship-1001",
+    "provider": "FedEx",
+    "servicelevel_token": "fedex_2day",
+    "servicelevel_name": "FedEx 2Day",
+    "amount": "18.75",
+    "currency": "USD",
+    "estimated_days": "2"
+  },
+  {
+    "object_id": "rate-usps-prio-02",
+    "shipment": "ship-1002",
+    "provider": "USPS",
+    "servicelevel_token": "usps_priority",
+    "servicelevel_name": "Priority Mail",
+    "amount": "12.60",
+    "currency": "USD",
+    "estimated_days": "2"
+  },
+  {
+    "object_id": "rate-ups-ground-02",
+    "shipment": "ship-1002",
+    "provider": "UPS",
+    "servicelevel_token": "ups_ground",
+    "servicelevel_name": "UPS Ground",
+    "amount": "14.10",
+    "currency": "USD",
+    "estimated_days": "4"
+  },
+  {
+    "object_id": "rate-fedex-exp-02",
+    "shipment": "ship-1002",
+    "provider": "FedEx",
+    "servicelevel_token": "fedex_express_saver",
+    "servicelevel_name": "FedEx Express Saver",
+    "amount": "21.40",
+    "currency": "USD",
+    "estimated_days": "3"
+  }
+]

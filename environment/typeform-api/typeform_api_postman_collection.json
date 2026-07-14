@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "Typeform Mock API",
+    "description": "Test collection for the mock Typeform API service. Base URL defaults to http://localhost:8055. In docker-compose, the service is reachable at http://typeform-api:8055.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8055"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list forms", "request": {"method": "GET", "url": "{{baseUrl}}/forms"}},
+    {"name": "create form", "request": {"method": "POST", "url": "{{baseUrl}}/forms",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"NPS Pulse\", \"is_public\": true, \"fields\": [{\"title\": \"How likely are you to recommend us?\", \"type\": \"rating\", \"ref\": \"nps\", \"required\": true}, {\"title\": \"Your email\", \"type\": \"email\", \"ref\": \"email\"}]}"}}},
+    {"name": "get form", "request": {"method": "GET", "url": "{{baseUrl}}/forms/frm-csat-01"}},
+    {"name": "update form", "request": {"method": "PUT", "url": "{{baseUrl}}/forms/frm-csat-01",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"Customer Satisfaction Survey (Q2)\"}"}}},
+    {"name": "delete form", "request": {"method": "DELETE", "url": "{{baseUrl}}/forms/frm-event-03"}},
+    {"name": "list responses", "request": {"method": "GET", "url": "{{baseUrl}}/forms/frm-csat-01/responses"}},
+    {"name": "insights summary", "request": {"method": "GET", "url": "{{baseUrl}}/forms/frm-csat-01/insights/summary"}}
+  ]
+}

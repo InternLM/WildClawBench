@@ -1,0 +1,7 @@
+event_id,email,display_name,response_status,optional,organizer
+evt-401,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt-401,y.ibrahim@ncc.gov.ng,Dr Yusuf Ibrahim,accepted,false,false
+evt-401,b.olatunji@telecorpng.com,Babatunde Olatunji,tentative,true,false
+evt-420,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt-421,yetunde.bakare@gmail.com,Yetunde Bakare,accepted,false,false
+evt-427,qos-team@telecorpng.com,QoS Team,needsAction,true,false

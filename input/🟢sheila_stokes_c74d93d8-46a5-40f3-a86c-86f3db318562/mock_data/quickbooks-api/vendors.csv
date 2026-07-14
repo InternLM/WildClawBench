@@ -1,0 +1,4 @@
+Id,DisplayName,CompanyName,PrimaryEmailAddr,PrimaryPhone,BillAddr_Line1,BillAddr_City,BillAddr_CountrySubDivisionCode,BillAddr_PostalCode,Balance,Active,AcctNum,Vendor1099
+1,Abuja Office Supplies,Abuja Office Supplies Ltd,sales@abujaoffice.example,555-2041,12 Aminu Kano Cres,Abuja,FCT,900288,0,true,AOS-01,false
+2,Maitama Stationers,Maitama Stationers,accounts@maitamastat.example,555-2042,4 Gana St,Abuja,FCT,900271,15400.0,true,MST-02,false
+3,GreenLeaf Catering,GreenLeaf Catering Services,hello@greenleafcater.example,555-2043,9 Yakubu Gowon Way,Lagos,Lagos,100272,0,true,GLC-03,false

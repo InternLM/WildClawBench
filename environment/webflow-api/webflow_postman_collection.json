@@ -1,0 +1,18 @@
+{
+  "info": {
+    "name": "Webflow Data Mock API",
+    "description": "Test collection for the mock Webflow Data API v2 service (sites, collections, items). Base URL defaults to http://localhost:8100. In docker-compose, the service is reachable at http://webflow-api:8100.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8100"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list sites", "request": {"method": "GET", "url": "{{baseUrl}}/v2/sites"}},
+    {"name": "get site", "request": {"method": "GET", "url": "{{baseUrl}}/v2/sites/650a1f0000000000000001a1"}},
+    {"name": "list collections", "request": {"method": "GET", "url": "{{baseUrl}}/v2/sites/650a1f0000000000000001a1/collections"}},
+    {"name": "list items", "request": {"method": "GET", "url": "{{baseUrl}}/v2/collections/660b2a0000000000000002b1/items?limit=100&offset=0"}},
+    {"name": "create item", "request": {"method": "POST", "url": "{{baseUrl}}/v2/collections/660b2a0000000000000002b1/items", "body": {"mode": "raw", "options": {"raw": {"language": "json"}}, "raw": "{\"isDraft\": false, \"isArchived\": false, \"fieldData\": {\"name\": \"Caching at the Edge, Part 2\", \"slug\": \"caching-at-the-edge-part-2\", \"summary\": \"Follow-up on edge cache invalidation.\"}}"}}}
+  ]
+}

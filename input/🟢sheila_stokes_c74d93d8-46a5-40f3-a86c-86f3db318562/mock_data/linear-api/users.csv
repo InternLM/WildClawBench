@@ -1,0 +1,5 @@
+id,name,displayName,email,avatarUrl,active,admin,teamId,createdAt,updatedAt
+user-sheila,Sheila Stokes,Sheila,sheila.stokes@Finthesiss.ai,https://avatars.example/sheila.png,true,true,team-ncr,2025-07-01T09:00:00,2026-09-30T09:00:00
+user-yetunde,Yetunde Bakare,Yetunde,yetunde.bakare@gmail.com,https://avatars.example/yetunde.png,true,false,team-ncr,2025-08-01T09:00:00,2026-09-29T09:00:00
+user-babatunde,Babatunde Olatunji,Babatunde,b.olatunji@telecorpng.com,https://avatars.example/babatunde.png,true,true,team-ops,2025-07-01T09:00:00,2026-09-20T09:00:00
+user-grace,Grace Effiong,Grace,grace.effiong@telecorpng.com,https://avatars.example/grace.png,true,false,team-ncr,2025-09-01T09:00:00,2026-09-25T09:00:00

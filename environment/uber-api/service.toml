@@ -1,0 +1,5 @@
+[service]
+name = "uber-api"
+port = 8036
+env_var_name = "UBER_API_URL"
+healthcheck_path = "/health"

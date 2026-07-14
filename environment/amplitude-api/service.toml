@@ -1,0 +1,5 @@
+[service]
+name = "amplitude-api"
+port = 8091
+env_var_name = "AMPLITUDE_API_URL"
+healthcheck_path = "/health"

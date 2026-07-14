@@ -1,0 +1,16 @@
+[
+  {
+    "escalation_policy_id": "EP001",
+    "name": "Platform On-Call",
+    "num_loops": "2",
+    "tier1_user_id": "PU004",
+    "tier2_user_id": "PU001"
+  },
+  {
+    "escalation_policy_id": "EP002",
+    "name": "Billing On-Call",
+    "num_loops": "1",
+    "tier1_user_id": "PU002",
+    "tier2_user_id": "PU005"
+  }
+]

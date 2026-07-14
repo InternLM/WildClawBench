@@ -1,0 +1,4 @@
+id,name,is_private,is_archived,topic,purpose,creator,created,num_members
+C0NCENTRAL,north-central,false,false,North-Central deployment chatter,Team standups and field updates,U0101,1756900000,11
+C0SOCIAL,social,false,false,Non-work banter,Coffee runs and gym buddies,U0107,1756900100,9
+C0QOS,qos-review,false,true,Quarterly QoS review prep,QoS slides and metrics,U0104,1756900200,6

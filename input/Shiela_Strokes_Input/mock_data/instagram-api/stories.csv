@@ -1,0 +1,9 @@
+id,user_id,media_type,media_url,timestamp,expiring_at,caption,link,poll_question,poll_options
+ig_st_001,ig_user_nwomenintech,image,https://media.example-ig.com/ig_st_001.jpg,2026-09-22T08:00:00Z,2026-09-23T08:00:00Z,Newsletter dropping today.,https://example-ig.com/newsletter,,
+ig_st_002,ig_user_ieee_nig,image,https://media.example-ig.com/ig_st_002.jpg,2026-09-21T16:00:00Z,2026-09-22T16:00:00Z,Chapter meeting Wednesday.,,What time should we start,"6 pm,7 pm,7:30 pm"
+ig_st_003,ig_user_maitama_int,image,https://media.example-ig.com/ig_st_003.jpg,2026-09-23T07:00:00Z,2026-09-24T07:00:00Z,Parent-teacher week.,,,
+ig_st_004,ig_user_aunty_bisi,image,https://media.example-ig.com/ig_st_004.jpg,2026-09-12T09:00:00Z,2026-09-13T09:00:00Z,Adire ready to ship.,,,
+ig_st_005,ig_user_naija_gardens,image,https://media.example-ig.com/ig_st_005.jpg,2026-09-11T08:00:00Z,2026-09-12T08:00:00Z,Herb wall reels coming.,,,
+ig_st_006,ig_user_ay_hike_club,image,https://media.example-ig.com/ig_st_006.jpg,2026-09-13T05:30:00Z,2026-09-14T05:30:00Z,Meet at the base 6 am.,,,
+ig_st_007,ig_user_chimamanda_off,image,https://media.example-ig.com/ig_st_007.jpg,2026-09-04T19:00:00Z,2026-09-05T19:00:00Z,Bookshelf.,,,
+ig_st_008,ig_user_techpulse,image,https://media.example-ig.com/ig_st_008.jpg,2026-09-19T08:00:00Z,2026-09-20T08:00:00Z,News round up dropping.,https://example-ig.com/news,,

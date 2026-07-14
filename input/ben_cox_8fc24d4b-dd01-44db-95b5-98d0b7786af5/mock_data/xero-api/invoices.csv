@@ -1,0 +1,11 @@
+invoice_id,invoice_number,type,contact_id,contact_name,date,due_date,status,line_amount_types,sub_total,total_tax,total,amount_due,amount_paid,currency_code,reference
+XI01,XINV-1201,ACCPAY,X01,Houthandel Noord,2026-08-04,2026-09-03,PAID,Exclusive,446.28,93.72,540.00,0.00,540.00,EUR,Plaatmateriaal
+XI02,XINV-1202,ACCREC,X02,Timmerwerk Kuipers,2026-08-12,2026-08-26,PAID,Exclusive,1057.85,222.15,1280.00,0.00,1280.00,EUR,Onderaanneming
+XI03,XINV-1203,ACCREC,X03,Sander Brink,2026-09-01,2026-09-15,AUTHORISED,Exclusive,63.22,13.28,76.50,76.50,0.00,EUR,Kleine reparatie
+XI04,XINV-1204,ACCPAY,X04,Lakcentrum Noord,2026-07-19,2026-08-18,PAID,Exclusive,275.21,57.99,333.20,0.00,333.20,EUR,Afwerkingsproducten
+XI05,XINV-1205,ACCREC,X05,Annette Postma,2026-09-05,2026-09-19,AUTHORISED,Exclusive,342.98,72.02,415.00,415.00,0.00,EUR,Plank op maat
+XI06,XINV-1206,ACCPAY,X07,Gereedschap Groningen,2026-08-22,2026-09-21,PAID,Exclusive,164.46,34.54,199.00,0.00,199.00,EUR,Handgereedschap
+XI07,XINV-1207,ACCREC,X08,Rietveld Interieur,2026-09-10,2026-09-24,AUTHORISED,Exclusive,859.50,180.50,1040.00,1040.00,0.00,EUR,Maatwerk kast
+XI08,XINV-1208,ACCREC,X02,Timmerwerk Kuipers,2026-06-30,2026-07-14,PAID,Exclusive,507.44,106.56,614.00,0.00,614.00,EUR,Onderaanneming
+XI09,XINV-1209,ACCPAY,X01,Houthandel Noord,2026-09-02,2026-10-02,AUTHORISED,Exclusive,73.97,15.53,89.50,89.50,0.00,EUR,Lijsten
+XI10,XINV-1210,ACCREC,X06,Bouwbedrijf Dijk,2026-05-15,2026-05-29,PAID,Exclusive,1776.86,373.14,2150.00,0.00,2150.00,EUR,Project afgerond

@@ -1,0 +1,11 @@
+id,name,color,description,teamId,createdAt,updatedAt
+lbl_firmware,firmware,#5E6AD2,Firmware-related,team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+lbl_radio,radio,#26B5CE,Radio unit (64TR etc),team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+lbl_baseband,baseband,#F2C94C,Baseband (BBU-7600),team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+lbl_customs,customs,#E83A82,Customs / logistics block,team_5g,2026-04-12T09:00:00Z,2026-10-04T03:30:00Z
+lbl_priority_high,priority-high,#FF0000,High priority,team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+lbl_customer_abuja,customer-abuja-cbd,#26B5CE,Abuja CBD pilot,team_5g,2026-04-12T09:00:00Z,2026-10-04T03:30:00Z
+lbl_test,acceptance-test,#5E6AD2,Acceptance testing,team_5g,2026-04-12T09:00:00Z,2026-09-30T15:00:00Z
+lbl_thermal,thermal,#95A2B3,Thermal / environmental,team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+lbl_calibration,calibration,#BEC2C8,Calibration-related,team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z
+lbl_documentation,documentation,#5E6AD2,Documentation gap,team_5g,2025-06-01T10:00:00Z,2026-09-30T15:00:00Z

@@ -1,0 +1,25 @@
+{
+  "vehicle": "2019 Subaru Forester",
+  "shop": "Ridgecrest Auto Care",
+  "mileage": 52180,
+  "services": [
+    {
+      "date": "2026-04-30",
+      "item": "Oil change and tire rotation",
+      "amount": 74.95
+    },
+    {
+      "date": "2026-04-30",
+      "item": "Cabin air filter",
+      "amount": 28.5
+    },
+    {
+      "date": "2026-04-30",
+      "item": "Multi-point inspection",
+      "amount": 0.0
+    }
+  ],
+  "total": 103.45,
+  "paid_by": "Kayla Morgan (personal)",
+  "note": "Personal vehicle maintenance - not Society related."
+}

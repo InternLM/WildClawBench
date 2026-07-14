@@ -1,0 +1,7 @@
+pair,altname,wsname,base,quote,pair_decimals,lot_decimals,ordermin,status
+XBTUSD,XBTUSD,XBT/USD,XBT,ZUSD,1,8,0.0001,online
+ETHUSD,ETHUSD,ETH/USD,ETH,ZUSD,2,8,0.01,online
+USDTUSD,USDTUSD,USDT/USD,USDT,ZUSD,4,8,5,online
+SOLUSD,SOLUSD,SOL/USD,SOL,ZUSD,2,8,0.1,online
+ADAUSD,ADAUSD,ADA/USD,ADA,ZUSD,4,8,10,online
+DOTUSD,DOTUSD,DOT/USD,DOT,ZUSD,3,8,1,online

@@ -1,0 +1,16 @@
+[
+  {
+    "index": "products",
+    "searchableAttributes": "name,description,brand,category",
+    "attributesForFaceting": "category,brand,in_stock",
+    "hitsPerPage": "20",
+    "ranking": "typo,geo,words,proximity,attribute,exact,custom"
+  },
+  {
+    "index": "docs",
+    "searchableAttributes": "title,body,section,tags",
+    "attributesForFaceting": "section,tags",
+    "hitsPerPage": "20",
+    "ranking": "typo,geo,words,proximity,attribute,exact,custom"
+  }
+]

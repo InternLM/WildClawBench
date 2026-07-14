@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "Notion Mock API v1",
+    "description": "Test collection for the mock Notion API service. Base URL defaults to http://localhost:8010. In docker-compose, the service is reachable at http://notion-api:8010.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8010"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/v1/users?page_size=10"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/v1/users/me"}},
+    {"name": "get user", "request": {"method": "GET", "url": "{{baseUrl}}/v1/users/user-amelia"}},
+    {"name": "get workspace", "request": {"method": "GET", "url": "{{baseUrl}}/v1/workspace"}},
+    {"name": "search", "request": {"method": "POST", "url": "{{baseUrl}}/v1/search",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"query\": \"auth\", \"filter\": {\"property\": \"object\", \"value\": \"page\"}}"}}},
+    {"name": "get database", "request": {"method": "GET", "url": "{{baseUrl}}/v1/databases/db-tasks"}},
+    {"name": "query database", "request": {"method": "POST", "url": "{{baseUrl}}/v1/databases/db-tasks/query",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"filter\": {\"property\": \"Status\", \"status\": {\"equals\": \"In progress\"}}, \"sorts\": [{\"timestamp\": \"last_edited_time\", \"direction\": \"descending\"}]}"}}},
+    {"name": "get page", "request": {"method": "GET", "url": "{{baseUrl}}/v1/pages/page-task-001"}},
+    {"name": "create page", "request": {"method": "POST", "url": "{{baseUrl}}/v1/pages",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"parent\": {\"type\": \"database_id\", \"database_id\": \"db-tasks\"}, \"title\": \"Investigate flaky billing tests\", \"properties\": {\"Status\": {\"type\": \"status\", \"value\": \"Todo\"}, \"Priority\": {\"type\": \"select\", \"value\": \"Medium\"}}}"}}},
+    {"name": "update page", "request": {"method": "PATCH", "url": "{{baseUrl}}/v1/pages/page-task-003",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"properties\": {\"Status\": {\"type\": \"status\", \"value\": \"In progress\"}}}"}}},
+    {"name": "archive page", "request": {"method": "DELETE", "url": "{{baseUrl}}/v1/pages/page-task-004"}},
+    {"name": "list block children", "request": {"method": "GET", "url": "{{baseUrl}}/v1/blocks/page-task-001/children"}},
+    {"name": "append blocks", "request": {"method": "PATCH", "url": "{{baseUrl}}/v1/blocks/page-task-001/children",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"children\": [{\"type\": \"paragraph\", \"text\": \"Follow-up: also gate cookie issuer.\"}]}"}}},
+    {"name": "update block", "request": {"method": "PATCH", "url": "{{baseUrl}}/v1/blocks/block-005",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"checked\": true}"}}},
+    {"name": "delete block", "request": {"method": "DELETE", "url": "{{baseUrl}}/v1/blocks/block-201"}},
+    {"name": "list comments", "request": {"method": "GET", "url": "{{baseUrl}}/v1/comments?page_id=page-task-001"}},
+    {"name": "create comment", "request": {"method": "POST", "url": "{{baseUrl}}/v1/comments",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"parent\": {\"page_id\": \"page-task-001\", \"block_id\": \"block-005\"}, \"author_id\": \"user-helena\", \"text\": \"Ack — will review tomorrow.\"}"}}}
+  ]
+}

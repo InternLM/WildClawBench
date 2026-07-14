@@ -1,0 +1,8 @@
+group_id,board_id,title,color,position
+grp_p1_milestones,brd_nsw_p1,Phase 1 Milestones,red,1
+grp_p1_acquisition,brd_nsw_p1,Site Acquisition,yellow,2
+grp_p1_obstacles,brd_nsw_p1,Risks & Blockers,red,3
+grp_p2_milestones,brd_nsw_p2,Phase 2 Milestones,blue,1
+grp_p2_acquisition,brd_nsw_p2,Site Acquisition,green,2
+grp_5g_hearing,brd_5g_cbd,NCC Hearing Prep,red,1
+grp_5g_equipment,brd_5g_cbd,Vendor Equipment,blue,2

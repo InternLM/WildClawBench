@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ev_0001",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org",
+    "event": "accepted",
+    "recipient": "alice@example.com",
+    "timestamp": "2026-05-01T09:30:12Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0002",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org",
+    "event": "delivered",
+    "recipient": "alice@example.com",
+    "timestamp": "2026-05-01T09:30:18Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0003",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260501093012.1.A1B2C3D4E5F6@sandbox.mailgun.org",
+    "event": "opened",
+    "recipient": "alice@example.com",
+    "timestamp": "2026-05-01T10:02:41Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0004",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260503141522.2.B2C3D4E5F6A7@sandbox.mailgun.org",
+    "event": "accepted",
+    "recipient": "bob@example.com",
+    "timestamp": "2026-05-03T14:15:22Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0005",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260503141522.2.B2C3D4E5F6A7@sandbox.mailgun.org",
+    "event": "delivered",
+    "recipient": "bob@example.com",
+    "timestamp": "2026-05-03T14:15:30Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0006",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260507081005.3.C3D4E5F6A7B8@sandbox.mailgun.org",
+    "event": "accepted",
+    "recipient": "carol@example.com",
+    "timestamp": "2026-05-07T08:10:05Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0007",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260507081005.3.C3D4E5F6A7B8@sandbox.mailgun.org",
+    "event": "failed",
+    "recipient": "carol@example.com",
+    "timestamp": "2026-05-07T08:10:09Z",
+    "reason": "mailbox full"
+  },
+  {
+    "id": "ev_0008",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260512162844.4.D4E5F6A7B8C9@sandbox.mailgun.org",
+    "event": "delivered",
+    "recipient": "dave@example.com",
+    "timestamp": "2026-05-12T16:28:50Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0009",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260515104733.5.E5F6A7B8C9D0@sandbox.mailgun.org",
+    "event": "delivered",
+    "recipient": "erin@example.com",
+    "timestamp": "2026-05-15T10:47:39Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0010",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260515104733.5.E5F6A7B8C9D0@sandbox.mailgun.org",
+    "event": "clicked",
+    "recipient": "erin@example.com",
+    "timestamp": "2026-05-15T11:20:14Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0011",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260520113900.6.F6A7B8C9D0E1@sandbox.mailgun.org",
+    "event": "delivered",
+    "recipient": "frank@example.com",
+    "timestamp": "2026-05-20T11:39:06Z",
+    "reason": ""
+  },
+  {
+    "id": "ev_0012",
+    "domain": "sandbox.mailgun.org",
+    "message_id": "20260524175611.7.A7B8C9D0E1F2@sandbox.mailgun.org",
+    "event": "accepted",
+    "recipient": "grace@example.com",
+    "timestamp": "2026-05-24T17:56:11Z",
+    "reason": ""
+  }
+]

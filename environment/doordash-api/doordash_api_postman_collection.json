@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "DoorDash Mock API v1",
+    "description": "Test collection for the mock DoorDash food-delivery API service. Base URL defaults to http://localhost:8037. In docker-compose, the service is reachable at http://doordash-api:8037.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8037"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list stores", "request": {"method": "GET", "url": "{{baseUrl}}/v1/stores?latitude=37.7842&longitude=-122.4078"}},
+    {"name": "list stores by cuisine", "request": {"method": "GET", "url": "{{baseUrl}}/v1/stores?cuisine=Japanese"}},
+    {"name": "get store", "request": {"method": "GET", "url": "{{baseUrl}}/v1/stores/store-sakura"}},
+    {"name": "get menu", "request": {"method": "GET", "url": "{{baseUrl}}/v1/stores/store-sakura/menu"}},
+    {"name": "create cart", "request": {"method": "POST", "url": "{{baseUrl}}/v1/carts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"store_id\": \"store-sakura\"}"}}},
+    {"name": "add cart item", "request": {"method": "POST", "url": "{{baseUrl}}/v1/carts/{{cartId}}/items",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"item_id\": \"item-sak-001\", \"quantity\": 2}"}}},
+    {"name": "get cart", "request": {"method": "GET", "url": "{{baseUrl}}/v1/carts/{{cartId}}"}},
+    {"name": "checkout", "request": {"method": "POST", "url": "{{baseUrl}}/v1/carts/{{cartId}}/checkout",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"customer_name\": \"Priya Nair\", \"tip\": 5.00}"}}},
+    {"name": "get order", "request": {"method": "GET", "url": "{{baseUrl}}/v1/orders/order-90aa12"}}
+  ]
+}

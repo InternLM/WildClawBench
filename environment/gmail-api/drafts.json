@@ -1,0 +1,11 @@
+[
+  {
+    "id": "draft-001",
+    "thread_id": "thr-101",
+    "to_addr": "helena@orbit-labs.com",
+    "cc_addr": "jonas@orbit-labs.com",
+    "subject": "Re: Latency spike alert — auth.refresh",
+    "body": "Helena — adding @jonas. Let's correlate the spike with the shim warmup. Can you pull the timing of the dual-writer flush?\\n\\n— Amelia",
+    "updated_at": "2026-05-23T11:35:00Z"
+  }
+]

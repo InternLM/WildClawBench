@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Confluence Cloud Mock API",
+    "description": "Test collection for the mock Confluence Cloud REST API service. Base URL defaults to http://localhost:8045. In docker-compose, the service is reachable at http://confluence-api:8045.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8045"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list spaces", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/space"}},
+    {"name": "get space", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/space/ENG"}},
+    {"name": "list content", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/content?type=page&spaceKey=ENG"}},
+    {"name": "create content", "request": {"method": "POST", "url": "{{baseUrl}}/wiki/rest/api/content",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"type\": \"page\", \"title\": \"Incident Postmortem Template\", \"space\": {\"key\": \"ENG\"}, \"ancestors\": [{\"id\": \"100102\"}], \"body\": {\"storage\": {\"value\": \"Template for writing incident postmortems.\", \"representation\": \"storage\"}}}"}}},
+    {"name": "get content", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/content/100103"}},
+    {"name": "update content", "request": {"method": "PUT", "url": "{{baseUrl}}/wiki/rest/api/content/100103",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"Auth Service Runbook\", \"type\": \"page\", \"body\": {\"storage\": {\"value\": \"Updated on-call steps including token rotation.\", \"representation\": \"storage\"}}, \"version\": {\"number\": 9}}"}}},
+    {"name": "list child pages", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/content/100101/child/page"}},
+    {"name": "list labels", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/content/100103/label"}},
+    {"name": "list comments", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/content/100103/child/comment"}},
+    {"name": "search by space", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/content/search?cql=space=ENG"}},
+    {"name": "search by title", "request": {"method": "GET", "url": "{{baseUrl}}/wiki/rest/api/content/search?cql=title~\"Runbook\""}}
+  ]
+}

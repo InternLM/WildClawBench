@@ -1,0 +1,34 @@
+[
+  {
+    "conversation_id": "conv-001",
+    "wa_id": "15551550101",
+    "started_at": "2026-05-26T08:55:00Z",
+    "last_message_at": "2026-05-26T09:00:00Z",
+    "origin": "user_initiated",
+    "within_24h_window": "true"
+  },
+  {
+    "conversation_id": "conv-002",
+    "wa_id": "15551550102",
+    "started_at": "2026-05-25T18:00:00Z",
+    "last_message_at": "2026-05-25T18:30:00Z",
+    "origin": "business_initiated",
+    "within_24h_window": "true"
+  },
+  {
+    "conversation_id": "conv-003",
+    "wa_id": "15551550103",
+    "started_at": "2026-05-22T13:00:00Z",
+    "last_message_at": "2026-05-22T14:15:00Z",
+    "origin": "user_initiated",
+    "within_24h_window": "false"
+  },
+  {
+    "conversation_id": "conv-004",
+    "wa_id": "15551550105",
+    "started_at": "2026-05-26T07:30:00Z",
+    "last_message_at": "2026-05-26T07:45:00Z",
+    "origin": "user_initiated",
+    "within_24h_window": "true"
+  }
+]

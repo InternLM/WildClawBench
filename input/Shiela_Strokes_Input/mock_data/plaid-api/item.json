@@ -1,0 +1,16 @@
+{
+  "item_id": "item_sheila_gsb",
+  "institution_id": "ins_gsb",
+  "institution_name": "Guaranty Savings Bank",
+  "webhook": "",
+  "consent_expiration_time": "2027-10-01T00:00:00Z",
+  "products": [
+    "transactions",
+    "identity",
+    "balance"
+  ],
+  "billed_products": [
+    "transactions",
+    "identity"
+  ]
+}

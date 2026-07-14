@@ -1,0 +1,62 @@
+[
+  {
+    "name": "kube-dns",
+    "namespace": "kube-system",
+    "type": "ClusterIP",
+    "cluster_ip": "10.96.0.10",
+    "external_ip": "",
+    "port": "53",
+    "target_port": "53",
+    "protocol": "UDP",
+    "selector": "k8s-app=kube-dns",
+    "created_time": "2025-08-01T09:00:00Z"
+  },
+  {
+    "name": "api-gateway",
+    "namespace": "prod",
+    "type": "LoadBalancer",
+    "cluster_ip": "10.96.12.40",
+    "external_ip": "34.120.55.10",
+    "port": "80",
+    "target_port": "8080",
+    "protocol": "TCP",
+    "selector": "app=api-gateway",
+    "created_time": "2026-05-01T10:05:00Z"
+  },
+  {
+    "name": "billing-worker",
+    "namespace": "prod",
+    "type": "ClusterIP",
+    "cluster_ip": "10.96.12.55",
+    "external_ip": "",
+    "port": "9090",
+    "target_port": "9090",
+    "protocol": "TCP",
+    "selector": "app=billing-worker",
+    "created_time": "2026-05-10T11:05:00Z"
+  },
+  {
+    "name": "auth-service",
+    "namespace": "prod",
+    "type": "ClusterIP",
+    "cluster_ip": "10.96.12.60",
+    "external_ip": "",
+    "port": "8443",
+    "target_port": "8443",
+    "protocol": "TCP",
+    "selector": "app=auth-service",
+    "created_time": "2026-05-15T13:25:00Z"
+  },
+  {
+    "name": "web-frontend",
+    "namespace": "default",
+    "type": "LoadBalancer",
+    "cluster_ip": "10.96.20.5",
+    "external_ip": "34.120.55.20",
+    "port": "443",
+    "target_port": "8443",
+    "protocol": "TCP",
+    "selector": "app=web-frontend",
+    "created_time": "2026-04-22T09:05:00Z"
+  }
+]

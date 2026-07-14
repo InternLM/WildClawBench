@@ -1,0 +1,552 @@
+[
+  {
+    "Id": "2041",
+    "DocNumber": "MF-WO-2026-0418",
+    "VendorRef": {
+      "value": "58",
+      "name": "Moens & Fils"
+    },
+    "TxnDate": "2026-10-08",
+    "DueDate": "2026-10-22",
+    "Line": [
+      {
+        "Amount": 1247.5,
+        "Description": "Championship showpiece supplies, revised work order",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Competition Supplies",
+            "value": "46"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 1247.5,
+    "Balance": 1247.5,
+    "PrivateNote": "Revised quote MF-WO-2026-0418, as of 2026-10-08. Hold for Darren's confirmation before release."
+  },
+  {
+    "Id": "1788",
+    "DocNumber": "MF-INV-2025-0277",
+    "VendorRef": {
+      "value": "58",
+      "name": "Moens & Fils"
+    },
+    "TxnDate": "2025-10-03",
+    "DueDate": "2025-10-17",
+    "Line": [
+      {
+        "Amount": 870.0,
+        "Description": "Championship 2025 supplies",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Competition Supplies",
+            "value": "46"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 870.0,
+    "Balance": 0,
+    "PrivateNote": "Prior season, paid in full."
+  },
+  {
+    "Id": "1402",
+    "DocNumber": "MF-INV-2025-0151",
+    "VendorRef": {
+      "value": "58",
+      "name": "Moens & Fils"
+    },
+    "TxnDate": "2025-06-12",
+    "DueDate": "2025-06-26",
+    "Line": [
+      {
+        "Amount": 410.2,
+        "Description": "Summer couverture restock",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 410.2,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "1199",
+    "DocNumber": "MF-INV-2025-0066",
+    "VendorRef": {
+      "value": "58",
+      "name": "Moens & Fils"
+    },
+    "TxnDate": "2025-03-08",
+    "DueDate": "2025-03-22",
+    "Line": [
+      {
+        "Amount": 286.75,
+        "Description": "Spring menu ingredients",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 286.75,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2052",
+    "DocNumber": "BN-2026-1003",
+    "VendorRef": {
+      "value": "61",
+      "name": "Beurrerie de Normandie"
+    },
+    "TxnDate": "2026-10-05",
+    "DueDate": "2026-10-19",
+    "Line": [
+      {
+        "Amount": 640.0,
+        "Description": "AOP butter 25kg weekly",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 640.0,
+    "Balance": 640.0,
+    "PrivateNote": "Standing order."
+  },
+  {
+    "Id": "2055",
+    "DocNumber": "VA-2026-0410",
+    "VendorRef": {
+      "value": "63",
+      "name": "Vergers d'Ardenne"
+    },
+    "TxnDate": "2026-10-06",
+    "DueDate": "2026-10-20",
+    "Line": [
+      {
+        "Amount": 318.4,
+        "Description": "Heritage apples 60kg, autumn menu",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 318.4,
+    "Balance": 318.4,
+    "PrivateNote": "Autumn menu."
+  },
+  {
+    "Id": "2058",
+    "DocNumber": "ED-2026-0822",
+    "VendorRef": {
+      "value": "66",
+      "name": "Emballages Dupuis"
+    },
+    "TxnDate": "2026-10-04",
+    "DueDate": "2026-10-18",
+    "Line": [
+      {
+        "Amount": 142.0,
+        "Description": "Retail boxes and ribbon",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Packaging",
+            "value": "48"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 142.0,
+    "Balance": 142.0,
+    "PrivateNote": "Restock."
+  },
+  {
+    "Id": "2031",
+    "DocNumber": "AS-2026-0309",
+    "VendorRef": {
+      "value": "70",
+      "name": "Atelier du Sucre"
+    },
+    "TxnDate": "2026-09-28",
+    "DueDate": "2026-10-12",
+    "Line": [
+      {
+        "Amount": 96.5,
+        "Description": "Sugar paste 8kg",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 96.5,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2061",
+    "DocNumber": "FO-2026-0455",
+    "VendorRef": {
+      "value": "75",
+      "name": "La Ferme aux Oeufs"
+    },
+    "TxnDate": "2026-10-07",
+    "DueDate": "2026-10-21",
+    "Line": [
+      {
+        "Amount": 88.2,
+        "Description": "Free-range eggs, 30 dozen",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 88.2,
+    "Balance": 88.2,
+    "PrivateNote": "Weekly."
+  },
+  {
+    "Id": "2063",
+    "DocNumber": "CM-2026-0190",
+    "VendorRef": {
+      "value": "78",
+      "name": "Cafes Moka Brussels"
+    },
+    "TxnDate": "2026-10-03",
+    "DueDate": "2026-10-17",
+    "Line": [
+      {
+        "Amount": 54.0,
+        "Description": "Espresso beans 6kg",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 54.0,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2065",
+    "DocNumber": "PC-2026-0712",
+    "VendorRef": {
+      "value": "80",
+      "name": "Papeterie Centrale"
+    },
+    "TxnDate": "2026-10-02",
+    "DueDate": "2026-10-16",
+    "Line": [
+      {
+        "Amount": 31.5,
+        "Description": "Office paper and labels",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Packaging",
+            "value": "48"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 31.5,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2067",
+    "DocNumber": "VD-2026-0233",
+    "VendorRef": {
+      "value": "92",
+      "name": "Vins Selection Devos"
+    },
+    "TxnDate": "2026-10-06",
+    "DueDate": "2026-10-20",
+    "Line": [
+      {
+        "Amount": 126.0,
+        "Description": "Dessert wine pairing stock",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 126.0,
+    "Balance": 126.0,
+    "PrivateNote": "Tasting menu."
+  },
+  {
+    "Id": "2069",
+    "DocNumber": "FC-2026-0521",
+    "VendorRef": {
+      "value": "86",
+      "name": "Maison du Fruit Confit"
+    },
+    "TxnDate": "2026-10-05",
+    "DueDate": "2026-10-19",
+    "Line": [
+      {
+        "Amount": 210.75,
+        "Description": "Candied citrus peel 5kg",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 210.75,
+    "Balance": 210.75,
+    "PrivateNote": "Autumn menu."
+  },
+  {
+    "Id": "2071",
+    "DocNumber": "GE-2026-1001",
+    "VendorRef": {
+      "value": "90",
+      "name": "Gaz et Energie SA"
+    },
+    "TxnDate": "2026-10-01",
+    "DueDate": "2026-10-31",
+    "Line": [
+      {
+        "Amount": 289.4,
+        "Description": "October gas and electricity",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Utilities",
+            "value": "52"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 289.4,
+    "Balance": 289.4,
+    "PrivateNote": "Monthly."
+  },
+  {
+    "Id": "2073",
+    "DocNumber": "FS-2026-0077",
+    "VendorRef": {
+      "value": "83",
+      "name": "Froid Service Bruxelles"
+    },
+    "TxnDate": "2026-09-30",
+    "DueDate": "2026-10-14",
+    "Line": [
+      {
+        "Amount": 165.0,
+        "Description": "Walk-in chiller service call",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Maintenance",
+            "value": "62"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 165.0,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2075",
+    "DocNumber": "CW-2026-0044",
+    "VendorRef": {
+      "value": "72",
+      "name": "Cristallerie Wagner"
+    },
+    "TxnDate": "2026-09-29",
+    "DueDate": "2026-10-29",
+    "Line": [
+      {
+        "Amount": 98.0,
+        "Description": "Display glass risers",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Kitchen Equipment",
+            "value": "47"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 98.0,
+    "Balance": 98.0,
+    "PrivateNote": "Display."
+  },
+  {
+    "Id": "2077",
+    "DocNumber": "IF-2026-0188",
+    "VendorRef": {
+      "value": "95",
+      "name": "Imprimerie Flagey"
+    },
+    "TxnDate": "2026-10-04",
+    "DueDate": "2026-10-18",
+    "Line": [
+      {
+        "Amount": 74.0,
+        "Description": "Autumn menu cards print run",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Packaging",
+            "value": "48"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 74.0,
+    "Balance": 74.0,
+    "PrivateNote": "Print."
+  },
+  {
+    "Id": "2079",
+    "DocNumber": "NE-2026-0402",
+    "VendorRef": {
+      "value": "97",
+      "name": "Nettoyage Excel"
+    },
+    "TxnDate": "2026-10-01",
+    "DueDate": "2026-10-15",
+    "Line": [
+      {
+        "Amount": 120.0,
+        "Description": "October cleaning contract",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Maintenance",
+            "value": "62"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 120.0,
+    "Balance": 120.0,
+    "PrivateNote": "Monthly."
+  },
+  {
+    "Id": "2081",
+    "DocNumber": "LP-2026-0610",
+    "VendorRef": {
+      "value": "88",
+      "name": "Linge Pro Horeca"
+    },
+    "TxnDate": "2026-09-27",
+    "DueDate": "2026-10-11",
+    "Line": [
+      {
+        "Amount": 60.0,
+        "Description": "Kitchen linen rental",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Maintenance",
+            "value": "62"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 60.0,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2083",
+    "DocNumber": "BN-2026-1010",
+    "VendorRef": {
+      "value": "61",
+      "name": "Beurrerie de Normandie"
+    },
+    "TxnDate": "2026-09-28",
+    "DueDate": "2026-10-12",
+    "Line": [
+      {
+        "Amount": 612.0,
+        "Description": "Butter restock 24kg",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 612.0,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2085",
+    "DocNumber": "FO-2026-0461",
+    "VendorRef": {
+      "value": "75",
+      "name": "La Ferme aux Oeufs"
+    },
+    "TxnDate": "2026-09-30",
+    "DueDate": "2026-10-14",
+    "Line": [
+      {
+        "Amount": 84.0,
+        "Description": "Eggs weekly",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 84.0,
+    "Balance": 0,
+    "PrivateNote": "Paid."
+  },
+  {
+    "Id": "2087",
+    "DocNumber": "CM-2026-0205",
+    "VendorRef": {
+      "value": "78",
+      "name": "Cafes Moka Brussels"
+    },
+    "TxnDate": "2026-10-08",
+    "DueDate": "2026-10-22",
+    "Line": [
+      {
+        "Amount": 48.0,
+        "Description": "Decaf beans 4kg",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Ingredients",
+            "value": "45"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 48.0,
+    "Balance": 48.0,
+    "PrivateNote": "Restock."
+  }
+]

@@ -1,0 +1,5 @@
+[service]
+name = "github-api"
+port = 8019
+env_var_name = "GITHUB_API_URL"
+healthcheck_path = "/health"

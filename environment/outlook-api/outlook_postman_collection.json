@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "Outlook Mock API",
+    "description": "Test collection for the mock Outlook (Microsoft Graph v1.0 mail/calendar) API service (messages, sendMail, events, contacts). Base URL defaults to http://localhost:8087. In docker-compose, the service is reachable at http://outlook-api:8087. Graph collections are wrapped as {\"value\": [...]}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8087"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list messages", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/me/messages"}},
+    {"name": "list unread messages", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/me/messages?isRead=false"}},
+    {"name": "get message", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/me/messages/AAMkAGmsg0000001"}},
+    {"name": "send mail", "request": {"method": "POST", "url": "{{baseUrl}}/v1.0/me/sendMail",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"message\": {\"subject\": \"Project kickoff\", \"body\": {\"contentType\": \"HTML\", \"content\": \"Let us sync on Monday to kick things off.\"}, \"toRecipients\": [{\"emailAddress\": {\"address\": \"priya.nair@contoso.com\"}}]}}"}}},
+    {"name": "list events", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/me/events"}},
+    {"name": "list contacts", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/me/contacts"}}
+  ]
+}

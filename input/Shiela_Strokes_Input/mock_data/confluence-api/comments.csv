@@ -1,0 +1,9 @@
+id,page_id,author,body,created_at
+cmt_1,pg_5g_filing_plan_v3,sheila.stokes@Finthesiss.ai,v3 looks good. Confirming filing window timing on Monday standup.,2026-09-26T09:00:00+01:00
+cmt_2,pg_5g_tech_position_v3,b.olatunji@telecorpng.com,Section 3 (local content commitment) needs sharper language. Will mark up.,2026-09-23T17:00:00+01:00
+cmt_3,pg_vendor_acceptance_test,sheila.stokes@Finthesiss.ai,Section 4.2 - need an EMF measurement methodology paragraph.,2026-09-29T12:00:00+01:00
+cmt_4,pg_dry_run_dialogue,sheila.stokes@Finthesiss.ai,Add a fallback line on local content if asked about post-pilot expansion.,2026-10-02T11:00:00+01:00
+cmt_5,pg_form_7b_template,f.musa@telecorpng.com,Section 6 annotations updated for the FCBD-124 task.,2026-09-30T14:00:00+01:00
+cmt_6,pg_spectrum_analysis_exhibits,sheila.stokes@Finthesiss.ai,Exhibit 4 needs the updated coverage map from FCBD-124 close.,2026-10-01T15:00:00+01:00
+cmt_7,pg_filing_position_consistency_check,b.olatunji@telecorpng.com,Per the v3 technical review the position holds. Ready for Mon.,2026-10-01T18:00:00+01:00
+cmt_8,pg_general_weekly_status,a.obi@telecorpng.com,Wk 40 sprint metrics tagged in jira.,2026-10-02T17:30:00+01:00

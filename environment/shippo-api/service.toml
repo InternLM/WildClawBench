@@ -1,0 +1,5 @@
+[service]
+name = "shippo-api"
+port = 8052
+env_var_name = "SHIPPO_API_URL"
+healthcheck_path = "/health"

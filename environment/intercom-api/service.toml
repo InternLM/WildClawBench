@@ -1,0 +1,5 @@
+[service]
+name = "intercom-api"
+port = 8070
+env_var_name = "INTERCOM_API_URL"
+healthcheck_path = "/health"

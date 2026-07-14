@@ -1,0 +1,98 @@
+[
+  {
+    "id": "user-david",
+    "name": "david.nelson",
+    "displayName": "David Nelson",
+    "email": "david.nelson@cumberlandregional.org",
+    "avatarUrl": "https://avatars.example.com/david.png",
+    "active": "true",
+    "admin": "false",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-20T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "user-patty",
+    "name": "patty.oglesby",
+    "displayName": "Patty Oglesby",
+    "email": "patty.oglesby@cumberlandregional.org",
+    "avatarUrl": "https://avatars.example.com/patty.png",
+    "active": "true",
+    "admin": "true",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "user-tyler",
+    "name": "tyler.boone",
+    "displayName": "Tyler Boone",
+    "email": "tyler.boone@cumberlandregional.org",
+    "avatarUrl": "https://avatars.example.com/tyler.png",
+    "active": "true",
+    "admin": "false",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-22T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "user-mira",
+    "name": "mira.chen",
+    "displayName": "Mira Chen",
+    "email": "mira.chen@cumberlandregional.org",
+    "avatarUrl": "https://avatars.example.com/mira.png",
+    "active": "true",
+    "admin": "false",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-25T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "user-01",
+    "name": "alex.rivera",
+    "displayName": "Alex Rivera",
+    "email": "alex.rivera@meridianlabs.io",
+    "avatarUrl": "https://avatars.example.com/alex.png",
+    "active": "true",
+    "admin": "false",
+    "teamId": "team-backend",
+    "createdAt": "2026-01-20T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "user-02",
+    "name": "jordan.kim",
+    "displayName": "Jordan Kim",
+    "email": "jordan.kim@meridianlabs.io",
+    "avatarUrl": "https://avatars.example.com/jordan.png",
+    "active": "true",
+    "admin": "false",
+    "teamId": "team-backend",
+    "createdAt": "2026-01-22T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "user-05",
+    "name": "sam.patel",
+    "displayName": "Sam Patel",
+    "email": "sam.patel@meridianlabs.io",
+    "avatarUrl": "https://avatars.example.com/sam.png",
+    "active": "true",
+    "admin": "false",
+    "teamId": "team-backend",
+    "createdAt": "2026-01-25T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "user-06",
+    "name": "morgan.lee",
+    "displayName": "Morgan Lee",
+    "email": "morgan.lee@meridianlabs.io",
+    "avatarUrl": "https://avatars.example.com/morgan.png",
+    "active": "true",
+    "admin": "true",
+    "teamId": "team-frontend",
+    "createdAt": "2026-01-28T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  }
+]

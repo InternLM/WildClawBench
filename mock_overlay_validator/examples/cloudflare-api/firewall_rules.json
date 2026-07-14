@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fw0001aaaa",
+    "zone_id": "zone1aaaa1111bbbb2222cccc3333dddd",
+    "description": "Block known bad bots",
+    "action": "block",
+    "expression": "(cf.client.bot and not cf.verified_bot_category eq \"\")",
+    "paused": "false",
+    "priority": "1",
+    "created_on": "2024-04-01T10:00:00.000Z"
+  },
+  {
+    "id": "fw0002bbbb",
+    "zone_id": "zone1aaaa1111bbbb2222cccc3333dddd",
+    "description": "Challenge high threat score",
+    "action": "challenge",
+    "expression": "(cf.threat_score gt 30)",
+    "paused": "false",
+    "priority": "2",
+    "created_on": "2024-04-02T10:00:00.000Z"
+  },
+  {
+    "id": "fw0003cccc",
+    "zone_id": "zone1aaaa1111bbbb2222cccc3333dddd",
+    "description": "Allow office IP range",
+    "action": "allow",
+    "expression": "(ip.src in {198.51.100.0/24})",
+    "paused": "true",
+    "priority": "3",
+    "created_on": "2024-04-05T10:00:00.000Z"
+  },
+  {
+    "id": "fw0004dddd",
+    "zone_id": "zone2eeee4444ffff5555gggg6666hhhh",
+    "description": "Rate limit asset hotlinking",
+    "action": "js_challenge",
+    "expression": "(http.referer ne \"orbit-cdn.net\")",
+    "paused": "false",
+    "priority": "1",
+    "created_on": "2024-04-10T10:00:00.000Z"
+  }
+]

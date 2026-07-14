@@ -1,0 +1,5 @@
+[service]
+name = "klaviyo-api"
+port = 8089
+env_var_name = "KLAVIYO_API_URL"
+healthcheck_path = "/health"

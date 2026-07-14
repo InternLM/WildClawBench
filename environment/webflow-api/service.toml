@@ -1,0 +1,5 @@
+[service]
+name = "webflow-api"
+port = 8100
+env_var_name = "WEBFLOW_API_URL"
+healthcheck_path = "/health"

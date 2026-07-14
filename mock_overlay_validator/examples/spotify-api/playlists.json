@@ -1,0 +1,34 @@
+[
+  {
+    "playlist_id": "37i9dQZF1DXcBWIGoYBM5M",
+    "name": "Today's Top Hits",
+    "description": "The hottest tracks right now.",
+    "owner_id": "user-leo",
+    "public": "true",
+    "collaborative": "false"
+  },
+  {
+    "playlist_id": "2v3iNvBX8Ay1Gt2uXtUKUg",
+    "name": "Indie Chill",
+    "description": "Laid-back indie for focus and calm.",
+    "owner_id": "user-leo",
+    "public": "true",
+    "collaborative": "false"
+  },
+  {
+    "playlist_id": "1hP3rT9sNuVbXc2Yd9Lm4q",
+    "name": "Sunset Drive",
+    "description": "Synthwave for the open road at dusk.",
+    "owner_id": "user-leo",
+    "public": "false",
+    "collaborative": "false"
+  },
+  {
+    "playlist_id": "5kQ2wP3nXvLbWc8Yd1Fm6r",
+    "name": "Fiesta Latina",
+    "description": "Reggaeton and latin pop bangers.",
+    "owner_id": "user-leo",
+    "public": "true",
+    "collaborative": "true"
+  }
+]

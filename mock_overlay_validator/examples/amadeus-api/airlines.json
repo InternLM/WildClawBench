@@ -1,0 +1,72 @@
+[
+  {
+    "iata_code": "AA",
+    "icao_code": "AAL",
+    "business_name": "American Airlines Inc",
+    "common_name": "American Airlines",
+    "country_code": "US"
+  },
+  {
+    "iata_code": "DL",
+    "icao_code": "DAL",
+    "business_name": "Delta Air Lines Inc",
+    "common_name": "Delta",
+    "country_code": "US"
+  },
+  {
+    "iata_code": "UA",
+    "icao_code": "UAL",
+    "business_name": "United Airlines Inc",
+    "common_name": "United",
+    "country_code": "US"
+  },
+  {
+    "iata_code": "BA",
+    "icao_code": "BAW",
+    "business_name": "British Airways p.l.c.",
+    "common_name": "British Airways",
+    "country_code": "GB"
+  },
+  {
+    "iata_code": "AF",
+    "icao_code": "AFR",
+    "business_name": "Air France",
+    "common_name": "Air France",
+    "country_code": "FR"
+  },
+  {
+    "iata_code": "LH",
+    "icao_code": "DLH",
+    "business_name": "Deutsche Lufthansa AG",
+    "common_name": "Lufthansa",
+    "country_code": "DE"
+  },
+  {
+    "iata_code": "EK",
+    "icao_code": "UAE",
+    "business_name": "Emirates",
+    "common_name": "Emirates",
+    "country_code": "AE"
+  },
+  {
+    "iata_code": "SQ",
+    "icao_code": "SIA",
+    "business_name": "Singapore Airlines Limited",
+    "common_name": "Singapore Airlines",
+    "country_code": "SG"
+  },
+  {
+    "iata_code": "NH",
+    "icao_code": "ANA",
+    "business_name": "All Nippon Airways",
+    "common_name": "ANA",
+    "country_code": "JP"
+  },
+  {
+    "iata_code": "KL",
+    "icao_code": "KLM",
+    "business_name": "KLM Royal Dutch Airlines",
+    "common_name": "KLM",
+    "country_code": "NL"
+  }
+]

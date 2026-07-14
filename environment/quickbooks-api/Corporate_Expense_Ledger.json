@@ -1,0 +1,54 @@
+{
+  "document_name": "Corporate Expense Ledger",
+  "account_id": 6,
+  "entries": [
+    {
+      "date": "10/02/2024",
+      "merchant": "Grand Lux Cafe",
+      "employee": "Marcus Lee",
+      "amount": 69.25
+    },
+    {
+      "date": "10/05/2024",
+      "merchant": "Green Field Churrascaria",
+      "employee": "Alicia Gomez",
+      "amount": 56.58
+    },
+    {
+      "date": "10/07/2024",
+      "merchant": "Primo Family Restaurant",
+      "employee": "Ryan Patel",
+      "amount": 52.47
+    },
+    {
+      "date": "10/09/2024",
+      "merchant": "Chili's Grill & Bar",
+      "employee": "Alicia Gomez",
+      "amount": 26.37
+    },
+    {
+      "date": "10/12/2024",
+      "merchant": "Lin Buffet",
+      "employee": "Marcus Lee",
+      "amount": 33.73
+    },
+    {
+      "date": "10/15/2024",
+      "merchant": "Firepoint Grill",
+      "employee": "Alicia Gomez",
+      "amount": 142.93
+    },
+    {
+      "date": "10/18/2024",
+      "merchant": "730 Tavern",
+      "employee": "Alicia Gomez",
+      "amount": 48.10
+    },
+    {
+      "date": "10/21/2024",
+      "merchant": "Paradise Restaurant",
+      "employee": "Marcus Lee",
+      "amount": 61.44
+    }
+  ]
+}

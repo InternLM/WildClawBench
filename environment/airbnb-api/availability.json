@@ -1,0 +1,56 @@
+[
+  {
+    "listing_id": "lst-101",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30",
+    "available": "true"
+  },
+  {
+    "listing_id": "lst-102",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-15",
+    "available": "true"
+  },
+  {
+    "listing_id": "lst-102",
+    "start_date": "2026-06-16",
+    "end_date": "2026-06-30",
+    "available": "false"
+  },
+  {
+    "listing_id": "lst-103",
+    "start_date": "2026-06-01",
+    "end_date": "2026-07-15",
+    "available": "true"
+  },
+  {
+    "listing_id": "lst-104",
+    "start_date": "2026-06-10",
+    "end_date": "2026-06-30",
+    "available": "true"
+  },
+  {
+    "listing_id": "lst-105",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30",
+    "available": "true"
+  },
+  {
+    "listing_id": "lst-106",
+    "start_date": "2026-06-01",
+    "end_date": "2026-08-31",
+    "available": "true"
+  },
+  {
+    "listing_id": "lst-107",
+    "start_date": "2026-06-05",
+    "end_date": "2026-06-25",
+    "available": "true"
+  },
+  {
+    "listing_id": "lst-108",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30",
+    "available": "true"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "payout_batch_id": "PAYOUT-BATCH-001",
+    "sender_batch_id": "Payouts_2026_05_01",
+    "status": "SUCCESS",
+    "amount_value": "500.00",
+    "currency_code": "USD",
+    "recipient_email": "partner@orbit-labs.com",
+    "create_time": "2026-05-01T12:00:00Z"
+  },
+  {
+    "payout_batch_id": "PAYOUT-BATCH-002",
+    "sender_batch_id": "Payouts_2026_05_15",
+    "status": "PENDING",
+    "amount_value": "275.50",
+    "currency_code": "USD",
+    "recipient_email": "affiliate@orbit-labs.com",
+    "create_time": "2026-05-15T12:00:00Z"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "channel_id": "C01GENERAL",
+    "user_id": "U01AMELIA"
+  },
+  {
+    "channel_id": "C01GENERAL",
+    "user_id": "U01JONAS"
+  },
+  {
+    "channel_id": "C01GENERAL",
+    "user_id": "U01HELENA"
+  },
+  {
+    "channel_id": "C01GENERAL",
+    "user_id": "U01ROHIT"
+  },
+  {
+    "channel_id": "C01GENERAL",
+    "user_id": "U01NOOR"
+  },
+  {
+    "channel_id": "C01ENG",
+    "user_id": "U01AMELIA"
+  },
+  {
+    "channel_id": "C01ENG",
+    "user_id": "U01JONAS"
+  },
+  {
+    "channel_id": "C01ENG",
+    "user_id": "U01HELENA"
+  },
+  {
+    "channel_id": "C01ENG",
+    "user_id": "U01ROHIT"
+  },
+  {
+    "channel_id": "C01ENG",
+    "user_id": "U01NOOR"
+  },
+  {
+    "channel_id": "C01DEPLOY",
+    "user_id": "U01AMELIA"
+  },
+  {
+    "channel_id": "C01DEPLOY",
+    "user_id": "U01JONAS"
+  },
+  {
+    "channel_id": "C01DEPLOY",
+    "user_id": "U01HELENA"
+  },
+  {
+    "channel_id": "C01DEPLOY",
+    "user_id": "U01ROHIT"
+  },
+  {
+    "channel_id": "C01DEPLOY",
+    "user_id": "U01BOT"
+  },
+  {
+    "channel_id": "C01RANDOM",
+    "user_id": "U01AMELIA"
+  },
+  {
+    "channel_id": "C01RANDOM",
+    "user_id": "U01JONAS"
+  },
+  {
+    "channel_id": "C01RANDOM",
+    "user_id": "U01HELENA"
+  },
+  {
+    "channel_id": "C01RANDOM",
+    "user_id": "U01ROHIT"
+  },
+  {
+    "channel_id": "C01RANDOM",
+    "user_id": "U01NOOR"
+  },
+  {
+    "channel_id": "C01AUTHV2",
+    "user_id": "U01AMELIA"
+  },
+  {
+    "channel_id": "C01AUTHV2",
+    "user_id": "U01JONAS"
+  },
+  {
+    "channel_id": "C01AUTHV2",
+    "user_id": "U01HELENA"
+  },
+  {
+    "channel_id": "G01LEADS",
+    "user_id": "U01AMELIA"
+  },
+  {
+    "channel_id": "G01LEADS",
+    "user_id": "U01JONAS"
+  }
+]

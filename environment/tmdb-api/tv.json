@@ -1,0 +1,26 @@
+[
+  {
+    "id": "201",
+    "name": "Station Eleven Hours",
+    "overview": "An anthology set across one shift on a deep-space relay station.",
+    "first_air_date": "2023-09-01",
+    "vote_average": "8.0",
+    "vote_count": "1240",
+    "genre_ids": "878;18",
+    "popularity": "95.2",
+    "number_of_seasons": "2",
+    "number_of_episodes": "16"
+  },
+  {
+    "id": "202",
+    "name": "The Diner Chronicles",
+    "overview": "Interwoven stories of regulars at a 24-hour roadside diner.",
+    "first_air_date": "2022-04-12",
+    "vote_average": "7.4",
+    "vote_count": "860",
+    "genre_ids": "18;35",
+    "popularity": "52.6",
+    "number_of_seasons": "3",
+    "number_of_episodes": "30"
+  }
+]

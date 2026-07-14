@@ -1,0 +1,54 @@
+[
+  {
+    "uuid": "et-intro-15",
+    "owner": "user-amelia-ortega",
+    "name": "Intro Call",
+    "slug": "intro-call",
+    "duration": "15",
+    "kind": "solo",
+    "color": "#0069ff",
+    "active": "true",
+    "description": "Quick 15-minute introduction call",
+    "scheduling_url": "https://calendly.com/amelia-ortega/intro-call",
+    "created_at": "2025-09-02T10:00:00.000000Z"
+  },
+  {
+    "uuid": "et-discovery-30",
+    "owner": "user-amelia-ortega",
+    "name": "Discovery Session",
+    "slug": "discovery-session",
+    "duration": "30",
+    "kind": "solo",
+    "color": "#1aa763",
+    "active": "true",
+    "description": "30-minute product discovery session",
+    "scheduling_url": "https://calendly.com/amelia-ortega/discovery-session",
+    "created_at": "2025-09-02T10:05:00.000000Z"
+  },
+  {
+    "uuid": "et-deepdive-60",
+    "owner": "user-amelia-ortega",
+    "name": "Technical Deep Dive",
+    "slug": "technical-deep-dive",
+    "duration": "60",
+    "kind": "solo",
+    "color": "#f1684e",
+    "active": "true",
+    "description": "60-minute technical architecture review",
+    "scheduling_url": "https://calendly.com/amelia-ortega/technical-deep-dive",
+    "created_at": "2025-09-02T10:10:00.000000Z"
+  },
+  {
+    "uuid": "et-archived-45",
+    "owner": "user-amelia-ortega",
+    "name": "Legacy Demo",
+    "slug": "legacy-demo",
+    "duration": "45",
+    "kind": "solo",
+    "color": "#8247f5",
+    "active": "false",
+    "description": "Retired 45-minute demo slot",
+    "scheduling_url": "https://calendly.com/amelia-ortega/legacy-demo",
+    "created_at": "2025-09-15T10:00:00.000000Z"
+  }
+]

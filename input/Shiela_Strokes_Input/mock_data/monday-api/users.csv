@@ -1,0 +1,12 @@
+user_id,name,email,title,is_admin
+muser_001,Sheila Stokes,sheila.stokes@Finthesiss.ai,,true
+muser_002,Babatunde Olatunji,b.olatunji@telecorpng.com,,true
+muser_003,Yetunde Bakare,yetunde.bakare.engineer@gmail.com,,false
+muser_004,Ifeanyi Okeke,i.okeke@telecorpng.com,,false
+muser_005,Chinwe Eze,c.eze@telecorpng.com,,false
+muser_006,Emeka Adeniyi,e.adeniyi@telecorpng.com,,false
+muser_007,Fatima Musa,f.musa@telecorpng.com,,false
+muser_008,Chioma Ndukwe,c.ndukwe@telecorpng.com,,false
+muser_009,Tunde Bello,t.bello@telecorpng.com,,false
+muser_010,Ola Adeyemo,ola.adeyemo@tachyon-networks.ng,,false
+muser_011,Amaka Obi,a.obi@telecorpng.com,,false

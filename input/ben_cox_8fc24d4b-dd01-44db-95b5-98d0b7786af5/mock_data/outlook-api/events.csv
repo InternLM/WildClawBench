@@ -1,0 +1,10 @@
+id,subject,organizer_name,organizer_address,location,start_date,end_date,is_all_day,is_online,attendees
+E01,Boekenkast leveren en montage - Veldkamp,Ben Cox,ben.cox@finthesiss.ai,Oude Boteringestraat 38 Groningen,2026-10-16T08:30:00,2026-10-16T12:30:00,false,false,h.veldkamp@home.nl
+E02,Boekenkast montage Veldkamp (oude datum),Ben Cox,ben.cox@finthesiss.ai,Oude Boteringestraat 38 Groningen,2026-10-13T08:30:00,2026-10-13T12:30:00,false,false,h.veldkamp@home.nl
+E03,Tandarts Mulder controle,Ben Cox,ben.cox@finthesiss.ai,Tandartspraktijk Zuidhorn,2026-11-19T08:00:00,2026-11-19T08:30:00,false,false,
+E04,Familiebezoek Marie en Tom,Ben Cox,ben.cox@finthesiss.ai,Englumerweg 4 Zuidhorn,2026-10-25T12:00:00,2026-10-25T17:00:00,false,false,diane.cox@outlook.com;keith.cox@outlook.com
+E05,Sint-Maarten lampionnenavond,Diane Cox,diane.cox@outlook.com,Zuidhorn dorp,2026-11-11T18:00:00,2026-11-11T20:00:00,false,false,ben.cox@finthesiss.ai
+E06,Keuken Haren levering en montage,Ben Cox,ben.cox@finthesiss.ai,Rijksstraatweg 109 Haren,2026-12-07T07:30:00,2026-12-07T17:00:00,false,false,j.bosman@haren-nl.net
+E07,Kerk Zuidhorn,Ben Cox,ben.cox@finthesiss.ai,Protestantse Kerk Zuidhorn,2026-10-11T10:00:00,2026-10-11T11:15:00,false,false,
+E08,Koffie met Piet,Ben Cox,ben.cox@finthesiss.ai,Werkplaats,2026-10-10T07:00:00,2026-10-10T08:30:00,false,false,piet.dijkstra@home.nl
+E09,Materiaal ophalen Houtcentrum,Ben Cox,ben.cox@finthesiss.ai,Groningen Houtcentrum,2026-10-12T09:00:00,2026-10-12T10:00:00,false,false,

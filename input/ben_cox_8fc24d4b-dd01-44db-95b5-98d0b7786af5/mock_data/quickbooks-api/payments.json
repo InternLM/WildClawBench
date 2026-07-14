@@ -1,0 +1,65 @@
+[
+  {
+    "Id": "7001",
+    "TxnDate": "2026-08-22",
+    "CustomerRef": {
+      "value": "201",
+      "name": "Hendrik Veldkamp"
+    },
+    "TotalAmt": 1255.5,
+    "Line": [
+      {
+        "Amount": 1255.5,
+        "LinkedTxn": [
+          {
+            "TxnId": "5001",
+            "TxnType": "Invoice"
+          }
+        ]
+      }
+    ],
+    "PrivateNote": "Aanbetaling boekenkast ontvangen."
+  },
+  {
+    "Id": "7002",
+    "TxnDate": "2026-07-15",
+    "CustomerRef": {
+      "value": "202",
+      "name": "J. Bosman"
+    },
+    "TotalAmt": 1800.0,
+    "Line": [
+      {
+        "Amount": 1800.0,
+        "LinkedTxn": [
+          {
+            "TxnId": "5002",
+            "TxnType": "Invoice"
+          }
+        ]
+      }
+    ],
+    "PrivateNote": "Aanbetaling keuken Haren."
+  },
+  {
+    "Id": "7003",
+    "TxnDate": "2026-05-09",
+    "CustomerRef": {
+      "value": "203",
+      "name": "Annelies Smit"
+    },
+    "TotalAmt": 540.0,
+    "Line": [
+      {
+        "Amount": 540.0,
+        "LinkedTxn": [
+          {
+            "TxnId": "5003",
+            "TxnType": "Invoice"
+          }
+        ]
+      }
+    ],
+    "PrivateNote": "Eindfactuur vensterbank voldaan."
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "att-001",
+    "name": "The Midnight Echoes",
+    "type": "band",
+    "segment": "Music",
+    "genre": "Rock",
+    "upcoming_events": "3"
+  },
+  {
+    "id": "att-002",
+    "name": "Aria Sloane",
+    "type": "musician",
+    "segment": "Music",
+    "genre": "Pop",
+    "upcoming_events": "2"
+  },
+  {
+    "id": "att-003",
+    "name": "Blue Note Collective",
+    "type": "band",
+    "segment": "Music",
+    "genre": "Jazz",
+    "upcoming_events": "1"
+  },
+  {
+    "id": "att-004",
+    "name": "Metro City Hoops",
+    "type": "team",
+    "segment": "Sports",
+    "genre": "Basketball",
+    "upcoming_events": "5"
+  },
+  {
+    "id": "att-005",
+    "name": "Bay United FC",
+    "type": "team",
+    "segment": "Sports",
+    "genre": "Soccer",
+    "upcoming_events": "4"
+  },
+  {
+    "id": "att-006",
+    "name": "Starlight Musical Co.",
+    "type": "theatre",
+    "segment": "Arts & Theatre",
+    "genre": "Theatre",
+    "upcoming_events": "2"
+  },
+  {
+    "id": "att-007",
+    "name": "Danny Vega",
+    "type": "comedian",
+    "segment": "Arts & Theatre",
+    "genre": "Comedy",
+    "upcoming_events": "3"
+  }
+]

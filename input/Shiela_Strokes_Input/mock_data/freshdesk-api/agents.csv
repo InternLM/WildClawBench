@@ -1,0 +1,5 @@
+id,name,email,available,ticket_scope,occasional,created_at
+agent_marcus,Marcus Lindqvist,marcus.lindqvist@tachyon-networks.com,true,Vendor support,false,2026-04-15T10:00:00Z
+agent_tachyon_bot,Tachyon Support Bot,tachyon-support-bot@tachyon-networks.com,true,Vendor support,false,2026-04-15T10:00:00Z
+agent_sven,Sven Karlsson,sven.karlsson@tachyon-networks.com,true,global,false,2024-08-12T10:00:00Z
+agent_priya,Priya Iyer,priya.iyer@tachyon-networks.com,true,global,false,2024-11-08T10:00:00Z

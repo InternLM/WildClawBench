@@ -1,0 +1,713 @@
+[
+  {
+    "Id": "5001",
+    "DocNumber": "INV-2026-0301",
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-03-10",
+    "CustomerRef": {
+      "value": "1",
+      "name": "Abrams, Derek"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - March 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5002",
+    "DocNumber": "INV-2026-0302",
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-03-10",
+    "CustomerRef": {
+      "value": "2",
+      "name": "Alvarez, Sofia"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - March 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5003",
+    "DocNumber": "INV-2026-0303",
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-03-10",
+    "CustomerRef": {
+      "value": "6",
+      "name": "Chen, William"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - March 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5004",
+    "DocNumber": "INV-2026-0304",
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-03-10",
+    "CustomerRef": {
+      "value": "28",
+      "name": "Matsuda, Yuki"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - March 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5005",
+    "DocNumber": "INV-2026-0305",
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-03-10",
+    "CustomerRef": {
+      "value": "17",
+      "name": "Hayashi, Kenji"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - March 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5006",
+    "DocNumber": "BATCH-2026-03",
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-03-10",
+    "PrivateNote": "Batch invoice for remaining 57 members not individually listed. All paid by 3/12.",
+    "CustomerRef": {
+      "value": "0",
+      "name": "Multiple - See Batch Detail"
+    },
+    "Line": [
+      {
+        "Amount": 5415.0,
+        "Description": "Monthly Membership - March 2026 (57 members × $95)",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 5415.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5007",
+    "DocNumber": "INV-2026-0306",
+    "TxnDate": "2026-03-05",
+    "DueDate": "2026-03-05",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "Line": [
+      {
+        "Amount": 80.0,
+        "Description": "Drop-in fees collected - first half March (4 sessions × $20)",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Drop-in Fees"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 80.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5008",
+    "DocNumber": "INV-2026-0307",
+    "TxnDate": "2026-03-19",
+    "DueDate": "2026-03-19",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "Line": [
+      {
+        "Amount": 60.0,
+        "Description": "Drop-in fees collected - second half March (3 sessions × $20)",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Drop-in Fees"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 60.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2001",
+    "DocNumber": "INV-2026-0401",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "1",
+      "name": "Abrams, Derek"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2002",
+    "DocNumber": "INV-2026-0402",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "2",
+      "name": "Alvarez, Sofia"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2003",
+    "DocNumber": "INV-2026-0403",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "5",
+      "name": "Callahan, Nate"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 95.0,
+    "Status": "Overdue",
+    "PrivateNote": "Emailed 4/12, no response. Try again before May billing."
+  },
+  {
+    "Id": "2004",
+    "DocNumber": "INV-2026-0404",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "6",
+      "name": "Chen, William"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2005",
+    "DocNumber": "INV-2026-0405",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "10",
+      "name": "Eriksson, Lars"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 45.0,
+    "Status": "Partial",
+    "PrivateNote": "Lars paid $50 on 4/8 - said remaining $45 coming with May payment. OK per Aaron 4/9."
+  },
+  {
+    "Id": "2006",
+    "DocNumber": "INV-2026-0406",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "17",
+      "name": "Hayashi, Kenji"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2007",
+    "DocNumber": "INV-2026-0407",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "28",
+      "name": "Matsuda, Yuki"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 95.0,
+    "Status": "Overdue"
+  },
+  {
+    "Id": "2008",
+    "DocNumber": "INV-2026-0408",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "28",
+      "name": "Matsuda, Yuki"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 95.0,
+    "Status": "Overdue",
+    "PrivateNote": "System generated duplicate - needs void. See INV-2026-0407."
+  },
+  {
+    "Id": "2009",
+    "DocNumber": "INV-2026-0409",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "31",
+      "name": "Morrison, Tyler"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2010",
+    "DocNumber": "INV-2026-0410",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "CustomerRef": {
+      "value": "42",
+      "name": "Rivera, Marco"
+    },
+    "Line": [
+      {
+        "Amount": 95.0,
+        "Description": "Monthly Membership - April 2026",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 95.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2011",
+    "DocNumber": "BATCH-2026-04",
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-10",
+    "PrivateNote": "Batch invoice for remaining 53 members not individually listed. All paid by 4/14 except noted above.",
+    "CustomerRef": {
+      "value": "0",
+      "name": "Multiple - See Batch Detail"
+    },
+    "Line": [
+      {
+        "Amount": 5035.0,
+        "Description": "Monthly Membership - April 2026 (53 members × $95)",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Membership Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 5035.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2012",
+    "DocNumber": "INV-2026-0411",
+    "TxnDate": "2026-04-02",
+    "DueDate": "2026-04-02",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "Line": [
+      {
+        "Amount": 100.0,
+        "Description": "Drop-in fees collected - April week 1 (5 sessions × $20)",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Drop-in Fees"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 100.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "2013",
+    "DocNumber": "INV-2026-0412",
+    "TxnDate": "2026-04-05",
+    "DueDate": "2026-04-12",
+    "CustomerRef": {
+      "value": "63",
+      "name": "Spring Tournament 2026 - Registrations"
+    },
+    "Line": [
+      {
+        "Amount": 1200.0,
+        "Description": "Tournament registration fees - 40 competitors × $30",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Tournament Revenue"
+          }
+        }
+      },
+      {
+        "Amount": 360.0,
+        "Description": "Spectator entry - 72 × $5",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Tournament Revenue"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 1560.0,
+    "Balance": 0,
+    "Status": "Paid",
+    "PrivateNote": "Spring Tournament Apr 5. Smaller than fall - local clubs only."
+  },
+  {
+    "Id": "2014",
+    "DocNumber": "INV-2026-0413",
+    "TxnDate": "2026-04-16",
+    "DueDate": "2026-04-16",
+    "CustomerRef": {
+      "value": "64",
+      "name": "Drop-in Sessions (Walk-ins)"
+    },
+    "Line": [
+      {
+        "Amount": 60.0,
+        "Description": "Drop-in fees collected - April weeks 3-4 (3 sessions × $20)",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Drop-in Fees"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 60.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "1201",
+    "DocNumber": "ISC-2024-009",
+    "TxnDate": "2024-04-10",
+    "DueDate": "2024-04-20",
+    "CustomerRef": {
+      "value": "203",
+      "name": "Marcus Webb"
+    },
+    "TotalAmt": 1800000.0,
+    "Balance": 1800000.0,
+    "Line": [
+      {
+        "Description": "Penetration Testing - TechVault Portal",
+        "Amount": 600000.0
+      },
+      {
+        "Description": "Infrastructure Security Audit",
+        "Amount": 480000.0
+      },
+      {
+        "Description": "API Vulnerability Assessment",
+        "Amount": 360000.0
+      },
+      {
+        "Description": "Security Policy Documentation",
+        "Amount": 240000.0
+      },
+      {
+        "Description": "Client Handoff Walkthrough",
+        "Amount": 120000.0
+      }
+    ],
+    "EmailStatus": "Sent",
+    "BillEmail": {
+      "Address": "mwebb@techvault.io"
+    },
+    "MetaData": {
+      "CreateTime": "2024-04-10T10:00:00"
+    },
+    "Status": "Unpaid"
+  },
+  {
+    "Id": "1401",
+    "DocNumber": "BAR-1101",
+    "TxnDate": "2025-04-18",
+    "DueDate": "2025-04-18",
+    "CustomerRef": {
+      "value": "301",
+      "name": "Bar Walk-In"
+    },
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 54.0,
+        "DetailType": "SalesItemLineDetail",
+        "Description": "Buffalo Trace pours",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "value": "401",
+            "name": "Buffalo Trace"
+          },
+          "UnitPrice": 18.0,
+          "Qty": 3
+        }
+      },
+      {
+        "Amount": 54.0,
+        "DetailType": "SubTotalLineDetail",
+        "SubTotalLineDetail": {}
+      }
+    ],
+    "TotalAmt": 54.0,
+    "Balance": 0.0,
+    "PrintStatus": "NotSet",
+    "EmailStatus": "NotSet",
+    "Status": "Paid",
+    "MetaData": {
+      "CreateTime": "2025-04-18T20:15:00-04:00",
+      "LastUpdatedTime": "2025-04-18T20:15:00-04:00"
+    },
+    "SyncToken": "1"
+  },
+  {
+    "Id": "1402",
+    "DocNumber": "BAR-1102",
+    "TxnDate": "2025-04-18",
+    "DueDate": "2025-04-18",
+    "CustomerRef": {
+      "value": "301",
+      "name": "Bar Walk-In"
+    },
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 36.0,
+        "DetailType": "SalesItemLineDetail",
+        "Description": "Maker's Mark pours",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "value": "402",
+            "name": "Maker's Mark"
+          },
+          "UnitPrice": 18.0,
+          "Qty": 2
+        }
+      },
+      {
+        "Amount": 36.0,
+        "DetailType": "SubTotalLineDetail",
+        "SubTotalLineDetail": {}
+      }
+    ],
+    "TotalAmt": 36.0,
+    "Balance": 0.0,
+    "PrintStatus": "NotSet",
+    "EmailStatus": "NotSet",
+    "Status": "Paid",
+    "MetaData": {
+      "CreateTime": "2025-04-18T21:05:00-04:00",
+      "LastUpdatedTime": "2025-04-18T21:05:00-04:00"
+    },
+    "SyncToken": "1"
+  },
+  {
+    "Id": "1403",
+    "DocNumber": "BAR-1103",
+    "TxnDate": "2025-04-19",
+    "DueDate": "2025-04-19",
+    "CustomerRef": {
+      "value": "301",
+      "name": "Bar Walk-In"
+    },
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 44.0,
+        "DetailType": "SalesItemLineDetail",
+        "Description": "Olmeca Silver Tequila pours",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "value": "405",
+            "name": "Olmeca Silver Tequila"
+          },
+          "UnitPrice": 22.0,
+          "Qty": 2
+        }
+      },
+      {
+        "Amount": 44.0,
+        "DetailType": "SubTotalLineDetail",
+        "SubTotalLineDetail": {}
+      }
+    ],
+    "TotalAmt": 44.0,
+    "Balance": 0.0,
+    "PrintStatus": "NotSet",
+    "EmailStatus": "NotSet",
+    "Status": "Paid",
+    "MetaData": {
+      "CreateTime": "2025-04-19T19:45:00-04:00",
+      "LastUpdatedTime": "2025-04-19T19:45:00-04:00"
+    },
+    "SyncToken": "1"
+  }
+]

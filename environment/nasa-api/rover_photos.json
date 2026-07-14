@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1000201",
+    "rover": "curiosity",
+    "sol": "4100",
+    "camera": "FHAZ",
+    "camera_full_name": "Front Hazard Avoidance Camera",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/FHAZ/4100_0001.jpg",
+    "earth_date": "2026-04-12"
+  },
+  {
+    "id": "1000202",
+    "rover": "curiosity",
+    "sol": "4100",
+    "camera": "MAST",
+    "camera_full_name": "Mast Camera",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/MAST/4100_0002.jpg",
+    "earth_date": "2026-04-12"
+  },
+  {
+    "id": "1000203",
+    "rover": "curiosity",
+    "sol": "4100",
+    "camera": "NAVCAM",
+    "camera_full_name": "Navigation Camera",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/NAV/4100_0003.jpg",
+    "earth_date": "2026-04-12"
+  },
+  {
+    "id": "1000204",
+    "rover": "curiosity",
+    "sol": "4101",
+    "camera": "MAST",
+    "camera_full_name": "Mast Camera",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/MAST/4101_0004.jpg",
+    "earth_date": "2026-04-13"
+  },
+  {
+    "id": "1000205",
+    "rover": "curiosity",
+    "sol": "4101",
+    "camera": "RHAZ",
+    "camera_full_name": "Rear Hazard Avoidance Camera",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/RHAZ/4101_0005.jpg",
+    "earth_date": "2026-04-13"
+  },
+  {
+    "id": "2000301",
+    "rover": "perseverance",
+    "sol": "1110",
+    "camera": "FRONT_HAZCAM_LEFT_A",
+    "camera_full_name": "Front Hazard Avoidance Camera - Left",
+    "img_src": "https://mars.nasa.gov/m20-raw-images/FLA/1110_0001.png",
+    "earth_date": "2026-04-30"
+  },
+  {
+    "id": "2000302",
+    "rover": "perseverance",
+    "sol": "1110",
+    "camera": "MCZ_RIGHT",
+    "camera_full_name": "Mastcam-Z Right",
+    "img_src": "https://mars.nasa.gov/m20-raw-images/MCZ/1110_0002.png",
+    "earth_date": "2026-04-30"
+  },
+  {
+    "id": "2000303",
+    "rover": "perseverance",
+    "sol": "1110",
+    "camera": "NAVCAM_LEFT",
+    "camera_full_name": "Navigation Camera - Left",
+    "img_src": "https://mars.nasa.gov/m20-raw-images/NAV/1110_0003.png",
+    "earth_date": "2026-04-30"
+  },
+  {
+    "id": "2000304",
+    "rover": "perseverance",
+    "sol": "1111",
+    "camera": "MCZ_LEFT",
+    "camera_full_name": "Mastcam-Z Left",
+    "img_src": "https://mars.nasa.gov/m20-raw-images/MCZ/1111_0004.png",
+    "earth_date": "2026-05-01"
+  },
+  {
+    "id": "3000401",
+    "rover": "opportunity",
+    "sol": "5111",
+    "camera": "PANCAM",
+    "camera_full_name": "Panoramic Camera",
+    "img_src": "https://mars.nasa.gov/mer-raw-images/PANCAM/5111_0001.jpg",
+    "earth_date": "2018-06-10"
+  },
+  {
+    "id": "3000402",
+    "rover": "opportunity",
+    "sol": "5111",
+    "camera": "NAVCAM",
+    "camera_full_name": "Navigation Camera",
+    "img_src": "https://mars.nasa.gov/mer-raw-images/NAV/5111_0002.jpg",
+    "earth_date": "2018-06-10"
+  }
+]

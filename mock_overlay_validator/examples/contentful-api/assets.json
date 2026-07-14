@@ -1,0 +1,50 @@
+[
+  {
+    "id": "asset-hero-1",
+    "created_at": "2025-09-09T08:00:00.000Z",
+    "updated_at": "2025-09-09T08:00:00.000Z",
+    "published_version": "2",
+    "title": "Headless diagram",
+    "description": "Diagram of headless architecture",
+    "file_url": "https://assets.example.com/headless-diagram.png",
+    "content_type": "image/png",
+    "file_name": "headless-diagram.png",
+    "size": "184320"
+  },
+  {
+    "id": "asset-hero-2",
+    "created_at": "2025-09-30T08:00:00.000Z",
+    "updated_at": "2025-09-30T08:00:00.000Z",
+    "published_version": "1",
+    "title": "Content model board",
+    "description": "Whiteboard of a content model",
+    "file_url": "https://assets.example.com/content-model.jpg",
+    "content_type": "image/jpeg",
+    "file_name": "content-model.jpg",
+    "size": "256000"
+  },
+  {
+    "id": "asset-author-mara",
+    "created_at": "2025-09-01T10:00:00.000Z",
+    "updated_at": "2025-09-01T10:00:00.000Z",
+    "published_version": "1",
+    "title": "Mara headshot",
+    "description": "Author headshot for Mara",
+    "file_url": "https://assets.example.com/mara.jpg",
+    "content_type": "image/jpeg",
+    "file_name": "mara.jpg",
+    "size": "64512"
+  },
+  {
+    "id": "asset-author-tomas",
+    "created_at": "2025-09-02T11:00:00.000Z",
+    "updated_at": "2025-09-02T11:00:00.000Z",
+    "published_version": "1",
+    "title": "Tomas headshot",
+    "description": "Author headshot for Tomas",
+    "file_url": "https://assets.example.com/tomas.jpg",
+    "content_type": "image/jpeg",
+    "file_name": "tomas.jpg",
+    "size": "61440"
+  }
+]

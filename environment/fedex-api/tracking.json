@@ -1,0 +1,62 @@
+[
+  {
+    "tracking_number": "794612035840",
+    "status_code": "DL",
+    "status_description": "Delivered",
+    "carrier_code": "FDXG",
+    "service_name": "FedEx Ground",
+    "ship_date": "2026-05-20",
+    "estimated_delivery": "2026-05-24",
+    "latest_event": "Delivered",
+    "latest_event_location": "New York, NY",
+    "latest_event_time": "2026-05-24T13:42:00Z"
+  },
+  {
+    "tracking_number": "794612035851",
+    "status_code": "IT",
+    "status_description": "In transit",
+    "carrier_code": "FDXE",
+    "service_name": "FedEx 2Day",
+    "ship_date": "2026-05-21",
+    "estimated_delivery": "2026-05-23",
+    "latest_event": "Departed FedEx hub",
+    "latest_event_location": "Memphis, TN",
+    "latest_event_time": "2026-05-22T03:15:00Z"
+  },
+  {
+    "tracking_number": "794612035862",
+    "status_code": "OD",
+    "status_description": "Out for delivery",
+    "carrier_code": "FDXE",
+    "service_name": "FedEx Priority Overnight",
+    "ship_date": "2026-05-22",
+    "estimated_delivery": "2026-05-23",
+    "latest_event": "On FedEx vehicle for delivery",
+    "latest_event_location": "New York, NY",
+    "latest_event_time": "2026-05-23T07:05:00Z"
+  },
+  {
+    "tracking_number": "794612035873",
+    "status_code": "PU",
+    "status_description": "Picked up",
+    "carrier_code": "FDXG",
+    "service_name": "FedEx Express Saver",
+    "ship_date": "2026-05-23",
+    "estimated_delivery": "2026-05-28",
+    "latest_event": "Picked up",
+    "latest_event_location": "Memphis, TN",
+    "latest_event_time": "2026-05-23T17:30:00Z"
+  },
+  {
+    "tracking_number": "794612035884",
+    "status_code": "DL",
+    "status_description": "Delivered",
+    "carrier_code": "FDXE",
+    "service_name": "FedEx Standard Overnight",
+    "ship_date": "2026-05-24",
+    "estimated_delivery": "2026-05-25",
+    "latest_event": "Delivered",
+    "latest_event_location": "New York, NY",
+    "latest_event_time": "2026-05-25T09:18:00Z"
+  }
+]

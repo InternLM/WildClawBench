@@ -1,0 +1,34 @@
+[
+  {
+    "device_id": "987007",
+    "zone_id": "zone_013",
+    "zone_name": "South Center Aisle",
+    "sensitivity": "6",
+    "enabled": "true",
+    "coordinates": "0.2,0.4,0.8,0.9"
+  },
+  {
+    "device_id": "987007",
+    "zone_id": "zone_014",
+    "zone_name": "Garage Door Threshold",
+    "sensitivity": "7",
+    "enabled": "true",
+    "coordinates": "0.0,0.0,1.0,0.3"
+  },
+  {
+    "device_id": "987007",
+    "zone_id": "zone_015",
+    "zone_name": "East Wall Bike Zone",
+    "sensitivity": "5",
+    "enabled": "true",
+    "coordinates": "0.7,0.2,1.0,0.9"
+  },
+  {
+    "device_id": "987007",
+    "zone_id": "zone_016",
+    "zone_name": "West Wall Storage",
+    "sensitivity": "5",
+    "enabled": "true",
+    "coordinates": "0.0,0.2,0.3,0.9"
+  }
+]

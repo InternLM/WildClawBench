@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Contentful Mock API",
+    "description": "Test collection for the mock Contentful CMS API service. Base URL defaults to http://localhost:8066. In docker-compose, the service is reachable at http://contentful-api:8066.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8066"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get space", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms"}},
+    {"name": "list content types", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/content_types"}},
+    {"name": "get content type", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/content_types/blogPost"}},
+    {"name": "list entries", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/entries?content_type=blogPost&limit=10"}},
+    {"name": "list entries by field", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/entries?content_type=blogPost&fields.slug=getting-started"}},
+    {"name": "get entry", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/entries/post-getting-started"}},
+    {"name": "create entry", "request": {"method": "POST", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/entries",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"content_type\": \"blogPost\", \"fields\": {\"title\": \"Scaling Content Delivery\", \"slug\": \"scaling-content-delivery\", \"body\": \"Tips for a fast CDN-backed delivery.\", \"published\": false}}"}}},
+    {"name": "update entry", "request": {"method": "PUT", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/entries/post-draft-webhooks",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"fields\": {\"published\": true}}"}}},
+    {"name": "delete entry", "request": {"method": "DELETE", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/entries/post-content-modeling"}},
+    {"name": "list assets", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/assets"}},
+    {"name": "get asset", "request": {"method": "GET", "url": "{{baseUrl}}/spaces/space-orbit-cms/environments/master/assets/asset-hero-1"}}
+  ]
+}

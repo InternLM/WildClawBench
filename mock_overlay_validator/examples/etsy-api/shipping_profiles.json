@@ -1,0 +1,41 @@
+[
+  {
+    "shipping_profile_id": "50001",
+    "shop_id": "29457183",
+    "title": "Standard Shipping - Small Items",
+    "origin_country": "US",
+    "origin_postal_code": "98402",
+    "processing_min": "5",
+    "processing_max": "10",
+    "min_delivery_days": "3",
+    "max_delivery_days": "5",
+    "cost": "5.99",
+    "secondary_cost": "3.99"
+  },
+  {
+    "shipping_profile_id": "50002",
+    "shop_id": "29457183",
+    "title": "Standard Shipping - Large/Heavy Items",
+    "origin_country": "US",
+    "origin_postal_code": "98402",
+    "processing_min": "10",
+    "processing_max": "21",
+    "min_delivery_days": "3",
+    "max_delivery_days": "7",
+    "cost": "11.99",
+    "secondary_cost": "7.99"
+  },
+  {
+    "shipping_profile_id": "50003",
+    "shop_id": "29457183",
+    "title": "Express Shipping - Priority Mail Express",
+    "origin_country": "US",
+    "origin_postal_code": "98402",
+    "processing_min": "5",
+    "processing_max": "10",
+    "min_delivery_days": "1",
+    "max_delivery_days": "2",
+    "cost": "24.99",
+    "secondary_cost": "18.99"
+  }
+]

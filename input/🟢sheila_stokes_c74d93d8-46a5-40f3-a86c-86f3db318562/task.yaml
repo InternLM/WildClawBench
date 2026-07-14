@@ -1,0 +1,7 @@
+difficulty: hard
+modalities: [text, image, audio, document]
+l1: operations_qa
+l2: field_data_reconciliation__with_linear_apis
+task_type: multimodal_reconciliation
+required_apis: [linear, gmail, google-calendar]
+distractor_apis: [calendly, google-drive, microsoft-teams, quickbooks, slack]

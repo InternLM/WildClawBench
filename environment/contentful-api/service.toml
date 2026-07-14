@@ -1,0 +1,5 @@
+[service]
+name = "contentful-api"
+port = 8066
+env_var_name = "CONTENTFUL_API_URL"
+healthcheck_path = "/health"

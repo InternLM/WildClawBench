@@ -1,0 +1,9 @@
+id,board_id,name,state,start_date,end_date,goal
+30001,20001,NSW-S10,closed,2026-08-04,2026-08-17,Phase 1 site survey closeouts
+30002,20001,NSW-S11,closed,2026-08-18,2026-08-31,Phase 1 community engagement first wave
+30003,20001,NSW-S12,active,2026-09-22,2026-10-12,Phase 1 milestone close and acquisition cleanup
+30004,20001,NSW-S13,future,2026-10-13,2026-10-26,Phase 2 acquisition acceleration
+30005,20002,FCBD-S06,closed,2026-09-08,2026-09-21,NCC hearing prep wave 1
+30006,20002,FCBD-S07,active,2026-09-22,2026-10-12,NCC hearing + filing + acceptance test plan v3
+30007,20002,FCBD-S08,future,2026-10-13,2026-10-26,Equipment receipt and integration test
+30008,20003,NQS-Q4,active,2026-10-01,2026-12-31,Q4 Niger State optimization

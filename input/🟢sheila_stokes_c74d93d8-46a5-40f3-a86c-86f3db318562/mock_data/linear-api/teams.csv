@@ -1,0 +1,3 @@
+id,name,key,description,color,createdAt,updatedAt
+team-ncr,North-Central Network Planning,NCR,"5G and rural rollout, North-Central zone",#4a90d9,2025-07-01T09:00:00Z,2026-09-30T09:00:00Z
+team-ops,Network Operations,OPS,Run and maintain,#7ed321,2025-07-01T09:00:00Z,2026-09-15T09:00:00Z

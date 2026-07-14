@@ -1,0 +1,2 @@
+Id,DisplayName,GivenName,FamilyName,CompanyName,PrimaryEmailAddr,PrimaryPhone,BillAddr_Line1,BillAddr_City,BillAddr_CountrySubDivisionCode,BillAddr_PostalCode,Balance,Active,Job,Notes
+1,Asheville Historical Society,,,Asheville Historical Society,admin@ashevillehistorical.org,(828) 555-0100,10 Pack Square,Asheville,NC,28801,0.00,true,false,Primary institutional grant and donation account

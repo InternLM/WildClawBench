@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "Segment Mock API",
+    "description": "Test collection for the mock Segment API service (track, identify, page, batch + sources/destinations). Base URL defaults to http://localhost:8090. In docker-compose, the service is reachable at http://segment-api:8090.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8090"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "track", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/v1/track", "body": {"mode": "raw", "raw": "{\"userId\": \"user_1001\", \"event\": \"Order Completed\", \"properties\": {\"order_id\": \"ord_5599\", \"revenue\": 42.5, \"currency\": \"USD\"}}"}}},
+    {"name": "identify", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/v1/identify", "body": {"mode": "raw", "raw": "{\"userId\": \"user_1009\", \"traits\": {\"email\": \"new@example.com\", \"plan\": \"pro\"}}"}}},
+    {"name": "page", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/v1/page", "body": {"mode": "raw", "raw": "{\"userId\": \"user_1001\", \"name\": \"Pricing\", \"properties\": {\"url\": \"/pricing\"}}"}}},
+    {"name": "batch", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/v1/batch", "body": {"mode": "raw", "raw": "{\"batch\": [{\"type\": \"track\", \"userId\": \"user_1002\", \"event\": \"Added to Cart\"}, {\"type\": \"page\", \"userId\": \"user_1002\", \"name\": \"Cart\"}]}"}}},
+    {"name": "events", "request": {"method": "GET", "url": "{{baseUrl}}/v1/events"}},
+    {"name": "events by type", "request": {"method": "GET", "url": "{{baseUrl}}/v1/events?type=track&userId=user_1001"}},
+    {"name": "sources", "request": {"method": "GET", "url": "{{baseUrl}}/v1/sources"}},
+    {"name": "destinations", "request": {"method": "GET", "url": "{{baseUrl}}/v1/destinations"}}
+  ]
+}

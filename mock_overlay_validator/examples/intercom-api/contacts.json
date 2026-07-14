@@ -1,0 +1,72 @@
+[
+  {
+    "id": "contact-mara",
+    "role": "user",
+    "name": "Mara Lindgren",
+    "email": "mara@brightpath.io",
+    "phone": "+1-202-555-0101",
+    "company_id": "company-brightpath",
+    "created_at": "2025-09-02T08:00:00.000Z",
+    "last_seen_at": "2026-05-25T14:00:00.000Z"
+  },
+  {
+    "id": "contact-tomas",
+    "role": "user",
+    "name": "Tomas Vega",
+    "email": "tomas@brightpath.io",
+    "phone": "+1-202-555-0102",
+    "company_id": "company-brightpath",
+    "created_at": "2025-09-05T09:00:00.000Z",
+    "last_seen_at": "2026-05-24T10:00:00.000Z"
+  },
+  {
+    "id": "contact-yara",
+    "role": "lead",
+    "name": "Yara Khalil",
+    "email": "yara@nimbus-co.com",
+    "phone": "",
+    "company_id": "company-nimbus",
+    "created_at": "2025-10-01T10:00:00.000Z",
+    "last_seen_at": "2026-05-20T09:00:00.000Z"
+  },
+  {
+    "id": "contact-ethan",
+    "role": "user",
+    "name": "Ethan Walsh",
+    "email": "ethan@nimbus-co.com",
+    "phone": "+1-202-555-0104",
+    "company_id": "company-nimbus",
+    "created_at": "2025-10-03T11:00:00.000Z",
+    "last_seen_at": "2026-05-26T16:00:00.000Z"
+  },
+  {
+    "id": "contact-grace",
+    "role": "user",
+    "name": "Grace Okafor",
+    "email": "grace@helio-labs.com",
+    "phone": "+1-202-555-0105",
+    "company_id": "company-helio",
+    "created_at": "2025-10-10T12:00:00.000Z",
+    "last_seen_at": "2026-05-23T13:00:00.000Z"
+  },
+  {
+    "id": "contact-sven",
+    "role": "lead",
+    "name": "Sven Nyberg",
+    "email": "sven@helio-labs.com",
+    "phone": "",
+    "company_id": "company-helio",
+    "created_at": "2025-11-01T08:00:00.000Z",
+    "last_seen_at": "2026-05-18T08:00:00.000Z"
+  },
+  {
+    "id": "contact-hannah",
+    "role": "user",
+    "name": "Hannah Frost",
+    "email": "hannah@vela-tech.com",
+    "phone": "+1-202-555-0107",
+    "company_id": "company-vela",
+    "created_at": "2025-11-15T09:00:00.000Z",
+    "last_seen_at": "2026-05-27T11:00:00.000Z"
+  }
+]

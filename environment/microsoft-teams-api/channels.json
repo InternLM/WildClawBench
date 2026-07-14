@@ -1,0 +1,83 @@
+[
+  {
+    "id": "19:chan-eng-gen01@thread.tacv2",
+    "team_id": "19:team-eng0001@thread.tacv2",
+    "display_name": "General",
+    "description": "Default channel for the Engineering team",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-eng-gen01",
+    "created_date": "2026-01-12T09:00:00Z"
+  },
+  {
+    "id": "19:chan-eng-plat02@thread.tacv2",
+    "team_id": "19:team-eng0001@thread.tacv2",
+    "display_name": "Platform",
+    "description": "Platform services discussion",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-eng-plat02",
+    "created_date": "2026-02-03T10:15:00Z"
+  },
+  {
+    "id": "19:chan-eng-infra3@thread.tacv2",
+    "team_id": "19:team-eng0001@thread.tacv2",
+    "display_name": "Infra",
+    "description": "Infrastructure on-call and incidents",
+    "membership_type": "private",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-eng-infra3",
+    "created_date": "2026-02-20T14:30:00Z"
+  },
+  {
+    "id": "19:chan-prod-gen04@thread.tacv2",
+    "team_id": "19:team-prod0002@thread.tacv2",
+    "display_name": "General",
+    "description": "Default channel for the Product team",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-prod-gen04",
+    "created_date": "2026-01-15T08:45:00Z"
+  },
+  {
+    "id": "19:chan-prod-road5@thread.tacv2",
+    "team_id": "19:team-prod0002@thread.tacv2",
+    "display_name": "Roadmap",
+    "description": "Quarterly roadmap planning",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-prod-road5",
+    "created_date": "2026-03-01T11:00:00Z"
+  },
+  {
+    "id": "19:chan-mktg-gen06@thread.tacv2",
+    "team_id": "19:team-mktg0003@thread.tacv2",
+    "display_name": "General",
+    "description": "Default channel for Marketing",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-mktg-gen06",
+    "created_date": "2026-01-20T13:20:00Z"
+  },
+  {
+    "id": "19:chan-mktg-camp7@thread.tacv2",
+    "team_id": "19:team-mktg0003@thread.tacv2",
+    "display_name": "Campaigns",
+    "description": "Active campaign coordination",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-mktg-camp7",
+    "created_date": "2026-04-05T09:30:00Z"
+  },
+  {
+    "id": "19:chan-sales-gen8@thread.tacv2",
+    "team_id": "19:team-sales004@thread.tacv2",
+    "display_name": "General",
+    "description": "Default channel for Sales",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-sales-gen8",
+    "created_date": "2026-02-01T16:00:00Z"
+  },
+  {
+    "id": "19:chan-allco-gen9@thread.tacv2",
+    "team_id": "19:team-allco005@thread.tacv2",
+    "display_name": "General",
+    "description": "Company-wide announcements",
+    "membership_type": "standard",
+    "web_url": "https://teams.microsoft.com/l/channel/19%3Achan-allco-gen9",
+    "created_date": "2026-01-05T07:00:00Z"
+  }
+]

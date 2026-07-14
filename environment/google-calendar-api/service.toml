@@ -1,0 +1,5 @@
+[service]
+name = "google-calendar-api"
+port = 8016
+env_var_name = "GOOGLE_CALENDAR_API_URL"
+healthcheck_path = "/health"

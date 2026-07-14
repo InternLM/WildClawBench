@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "BambooHR API Mock",
+    "description": "Test collection for the mock BambooHR API service. Base URL defaults to http://localhost:8072. In docker-compose, the service is reachable at http://bamboohr-api:8072. The {company} segment defaults to 'orbitlabs'.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8072"},
+    {"key": "company", "value": "orbitlabs"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get company", "request": {"method": "GET", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/company"}},
+    {"name": "employees directory", "request": {"method": "GET", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/employees/directory"}},
+    {"name": "get employee", "request": {"method": "GET", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/employees/emp-102"}},
+    {"name": "create employee", "request": {"method": "POST", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/employees",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"firstName\": \"Aisha\", \"lastName\": \"Khan\", \"workEmail\": \"aisha.khan@orbit-labs.com\", \"department\": \"Engineering\", \"jobTitle\": \"Software Engineer\", \"location\": \"Remote\", \"supervisorId\": \"emp-102\"}"}}},
+    {"name": "list time off requests", "request": {"method": "GET", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/time_off/requests?status=requested"}},
+    {"name": "create time off request", "request": {"method": "POST", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/time_off/requests",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"employeeId\": \"emp-104\", \"type\": \"Vacation\", \"start\": \"2026-07-20\", \"end\": \"2026-07-24\", \"amount\": 5, \"notes\": \"Conference travel\"}"}}},
+    {"name": "approve time off request", "request": {"method": "PUT", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/time_off/requests/tor-5003/status",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"approved\"}"}}},
+    {"name": "whos out", "request": {"method": "GET", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/time_off/whos_out"}},
+    {"name": "get report", "request": {"method": "GET", "url": "{{baseUrl}}/api/gateway.php/{{company}}/v1/reports/1"}}
+  ]
+}

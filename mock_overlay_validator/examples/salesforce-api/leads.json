@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "00QAx000001AAAAAA1",
+    "FirstName": "Sofia",
+    "LastName": "Bauer",
+    "Company": "Bauer Analytics",
+    "Email": "sofia.bauer@bauer.example.com",
+    "Phone": "+1-303-555-0201",
+    "Status": "Open - Not Contacted",
+    "LeadSource": "Web",
+    "Industry": "Technology",
+    "Rating": "Warm"
+  },
+  {
+    "Id": "00QAx000002BBBBBB2",
+    "FirstName": "Liam",
+    "LastName": "Okafor",
+    "Company": "Okafor Retail Group",
+    "Email": "liam.okafor@okafor.example.com",
+    "Phone": "+1-404-555-0202",
+    "Status": "Working - Contacted",
+    "LeadSource": "Trade Show",
+    "Industry": "Retail",
+    "Rating": "Hot"
+  },
+  {
+    "Id": "00QAx000003CCCCCC3",
+    "FirstName": "Aiko",
+    "LastName": "Tanaka",
+    "Company": "Tanaka Robotics",
+    "Email": "aiko.tanaka@tanaka.example.com",
+    "Phone": "+1-510-555-0203",
+    "Status": "Qualified",
+    "LeadSource": "Referral",
+    "Industry": "Manufacturing",
+    "Rating": "Hot"
+  },
+  {
+    "Id": "00QAx000004DDDDDD4",
+    "FirstName": "Noah",
+    "LastName": "Reyes",
+    "Company": "Reyes Clinics",
+    "Email": "noah.reyes@reyes.example.com",
+    "Phone": "+1-786-555-0204",
+    "Status": "Open - Not Contacted",
+    "LeadSource": "Web",
+    "Industry": "Healthcare",
+    "Rating": "Cold"
+  },
+  {
+    "Id": "00QAx000005EEEEEE5",
+    "FirstName": "Emma",
+    "LastName": "Larsson",
+    "Company": "Larsson Freight",
+    "Email": "emma.larsson@larsson.example.com",
+    "Phone": "+1-503-555-0205",
+    "Status": "Working - Contacted",
+    "LeadSource": "Email",
+    "Industry": "Transportation",
+    "Rating": "Warm"
+  }
+]

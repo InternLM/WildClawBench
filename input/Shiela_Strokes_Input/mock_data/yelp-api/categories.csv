@@ -1,0 +1,14 @@
+alias,title,parent
+cat_nigerian_food,Nigerian Food,
+cat_african_food,African,
+cat_restaurants,Restaurants,
+cat_italian,Italian,cat_restaurants
+cat_indian,Indian,cat_restaurants
+cat_lebanese,Lebanese,cat_restaurants
+cat_continental,Continental,cat_restaurants
+cat_coffee,Coffee and Tea,
+cat_bakery,Bakeries,
+cat_pharmacy,Pharmacies,
+cat_books,Bookstores,
+cat_grocery,Grocery,
+cat_gym,Gym,

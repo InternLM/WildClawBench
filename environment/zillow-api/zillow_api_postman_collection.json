@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Zillow Mock API v1",
+    "description": "Test collection for the mock Zillow API service. Base URL defaults to http://localhost:8011. In docker-compose: http://zillow-api:8011.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8011"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "search Bellevue family", "request": {"method": "GET", "url": "{{baseUrl}}/v1/properties/search?city=Bellevue&state=WA&min_beds=4&max_price=2000000"}},
+    {"name": "get property", "request": {"method": "GET", "url": "{{baseUrl}}/v1/properties/84120001"}},
+    {"name": "zestimate", "request": {"method": "GET", "url": "{{baseUrl}}/v1/properties/84120001/zestimate"}},
+    {"name": "price history", "request": {"method": "GET", "url": "{{baseUrl}}/v1/properties/84120001/price-history"}},
+    {"name": "list agents", "request": {"method": "GET", "url": "{{baseUrl}}/v1/agents?city=Bellevue"}},
+    {"name": "get agent", "request": {"method": "GET", "url": "{{baseUrl}}/v1/agents/agent-001"}},
+    {"name": "list saved searches", "request": {"method": "GET", "url": "{{baseUrl}}/v1/users/user-buyer-001/saved-searches"}},
+    {"name": "create saved search", "request": {"method": "POST", "url": "{{baseUrl}}/v1/users/user-buyer-001/saved-searches",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Sammamish family\", \"city\": \"Sammamish\", \"state\": \"WA\", \"min_beds\": 4, \"max_price\": 2000000, \"home_type\": \"SingleFamily\"}"}}},
+    {"name": "delete saved search", "request": {"method": "DELETE", "url": "{{baseUrl}}/v1/saved-searches/search-003"}}
+  ]
+}

@@ -1,0 +1,5 @@
+[service]
+name = "calendly-api"
+port = 8054
+env_var_name = "CALENDLY_API_URL"
+healthcheck_path = "/health"

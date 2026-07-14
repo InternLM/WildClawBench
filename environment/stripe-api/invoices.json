@@ -1,0 +1,93 @@
+[
+  {
+    "id": "in_Aurora001",
+    "customer": "cus_Nb1Aurora",
+    "subscription": "sub_Aurora",
+    "amount_due": "1900",
+    "amount_paid": "1900",
+    "currency": "usd",
+    "status": "paid",
+    "number": "ORBIT-0001",
+    "charge": "ch_3Aurora01",
+    "created": "1717286400",
+    "due_date": "1717286400"
+  },
+  {
+    "id": "in_Helix001",
+    "customer": "cus_Nb2Helix",
+    "subscription": "sub_Helix",
+    "amount_due": "29900",
+    "amount_paid": "29900",
+    "currency": "usd",
+    "status": "paid",
+    "number": "ORBIT-0002",
+    "charge": "ch_3Helix01",
+    "created": "1717372800",
+    "due_date": "1717372800"
+  },
+  {
+    "id": "in_Lumen001",
+    "customer": "cus_Nb3Lumen",
+    "subscription": "sub_Lumen",
+    "amount_due": "4900",
+    "amount_paid": "4900",
+    "currency": "usd",
+    "status": "paid",
+    "number": "ORBIT-0003",
+    "charge": "ch_3Lumen01",
+    "created": "1717459200",
+    "due_date": "1717459200"
+  },
+  {
+    "id": "in_Pelagic001",
+    "customer": "cus_Nb4Pelagic",
+    "subscription": "",
+    "amount_due": "12500",
+    "amount_paid": "0",
+    "currency": "usd",
+    "status": "open",
+    "number": "ORBIT-0004",
+    "charge": "",
+    "created": "1717545600",
+    "due_date": "1720137600"
+  },
+  {
+    "id": "in_Quanta001",
+    "customer": "cus_Nb6Quanta",
+    "subscription": "sub_Quanta",
+    "amount_due": "49000",
+    "amount_paid": "49000",
+    "currency": "usd",
+    "status": "paid",
+    "number": "ORBIT-0005",
+    "charge": "ch_3Quanta01",
+    "created": "1717632000",
+    "due_date": "1717632000"
+  },
+  {
+    "id": "in_Verdant001",
+    "customer": "cus_Nb5Verdant",
+    "subscription": "sub_Verdant",
+    "amount_due": "4900",
+    "amount_paid": "0",
+    "currency": "usd",
+    "status": "open",
+    "number": "ORBIT-0006",
+    "charge": "",
+    "created": "1717804800",
+    "due_date": "1720483200"
+  },
+  {
+    "id": "in_Lumen002",
+    "customer": "cus_Nb3Lumen",
+    "subscription": "sub_Lumen",
+    "amount_due": "4900",
+    "amount_paid": "0",
+    "currency": "usd",
+    "status": "draft",
+    "number": "ORBIT-0007",
+    "charge": "",
+    "created": "1719792000",
+    "due_date": "1722384000"
+  }
+]

@@ -1,0 +1,740 @@
+{
+  "info": {
+    "name": "Etsy Mock API v3",
+    "description": "Complete test collection for the mock Etsy Open API v3 seller service (WillowAndClayStudio). Base URL defaults to http://localhost:8003 for local testing. In docker-compose, the service is reachable at http://etsy-api:8003.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8003"
+    },
+    {
+      "key": "shop_id",
+      "value": "29457183"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shop",
+      "item": [
+        {
+          "name": "GET Shop",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}"]
+            }
+          }
+        },
+        {
+          "name": "GET Shop - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "99999"]
+            }
+          }
+        },
+        {
+          "name": "PUT Update Shop",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"announcement\": \"Summer sale! 15% off all mugs through July.\",\n  \"is_vacation\": false\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shop Sections",
+      "item": [
+        {
+          "name": "GET List Shop Sections",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/sections",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "sections"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Shop Section",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/sections/40001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "sections", "40001"]
+            }
+          }
+        },
+        {
+          "name": "GET Shop Section - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/sections/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "sections", "99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Listings",
+      "item": [
+        {
+          "name": "GET List Listings (default - active)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/listings",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "listings"]
+            }
+          }
+        },
+        {
+          "name": "GET List Listings - draft state",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/listings?state=draft",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "listings"],
+              "query": [
+                { "key": "state", "value": "draft" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Listings - search query",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/listings?q=mug",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "listings"],
+              "query": [
+                { "key": "q", "value": "mug" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Listings - by section",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/listings?section_id=40002",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "listings"],
+              "query": [
+                { "key": "section_id", "value": "40002" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Listings - pagination",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/listings?limit=5&offset=5&sort_on=price&sort_order=asc",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "listings"],
+              "query": [
+                { "key": "limit", "value": "5" },
+                { "key": "offset", "value": "5" },
+                { "key": "sort_on", "value": "price" },
+                { "key": "sort_order", "value": "asc" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Listing",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1001"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Listing - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "99999"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Listing",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/listings",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "listings"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Ceramic Candle Holder - Crescent Moon\",\n  \"description\": \"Hand-thrown crescent moon shaped candle holder in matte black glaze. Holds a standard taper candle. 5 inches tall.\",\n  \"price\": 30.00,\n  \"quantity\": 8,\n  \"who_made\": \"i_did\",\n  \"when_made\": \"2020_2026\",\n  \"taxonomy_id\": 2078,\n  \"tags\": [\"candle holder\", \"ceramic\", \"moon\", \"handmade\", \"black ceramic\"],\n  \"materials\": [\"stoneware clay\", \"matte black glaze\"],\n  \"shop_section_id\": 40003,\n  \"shipping_profile_id\": 50001,\n  \"return_policy_id\": 60001,\n  \"processing_min\": 7,\n  \"processing_max\": 14,\n  \"item_weight\": 0.6,\n  \"item_weight_unit\": \"lb\",\n  \"item_length\": 3.0,\n  \"item_width\": 3.0,\n  \"item_height\": 5.0,\n  \"item_dimensions_unit\": \"in\",\n  \"is_customizable\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Listing - missing required field",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/listings",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "listings"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Incomplete Listing\",\n  \"price\": 10.00\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Listing - price and quantity",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1001"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"price\": 35.00,\n  \"quantity\": 12,\n  \"tags\": [\"ceramic mug\", \"handmade mug\", \"pottery mug\", \"stoneware\", \"speckled glaze\", \"coffee mug\", \"artisan mug\", \"gift for her\"]\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Listing - activate draft",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1020",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1020"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"state\": \"active\",\n  \"quantity\": 5\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Listing",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1017",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1017"]
+            }
+          }
+        },
+        {
+          "name": "DELETE Listing - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Listing Images",
+      "item": [
+        {
+          "name": "GET List Listing Images",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1001/images",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1001", "images"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Listing Image",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1001/images/90001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1001", "images", "90001"]
+            }
+          }
+        },
+        {
+          "name": "GET Listing Image - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1001/images/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1001", "images", "99999"]
+            }
+          }
+        },
+        {
+          "name": "DELETE Listing Image",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1001/images/90003",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1001", "images", "90003"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Receipts (Orders)",
+      "item": [
+        {
+          "name": "GET List Receipts (all)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts"]
+            }
+          }
+        },
+        {
+          "name": "GET List Receipts - paid only",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts?status=paid",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts"],
+              "query": [
+                { "key": "status", "value": "paid" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Receipts - not shipped",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts?was_shipped=false",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts"],
+              "query": [
+                { "key": "was_shipped", "value": "false" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Receipts - date range",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts?min_created=2025-03-01&max_created=2025-04-01",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts"],
+              "query": [
+                { "key": "min_created", "value": "2025-03-01" },
+                { "key": "max_created", "value": "2025-04-01" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Receipts - pagination",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts?limit=5&offset=5&sort_order=asc",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts"],
+              "query": [
+                { "key": "limit", "value": "5" },
+                { "key": "offset", "value": "5" },
+                { "key": "sort_order", "value": "asc" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Single Receipt (with transactions)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/2003",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "2003"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Receipt - gift order",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/2008",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "2008"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Receipt - cancelled",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/2010",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "2010"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Receipt - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "99999"]
+            }
+          }
+        },
+        {
+          "name": "PUT Update Receipt - mark shipped",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/2007",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "2007"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"shipping_carrier\": \"USPS\",\n  \"tracking_code\": \"9400111899223100999999\",\n  \"was_shipped\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Receipt - add tracking to paid order",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/2008",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "2008"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"shipping_carrier\": \"UPS\",\n  \"tracking_code\": \"1Z999AA10123456784\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Transactions",
+      "item": [
+        {
+          "name": "GET List Receipt Transactions",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/2003/transactions",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "2003", "transactions"]
+            }
+          }
+        },
+        {
+          "name": "GET List Receipt Transactions - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/receipts/99999/transactions",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "receipts", "99999", "transactions"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Transaction",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/transactions/3001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "transactions", "3001"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Transaction - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/transactions/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "transactions", "99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "item": [
+        {
+          "name": "GET List Shop Reviews",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/reviews",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "reviews"]
+            }
+          }
+        },
+        {
+          "name": "GET List Shop Reviews - min rating filter",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/reviews?min_rating=5",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "reviews"],
+              "query": [
+                { "key": "min_rating", "value": "5" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Shop Reviews - by listing",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/reviews?listing_id=1001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "reviews"],
+              "query": [
+                { "key": "listing_id", "value": "1001" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Shop Reviews - pagination",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/reviews?limit=3&offset=3",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "reviews"],
+              "query": [
+                { "key": "limit", "value": "3" },
+                { "key": "offset", "value": "3" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET List Listing Reviews",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1001/reviews",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1001", "reviews"]
+            }
+          }
+        },
+        {
+          "name": "GET List Listing Reviews - low ratings",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/listings/1011/reviews",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "listings", "1011", "reviews"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shipping Profiles",
+      "item": [
+        {
+          "name": "GET List Shipping Profiles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/shipping-profiles",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "shipping-profiles"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Shipping Profile",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/shipping-profiles/50001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "shipping-profiles", "50001"]
+            }
+          }
+        },
+        {
+          "name": "GET Shipping Profile - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/shipping-profiles/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "shipping-profiles", "99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Return Policies",
+      "item": [
+        {
+          "name": "GET List Return Policies",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/return-policies",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "return-policies"]
+            }
+          }
+        },
+        {
+          "name": "GET Single Return Policy",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/return-policies/60001",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "return-policies", "60001"]
+            }
+          }
+        },
+        {
+          "name": "GET Return Policy - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v3/application/shops/{{shop_id}}/return-policies/99999",
+              "host": ["{{base_url}}"],
+              "path": ["v3", "application", "shops", "{{shop_id}}", "return-policies", "99999"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

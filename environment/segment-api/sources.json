@@ -1,0 +1,42 @@
+[
+  {
+    "id": "src_web01",
+    "name": "Marketing Website",
+    "slug": "marketing-website",
+    "enabled": "true",
+    "type": "javascript",
+    "created_at": "2026-04-12T09:00:00Z"
+  },
+  {
+    "id": "src_ios01",
+    "name": "iOS App",
+    "slug": "ios-app",
+    "enabled": "true",
+    "type": "ios",
+    "created_at": "2026-04-14T09:00:00Z"
+  },
+  {
+    "id": "src_and01",
+    "name": "Android App",
+    "slug": "android-app",
+    "enabled": "true",
+    "type": "android",
+    "created_at": "2026-04-16T09:00:00Z"
+  },
+  {
+    "id": "src_srv01",
+    "name": "Backend Server",
+    "slug": "backend-server",
+    "enabled": "true",
+    "type": "server",
+    "created_at": "2026-04-18T09:00:00Z"
+  },
+  {
+    "id": "src_old01",
+    "name": "Legacy Portal",
+    "slug": "legacy-portal",
+    "enabled": "false",
+    "type": "javascript",
+    "created_at": "2026-03-01T09:00:00Z"
+  }
+]

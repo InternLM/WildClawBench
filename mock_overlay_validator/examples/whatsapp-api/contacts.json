@@ -1,0 +1,37 @@
+[
+  {
+    "wa_id": "15551550101",
+    "profile_name": "Emily Carson",
+    "phone_number": "+15551550101",
+    "opted_in": "true",
+    "last_seen": "2026-05-26T09:00:00Z"
+  },
+  {
+    "wa_id": "15551550102",
+    "profile_name": "Daniel Reyes",
+    "phone_number": "+15551550102",
+    "opted_in": "true",
+    "last_seen": "2026-05-25T18:30:00Z"
+  },
+  {
+    "wa_id": "15551550103",
+    "profile_name": "Priya Shah",
+    "phone_number": "+15551550103",
+    "opted_in": "true",
+    "last_seen": "2026-05-22T14:15:00Z"
+  },
+  {
+    "wa_id": "15551550104",
+    "profile_name": "Marcus Lee",
+    "phone_number": "+15551550104",
+    "opted_in": "false",
+    "last_seen": "2026-05-19T08:00:00Z"
+  },
+  {
+    "wa_id": "15551550105",
+    "profile_name": "Yara Cohen",
+    "phone_number": "+15551550105",
+    "opted_in": "true",
+    "last_seen": "2026-05-26T07:45:00Z"
+  }
+]

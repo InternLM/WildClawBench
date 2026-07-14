@@ -1,0 +1,56 @@
+[
+  {
+    "id": "19:team-eng0001@thread.tacv2",
+    "display_name": "Engineering",
+    "description": "Core engineering team for platform and infra",
+    "visibility": "private",
+    "is_archived": "false",
+    "web_url": "https://teams.microsoft.com/l/team/19%3Ateam-eng0001",
+    "member_ids": "user-001;user-002;user-003;user-004"
+  },
+  {
+    "id": "19:team-prod0002@thread.tacv2",
+    "display_name": "Product",
+    "description": "Product management and design collaboration",
+    "visibility": "private",
+    "is_archived": "false",
+    "web_url": "https://teams.microsoft.com/l/team/19%3Ateam-prod0002",
+    "member_ids": "user-002;user-005;user-006"
+  },
+  {
+    "id": "19:team-mktg0003@thread.tacv2",
+    "display_name": "Marketing",
+    "description": "Campaigns content and demand generation",
+    "visibility": "public",
+    "is_archived": "false",
+    "web_url": "https://teams.microsoft.com/l/team/19%3Ateam-mktg0003",
+    "member_ids": "user-006;user-007;user-008"
+  },
+  {
+    "id": "19:team-sales004@thread.tacv2",
+    "display_name": "Sales",
+    "description": "Account executives and SDR coordination",
+    "visibility": "private",
+    "is_archived": "false",
+    "web_url": "https://teams.microsoft.com/l/team/19%3Ateam-sales004",
+    "member_ids": "user-008;user-009;user-010"
+  },
+  {
+    "id": "19:team-allco005@thread.tacv2",
+    "display_name": "All Company",
+    "description": "Company-wide announcements and town halls",
+    "visibility": "public",
+    "is_archived": "false",
+    "web_url": "https://teams.microsoft.com/l/team/19%3Ateam-allco005",
+    "member_ids": "user-001;user-002;user-005;user-006;user-008"
+  },
+  {
+    "id": "19:team-arch0006@thread.tacv2",
+    "display_name": "Architecture Guild",
+    "description": "Cross-team architecture and standards",
+    "visibility": "private",
+    "is_archived": "true",
+    "web_url": "https://teams.microsoft.com/l/team/19%3Ateam-arch0006",
+    "member_ids": "user-001;user-003"
+  }
+]

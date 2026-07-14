@@ -1,0 +1,6 @@
+site_id	state	lga	tower_type	height_m	decom_date	salvage_status
+NSW-RET-001	Nasarawa	Lafia	monopole	30	2023-08-14	scrap_sold
+KAD-RET-002	Kaduna	Zaria	guyed	45	2023-09-02	parts_recovered
+KAN-RET-007	Kano	Tarauni	monopole	35	2023-09-19	scrap_sold
+ABA-RET-003	Abia	Umuahia	lattice	60	2023-10-11	parts_recovered
+PLA-RET-005	Plateau	Jos	guyed	40	2023-10-28	scrap_sold

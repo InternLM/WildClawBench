@@ -1,0 +1,19 @@
+message_id,conversation_id,direction,from_wa_id,to_wa_id,type,text,template_name,status,sent_at
+wamid.001,conv-71,inbound,32474456789,32478890123,text,"Market saturday, usual spot at half twelve?",,read,2026-10-07T20:01:00Z
+wamid.002,conv-71,outbound,32478890123,32474456789,text,"Yes, see you there.",,read,2026-10-07T20:04:00Z
+wamid.003,conv-72,inbound,32472234567,32478890123,text,Floor sorted for the 16th and 17th.,,read,2026-10-07T17:25:00Z
+wamid.004,conv-73,inbound,32473345678,32478890123,text,Tempering machine back in service.,,read,2026-10-07T13:12:00Z
+wamid.005,conv-74,inbound,32470123456,32478890123,text,"Box proof looks good, sending final tonight.",,read,2026-10-07T19:42:00Z
+wamid.006,conv-75,inbound,32475560011,32478890123,text,"Butter on the van, with you by ten.",,read,2026-10-08T07:10:00Z
+wamid.007,conv-72,outbound,32478890123,32472234567,text,"Thanks, appreciate it.",,read,2026-10-07T17:30:00Z
+wamid.008,conv-76,inbound,32476678901,32478890123,text,Good luck with the staircase.,,read,2026-10-08T07:52:00Z
+wamid.009,conv-77,inbound,32479001122,32478890123,text,"Apples shipping today, 60kg.",,delivered,2026-10-06T07:46:00Z
+wamid.010,conv-78,inbound,32470992211,32478890123,text,Menu cards ready for pickup.,,read,2026-10-05T13:50:00Z
+wamid.011,conv-71,inbound,32474456789,32478890123,text,Bring the apple tart for the walk.,,read,2026-10-07T20:06:00Z
+wamid.012,conv-73,outbound,32478890123,32473345678,text,"Good, calibrate before Friday.",,read,2026-10-07T13:20:00Z
+wamid.013,conv-79,inbound,32478113344,32478890123,text,"Chiller service done, all normal.",,read,2026-09-30T16:25:00Z
+wamid.014,conv-75,outbound,32478890123,32470123456,text,"Perfect, ship it.",,read,2026-10-07T19:50:00Z
+wamid.015,conv-80,inbound,32477889900,32478890123,text,Espresso restock on the way.,,read,2026-10-03T11:05:00Z
+wamid.016,conv-76,outbound,32478890123,32476678901,text,Cheers Philippe.,,read,2026-10-08T07:55:00Z
+wamid.017,conv-77,outbound,32478890123,32479001122,text,"Great, thanks.",,read,2026-10-06T07:50:00Z
+wamid.018,conv-81,inbound,32470445566,32478890123,text,Cleaning crew confirmed for tonight.,,read,2026-10-02T10:18:00Z

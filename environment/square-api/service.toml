@@ -1,0 +1,5 @@
+[service]
+name = "square-api"
+port = 8041
+env_var_name = "SQUARE_API_URL"
+healthcheck_path = "/health"

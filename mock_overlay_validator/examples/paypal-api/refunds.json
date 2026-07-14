@@ -1,0 +1,11 @@
+[
+  {
+    "id": "REF_1A234567BC890123",
+    "capture_id": "CAP_3C679384HN8401234",
+    "status": "COMPLETED",
+    "amount_value": "10.00",
+    "currency_code": "USD",
+    "note_to_payer": "Partial refund for late delivery",
+    "create_time": "2026-05-12T10:00:00Z"
+  }
+]

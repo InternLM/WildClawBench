@@ -1,0 +1,38 @@
+[
+  {
+    "user_id": "100001",
+    "first_name": "Carlos",
+    "last_name": "Martinez",
+    "email": "carlos.martinez@email.com",
+    "role": "owner",
+    "device_access": "all",
+    "shared_at": "2022-06-20T14:30:00.000Z"
+  },
+  {
+    "user_id": "100003",
+    "first_name": "Tom",
+    "last_name": "Reyes",
+    "email": "tom.reyes@email.com",
+    "role": "guest",
+    "device_access": "doorbell_only",
+    "shared_at": "2024-01-12T09:30:00.000Z"
+  },
+  {
+    "user_id": "100004",
+    "first_name": "Daniel",
+    "last_name": "Bennett",
+    "email": "daniel.bennett@email.com",
+    "role": "owner",
+    "device_access": "all",
+    "shared_at": "2024-03-15T10:00:00.000Z"
+  },
+  {
+    "user_id": "100005",
+    "first_name": "Sarah",
+    "last_name": "Bennett",
+    "email": "sarah.bennett@email.com",
+    "role": "owner",
+    "device_access": "all",
+    "shared_at": "2024-03-15T10:05:00.000Z"
+  }
+]

@@ -1,0 +1,7 @@
+Id,Name,AccountType,AccountSubType,CurrentBalance,Active,Classification,Description
+61,Job Materials,Expense,SuppliesMaterials,0.00,true,Expense,Materiaalkosten voor werkprojecten
+62,Shop Supplies,Expense,SuppliesMaterials,0.00,true,Expense,Werkplaatsbenodigdheden en verbruiksmaterialen
+64,Transport,Expense,Travel,210.00,true,Expense,Transport- en brandstofkosten
+70,Maatwerk meubel - aanbetaling,Income,ServiceFeeIncome,0.00,true,Revenue,Aanbetaling voor maatwerkmeubels
+71,Maatwerk - eindfactuur,Income,ServiceFeeIncome,0.00,true,Revenue,Eindfactuur voor maatwerkprojecten
+80,Bank - Rabobank,Bank,Checking,14820.55,true,Asset,Zakelijke bankrekening Rabobank

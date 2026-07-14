@@ -1,0 +1,28 @@
+{
+  "CompanyName": "Cedar Ridge Martial Arts Academy",
+  "LegalName": "Cedar Ridge Martial Arts Academy LLC",
+  "CompanyAddr": {
+    "Line1": "4827 SW Cedar Hills Blvd",
+    "City": "Beaverton",
+    "CountrySubDivisionCode": "OR",
+    "PostalCode": "97005"
+  },
+  "Email": {
+    "Address": "aaron.delgado@cedarridgemartialarts.com"
+  },
+  "PrimaryPhone": {
+    "FreeFormNumber": "(503) 555-0147"
+  },
+  "FiscalYearStartMonth": "January",
+  "Country": "US",
+  "IndustryType": "Sports & Recreation",
+  "NameValue": [
+    { "Name": "OwnerName", "Value": "Aaron Delgado" },
+    { "Name": "CoOwnerName", "Value": "Raj Patel" },
+    { "Name": "OwnershipSplit", "Value": "Aaron 40% / Raj 60%" }
+  ],
+  "MetaData": {
+    "CreateTime": "2021-03-15T10:00:00-07:00",
+    "LastUpdatedTime": "2026-04-30T09:15:00-07:00"
+  }
+}

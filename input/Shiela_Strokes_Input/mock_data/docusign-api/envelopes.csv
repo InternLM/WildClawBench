@@ -1,0 +1,16 @@
+envelope_id,status,email_subject,sender_name,sender_email,created_time,sent_time,completed_time,template_id
+env_001,completed,Tachyon Networks PO TCH-PO-2026-019,Amaka Obi,a.obi@telecorpng.com,2026-09-01T09:00:00Z,2026-09-01T10:00:00Z,2026-09-01T14:32:00Z,tpl_po
+env_002,sent,NCC Form 7B - 5G Spectrum Application (DRAFT),Fatima Musa,f.musa@telecorpng.com,2026-10-03T15:00:00Z,2026-10-03T16:00:00Z,,tpl_ncc7b
+env_003,created,5G Pilot Vendor Equipment Acceptance,Amaka Obi,a.obi@telecorpng.com,2026-10-04T11:00:00Z,,,tpl_acceptance
+env_004,completed,Q3 vendor PO Q3-VND-2026-014 - completed,Amaka Obi,a.obi@telecorpng.com,2026-07-05T10:00:00Z,2026-07-05T11:00:00Z,2026-07-08T15:00:00Z,tpl_po
+env_005,completed,Engineering office lease addendum,Amaka Obi,a.obi@telecorpng.com,2026-05-20T10:00:00Z,2026-05-20T11:00:00Z,2026-05-22T17:00:00Z,tpl_po
+env_006,completed,Niger QoS field survey contractor agreement,Amaka Obi,a.obi@telecorpng.com,2026-06-12T09:00:00Z,2026-06-12T10:00:00Z,2026-06-14T14:00:00Z,tpl_po
+env_007,completed,Nasarawa Phase 1 land lease batch 1,Amaka Obi,a.obi@telecorpng.com,2026-08-15T09:00:00Z,2026-08-15T10:00:00Z,2026-08-18T16:00:00Z,tpl_po
+env_008,completed,Nasarawa Phase 1 land lease batch 2,Amaka Obi,a.obi@telecorpng.com,2026-08-22T09:00:00Z,2026-08-22T10:00:00Z,2026-08-25T15:00:00Z,tpl_po
+env_009,completed,Nasarawa Phase 1 land lease batch 3,Amaka Obi,a.obi@telecorpng.com,2026-09-05T09:00:00Z,2026-09-05T10:00:00Z,2026-09-08T14:00:00Z,tpl_po
+env_010,completed,Vendor onboarding - Tachyon Networks NDA,Amaka Obi,a.obi@telecorpng.com,2026-04-15T09:00:00Z,2026-04-15T10:00:00Z,2026-04-18T11:00:00Z,tpl_po
+env_011,completed,5G CBD pilot - vendor MSA addendum,Amaka Obi,a.obi@telecorpng.com,2026-04-30T09:00:00Z,2026-04-30T10:00:00Z,2026-05-03T13:00:00Z,tpl_po
+env_012,voided,Sub-vendor agreement (cancelled),Amaka Obi,a.obi@telecorpng.com,2026-06-01T09:00:00Z,2026-06-01T10:00:00Z,,tpl_po
+env_013,completed,Insurance addendum - 5G CBD pilot,Amaka Obi,a.obi@telecorpng.com,2026-07-22T09:00:00Z,2026-07-22T10:00:00Z,2026-07-25T14:00:00Z,tpl_po
+env_014,completed,Community engagement - traditional leader MoU template,Amaka Obi,a.obi@telecorpng.com,2026-08-10T09:00:00Z,2026-08-10T10:00:00Z,2026-08-12T15:00:00Z,tpl_po
+env_015,completed,Form 7B prior submission Q3 archive,Fatima Musa,f.musa@telecorpng.com,2026-07-12T09:00:00Z,2026-07-12T10:00:00Z,2026-07-14T15:00:00Z,tpl_ncc7b

@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Trello Mock API",
+    "description": "Test collection for the mock Trello REST API (boards, lists, cards, checklists, members). Base URL defaults to http://localhost:8030. In docker-compose, the service is reachable at http://trello-api:8030. Like real Trello, write operations pass fields as query params.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8030"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list my boards", "request": {"method": "GET", "url": "{{baseUrl}}/1/members/me/boards"}},
+    {"name": "get board", "request": {"method": "GET", "url": "{{baseUrl}}/1/boards/60b1000000000000000000b1"}},
+    {"name": "list board lists", "request": {"method": "GET", "url": "{{baseUrl}}/1/boards/60b1000000000000000000b1/lists"}},
+    {"name": "list cards in list", "request": {"method": "GET", "url": "{{baseUrl}}/1/lists/61c1000000000000000000c1/cards"}},
+    {"name": "create card", "request": {"method": "POST", "url": "{{baseUrl}}/1/cards?idList=61c1000000000000000000c1&name=Investigate%20webhook%20retries&desc=Add%20exponential%20backoff"}},
+    {"name": "move card to Doing", "request": {"method": "PUT", "url": "{{baseUrl}}/1/cards/62d1000000000000000000d4?idList=61c1000000000000000000c2"}},
+    {"name": "delete card", "request": {"method": "DELETE", "url": "{{baseUrl}}/1/cards/62d1000000000000000000da"}},
+    {"name": "list card checklists", "request": {"method": "GET", "url": "{{baseUrl}}/1/cards/62d1000000000000000000d2/checklists"}},
+    {"name": "create checklist", "request": {"method": "POST", "url": "{{baseUrl}}/1/checklists?idCard=62d1000000000000000000d4&name=Spike%20tasks"}}
+  ]
+}

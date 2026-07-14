@@ -1,0 +1,65 @@
+[
+  {
+    "id": "800100200300400001",
+    "guild_id": "900100200300400001",
+    "name": "general",
+    "type": "0",
+    "position": "0",
+    "topic": "General chatter and announcements",
+    "nsfw": "false"
+  },
+  {
+    "id": "800100200300400002",
+    "guild_id": "900100200300400001",
+    "name": "support",
+    "type": "0",
+    "position": "1",
+    "topic": "Ask for help with Orbit Labs products",
+    "nsfw": "false"
+  },
+  {
+    "id": "800100200300400003",
+    "guild_id": "900100200300400001",
+    "name": "off-topic",
+    "type": "0",
+    "position": "2",
+    "topic": "Anything goes (within reason)",
+    "nsfw": "false"
+  },
+  {
+    "id": "800100200300400004",
+    "guild_id": "900100200300400001",
+    "name": "Voice Lounge",
+    "type": "2",
+    "position": "3",
+    "topic": "",
+    "nsfw": "false"
+  },
+  {
+    "id": "800100200300400005",
+    "guild_id": "900100200300400002",
+    "name": "general",
+    "type": "0",
+    "position": "0",
+    "topic": "Welcome indie devs",
+    "nsfw": "false"
+  },
+  {
+    "id": "800100200300400006",
+    "guild_id": "900100200300400002",
+    "name": "showcase",
+    "type": "0",
+    "position": "1",
+    "topic": "Share your work-in-progress builds",
+    "nsfw": "false"
+  },
+  {
+    "id": "800100200300400007",
+    "guild_id": "900100200300400002",
+    "name": "Standup VC",
+    "type": "2",
+    "position": "2",
+    "topic": "",
+    "nsfw": "false"
+  }
+]

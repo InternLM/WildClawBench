@@ -1,0 +1,34 @@
+{
+  "info": {
+    "name": "Intercom Mock API",
+    "description": "Test collection for the mock Intercom API service. Base URL defaults to http://localhost:8070. In docker-compose, the service is reachable at http://intercom-api:8070.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8070"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list contacts", "request": {"method": "GET", "url": "{{baseUrl}}/contacts?role=user"}},
+    {"name": "get contact", "request": {"method": "GET", "url": "{{baseUrl}}/contacts/contact-mara"}},
+    {"name": "create contact", "request": {"method": "POST", "url": "{{baseUrl}}/contacts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"role\": \"lead\", \"name\": \"Priya Nair\", \"email\": \"priya@delta-io.com\"}"}}},
+    {"name": "list conversations", "request": {"method": "GET", "url": "{{baseUrl}}/conversations?state=open"}},
+    {"name": "get conversation", "request": {"method": "GET", "url": "{{baseUrl}}/conversations/conv-1001"}},
+    {"name": "create conversation", "request": {"method": "POST", "url": "{{baseUrl}}/conversations",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"contact_id\": \"contact-hannah\", \"body\": \"How do I invite teammates?\", \"title\": \"Inviting teammates\"}"}}},
+    {"name": "reply to conversation", "request": {"method": "POST", "url": "{{baseUrl}}/conversations/conv-1001/reply",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"body\": \"We pushed a fix; can you retry the export?\", \"author_type\": \"admin\", \"author_id\": \"admin-jonas\"}"}}},
+    {"name": "assign conversation", "request": {"method": "POST", "url": "{{baseUrl}}/conversations/conv-1003/parts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"message_type\": \"assignment\", \"assignee_id\": \"admin-helena\"}"}}},
+    {"name": "close conversation", "request": {"method": "POST", "url": "{{baseUrl}}/conversations/conv-1001/parts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"message_type\": \"close\", \"body\": \"Resolved, closing this out.\"}"}}},
+    {"name": "list companies", "request": {"method": "GET", "url": "{{baseUrl}}/companies"}},
+    {"name": "get company", "request": {"method": "GET", "url": "{{baseUrl}}/companies/company-brightpath"}}
+  ]
+}

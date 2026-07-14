@@ -1,0 +1,11 @@
+{
+  "uuid": "user-patricia-waters",
+  "name": "Patricia Waters",
+  "slug": "patricia-waters",
+  "email": "patricia.waters@Finthesiss.ai",
+  "scheduling_url": "https://calendly.example/patricia-waters",
+  "timezone": "Europe/Dublin",
+  "current_organization": "org-waters-ot",
+  "created_at": "2025-06-01T09:00:00.000000Z",
+  "updated_at": "2026-09-20T14:00:00.000000Z"
+}

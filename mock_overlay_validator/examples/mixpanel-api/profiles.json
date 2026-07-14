@@ -1,0 +1,47 @@
+[
+  {
+    "distinct_id": "user-aria",
+    "name": "Aria Mensah",
+    "email": "aria.mensah@example.com",
+    "country": "US",
+    "plan": "paid",
+    "total_events": "6",
+    "last_seen": "2025-05-03T18:02:00Z"
+  },
+  {
+    "distinct_id": "user-bode",
+    "name": "Bode Larsen",
+    "email": "bode.larsen@example.com",
+    "country": "DE",
+    "plan": "paid",
+    "total_events": "5",
+    "last_seen": "2025-05-03T09:10:00Z"
+  },
+  {
+    "distinct_id": "user-cleo",
+    "name": "Cleo Ferraro",
+    "email": "cleo.ferraro@example.com",
+    "country": "GB",
+    "plan": "free",
+    "total_events": "5",
+    "last_seen": "2025-05-03T19:50:00Z"
+  },
+  {
+    "distinct_id": "user-dane",
+    "name": "Dane Whitlock",
+    "email": "dane.whitlock@example.com",
+    "country": "US",
+    "plan": "free",
+    "total_events": "2",
+    "last_seen": "2025-05-04T08:30:00Z"
+  },
+  {
+    "distinct_id": "user-esme",
+    "name": "Esme Cardona",
+    "email": "esme.cardona@example.com",
+    "country": "FR",
+    "plan": "free",
+    "total_events": "0",
+    "last_seen": "2025-04-28T12:00:00Z"
+  }
+]

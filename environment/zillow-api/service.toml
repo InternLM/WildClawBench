@@ -1,0 +1,5 @@
+[service]
+name = "zillow-api"
+port = 8011
+env_var_name = "ZILLOW_API_URL"
+healthcheck_path = "/health"

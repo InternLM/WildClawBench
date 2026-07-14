@@ -1,0 +1,38 @@
+[
+  {
+    "id": "comment-001",
+    "parent_page_id": "page-task-001",
+    "parent_block_id": "block-005",
+    "author_id": "user-jonas",
+    "text": "Can we land the shim behind a feature flag?",
+    "created_time": "2026-05-15T11:00:00.000Z",
+    "resolved": "false"
+  },
+  {
+    "id": "comment-002",
+    "parent_page_id": "page-task-001",
+    "parent_block_id": "block-005",
+    "author_id": "user-amelia",
+    "text": "Yes, gating on `auth_v2_rollout`.",
+    "created_time": "2026-05-15T11:05:00.000Z",
+    "resolved": "false"
+  },
+  {
+    "id": "comment-003",
+    "parent_page_id": "page-okr-q2-2",
+    "parent_block_id": "",
+    "author_id": "user-amelia",
+    "text": "Multi-region failover is blocked on capacity in eu-west-2.",
+    "created_time": "2026-05-11T11:00:00.000Z",
+    "resolved": "false"
+  },
+  {
+    "id": "comment-004",
+    "parent_page_id": "page-task-004",
+    "parent_block_id": "",
+    "author_id": "user-noor",
+    "text": "Closing — vendor report signed off.",
+    "created_time": "2026-05-12T12:00:00.000Z",
+    "resolved": "true"
+  }
+]

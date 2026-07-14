@@ -1,0 +1,5 @@
+[service]
+name = "outlook-api"
+port = 8087
+env_var_name = "OUTLOOK_API_URL"
+healthcheck_path = "/health"

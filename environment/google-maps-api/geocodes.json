@@ -1,0 +1,58 @@
+[
+  {
+    "query": "san francisco",
+    "formatted_address": "San Francisco, CA, USA",
+    "lat": "37.7749",
+    "lng": "-122.4194",
+    "place_id": "ChIJgeo0000000001",
+    "location_type": "APPROXIMATE"
+  },
+  {
+    "query": "union square",
+    "formatted_address": "Union Square, San Francisco, CA 94108, USA",
+    "lat": "37.7880",
+    "lng": "-122.4075",
+    "place_id": "ChIJgeo0000000002",
+    "location_type": "ROOFTOP"
+  },
+  {
+    "query": "fishermans wharf",
+    "formatted_address": "Fisherman's Wharf, San Francisco, CA 94133, USA",
+    "lat": "37.8080",
+    "lng": "-122.4177",
+    "place_id": "ChIJgeo0000000003",
+    "location_type": "ROOFTOP"
+  },
+  {
+    "query": "mission district",
+    "formatted_address": "Mission District, San Francisco, CA, USA",
+    "lat": "37.7599",
+    "lng": "-122.4148",
+    "place_id": "ChIJgeo0000000004",
+    "location_type": "APPROXIMATE"
+  },
+  {
+    "query": "oakland",
+    "formatted_address": "Oakland, CA, USA",
+    "lat": "37.8044",
+    "lng": "-122.2712",
+    "place_id": "ChIJgeo0000000005",
+    "location_type": "APPROXIMATE"
+  },
+  {
+    "query": "berkeley",
+    "formatted_address": "Berkeley, CA, USA",
+    "lat": "37.8715",
+    "lng": "-122.2730",
+    "place_id": "ChIJgeo0000000006",
+    "location_type": "APPROXIMATE"
+  },
+  {
+    "query": "palo alto",
+    "formatted_address": "Palo Alto, CA, USA",
+    "lat": "37.4419",
+    "lng": "-122.1430",
+    "place_id": "ChIJgeo0000000007",
+    "location_type": "APPROXIMATE"
+  }
+]

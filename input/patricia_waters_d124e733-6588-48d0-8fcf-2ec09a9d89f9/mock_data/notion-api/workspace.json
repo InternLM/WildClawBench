@@ -1,0 +1,14 @@
+{
+  "id": "ws-pw",
+  "name": "Waters Pediatric OT",
+  "domain": "waters-ot",
+  "owner_user_id": "user-pw",
+  "plan": "personal",
+  "created_time": "2025-02-01T09:00:00.000Z",
+  "icon": "https://www.notion.so/icons/leaf_green.svg",
+  "settings": {
+    "default_page_size": 50,
+    "ai_blocks_enabled": false,
+    "public_sharing_enabled": false
+  }
+}

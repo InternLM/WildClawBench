@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "UPS Mock API",
+    "description": "Test collection for the mock UPS REST API (rating, shipping, tracking). Base URL defaults to http://localhost:8096. In docker-compose, the service is reachable at http://ups-api:8096.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8096"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "rate", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/api/rating/v1/Rate", "body": {"mode": "raw", "raw": "{\n  \"origin_zip\": \"10001\",\n  \"dest_zip\": \"90001\",\n  \"weight_lb\": 5.0\n}"}}},
+    {"name": "ship", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/api/shipments/v1/ship", "body": {"mode": "raw", "raw": "{\n  \"origin_zip\": \"10001\",\n  \"dest_zip\": \"90001\",\n  \"weight_lb\": 5.0,\n  \"service_code\": \"03\"\n}"}}},
+    {"name": "track", "request": {"method": "GET", "url": "{{baseUrl}}/api/track/v1/details/1Z999AA10123456784"}}
+  ]
+}

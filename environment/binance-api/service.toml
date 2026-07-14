@@ -1,0 +1,5 @@
+[service]
+name = "binance-api"
+port = 8097
+env_var_name = "BINANCE_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "U01AMELIA",
+    "name": "amelia",
+    "real_name": "Amelia Ortega",
+    "email": "amelia@cascade-eng.com",
+    "is_admin": "true",
+    "is_bot": "false",
+    "tz": "America/Los_Angeles",
+    "status_text": "heads-down on auth v2",
+    "presence": "active"
+  },
+  {
+    "id": "U01JONAS",
+    "name": "jonas",
+    "real_name": "Jonas Pereira",
+    "email": "jonas@cascade-eng.com",
+    "is_admin": "false",
+    "is_bot": "false",
+    "tz": "America/Sao_Paulo",
+    "status_text": "",
+    "presence": "active"
+  },
+  {
+    "id": "U01HELENA",
+    "name": "helena",
+    "real_name": "Helena Park",
+    "email": "helena@cascade-eng.com",
+    "is_admin": "false",
+    "is_bot": "false",
+    "tz": "America/New_York",
+    "status_text": "reviewing PRs",
+    "presence": "active"
+  },
+  {
+    "id": "U01ROHIT",
+    "name": "rohit",
+    "real_name": "Rohit Bansal",
+    "email": "rohit@cascade-eng.com",
+    "is_admin": "false",
+    "is_bot": "false",
+    "tz": "Asia/Kolkata",
+    "status_text": "",
+    "presence": "away"
+  },
+  {
+    "id": "U01NOOR",
+    "name": "noor",
+    "real_name": "Noor Aziz",
+    "email": "noor@cascade-eng.com",
+    "is_admin": "false",
+    "is_bot": "false",
+    "tz": "Asia/Dubai",
+    "status_text": "onboarding",
+    "presence": "active"
+  },
+  {
+    "id": "U01BOT",
+    "name": "deployer",
+    "real_name": "Deployer Bot",
+    "email": "",
+    "is_admin": "false",
+    "is_bot": "true",
+    "tz": "America/Los_Angeles",
+    "status_text": "",
+    "presence": "active"
+  }
+]

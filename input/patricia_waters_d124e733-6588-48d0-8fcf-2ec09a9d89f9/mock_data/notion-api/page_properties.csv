@@ -1,0 +1,27 @@
+page_id,property_name,property_type,value
+np-c-rm,Status,select,Confirmed
+np-c-rm,ConsentOnFile,select,No
+np-c-rm,Cohort,select,Autumn 2026
+np-c-rm,ReferralSource,select,GP
+np-c-tk,Status,select,Confirmed
+np-c-tk,ConsentOnFile,select,Yes
+np-c-tk,Cohort,select,Autumn 2026
+np-c-tk,ReferralSource,select,Self
+np-c-ab,Status,select,Confirmed
+np-c-ab,ConsentOnFile,select,Yes
+np-c-ab,Cohort,select,Autumn 2026
+np-c-ab,ReferralSource,select,Self
+np-c-sd,Status,select,Confirmed
+np-c-sd,ConsentOnFile,select,Yes
+np-c-sd,Cohort,select,Autumn 2026
+np-c-sd,ReferralSource,select,GP
+np-c-lo,Status,select,Confirmed
+np-c-lo,ConsentOnFile,select,Yes
+np-c-lo,Cohort,select,Autumn 2026
+np-c-lo,ReferralSource,select,School
+np-c-jp,Status,select,Confirmed
+np-c-jp,ConsentOnFile,select,No
+np-c-jp,Cohort,select,Autumn 2026
+np-c-jp,ReferralSource,select,Self
+np-run,Status,select,Active
+np-reflect,Status,select,Ongoing

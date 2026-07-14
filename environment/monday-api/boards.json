@@ -1,0 +1,26 @@
+[
+  {
+    "board_id": "board-101",
+    "workspace_id": "ws-1",
+    "name": "Sprint Backlog",
+    "description": "Current sprint work items",
+    "state": "active",
+    "board_kind": "public"
+  },
+  {
+    "board_id": "board-102",
+    "workspace_id": "ws-1",
+    "name": "Bug Tracker",
+    "description": "Reported defects and triage",
+    "state": "active",
+    "board_kind": "public"
+  },
+  {
+    "board_id": "board-201",
+    "workspace_id": "ws-2",
+    "name": "Q3 Campaigns",
+    "description": "Marketing campaign planning",
+    "state": "active",
+    "board_kind": "public"
+  }
+]

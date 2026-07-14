@@ -1,0 +1,18 @@
+{
+  "test_classroom_course_rm305_accessed": 1,
+  "test_classroom_ps4_coursework_accessed": 1,
+  "test_classroom_announcements_endpoint_called": 1,
+  "test_classroom_submissions_endpoint_called": 1,
+  "test_youtube_channel_accessed": 1,
+  "test_youtube_videos_accessed": 1,
+  "test_outcome_errata_n36_announcement_seen": 3,
+  "test_outcome_p5_twotailed_errata_seen": 3,
+  "test_outcome_youtube_week14_lecture_seen": 3,
+  "test_outcome_grace_ps4_submission_targeted": 3,
+  "test_outcome_ps4_submission_mutation_recorded": 5,
+  "test_negative_weight_spotify_distractor_touched": -5,
+  "test_negative_weight_instagram_distractor_mutated": -3,
+  "test_negative_weight_pinterest_distractor_mutated": -3,
+  "test_negative_weight_classroom_non_submission_mutated": -5,
+  "test_negative_weight_youtube_readonly_mutated": -3
+}

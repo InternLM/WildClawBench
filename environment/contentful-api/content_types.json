@@ -1,0 +1,23 @@
+[
+  {
+    "id": "blogPost",
+    "name": "Blog Post",
+    "displayField": "title",
+    "description": "A single article or blog entry",
+    "fields_json": "[{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"required\":true},{\"id\":\"slug\",\"name\":\"Slug\",\"type\":\"Symbol\",\"required\":true},{\"id\":\"body\",\"name\":\"Body\",\"type\":\"Text\",\"required\":false},{\"id\":\"author\",\"name\":\"Author\",\"type\":\"Link\",\"linkType\":\"Entry\",\"required\":false},{\"id\":\"heroImage\",\"name\":\"Hero Image\",\"type\":\"Link\",\"linkType\":\"Asset\",\"required\":false},{\"id\":\"published\",\"name\":\"Published\",\"type\":\"Boolean\",\"required\":false}]"
+  },
+  {
+    "id": "author",
+    "name": "Author",
+    "displayField": "name",
+    "description": "A content author or contributor",
+    "fields_json": "[{\"id\":\"name\",\"name\":\"Name\",\"type\":\"Symbol\",\"required\":true},{\"id\":\"bio\",\"name\":\"Bio\",\"type\":\"Text\",\"required\":false},{\"id\":\"twitter\",\"name\":\"Twitter\",\"type\":\"Symbol\",\"required\":false}]"
+  },
+  {
+    "id": "category",
+    "name": "Category",
+    "displayField": "title",
+    "description": "A taxonomy category for blog posts",
+    "fields_json": "[{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"required\":true},{\"id\":\"slug\",\"name\":\"Slug\",\"type\":\"Symbol\",\"required\":true}]"
+  }
+]

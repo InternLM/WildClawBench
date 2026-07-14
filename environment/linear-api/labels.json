@@ -1,0 +1,137 @@
+[
+  {
+    "id": "label-bug",
+    "name": "Bug",
+    "color": "#eb5757",
+    "description": "Something isn't working correctly",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-critical",
+    "name": "Critical",
+    "color": "#eb5757",
+    "description": "Critical severity",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-high",
+    "name": "High",
+    "color": "#f2994a",
+    "description": "High severity",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-medium",
+    "name": "Medium",
+    "color": "#f2c94c",
+    "description": "Medium severity",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-low",
+    "name": "Low",
+    "color": "#bdbdbd",
+    "description": "Low severity",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-dark-mode",
+    "name": "Dark Mode",
+    "color": "#5e6ad2",
+    "description": "Dark mode contrast and theming issues",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-form-validation",
+    "name": "Form Validation",
+    "color": "#26b5ce",
+    "description": "Form validation behavior and copy",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-medications",
+    "name": "Medications",
+    "color": "#bb6bd9",
+    "description": "Medications module of the patient portal",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-dashboard",
+    "name": "Dashboard",
+    "color": "#6fcf97",
+    "description": "Dashboard module of the patient portal",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-charge-nurse-review",
+    "name": "Charge Nurse Review",
+    "color": "#f2c94c",
+    "description": "Requires charge nurse spot-test sign-off",
+    "teamId": "team-ux",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-feature",
+    "name": "Feature",
+    "color": "#26B5CE",
+    "description": "New feature work",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-api",
+    "name": "API",
+    "color": "#5E6AD2",
+    "description": "API surface changes",
+    "teamId": "team-backend",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-frontend",
+    "name": "Frontend",
+    "color": "#F2994A",
+    "description": "Frontend client changes",
+    "teamId": "team-frontend",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-performance",
+    "name": "Performance",
+    "color": "#6FCF97",
+    "description": "Performance and latency work",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  },
+  {
+    "id": "label-blocked",
+    "name": "Blocked",
+    "color": "#EB5757",
+    "description": "Blocked on external dependency",
+    "teamId": "",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-01-15T09:00:00"
+  }
+]

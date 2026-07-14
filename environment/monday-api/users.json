@@ -1,0 +1,37 @@
+[
+  {
+    "user_id": "usr-1",
+    "name": "Amelia Stone",
+    "email": "amelia@orbit-labs.example.com",
+    "title": "Engineering Manager",
+    "is_admin": "true"
+  },
+  {
+    "user_id": "usr-2",
+    "name": "Helena Park",
+    "email": "helena@orbit-labs.example.com",
+    "title": "Backend Engineer",
+    "is_admin": "false"
+  },
+  {
+    "user_id": "usr-3",
+    "name": "Marco Bianchi",
+    "email": "marco@orbit-labs.example.com",
+    "title": "Frontend Engineer",
+    "is_admin": "false"
+  },
+  {
+    "user_id": "usr-4",
+    "name": "Sara Okonkwo",
+    "email": "sara@orbit-labs.example.com",
+    "title": "Marketing Lead",
+    "is_admin": "false"
+  },
+  {
+    "user_id": "usr-5",
+    "name": "Tom Becker",
+    "email": "tom@orbit-labs.example.com",
+    "title": "Content Strategist",
+    "is_admin": "false"
+  }
+]

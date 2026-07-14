@@ -1,0 +1,5 @@
+id,summary,description,time_zone,access_role,primary,color_id
+kayla.morgan@gmail.com,Kayla Morgan,Personal calendar,America/New_York,owner,true,1
+buncombe-heritage_shifts@group.calendar.google.com,Buncombe Heritage Society,Volunteer schedule and Society events,America/New_York,writer,false,9
+family@group.calendar.google.com,Family,Visits and milestones,America/New_York,owner,false,10
+laurelcreek-church@group.calendar.google.com,Laurel Creek Community Church,Sunday services and church events,America/New_York,reader,false,11

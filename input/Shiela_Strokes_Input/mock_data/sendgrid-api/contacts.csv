@@ -1,0 +1,7 @@
+id,email,first_name,last_name,country,list_ids,created_at,updated_at
+sgc_1,sheila.stokes@Finthesiss.ai,Sheila,Stokes,NG,"lst_internal,lst_workspace",2024-01-15T10:00:00Z,2026-09-30T15:00:00Z
+sgc_2,b.olatunji@telecorpng.com,Babatunde,Olatunji,NG,"lst_internal,lst_leadership",2024-01-15T10:00:00Z,2026-09-30T15:00:00Z
+sgc_3,a.obi@telecorpng.com,Amaka,Obi,NG,"lst_internal,lst_pmo",2024-04-12T09:00:00Z,2026-09-30T15:00:00Z
+sgc_4,f.musa@telecorpng.com,Fatima,Musa,NG,"lst_internal,lst_regulatory",2024-04-12T09:00:00Z,2026-09-30T15:00:00Z
+sgc_5,ola.adeyemo@tachyon-networks.ng,Ola,Adeyemo,NG,lst_vendor,2026-04-12T09:00:00Z,2026-10-04T03:30:00Z
+sgc_6,y.ibrahim@ncc.gov.ng,Yusuf,Ibrahim,NG,"lst_external,lst_ncc",2024-08-12T09:00:00Z,2026-09-30T15:00:00Z

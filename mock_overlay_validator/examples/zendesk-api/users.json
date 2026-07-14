@@ -1,0 +1,65 @@
+[
+  {
+    "id": "601",
+    "name": "Amelia Ortega",
+    "email": "amelia.ortega@orbit-labs.com",
+    "role": "admin",
+    "organization_id": "",
+    "active": "true",
+    "created_at": "2025-09-01T10:00:00Z"
+  },
+  {
+    "id": "602",
+    "name": "Jonas Pereira",
+    "email": "jonas.pereira@orbit-labs.com",
+    "role": "agent",
+    "organization_id": "",
+    "active": "true",
+    "created_at": "2025-09-04T11:30:00Z"
+  },
+  {
+    "id": "603",
+    "name": "Helena Park",
+    "email": "helena.park@orbit-labs.com",
+    "role": "agent",
+    "organization_id": "",
+    "active": "true",
+    "created_at": "2025-09-12T14:20:00Z"
+  },
+  {
+    "id": "604",
+    "name": "Maya Fernandez",
+    "email": "maya.fernandez@aurorabistro.com",
+    "role": "end-user",
+    "organization_id": "501",
+    "active": "true",
+    "created_at": "2025-11-02T10:00:00Z"
+  },
+  {
+    "id": "605",
+    "name": "Daniel Cho",
+    "email": "daniel.cho@helixrobotics.io",
+    "role": "end-user",
+    "organization_id": "502",
+    "active": "true",
+    "created_at": "2025-09-15T09:30:00Z"
+  },
+  {
+    "id": "606",
+    "name": "Priya Nair",
+    "email": "priya.nair@lumendesign.co",
+    "role": "end-user",
+    "organization_id": "503",
+    "active": "true",
+    "created_at": "2026-01-10T14:00:00Z"
+  },
+  {
+    "id": "607",
+    "name": "Tomas Reyes",
+    "email": "tomas.reyes@pelagicfreight.com",
+    "role": "end-user",
+    "organization_id": "504",
+    "active": "true",
+    "created_at": "2026-02-20T16:00:00Z"
+  }
+]

@@ -1,0 +1,6 @@
+id,name,type,messages_total,messages_unread,threads_total,threads_unread
+INBOX,INBOX,system,1284,37,910,21
+IMPORTANT,IMPORTANT,system,220,8,180,6
+SENT,SENT,system,640,0,590,0
+DRAFTS,DRAFT,system,3,0,3,0
+CATEGORY_PROMOTIONS,CATEGORY_PROMOTIONS,system,410,12,360,9

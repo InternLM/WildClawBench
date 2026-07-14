@@ -1,0 +1,5 @@
+id,name,email,avatar_url,type,bot,owner_workspace,created_time
+nuser_sheila,Sheila Stokes,sheila.stokes@Finthesiss.ai,,person,false,wks_sheila_personal,2024-01-15T10:00:00+01:00
+nuser_yetunde,Yetunde Bakare,yetunde.bakare.engineer@gmail.com,,person,false,wks_sheila_personal,2024-04-12T14:00:00+01:00
+nuser_aisha,Aisha Mohammed,aisha.mohammed.engineer@gmail.com,,person,false,wks_sheila_personal,2025-02-01T11:00:00+01:00
+nuser_funmi,Funmi Adesanya,funmi.adesanya.engineer@gmail.com,,person,false,wks_sheila_personal,2025-05-15T09:00:00+01:00

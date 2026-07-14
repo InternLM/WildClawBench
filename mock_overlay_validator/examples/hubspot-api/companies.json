@@ -1,0 +1,46 @@
+[
+  {
+    "id": "301",
+    "name": "Helix Robotics Inc",
+    "domain": "helixrobotics.io",
+    "industry": "Robotics",
+    "city": "Austin",
+    "state": "TX",
+    "numberofemployees": "240",
+    "annualrevenue": "42000000",
+    "createdate": "2025-09-15T09:30:00Z"
+  },
+  {
+    "id": "302",
+    "name": "Lumen Design Studio",
+    "domain": "lumendesign.co",
+    "industry": "Design Services",
+    "city": "Portland",
+    "state": "OR",
+    "numberofemployees": "28",
+    "annualrevenue": "3200000",
+    "createdate": "2026-01-10T14:00:00Z"
+  },
+  {
+    "id": "303",
+    "name": "Pelagic Freight Co",
+    "domain": "pelagicfreight.com",
+    "industry": "Logistics",
+    "city": "Long Beach",
+    "state": "CA",
+    "numberofemployees": "510",
+    "annualrevenue": "88000000",
+    "createdate": "2026-02-20T16:00:00Z"
+  },
+  {
+    "id": "304",
+    "name": "Quanta Analytics",
+    "domain": "quanta.ai",
+    "industry": "Software",
+    "city": "San Francisco",
+    "state": "CA",
+    "numberofemployees": "75",
+    "annualrevenue": "11000000",
+    "createdate": "2025-12-01T08:00:00Z"
+  }
+]

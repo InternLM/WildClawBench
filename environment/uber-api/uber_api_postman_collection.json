@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "Uber Mock API v1.2",
+    "description": "Test collection for the mock Uber Rides API service. Base URL defaults to http://localhost:8036. In docker-compose, the service is reachable at http://uber-api:8036.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8036"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list products", "request": {"method": "GET", "url": "{{baseUrl}}/v1.2/products?latitude=37.7752&longitude=-122.4180"}},
+    {"name": "get product", "request": {"method": "GET", "url": "{{baseUrl}}/v1.2/products/uberx"}},
+    {"name": "price estimates", "request": {"method": "GET", "url": "{{baseUrl}}/v1.2/estimates/price?start_latitude=37.7752&start_longitude=-122.4180&end_latitude=37.7956&end_longitude=-122.3934"}},
+    {"name": "time estimates", "request": {"method": "GET", "url": "{{baseUrl}}/v1.2/estimates/time?start_latitude=37.7752&start_longitude=-122.4180"}},
+    {"name": "request ride", "request": {"method": "POST", "url": "{{baseUrl}}/v1.2/requests",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"product_id\": \"uberx\", \"start_latitude\": 37.7752, \"start_longitude\": -122.4180, \"end_latitude\": 37.7956, \"end_longitude\": -122.3934}"}}},
+    {"name": "get request", "request": {"method": "GET", "url": "{{baseUrl}}/v1.2/requests/req-7f0011aa"}},
+    {"name": "cancel request (400 expected - already-completed ride)", "request": {"method": "DELETE", "url": "{{baseUrl}}/v1.2/requests/req-7f0011aa"}},
+    {"name": "ride history", "request": {"method": "GET", "url": "{{baseUrl}}/v1.2/history?limit=10"}},
+    {"name": "rider profile", "request": {"method": "GET", "url": "{{baseUrl}}/v1.2/me"}}
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "801",
+    "ticket_id": "701",
+    "author_id": "604",
+    "body": "The receipts stopped printing right after the v3.2 update.",
+    "public": "true",
+    "created_at": "2026-05-10T09:00:00Z"
+  },
+  {
+    "id": "802",
+    "ticket_id": "701",
+    "author_id": "602",
+    "body": "Thanks for reporting. Can you share the printer model?",
+    "public": "true",
+    "created_at": "2026-05-11T10:00:00Z"
+  },
+  {
+    "id": "803",
+    "ticket_id": "701",
+    "author_id": "604",
+    "body": "It is the Star TSP143 model.",
+    "public": "true",
+    "created_at": "2026-05-12T08:00:00Z"
+  },
+  {
+    "id": "804",
+    "ticket_id": "702",
+    "author_id": "605",
+    "body": "The login just keeps redirecting in a loop.",
+    "public": "true",
+    "created_at": "2026-05-12T11:00:00Z"
+  },
+  {
+    "id": "805",
+    "ticket_id": "702",
+    "author_id": "603",
+    "body": "We are investigating the SSO config on our side.",
+    "public": "false",
+    "created_at": "2026-05-13T09:00:00Z"
+  },
+  {
+    "id": "806",
+    "ticket_id": "703",
+    "author_id": "606",
+    "body": "Could you send last month invoice as PDF?",
+    "public": "true",
+    "created_at": "2026-05-05T14:00:00Z"
+  },
+  {
+    "id": "807",
+    "ticket_id": "703",
+    "author_id": "602",
+    "body": "Attached the invoice PDF. Marking this solved.",
+    "public": "true",
+    "created_at": "2026-05-08T16:00:00Z"
+  },
+  {
+    "id": "808",
+    "ticket_id": "705",
+    "author_id": "604",
+    "body": "Still no sign of the refund after five days.",
+    "public": "true",
+    "created_at": "2026-05-18T15:00:00Z"
+  },
+  {
+    "id": "809",
+    "ticket_id": "707",
+    "author_id": "605",
+    "body": "App crashes on a Pixel 8 running Android 14.",
+    "public": "true",
+    "created_at": "2026-05-21T13:00:00Z"
+  },
+  {
+    "id": "810",
+    "ticket_id": "707",
+    "author_id": "603",
+    "body": "Reproduced on our side and escalating to engineering.",
+    "public": "false",
+    "created_at": "2026-05-22T10:00:00Z"
+  }
+]

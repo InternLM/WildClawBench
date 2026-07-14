@@ -1,0 +1,46 @@
+[
+  {
+    "id": "5001",
+    "name": "Orbit Labs",
+    "vanityName": "orbit-labs",
+    "industry": "Software Development",
+    "website": "https://orbit-labs.com",
+    "location": "Remote",
+    "staffCountRange": "51-200",
+    "followerCount": "48210",
+    "description": "Developer tooling for the modern stack. Makers of the Orbit CLI and platform."
+  },
+  {
+    "id": "5002",
+    "name": "Northwind Systems",
+    "vanityName": "northwind-systems",
+    "industry": "Information Technology",
+    "website": "https://northwind.example.com",
+    "location": "San Francisco California",
+    "staffCountRange": "201-500",
+    "followerCount": "12300",
+    "description": "Enterprise data integration and ETL pipelines."
+  },
+  {
+    "id": "5003",
+    "name": "Helix Analytics",
+    "vanityName": "helix-analytics",
+    "industry": "Computer Software",
+    "website": "https://helix.example.com",
+    "location": "Milan Italy",
+    "staffCountRange": "11-50",
+    "followerCount": "4120",
+    "description": "Product analytics for B2B SaaS teams."
+  },
+  {
+    "id": "5004",
+    "name": "Brightloop",
+    "vanityName": "brightloop",
+    "industry": "Software Development",
+    "website": "https://brightloop.example.com",
+    "location": "Berlin Germany",
+    "staffCountRange": "11-50",
+    "followerCount": "2890",
+    "description": "Customer feedback loops, automated."
+  }
+]

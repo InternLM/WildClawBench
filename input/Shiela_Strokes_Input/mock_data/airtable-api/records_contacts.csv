@@ -1,0 +1,13 @@
+id,createdTime,Name,Email,Company,Role
+rec_ct_001,2024-09-02T10:00:00+01:00,Eng. Babatunde Olatunji,b.olatunji@telecorpng.com,TelcoNG NetPlan,Director of Network Operations
+rec_ct_002,2024-09-02T10:00:00+01:00,Yetunde Bakare,yetunde.bakare.engineer@gmail.com,TelcoNG NetPlan,Junior Network Engineer
+rec_ct_003,2024-09-02T10:00:00+01:00,Ifeanyi Okeke,i.okeke@telecorpng.com,TelcoNG NetPlan,"Field Acquisition Lead, Nasarawa"
+rec_ct_004,2024-09-02T10:00:00+01:00,Chinwe Eze,c.eze@telecorpng.com,TelcoNG NetPlan,RF Engineer
+rec_ct_005,2024-09-02T10:00:00+01:00,Emeka Adeniyi,e.adeniyi@telecorpng.com,TelcoNG NetPlan,Capacity Planner
+rec_ct_006,2024-09-02T10:00:00+01:00,Fatima Musa,f.musa@telecorpng.com,TelcoNG NetPlan,Regulatory Liaison
+rec_ct_007,2024-09-02T10:00:00+01:00,Chioma Ndukwe,c.ndukwe@telecorpng.com,TelcoNG NetPlan,Community Engagement Coordinator
+rec_ct_008,2024-09-02T10:00:00+01:00,Tunde Bello,t.bello@telecorpng.com,TelcoNG NetPlan,5G Pilot Lead Engineer
+rec_ct_009,2024-09-02T10:00:00+01:00,Ola Adeyemo,ola.adeyemo@tachyon-networks.ng,Tachyon Networks NG,Account Engineer
+rec_ct_010,2024-09-02T10:00:00+01:00,Amaka Obi,a.obi@telecorpng.com,TelcoNG NetPlan,PMO Coordinator
+rec_ct_011,2024-09-02T10:00:00+01:00,Dr. Yusuf Ibrahim,y.ibrahim@ncc.gov.ng,Nigerian Communications Commission,Senior Spectrum Officer
+rec_ct_012,2024-09-02T10:00:00+01:00,Funke Adebayo,funke.adebayo.banker@gmail.com,Guaranty Savings Bank,Senior Manager

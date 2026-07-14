@@ -1,0 +1,6 @@
+comment_id,videoId,channelId,parentId,authorDisplayName,authorChannelId,textDisplay,likeCount,publishedAt,updatedAt,moderationStatus
+yc_matt_001,yt_hadley_week14_lecture,UChadley_rm305,,Haruki_T,UC_haruki_t_2026,For Problem 5 to confirm: two-sided test AND p-value is P(D given H0). Got it.,6,2026-05-26T23:08:00Z,2026-05-26T23:08:00Z,published
+yc_matt_002,yt_hadley_week14_lecture,UChadley_rm305,yc_matt_001,DrHadley_RM305,UChadley_rm305,Reply to Haruki_T: Watch the recording around the 1h23m mark - I cover this in detail there.,11,2026-05-26T23:14:00Z,2026-05-26T23:14:00Z,published
+yc_matt_003,yt_hadley_week14_lecture,UChadley_rm305,,Brianna_L,UC_brianna_l_2026,Wait the PDF said one-tailed. Are we sure?,3,2026-05-27T01:20:00Z,2026-05-27T01:20:00Z,published
+yc_matt_004,yt_hadley_week14_lecture,UChadley_rm305,yc_matt_003,DrHadley_RM305,UChadley_rm305,Reply to Brianna_L: Check the errata announcement on Classroom.,9,2026-05-27T02:00:00Z,2026-05-27T02:00:00Z,published
+yc_matt_005,yt_hadley_week14_lecture,UChadley_rm305,,TA_Marcus_RM305,UC_ta_marcus_rm305,"Office hours follow-up for everyone confused on Problem 3: prof clarified the sample size stays n=30 in the actual test formula. The n=36 from the errata is only for descriptive statistics. Hope that helps clear it up.",18,2026-05-27T14:30:00Z,2026-05-27T14:30:00Z,published

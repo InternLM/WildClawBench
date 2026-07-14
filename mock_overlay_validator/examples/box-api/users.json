@@ -1,0 +1,47 @@
+[
+  {
+    "id": "11446498",
+    "name": "Aaron Levie",
+    "login": "aaron@example.com",
+    "role": "admin",
+    "status": "active",
+    "language": "en",
+    "timezone": "America/Los_Angeles",
+    "space_amount": "10995116277760",
+    "space_used": "2147483648",
+    "max_upload_size": "5368709120",
+    "job_title": "CEO",
+    "phone": "+1-650-555-0100",
+    "created_at": "2025-09-01T10:00:00-07:00"
+  },
+  {
+    "id": "22893011",
+    "name": "Priya Nair",
+    "login": "priya@example.com",
+    "role": "user",
+    "status": "active",
+    "language": "en",
+    "timezone": "America/New_York",
+    "space_amount": "5497558138880",
+    "space_used": "1073741824",
+    "max_upload_size": "2147483648",
+    "job_title": "Product Manager",
+    "phone": "+1-212-555-0144",
+    "created_at": "2025-10-15T09:30:00-04:00"
+  },
+  {
+    "id": "33102847",
+    "name": "Diego Santos",
+    "login": "diego@example.com",
+    "role": "user",
+    "status": "active",
+    "language": "pt",
+    "timezone": "America/Sao_Paulo",
+    "space_amount": "5497558138880",
+    "space_used": "524288000",
+    "max_upload_size": "2147483648",
+    "job_title": "Designer",
+    "phone": "+55-11-5555-0188",
+    "created_at": "2026-01-20T11:45:00-03:00"
+  }
+]

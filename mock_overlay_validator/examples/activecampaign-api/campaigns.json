@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "name": "May Newsletter",
+    "type": "single",
+    "status": "5",
+    "list_id": "1",
+    "subject": "What's new in May",
+    "send_amt": "5180",
+    "opens": "2410",
+    "clicks": "612",
+    "sdate": "2026-05-05T10:00:00-05:00",
+    "created_timestamp": "2026-05-04T16:00:00-05:00"
+  },
+  {
+    "id": "2",
+    "name": "Feature Launch - Insights",
+    "type": "single",
+    "status": "5",
+    "list_id": "2",
+    "subject": "Introducing Insights",
+    "send_amt": "3110",
+    "opens": "1620",
+    "clicks": "498",
+    "sdate": "2026-05-12T09:30:00-05:00",
+    "created_timestamp": "2026-05-11T14:00:00-05:00"
+  },
+  {
+    "id": "3",
+    "name": "Webinar Reminder",
+    "type": "single",
+    "status": "5",
+    "list_id": "3",
+    "subject": "Starting in 1 hour",
+    "send_amt": "870",
+    "opens": "540",
+    "clicks": "210",
+    "sdate": "2026-05-15T13:00:00-05:00",
+    "created_timestamp": "2026-05-15T08:00:00-05:00"
+  },
+  {
+    "id": "4",
+    "name": "Trial Day 3 Tips",
+    "type": "automation",
+    "status": "5",
+    "list_id": "4",
+    "subject": "Getting the most from your trial",
+    "send_amt": "1400",
+    "opens": "910",
+    "clicks": "344",
+    "sdate": "2026-05-18T08:00:00-05:00",
+    "created_timestamp": "2026-05-01T09:00:00-05:00"
+  },
+  {
+    "id": "5",
+    "name": "Win-back Offer",
+    "type": "single",
+    "status": "1",
+    "list_id": "5",
+    "subject": "Come back for 30% off",
+    "send_amt": "0",
+    "opens": "0",
+    "clicks": "0",
+    "sdate": "2026-05-29T10:00:00-05:00",
+    "created_timestamp": "2026-05-25T11:00:00-05:00"
+  },
+  {
+    "id": "6",
+    "name": "Summer Preview",
+    "type": "single",
+    "status": "2",
+    "list_id": "1",
+    "subject": "A peek at summer",
+    "send_amt": "0",
+    "opens": "0",
+    "clicks": "0",
+    "sdate": "2026-06-01T10:00:00-05:00",
+    "created_timestamp": "2026-05-26T15:00:00-05:00"
+  }
+]

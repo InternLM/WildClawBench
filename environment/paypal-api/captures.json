@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CAP_3C679384HN8401234",
+    "order_id": "ORDER-5O190127TN364715T",
+    "status": "COMPLETED",
+    "amount_value": "49.99",
+    "currency_code": "USD",
+    "final_capture": "true",
+    "create_time": "2026-05-10T09:01:00Z"
+  },
+  {
+    "id": "CAP_5E891276JP9512345",
+    "order_id": "ORDER-9PQ11223RS445566G",
+    "status": "COMPLETED",
+    "amount_value": "7.50",
+    "currency_code": "USD",
+    "final_capture": "true",
+    "create_time": "2026-05-23T08:46:00Z"
+  }
+]

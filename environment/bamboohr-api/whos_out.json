@@ -1,0 +1,42 @@
+[
+  {
+    "id": "who-9001",
+    "employeeId": "emp-102",
+    "name": "Jonas Pereira",
+    "type": "Vacation",
+    "start": "2026-06-08",
+    "end": "2026-06-12"
+  },
+  {
+    "id": "who-9002",
+    "employeeId": "emp-107",
+    "name": "Yuki Tanaka",
+    "type": "Vacation",
+    "start": "2026-05-28",
+    "end": "2026-05-30"
+  },
+  {
+    "id": "who-9003",
+    "employeeId": "emp-105",
+    "name": "Noor Aziz",
+    "type": "Sick",
+    "start": "2026-05-26",
+    "end": "2026-05-26"
+  },
+  {
+    "id": "who-9004",
+    "employeeId": "emp-103",
+    "name": "Helena Park",
+    "type": "Vacation",
+    "start": "2026-12-22",
+    "end": "2026-12-31"
+  },
+  {
+    "id": "who-9005",
+    "employeeId": "emp-110",
+    "name": "Sofia Lindqvist",
+    "type": "Holiday",
+    "start": "2026-07-04",
+    "end": "2026-07-04"
+  }
+]

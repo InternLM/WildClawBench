@@ -1,0 +1,5 @@
+[service]
+name = "google-drive-api"
+port = 8018
+env_var_name = "GOOGLE_DRIVE_API_URL"
+healthcheck_path = "/health"

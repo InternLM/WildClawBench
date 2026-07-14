@@ -1,0 +1,38 @@
+[
+  {
+    "agent_id": "agent-001",
+    "name": "Sarah Whitfield",
+    "brokerage": "Cascade Realty Group",
+    "phone": "206-555-0118",
+    "email": "sarah.whitfield@cascaderealty.com",
+    "license_number": "WA-1284991",
+    "active_listings": "4",
+    "sold_last_12mo": "28",
+    "rating": "4.9",
+    "reviews": "142"
+  },
+  {
+    "agent_id": "agent-002",
+    "name": "Daniel Reyes",
+    "brokerage": "Evergreen Properties",
+    "phone": "425-555-0204",
+    "email": "daniel.reyes@evergreenprop.com",
+    "license_number": "WA-1300218",
+    "active_listings": "3",
+    "sold_last_12mo": "22",
+    "rating": "4.8",
+    "reviews": "98"
+  },
+  {
+    "agent_id": "agent-003",
+    "name": "Maya Okafor",
+    "brokerage": "Pinecrest Realty",
+    "phone": "425-555-0319",
+    "email": "maya.okafor@pinecrestrealty.com",
+    "license_number": "WA-1342877",
+    "active_listings": "3",
+    "sold_last_12mo": "17",
+    "rating": "4.7",
+    "reviews": "76"
+  }
+]

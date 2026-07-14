@@ -1,0 +1,11 @@
+{
+  "phone_number_id": "1234567890123456",
+  "display_name": "Sheila Stokes",
+  "verified_name": "Sheila Stokes",
+  "phone_number": "+234 803 555 7300",
+  "wa_id": "2348035557300",
+  "country_code": "234",
+  "timezone": "Africa/Lagos",
+  "messaging_limit_tier": "TIER_1K",
+  "quality_rating": "GREEN"
+}

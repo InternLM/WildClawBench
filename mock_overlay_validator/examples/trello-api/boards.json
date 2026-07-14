@@ -1,0 +1,20 @@
+[
+  {
+    "id": "60b1000000000000000000b1",
+    "name": "Product Roadmap",
+    "desc": "Q2 product delivery board",
+    "closed": "false",
+    "id_organization": "org-orbit-labs",
+    "url": "https://trello.com/b/abc12345/product-roadmap",
+    "member_ids": "5f1a000000000000000000a1;5f1a000000000000000000a2;5f1a000000000000000000a3"
+  },
+  {
+    "id": "60b1000000000000000000b2",
+    "name": "Marketing Campaigns",
+    "desc": "Campaign planning and execution",
+    "closed": "false",
+    "id_organization": "org-orbit-labs",
+    "url": "https://trello.com/b/def67890/marketing-campaigns",
+    "member_ids": "5f1a000000000000000000a1;5f1a000000000000000000a4"
+  }
+]

@@ -1,0 +1,5 @@
+[service]
+name = "microsoft-teams-api"
+port = 8086
+env_var_name = "MICROSOFT_TEAMS_API_URL"
+healthcheck_path = "/health"

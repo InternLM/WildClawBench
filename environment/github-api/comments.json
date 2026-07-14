@@ -1,0 +1,42 @@
+[
+  {
+    "id": "4000001",
+    "issue_number": "142",
+    "repo": "auth-api",
+    "user": "jonas-pereira",
+    "body": "Suspecting we need a write batch — every refresh kicks a SET. Let me try an N=8 batch on the dual-writer.",
+    "created_at": "2026-05-22T14:00:00Z"
+  },
+  {
+    "id": "4000002",
+    "issue_number": "142",
+    "repo": "auth-api",
+    "user": "amelia-ortega",
+    "body": "Agree. Once the batch lands let's re-run the load test from baseline.",
+    "created_at": "2026-05-26T09:00:00Z"
+  },
+  {
+    "id": "4000003",
+    "issue_number": "144",
+    "repo": "auth-api",
+    "user": "jonas-pereira",
+    "body": "Looks great — couple of nits inline. Approving once the metric in #143 lands.",
+    "created_at": "2026-05-25T14:00:00Z"
+  },
+  {
+    "id": "4000004",
+    "issue_number": "90",
+    "repo": "billing-api",
+    "user": "helena-park",
+    "body": "Marked draft until we wire the gRPC retry config (blocked by #89).",
+    "created_at": "2026-05-23T10:00:00Z"
+  },
+  {
+    "id": "4000005",
+    "issue_number": "205",
+    "repo": "web-app",
+    "user": "noor-aziz",
+    "body": "Repro steps in the linked Loom. Logs attached.",
+    "created_at": "2026-05-25T08:30:00Z"
+  }
+]

@@ -1,0 +1,5 @@
+[service]
+name = "zendesk-api"
+port = 8025
+env_var_name = "ZENDESK_API_URL"
+healthcheck_path = "/health"

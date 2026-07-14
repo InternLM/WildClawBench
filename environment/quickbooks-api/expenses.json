@@ -1,0 +1,101 @@
+[
+  {
+    "Id": "5201",
+    "TxnDate": "2024-04-01",
+    "TotalAmt": 6500.0,
+    "Line": [
+      {
+        "Description": "Splice - Monthly sample subscription",
+        "Amount": 6500.0
+      }
+    ],
+    "MetaData": {
+      "CreateTime": "2024-04-01T09:00:00"
+    }
+  },
+  {
+    "Id": "5202",
+    "TxnDate": "2024-04-01",
+    "TotalAmt": 42000.0,
+    "Line": [
+      {
+        "Description": "Ableton - Live 12 Suite renewal",
+        "Amount": 42000.0
+      }
+    ],
+    "MetaData": {
+      "CreateTime": "2024-04-01T09:05:00"
+    }
+  },
+  {
+    "Id": "5203",
+    "TxnDate": "2024-04-05",
+    "TotalAmt": 5400.0,
+    "Line": [
+      {
+        "Description": "Canva Pro - Monthly design subscription",
+        "Amount": 5400.0
+      }
+    ],
+    "MetaData": {
+      "CreateTime": "2024-04-05T10:00:00"
+    }
+  },
+  {
+    "Id": "5204",
+    "TxnDate": "2024-04-08",
+    "TotalAmt": 3200.0,
+    "Line": [
+      {
+        "Description": "Amazon NG - USB audio interface cable",
+        "Amount": 3200.0
+      }
+    ],
+    "MetaData": {
+      "CreateTime": "2024-04-08T11:00:00"
+    }
+  },
+  {
+    "Id": "5205",
+    "TxnDate": "2024-04-10",
+    "TotalAmt": 95000.0,
+    "Line": [
+      {
+        "Description": "Soundz Music Store - Akai MPK Mini MK3 + Audio-Technica M20x + XLR Cable",
+        "Amount": 95000.0
+      }
+    ],
+    "PrivateNote": "Entered at subtotal 95000 before discount. Receipt SMS-2045 shows 90000 after 5000 discount.",
+    "MetaData": {
+      "CreateTime": "2024-04-10T14:00:00"
+    }
+  },
+  {
+    "Id": "5206",
+    "TxnDate": "2024-04-15",
+    "TotalAmt": 6800.0,
+    "Line": [
+      {
+        "Description": "SoundCloud Pro - Monthly distribution plan",
+        "Amount": 6800.0
+      }
+    ],
+    "MetaData": {
+      "CreateTime": "2024-04-15T09:00:00"
+    }
+  },
+  {
+    "Id": "5207",
+    "TxnDate": "2024-04-20",
+    "TotalAmt": 9600.0,
+    "Line": [
+      {
+        "Description": "Dropbox Business - Cloud storage monthly",
+        "Amount": 9600.0
+      }
+    ],
+    "MetaData": {
+      "CreateTime": "2024-04-20T10:00:00"
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pay-401",
+    "company_id": "comp-001",
+    "pay_period_start": "2026-04-01",
+    "pay_period_end": "2026-04-15",
+    "check_date": "2026-04-20",
+    "processed": "true",
+    "gross_pay": "48750.00",
+    "net_pay": "35420.50",
+    "employee_count": "8"
+  },
+  {
+    "id": "pay-402",
+    "company_id": "comp-001",
+    "pay_period_start": "2026-04-16",
+    "pay_period_end": "2026-04-30",
+    "check_date": "2026-05-05",
+    "processed": "true",
+    "gross_pay": "48975.25",
+    "net_pay": "35610.10",
+    "employee_count": "8"
+  },
+  {
+    "id": "pay-403",
+    "company_id": "comp-001",
+    "pay_period_start": "2026-05-01",
+    "pay_period_end": "2026-05-15",
+    "check_date": "2026-05-20",
+    "processed": "true",
+    "gross_pay": "49120.00",
+    "net_pay": "35740.75",
+    "employee_count": "8"
+  },
+  {
+    "id": "pay-404",
+    "company_id": "comp-001",
+    "pay_period_start": "2026-05-16",
+    "pay_period_end": "2026-05-31",
+    "check_date": "2026-06-05",
+    "processed": "false",
+    "gross_pay": "0.00",
+    "net_pay": "0.00",
+    "employee_count": "8"
+  }
+]

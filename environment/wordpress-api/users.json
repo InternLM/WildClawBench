@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Amelia Ortega",
+    "slug": "amelia-ortega",
+    "description": "Editor in chief and platform lead.",
+    "url": "https://blog.example.com/author/amelia",
+    "roles": "administrator",
+    "avatar_url": "https://gravatar.example.com/amelia.png"
+  },
+  {
+    "id": "2",
+    "name": "Jonas Pereira",
+    "slug": "jonas-pereira",
+    "description": "Infrastructure writer and SRE.",
+    "url": "https://blog.example.com/author/jonas",
+    "roles": "editor",
+    "avatar_url": "https://gravatar.example.com/jonas.png"
+  },
+  {
+    "id": "3",
+    "name": "Helena Park",
+    "slug": "helena-park",
+    "description": "Frontend and accessibility contributor.",
+    "url": "https://blog.example.com/author/helena",
+    "roles": "author",
+    "avatar_url": "https://gravatar.example.com/helena.png"
+  },
+  {
+    "id": "4",
+    "name": "Noor Aziz",
+    "slug": "noor-aziz",
+    "description": "Developer advocate and tutorial author.",
+    "url": "https://blog.example.com/author/noor",
+    "roles": "author",
+    "avatar_url": "https://gravatar.example.com/noor.png"
+  },
+  {
+    "id": "5",
+    "name": "Guest Contributor",
+    "slug": "guest-contributor",
+    "description": "Occasional guest posts.",
+    "url": "https://blog.example.com/author/guest",
+    "roles": "contributor",
+    "avatar_url": "https://gravatar.example.com/guest.png"
+  }
+]

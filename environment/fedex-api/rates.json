@@ -1,0 +1,90 @@
+[
+  {
+    "service_type": "FEDEX_GROUND",
+    "service_name": "FedEx Ground",
+    "origin_zip": "38116",
+    "dest_zip": "10001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "18.45",
+    "transit_days": "4",
+    "delivery_day": "2026-05-29"
+  },
+  {
+    "service_type": "FEDEX_GROUND",
+    "service_name": "FedEx Ground",
+    "origin_zip": "38116",
+    "dest_zip": "90001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "24.10",
+    "transit_days": "5",
+    "delivery_day": "2026-05-30"
+  },
+  {
+    "service_type": "FEDEX_2_DAY",
+    "service_name": "FedEx 2Day",
+    "origin_zip": "38116",
+    "dest_zip": "10001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "42.75",
+    "transit_days": "2",
+    "delivery_day": "2026-05-27"
+  },
+  {
+    "service_type": "FEDEX_2_DAY",
+    "service_name": "FedEx 2Day",
+    "origin_zip": "38116",
+    "dest_zip": "90001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "49.30",
+    "transit_days": "2",
+    "delivery_day": "2026-05-27"
+  },
+  {
+    "service_type": "STANDARD_OVERNIGHT",
+    "service_name": "FedEx Standard Overnight",
+    "origin_zip": "38116",
+    "dest_zip": "10001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "78.20",
+    "transit_days": "1",
+    "delivery_day": "2026-05-26"
+  },
+  {
+    "service_type": "PRIORITY_OVERNIGHT",
+    "service_name": "FedEx Priority Overnight",
+    "origin_zip": "38116",
+    "dest_zip": "10001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "96.55",
+    "transit_days": "1",
+    "delivery_day": "2026-05-26"
+  },
+  {
+    "service_type": "FEDEX_EXPRESS_SAVER",
+    "service_name": "FedEx Express Saver",
+    "origin_zip": "38116",
+    "dest_zip": "60601",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "33.40",
+    "transit_days": "3",
+    "delivery_day": "2026-05-28"
+  },
+  {
+    "service_type": "INTERNATIONAL_PRIORITY",
+    "service_name": "FedEx International Priority",
+    "origin_zip": "38116",
+    "dest_zip": "SW1A1AA",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "142.90",
+    "transit_days": "3",
+    "delivery_day": "2026-05-28"
+  }
+]

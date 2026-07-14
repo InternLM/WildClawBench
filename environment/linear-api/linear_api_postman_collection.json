@@ -1,0 +1,866 @@
+{
+  "info": {
+    "name": "Linear Mock API",
+    "description": "Complete test collection for the mock Linear API service (Meridian Labs workspace). Base URL defaults to http://localhost:8009 for local testing.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8009"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Teams",
+      "item": [
+        {
+          "name": "GET List Teams",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams"]
+            }
+          }
+        },
+        {
+          "name": "GET Team by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/team-backend",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "team-backend"]
+            }
+          }
+        },
+        {
+          "name": "GET Team - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/nonexistent-team-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "nonexistent-team-99999"]
+            }
+          }
+        },
+        {
+          "name": "GET Team Members",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/team-backend/members",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "team-backend", "members"]
+            }
+          }
+        },
+        {
+          "name": "GET Team Issues",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/team-frontend/issues",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "team-frontend", "issues"]
+            }
+          }
+        },
+        {
+          "name": "GET Team Projects",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/team-backend/projects",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "team-backend", "projects"]
+            }
+          }
+        },
+        {
+          "name": "GET Team Cycles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/team-backend/cycles",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "team-backend", "cycles"]
+            }
+          }
+        },
+        {
+          "name": "GET Team Workflow States",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/team-backend/workflow-states",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "team-backend", "workflow-states"]
+            }
+          }
+        },
+        {
+          "name": "GET Team Labels",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/teams/team-frontend/labels",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "teams", "team-frontend", "labels"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "GET List Users",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/users",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "users"]
+            }
+          }
+        },
+        {
+          "name": "GET User by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/users/user-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "users", "user-01"]
+            }
+          }
+        },
+        {
+          "name": "GET User - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/users/nonexistent-user-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "users", "nonexistent-user-99999"]
+            }
+          }
+        },
+        {
+          "name": "GET User Assigned Issues",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/users/user-01/issues",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "users", "user-01", "issues"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workflow States",
+      "item": [
+        {
+          "name": "GET List Workflow States",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/workflow-states",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "workflow-states"]
+            }
+          }
+        },
+        {
+          "name": "GET Workflow States by Team",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/workflow-states?teamId=team-frontend",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "workflow-states"],
+              "query": [{"key": "teamId", "value": "team-frontend"}]
+            }
+          }
+        },
+        {
+          "name": "GET Workflow State by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/workflow-states/state-bkd-inprogress",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "workflow-states", "state-bkd-inprogress"]
+            }
+          }
+        },
+        {
+          "name": "GET Workflow State - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/workflow-states/nonexistent-state-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "workflow-states", "nonexistent-state-99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Labels",
+      "item": [
+        {
+          "name": "GET List Labels",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/labels",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "labels"]
+            }
+          }
+        },
+        {
+          "name": "GET Labels by Team",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/labels?teamId=team-platform",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "labels"],
+              "query": [{"key": "teamId", "value": "team-platform"}]
+            }
+          }
+        },
+        {
+          "name": "GET Label by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/labels/label-bug",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "labels", "label-bug"]
+            }
+          }
+        },
+        {
+          "name": "GET Label - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/labels/nonexistent-label-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "labels", "nonexistent-label-99999"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Label",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/labels",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "labels"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"needs-review\",\n  \"color\": \"#F2C94C\",\n  \"description\": \"Issues requiring additional review\",\n  \"teamId\": \"team-backend\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "item": [
+        {
+          "name": "GET List Projects",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/projects",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "projects"]
+            }
+          }
+        },
+        {
+          "name": "GET Project by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/projects/proj-api-v2",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "projects", "proj-api-v2"]
+            }
+          }
+        },
+        {
+          "name": "GET Project - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/projects/nonexistent-project-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "projects", "nonexistent-project-99999"]
+            }
+          }
+        },
+        {
+          "name": "GET Project Issues",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/projects/proj-api-v2/issues",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "projects", "proj-api-v2", "issues"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Project",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/projects",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "projects"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Mobile App MVP\",\n  \"description\": \"Build first version of the mobile companion app\",\n  \"state\": \"planned\",\n  \"leadId\": \"user-06\",\n  \"teamIds\": [\"team-frontend\", \"team-backend\"],\n  \"startDate\": \"2025-06-01\",\n  \"targetDate\": \"2025-09-30\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Project",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/projects/proj-dashboard",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "projects", "proj-dashboard"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"state\": \"completed\",\n  \"targetDate\": \"2025-07-01\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cycles",
+      "item": [
+        {
+          "name": "GET List Cycles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles"]
+            }
+          }
+        },
+        {
+          "name": "GET Cycles by Team",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles?teamId=team-backend",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles"],
+              "query": [{"key": "teamId", "value": "team-backend"}]
+            }
+          }
+        },
+        {
+          "name": "GET Current Cycles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles?status=current",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles"],
+              "query": [{"key": "status", "value": "current"}]
+            }
+          }
+        },
+        {
+          "name": "GET Past Cycles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles?status=past",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles"],
+              "query": [{"key": "status", "value": "past"}]
+            }
+          }
+        },
+        {
+          "name": "GET Cycle by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles/cycle-bkd-2",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles", "cycle-bkd-2"]
+            }
+          }
+        },
+        {
+          "name": "GET Cycle - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles/nonexistent-cycle-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles", "nonexistent-cycle-99999"]
+            }
+          }
+        },
+        {
+          "name": "GET Cycle Issues",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles/cycle-bkd-2/issues",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles", "cycle-bkd-2", "issues"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Cycle",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/cycles",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "cycles"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Sprint 25\",\n  \"teamId\": \"team-backend\",\n  \"startsAt\": \"2025-05-19\",\n  \"endsAt\": \"2025-06-01\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Issues",
+      "item": [
+        {
+          "name": "GET List Issues (unfiltered)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"]
+            }
+          }
+        },
+        {
+          "name": "GET Issues by State",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?stateId=state-bkd-inprogress",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [{"key": "stateId", "value": "state-bkd-inprogress"}]
+            }
+          }
+        },
+        {
+          "name": "GET Issues by Assignee",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?assigneeId=user-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [{"key": "assigneeId", "value": "user-01"}]
+            }
+          }
+        },
+        {
+          "name": "GET Issues by Project",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?projectId=proj-api-v2",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [{"key": "projectId", "value": "proj-api-v2"}]
+            }
+          }
+        },
+        {
+          "name": "GET Issues by Priority",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?priority=1",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [{"key": "priority", "value": "1"}]
+            }
+          }
+        },
+        {
+          "name": "GET Issues by Label",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?labelId=label-bug",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [{"key": "labelId", "value": "label-bug"}]
+            }
+          }
+        },
+        {
+          "name": "GET Issues by Team",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?teamId=team-platform",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [{"key": "teamId", "value": "team-platform"}]
+            }
+          }
+        },
+        {
+          "name": "GET Issues - Combined Filters (State + Assignee)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?stateId=state-bkd-inprogress&assigneeId=user-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [
+                {"key": "stateId", "value": "state-bkd-inprogress"},
+                {"key": "assigneeId", "value": "user-01"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Issues - Combined Filters (Project + Priority)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?projectId=proj-perf&priority=2",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [
+                {"key": "projectId", "value": "proj-perf"},
+                {"key": "priority", "value": "2"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Issues with Pagination",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues?limit=5&offset=0",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"],
+              "query": [
+                {"key": "limit", "value": "5"},
+                {"key": "offset", "value": "0"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Issue by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/issue-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "issue-01"]
+            }
+          }
+        },
+        {
+          "name": "GET Issue - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/nonexistent-issue-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "nonexistent-issue-99999"]
+            }
+          }
+        },
+        {
+          "name": "GET Search Issues - keyword",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/search?q=rate+limiting",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "search"],
+              "query": [{"key": "q", "value": "rate limiting"}]
+            }
+          }
+        },
+        {
+          "name": "GET Search Issues - identifier",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/search?q=MER-5",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "search"],
+              "query": [{"key": "q", "value": "MER-5"}]
+            }
+          }
+        },
+        {
+          "name": "POST Create Issue",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/issues",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Add rate limit headers to API responses\",\n  \"teamId\": \"team-backend\",\n  \"description\": \"Include X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset headers in all API responses\",\n  \"priority\": 3,\n  \"estimate\": 2,\n  \"stateId\": \"state-bkd-todo\",\n  \"assigneeId\": \"user-02\",\n  \"projectId\": \"proj-api-v2\",\n  \"cycleId\": \"cycle-bkd-2\",\n  \"labelIds\": [\"label-feature\", \"label-api\"],\n  \"dueDate\": \"2025-05-10\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Issue - State Change",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/issue-09",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "issue-09"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"stateId\": \"state-bkd-inprogress\",\n  \"assigneeId\": \"user-05\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Issue - Priority and Estimate",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/issue-15",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "issue-15"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"priority\": 3,\n  \"estimate\": 5,\n  \"dueDate\": \"2025-06-15\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Issue - Labels",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/issue-07",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "issue-07"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"labelIds\": [\"label-feature\", \"label-frontend\", \"label-performance\", \"label-blocked\"]\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Issue",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/issue-26",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "issue-26"]
+            }
+          }
+        },
+        {
+          "name": "DELETE Issue - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/nonexistent-issue-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "nonexistent-issue-99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "item": [
+        {
+          "name": "GET List Comments for Issue",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/issue-01/comments",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "issue-01", "comments"]
+            }
+          }
+        },
+        {
+          "name": "GET Comments - Issue 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/issues/nonexistent-issue-99999/comments",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "issues", "nonexistent-issue-99999", "comments"]
+            }
+          }
+        },
+        {
+          "name": "GET Comment by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/comments/comment-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "comments", "comment-01"]
+            }
+          }
+        },
+        {
+          "name": "GET Comment - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v1/comments/nonexistent-comment-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "comments", "nonexistent-comment-99999"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Comment",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/comments",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "comments"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"body\": \"Looks good! Just one nit - can we add a retry mechanism for the rate limit check in case Redis is temporarily unavailable?\",\n  \"issueId\": \"issue-01\",\n  \"userId\": \"user-01\"\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Comment - Issue 404",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v1/comments",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "comments"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"body\": \"This should fail\",\n  \"issueId\": \"nonexistent-issue-99999\",\n  \"userId\": \"user-01\"\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Comment",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/v1/comments/comment-01",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "comments", "comment-01"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"body\": \"Updated: I've started implementing the sliding window algorithm for the rate limiter. Going with a token bucket approach per-user with Redis Lua script. PR coming soon.\"\n}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Comment",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v1/comments/comment-25",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "comments", "comment-25"]
+            }
+          }
+        },
+        {
+          "name": "DELETE Comment - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v1/comments/nonexistent-comment-99999",
+              "host": ["{{base_url}}"],
+              "path": ["v1", "comments", "nonexistent-comment-99999"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

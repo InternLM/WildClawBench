@@ -1,0 +1,47 @@
+[
+  {
+    "id": "201",
+    "username": "amelia-ortega",
+    "name": "Amelia Ortega",
+    "email": "amelia.ortega@orbit-labs.com",
+    "state": "active",
+    "is_admin": "true",
+    "created_at": "2024-01-10T10:00:00.000Z"
+  },
+  {
+    "id": "202",
+    "username": "jonas-pereira",
+    "name": "Jonas Pereira",
+    "email": "jonas.pereira@orbit-labs.com",
+    "state": "active",
+    "is_admin": "false",
+    "created_at": "2024-02-04T11:30:00.000Z"
+  },
+  {
+    "id": "203",
+    "username": "helena-park",
+    "name": "Helena Park",
+    "email": "helena.park@orbit-labs.com",
+    "state": "active",
+    "is_admin": "false",
+    "created_at": "2024-03-12T14:20:00.000Z"
+  },
+  {
+    "id": "204",
+    "username": "rohit-bansal",
+    "name": "Rohit Bansal",
+    "email": "rohit.bansal@orbit-labs.com",
+    "state": "active",
+    "is_admin": "false",
+    "created_at": "2024-05-02T09:10:00.000Z"
+  },
+  {
+    "id": "205",
+    "username": "noor-aziz",
+    "name": "Noor Aziz",
+    "email": "noor.aziz@orbit-labs.com",
+    "state": "blocked",
+    "is_admin": "false",
+    "created_at": "2024-06-18T16:45:00.000Z"
+  }
+]

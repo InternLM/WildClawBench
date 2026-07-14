@@ -1,0 +1,582 @@
+{
+  "info": {
+    "name": "Ring API (Mock)",
+    "_postman_id": "ring-api-mock-001",
+    "description": "Mock Ring API for Kensei2/OpenClaw RL data collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "base_url", "value": "http://localhost:8010"}
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/health"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Devices",
+      "item": [
+        {
+          "name": "List All Devices",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/ring_devices"
+          }
+        },
+        {
+          "name": "Get Device - Doorbell Front",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001"
+          }
+        },
+        {
+          "name": "Get Device - Driveway Cam",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987003"
+          }
+        },
+        {
+          "name": "Get Device - Side Gate",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987005"
+          }
+        },
+        {
+          "name": "Get Device - Chime",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987006"
+          }
+        },
+        {
+          "name": "Get Device - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/999999"
+          }
+        },
+        {
+          "name": "Get Device Health - Doorbell",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/health"
+          }
+        },
+        {
+          "name": "Get Device Health - Driveway (weak WiFi)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987003/health"
+          }
+        },
+        {
+          "name": "Get Device Health - Side Gate (low battery)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987005/health"
+          }
+        },
+        {
+          "name": "Get Device Health - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/999999/health"
+          }
+        },
+        {
+          "name": "Update Device Settings - Motion Sensitivity",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/doorbots/987001/settings",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"motion_sensitivity\": 9}"
+            }
+          }
+        },
+        {
+          "name": "Update Device Settings - Toggle LED",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/doorbots/987004/settings",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"led_status\": \"on\"}"
+            }
+          }
+        },
+        {
+          "name": "Update Device Settings - Not Found (404)",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/doorbots/999999/settings",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"motion_sensitivity\": 5}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Locations",
+      "item": [
+        {
+          "name": "Get Location",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001"
+          }
+        },
+        {
+          "name": "Get Location - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_unknown_999"
+          }
+        },
+        {
+          "name": "List Location Devices",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/devices"
+          }
+        },
+        {
+          "name": "Get Location Mode",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/mode"
+          }
+        },
+        {
+          "name": "Set Location Mode - Away",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/mode",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"mode\": \"away\"}"
+            }
+          }
+        },
+        {
+          "name": "Set Location Mode - Home",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/mode",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"mode\": \"home\"}"
+            }
+          }
+        },
+        {
+          "name": "Set Location Mode - Invalid",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/mode",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"mode\": \"invalid_mode\"}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "item": [
+        {
+          "name": "List Doorbell Events (all)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history"
+          }
+        },
+        {
+          "name": "List Doorbell Events - Dings only",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history?kind=ding"
+          }
+        },
+        {
+          "name": "List Doorbell Events - Motion only",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history?kind=motion"
+          }
+        },
+        {
+          "name": "List Doorbell Events - Package detected",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history?kind=package_detected"
+          }
+        },
+        {
+          "name": "List Driveway Cam Events",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987003/history"
+          }
+        },
+        {
+          "name": "List Backyard Cam Events",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987002/history"
+          }
+        },
+        {
+          "name": "List Events - Today only",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history?date_from=2025-04-28T00:00:00.000Z&date_to=2025-04-28T23:59:59.000Z"
+          }
+        },
+        {
+          "name": "List Events - Last 24h",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history?date_from=2025-04-27T14:30:00.000Z"
+          }
+        },
+        {
+          "name": "List Events - With pagination",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history?limit=5&offset=0"
+          }
+        },
+        {
+          "name": "List Events - Page 2",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/history?limit=5&offset=5"
+          }
+        },
+        {
+          "name": "Get Single Event",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/dings/7001"
+          }
+        },
+        {
+          "name": "Get Single Event - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/dings/99999"
+          }
+        },
+        {
+          "name": "Get Event Recording URL",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/dings/7001/recording"
+          }
+        },
+        {
+          "name": "Get Event Recording - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/dings/99999/recording"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Active Dings",
+      "item": [
+        {
+          "name": "List Active Dings",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/dings/active"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Recordings",
+      "item": [
+        {
+          "name": "List Recordings - Doorbell",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/recordings"
+          }
+        },
+        {
+          "name": "List Recordings - Driveway Cam",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987003/recordings"
+          }
+        },
+        {
+          "name": "List Recordings - Date Range",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/recordings?date_from=2025-04-25T00:00:00.000Z&date_to=2025-04-26T23:59:59.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shared Users",
+      "item": [
+        {
+          "name": "List Shared Users",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/users"
+          }
+        },
+        {
+          "name": "Get Shared User - Carlos (owner)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/users/100001"
+          }
+        },
+        {
+          "name": "Get Shared User - Tom (guest)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/users/100003"
+          }
+        },
+        {
+          "name": "Get Shared User - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/locations/loc_martinez_001/users/999999"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chime Settings",
+      "item": [
+        {
+          "name": "Get Chime Settings",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/chimes/987006/settings"
+          }
+        },
+        {
+          "name": "Get Chime Settings - Not a Chime (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/chimes/987001/settings"
+          }
+        },
+        {
+          "name": "Link Chime to Doorbell",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/chimes/987006/link",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"doorbell_id\": 987001}"
+            }
+          }
+        },
+        {
+          "name": "Unlink Chime from Doorbell",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/chimes/987006/unlink",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"doorbell_id\": 987001}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motion Zones",
+      "item": [
+        {
+          "name": "List Motion Zones - Doorbell",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987001/motion_zones"
+          }
+        },
+        {
+          "name": "List Motion Zones - Driveway",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/987003/motion_zones"
+          }
+        },
+        {
+          "name": "List Motion Zones - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/doorbots/999999/motion_zones"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "item": [
+        {
+          "name": "List All Notification Preferences",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/notifications"
+          }
+        },
+        {
+          "name": "Get Notification Pref - Doorbell",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/notifications/987001"
+          }
+        },
+        {
+          "name": "Get Notification Pref - Living Room (alerts off)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/notifications/987004"
+          }
+        },
+        {
+          "name": "Get Notification Pref - Not Found (404)",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/clients_api/notifications/999999"
+          }
+        },
+        {
+          "name": "Update Notification Pref - Toggle Motion Alerts Off",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/notifications/987002",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"motion_alerts\": false}"
+            }
+          }
+        },
+        {
+          "name": "Update Notification Pref - Toggle Motion Alerts On",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/notifications/987004",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"motion_alerts\": true}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Siren",
+      "item": [
+        {
+          "name": "Activate Siren - Driveway",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/clients_api/doorbots/987003/siren_on",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"duration_seconds\": 15}"
+            }
+          }
+        },
+        {
+          "name": "Deactivate Siren - Driveway",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/clients_api/doorbots/987003/siren_off"
+          }
+        },
+        {
+          "name": "Activate Siren - No Siren (404)",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/clients_api/doorbots/987002/siren_on",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"duration_seconds\": 30}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Floodlight",
+      "item": [
+        {
+          "name": "Turn Floodlight On",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/doorbots/987003/floodlight_light_on",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"on\": true}"
+            }
+          }
+        },
+        {
+          "name": "Turn Floodlight Off",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/doorbots/987003/floodlight_light_on",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"on\": false}"
+            }
+          }
+        },
+        {
+          "name": "Floodlight - No Floodlight (404)",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/clients_api/doorbots/987002/floodlight_light_on",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"on\": true}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

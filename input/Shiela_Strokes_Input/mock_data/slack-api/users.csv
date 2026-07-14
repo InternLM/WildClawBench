@@ -1,0 +1,13 @@
+id,name,real_name,email,is_admin,is_bot,tz,status_text,presence
+U001,sheila.stokes,Sheila Stokes,sheila.stokes@Finthesiss.ai,true,false,Africa/Lagos,,active
+U002,babatunde.olatunji,Babatunde Olatunji,b.olatunji@telecorpng.com,true,false,Africa/Lagos,,active
+U003,yetunde.bakare,Yetunde Bakare,yetunde.bakare.engineer@gmail.com,false,false,Africa/Lagos,,active
+U004,ifeanyi.okeke,Ifeanyi Okeke,i.okeke@telecorpng.com,false,false,Africa/Lagos,,active
+U005,chinwe.eze,Chinwe Eze,c.eze@telecorpng.com,false,false,Africa/Lagos,,active
+U006,emeka.adeniyi,Emeka Adeniyi,e.adeniyi@telecorpng.com,false,false,Africa/Lagos,,active
+U007,fatima.musa,Fatima Musa,f.musa@telecorpng.com,false,false,Africa/Lagos,,active
+U008,chioma.ndukwe,Chioma Ndukwe,c.ndukwe@telecorpng.com,false,false,Africa/Lagos,,active
+U009,tunde.bello,Tunde Bello,t.bello@telecorpng.com,false,false,Africa/Lagos,,active
+U010,ola.adeyemo,Ola Adeyemo,ola.adeyemo@tachyon-networks.ng,false,false,Africa/Lagos,,active
+U011,amaka.obi,Amaka Obi,a.obi@telecorpng.com,false,false,Africa/Lagos,,active
+U012,slackbot,Slackbot,slackbot@telcong-netplan.slack,false,true,Africa/Lagos,,active

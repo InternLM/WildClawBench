@@ -1,0 +1,54 @@
+[
+  {
+    "account_type": "BUSINESS",
+    "username": "cozynestinteriors",
+    "profile_image": "https://i.pinimg.com/avatars/cozynestinteriors_1680000000_150.jpg",
+    "website_url": "https://www.cozynestinteriors.com",
+    "business_name": "CozyNest Interiors",
+    "board_count": 9,
+    "pin_count": 127,
+    "follower_count": 12043,
+    "following_count": 340,
+    "monthly_views": 285000,
+    "created_at": "2023-03-12T08:15:00"
+  },
+  {
+    "account_type": "BUSINESS",
+    "username": "elena_erickson_style",
+    "profile_image": "https://i.pinimg.com/avatars/elena_erickson_style_1700000000_150.jpg",
+    "website_url": "https://www.alderandfinch.com",
+    "business_name": "Alder & Finch Contemporary Womenswear",
+    "board_count": 12,
+    "pin_count": 89,
+    "follower_count": 4320,
+    "following_count": 215,
+    "monthly_views": 67000,
+    "created_at": "2024-06-18T10:30:00"
+  },
+  {
+    "account_type": "BUSINESS",
+    "username": "amandaxo_beats",
+    "profile_image": "https://i.pinimg.com/avatars/amandaxo_beats_150.jpg",
+    "website_url": "https://www.beatstars.com/amandaxo",
+    "business_name": "AmandaXO Beats",
+    "board_count": 3,
+    "pin_count": 8,
+    "follower_count": 890,
+    "following_count": 145,
+    "monthly_views": 15200,
+    "created_at": "2023-06-10T08:00:00"
+  },
+  {
+    "account_type": "PERSONAL",
+    "username": "ashleyrogers_home",
+    "profile_image": "https://i.pinimg.com/avatars/ashleyrogers_home_1710000000_150.jpg",
+    "website_url": "",
+    "business_name": "",
+    "board_count": 6,
+    "pin_count": 58,
+    "follower_count": 842,
+    "following_count": 191,
+    "monthly_views": 18400,
+    "created_at": "2024-01-18T09:20:00"
+  }
+]

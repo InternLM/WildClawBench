@@ -1,0 +1,47 @@
+[
+  {
+    "id": "80001",
+    "name": "Priya Sharma",
+    "email": "priya@support.example",
+    "available": "true",
+    "ticket_scope": "1",
+    "occasional": "false",
+    "created_at": "2026-03-01T09:00:00Z"
+  },
+  {
+    "id": "80002",
+    "name": "Marcus Lee",
+    "email": "marcus@support.example",
+    "available": "true",
+    "ticket_scope": "1",
+    "occasional": "false",
+    "created_at": "2026-03-02T09:00:00Z"
+  },
+  {
+    "id": "80003",
+    "name": "Nina Alvarez",
+    "email": "nina@support.example",
+    "available": "false",
+    "ticket_scope": "2",
+    "occasional": "true",
+    "created_at": "2026-03-03T09:00:00Z"
+  },
+  {
+    "id": "80004",
+    "name": "Omar Haddad",
+    "email": "omar@support.example",
+    "available": "true",
+    "ticket_scope": "1",
+    "occasional": "false",
+    "created_at": "2026-03-04T09:00:00Z"
+  },
+  {
+    "id": "80005",
+    "name": "Sofia Rossi",
+    "email": "sofia@support.example",
+    "available": "true",
+    "ticket_scope": "2",
+    "occasional": "false",
+    "created_at": "2026-03-05T09:00:00Z"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "sellerId": "A3EXAMPLE1SELLER",
+  "marketplaceId": "ATVPDKIKX0DER",
+  "businessName": "VoltEdge Tech LLC",
+  "storeName": "VoltEdge Tech",
+  "storeUrl": "https://www.amazon.com/stores/VoltEdgeTech/page/EXAMPLE-PAGE-ID",
+  "registrationDate": "2024-02-15T08:00:00Z",
+  "businessAddress": {
+    "Name": "VoltEdge Tech LLC",
+    "AddressLine1": "4521 Innovation Drive",
+    "AddressLine2": "Suite 200",
+    "City": "San Jose",
+    "StateOrRegion": "CA",
+    "PostalCode": "95134",
+    "CountryCode": "US"
+  },
+  "primaryContactEmail": "seller@voltedgetech.com",
+  "accountHealth": {
+    "orderDefectRate": 0.8,
+    "orderDefectRateTarget": 1.0,
+    "lateShipmentRate": 2.1,
+    "lateShipmentRateTarget": 4.0,
+    "preFulfillmentCancelRate": 1.2,
+    "preFulfillmentCancelRateTarget": 2.5,
+    "validTrackingRate": 96.5,
+    "validTrackingRateTarget": 95.0,
+    "onTimeDeliveryRate": 94.8,
+    "onTimeDeliveryRateTarget": 90.0,
+    "returnDissatisfactionRate": 3.2,
+    "returnDissatisfactionRateTarget": 10.0,
+    "customerServiceDissatisfactionRate": 1.5,
+    "customerServiceDissatisfactionRateTarget": 25.0,
+    "policyViolations": 0,
+    "accountStatus": "NORMAL"
+  },
+  "performanceNotifications": [
+    {
+      "notificationId": "NOTIF-001",
+      "type": "PERFORMANCE_WARNING",
+      "title": "Late Shipment Rate Approaching Threshold",
+      "message": "Your late shipment rate of 2.1% is approaching the 4% target. Please ensure orders are shipped by the expected ship date.",
+      "severity": "WARNING",
+      "createdDate": "2026-04-20T14:30:00Z",
+      "isRead": true
+    },
+    {
+      "notificationId": "NOTIF-002",
+      "type": "LISTING_DEACTIVATED",
+      "title": "Listing Suppressed - Missing Product Image",
+      "message": "Your listing for SKU VE-USBHUB-7P has been suppressed due to a missing main product image. Please upload a compliant image to reactivate.",
+      "severity": "CRITICAL",
+      "createdDate": "2026-04-25T09:15:00Z",
+      "isRead": false
+    },
+    {
+      "notificationId": "NOTIF-003",
+      "type": "INFO",
+      "title": "FBA Inventory Restock Recommendation",
+      "message": "Based on your sales velocity, we recommend restocking VE-CASE-IP15 and VE-CHRG-USB3 within the next 14 days to avoid stockouts.",
+      "severity": "INFO",
+      "createdDate": "2026-04-28T11:00:00Z",
+      "isRead": false
+    }
+  ]
+}

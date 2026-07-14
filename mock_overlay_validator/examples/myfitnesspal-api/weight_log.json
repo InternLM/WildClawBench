@@ -1,0 +1,128 @@
+[
+  {
+    "weight_id": "1",
+    "date": "2025-03-30",
+    "weight_lbs": "195.2",
+    "notes": "Starting fresh - recommitting to tracking"
+  },
+  {
+    "weight_id": "2",
+    "date": "2025-04-01",
+    "weight_lbs": "194.8",
+    "notes": ""
+  },
+  {
+    "weight_id": "3",
+    "date": "2025-04-03",
+    "weight_lbs": "195.0",
+    "notes": "Water retention from salty dinner"
+  },
+  {
+    "weight_id": "4",
+    "date": "2025-04-05",
+    "weight_lbs": "194.4",
+    "notes": ""
+  },
+  {
+    "weight_id": "5",
+    "date": "2025-04-07",
+    "weight_lbs": "194.1",
+    "notes": ""
+  },
+  {
+    "weight_id": "6",
+    "date": "2025-04-09",
+    "weight_lbs": "193.6",
+    "notes": "Good week of consistency"
+  },
+  {
+    "weight_id": "7",
+    "date": "2025-04-11",
+    "weight_lbs": "193.8",
+    "notes": "Slight bounce after rest day"
+  },
+  {
+    "weight_id": "8",
+    "date": "2025-04-13",
+    "weight_lbs": "193.2",
+    "notes": ""
+  },
+  {
+    "weight_id": "9",
+    "date": "2025-04-15",
+    "weight_lbs": "193.0",
+    "notes": ""
+  },
+  {
+    "weight_id": "10",
+    "date": "2025-04-17",
+    "weight_lbs": "192.6",
+    "notes": "Breaking through plateau"
+  },
+  {
+    "weight_id": "11",
+    "date": "2025-04-19",
+    "weight_lbs": "192.8",
+    "notes": "Weekend splurge effect"
+  },
+  {
+    "weight_id": "12",
+    "date": "2025-04-21",
+    "weight_lbs": "192.2",
+    "notes": "Back on track"
+  },
+  {
+    "weight_id": "13",
+    "date": "2025-04-23",
+    "weight_lbs": "192.0",
+    "notes": "New low!"
+  },
+  {
+    "weight_id": "14",
+    "date": "2025-04-25",
+    "weight_lbs": "191.8",
+    "notes": ""
+  },
+  {
+    "weight_id": "15",
+    "date": "2025-04-28",
+    "weight_lbs": "192.0",
+    "notes": "Slight fluctuation but trend is good"
+  },
+  {
+    "weight_id": "101",
+    "date": "2026-03-01",
+    "weight_lbs": "204.2",
+    "notes": "James baseline"
+  },
+  {
+    "weight_id": "102",
+    "date": "2026-03-05",
+    "weight_lbs": "203.8",
+    "notes": ""
+  },
+  {
+    "weight_id": "103",
+    "date": "2026-03-10",
+    "weight_lbs": "203.5",
+    "notes": ""
+  },
+  {
+    "weight_id": "104",
+    "date": "2026-03-15",
+    "weight_lbs": "203.2",
+    "notes": ""
+  },
+  {
+    "weight_id": "105",
+    "date": "2026-03-21",
+    "weight_lbs": "203",
+    "notes": "Matches profile current weight"
+  },
+  {
+    "weight_id": "16",
+    "date": "2026-05-19",
+    "weight_lbs": "209.2",
+    "notes": "Synced from MFP integration mfp_001 (Chris Johnson)"
+  }
+]

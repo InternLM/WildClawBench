@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ORDER-5O190127TN364715T",
+    "intent": "CAPTURE",
+    "status": "COMPLETED",
+    "amount_value": "49.99",
+    "currency_code": "USD",
+    "payee_email": "merchant@orbit-labs.com",
+    "description": "Pro plan annual",
+    "create_time": "2026-05-10T09:00:00Z"
+  },
+  {
+    "id": "ORDER-8AB54321CD987654E",
+    "intent": "CAPTURE",
+    "status": "APPROVED",
+    "amount_value": "19.00",
+    "currency_code": "USD",
+    "payee_email": "merchant@orbit-labs.com",
+    "description": "Starter plan monthly",
+    "create_time": "2026-05-18T11:15:00Z"
+  },
+  {
+    "id": "ORDER-2KL98765MN123456F",
+    "intent": "CAPTURE",
+    "status": "CREATED",
+    "amount_value": "129.00",
+    "currency_code": "USD",
+    "payee_email": "merchant@orbit-labs.com",
+    "description": "Team seats add-on",
+    "create_time": "2026-05-22T14:30:00Z"
+  },
+  {
+    "id": "ORDER-9PQ11223RS445566G",
+    "intent": "CAPTURE",
+    "status": "COMPLETED",
+    "amount_value": "7.50",
+    "currency_code": "USD",
+    "payee_email": "merchant@orbit-labs.com",
+    "description": "Usage overage",
+    "create_time": "2026-05-23T08:45:00Z"
+  },
+  {
+    "id": "ORDER-4UV77889WX001122H",
+    "intent": "CAPTURE",
+    "status": "VOIDED",
+    "amount_value": "250.00",
+    "currency_code": "USD",
+    "payee_email": "merchant@orbit-labs.com",
+    "description": "Cancelled bulk order",
+    "create_time": "2026-05-24T16:00:00Z"
+  },
+  {
+    "id": "ORDER-6YZ33445AB667788I",
+    "intent": "CAPTURE",
+    "status": "CREATED",
+    "amount_value": "84.25",
+    "currency_code": "USD",
+    "payee_email": "merchant@orbit-labs.com",
+    "description": "Hardware accessory",
+    "create_time": "2026-05-25T10:20:00Z"
+  }
+]

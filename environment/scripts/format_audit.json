@@ -1,0 +1,6281 @@
+{
+  "totals": {
+    "config": 616,
+    "config-json": 101,
+    "data-json-table": 430,
+    "data-json-doc": 47,
+    "data-json-empty": 1
+  },
+  "problems": [],
+  "notes": [
+    [
+      "amadeus-api",
+      "flight_offers.json",
+      "non-string-cells",
+      "8 rows, trailing_nl=True, NON-STRING cells in ['itineraries', 'numberOfBookableSeats', 'oneWay', 'price', 'travelerPricings']"
+    ],
+    [
+      "instagram-api",
+      "user.json",
+      "no-trailing-newline",
+      "5 rows, trailing_nl=False, NON-STRING cells in ['followers_count', 'follows_count', 'ig_id', 'media_count']"
+    ],
+    [
+      "pinterest-api",
+      "mockdata_converted.json",
+      "no-trailing-newline",
+      "5 rows, trailing_nl=False, NON-STRING cells in ['response_body']"
+    ],
+    [
+      "pinterest-api",
+      "user_account.json",
+      "non-string-cells",
+      "4 rows, trailing_nl=True, NON-STRING cells in ['board_count', 'follower_count', 'following_count', 'monthly_views', 'pin_count']"
+    ],
+    [
+      "quickbooks-api",
+      "Corporate_Expense_Ledger.json",
+      "no-trailing-newline",
+      "dict, trailing_nl=False"
+    ],
+    [
+      "quickbooks-api",
+      "Reimbursement_Policy.json",
+      "no-trailing-newline",
+      "dict, trailing_nl=False"
+    ],
+    [
+      "quickbooks-api",
+      "bills.json",
+      "non-string-cells",
+      "18 rows, trailing_nl=True, NON-STRING cells in ['Balance', 'Line', 'MetaData', 'TotalAmt', 'VendorRef']"
+    ],
+    [
+      "quickbooks-api",
+      "break-even-analysis.json",
+      "no-trailing-newline",
+      "dict, trailing_nl=False"
+    ],
+    [
+      "quickbooks-api",
+      "estimates.json",
+      "non-string-cells",
+      "7 rows, trailing_nl=True, NON-STRING cells in ['CustomerRef', 'Line', 'LinkedTxn', 'MetaData', 'TotalAmt']"
+    ],
+    [
+      "quickbooks-api",
+      "expenses.json",
+      "non-string-cells",
+      "7 rows, trailing_nl=True, NON-STRING cells in ['Line', 'MetaData', 'TotalAmt']"
+    ],
+    [
+      "quickbooks-api",
+      "invoices.json",
+      "no-trailing-newline",
+      "26 rows, trailing_nl=False, NON-STRING cells in ['Balance', 'BillEmail', 'CustomerRef', 'Line', 'MetaData']"
+    ],
+    [
+      "quickbooks-api",
+      "payments.json",
+      "no-trailing-newline",
+      "19 rows, trailing_nl=False, NON-STRING cells in ['CustomerRef', 'Line', 'TotalAmt']"
+    ],
+    [
+      "ring-api",
+      "active_dings.json",
+      "non-string-cells",
+      "1 rows, trailing_nl=True, NON-STRING cells in ['doorbot_id', 'expires_in', 'id', 'is_sharing', 'motion']"
+    ],
+    [
+      "youtube-api",
+      "channel_sections.json",
+      "non-string-cells",
+      "6 rows, trailing_nl=True, NON-STRING cells in ['contentDetails', 'snippet']"
+    ],
+    [
+      "youtube-api",
+      "video_categories.json",
+      "non-string-cells",
+      "14 rows, trailing_nl=True, NON-STRING cells in ['snippet']"
+    ]
+  ],
+  "report": {
+    "activecampaign-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "activecampaign_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "activecampaign_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "campaigns.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "deals.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "lists.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "airbnb-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "airbnb_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "airbnb_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "availability.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "hosts.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "listings.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "reviews.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "airtable-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "airtable_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "airtable_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "bases.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "fields.json",
+        "category": "data-json-table",
+        "detail": "13 rows, trailing_nl=True"
+      },
+      {
+        "file": "records_contacts.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "records_projects.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "records_tasks.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tables.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      }
+    ],
+    "algolia-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "algolia_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "algolia_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "indices.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "records_docs.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "records_products.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "settings.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      }
+    ],
+    "alpaca-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "account.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "alpaca_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "alpaca_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "assets.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "positions.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "quotes.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "amadeus-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "airlines.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "airports.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "amadeus_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "amadeus_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "flight_offers.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True, NON-STRING cells in ['itineraries', 'numberOfBookableSeats', 'oneWay', 'price', 'travelerPricings']"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "amazon-seller-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "amazon_seller_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "amazon_seller_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "buying_notes_fw26.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "catalog_items.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "inventory.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "order_items.json",
+        "category": "data-json-table",
+        "detail": "25 rows, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "20 rows, trailing_nl=True"
+      },
+      {
+        "file": "pricing.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "reports.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "returns.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "seller_account.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "amplitude-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "amplitude_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "amplitude_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "segmentation.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "asana-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "asana_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "asana_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "projects.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "sections.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tasks.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "workspace.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "bamboohr-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "bamboohr_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "bamboohr_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "company.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "employees.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "time_off_requests.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "whos_out.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "bigcommerce-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "bigcommerce_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "bigcommerce_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "customers.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "products.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "binance-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "balances.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "binance_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "binance_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "depth.json",
+        "category": "data-json-table",
+        "detail": "16 rows, trailing_nl=True"
+      },
+      {
+        "file": "klines.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "prices.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "box-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "box_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "box_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "files.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "folders.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      }
+    ],
+    "calendly-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "availability.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "calendly_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "calendly_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "event_types.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "invitees.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "scheduled_events.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "user.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "cloudflare-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "cloudflare_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "cloudflare_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "dns_records.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "firewall_rules.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "page_rules.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "zones.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      }
+    ],
+    "coinbase-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "accounts.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "coinbase_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "coinbase_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "prices.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "transactions.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "user.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "confluence-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "confluence_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "confluence_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "labels.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "pages.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "spaces.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      }
+    ],
+    "contentful-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "assets.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "content_types.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "contentful_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "contentful_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "entries.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "space.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "datadog-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "dashboards.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "datadog_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "datadog_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "hosts.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "metrics.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "monitors.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "discord-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "channels.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "discord_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "discord_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "guilds.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "me.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "members.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "roles.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "docusign-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "documents.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "docusign_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "docusign_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "envelopes.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "recipients.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "templates.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      }
+    ],
+    "doordash-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "doordash_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "doordash_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "menu_items.json",
+        "category": "data-json-table",
+        "detail": "14 rows, trailing_nl=True"
+      },
+      {
+        "file": "order_items.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "stores.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "dropbox-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "account.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "dropbox_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "dropbox_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "files.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "shared_links.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      }
+    ],
+    "etsy-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "etsy_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "etsy_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "listing_images.json",
+        "category": "data-json-table",
+        "detail": "16 rows, trailing_nl=True"
+      },
+      {
+        "file": "listings.json",
+        "category": "data-json-table",
+        "detail": "20 rows, trailing_nl=True"
+      },
+      {
+        "file": "receipts.json",
+        "category": "data-json-table",
+        "detail": "15 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "return_policies.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "reviews.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "shipping_profiles.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "shop.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "shop_sections.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "transactions.json",
+        "category": "data-json-table",
+        "detail": "15 rows, trailing_nl=True"
+      }
+    ],
+    "eventbrite-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "attendees.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "eventbrite_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "eventbrite_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "organizations.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "ticket_classes.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "venues.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      }
+    ],
+    "fedex-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "fedex_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "fedex_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "rates.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "shipments.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "tracking.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "figma-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "components.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "figma_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "figma_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "file_nodes.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "files.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "projects.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "team.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "freshdesk-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "agents.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "freshdesk_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "freshdesk_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tickets.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      }
+    ],
+    "github-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "github_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "github_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "issues.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "pulls.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "repos.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "user.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "gitlab-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "current_user.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "gitlab_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "gitlab_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "issues.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "merge_requests.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "pipelines.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "projects.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "gmail-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "drafts.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "gmail_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "gmail_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "labels.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "profile.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "google-analytics-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "analytics_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "16 rows, trailing_nl=True"
+      },
+      {
+        "file": "google_analytics_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "property.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "realtime.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "google-calendar-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "calendar_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "calendars.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "event_attendees.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "google_calendar_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "google-classroom-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "announcements.json",
+        "category": "data-json-table",
+        "detail": "16 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "classroom_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "courses.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "coursework.json",
+        "category": "data-json-table",
+        "detail": "58 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "google_classroom_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "materials.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "students.json",
+        "category": "data-json-table",
+        "detail": "91 rows, trailing_nl=True"
+      },
+      {
+        "file": "submissions.json",
+        "category": "data-json-table",
+        "detail": "110 rows, trailing_nl=True"
+      },
+      {
+        "file": "teachers.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "topics.json",
+        "category": "data-json-table",
+        "detail": "30 rows, trailing_nl=True"
+      }
+    ],
+    "google-drive-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "about.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "drive_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "files.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "google_drive_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "permissions.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "google-maps-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "geocodes.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "google_maps_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "maps_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "places.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "greenhouse-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "applications.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "candidates.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "greenhouse_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "greenhouse_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "jobs.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "scorecards.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "gusto-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "company.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "compensations.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "contractors.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "employees.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "gusto_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "gusto_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "payrolls.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "hubspot-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "companies.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "deals.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "hubspot_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "hubspot_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "pipeline_stages.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "instacart-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "instacart_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "instacart_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "order_items.json",
+        "category": "data-json-table",
+        "detail": "15 rows, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "products.json",
+        "category": "data-json-table",
+        "detail": "17 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "retailers.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "user.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "instagram-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "carousel_children.json",
+        "category": "data-json-table",
+        "detail": "48 rows, trailing_nl=True"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "152 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "hashtags.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "instagram_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "instagram_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "media.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "media_insights.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "mentions.json",
+        "category": "data-json-table",
+        "detail": "22 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "stories.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "user.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=False, NON-STRING cells in ['followers_count', 'follows_count', 'ig_id', 'media_count']"
+      }
+    ],
+    "intercom-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "companies.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "conversation_parts.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "conversations.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "intercom_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "intercom_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "jira-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "boards.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "issues.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "jira_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "jira_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "projects.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "sprints.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "klaviyo-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "campaigns.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "klaviyo_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "klaviyo_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "lists.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "profiles.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "kraken-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "assets.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "balances.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "kraken_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "kraken_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "ohlc.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "pairs.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tickers.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      }
+    ],
+    "kubernetes-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "deployments.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "kubernetes_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "kubernetes_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "namespaces.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "nodes.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "pods.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "services.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "linear-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "cycles.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "issues.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "labels.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "linear_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "linear_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "projects.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "teams.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "workflow_states.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "workspace.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "linkedin-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "connections.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "jobs.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "linkedin_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "linkedin_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "organizations.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "posts.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "profile.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "mailchimp-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "campaigns.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "lists.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "mailchimp_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "mailchimp_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "members.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "reports.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "mailgun-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "list_members.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "mailgun_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "mailgun_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "microsoft-teams-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "channels.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "microsoft_teams_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "microsoft_teams_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "teams.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "mixpanel-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "18 rows, trailing_nl=True"
+      },
+      {
+        "file": "funnels.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "mixpanel_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "mixpanel_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "profiles.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "monday-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "boards.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "column_values.json",
+        "category": "data-json-table",
+        "detail": "25 rows, trailing_nl=True"
+      },
+      {
+        "file": "columns.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "groups.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "items.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "monday_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "monday_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "workspaces.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      }
+    ],
+    "myfitnesspal-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "diary_entries.json",
+        "category": "data-json-table",
+        "detail": "341 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "exercise_log.json",
+        "category": "data-json-table",
+        "detail": "29 rows, trailing_nl=True"
+      },
+      {
+        "file": "exercise_types.json",
+        "category": "data-json-table",
+        "detail": "23 rows, trailing_nl=True"
+      },
+      {
+        "file": "foods.json",
+        "category": "data-json-table",
+        "detail": "88 rows, trailing_nl=True"
+      },
+      {
+        "file": "myfitnesspal_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "myfitnesspal_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "myfitnesspal_user_profile.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "user_profile.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "water_log.json",
+        "category": "data-json-table",
+        "detail": "35 rows, trailing_nl=True"
+      },
+      {
+        "file": "weight_log.json",
+        "category": "data-json-table",
+        "detail": "21 rows, trailing_nl=True"
+      }
+    ],
+    "nasa-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "apod.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "epic.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "nasa_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "nasa_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "neos.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "rover_photos.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "rovers.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "notion-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "blocks.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "databases.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "notion_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "notion_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "page_properties.json",
+        "category": "data-json-table",
+        "detail": "22 rows, trailing_nl=True"
+      },
+      {
+        "file": "pages.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "workspace.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "obsidian-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "note_contents.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "notes.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "obsidian_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "obsidian_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "vault.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "okta-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "app_assignments.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "apps.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "group_memberships.json",
+        "category": "data-json-table",
+        "detail": "13 rows, trailing_nl=True"
+      },
+      {
+        "file": "groups.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "okta_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "okta_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "openlibrary-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "authors.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "editions.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "openlibrary_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "openlibrary_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "subjects.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "works.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      }
+    ],
+    "openweather-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "cities.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "current_weather.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "forecast.json",
+        "category": "data-json-table",
+        "detail": "24 rows, trailing_nl=True"
+      },
+      {
+        "file": "openweather_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "weather_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "outlook-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "outlook_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "outlook_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "pagerduty-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "escalation_policies.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "incidents.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "pagerduty_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "pagerduty_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "schedules.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "services.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "paypal-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "captures.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "invoices.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "payouts.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "paypal_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "paypal_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "refunds.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "pinterest-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "ad_accounts.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "board_sections.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "boards.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "campaigns.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "mockdata_converted.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=False, NON-STRING cells in ['response_body']"
+      },
+      {
+        "file": "pin_analytics.json",
+        "category": "data-json-table",
+        "detail": "30 rows, trailing_nl=True"
+      },
+      {
+        "file": "pins.json",
+        "category": "data-json-table",
+        "detail": "20 rows, trailing_nl=True"
+      },
+      {
+        "file": "pinterest_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "pinterest_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "user_account.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True, NON-STRING cells in ['board_count', 'follower_count', 'following_count', 'monthly_views', 'pin_count']"
+      },
+      {
+        "file": "user_analytics.json",
+        "category": "data-json-table",
+        "detail": "30 rows, trailing_nl=True"
+      }
+    ],
+    "plaid-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "accounts.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "identity.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "item.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "plaid_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "plaid_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "transactions.json",
+        "category": "data-json-table",
+        "detail": "30 rows, trailing_nl=True"
+      }
+    ],
+    "posthog-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "feature_flags.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "persons.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "posthog_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "posthog_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "quickbooks-api": [
+      {
+        "file": "Corporate_Expense_Ledger.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=False"
+      },
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "Reimbursement_Policy.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=False"
+      },
+      {
+        "file": "accounts.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "bill-payments.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "bills.json",
+        "category": "data-json-table",
+        "detail": "18 rows, trailing_nl=True, NON-STRING cells in ['Balance', 'Line', 'MetaData', 'TotalAmt', 'VendorRef']"
+      },
+      {
+        "file": "break-even-analysis.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=False"
+      },
+      {
+        "file": "company.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "company_info.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "customers.json",
+        "category": "data-json-table",
+        "detail": "13 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "estimates.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True, NON-STRING cells in ['CustomerRef', 'Line', 'LinkedTxn', 'MetaData', 'TotalAmt']"
+      },
+      {
+        "file": "expenses.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True, NON-STRING cells in ['Line', 'MetaData', 'TotalAmt']"
+      },
+      {
+        "file": "invoices.json",
+        "category": "data-json-table",
+        "detail": "26 rows, trailing_nl=False, NON-STRING cells in ['Balance', 'BillEmail', 'CustomerRef', 'Line', 'MetaData']"
+      },
+      {
+        "file": "items.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "payments.json",
+        "category": "data-json-table",
+        "detail": "19 rows, trailing_nl=False, NON-STRING cells in ['CustomerRef', 'Line', 'TotalAmt']"
+      },
+      {
+        "file": "quickbooks_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "quickbooks_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "vendors.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      }
+    ],
+    "reddit-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "posts.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "reddit_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "reddit_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "subreddits.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "ring-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "active_dings.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True, NON-STRING cells in ['doorbot_id', 'expires_in', 'id', 'is_sharing', 'motion']"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "devices.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "42 rows, trailing_nl=True"
+      },
+      {
+        "file": "location.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "motion_zones.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "notification_prefs.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "ring_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "ring_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "shared_users.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      }
+    ],
+    "salesforce-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "accounts.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "leads.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "opportunities.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "salesforce_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "salesforce_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "segment-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "destinations.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "segment_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "segment_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "sources.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "sendgrid-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "lists.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "sendgrid_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "sendgrid_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "sent_log.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "stats.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "templates.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      }
+    ],
+    "sentry-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "issues.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "organizations.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      },
+      {
+        "file": "projects.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "releases.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "sentry_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "sentry_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      }
+    ],
+    "servicenow-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "change_request.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "incident.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "problem.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "servicenow_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "servicenow_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "sys_user.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      }
+    ],
+    "shippo-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "addresses.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "parcels.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "rates.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "shipments.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "shippo_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "shippo_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "tracking.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "transactions.json",
+        "category": "data-json-table",
+        "detail": "1 rows, trailing_nl=True"
+      }
+    ],
+    "slack-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "channel_members.json",
+        "category": "data-json-table",
+        "detail": "25 rows, trailing_nl=True"
+      },
+      {
+        "file": "channels.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "slack_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "slack_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "team.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "spotify-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "albums.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "artists.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "playlist_tracks.json",
+        "category": "data-json-table",
+        "detail": "11 rows, trailing_nl=True"
+      },
+      {
+        "file": "playlists.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "spotify_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "spotify_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "tracks.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "user.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      }
+    ],
+    "square-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "catalog_items.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "customers.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "inventory.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "merchant.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "payments.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "square_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "square_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "strava-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "activities.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "athlete.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "kudoers.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "segments.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "strava_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "strava_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "stripe-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "balance.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "charges.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "customers.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "invoices.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "prices.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "products.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "stripe_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "stripe_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "subscriptions.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "telegram-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "bot.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "chat_members.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "chats.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "9 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "telegram_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "telegram_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "ticketmaster-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "attractions.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "classifications.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "events.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "ticketmaster_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "ticketmaster_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "venues.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "tmdb-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "credits.json",
+        "category": "data-json-table",
+        "detail": "17 rows, trailing_nl=True"
+      },
+      {
+        "file": "genres.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "movies.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "people.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tmdb_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "tmdb_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "tv.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      }
+    ],
+    "trello-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "boards.json",
+        "category": "data-json-table",
+        "detail": "2 rows, trailing_nl=True"
+      },
+      {
+        "file": "cards.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "checklists.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "lists.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "members.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "trello_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "trello_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "twilio-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "account.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "calls.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "phone_numbers.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "twilio_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "twilio_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "twitch-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "channels.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "clips.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "games.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "streams.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "twitch_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "twitch_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "twitter-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "follows.json",
+        "category": "data-json-table",
+        "detail": "12 rows, trailing_nl=True"
+      },
+      {
+        "file": "likes.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "retweets.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tweets.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "twitter_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "twitter_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      }
+    ],
+    "typeform-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "answers.json",
+        "category": "data-json-table",
+        "detail": "21 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "fields.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "forms.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "responses.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "typeform_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "typeform_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "uber-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "products.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "rider.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "trips.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "uber_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "uber_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "ups-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "rates.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "shipments.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "tracking.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "ups_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "ups_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "vimeo-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "videos.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "vimeo_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "vimeo_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "webflow-api": [
+      {
+        "file": ".test_server.log",
+        "category": "config",
+        "detail": ".log"
+      },
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "collections.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "items.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "sites.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "webflow_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "webflow_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "whatsapp-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "business.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "conversations.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "messages.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "templates.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "whatsapp_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "whatsapp_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "woocommerce-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "customers.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "orders.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "products.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "woocommerce_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "woocommerce_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "wordpress-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "categories.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "media.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "pages.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "posts.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tags.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "5 rows, trailing_nl=True"
+      },
+      {
+        "file": "wordpress_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "wordpress_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "xero-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "accounts.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "contacts.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "invoices.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "xero_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "xero_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "yelp-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "businesses.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "categories.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "reviews.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "yelp_data.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "yelp_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      }
+    ],
+    "youtube-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "analytics.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "captions.json",
+        "category": "data-json-table",
+        "detail": "20 rows, trailing_nl=True"
+      },
+      {
+        "file": "channel.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "channel_sections.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True, NON-STRING cells in ['contentDetails', 'snippet']"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "50 rows, trailing_nl=True"
+      },
+      {
+        "file": "doc_faithfulness_check.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "playlist_items.json",
+        "category": "data-json-table",
+        "detail": "42 rows, trailing_nl=True"
+      },
+      {
+        "file": "playlists.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "video_categories.json",
+        "category": "data-json-table",
+        "detail": "14 rows, trailing_nl=True, NON-STRING cells in ['snippet']"
+      },
+      {
+        "file": "videos.json",
+        "category": "data-json-table",
+        "detail": "30 rows, trailing_nl=True"
+      },
+      {
+        "file": "youtube_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "youtube_data.json",
+        "category": "data-json-empty",
+        "detail": "empty array, trailing_nl=False"
+      },
+      {
+        "file": "youtube_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "zendesk-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "comments.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "organizations.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "tickets.json",
+        "category": "data-json-table",
+        "detail": "8 rows, trailing_nl=True"
+      },
+      {
+        "file": "users.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "zendesk_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "zendesk_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "zillow-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "agents.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "price_history.json",
+        "category": "data-json-table",
+        "detail": "16 rows, trailing_nl=True"
+      },
+      {
+        "file": "properties.json",
+        "category": "data-json-table",
+        "detail": "10 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "saved_searches.json",
+        "category": "data-json-table",
+        "detail": "3 rows, trailing_nl=True"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "zillow_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "zillow_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ],
+    "zoom-api": [
+      {
+        "file": "Dockerfile",
+        "category": "config",
+        "detail": "Dockerfile"
+      },
+      {
+        "file": "api_test_results.md",
+        "category": "config",
+        "detail": ".md"
+      },
+      {
+        "file": "meetings.json",
+        "category": "data-json-table",
+        "detail": "6 rows, trailing_nl=True"
+      },
+      {
+        "file": "recordings.json",
+        "category": "data-json-table",
+        "detail": "4 rows, trailing_nl=True"
+      },
+      {
+        "file": "registrants.json",
+        "category": "data-json-table",
+        "detail": "7 rows, trailing_nl=True"
+      },
+      {
+        "file": "requirements.txt",
+        "category": "config",
+        "detail": ".txt"
+      },
+      {
+        "file": "server.py",
+        "category": "config",
+        "detail": ".py"
+      },
+      {
+        "file": "service.toml",
+        "category": "config",
+        "detail": ".toml"
+      },
+      {
+        "file": "user.json",
+        "category": "data-json-doc",
+        "detail": "dict, trailing_nl=True"
+      },
+      {
+        "file": "zoom_api_postman_collection.json",
+        "category": "config-json",
+        "detail": "postman collection"
+      },
+      {
+        "file": "zoom_data.py",
+        "category": "config",
+        "detail": ".py"
+      }
+    ]
+  }
+}

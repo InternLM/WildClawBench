@@ -1,0 +1,639 @@
+[
+  {
+    "courseId": "course_001",
+    "userId": "student_001",
+    "fullName": "Ethan Nakamura",
+    "emailAddress": "enakamura@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student001"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_002",
+    "fullName": "Sofia Patel",
+    "emailAddress": "spatel@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student002"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_003",
+    "fullName": "Marcus Johnson",
+    "emailAddress": "mjohnson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student003"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_004",
+    "fullName": "Olivia Kim",
+    "emailAddress": "okim@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student004"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_005",
+    "fullName": "Liam O'Brien",
+    "emailAddress": "lobrien@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student005"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_006",
+    "fullName": "Aisha Rahman",
+    "emailAddress": "arahman@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student006"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_007",
+    "fullName": "Diego Herrera",
+    "emailAddress": "dherrera@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student007"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_008",
+    "fullName": "Emma Wilson",
+    "emailAddress": "ewilson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student008"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_009",
+    "fullName": "Ryan Choi",
+    "emailAddress": "rchoi@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student009"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_030",
+    "fullName": "Zoe Martinez",
+    "emailAddress": "zmartinez@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student030"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_031",
+    "fullName": "Noah Thompson",
+    "emailAddress": "nthompson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student031"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_032",
+    "fullName": "Ava Chen",
+    "emailAddress": "achen@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student032"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_033",
+    "fullName": "Jackson Lee",
+    "emailAddress": "jlee@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student033"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_034",
+    "fullName": "Isabella Brown",
+    "emailAddress": "ibrown@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student034"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_035",
+    "fullName": "Lucas Davis",
+    "emailAddress": "ldavis@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student035"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_036",
+    "fullName": "Mia Garcia",
+    "emailAddress": "mgarcia@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student036"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_037",
+    "fullName": "Benjamin White",
+    "emailAddress": "bwhite@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student037"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_038",
+    "fullName": "Charlotte Harris",
+    "emailAddress": "charris@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student038"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_039",
+    "fullName": "Alexander Clark",
+    "emailAddress": "aclark@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student039"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_040",
+    "fullName": "Amelia Lewis",
+    "emailAddress": "alewis@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student040"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_041",
+    "fullName": "Daniel Robinson",
+    "emailAddress": "drobinson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student041"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_042",
+    "fullName": "Harper Walker",
+    "emailAddress": "hwalker@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student042"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_043",
+    "fullName": "Matthew Young",
+    "emailAddress": "myoung@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student043"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_044",
+    "fullName": "Evelyn Hall",
+    "emailAddress": "ehall@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student044"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_045",
+    "fullName": "James Allen",
+    "emailAddress": "jallen@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student045"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_046",
+    "fullName": "Abigail King",
+    "emailAddress": "aking@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student046"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_047",
+    "fullName": "Henry Wright",
+    "emailAddress": "hwright@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student047"
+  },
+  {
+    "courseId": "course_001",
+    "userId": "student_048",
+    "fullName": "Emily Scott",
+    "emailAddress": "escott@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student048"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_010",
+    "fullName": "Jordan Williams",
+    "emailAddress": "jwilliams@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student010"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_011",
+    "fullName": "Priya Sharma",
+    "emailAddress": "psharma@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student011"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_012",
+    "fullName": "Tyler Anderson",
+    "emailAddress": "tanderson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student012"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_013",
+    "fullName": "Maya Okafor",
+    "emailAddress": "mokafor@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student013"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_014",
+    "fullName": "Kevin Tran",
+    "emailAddress": "ktran@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student014"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_015",
+    "fullName": "Samantha Brooks",
+    "emailAddress": "sbrooks@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student015"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_016",
+    "fullName": "Chris Martinez",
+    "emailAddress": "cmartinez@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student016"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_017",
+    "fullName": "Jade Liu",
+    "emailAddress": "jliu@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student017"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_018",
+    "fullName": "Brandon Foster",
+    "emailAddress": "bfoster@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student018"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_019",
+    "fullName": "Aaliyah Jackson",
+    "emailAddress": "ajackson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student019"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_050",
+    "fullName": "Rachel Green",
+    "emailAddress": "rgreen@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student050"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_051",
+    "fullName": "David Park",
+    "emailAddress": "dpark@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student051"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_052",
+    "fullName": "Grace Nguyen",
+    "emailAddress": "gnguyen@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student052"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_053",
+    "fullName": "Owen Phillips",
+    "emailAddress": "ophillips@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student053"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_054",
+    "fullName": "Lily Campbell",
+    "emailAddress": "lcampbell@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student054"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_055",
+    "fullName": "Jack Roberts",
+    "emailAddress": "jroberts@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student055"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_056",
+    "fullName": "Chloe Evans",
+    "emailAddress": "cevans@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student056"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_057",
+    "fullName": "Andrew Turner",
+    "emailAddress": "aturner@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student057"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_058",
+    "fullName": "Sofia Mitchell",
+    "emailAddress": "smitchell@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student058"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_059",
+    "fullName": "Nathan Collins",
+    "emailAddress": "ncollins@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student059"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_060",
+    "fullName": "Ella Stewart",
+    "emailAddress": "estewart@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student060"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_061",
+    "fullName": "Isaac Morris",
+    "emailAddress": "imorris@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student061"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_062",
+    "fullName": "Victoria Reed",
+    "emailAddress": "vreed@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student062"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_063",
+    "fullName": "Dylan Baker",
+    "emailAddress": "dbaker@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student063"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_064",
+    "fullName": "Aria Adams",
+    "emailAddress": "aadams@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student064"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_065",
+    "fullName": "Connor Nelson",
+    "emailAddress": "cnelson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student065"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_066",
+    "fullName": "Scarlett Hill",
+    "emailAddress": "shill@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student066"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_067",
+    "fullName": "Luke Rivera",
+    "emailAddress": "lrivera@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student067"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_068",
+    "fullName": "Penelope Cooper",
+    "emailAddress": "pcooper@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student068"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_069",
+    "fullName": "Sebastian Howard",
+    "emailAddress": "showard@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student069"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_070",
+    "fullName": "Layla Ward",
+    "emailAddress": "lward@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student070"
+  },
+  {
+    "courseId": "course_002",
+    "userId": "student_071",
+    "fullName": "Caleb Cox",
+    "emailAddress": "ccox@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student071"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_020",
+    "fullName": "Jasmine Wong",
+    "emailAddress": "jwong@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student020"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_021",
+    "fullName": "Alex Petrov",
+    "emailAddress": "apetrov@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student021"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_022",
+    "fullName": "Hannah Taylor",
+    "emailAddress": "htaylor@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student022"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_023",
+    "fullName": "Cameron Douglas",
+    "emailAddress": "cdouglas@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student023"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_024",
+    "fullName": "Destiny Moore",
+    "emailAddress": "dmoore@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student024"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_025",
+    "fullName": "Isaiah Bennett",
+    "emailAddress": "ibennett@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student025"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_026",
+    "fullName": "Natalie Foster",
+    "emailAddress": "nfoster@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student026"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_027",
+    "fullName": "Julian Hayes",
+    "emailAddress": "jhayes@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student027"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_028",
+    "fullName": "Mackenzie Price",
+    "emailAddress": "mprice@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student028"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_029",
+    "fullName": "Gabriel Ross",
+    "emailAddress": "gross@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student029"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_072",
+    "fullName": "Aurora Perry",
+    "emailAddress": "aperry@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student072"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_073",
+    "fullName": "Elijah Long",
+    "emailAddress": "elong@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student073"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_074",
+    "fullName": "Savannah Butler",
+    "emailAddress": "sbutler@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student074"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_075",
+    "fullName": "Carter Barnes",
+    "emailAddress": "cbarnes@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student075"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_076",
+    "fullName": "Stella Fisher",
+    "emailAddress": "sfisher@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student076"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_077",
+    "fullName": "Wyatt Sanders",
+    "emailAddress": "wsanders@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student077"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_078",
+    "fullName": "Nora Patterson",
+    "emailAddress": "npatterson@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student078"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_079",
+    "fullName": "Leo Hughes",
+    "emailAddress": "lhughes@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student079"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_080",
+    "fullName": "Hazel Washington",
+    "emailAddress": "hwashington@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student080"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_081",
+    "fullName": "Adrian Griffin",
+    "emailAddress": "agriffin@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student081"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_082",
+    "fullName": "Violet Diaz",
+    "emailAddress": "vdiaz@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student082"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_083",
+    "fullName": "Hudson James",
+    "emailAddress": "hjames@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student083"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_084",
+    "fullName": "Luna Russell",
+    "emailAddress": "lrussell@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student084"
+  },
+  {
+    "courseId": "course_003",
+    "userId": "student_085",
+    "fullName": "Dominic Hayes",
+    "emailAddress": "dhayes2@westlake.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student085"
+  },
+  {
+    "courseId": "course_005",
+    "userId": "student_086",
+    "fullName": "Marcus Chen",
+    "emailAddress": "mchen@cascobay-marine.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student086"
+  },
+  {
+    "courseId": "course_005",
+    "userId": "student_087",
+    "fullName": "Priya Ramanathan",
+    "emailAddress": "pramanathan@cascobay-marine.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student087"
+  },
+  {
+    "courseId": "course_005",
+    "userId": "student_088",
+    "fullName": "Jake Trudeau",
+    "emailAddress": "jtrudeau@cascobay-marine.edu",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student088"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "userId": "student_100",
+    "fullName": "Carlos Bennett",
+    "emailAddress": "cbennett@luckystrike-charters.com",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student100"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "userId": "student_101",
+    "fullName": "Marisol Reyes",
+    "emailAddress": "mreyes@luckystrike-charters.com",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student101"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "userId": "student_100",
+    "fullName": "Carlos Bennett",
+    "emailAddress": "cbennett@luckystrike-charters.com",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student100"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "userId": "student_101",
+    "fullName": "Marisol Reyes",
+    "emailAddress": "mreyes@luckystrike-charters.com",
+    "photoUrl": "https://lh3.googleusercontent.com/a/student101"
+  }
+]

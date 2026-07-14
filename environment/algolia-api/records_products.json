@@ -1,0 +1,74 @@
+[
+  {
+    "objectID": "prod-001",
+    "name": "Aurora Wireless Headphones",
+    "description": "Over-ear noise cancelling wireless headphones",
+    "category": "audio",
+    "brand": "Aurora",
+    "price": "199.99",
+    "in_stock": "true"
+  },
+  {
+    "objectID": "prod-002",
+    "name": "Aurora Earbuds Mini",
+    "description": "Compact true wireless earbuds with charging case",
+    "category": "audio",
+    "brand": "Aurora",
+    "price": "89.99",
+    "in_stock": "true"
+  },
+  {
+    "objectID": "prod-003",
+    "name": "Nimbus 4K Monitor",
+    "description": "27 inch 4K UHD monitor with USB-C",
+    "category": "displays",
+    "brand": "Nimbus",
+    "price": "449.0",
+    "in_stock": "true"
+  },
+  {
+    "objectID": "prod-004",
+    "name": "Nimbus Curved Monitor",
+    "description": "34 inch ultrawide curved gaming monitor",
+    "category": "displays",
+    "brand": "Nimbus",
+    "price": "599.0",
+    "in_stock": "false"
+  },
+  {
+    "objectID": "prod-005",
+    "name": "Helio Mechanical Keyboard",
+    "description": "Hot-swappable mechanical keyboard with RGB",
+    "category": "peripherals",
+    "brand": "Helio",
+    "price": "129.99",
+    "in_stock": "true"
+  },
+  {
+    "objectID": "prod-006",
+    "name": "Helio Wireless Mouse",
+    "description": "Ergonomic wireless mouse with silent clicks",
+    "category": "peripherals",
+    "brand": "Helio",
+    "price": "49.99",
+    "in_stock": "true"
+  },
+  {
+    "objectID": "prod-007",
+    "name": "Vela USB-C Hub",
+    "description": "Seven-port USB-C hub with HDMI and ethernet",
+    "category": "accessories",
+    "brand": "Vela",
+    "price": "69.99",
+    "in_stock": "true"
+  },
+  {
+    "objectID": "prod-008",
+    "name": "Vela Laptop Stand",
+    "description": "Adjustable aluminum laptop stand",
+    "category": "accessories",
+    "brand": "Vela",
+    "price": "39.99",
+    "in_stock": "false"
+  }
+]

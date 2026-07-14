@@ -1,0 +1,80 @@
+[
+  {
+    "id": "401",
+    "dealname": "Helix Enterprise Renewal",
+    "pipeline": "default",
+    "dealstage": "closedwon",
+    "amount": "358800",
+    "closedate": "2026-04-30T00:00:00Z",
+    "dealtype": "existingbusiness",
+    "associated_company": "301",
+    "associated_contact": "202",
+    "createdate": "2026-02-01T10:00:00Z",
+    "lastmodifieddate": "2026-04-30T12:00:00Z"
+  },
+  {
+    "id": "402",
+    "dealname": "Lumen Pro Upgrade",
+    "pipeline": "default",
+    "dealstage": "decisionmakerboughtin",
+    "amount": "11760",
+    "closedate": "2026-06-15T00:00:00Z",
+    "dealtype": "existingbusiness",
+    "associated_company": "302",
+    "associated_contact": "203",
+    "createdate": "2026-03-10T14:00:00Z",
+    "lastmodifieddate": "2026-05-22T11:00:00Z"
+  },
+  {
+    "id": "403",
+    "dealname": "Pelagic Logistics Pilot",
+    "pipeline": "default",
+    "dealstage": "qualifiedtobuy",
+    "amount": "45000",
+    "closedate": "2026-07-01T00:00:00Z",
+    "dealtype": "newbusiness",
+    "associated_company": "303",
+    "associated_contact": "204",
+    "createdate": "2026-02-25T16:00:00Z",
+    "lastmodifieddate": "2026-05-10T09:00:00Z"
+  },
+  {
+    "id": "404",
+    "dealname": "Quanta Annual Expansion",
+    "pipeline": "default",
+    "dealstage": "presentationscheduled",
+    "amount": "98000",
+    "closedate": "2026-06-30T00:00:00Z",
+    "dealtype": "existingbusiness",
+    "associated_company": "304",
+    "associated_contact": "206",
+    "createdate": "2026-04-01T08:00:00Z",
+    "lastmodifieddate": "2026-05-25T10:00:00Z"
+  },
+  {
+    "id": "405",
+    "dealname": "Nimbus POS Deal",
+    "pipeline": "default",
+    "dealstage": "appointmentscheduled",
+    "amount": "9900",
+    "closedate": "2026-08-01T00:00:00Z",
+    "dealtype": "newbusiness",
+    "associated_company": "",
+    "associated_contact": "207",
+    "createdate": "2026-04-15T13:00:00Z",
+    "lastmodifieddate": "2026-05-26T09:00:00Z"
+  },
+  {
+    "id": "406",
+    "dealname": "Driftwood Trial",
+    "pipeline": "default",
+    "dealstage": "closedlost",
+    "amount": "15000",
+    "closedate": "2026-05-01T00:00:00Z",
+    "dealtype": "newbusiness",
+    "associated_company": "",
+    "associated_contact": "208",
+    "createdate": "2026-04-25T10:15:00Z",
+    "lastmodifieddate": "2026-05-24T14:00:00Z"
+  }
+]

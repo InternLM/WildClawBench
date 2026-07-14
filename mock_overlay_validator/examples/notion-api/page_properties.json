@@ -1,0 +1,134 @@
+[
+  {
+    "page_id": "page-task-001",
+    "property_name": "Status",
+    "property_type": "status",
+    "value": "In progress"
+  },
+  {
+    "page_id": "page-task-001",
+    "property_name": "Priority",
+    "property_type": "select",
+    "value": "High"
+  },
+  {
+    "page_id": "page-task-001",
+    "property_name": "Assignee",
+    "property_type": "people",
+    "value": "user-amelia"
+  },
+  {
+    "page_id": "page-task-001",
+    "property_name": "Due",
+    "property_type": "date",
+    "value": "2026-06-10"
+  },
+  {
+    "page_id": "page-task-002",
+    "property_name": "Status",
+    "property_type": "status",
+    "value": "In progress"
+  },
+  {
+    "page_id": "page-task-002",
+    "property_name": "Priority",
+    "property_type": "select",
+    "value": "High"
+  },
+  {
+    "page_id": "page-task-002",
+    "property_name": "Assignee",
+    "property_type": "people",
+    "value": "user-jonas"
+  },
+  {
+    "page_id": "page-task-002",
+    "property_name": "Due",
+    "property_type": "date",
+    "value": "2026-06-30"
+  },
+  {
+    "page_id": "page-task-003",
+    "property_name": "Status",
+    "property_type": "status",
+    "value": "Todo"
+  },
+  {
+    "page_id": "page-task-003",
+    "property_name": "Priority",
+    "property_type": "select",
+    "value": "Medium"
+  },
+  {
+    "page_id": "page-task-003",
+    "property_name": "Assignee",
+    "property_type": "people",
+    "value": "user-helena"
+  },
+  {
+    "page_id": "page-task-003",
+    "property_name": "Due",
+    "property_type": "date",
+    "value": "2026-07-05"
+  },
+  {
+    "page_id": "page-task-004",
+    "property_name": "Status",
+    "property_type": "status",
+    "value": "Done"
+  },
+  {
+    "page_id": "page-task-004",
+    "property_name": "Priority",
+    "property_type": "select",
+    "value": "Low"
+  },
+  {
+    "page_id": "page-task-004",
+    "property_name": "Assignee",
+    "property_type": "people",
+    "value": "user-amelia"
+  },
+  {
+    "page_id": "page-task-004",
+    "property_name": "Due",
+    "property_type": "date",
+    "value": "2026-05-12"
+  },
+  {
+    "page_id": "page-okr-q2-1",
+    "property_name": "Status",
+    "property_type": "status",
+    "value": "On track"
+  },
+  {
+    "page_id": "page-okr-q2-1",
+    "property_name": "Owner",
+    "property_type": "people",
+    "value": "user-jonas"
+  },
+  {
+    "page_id": "page-okr-q2-1",
+    "property_name": "Progress",
+    "property_type": "number",
+    "value": "0.62"
+  },
+  {
+    "page_id": "page-okr-q2-2",
+    "property_name": "Status",
+    "property_type": "status",
+    "value": "At risk"
+  },
+  {
+    "page_id": "page-okr-q2-2",
+    "property_name": "Owner",
+    "property_type": "people",
+    "value": "user-jonas"
+  },
+  {
+    "page_id": "page-okr-q2-2",
+    "property_name": "Progress",
+    "property_type": "number",
+    "value": "0.35"
+  }
+]

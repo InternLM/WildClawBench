@@ -1,0 +1,62 @@
+[
+  {
+    "sys_id": "prb-0003001",
+    "number": "PRB0003001",
+    "short_description": "Recurring email disconnects",
+    "description": "Root cause analysis for repeated Outlook disconnection incidents.",
+    "state": "2",
+    "priority": "1",
+    "assigned_to": "usr-priya",
+    "opened_by": "usr-amelia",
+    "opened_at": "2026-05-20T11:00:00Z",
+    "related_incident": "inc-0001001"
+  },
+  {
+    "sys_id": "prb-0003002",
+    "number": "PRB0003002",
+    "short_description": "VPN gateway instability after patches",
+    "description": "Investigating VPN tunnel failures following gateway updates.",
+    "state": "2",
+    "priority": "2",
+    "assigned_to": "usr-helena",
+    "opened_by": "usr-amelia",
+    "opened_at": "2026-05-21T10:00:00Z",
+    "related_incident": "inc-0001002"
+  },
+  {
+    "sys_id": "prb-0003003",
+    "number": "PRB0003003",
+    "short_description": "Analytics DB query timeouts",
+    "description": "Known error candidate for reporting database timeouts.",
+    "state": "4",
+    "priority": "1",
+    "assigned_to": "usr-rohit",
+    "opened_by": "usr-amelia",
+    "opened_at": "2026-05-23T13:00:00Z",
+    "related_incident": "inc-0001006"
+  },
+  {
+    "sys_id": "prb-0003004",
+    "number": "PRB0003004",
+    "short_description": "Floor 2 access point reboots",
+    "description": "Identifying firmware defect causing AP reboots.",
+    "state": "1",
+    "priority": "3",
+    "assigned_to": "usr-priya",
+    "opened_by": "usr-helena",
+    "opened_at": "2026-05-25T11:30:00Z",
+    "related_incident": "inc-0001008"
+  },
+  {
+    "sys_id": "prb-0003005",
+    "number": "PRB0003005",
+    "short_description": "VoIP one-way audio pattern",
+    "description": "Recurring one-way audio on calls routed through edge SBC.",
+    "state": "1",
+    "priority": "2",
+    "assigned_to": "usr-helena",
+    "opened_by": "usr-jonas",
+    "opened_at": "2026-05-26T17:00:00Z",
+    "related_incident": "inc-0001010"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "venue-soma",
+    "name": "GitHub Loft",
+    "address1": "532 Folsom St",
+    "city": "San Francisco",
+    "region": "CA",
+    "postal_code": "94105",
+    "country": "US",
+    "latitude": "37.7853",
+    "longitude": "-122.3970"
+  },
+  {
+    "id": "venue-mission",
+    "name": "Mission Bay Conference Center",
+    "address1": "1675 Owens St",
+    "city": "San Francisco",
+    "region": "CA",
+    "postal_code": "94158",
+    "country": "US",
+    "latitude": "37.7679",
+    "longitude": "-122.3925"
+  },
+  {
+    "id": "venue-presidio",
+    "name": "Presidio Main Post",
+    "address1": "Lincoln Blvd",
+    "city": "San Francisco",
+    "region": "CA",
+    "postal_code": "94129",
+    "country": "US",
+    "latitude": "37.7989",
+    "longitude": "-122.4662"
+  }
+]

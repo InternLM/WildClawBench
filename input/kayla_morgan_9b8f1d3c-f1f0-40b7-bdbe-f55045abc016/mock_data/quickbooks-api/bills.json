@@ -1,0 +1,83 @@
+[
+  {
+    "Id": "2001",
+    "VendorRef": { "value": "7", "name": "Duke Energy" },
+    "TxnDate": "2026-04-05",
+    "DueDate": "2026-05-05",
+    "TotalAmt": 412.00,
+    "Balance": 0.0,
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 412.00,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Electric — April",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "11", "name": "Utilities" }
+        }
+      }
+    ],
+    "Status": "Paid",
+    "DocNumber": "DE-04-2026",
+    "MetaData": {
+      "CreateTime": "2026-04-05T09:00:00-04:00",
+      "LastUpdatedTime": "2026-05-01T11:00:00-04:00"
+    },
+    "SyncToken": "1"
+  },
+  {
+    "Id": "2002",
+    "VendorRef": { "value": "8", "name": "Asheville Water Resources" },
+    "TxnDate": "2026-04-12",
+    "DueDate": "2026-05-12",
+    "TotalAmt": 87.50,
+    "Balance": 0.0,
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 87.50,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Water/sewer — April",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "11", "name": "Utilities" }
+        }
+      }
+    ],
+    "Status": "Paid",
+    "DocNumber": "AWR-04-2026",
+    "MetaData": {
+      "CreateTime": "2026-04-12T10:30:00-04:00",
+      "LastUpdatedTime": "2026-05-02T13:00:00-04:00"
+    },
+    "SyncToken": "1"
+  },
+  {
+    "Id": "2003",
+    "VendorRef": { "value": "7", "name": "Duke Energy" },
+    "TxnDate": "2026-05-06",
+    "DueDate": "2026-06-05",
+    "TotalAmt": 398.00,
+    "Balance": 398.00,
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 398.00,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Electric — May",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "11", "name": "Utilities" }
+        }
+      }
+    ],
+    "Status": "Open",
+    "DocNumber": "DE-05-2026",
+    "MetaData": {
+      "CreateTime": "2026-05-06T09:00:00-04:00",
+      "LastUpdatedTime": "2026-05-06T09:00:00-04:00"
+    },
+    "SyncToken": "0"
+  }
+]

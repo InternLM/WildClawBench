@@ -1,0 +1,38 @@
+[
+  {
+    "id": "300001",
+    "page_id": "100103",
+    "name": "runbook",
+    "prefix": "global"
+  },
+  {
+    "id": "300002",
+    "page_id": "100103",
+    "name": "oncall",
+    "prefix": "global"
+  },
+  {
+    "id": "300003",
+    "page_id": "100104",
+    "name": "runbook",
+    "prefix": "global"
+  },
+  {
+    "id": "300004",
+    "page_id": "100202",
+    "name": "roadmap",
+    "prefix": "global"
+  },
+  {
+    "id": "300005",
+    "page_id": "100203",
+    "name": "architecture",
+    "prefix": "global"
+  },
+  {
+    "id": "300006",
+    "page_id": "100105",
+    "name": "adr",
+    "prefix": "global"
+  }
+]

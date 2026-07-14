@@ -1,0 +1,65 @@
+[
+  {
+    "id": "CUST_HARPER01",
+    "given_name": "Harper",
+    "family_name": "Nguyen",
+    "email_address": "harper.nguyen@example.com",
+    "phone_number": "+14155550101",
+    "company_name": "Riverside Cafe",
+    "created_at": "2025-08-12T09:00:00Z"
+  },
+  {
+    "id": "CUST_DIEGO02",
+    "given_name": "Diego",
+    "family_name": "Ramos",
+    "email_address": "diego.ramos@example.com",
+    "phone_number": "+14155550102",
+    "company_name": "",
+    "created_at": "2025-09-03T11:30:00Z"
+  },
+  {
+    "id": "CUST_MAYA03",
+    "given_name": "Maya",
+    "family_name": "Fischer",
+    "email_address": "maya.fischer@example.com",
+    "phone_number": "+14155550103",
+    "company_name": "Fischer Bakery",
+    "created_at": "2025-09-21T14:10:00Z"
+  },
+  {
+    "id": "CUST_OMAR04",
+    "given_name": "Omar",
+    "family_name": "Haddad",
+    "email_address": "omar.haddad@example.com",
+    "phone_number": "+14155550104",
+    "company_name": "",
+    "created_at": "2025-10-05T16:45:00Z"
+  },
+  {
+    "id": "CUST_LENA05",
+    "given_name": "Lena",
+    "family_name": "Sorensen",
+    "email_address": "lena.sorensen@example.com",
+    "phone_number": "+14155550105",
+    "company_name": "Sorensen Goods",
+    "created_at": "2025-10-19T08:20:00Z"
+  },
+  {
+    "id": "CUST_PRIYA06",
+    "given_name": "Priya",
+    "family_name": "Kapoor",
+    "email_address": "priya.kapoor@example.com",
+    "phone_number": "+14155550106",
+    "company_name": "",
+    "created_at": "2025-11-02T13:00:00Z"
+  },
+  {
+    "id": "CUST_TOMAS07",
+    "given_name": "Tomas",
+    "family_name": "Varga",
+    "email_address": "tomas.varga@example.com",
+    "phone_number": "+14155550107",
+    "company_name": "Varga Roasters",
+    "created_at": "2025-11-18T10:15:00Z"
+  }
+]

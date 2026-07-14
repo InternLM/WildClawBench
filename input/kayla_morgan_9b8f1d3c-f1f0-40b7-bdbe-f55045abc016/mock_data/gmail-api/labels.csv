@@ -1,0 +1,10 @@
+id,name,type,messages_total,messages_unread,threads_total,threads_unread
+INBOX,INBOX,system,2847,12,1903,8
+SENT,SENT,system,1421,0,1102,0
+DRAFTS,DRAFTS,system,3,0,3,0
+TRASH,TRASH,system,84,0,71,0
+SPAM,SPAM,system,17,0,14,0
+Label_society,Historical Society,user,318,4,212,3
+Label_bookclub,Book Club,user,205,1,147,0
+Label_family,Family,user,612,2,398,1
+Label_receipts,Receipts,user,87,0,84,0

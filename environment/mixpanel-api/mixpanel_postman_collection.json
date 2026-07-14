@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Mixpanel Mock API",
+    "description": "Test collection for the mock Mixpanel API service. Base URL defaults to http://localhost:8056. In docker-compose, the service is reachable at http://mixpanel-api:8056.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8056"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "track event", "request": {"method": "POST", "url": "{{baseUrl}}/track",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"event\": \"Checkout\", \"distinct_id\": \"user-cleo\", \"properties\": {\"country\": \"GB\", \"plan\": \"paid\"}}"}}},
+    {"name": "events counts", "request": {"method": "GET", "url": "{{baseUrl}}/api/2.0/events?event=App Open,Checkout&from_date=2025-05-01&to_date=2025-05-04"}},
+    {"name": "funnels list", "request": {"method": "GET", "url": "{{baseUrl}}/api/2.0/funnels/list"}},
+    {"name": "funnel", "request": {"method": "GET", "url": "{{baseUrl}}/api/2.0/funnels?funnel_id=7461001"}},
+    {"name": "segmentation", "request": {"method": "GET", "url": "{{baseUrl}}/api/2.0/segmentation?event=App Open&from_date=2025-05-01&to_date=2025-05-04&on=country"}},
+    {"name": "engage profiles", "request": {"method": "GET", "url": "{{baseUrl}}/api/2.0/engage?where=plan==paid"}},
+    {"name": "engage one profile", "request": {"method": "GET", "url": "{{baseUrl}}/api/2.0/engage?distinct_id=user-aria"}}
+  ]
+}

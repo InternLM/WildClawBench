@@ -1,0 +1,39 @@
+{
+  "id": "UC_EquineHealthChannel",
+  "snippet": {
+    "title": "Equine Wellness Academy",
+    "description": "Practical horse health education for owners, barn managers, and equine professionals. New videos every Monday and Thursday.\n\nTopics: Skin conditions, lameness, nutrition, dental care, emergency first aid, seasonal management, and preventive care.\n\nBusiness inquiries: equinewellnessacademy@gmail.com",
+    "customUrl": "@equinewellnessacademy",
+    "publishedAt": "2021-06-15T12:00:00Z",
+    "thumbnails": {
+      "default": {"url": "https://yt3.ggpht.com/ytc/equine_default.jpg", "width": 88, "height": 88},
+      "medium": {"url": "https://yt3.ggpht.com/ytc/equine_medium.jpg", "width": 240, "height": 240},
+      "high": {"url": "https://yt3.ggpht.com/ytc/equine_high.jpg", "width": 800, "height": 800}
+    },
+    "country": "US"
+  },
+  "statistics": {
+    "viewCount": "8734210",
+    "subscriberCount": "62400",
+    "hiddenSubscriberCount": false,
+    "videoCount": "195"
+  },
+  "contentDetails": {
+    "relatedPlaylists": {
+      "likes": "LL_EquineHealthChannel",
+      "uploads": "UU_EquineHealthChannel"
+    }
+  },
+  "brandingSettings": {
+    "channel": {
+      "title": "Equine Wellness Academy",
+      "description": "Practical horse health education for owners, barn managers, and equine professionals.",
+      "keywords": "horse health equine veterinary skin conditions lameness nutrition hoof care preventive care horse owner education",
+      "unsubscribedTrailer": "vid_001",
+      "country": "US"
+    },
+    "image": {
+      "bannerExternalUrl": "https://yt3.googleusercontent.com/equine_wellness_banner.jpg"
+    }
+  }
+}

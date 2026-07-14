@@ -1,0 +1,15 @@
+id,subject,from_name,from_address,to_name,to_address,body_preview,content_type,is_read,importance,received_date
+M01,Re: montage boekenkast - nieuwe datum,Hendrik Veldkamp,h.veldkamp@home.nl,Ben Cox,ben.cox@finthesiss.ai,"Beste Ben, dinsdag de 13e lukt toch niet bij ons thuis. Kan de montage naar vrijdag 16 oktober? Zelfde tijd in de ochtend is prima. Groet, Hendrik Veldkamp",text,true,normal,2026-09-30T16:42:00
+M02,Eiken plankhout - laatste voor de Veldkamp klus,Groningen Houtcentrum,verkoop@groningenhout.nl,Ben Cox,ben.cox@finthesiss.ai,"Ben, het eiken 27mm voor de boekenkast is het laatste wat nog moet. Voorraad is krap voor het weekend. Stuur even een reply met akkoord dan zetten we het vandaag nog op de wagen, scheelt je de rit. Groet, Groningen Houtcentrum",text,false,high,2026-10-02T09:15:00
+M03,Re: keuken Haren planning,J. Bosman,j.bosman@haren-nl.net,Ben Cox,ben.cox@finthesiss.ai,"Ben, dank voor de offerte in februari. We wachten de levering in december af. Tot dan.",text,true,normal,2026-02-11T11:05:00
+M04,Re: restauratie kast - afgerond,Pieter Hofman,p.hofman@kpnmail.nl,Ben Cox,ben.cox@finthesiss.ai,"Helemaal tevreden Ben, mooi werk. Factuur is voldaan. Tot ziens.",text,true,normal,2026-03-30T14:20:00
+M05,Boodschappen,Diane Cox,diane.cox@outlook.com,Ben Cox,ben.cox@finthesiss.ai,Vergeet je de kaas niet bij de Aldi? En brood. x,text,true,normal,2026-10-01T17:30:00
+M06,Zaterdag,Piet Dijkstra,piet.dijkstra@home.nl,Ben Cox,ben.cox@finthesiss.ai,Koffie zaterdag? Zelfde tijd. Piet,text,true,normal,2026-10-01T19:10:00
+M07,Nieuwsbrief kerk oktober,PKN Zuidhorn,nieuwsbrief@pknzuidhorn.nl,Ben Cox,ben.cox@finthesiss.ai,"Agenda diensten, kerstmarkt voorbereiding en collecte.",html,false,normal,2026-09-29T08:00:00
+M08,Najaarsaanbiedingen hout,Groningen Houtcentrum,nieuwsbrief@groningenhout.nl,Ben Cox,ben.cox@finthesiss.ai,Bekijk onze aanbiedingen op plaatmateriaal en gereedschap deze maand.,html,false,low,2026-09-28T10:00:00
+M09,Zondag,Marie Cox-Gagne,marie.gagne@outlook.com,Ben Cox,ben.cox@finthesiss.ai,We komen de 25e. Tom rijdt. Kan ik iets meenemen?,text,true,normal,2026-09-27T20:05:00
+M10,Uw KPN factuur,KPN,facturen@kpn.nl,Ben Cox,ben.cox@finthesiss.ai,Uw maandfactuur staat klaar in mijn KPN.,html,true,normal,2026-09-26T06:30:00
+M11,Nieuw op Netflix,Netflix,info@netflix.com,Ben Cox,ben.cox@finthesiss.ai,Deze week toegevoegd aan je lijst.,html,true,low,2026-09-25T07:00:00
+M12,Wedstrijdinfo komend weekend,FC Groningen,nieuws@fcgroningen.nl,Ben Cox,ben.cox@finthesiss.ai,Uitwedstrijd en kaartverkoop informatie.,html,true,low,2026-09-24T12:00:00
+M13,Website,Keith Cox,keith.cox@outlook.com,Ben Cox,ben.cox@finthesiss.ai,"Pa, ik heb de website even bijgewerkt. Foto's van de keuken erop gezet.",text,true,normal,2026-09-23T21:40:00
+M14,Klantenkaart punten,Bouwmarkt Zuidhorn,info@bouwmarktzuidhorn.nl,Ben Cox,ben.cox@finthesiss.ai,Je hebt punten beschikbaar. Inleverbaar tot eind van het jaar.,html,true,low,2026-09-22T09:00:00

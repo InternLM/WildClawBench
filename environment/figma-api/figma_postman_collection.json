@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "Figma Mock API",
+    "description": "Test collection for the mock Figma REST API service. Base URL defaults to http://localhost:8079. In docker-compose, the service is reachable at http://figma-api:8079.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8079"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/v1/me"}},
+    {"name": "team projects", "request": {"method": "GET", "url": "{{baseUrl}}/v1/teams/team-501/projects"}},
+    {"name": "project files", "request": {"method": "GET", "url": "{{baseUrl}}/v1/projects/proj-201/files"}},
+    {"name": "get file", "request": {"method": "GET", "url": "{{baseUrl}}/v1/files/FK001abcdefg"}},
+    {"name": "get file nodes", "request": {"method": "GET", "url": "{{baseUrl}}/v1/files/FK001abcdefg/nodes?ids=5:10,5:20"}},
+    {"name": "get comments", "request": {"method": "GET", "url": "{{baseUrl}}/v1/files/FK001abcdefg/comments"}},
+    {"name": "create comment", "request": {"method": "POST", "url": "{{baseUrl}}/v1/files/FK001abcdefg/comments",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"message\": \"Let's align the spacing here.\", \"client_meta\": {\"node_id\": \"5:11\"}, \"user_id\": \"user-1003\"}"}}},
+    {"name": "get components", "request": {"method": "GET", "url": "{{baseUrl}}/v1/files/FK004vwxyz12/components"}}
+  ]
+}

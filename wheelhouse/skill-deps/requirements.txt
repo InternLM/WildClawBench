@@ -1,0 +1,50 @@
+# WildClawBench skill runtime pip deps - offline wheelhouse lockfile.
+#
+# This file pins exact versions for the wheels co-located in this directory.
+# It is consumed by src/utils/docker_utils.py::_install_skill_runtime_deps
+# via `pip install --no-index --find-links <this dir> -r <this file>` inside
+# the agent container (wildclawbench-ubuntu:v1.3), which has no public-internet
+# egress (the agent network is created with --internal; see
+# src/utils/litellm_sidecar.py:272-307).
+#
+# Target platform: linux/amd64, CPython 3.10 (cp310), manylinux2014_x86_64.
+# To refresh, run:
+#   docker run --rm --platform linux/amd64 -v "$PWD/wheelhouse/skill-deps":/out \
+#     python:3.10-slim bash -c "pip download --dest /out \
+#       --platform manylinux2014_x86_64 --python-version 310 --implementation cp \
+#       --abi cp310 --only-binary=:all: \
+#       pymupdf pillow pytesseract pdfplumber pdf2image opencv-python-headless \
+#       openpyxl python-docx python-pptx pandas pypdf"
+# Then regenerate this lockfile from the resulting *.whl filenames.
+
+# Top-level skill deps (declared by environment/skills/*/SKILL.md
+# metadata.clawdbot.pip and the _BASELINE_SKILL_PIP_DEPS tuple).
+pymupdf==1.26.0
+pillow==12.2.0
+pytesseract==0.3.13
+pdfplumber==0.11.9
+pdf2image==1.17.0
+opencv-python-headless==4.13.0.92
+openpyxl==3.1.5
+python-docx==1.2.0
+python-pptx==1.0.2
+pandas==2.3.2
+pypdf==6.13.0
+
+# Transitive deps (frozen from the resolved wheel set).
+cffi==2.0.0
+charset-normalizer==3.4.7
+cryptography==48.0.0
+et-xmlfile==2.0.0
+lxml==6.1.1
+numpy==2.2.6
+packaging==26.2
+pdfminer.six==20251230
+pycparser==3.0
+pypdfium2==5.9.0
+python-dateutil==2.9.0.post0
+pytz==2026.2
+six==1.17.0
+typing_extensions==4.15.0
+tzdata==2026.2
+XlsxWriter==3.2.9

@@ -1,0 +1,5 @@
+[service]
+name = "airbnb-api"
+port = 8038
+env_var_name = "AIRBNB_API_URL"
+healthcheck_path = "/health"

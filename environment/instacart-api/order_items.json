@@ -1,0 +1,122 @@
+[
+  {
+    "order_id": "order-001",
+    "product_id": "prod-safe-001",
+    "quantity": "2",
+    "unit_price": "2.49",
+    "line_total": "4.98",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-001",
+    "product_id": "prod-safe-002",
+    "quantity": "1",
+    "unit_price": "4.79",
+    "line_total": "4.79",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-001",
+    "product_id": "prod-safe-003",
+    "quantity": "1",
+    "unit_price": "3.49",
+    "line_total": "3.49",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-001",
+    "product_id": "prod-safe-004",
+    "quantity": "2",
+    "unit_price": "9.99",
+    "line_total": "19.98",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-001",
+    "product_id": "prod-safe-005",
+    "quantity": "1",
+    "unit_price": "5.99",
+    "line_total": "5.99",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-001",
+    "product_id": "prod-safe-006",
+    "quantity": "1",
+    "unit_price": "2.95",
+    "line_total": "2.95",
+    "replacement_for": "prod-safe-006"
+  },
+  {
+    "order_id": "order-002",
+    "product_id": "prod-wf-001",
+    "quantity": "2",
+    "unit_price": "14.99",
+    "line_total": "29.98",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-002",
+    "product_id": "prod-wf-002",
+    "quantity": "2",
+    "unit_price": "3.49",
+    "line_total": "6.98",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-002",
+    "product_id": "prod-wf-003",
+    "quantity": "2",
+    "unit_price": "5.99",
+    "line_total": "11.98",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-002",
+    "product_id": "prod-wf-004",
+    "quantity": "10",
+    "unit_price": "1.49",
+    "line_total": "14.90",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-002",
+    "product_id": "prod-wf-001",
+    "quantity": "1",
+    "unit_price": "4.66",
+    "line_total": "4.66",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-003",
+    "product_id": "prod-tj-001",
+    "quantity": "2",
+    "unit_price": "5.49",
+    "line_total": "10.98",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-003",
+    "product_id": "prod-tj-002",
+    "quantity": "3",
+    "unit_price": "2.99",
+    "line_total": "8.97",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-003",
+    "product_id": "prod-tj-003",
+    "quantity": "2",
+    "unit_price": "3.99",
+    "line_total": "7.98",
+    "replacement_for": ""
+  },
+  {
+    "order_id": "order-003",
+    "product_id": "prod-tj-001",
+    "quantity": "1",
+    "unit_price": "2.03",
+    "line_total": "2.03",
+    "replacement_for": ""
+  }
+]

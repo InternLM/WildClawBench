@@ -1,0 +1,42 @@
+{
+  "volunteer": "Kayla Morgan",
+  "month": "2026-05",
+  "shifts": [
+    {
+      "date": "2026-05-01",
+      "hours": 4.0,
+      "activity": "Caldwell transcription"
+    },
+    {
+      "date": "2026-05-06",
+      "hours": 4.0,
+      "activity": "Caldwell transcription"
+    },
+    {
+      "date": "2026-05-08",
+      "hours": 4.0,
+      "activity": "Archival filing"
+    },
+    {
+      "date": "2026-05-13",
+      "hours": 3.5,
+      "activity": "Reception prep - vendor coordination"
+    },
+    {
+      "date": "2026-05-20",
+      "hours": 5.0,
+      "activity": "Reception setup and walkthrough"
+    },
+    {
+      "date": "2026-05-21",
+      "hours": 7.0,
+      "activity": "Reception day"
+    },
+    {
+      "date": "2026-05-27",
+      "hours": 4.0,
+      "activity": "Caldwell transcription"
+    }
+  ],
+  "total_hours": 31.5
+}

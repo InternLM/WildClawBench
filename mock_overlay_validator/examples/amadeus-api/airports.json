@@ -1,0 +1,134 @@
+[
+  {
+    "iata_code": "JFK",
+    "name": "John F Kennedy International Airport",
+    "city_name": "New York",
+    "city_code": "NYC",
+    "country_name": "United States",
+    "country_code": "US",
+    "latitude": "40.6413",
+    "longitude": "-73.7781",
+    "timezone": "America/New_York"
+  },
+  {
+    "iata_code": "LAX",
+    "name": "Los Angeles International Airport",
+    "city_name": "Los Angeles",
+    "city_code": "LAX",
+    "country_name": "United States",
+    "country_code": "US",
+    "latitude": "33.9416",
+    "longitude": "-118.4085",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "iata_code": "LHR",
+    "name": "Heathrow Airport",
+    "city_name": "London",
+    "city_code": "LON",
+    "country_name": "United Kingdom",
+    "country_code": "GB",
+    "latitude": "51.4700",
+    "longitude": "-0.4543",
+    "timezone": "Europe/London"
+  },
+  {
+    "iata_code": "CDG",
+    "name": "Charles de Gaulle Airport",
+    "city_name": "Paris",
+    "city_code": "PAR",
+    "country_name": "France",
+    "country_code": "FR",
+    "latitude": "49.0097",
+    "longitude": "2.5479",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "iata_code": "FRA",
+    "name": "Frankfurt Airport",
+    "city_name": "Frankfurt",
+    "city_code": "FRA",
+    "country_name": "Germany",
+    "country_code": "DE",
+    "latitude": "50.0379",
+    "longitude": "8.5622",
+    "timezone": "Europe/Berlin"
+  },
+  {
+    "iata_code": "DXB",
+    "name": "Dubai International Airport",
+    "city_name": "Dubai",
+    "city_code": "DXB",
+    "country_name": "United Arab Emirates",
+    "country_code": "AE",
+    "latitude": "25.2532",
+    "longitude": "55.3657",
+    "timezone": "Asia/Dubai"
+  },
+  {
+    "iata_code": "SIN",
+    "name": "Singapore Changi Airport",
+    "city_name": "Singapore",
+    "city_code": "SIN",
+    "country_name": "Singapore",
+    "country_code": "SG",
+    "latitude": "1.3644",
+    "longitude": "103.9915",
+    "timezone": "Asia/Singapore"
+  },
+  {
+    "iata_code": "NRT",
+    "name": "Narita International Airport",
+    "city_name": "Tokyo",
+    "city_code": "TYO",
+    "country_name": "Japan",
+    "country_code": "JP",
+    "latitude": "35.7720",
+    "longitude": "140.3929",
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "iata_code": "SFO",
+    "name": "San Francisco International Airport",
+    "city_name": "San Francisco",
+    "city_code": "SFO",
+    "country_name": "United States",
+    "country_code": "US",
+    "latitude": "37.6213",
+    "longitude": "-122.3790",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "iata_code": "BOS",
+    "name": "Logan International Airport",
+    "city_name": "Boston",
+    "city_code": "BOS",
+    "country_name": "United States",
+    "country_code": "US",
+    "latitude": "42.3656",
+    "longitude": "-71.0096",
+    "timezone": "America/New_York"
+  },
+  {
+    "iata_code": "ORD",
+    "name": "Ohare International Airport",
+    "city_name": "Chicago",
+    "city_code": "CHI",
+    "country_name": "United States",
+    "country_code": "US",
+    "latitude": "41.9742",
+    "longitude": "-87.9073",
+    "timezone": "America/Chicago"
+  },
+  {
+    "iata_code": "AMS",
+    "name": "Amsterdam Schiphol Airport",
+    "city_name": "Amsterdam",
+    "city_code": "AMS",
+    "country_name": "Netherlands",
+    "country_code": "NL",
+    "latitude": "52.3105",
+    "longitude": "4.7683",
+    "timezone": "Europe/Amsterdam"
+  }
+]

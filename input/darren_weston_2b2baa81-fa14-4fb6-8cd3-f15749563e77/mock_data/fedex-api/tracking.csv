@@ -1,0 +1,9 @@
+tracking_number,status_code,status_description,carrier_code,service_name,ship_date,estimated_delivery,latest_event,latest_event_location,latest_event_time
+794583016247,IT,In transit,FDXE,FedEx International Priority,2026-10-09,2026-10-15,Departed FedEx hub,"Brussels, BE",2026-10-10T06:12:00Z
+794583016248,DL,Delivered,FDXE,FedEx International Priority,2026-10-02,2026-10-03,Delivered,"Ixelles, BE",2026-10-03T10:40:00Z
+613902248871,DL,Delivered,FDXG,FedEx Economy,2026-10-05,2026-10-07,Delivered,"Ixelles, BE",2026-10-07T09:05:00Z
+772011500394,DL,Delivered,FDXE,FedEx International Priority,2026-09-30,2026-10-01,Delivered,"Ixelles, BE",2026-10-01T11:20:00Z
+518204773190,DL,Delivered,FDXG,FedEx Economy,2026-10-04,2026-10-06,Delivered,"Ixelles, BE",2026-10-06T15:30:00Z
+640118299052,IT,In transit,FDXE,FedEx International Priority,2026-10-06,2026-10-09,At sort facility,"Lille, FR",2026-10-08T22:00:00Z
+905512340087,DL,Delivered,FDXG,FedEx Economy,2026-10-01,2026-10-03,Delivered,"Ixelles, BE",2026-10-03T08:50:00Z
+773460028115,DL,Delivered,FDXE,FedEx International Priority,2026-09-29,2026-09-30,Delivered,"Ixelles, BE",2026-09-30T12:10:00Z

@@ -1,0 +1,68 @@
+[
+  {
+    "section_id": "section_2001",
+    "board_id": "board_1002",
+    "name": "Phalaenopsis",
+    "pin_count": "7"
+  },
+  {
+    "section_id": "section_2002",
+    "board_id": "board_1002",
+    "name": "Cattleya",
+    "pin_count": "6"
+  },
+  {
+    "section_id": "section_2003",
+    "board_id": "board_1002",
+    "name": "Paphiopedilum",
+    "pin_count": "5"
+  },
+  {
+    "section_id": "section_2004",
+    "board_id": "board_1003",
+    "name": "Flavors & Recipes",
+    "pin_count": "8"
+  },
+  {
+    "section_id": "section_2005",
+    "board_id": "board_1003",
+    "name": "Techniques",
+    "pin_count": "5"
+  },
+  {
+    "section_id": "section_2006",
+    "board_id": "board_1004",
+    "name": "Layout & Benches",
+    "pin_count": "4"
+  },
+  {
+    "section_id": "section_2007",
+    "board_id": "board_1004",
+    "name": "Climate Systems",
+    "pin_count": "3"
+  },
+  {
+    "section_id": "section_2008",
+    "board_id": "board_1005",
+    "name": "Weeknight Meals",
+    "pin_count": "5"
+  },
+  {
+    "section_id": "section_2009",
+    "board_id": "board_1005",
+    "name": "Sunday Baking",
+    "pin_count": "4"
+  },
+  {
+    "section_id": "section_2010",
+    "board_id": "board_1006",
+    "name": "Perennials",
+    "pin_count": "5"
+  },
+  {
+    "section_id": "section_2011",
+    "board_id": "board_1006",
+    "name": "Container Gardens",
+    "pin_count": "3"
+  }
+]

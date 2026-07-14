@@ -1,0 +1,13 @@
+id,page_id,name,prefix
+lbl_1,pg_5g_filing_plan_v3,ncc-filing,global
+lbl_2,pg_5g_filing_plan_v3,5g-cbd-pilot,global
+lbl_3,pg_5g_tech_position_v3,ncc-filing,global
+lbl_4,pg_5g_tech_position_v3,technical-canon,global
+lbl_5,pg_5g_project_charter,charter,global
+lbl_6,pg_ncc_act_section_121,ncc-canon,global
+lbl_7,pg_nasarawa_runbook,nasarawa,global
+lbl_8,pg_design_standards,design-canon,global
+lbl_9,pg_vendor_acceptance_test,vendor-tachyon,global
+lbl_10,pg_dry_run_dialogue,hearing-prep,global
+lbl_11,pg_filing_position_consistency_check,consistency-check,global
+lbl_12,pg_objection_letter_template,community,global

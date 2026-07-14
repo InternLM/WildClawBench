@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "Twitter/X Mock API v2",
+    "description": "Test collection for the mock Twitter/X API v2 service. Base URL defaults to http://localhost:8061. In docker-compose, the service is reachable at http://twitter-api:8061.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8061"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/2/users/me"}},
+    {"name": "get user", "request": {"method": "GET", "url": "{{baseUrl}}/2/users/2002"}},
+    {"name": "get user by username", "request": {"method": "GET", "url": "{{baseUrl}}/2/users/by/username/orbit_labs"}},
+    {"name": "get user tweets", "request": {"method": "GET", "url": "{{baseUrl}}/2/users/2001/tweets?max_results=5"}},
+    {"name": "get followers", "request": {"method": "GET", "url": "{{baseUrl}}/2/users/2001/followers"}},
+    {"name": "list tweets", "request": {"method": "GET", "url": "{{baseUrl}}/2/tweets?max_results=5"}},
+    {"name": "get tweet", "request": {"method": "GET", "url": "{{baseUrl}}/2/tweets/3002"}},
+    {"name": "search recent", "request": {"method": "GET", "url": "{{baseUrl}}/2/tweets/search/recent?query=SLO"}},
+    {"name": "create tweet", "request": {"method": "POST", "url": "{{baseUrl}}/2/tweets",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"text\": \"Just deployed the new plugin API. No downtime.\", \"author_id\": \"2001\"}"}}},
+    {"name": "delete tweet", "request": {"method": "DELETE", "url": "{{baseUrl}}/2/tweets/3008"}},
+    {"name": "like tweet", "request": {"method": "POST", "url": "{{baseUrl}}/2/users/2001/likes",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"tweet_id\": \"3004\"}"}}},
+    {"name": "retweet", "request": {"method": "POST", "url": "{{baseUrl}}/2/users/2001/retweets",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"tweet_id\": \"3010\"}"}}}
+  ]
+}

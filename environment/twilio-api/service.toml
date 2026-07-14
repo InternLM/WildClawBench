@@ -1,0 +1,5 @@
+[service]
+name = "twilio-api"
+port = 8026
+env_var_name = "TWILIO_API_URL"
+healthcheck_path = "/health"

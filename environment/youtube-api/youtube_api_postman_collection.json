@@ -1,0 +1,442 @@
+{
+  "info": {
+    "name": "YouTube Mock API v3",
+    "description": "Complete test collection for the mock YouTube Data API v3 service (Equine Wellness Academy). Base URL defaults to http://localhost:8008 for local testing.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "base_url", "value": "http://localhost:8008"},
+    {"key": "channel_id", "value": "UC_EquineHealthChannel"}
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/health", "host": ["{{base_url}}"], "path": ["health"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Channels",
+      "item": [
+        {
+          "name": "GET Channel by ID",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/channels?id={{channel_id}}&part=snippet,contentDetails,statistics,brandingSettings", "host": ["{{base_url}}"], "path": ["youtube", "v3", "channels"], "query": [{"key": "id", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet,contentDetails,statistics,brandingSettings"}]}
+          }
+        },
+        {
+          "name": "GET Channel - 404",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/channels?id=INVALID_CHANNEL_99", "host": ["{{base_url}}"], "path": ["youtube", "v3", "channels"], "query": [{"key": "id", "value": "INVALID_CHANNEL_99"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "item": [
+        {
+          "name": "GET Videos by Channel",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?channelId={{channel_id}}&part=snippet,contentDetails,statistics,status&maxResults=5", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "channelId", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet,contentDetails,statistics,status"}, {"key": "maxResults", "value": "5"}]}
+          }
+        },
+        {
+          "name": "GET Video by ID",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?id=vid_001&part=snippet,contentDetails,statistics,status", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "id", "value": "vid_001"}, {"key": "part", "value": "snippet,contentDetails,statistics,status"}]}
+          }
+        },
+        {
+          "name": "GET Video - 404",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?id=INVALID_ID_99999&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "id", "value": "INVALID_ID_99999"}, {"key": "part", "value": "snippet"}]}
+          }
+        },
+        {
+          "name": "GET Multiple Videos by ID",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?id=vid_001,vid_002,vid_003&part=snippet,statistics", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "id", "value": "vid_001,vid_002,vid_003"}, {"key": "part", "value": "snippet,statistics"}]}
+          }
+        },
+        {
+          "name": "PUT Update Video",
+          "request": {
+            "method": "PUT",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?part=snippet,status", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "part", "value": "snippet,status"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"id\": \"vid_005\", \"snippet\": {\"title\": \"8 VS Code Extensions Senior Devs Use Daily\", \"description\": \"Updated description with new extensions.\", \"tags\": [\"vs code\", \"vscode extensions\", \"developer tools\", \"productivity\", \"2025\"]}}"}
+          }
+        },
+        {
+          "name": "PUT Update Video - 404",
+          "request": {
+            "method": "PUT",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"id\": \"INVALID_ID_99999\", \"snippet\": {\"title\": \"Test\"}}"}
+          }
+        },
+        {
+          "name": "DELETE Video",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?id=vid_030", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "id", "value": "vid_030"}]}
+          }
+        },
+        {
+          "name": "DELETE Video - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/videos?id=INVALID_ID_99999", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videos"], "query": [{"key": "id", "value": "INVALID_ID_99999"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Playlists",
+      "item": [
+        {
+          "name": "GET Playlists by Channel",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?channelId={{channel_id}}&part=snippet,contentDetails,status&maxResults=10", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "channelId", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet,contentDetails,status"}, {"key": "maxResults", "value": "10"}]}
+          }
+        },
+        {
+          "name": "GET Playlist by ID",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?id=PL_001&part=snippet,contentDetails,status", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "id", "value": "PL_001"}, {"key": "part", "value": "snippet,contentDetails,status"}]}
+          }
+        },
+        {
+          "name": "GET Playlist - 404",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?id=INVALID_PL_99999&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "id", "value": "INVALID_PL_99999"}, {"key": "part", "value": "snippet"}]}
+          }
+        },
+        {
+          "name": "POST Create Playlist",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?part=snippet,status", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "part", "value": "snippet,status"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"snippet\": {\"title\": \"AI & Machine Learning\", \"description\": \"Tutorials on AI, ML, and LLMs for developers\"}, \"status\": {\"privacyStatus\": \"public\"}}"}
+          }
+        },
+        {
+          "name": "PUT Update Playlist",
+          "request": {
+            "method": "PUT",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?part=snippet,status", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "part", "value": "snippet,status"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"id\": \"PL_005\", \"snippet\": {\"title\": \"Tool Reviews & Comparisons 2025\", \"description\": \"Updated reviews for the latest developer tools\"}}"}
+          }
+        },
+        {
+          "name": "PUT Update Playlist - 404",
+          "request": {
+            "method": "PUT",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"id\": \"INVALID_PL_99999\", \"snippet\": {\"title\": \"Test\"}}"}
+          }
+        },
+        {
+          "name": "DELETE Playlist",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?id=PL_010", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "id", "value": "PL_010"}]}
+          }
+        },
+        {
+          "name": "DELETE Playlist - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlists?id=INVALID_PL_99999", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlists"], "query": [{"key": "id", "value": "INVALID_PL_99999"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlaylistItems",
+      "item": [
+        {
+          "name": "GET Playlist Items",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlistItems?playlistId=PL_001&part=snippet,contentDetails&maxResults=10", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlistItems"], "query": [{"key": "playlistId", "value": "PL_001"}, {"key": "part", "value": "snippet,contentDetails"}, {"key": "maxResults", "value": "10"}]}
+          }
+        },
+        {
+          "name": "POST Insert Playlist Item",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlistItems?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlistItems"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"snippet\": {\"playlistId\": \"PL_001\", \"resourceId\": {\"kind\": \"youtube#video\", \"videoId\": \"vid_020\"}, \"position\": 2}}"}
+          }
+        },
+        {
+          "name": "POST Insert Playlist Item - Invalid Playlist",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlistItems?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlistItems"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"snippet\": {\"playlistId\": \"INVALID_PL\", \"resourceId\": {\"kind\": \"youtube#video\", \"videoId\": \"vid_001\"}}}"}
+          }
+        },
+        {
+          "name": "PUT Update Playlist Item Position",
+          "request": {
+            "method": "PUT",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlistItems?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlistItems"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"id\": \"PLI_003\", \"snippet\": {\"position\": 5}}"}
+          }
+        },
+        {
+          "name": "DELETE Playlist Item",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlistItems?id=PLI_025", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlistItems"], "query": [{"key": "id", "value": "PLI_025"}]}
+          }
+        },
+        {
+          "name": "DELETE Playlist Item - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/playlistItems?id=INVALID_PLI_99999", "host": ["{{base_url}}"], "path": ["youtube", "v3", "playlistItems"], "query": [{"key": "id", "value": "INVALID_PLI_99999"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "CommentThreads",
+      "item": [
+        {
+          "name": "GET Comment Threads for Video",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/commentThreads?videoId=vid_001&part=snippet,replies&maxResults=10", "host": ["{{base_url}}"], "path": ["youtube", "v3", "commentThreads"], "query": [{"key": "videoId", "value": "vid_001"}, {"key": "part", "value": "snippet,replies"}, {"key": "maxResults", "value": "10"}]}
+          }
+        },
+        {
+          "name": "GET Comment Threads - Held for Review",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/commentThreads?videoId=vid_019&part=snippet,replies&moderationStatus=heldForReview", "host": ["{{base_url}}"], "path": ["youtube", "v3", "commentThreads"], "query": [{"key": "videoId", "value": "vid_019"}, {"key": "part", "value": "snippet,replies"}, {"key": "moderationStatus", "value": "heldForReview"}]}
+          }
+        },
+        {
+          "name": "POST Create Comment Thread",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/commentThreads?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "commentThreads"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"snippet\": {\"videoId\": \"vid_001\", \"topLevelComment\": {\"snippet\": {\"textOriginal\": \"Great video! Thanks for the project ideas.\"}}}}"}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "item": [
+        {
+          "name": "GET Replies to Comment",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments?parentId=cmt_002&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments"], "query": [{"key": "parentId", "value": "cmt_002"}, {"key": "part", "value": "snippet"}]}
+          }
+        },
+        {
+          "name": "POST Reply to Comment",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"snippet\": {\"parentId\": \"cmt_005\", \"textOriginal\": \"Thanks for asking! I used Next.js with the app router.\"}}"}
+          }
+        },
+        {
+          "name": "POST Reply - Invalid Parent",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"snippet\": {\"parentId\": \"INVALID_CMT_99999\", \"textOriginal\": \"This should fail.\"}}"}
+          }
+        },
+        {
+          "name": "PUT Update Comment",
+          "request": {
+            "method": "PUT",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"id\": \"cmt_003\", \"snippet\": {\"textOriginal\": \"Updated reply: Socket.io is great! Also check out the ws library for raw WebSocket support.\"}}"}
+          }
+        },
+        {
+          "name": "PUT Update Comment - 404",
+          "request": {
+            "method": "PUT",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments?part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments"], "query": [{"key": "part", "value": "snippet"}]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"id\": \"INVALID_CMT_99999\", \"snippet\": {\"textOriginal\": \"Test\"}}"}
+          }
+        },
+        {
+          "name": "DELETE Comment",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments?id=cmt_026", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments"], "query": [{"key": "id", "value": "cmt_026"}]}
+          }
+        },
+        {
+          "name": "DELETE Comment - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments?id=INVALID_CMT_99999", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments"], "query": [{"key": "id", "value": "INVALID_CMT_99999"}]}
+          }
+        },
+        {
+          "name": "POST Set Moderation Status",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments/setModerationStatus?id=cmt_028&moderationStatus=published", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments", "setModerationStatus"], "query": [{"key": "id", "value": "cmt_028"}, {"key": "moderationStatus", "value": "published"}]}
+          }
+        },
+        {
+          "name": "POST Set Moderation Status - 404",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/youtube/v3/comments/setModerationStatus?id=INVALID_CMT_99999&moderationStatus=rejected", "host": ["{{base_url}}"], "path": ["youtube", "v3", "comments", "setModerationStatus"], "query": [{"key": "id", "value": "INVALID_CMT_99999"}, {"key": "moderationStatus", "value": "rejected"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "item": [
+        {
+          "name": "GET Search - by keyword",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/search?q=python&channelId={{channel_id}}&part=snippet&maxResults=10", "host": ["{{base_url}}"], "path": ["youtube", "v3", "search"], "query": [{"key": "q", "value": "python"}, {"key": "channelId", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet"}, {"key": "maxResults", "value": "10"}]}
+          }
+        },
+        {
+          "name": "GET Search - order by viewCount",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/search?q=career&channelId={{channel_id}}&part=snippet&order=viewCount&maxResults=5", "host": ["{{base_url}}"], "path": ["youtube", "v3", "search"], "query": [{"key": "q", "value": "career"}, {"key": "channelId", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet"}, {"key": "order", "value": "viewCount"}, {"key": "maxResults", "value": "5"}]}
+          }
+        },
+        {
+          "name": "GET Search - order by date",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/search?channelId={{channel_id}}&part=snippet&order=date&maxResults=5", "host": ["{{base_url}}"], "path": ["youtube", "v3", "search"], "query": [{"key": "channelId", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet"}, {"key": "order", "value": "date"}, {"key": "maxResults", "value": "5"}]}
+          }
+        },
+        {
+          "name": "GET Search - no results",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/search?q=xyznonexistent123&channelId={{channel_id}}&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "search"], "query": [{"key": "q", "value": "xyznonexistent123"}, {"key": "channelId", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "VideoCategories",
+      "item": [
+        {
+          "name": "GET Video Categories",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/videoCategories?regionCode=US&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "videoCategories"], "query": [{"key": "regionCode", "value": "US"}, {"key": "part", "value": "snippet"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Captions",
+      "item": [
+        {
+          "name": "GET Captions for Video",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/captions?videoId=vid_002&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "captions"], "query": [{"key": "videoId", "value": "vid_002"}, {"key": "part", "value": "snippet"}]}
+          }
+        },
+        {
+          "name": "GET Captions - Video Not Found",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/captions?videoId=INVALID_VID_99&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "captions"], "query": [{"key": "videoId", "value": "INVALID_VID_99"}, {"key": "part", "value": "snippet"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "ChannelSections",
+      "item": [
+        {
+          "name": "GET Channel Sections",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/channelSections?channelId={{channel_id}}&part=snippet,contentDetails", "host": ["{{base_url}}"], "path": ["youtube", "v3", "channelSections"], "query": [{"key": "channelId", "value": "{{channel_id}}"}, {"key": "part", "value": "snippet,contentDetails"}]}
+          }
+        },
+        {
+          "name": "GET Channel Sections - 404",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/v3/channelSections?channelId=INVALID_CHANNEL_99&part=snippet", "host": ["{{base_url}}"], "path": ["youtube", "v3", "channelSections"], "query": [{"key": "channelId", "value": "INVALID_CHANNEL_99"}, {"key": "part", "value": "snippet"}]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "item": [
+        {
+          "name": "GET Channel Analytics",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/analytics/v2/reports?ids=channel==UC_EquineHealthChannel&metrics=views,estimatedMinutesWatched,subscribersGained&startDate=2025-03-01&endDate=2025-03-31", "host": ["{{base_url}}"], "path": ["youtube", "analytics", "v2", "reports"], "query": [{"key": "ids", "value": "channel==UC_EquineHealthChannel"}, {"key": "metrics", "value": "views,estimatedMinutesWatched,subscribersGained"}, {"key": "startDate", "value": "2025-03-01"}, {"key": "endDate", "value": "2025-03-31"}]}
+          }
+        },
+        {
+          "name": "GET Video Analytics",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/analytics/v2/reports?ids=channel==UC_EquineHealthChannel&filters=video==vid_001&metrics=views,estimatedMinutesWatched,likes&startDate=2025-03-01&endDate=2025-03-31", "host": ["{{base_url}}"], "path": ["youtube", "analytics", "v2", "reports"], "query": [{"key": "ids", "value": "channel==UC_EquineHealthChannel"}, {"key": "filters", "value": "video==vid_001"}, {"key": "metrics", "value": "views,estimatedMinutesWatched,likes"}, {"key": "startDate", "value": "2025-03-01"}, {"key": "endDate", "value": "2025-03-31"}]}
+          }
+        },
+        {
+          "name": "GET Video Analytics - 404",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/youtube/analytics/v2/reports?ids=channel==UC_EquineHealthChannel&filters=video==INVALID_VID_99&metrics=views", "host": ["{{base_url}}"], "path": ["youtube", "analytics", "v2", "reports"], "query": [{"key": "ids", "value": "channel==UC_EquineHealthChannel"}, {"key": "filters", "value": "video==INVALID_VID_99"}, {"key": "metrics", "value": "views"}]}
+          }
+        }
+      ]
+    }
+  ]
+}

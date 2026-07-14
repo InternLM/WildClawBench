@@ -1,0 +1,74 @@
+[
+  {
+    "ts": "1748210000.000100",
+    "channel_id": "C01ENG",
+    "user_id": "U01AMELIA",
+    "text": "Kicking off auth v2 weekly. Status doc in #proj-auth-v2.",
+    "thread_ts": "",
+    "reply_count": "1",
+    "reactions": ""
+  },
+  {
+    "ts": "1748210100.000200",
+    "channel_id": "C01ENG",
+    "user_id": "U01JONAS",
+    "text": "Will need a billing migration freeze for the cutover.",
+    "thread_ts": "1748210000.000100",
+    "reply_count": "0",
+    "reactions": ""
+  },
+  {
+    "ts": "1748220500.000300",
+    "channel_id": "C01AUTHV2",
+    "user_id": "U01AMELIA",
+    "text": "Shim is dual-writing to old + new session store. Holding rollout until p95 drops below 250ms.",
+    "thread_ts": "",
+    "reply_count": "2",
+    "reactions": "+1:U01JONAS,U01HELENA"
+  },
+  {
+    "ts": "1748221000.000400",
+    "channel_id": "C01AUTHV2",
+    "user_id": "U01HELENA",
+    "text": "Saw a spike on auth.refresh latency at 10:42 UTC — dashboard link incoming.",
+    "thread_ts": "1748220500.000300",
+    "reply_count": "0",
+    "reactions": ""
+  },
+  {
+    "ts": "1748221500.000500",
+    "channel_id": "C01DEPLOY",
+    "user_id": "U01BOT",
+    "text": "deploy: billing-api v1.42.0 to prod (✅ 3m12s)",
+    "thread_ts": "",
+    "reply_count": "0",
+    "reactions": ""
+  },
+  {
+    "ts": "1748222000.000600",
+    "channel_id": "C01DEPLOY",
+    "user_id": "U01BOT",
+    "text": "deploy: auth-api v2.18.0 to staging (✅ 2m08s)",
+    "thread_ts": "",
+    "reply_count": "0",
+    "reactions": ""
+  },
+  {
+    "ts": "1748230000.000700",
+    "channel_id": "C01GENERAL",
+    "user_id": "U01AMELIA",
+    "text": "Reminder: company offsite RSVP deadline is Friday.",
+    "thread_ts": "",
+    "reply_count": "0",
+    "reactions": ""
+  },
+  {
+    "ts": "1748230500.000800",
+    "channel_id": "C01RANDOM",
+    "user_id": "U01ROHIT",
+    "text": "Anyone else surprised the build is faster than the CI green-light?",
+    "thread_ts": "",
+    "reply_count": "1",
+    "reactions": ""
+  }
+]

@@ -1,0 +1,5 @@
+[service]
+name = "gusto-api"
+port = 8074
+env_var_name = "GUSTO_API_URL"
+healthcheck_path = "/health"

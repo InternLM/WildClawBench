@@ -1,0 +1,5 @@
+id,subject,from_name,from_address,to_name,to_address,body_preview,content_type,is_read,importance,received_date
+AAMkAG001,Guild winter event save the date,Guilde des Patissiers,no-reply@guildepatissiers.be,Darren Weston,d.weston@outlook.be,Save the date for the winter guild event in January.,html,false,normal,2026-10-01T10:00:00Z
+AAMkAG002,Supplier expo invitation,Brussels Food Expo,info@brusselsfoodexpo.be,Darren Weston,d.weston@outlook.be,You are invited to the spring trade expo.,html,true,normal,2026-09-28T09:00:00Z
+AAMkAG003,Newsletter: pastry trends,Pastry Europe,news@pastryeurope.eu,Darren Weston,d.weston@outlook.be,This season's trends in plated desserts.,html,true,low,2026-09-25T08:00:00Z
+AAMkAG004,Your subscription renews soon,So Good Magazine,billing@sogoodmag.com,Darren Weston,d.weston@outlook.be,Your annual subscription renews next month.,html,false,normal,2026-10-02T07:30:00Z

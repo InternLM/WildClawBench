@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "Obsidian Mock API",
+    "description": "Mock of the Obsidian Local REST API. Base URL: http://localhost:8014. In docker-compose: http://obsidian-api:8014.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8014"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "vault info", "request": {"method": "GET", "url": "{{baseUrl}}/vault"}},
+    {"name": "list notes", "request": {"method": "GET", "url": "{{baseUrl}}/vault/notes?folder=Projects"}},
+    {"name": "get note", "request": {"method": "GET", "url": "{{baseUrl}}/vault/notes/Projects/Auth%20v2.md"}},
+    {"name": "create note", "request": {"method": "POST", "url": "{{baseUrl}}/vault/notes",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"path\": \"Inbox/idea-cache-warmup.md\", \"content\": \"# Cache warm-up\\n\\nPre-warm L7 caches before failover dry-run.\\n\"}"}}},
+    {"name": "append to note", "request": {"method": "PUT", "url": "{{baseUrl}}/vault/notes/Daily/2026-05-26.md",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"append\": \"\\n- Decided: ship auth v2 dry-run Wednesday.\"}"}}},
+    {"name": "delete note", "request": {"method": "DELETE", "url": "{{baseUrl}}/vault/notes/Inbox/quick%20capture.md"}},
+    {"name": "search", "request": {"method": "GET", "url": "{{baseUrl}}/vault/search?query=failover&content=true"}},
+    {"name": "backlinks", "request": {"method": "GET", "url": "{{baseUrl}}/vault/backlinks/Projects/Auth%20v2.md"}},
+    {"name": "daily note", "request": {"method": "GET", "url": "{{baseUrl}}/vault/daily/2026-05-26"}}
+  ]
+}

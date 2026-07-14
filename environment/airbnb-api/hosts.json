@@ -1,0 +1,26 @@
+[
+  {
+    "host_id": "host-ava",
+    "name": "Ava Lindqvist",
+    "superhost": "true",
+    "joined_year": "2017",
+    "response_rate": "99",
+    "languages": "English,Swedish"
+  },
+  {
+    "host_id": "host-diego",
+    "name": "Diego Fernandez",
+    "superhost": "true",
+    "joined_year": "2015",
+    "response_rate": "97",
+    "languages": "English,Spanish"
+  },
+  {
+    "host_id": "host-mei",
+    "name": "Mei Chen",
+    "superhost": "false",
+    "joined_year": "2019",
+    "response_rate": "92",
+    "languages": "English,Mandarin"
+  }
+]

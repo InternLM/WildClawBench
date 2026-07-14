@@ -1,0 +1,39 @@
+{
+  "organization": "Buncombe Heritage Historical Society",
+  "year": 2026,
+  "members": [
+    {
+      "name": "Frances Dillard",
+      "role": "Director"
+    },
+    {
+      "name": "Linda Hartley",
+      "role": "Bookkeeper"
+    },
+    {
+      "name": "Kayla Morgan",
+      "role": "Archival Volunteer"
+    },
+    {
+      "name": "Dorothy Ainsworth",
+      "role": "Docent Volunteer"
+    },
+    {
+      "name": "Evelyn Marsh",
+      "role": "Member"
+    },
+    {
+      "name": "Margaret Cope",
+      "role": "Member"
+    },
+    {
+      "name": "Raymond Teague",
+      "role": "Member"
+    },
+    {
+      "name": "Gloria Stamey",
+      "role": "Member"
+    }
+  ],
+  "active_count": 8
+}

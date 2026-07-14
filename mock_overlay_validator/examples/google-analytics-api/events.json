@@ -1,0 +1,162 @@
+[
+  {
+    "date": "20260520",
+    "country": "United States",
+    "pagePath": "/home",
+    "deviceCategory": "desktop",
+    "sessions": "120",
+    "activeUsers": "98",
+    "screenPageViews": "340",
+    "eventCount": "1280"
+  },
+  {
+    "date": "20260520",
+    "country": "United States",
+    "pagePath": "/pricing",
+    "deviceCategory": "mobile",
+    "sessions": "85",
+    "activeUsers": "72",
+    "screenPageViews": "210",
+    "eventCount": "640"
+  },
+  {
+    "date": "20260520",
+    "country": "United Kingdom",
+    "pagePath": "/home",
+    "deviceCategory": "mobile",
+    "sessions": "60",
+    "activeUsers": "51",
+    "screenPageViews": "150",
+    "eventCount": "470"
+  },
+  {
+    "date": "20260520",
+    "country": "Germany",
+    "pagePath": "/blog",
+    "deviceCategory": "desktop",
+    "sessions": "40",
+    "activeUsers": "33",
+    "screenPageViews": "95",
+    "eventCount": "300"
+  },
+  {
+    "date": "20260521",
+    "country": "United States",
+    "pagePath": "/home",
+    "deviceCategory": "desktop",
+    "sessions": "135",
+    "activeUsers": "110",
+    "screenPageViews": "372",
+    "eventCount": "1390"
+  },
+  {
+    "date": "20260521",
+    "country": "United States",
+    "pagePath": "/blog",
+    "deviceCategory": "mobile",
+    "sessions": "72",
+    "activeUsers": "60",
+    "screenPageViews": "168",
+    "eventCount": "520"
+  },
+  {
+    "date": "20260521",
+    "country": "United Kingdom",
+    "pagePath": "/pricing",
+    "deviceCategory": "desktop",
+    "sessions": "48",
+    "activeUsers": "40",
+    "screenPageViews": "120",
+    "eventCount": "360"
+  },
+  {
+    "date": "20260521",
+    "country": "Canada",
+    "pagePath": "/home",
+    "deviceCategory": "tablet",
+    "sessions": "22",
+    "activeUsers": "18",
+    "screenPageViews": "55",
+    "eventCount": "160"
+  },
+  {
+    "date": "20260522",
+    "country": "United States",
+    "pagePath": "/home",
+    "deviceCategory": "mobile",
+    "sessions": "150",
+    "activeUsers": "128",
+    "screenPageViews": "410",
+    "eventCount": "1530"
+  },
+  {
+    "date": "20260522",
+    "country": "Germany",
+    "pagePath": "/pricing",
+    "deviceCategory": "desktop",
+    "sessions": "55",
+    "activeUsers": "46",
+    "screenPageViews": "140",
+    "eventCount": "420"
+  },
+  {
+    "date": "20260522",
+    "country": "United Kingdom",
+    "pagePath": "/blog",
+    "deviceCategory": "mobile",
+    "sessions": "38",
+    "activeUsers": "31",
+    "screenPageViews": "88",
+    "eventCount": "275"
+  },
+  {
+    "date": "20260522",
+    "country": "Canada",
+    "pagePath": "/home",
+    "deviceCategory": "desktop",
+    "sessions": "30",
+    "activeUsers": "25",
+    "screenPageViews": "72",
+    "eventCount": "210"
+  },
+  {
+    "date": "20260523",
+    "country": "United States",
+    "pagePath": "/pricing",
+    "deviceCategory": "desktop",
+    "sessions": "98",
+    "activeUsers": "80",
+    "screenPageViews": "250",
+    "eventCount": "900"
+  },
+  {
+    "date": "20260523",
+    "country": "United States",
+    "pagePath": "/home",
+    "deviceCategory": "tablet",
+    "sessions": "28",
+    "activeUsers": "23",
+    "screenPageViews": "70",
+    "eventCount": "205"
+  },
+  {
+    "date": "20260523",
+    "country": "Germany",
+    "pagePath": "/home",
+    "deviceCategory": "mobile",
+    "sessions": "44",
+    "activeUsers": "37",
+    "screenPageViews": "110",
+    "eventCount": "330"
+  },
+  {
+    "date": "20260523",
+    "country": "France",
+    "pagePath": "/blog",
+    "deviceCategory": "desktop",
+    "sessions": "33",
+    "activeUsers": "27",
+    "screenPageViews": "80",
+    "eventCount": "240"
+  }
+]

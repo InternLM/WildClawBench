@@ -1,0 +1,11 @@
+Id,Name,AccountType,AccountSubType,CurrentBalance,Active,Classification,Description
+1,Operating Checking,Bank,Checking,18420.55,true,Asset,"Primary operating account, KBC"
+7,Accounts Payable,Accounts Payable,AccountsPayable,2789.40,true,Liability,Supplier payables
+45,Ingredients,Expense,SuppliesMaterials,0.00,true,Expense,"Couverture, butter, fruit, sugar"
+46,Competition Supplies,Expense,SuppliesMaterials,0.00,true,Expense,Showpiece and competition materials
+47,Kitchen Equipment,Expense,EquipmentRental,0.00,true,Expense,"Moulds, tools, small equipment"
+48,Packaging,Expense,SuppliesMaterials,0.00,true,Expense,"Boxes, ribbon, retail packaging"
+52,Utilities,Expense,Utilities,0.00,true,Expense,"Gas, electricity, water"
+60,Sales Income,Income,SalesOfProductIncome,0.00,true,Revenue,Retail and wholesale sales
+61,Insurance,Expense,Insurance,0.00,true,Expense,Business insurance
+62,Maintenance,Expense,RepairMaintenance,0.00,true,Expense,Equipment maintenance

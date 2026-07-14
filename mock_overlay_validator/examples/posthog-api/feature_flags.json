@@ -1,0 +1,42 @@
+[
+  {
+    "id": "flag_4001",
+    "project_id": "1",
+    "key": "new-onboarding",
+    "name": "New Onboarding Flow",
+    "active": "true",
+    "rollout_percentage": "100"
+  },
+  {
+    "id": "flag_4002",
+    "project_id": "1",
+    "key": "beta-dashboard",
+    "name": "Beta Dashboard",
+    "active": "true",
+    "rollout_percentage": "50"
+  },
+  {
+    "id": "flag_4003",
+    "project_id": "1",
+    "key": "dark-mode",
+    "name": "Dark Mode",
+    "active": "false",
+    "rollout_percentage": "0"
+  },
+  {
+    "id": "flag_4004",
+    "project_id": "1",
+    "key": "fast-checkout",
+    "name": "Fast Checkout",
+    "active": "true",
+    "rollout_percentage": "25"
+  },
+  {
+    "id": "flag_4005",
+    "project_id": "2",
+    "key": "referral-program",
+    "name": "Referral Program",
+    "active": "true",
+    "rollout_percentage": "100"
+  }
+]

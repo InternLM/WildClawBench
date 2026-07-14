@@ -1,0 +1,17 @@
+id,name,type,messages_total,messages_unread,threads_total,threads_unread
+INBOX,INBOX,system,98,14,62,11
+SENT,SENT,system,57,0,33,0
+DRAFT,DRAFT,system,0,0,0,0
+SPAM,SPAM,system,4,4,4,4
+TRASH,TRASH,system,6,0,6,0
+IMPORTANT,IMPORTANT,system,41,8,28,6
+STARRED,STARRED,system,12,0,9,0
+UNREAD,UNREAD,system,14,14,11,11
+Label_1,Work/NCC,user,22,4,14,3
+Label_2,Work/Nasarawa,user,18,3,11,2
+Label_3,Work/5G,user,17,2,10,1
+Label_4,Work/Vendor,user,14,1,9,1
+Label_5,Family,user,11,2,8,2
+Label_6,Mentorship,user,8,1,5,0
+Label_7,Personal/Health,user,5,0,4,0
+Label_8,Newsletters,user,27,0,19,0

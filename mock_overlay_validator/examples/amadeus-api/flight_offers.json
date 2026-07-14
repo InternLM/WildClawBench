@@ -1,0 +1,259 @@
+[
+  {
+    "id": "1",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "JFK",
+    "destinationLocationCode": "LHR",
+    "departureDate": "2026-06-15",
+    "oneWay": true,
+    "numberOfBookableSeats": 7,
+    "itineraries": [
+      {
+        "duration": "PT7H25M",
+        "segments": [
+          {
+            "departure": {"iataCode": "JFK", "terminal": "4", "at": "2026-06-15T21:45:00"},
+            "arrival": {"iataCode": "LHR", "terminal": "5", "at": "2026-06-16T09:10:00"},
+            "carrierCode": "BA",
+            "number": "112",
+            "aircraft": {"code": "777"},
+            "duration": "PT7H25M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "642.30", "base": "480.00", "grandTotal": "642.30"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "642.30"}}
+    ],
+    "validatingAirlineCodes": ["BA"]
+  },
+  {
+    "id": "2",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "JFK",
+    "destinationLocationCode": "LHR",
+    "departureDate": "2026-06-15",
+    "oneWay": true,
+    "numberOfBookableSeats": 4,
+    "itineraries": [
+      {
+        "duration": "PT10H50M",
+        "segments": [
+          {
+            "departure": {"iataCode": "JFK", "terminal": "1", "at": "2026-06-15T18:30:00"},
+            "arrival": {"iataCode": "CDG", "terminal": "2E", "at": "2026-06-16T07:55:00"},
+            "carrierCode": "AF",
+            "number": "9",
+            "aircraft": {"code": "359"},
+            "duration": "PT7H25M",
+            "numberOfStops": 0
+          },
+          {
+            "departure": {"iataCode": "CDG", "terminal": "2F", "at": "2026-06-16T09:40:00"},
+            "arrival": {"iataCode": "LHR", "terminal": "4", "at": "2026-06-16T10:00:00"},
+            "carrierCode": "AF",
+            "number": "1080",
+            "aircraft": {"code": "319"},
+            "duration": "PT1H20M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "511.75", "base": "360.00", "grandTotal": "511.75"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "511.75"}}
+    ],
+    "validatingAirlineCodes": ["AF"]
+  },
+  {
+    "id": "3",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "LAX",
+    "destinationLocationCode": "NRT",
+    "departureDate": "2026-07-02",
+    "oneWay": true,
+    "numberOfBookableSeats": 9,
+    "itineraries": [
+      {
+        "duration": "PT11H40M",
+        "segments": [
+          {
+            "departure": {"iataCode": "LAX", "terminal": "B", "at": "2026-07-02T11:30:00"},
+            "arrival": {"iataCode": "NRT", "terminal": "1", "at": "2026-07-03T15:10:00"},
+            "carrierCode": "NH",
+            "number": "105",
+            "aircraft": {"code": "789"},
+            "duration": "PT11H40M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "918.00", "base": "720.00", "grandTotal": "918.00"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "918.00"}}
+    ],
+    "validatingAirlineCodes": ["NH"]
+  },
+  {
+    "id": "4",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "SFO",
+    "destinationLocationCode": "SIN",
+    "departureDate": "2026-07-02",
+    "oneWay": true,
+    "numberOfBookableSeats": 5,
+    "itineraries": [
+      {
+        "duration": "PT16H25M",
+        "segments": [
+          {
+            "departure": {"iataCode": "SFO", "terminal": "I", "at": "2026-07-02T23:55:00"},
+            "arrival": {"iataCode": "SIN", "terminal": "3", "at": "2026-07-04T06:20:00"},
+            "carrierCode": "SQ",
+            "number": "31",
+            "aircraft": {"code": "388"},
+            "duration": "PT16H25M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "1245.60", "base": "990.00", "grandTotal": "1245.60"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "1245.60"}}
+    ],
+    "validatingAirlineCodes": ["SQ"]
+  },
+  {
+    "id": "5",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "BOS",
+    "destinationLocationCode": "FRA",
+    "departureDate": "2026-06-15",
+    "oneWay": true,
+    "numberOfBookableSeats": 6,
+    "itineraries": [
+      {
+        "duration": "PT7H05M",
+        "segments": [
+          {
+            "departure": {"iataCode": "BOS", "terminal": "E", "at": "2026-06-15T22:10:00"},
+            "arrival": {"iataCode": "FRA", "terminal": "1", "at": "2026-06-16T11:15:00"},
+            "carrierCode": "LH",
+            "number": "423",
+            "aircraft": {"code": "333"},
+            "duration": "PT7H05M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "598.40", "base": "445.00", "grandTotal": "598.40"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "598.40"}}
+    ],
+    "validatingAirlineCodes": ["LH"]
+  },
+  {
+    "id": "6",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "ORD",
+    "destinationLocationCode": "DXB",
+    "departureDate": "2026-08-10",
+    "oneWay": true,
+    "numberOfBookableSeats": 8,
+    "itineraries": [
+      {
+        "duration": "PT13H30M",
+        "segments": [
+          {
+            "departure": {"iataCode": "ORD", "terminal": "5", "at": "2026-08-10T20:25:00"},
+            "arrival": {"iataCode": "DXB", "terminal": "3", "at": "2026-08-11T18:55:00"},
+            "carrierCode": "EK",
+            "number": "236",
+            "aircraft": {"code": "388"},
+            "duration": "PT13H30M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "1078.90", "base": "860.00", "grandTotal": "1078.90"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "1078.90"}}
+    ],
+    "validatingAirlineCodes": ["EK"]
+  },
+  {
+    "id": "7",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "JFK",
+    "destinationLocationCode": "LAX",
+    "departureDate": "2026-06-20",
+    "oneWay": true,
+    "numberOfBookableSeats": 12,
+    "itineraries": [
+      {
+        "duration": "PT6H15M",
+        "segments": [
+          {
+            "departure": {"iataCode": "JFK", "terminal": "8", "at": "2026-06-20T08:00:00"},
+            "arrival": {"iataCode": "LAX", "terminal": "4", "at": "2026-06-20T11:15:00"},
+            "carrierCode": "AA",
+            "number": "117",
+            "aircraft": {"code": "32B"},
+            "duration": "PT6H15M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "324.10", "base": "240.00", "grandTotal": "324.10"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "324.10"}}
+    ],
+    "validatingAirlineCodes": ["AA"]
+  },
+  {
+    "id": "8",
+    "type": "flight-offer",
+    "source": "GDS",
+    "originLocationCode": "AMS",
+    "destinationLocationCode": "JFK",
+    "departureDate": "2026-09-05",
+    "oneWay": true,
+    "numberOfBookableSeats": 3,
+    "itineraries": [
+      {
+        "duration": "PT8H20M",
+        "segments": [
+          {
+            "departure": {"iataCode": "AMS", "terminal": "M", "at": "2026-09-05T10:45:00"},
+            "arrival": {"iataCode": "JFK", "terminal": "4", "at": "2026-09-05T13:05:00"},
+            "carrierCode": "KL",
+            "number": "643",
+            "aircraft": {"code": "789"},
+            "duration": "PT8H20M",
+            "numberOfStops": 0
+          }
+        ]
+      }
+    ],
+    "price": {"currency": "USD", "total": "705.50", "base": "540.00", "grandTotal": "705.50"},
+    "travelerPricings": [
+      {"travelerId": "1", "fareOption": "STANDARD", "travelerType": "ADULT", "price": {"currency": "USD", "total": "705.50"}}
+    ],
+    "validatingAirlineCodes": ["KL"]
+  }
+]

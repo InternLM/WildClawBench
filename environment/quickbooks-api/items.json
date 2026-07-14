@@ -1,0 +1,101 @@
+[
+  {
+    "Id": "1",
+    "Name": "Emergency Motel Stay",
+    "Description": "Temporary motel reimbursement for tenant relocation support",
+    "Type": "Service",
+    "UnitPrice": "418.22",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "2",
+    "Name": "Volunteer Travel Mileage",
+    "Description": "Verified volunteer mileage reimbursement",
+    "Type": "Service",
+    "UnitPrice": "93.10",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "3",
+    "Name": "Food & Essentials",
+    "Description": "Emergency household food and essential supplies reimbursement",
+    "Type": "Service",
+    "UnitPrice": "152.87",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "4",
+    "Name": "Temporary Housing",
+    "Description": "Temporary housing reimbursement for relocation case",
+    "Type": "Service",
+    "UnitPrice": "624.00",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "5",
+    "Name": "Fuel Reimbursement",
+    "Description": "Volunteer or coalition fuel reimbursement",
+    "Type": "Service",
+    "UnitPrice": "204.51",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "6",
+    "Name": "Relocation Truck Rental",
+    "Description": "Truck rental reimbursement for relocation support",
+    "Type": "Service",
+    "UnitPrice": "312.45",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "7",
+    "Name": "Utility Deposit",
+    "Description": "Utility deposit reimbursement for stabilized housing placement",
+    "Type": "Service",
+    "UnitPrice": "950.00",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "8",
+    "Name": "Security Deposit",
+    "Description": "Security deposit reimbursement for relocation intake case",
+    "Type": "Service",
+    "UnitPrice": "1280.00",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  },
+  {
+    "Id": "9",
+    "Name": "Duplicate Review Adjustment",
+    "Description": "Administrative line used to track duplicate reimbursement review",
+    "Type": "Service",
+    "UnitPrice": "0.00",
+    "IncomeAccountRef_value": "1",
+    "IncomeAccountRef_name": "Reimbursement Grant Revenue",
+    "Active": "true",
+    "Taxable": "false"
+  }
+]

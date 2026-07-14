@@ -1,0 +1,3 @@
+service_type,service_name,origin_zip,dest_zip,weight_lb,currency,net_charge,transit_days,delivery_day
+PRIORITY,FedEx International Priority,1050,1050,90.4,EUR,61.20,3,Wednesday
+GROUND,FedEx Economy,1050,1050,90.4,EUR,42.00,5,Friday

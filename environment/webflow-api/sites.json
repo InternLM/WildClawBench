@@ -1,0 +1,46 @@
+[
+  {
+    "id": "650a1f0000000000000001a1",
+    "workspace_id": "ws_000001",
+    "display_name": "Northwind Studio",
+    "short_name": "northwind-studio",
+    "preview_url": "https://northwind-studio.webflow.io",
+    "time_zone": "America/New_York",
+    "created_on": "2026-01-15T10:00:00.000Z",
+    "last_published": "2026-05-20T14:30:00.000Z",
+    "custom_domains": "www.northwind.example.com"
+  },
+  {
+    "id": "650a1f0000000000000001a2",
+    "workspace_id": "ws_000001",
+    "display_name": "Acme Docs",
+    "short_name": "acme-docs",
+    "preview_url": "https://acme-docs.webflow.io",
+    "time_zone": "America/Los_Angeles",
+    "created_on": "2026-02-02T09:20:00.000Z",
+    "last_published": "2026-05-22T11:05:00.000Z",
+    "custom_domains": "docs.acme.example.com"
+  },
+  {
+    "id": "650a1f0000000000000001a3",
+    "workspace_id": "ws_000002",
+    "display_name": "Lumen Bakery",
+    "short_name": "lumen-bakery",
+    "preview_url": "https://lumen-bakery.webflow.io",
+    "time_zone": "Europe/Berlin",
+    "created_on": "2026-03-11T13:45:00.000Z",
+    "last_published": "2026-05-18T08:15:00.000Z",
+    "custom_domains": ""
+  },
+  {
+    "id": "650a1f0000000000000001a4",
+    "workspace_id": "ws_000002",
+    "display_name": "Trailhead Outdoors",
+    "short_name": "trailhead-outdoors",
+    "preview_url": "https://trailhead-outdoors.webflow.io",
+    "time_zone": "America/Denver",
+    "created_on": "2026-04-01T16:00:00.000Z",
+    "last_published": "2026-05-25T19:40:00.000Z",
+    "custom_domains": "shop.trailhead.example.com"
+  }
+]

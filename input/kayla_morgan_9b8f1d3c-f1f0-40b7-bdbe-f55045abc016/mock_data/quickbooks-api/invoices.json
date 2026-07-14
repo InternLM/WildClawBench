@@ -1,0 +1,25 @@
+[
+  {
+    "Id": "3001",
+    "DocNumber": "INV-3001",
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-04-01",
+    "CustomerRef": {"value": "1", "name": "Asheville Historical Society"},
+    "Line": [
+      {
+        "Amount": 500.00,
+        "Description": "Annual membership contribution - 2026",
+        "DetailType": "SalesItemLineDetail",
+        "SalesItemLineDetail": {"ItemRef": {"value": "1", "name": "General Services"}}
+      }
+    ],
+    "TotalAmt": 500.00,
+    "Balance": 0.00,
+    "Status": "Paid",
+    "PrintStatus": "NotSet",
+    "EmailStatus": "NotSet",
+    "BillEmail": null,
+    "MetaData": {"CreateTime": "2026-03-01T09:00:00-05:00", "LastUpdatedTime": "2026-03-15T10:00:00-04:00"},
+    "SyncToken": "1"
+  }
+]

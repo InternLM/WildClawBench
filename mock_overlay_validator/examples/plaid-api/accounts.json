@@ -1,0 +1,50 @@
+[
+  {
+    "account_id": "acc_chk_001",
+    "name": "Everyday Checking",
+    "official_name": "Cascade Everyday Checking",
+    "mask": "0123",
+    "type": "depository",
+    "subtype": "checking",
+    "available": "4218.55",
+    "current": "4318.55",
+    "limit": "",
+    "iso_currency_code": "USD"
+  },
+  {
+    "account_id": "acc_sav_002",
+    "name": "High-Yield Savings",
+    "official_name": "Cascade High-Yield Savings",
+    "mask": "4455",
+    "type": "depository",
+    "subtype": "savings",
+    "available": "15230.10",
+    "current": "15230.10",
+    "limit": "",
+    "iso_currency_code": "USD"
+  },
+  {
+    "account_id": "acc_crd_003",
+    "name": "Cascade Rewards Card",
+    "official_name": "Cascade Visa Rewards",
+    "mask": "7788",
+    "type": "credit",
+    "subtype": "credit card",
+    "available": "3100.00",
+    "current": "1900.00",
+    "limit": "5000.00",
+    "iso_currency_code": "USD"
+  },
+  {
+    "account_id": "acc_lon_004",
+    "name": "Auto Loan",
+    "official_name": "Cascade Auto Loan",
+    "mask": "9901",
+    "type": "loan",
+    "subtype": "auto",
+    "available": "",
+    "current": "18450.00",
+    "limit": "",
+    "iso_currency_code": "USD"
+  }
+]

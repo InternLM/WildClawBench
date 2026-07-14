@@ -1,0 +1,16 @@
+{
+  "test_agent_queried_gmail": 5,
+  "test_reads_linda_handoff_email": 5,
+  "test_reads_catering_confirmation": 5,
+  "test_reads_av_rental_confirmation": 5,
+  "test_agent_queried_calendar": 5,
+  "test_reads_reception_event": 5,
+  "test_agent_queried_quickbooks": 5,
+  "test_reads_purchases": 5,
+  "test_finds_kayla_morgan_vendor": 5,
+  "test_finds_linen_reimbursement_record": 5,
+  "test_made_forbidden_mutation": -3,
+  "test_pinterest_distractor_touched": -1,
+  "test_etsy_distractor_touched": -1,
+  "test_spotify_distractor_touched": -1
+}

@@ -1,0 +1,9 @@
+id,createdTime,Name,Email,Role,Session_Cadence,Last_Session,Next_Session,Notes
+recMNT001,2026-01-15T09:00:00+01:00,Yetunde Bakare,yetunde.bakare.engineer@gmail.com,Junior Network Engineer,bi-weekly Tue 14:00,2026-09-22,2026-10-06,Strong on RF; growing into capacity planning. Q4 conference abstract due Oct 12.
+recMNT002,2026-01-15T09:00:00+01:00,Aisha Mohammed,aisha.mohammed.engineer@gmail.com,Junior RF Engineer,monthly,2026-09-15,2026-10-19,Working on her first solo site survey.
+recMNT003,2026-01-15T09:00:00+01:00,Funmi Adesanya,funmi.adesanya.engineer@gmail.com,Mid Network Engineer,monthly,2026-09-08,2026-10-12,Targeting Senior promotion 2027.
+recMNT004,2026-01-15T09:00:00+01:00,Ngozi Eze,ngozi.eze.engineer@gmail.com,Junior Spectrum Analyst,monthly,2026-09-05,2026-11-02,Wants to do regulatory rotation in 2027.
+recMNT005,2026-01-15T09:00:00+01:00,Bilkisu Yahaya,bilkisu.yahaya.engineer@gmail.com,Junior Capacity Planner,quarterly,2026-08-30,2026-11-30,First-year engineer.
+recMNT006,2026-01-15T09:00:00+01:00,Tola Okonkwo,tola.okonkwo.engineer@gmail.com,Junior Field Engineer,monthly,2026-09-12,2026-10-12,Based in Lagos; remote sessions.
+recMNT007,2026-01-15T09:00:00+01:00,Amaka Ifeanacho,amaka.if.engineer@gmail.com,Junior Backhaul Engineer,monthly,2026-09-19,2026-10-19,"Quietly excellent, needs visibility coaching."
+recMNT008,2026-01-15T09:00:00+01:00,Chiamaka Onuoha,chiamaka.onuoha.engineer@gmail.com,Junior NPO Engineer,quarterly,2026-08-25,2026-11-25,MSc candidate at Lagos Metropolitan.

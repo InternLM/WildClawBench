@@ -1,0 +1,78 @@
+track_id,name,artist_id,album_id,duration_ms,popularity,explicit,track_number
+trk_burna_last_last,Last Last,art_burna_boy,alb_burna_love_damini,173000,91,false,1
+trk_burna_for_my_hand,For My Hand (feat. Ed Sheeran),art_burna_boy,alb_burna_love_damini,194000,86,false,8
+trk_burna_kilometre,Kilometre,art_burna_boy,alb_burna_love_damini,211000,82,false,12
+trk_burna_ye,Ye,art_burna_boy,alb_burna_african_giant,228000,88,false,4
+trk_burna_anybody,Anybody,art_burna_boy,alb_burna_african_giant,232000,79,false,8
+trk_burna_city_boys,City Boys,art_burna_boy,alb_burna_iworhu,193000,84,false,3
+trk_burna_sittin_top,Sittin On Top of the World,art_burna_boy,alb_burna_iworhu,200000,86,false,1
+trk_wizkid_essence,Essence (feat. Tems),art_wizkid,alb_wizkid_made_lagos,248000,89,false,9
+trk_wizkid_no_stress,No Stress,art_wizkid,alb_wizkid_made_lagos,198000,81,false,10
+trk_wizkid_blessed,Blessed (feat. Damian Marley),art_wizkid,alb_wizkid_made_lagos,230000,80,false,5
+trk_wizkid_bad_to_me,Bad to Me,art_wizkid,alb_wizkid_more_love,200000,87,false,1
+trk_wizkid_money_love,Money and Love,art_wizkid,alb_wizkid_more_love,195000,78,false,6
+trk_davido_unavailable,Unavailable (feat. Musa Keys),art_davido,alb_davido_timeless,228000,90,false,5
+trk_davido_feel,Feel,art_davido,alb_davido_timeless,164000,80,false,1
+trk_davido_overdose,Over Dem,art_davido,alb_davido_timeless,214000,78,false,11
+trk_davido_jowo,Jowo,art_davido,alb_davido_better_time,211000,82,false,5
+trk_davido_la_la,La La,art_davido,alb_davido_better_time,178000,75,false,8
+trk_tems_love_me_jeje,Love Me JeJe,art_tems,alb_tems_born_in_wild,211000,90,false,4
+trk_tems_burning,Burning,art_tems,alb_tems_born_in_wild,219000,81,false,7
+trk_tems_wickedest,Wickedest,art_tems,alb_tems_born_in_wild,179000,84,false,10
+trk_tems_crazy_tings,Crazy Tings,art_tems,alb_tems_if_orange,199000,79,false,1
+trk_tems_higher,Higher,art_tems,alb_tems_if_orange,205000,75,false,3
+trk_asake_lonely_at_top,Lonely At The Top,art_asake,alb_asake_work_of_art,136000,88,false,1
+trk_asake_amapiano,Amapiano (feat. Olamide),art_asake,alb_asake_work_of_art,223000,81,false,7
+trk_asake_basquiat,Basquiat,art_asake,alb_asake_work_of_art,171000,79,false,4
+trk_asake_terminator,Terminator,art_asake,alb_asake_mr_money,153000,86,false,3
+trk_asake_organize,Organise,art_asake,alb_asake_mr_money,165000,80,false,5
+trk_asake_peace_mind,Peace Be Unto You,art_asake,alb_asake_mr_money,188000,82,false,7
+trk_rema_calm_down,Calm Down,art_rema,alb_rema_rave_roses,239000,95,false,4
+trk_rema_charm,Charm,art_rema,alb_rema_rave_roses,166000,76,false,6
+trk_rema_woman,Woman,art_rema,alb_rema_rave_roses,207000,78,false,14
+trk_rema_ozeba,Ozeba,art_rema,alb_rema_heis,157000,80,false,6
+trk_rema_hehehe,HEHEHE,art_rema,alb_rema_heis,178000,75,false,1
+trk_omah_lay_soso,Soso,art_omah_lay,alb_omah_lay_boy_alone,215000,82,false,4
+trk_omah_lay_understand,Understand,art_omah_lay,alb_omah_lay_boy_alone,174000,78,false,8
+trk_omah_lay_can_we,Can We Stop the Pain,art_omah_lay,alb_omah_lay_boy_alone,205000,73,false,12
+trk_ckay_love_nwantiti,Love Nwantiti,art_ckay,alb_ckay_sad_romance,126000,89,false,7
+trk_ckay_emiliana,Emiliana,art_ckay,alb_ckay_sad_romance,178000,81,false,4
+trk_simi_woman,Woman,art_simi,alb_simi_to_be_honest,198000,75,false,3
+trk_simi_no_longer,No Longer Beneficial,art_simi,alb_simi_to_be_honest,221000,71,false,6
+trk_simi_duduke,Duduke,art_simi,alb_simi_omo_charlie,175000,79,false,1
+trk_adekunle_5_star,5 Star,art_adekunle_gold,alb_adekunle_catch_me,165000,80,false,4
+trk_adekunle_high,High (feat. Davido),art_adekunle_gold,alb_adekunle_catch_me,194000,82,false,9
+trk_adekunle_party_no_stop,Party No Dey Stop,art_adekunle_gold,alb_adekunle_tequila,193000,76,false,8
+trk_johnny_drille_papa,Papa Don't Lay Me Down,art_johnny_drille,alb_johnny_dr_believe,215000,71,false,1
+trk_johnny_drille_believe,Believe,art_johnny_drille,alb_johnny_dr_believe,228000,68,false,4
+trk_brandy_long_distance,Long Distance,art_brandy,alb_brandy_human,240000,73,false,4
+trk_brandy_right_here,Right Here (Departed),art_brandy,alb_brandy_human,222000,76,false,2
+trk_jhene_pretty_kitty,P*$$Y Fairy (OTW),art_jhene_aiko,alb_jhene_chilombo,189000,82,true,6
+trk_jhene_above_clouds,Above and Beyond,art_jhene_aiko,alb_jhene_chilombo,215000,75,false,10
+trk_jhene_lightning,Lightning and Thunder,art_jhene_aiko,alb_jhene_chilombo,261000,76,false,17
+trk_sade_by_your_side,By Your Side,art_sade,alb_sade_lovers_rock,276000,85,false,1
+trk_sade_king_of_sorrow,King of Sorrow,art_sade,alb_sade_lovers_rock,234000,78,false,4
+trk_sade_smooth_operator,Smooth Operator,art_sade,alb_sade_best_of,259000,88,false,6
+trk_sade_no_ordinary_love,No Ordinary Love,art_sade,alb_sade_best_of,265000,84,false,10
+trk_corinne_put_records,Put Your Records On,art_corinne_bailey,alb_corinne_self,215000,81,false,3
+trk_corinne_like_star,Like a Star,art_corinne_bailey,alb_corinne_self,239000,73,false,2
+trk_her_focus,Focus,art_h_e_r,alb_her_self_titled,223000,80,false,9
+trk_her_best_part,Best Part (feat. Daniel Caesar),art_h_e_r,alb_her_self_titled,208000,88,false,4
+trk_her_hard_place,Hard Place,art_h_e_r,alb_her_self_titled,213000,79,false,18
+trk_daniel_get_you,Get You (feat. Kali Uchis),art_daniel_caesar,alb_daniel_freudian,260000,89,false,2
+trk_daniel_blessed,Blessed,art_daniel_caesar,alb_daniel_freudian,289000,80,false,4
+trk_daniel_we_find_love,We Find Love,art_daniel_caesar,alb_daniel_freudian,264000,75,false,9
+trk_lauryn_doo_wop,Doo Wop (That Thing),art_lauryn_hill,alb_lauryn_miseducation,325000,83,false,3
+trk_lauryn_killing_softly,Killing Me Softly,art_lauryn_hill,alb_lauryn_miseducation,257000,80,false,10
+trk_lauryn_ex_factor,Ex-Factor,art_lauryn_hill,alb_lauryn_miseducation,319000,87,false,4
+trk_sinach_way_maker,Way Maker,art_sinach,alb_sinach_way_maker,330000,86,false,4
+trk_sinach_great_god,I Know Who I Am,art_sinach,alb_sinach_way_maker,295000,75,false,6
+trk_sinach_overflow,Overflow,art_sinach,alb_sinach_way_maker,251000,70,false,8
+trk_nathaniel_hallelujah,Hallelujah Amen,art_nathaniel_bassey,alb_nathaniel_hallelujah,312000,76,false,2
+trk_nathaniel_imela,Imela,art_nathaniel_bassey,alb_nathaniel_hallelujah,284000,71,false,5
+trk_mercy_excess_love,Excess Love,art_mercy_chinwo,alb_mercy_satisfied,291000,79,false,2
+trk_mercy_satisfied,Satisfied,art_mercy_chinwo,alb_mercy_satisfied,306000,73,false,7
+trk_dunsin_yahweh,Yahweh,art_dunsin_oyekan,alb_nathaniel_hallelujah,336000,68,false,11
+trk_chandler_jireh,Jireh,art_chandler_moore,alb_sinach_way_maker,430000,82,false,13
+trk_fkc_god_only_knows,God Only Knows,art_for_king_country,alb_burna_iworhu,230000,70,false,14
+trk_chimamanda_americanah,"Americanah (audiobook excerpt, ch 1)",art_chimamanda_aud,alb_lauryn_miseducation,1800000,60,false,1

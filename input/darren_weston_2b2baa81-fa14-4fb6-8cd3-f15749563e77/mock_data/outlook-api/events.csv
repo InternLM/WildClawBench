@@ -1,0 +1,4 @@
+id,subject,organizer_name,organizer_address,location,start_date,end_date,is_all_day,is_online,attendees
+AAMkEV001,Guild winter event briefing,Guilde des Patissiers,no-reply@guildepatissiers.be,Brussels,2027-01-14T18:00:00Z,2027-01-14T20:00:00Z,false,false,members
+AAMkEV002,Brussels Food Expo walkthrough,Brussels Food Expo,info@brusselsfoodexpo.be,Brussels Expo,2027-03-09T10:00:00Z,2027-03-09T12:00:00Z,false,false,trade
+AAMkEV003,Supplier webinar on seasonal fruit,Pastry Europe,news@pastryeurope.eu,Online,2026-11-02T15:00:00Z,2026-11-02T16:00:00Z,false,true,open

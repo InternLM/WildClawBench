@@ -1,0 +1,13 @@
+id,parent_type,parent_id,title,created_time,last_edited_time,created_by,archived,icon,cover_url
+pg_quarterly_q4_2026,workspace,wks_sheila_personal,Q4 2026 Quarterly Goals,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,nuser_sheila,false,:dart:,
+pg_mentorship_yetunde,workspace,wks_sheila_personal,Yetunde Bakare - Mentorship Notes,2024-04-15T19:00:00+01:00,2026-09-22T16:00:00+01:00,nuser_sheila,false,:seedling:,
+pg_mentorship_network,workspace,wks_sheila_personal,Women in Telecom - Informal Mentorship Network,2024-09-01T20:00:00+01:00,2026-09-30T20:00:00+01:00,nuser_sheila,false,:handshake:,
+pg_executive_program,workspace,wks_sheila_personal,Lagos Executive Tech Mgmt Program 2027,2026-08-12T19:00:00+01:00,2026-09-28T20:00:00+01:00,nuser_sheila,false,:school:,
+pg_linkedin_articles,workspace,wks_sheila_personal,LinkedIn Article Series Drafts,2025-06-01T18:00:00+01:00,2026-09-20T19:00:00+01:00,nuser_sheila,false,:pencil2:,
+pg_5g_research,workspace,wks_sheila_personal,5G Industry Reading List 2026,2026-01-10T17:00:00+01:00,2026-09-25T16:00:00+01:00,nuser_sheila,false,:book:,
+pg_session_2026_09_22,page,pg_mentorship_yetunde,Yetunde session - Sep 22 2026 notes,2026-09-22T15:30:00+01:00,2026-09-22T16:30:00+01:00,nuser_sheila,false,:memo:,
+pg_session_2026_10_06,page,pg_mentorship_yetunde,Yetunde session - Oct 6 2026 prep brief,2026-10-02T20:00:00+01:00,2026-10-04T11:00:00+01:00,nuser_sheila,false,:memo:,
+pg_anniversary_ideas,workspace,wks_sheila_personal,Anniversary gift ideas - private,2026-09-15T22:00:00+01:00,2026-10-03T11:00:00+01:00,nuser_sheila,false,:heart:,
+pg_lagos_trip_logistics,workspace,wks_sheila_personal,Lagos Family Trip Oct 24-28 Logistics,2026-09-20T20:00:00+01:00,2026-09-30T21:00:00+01:00,nuser_sheila,false,:airplane:,
+pg_q4_reading,workspace,wks_sheila_personal,Q4 2026 Personal Reading List,2026-09-01T18:00:00+01:00,2026-09-30T20:00:00+01:00,nuser_sheila,false,:books:,
+pg_weekly_review_2026_09_27,workspace,wks_sheila_personal,Sunday Weekly Review - Sep 27 2026,2026-09-27T20:00:00+01:00,2026-09-27T22:15:00+01:00,nuser_sheila,false,:bookmark_tabs:,

@@ -1,0 +1,13 @@
+{
+  "login": "amelia-ortega",
+  "id": 4001001,
+  "name": "Amelia Ortega",
+  "email": "amelia@orbit-labs.com",
+  "avatar_url": "https://avatars.example.com/amelia.png",
+  "type": "User",
+  "site_admin": false,
+  "company": "Orbit Labs",
+  "public_repos": 12,
+  "followers": 142,
+  "following": 86
+}

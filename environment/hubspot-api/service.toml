@@ -1,0 +1,5 @@
+[service]
+name = "hubspot-api"
+port = 8024
+env_var_name = "HUBSPOT_API_URL"
+healthcheck_path = "/health"

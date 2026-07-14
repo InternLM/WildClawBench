@@ -1,0 +1,5 @@
+[service]
+name = "youtube-api"
+port = 8009
+env_var_name = "YOUTUBE_API_URL"
+healthcheck_path = "/health"

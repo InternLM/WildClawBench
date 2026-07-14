@@ -1,0 +1,4 @@
+uuid,owner,name,slug,duration,kind,color,active,description,scheduling_url,created_at
+et-30min,sheila.stokes@Finthesiss.ai,30 Minute Meeting,30-minute-meeting,30,solo,#0069ff,true,Standard 30 minute meeting,https://calendly.com/sheila-stokes/30min,2025-10-01T09:00:00.000000Z
+et-demo,sheila.stokes@Finthesiss.ai,Demo,demo,45,solo,#34a853,true,Product or vendor demo session,https://calendly.com/sheila-stokes/demo,2025-10-01T09:05:00.000000Z
+et-interview,sheila.stokes@Finthesiss.ai,Interview,interview,60,solo,#fbbc04,false,Press or media interview,https://calendly.com/sheila-stokes/interview,2025-10-01T09:10:00.000000Z

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "db-tasks",
+    "title": "Engineering Tasks",
+    "parent_page_id": "page-home",
+    "created_time": "2025-09-05T10:00:00.000Z",
+    "last_edited_time": "2026-05-20T14:00:00.000Z",
+    "created_by": "user-amelia",
+    "icon": "checkbox",
+    "archived": "false"
+  },
+  {
+    "id": "db-okrs",
+    "title": "Q2 OKRs",
+    "parent_page_id": "page-home",
+    "created_time": "2025-09-08T11:00:00.000Z",
+    "last_edited_time": "2026-05-12T09:30:00.000Z",
+    "created_by": "user-jonas",
+    "icon": "bullseye",
+    "archived": "false"
+  },
+  {
+    "id": "db-meetings",
+    "title": "Meeting Notes",
+    "parent_page_id": "page-home",
+    "created_time": "2025-09-10T13:00:00.000Z",
+    "last_edited_time": "2026-05-26T08:45:00.000Z",
+    "created_by": "user-helena",
+    "icon": "calendar",
+    "archived": "false"
+  },
+  {
+    "id": "db-research",
+    "title": "Customer Research",
+    "parent_page_id": "page-research",
+    "created_time": "2025-10-01T15:00:00.000Z",
+    "last_edited_time": "2026-05-19T11:20:00.000Z",
+    "created_by": "user-noor",
+    "icon": "microscope",
+    "archived": "false"
+  }
+]

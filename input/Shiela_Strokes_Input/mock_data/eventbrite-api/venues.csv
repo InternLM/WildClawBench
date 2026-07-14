@@ -1,0 +1,6 @@
+id,name,address1,city,region,postal_code,country,latitude,longitude
+venue-eko-hotels,Eko Hotels and Suites Convention Centre,1415 Adetokunbo Ademola Street,Lagos,LA,101241,NG,6.4264,3.4253
+venue-hilton-abuja,Transcorp Hilton Abuja,1 Aguiyi Ironsi Street Maitama,Abuja,FC,900271,NG,9.0820,7.4895
+venue-civic-centre-lagos,Civic Centre Lagos,Ozumba Mbadiwe Avenue Victoria Island,Lagos,LA,101241,NG,6.4344,3.4181
+venue-sheraton-abuja,Sheraton Abuja Hotel,Ladi Kwali Street Maitama,Abuja,FC,900271,NG,9.0833,7.4937
+venue-online,Online via Zoom,Online,Online,Online,000000,NG,0.0000,0.0000

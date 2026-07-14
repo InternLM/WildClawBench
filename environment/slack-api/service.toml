@@ -1,0 +1,5 @@
+[service]
+name = "slack-api"
+port = 8013
+env_var_name = "SLACK_API_URL"
+healthcheck_path = "/health"

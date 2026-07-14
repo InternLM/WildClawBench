@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Alpaca Trading Mock API v2",
+    "description": "Test collection for the mock Alpaca Trading API service. Base URL defaults to http://localhost:8043. In docker-compose, the service is reachable at http://alpaca-api:8043.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8043"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get account", "request": {"method": "GET", "url": "{{baseUrl}}/v2/account"}},
+    {"name": "list positions", "request": {"method": "GET", "url": "{{baseUrl}}/v2/positions"}},
+    {"name": "get position", "request": {"method": "GET", "url": "{{baseUrl}}/v2/positions/AAPL"}},
+    {"name": "list orders", "request": {"method": "GET", "url": "{{baseUrl}}/v2/orders?status=open"}},
+    {"name": "get order", "request": {"method": "GET", "url": "{{baseUrl}}/v2/orders/ORD-aurora-0001"}},
+    {"name": "create buy order", "request": {"method": "POST", "url": "{{baseUrl}}/v2/orders",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"symbol\": \"GOOGL\", \"qty\": 5, \"side\": \"buy\", \"type\": \"market\", \"time_in_force\": \"day\"}"}}},
+    {"name": "create sell order", "request": {"method": "POST", "url": "{{baseUrl}}/v2/orders",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"symbol\": \"AAPL\", \"qty\": 10, \"side\": \"sell\", \"type\": \"limit\", \"time_in_force\": \"gtc\", \"limit_price\": 195.0}"}}},
+    {"name": "cancel order", "request": {"method": "DELETE", "url": "{{baseUrl}}/v2/orders/ORD-delta-0004"}},
+    {"name": "list assets", "request": {"method": "GET", "url": "{{baseUrl}}/v2/assets?asset_class=us_equity"}},
+    {"name": "latest quote", "request": {"method": "GET", "url": "{{baseUrl}}/v2/stocks/AAPL/quotes/latest"}}
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "playlist_id": "PL_001",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Equine Skin Conditions",
+    "description": "Comprehensive guides to identifying and managing skin problems in horses. From fungal infections to allergic reactions.",
+    "publishedAt": "2021-09-15T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "8"
+  },
+  {
+    "playlist_id": "PL_002",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Horse Owner Basics",
+    "description": "Essential knowledge for every horse owner. Vital signs nutrition daily care and when to call the vet.",
+    "publishedAt": "2021-08-01T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "10"
+  },
+  {
+    "playlist_id": "PL_003",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Emergency and First Aid",
+    "description": "What to do before the vet arrives. Colic eye emergencies wounds and heat stroke.",
+    "publishedAt": "2022-01-20T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "7"
+  },
+  {
+    "playlist_id": "PL_004",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Hoof Health",
+    "description": "Everything below the coronet band. Abscesses thrush laminitis and working with your farrier.",
+    "publishedAt": "2022-04-10T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "5"
+  },
+  {
+    "playlist_id": "PL_005",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Preventive Care and Biosecurity",
+    "description": "Vaccination deworming quarantine protocols and disease prevention strategies for barn managers.",
+    "publishedAt": "2022-06-15T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "6"
+  },
+  {
+    "playlist_id": "PL_006",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Lab Work and Diagnostics",
+    "description": "Understanding blood work skin scrapings fecal tests and other diagnostic results in plain language.",
+    "publishedAt": "2023-02-01T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "4"
+  },
+  {
+    "playlist_id": "PL_007",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Seasonal Management",
+    "description": "Month by month guides for spring pasture summer heat winter blanketing and everything in between.",
+    "publishedAt": "2023-05-01T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "5"
+  },
+  {
+    "playlist_id": "PL_008",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Quick Tips and Shorts",
+    "description": "Bite-sized horse care reminders under 60 seconds.",
+    "publishedAt": "2023-08-15T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "4"
+  },
+  {
+    "playlist_id": "PL_009",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Infectious Disease",
+    "description": "Strangles ringworm rain rot and other contagious conditions. Recognition isolation and treatment.",
+    "publishedAt": "2024-01-10T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "5"
+  },
+  {
+    "playlist_id": "PL_010",
+    "channelId": "UC_EquineHealthChannel",
+    "title": "Working With Your Vet",
+    "description": "How to prepare for appointments communicate effectively and get the most from professional care.",
+    "publishedAt": "2024-04-01T10:00:00Z",
+    "privacyStatus": "public",
+    "itemCount": "3"
+  }
+]

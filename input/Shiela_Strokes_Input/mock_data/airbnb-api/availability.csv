@@ -1,0 +1,14 @@
+listing_id,start_date,end_date,available
+lst_la_ikeja_02,2026-10-24,2026-10-28,true
+lst_la_ikeja_04,2026-10-24,2026-10-28,true
+lst_la_lekki_02,2026-10-24,2026-10-28,true
+lst_la_ikeja_02,2026-12-22,2026-12-30,true
+lst_la_ikeja_04,2026-12-22,2026-12-30,true
+lst_la_ikeja_01,2026-10-24,2026-10-28,false
+lst_la_vi_02,2026-10-24,2026-10-28,true
+lst_la_ikoyi_01,2026-10-24,2026-10-28,true
+lst_la_lekki_01,2026-10-24,2026-10-28,false
+lst_la_vi_01,2026-10-24,2026-10-28,true
+lst_la_yaba_01,2026-11-15,2026-11-22,true
+lst_la_surulere_01,2026-11-15,2026-11-22,true
+lst_la_lagisland,2027-01-15,2027-01-22,true

@@ -1,0 +1,38 @@
+[
+  {
+    "campaign_id": "camp-sep-news",
+    "emails_sent": "5",
+    "opens_total": "18",
+    "unique_opens": "4",
+    "open_rate": "0.8",
+    "clicks_total": "7",
+    "unique_clicks": "3",
+    "click_rate": "0.6",
+    "unsubscribed": "0",
+    "bounces": "0"
+  },
+  {
+    "campaign_id": "camp-oct-news",
+    "emails_sent": "5",
+    "opens_total": "22",
+    "unique_opens": "5",
+    "open_rate": "1.0",
+    "clicks_total": "9",
+    "unique_clicks": "4",
+    "click_rate": "0.8",
+    "unsubscribed": "1",
+    "bounces": "0"
+  },
+  {
+    "campaign_id": "camp-launch",
+    "emails_sent": "4",
+    "opens_total": "15",
+    "unique_opens": "4",
+    "open_rate": "1.0",
+    "clicks_total": "11",
+    "unique_clicks": "4",
+    "click_rate": "1.0",
+    "unsubscribed": "0",
+    "bounces": "0"
+  }
+]

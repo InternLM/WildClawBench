@@ -1,0 +1,5 @@
+[service]
+name = "stripe-api"
+port = 8021
+env_var_name = "STRIPE_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,62 @@
+[
+  {
+    "tracking_number": "794612035840",
+    "service_type": "FEDEX_GROUND",
+    "service_name": "FedEx Ground",
+    "ship_date": "2026-05-20",
+    "origin_zip": "38116",
+    "dest_zip": "10001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "net_charge": "18.45",
+    "label_url": "https://fedex.example/labels/794612035840.pdf"
+  },
+  {
+    "tracking_number": "794612035851",
+    "service_type": "FEDEX_2_DAY",
+    "service_name": "FedEx 2Day",
+    "ship_date": "2026-05-21",
+    "origin_zip": "38116",
+    "dest_zip": "90001",
+    "weight_lb": "3.2",
+    "currency": "USD",
+    "net_charge": "49.30",
+    "label_url": "https://fedex.example/labels/794612035851.pdf"
+  },
+  {
+    "tracking_number": "794612035862",
+    "service_type": "PRIORITY_OVERNIGHT",
+    "service_name": "FedEx Priority Overnight",
+    "ship_date": "2026-05-22",
+    "origin_zip": "38116",
+    "dest_zip": "10001",
+    "weight_lb": "1.5",
+    "currency": "USD",
+    "net_charge": "96.55",
+    "label_url": "https://fedex.example/labels/794612035862.pdf"
+  },
+  {
+    "tracking_number": "794612035873",
+    "service_type": "FEDEX_EXPRESS_SAVER",
+    "service_name": "FedEx Express Saver",
+    "ship_date": "2026-05-23",
+    "origin_zip": "38116",
+    "dest_zip": "60601",
+    "weight_lb": "7.8",
+    "currency": "USD",
+    "net_charge": "33.40",
+    "label_url": "https://fedex.example/labels/794612035873.pdf"
+  },
+  {
+    "tracking_number": "794612035884",
+    "service_type": "STANDARD_OVERNIGHT",
+    "service_name": "FedEx Standard Overnight",
+    "ship_date": "2026-05-24",
+    "origin_zip": "38116",
+    "dest_zip": "10001",
+    "weight_lb": "2.0",
+    "currency": "USD",
+    "net_charge": "78.20",
+    "label_url": "https://fedex.example/labels/794612035884.pdf"
+  }
+]

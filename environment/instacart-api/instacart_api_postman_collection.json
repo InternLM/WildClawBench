@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Instacart Mock API v1",
+    "description": "Mock Instacart API. Base URL: http://localhost:8012. In docker-compose: http://instacart-api:8012.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8012"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/v1/users/me"}},
+    {"name": "list retailers by zip", "request": {"method": "GET", "url": "{{baseUrl}}/v1/retailers?zip=94110"}},
+    {"name": "get retailer", "request": {"method": "GET", "url": "{{baseUrl}}/v1/retailers/ret-safeway"}},
+    {"name": "search products", "request": {"method": "GET", "url": "{{baseUrl}}/v1/products?retailer_id=ret-safeway&q=milk"}},
+    {"name": "get product", "request": {"method": "GET", "url": "{{baseUrl}}/v1/products/prod-safe-002"}},
+    {"name": "create cart", "request": {"method": "POST", "url": "{{baseUrl}}/v1/carts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"user_id\": \"user-emily\", \"retailer_id\": \"ret-safeway\"}"}}},
+    {"name": "add to cart", "request": {"method": "POST", "url": "{{baseUrl}}/v1/carts/{{cart_id}}/items",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"product_id\": \"prod-safe-002\", \"quantity\": 2}"}}},
+    {"name": "checkout", "request": {"method": "POST", "url": "{{baseUrl}}/v1/carts/{{cart_id}}/checkout",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"tip\": 5.00}"}}},
+    {"name": "list orders", "request": {"method": "GET", "url": "{{baseUrl}}/v1/orders?user_id=user-emily"}},
+    {"name": "get order", "request": {"method": "GET", "url": "{{baseUrl}}/v1/orders/order-001"}},
+    {"name": "cancel order", "request": {"method": "POST", "url": "{{baseUrl}}/v1/orders/order-003/cancel"}}
+  ]
+}

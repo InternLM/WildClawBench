@@ -1,0 +1,52 @@
+[
+  {
+    "event_type": "purchase",
+    "date": "2026-05-02",
+    "count": "3"
+  },
+  {
+    "event_type": "purchase",
+    "date": "2026-05-03",
+    "count": "5"
+  },
+  {
+    "event_type": "purchase",
+    "date": "2026-05-04",
+    "count": "8"
+  },
+  {
+    "event_type": "purchase",
+    "date": "2026-05-05",
+    "count": "6"
+  },
+  {
+    "event_type": "purchase",
+    "date": "2026-05-06",
+    "count": "9"
+  },
+  {
+    "event_type": "session_start",
+    "date": "2026-05-02",
+    "count": "120"
+  },
+  {
+    "event_type": "session_start",
+    "date": "2026-05-03",
+    "count": "134"
+  },
+  {
+    "event_type": "session_start",
+    "date": "2026-05-04",
+    "count": "128"
+  },
+  {
+    "event_type": "session_start",
+    "date": "2026-05-05",
+    "count": "141"
+  },
+  {
+    "event_type": "session_start",
+    "date": "2026-05-06",
+    "count": "150"
+  }
+]

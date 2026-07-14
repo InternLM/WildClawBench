@@ -1,0 +1,5 @@
+[service]
+name = "woocommerce-api"
+port = 8085
+env_var_name = "WOOCOMMERCE_API_URL"
+healthcheck_path = "/health"

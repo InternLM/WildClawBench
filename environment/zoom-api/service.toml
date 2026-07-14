@@ -1,0 +1,5 @@
+[service]
+name = "zoom-api"
+port = 8028
+env_var_name = "ZOOM_API_URL"
+healthcheck_path = "/health"

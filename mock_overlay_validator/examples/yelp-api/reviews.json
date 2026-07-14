@@ -1,0 +1,82 @@
+[
+  {
+    "id": "rev-0000000001",
+    "business_id": "biz-the-grove-001",
+    "rating": "5",
+    "text": "Best brunch spot in Pac Heights. The lattes are perfect.",
+    "user_name": "Dana W",
+    "time_created": "2026-04-02T10:15:00"
+  },
+  {
+    "id": "rev-0000000002",
+    "business_id": "biz-the-grove-001",
+    "rating": "4",
+    "text": "Great food but it gets very busy on weekends.",
+    "user_name": "Marcus T",
+    "time_created": "2026-03-18T09:30:00"
+  },
+  {
+    "id": "rev-0000000003",
+    "business_id": "biz-the-grove-001",
+    "rating": "4",
+    "text": "Solid menu and friendly staff.",
+    "user_name": "Priya N",
+    "time_created": "2026-02-25T11:00:00"
+  },
+  {
+    "id": "rev-0000000004",
+    "business_id": "biz-tartine-0002",
+    "rating": "5",
+    "text": "The morning bun is life-changing. Worth the line.",
+    "user_name": "Helena P",
+    "time_created": "2026-04-20T08:45:00"
+  },
+  {
+    "id": "rev-0000000005",
+    "business_id": "biz-tartine-0002",
+    "rating": "5",
+    "text": "Best bakery in the city, hands down.",
+    "user_name": "Jonas R",
+    "time_created": "2026-03-30T07:50:00"
+  },
+  {
+    "id": "rev-0000000006",
+    "business_id": "biz-tartine-0002",
+    "rating": "4",
+    "text": "Amazing bread but pricey and always crowded.",
+    "user_name": "Aisha B",
+    "time_created": "2026-01-12T09:10:00"
+  },
+  {
+    "id": "rev-0000000007",
+    "business_id": "biz-hop-prime-04",
+    "rating": "5",
+    "text": "Old-school prime rib done right. The salad cart is iconic.",
+    "user_name": "Rohit B",
+    "time_created": "2026-05-01T19:30:00"
+  },
+  {
+    "id": "rev-0000000008",
+    "business_id": "biz-hop-prime-04",
+    "rating": "4",
+    "text": "Great cuts, a bit heavy on the wallet.",
+    "user_name": "Noor A",
+    "time_created": "2026-04-14T20:00:00"
+  },
+  {
+    "id": "rev-0000000009",
+    "business_id": "biz-la-taq-0007",
+    "rating": "5",
+    "text": "The dorado burrito is unbeatable. Cash only heads up.",
+    "user_name": "Sofia M",
+    "time_created": "2026-05-10T13:20:00"
+  },
+  {
+    "id": "rev-0000000010",
+    "business_id": "biz-la-taq-0007",
+    "rating": "4",
+    "text": "Authentic and cheap, lines move fast.",
+    "user_name": "Daniel C",
+    "time_created": "2026-04-28T12:45:00"
+  }
+]

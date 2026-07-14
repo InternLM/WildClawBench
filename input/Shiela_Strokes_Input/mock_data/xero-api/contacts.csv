@@ -1,0 +1,36 @@
+contact_id,name,first_name,last_name,email,is_customer,is_supplier,status,account_number
+con_tachyon,Tachyon Networks Nigeria Ltd,Ola,Adeyemo,ola.adeyemo@tachyon-networks.ng,false,true,ACTIVE,TCH-001
+con_helmer,Helmer Logistics Nigeria,Ade,Ojo,ops@helmer-logistics.ng,false,true,ACTIVE,HLM-001
+con_dhl,DHL Express Nigeria,Customs,Desk,customs.ng@dhl.com,false,true,ACTIVE,DHL-001
+con_ncc,Nigerian Communications Commission,Finance,Office,finance@ncc.gov.ng,false,true,ACTIVE,NCC-001
+con_telcong,TelcoNG NetPlan Procurement,Amaka,Obi,a.obi@telecorpng.com,true,false,ACTIVE,INT-001
+con_apex,Apex Properties Ltd,Lease,Manager,leasing@apex-properties.ng,false,true,ACTIVE,APX-001
+con_gsb,Guaranty Savings Bank,Corp,Banking,corporate@guarantysavings.ng,false,true,ACTIVE,GSB-001
+con_total,Total Filling Maitama,Station,Manager,billing@totalmaitama.ng,false,true,ACTIVE,TTL-001
+con_mtn,MTN Nigeria,Corp,Billing,corporate@mtnnigeria.ng,false,true,ACTIVE,MTN-001
+con_leadway,Leadway Assurance,Policy,Mgr,premiums@leadway.ng,false,true,ACTIVE,LWY-001
+con_school,Maitama Premier Primary,Bursar,Office,bursar@maitamaprimary.ng,false,true,ACTIVE,MPP-001
+con_fitness,Maitama Fitness Center,Billing,Desk,billing@maitama-fitness.ng,false,true,ACTIVE,MFC-001
+con_wakkis,Wakkis Restaurant,Reserv,Desk,reservations@wakkis.ng,false,true,ACTIVE,WKS-001
+con_salamander,Salamander Cafe,Reserv,Desk,reservations@salamander.ng,false,true,ACTIVE,SAL-001
+con_health,HealthPlus Maitama,Counter,,info@healthplus.ng,false,true,ACTIVE,HLP-001
+con_yellow,Yellow Sisi Designs,Showroom,,orders@yellowsisi.ng,false,true,ACTIVE,YSD-001
+con_eyelab,Eye Lab Maitama,Counter,,info@eyelabmaitama.ng,false,true,ACTIVE,EYL-001
+con_cassava,Cassava Republic Books,Counter,,info@cassavarepublic.ng,false,true,ACTIVE,CRB-001
+con_netflix,Netflix Services Nigeria,Billing,,billing@netflix.ng,false,true,ACTIVE,NFX-001
+con_spotify,Spotify Nigeria,Billing,,billing@spotify.ng,false,true,ACTIVE,SPT-001
+con_linkedin,LinkedIn Corp,Billing,,billing@linkedin.com,false,true,ACTIVE,LNK-001
+con_ieee,IEEE Organization,Membership,,membership@ieee.org,false,true,ACTIVE,IEE-001
+con_anglican,Holy Trinity Anglican,Treasury,,treasury@htacmaitama.ng,false,true,ACTIVE,HTA-001
+con_reading,Maitama Reading Club,Coord,,coord@maitamareading.ng,false,true,ACTIVE,MRC-001
+con_savanna,Savanna Capital Managers,Client,Services,clients@savannacapital.ng,false,true,ACTIVE,SVC-001
+con_hair,Maitama Hair Studio,Counter,,info@maitamahair.ng,false,true,ACTIVE,MHS-001
+con_supplies,Maitama School Supplies,Counter,,info@maitamasupplies.ng,false,true,ACTIVE,MSS-001
+con_pta,Maitama Premier Primary PTA,Sec,,pta@maitamaprimary.ng,false,true,ACTIVE,PTA-001
+con_amaditech,AmadiTech Consulting,Acct,Manager,billing@amaditech.ng,false,true,ACTIVE,AMT-001
+con_clearpath,ClearPath Sat Backhaul,Acct,Manager,billing@clearpath.ng,false,true,ACTIVE,CLP-001
+con_femto,Femto Networks Africa,Acct,Manager,billing@femtonet.africa,false,true,ACTIVE,FEM-001
+con_smart,Smart Survey NG,Acct,Manager,billing@smartsurvey.ng,false,true,ACTIVE,SSV-001
+con_alpha,Alpha Energy Backup Ltd,Acct,Manager,billing@alphaenergy.ng,false,true,ACTIVE,AEB-001
+con_lagostech,LagosTech Conferences,Reg,Office,reg@lagostech.events,false,true,ACTIVE,LTC-001
+con_eduplus,EduPlus Tuition Centre,Counter,,info@eduplustuition.ng,false,true,ACTIVE,EDU-001

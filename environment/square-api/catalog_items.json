@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ITEM_LATTE",
+    "type": "ITEM",
+    "name": "Caffe Latte",
+    "description": "Espresso with steamed milk",
+    "category": "Drinks",
+    "variation_id": "VAR_LATTE_R",
+    "variation_name": "Regular",
+    "price_amount": "450",
+    "currency": "USD"
+  },
+  {
+    "id": "ITEM_COLDBREW",
+    "type": "ITEM",
+    "name": "Cold Brew",
+    "description": "Slow-steeped cold brew coffee",
+    "category": "Drinks",
+    "variation_id": "VAR_COLDBREW_R",
+    "variation_name": "Regular",
+    "price_amount": "500",
+    "currency": "USD"
+  },
+  {
+    "id": "ITEM_CROISSANT",
+    "type": "ITEM",
+    "name": "Butter Croissant",
+    "description": "Flaky all-butter croissant",
+    "category": "Bakery",
+    "variation_id": "VAR_CROISSANT_R",
+    "variation_name": "Regular",
+    "price_amount": "375",
+    "currency": "USD"
+  },
+  {
+    "id": "ITEM_BAGEL",
+    "type": "ITEM",
+    "name": "Sesame Bagel",
+    "description": "Hand-rolled sesame bagel",
+    "category": "Bakery",
+    "variation_id": "VAR_BAGEL_R",
+    "variation_name": "Regular",
+    "price_amount": "300",
+    "currency": "USD"
+  },
+  {
+    "id": "ITEM_MUG",
+    "type": "ITEM",
+    "name": "Ceramic Mug",
+    "description": "Branded 12oz ceramic mug",
+    "category": "Merch",
+    "variation_id": "VAR_MUG_R",
+    "variation_name": "Standard",
+    "price_amount": "1200",
+    "currency": "USD"
+  },
+  {
+    "id": "ITEM_BEANS",
+    "type": "ITEM",
+    "name": "House Blend Beans",
+    "description": "Whole bean coffee 12oz bag",
+    "category": "Merch",
+    "variation_id": "VAR_BEANS_12",
+    "variation_name": "12oz",
+    "price_amount": "1600",
+    "currency": "USD"
+  },
+  {
+    "id": "ITEM_TEA",
+    "type": "ITEM",
+    "name": "Loose Leaf Tea",
+    "description": "Single-origin loose leaf tea tin",
+    "category": "Drinks",
+    "variation_id": "VAR_TEA_TIN",
+    "variation_name": "Tin",
+    "price_amount": "900",
+    "currency": "USD"
+  }
+]

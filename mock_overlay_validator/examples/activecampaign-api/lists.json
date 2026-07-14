@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Newsletter Subscribers",
+    "stringid": "newsletter-subscribers",
+    "subscriber_count": "5210",
+    "sender_url": "https://acme.example.com",
+    "sender_reminder": "You signed up on our website.",
+    "created_timestamp": "2026-01-10T09:00:00-05:00"
+  },
+  {
+    "id": "2",
+    "name": "Product Updates",
+    "stringid": "product-updates",
+    "subscriber_count": "3140",
+    "sender_url": "https://acme.example.com/product",
+    "sender_reminder": "You opted in for product news.",
+    "created_timestamp": "2026-02-01T09:00:00-05:00"
+  },
+  {
+    "id": "3",
+    "name": "Webinar Leads",
+    "stringid": "webinar-leads",
+    "subscriber_count": "880",
+    "sender_url": "https://acme.example.com/webinars",
+    "sender_reminder": "You registered for a webinar.",
+    "created_timestamp": "2026-03-12T09:00:00-05:00"
+  },
+  {
+    "id": "4",
+    "name": "Trial Users",
+    "stringid": "trial-users",
+    "subscriber_count": "1420",
+    "sender_url": "https://acme.example.com/trial",
+    "sender_reminder": "You started a free trial.",
+    "created_timestamp": "2026-04-02T09:00:00-05:00"
+  },
+  {
+    "id": "5",
+    "name": "Churned Customers",
+    "stringid": "churned-customers",
+    "subscriber_count": "640",
+    "sender_url": "https://acme.example.com/winback",
+    "sender_reminder": "We miss you - here are updates.",
+    "created_timestamp": "2026-04-22T09:00:00-05:00"
+  }
+]

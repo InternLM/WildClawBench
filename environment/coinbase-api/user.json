@@ -1,0 +1,10 @@
+{
+  "id": "user-orbit-001",
+  "name": "Amelia Ortega",
+  "username": "amelia.ortega",
+  "profile_location": "Portland, OR",
+  "email": "amelia.ortega@orbit-labs.com",
+  "country": {"code": "US", "name": "United States"},
+  "native_currency": "USD",
+  "created_at": "2025-01-10T09:00:00Z"
+}

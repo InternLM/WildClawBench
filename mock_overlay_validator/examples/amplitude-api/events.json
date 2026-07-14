@@ -1,0 +1,82 @@
+[
+  {
+    "event_id": "ev_900001",
+    "user_id": "user_2001",
+    "device_id": "dev_aa01",
+    "event_type": "session_start",
+    "event_time": "2026-05-02T08:00:00Z",
+    "event_properties": "platform=web"
+  },
+  {
+    "event_id": "ev_900002",
+    "user_id": "user_2001",
+    "device_id": "dev_aa01",
+    "event_type": "page_view",
+    "event_time": "2026-05-02T08:01:12Z",
+    "event_properties": "page=home"
+  },
+  {
+    "event_id": "ev_900003",
+    "user_id": "user_2002",
+    "device_id": "dev_bb02",
+    "event_type": "signup_completed",
+    "event_time": "2026-05-03T10:22:40Z",
+    "event_properties": "plan=free"
+  },
+  {
+    "event_id": "ev_900004",
+    "user_id": "user_2002",
+    "device_id": "dev_bb02",
+    "event_type": "feature_used",
+    "event_time": "2026-05-03T10:30:05Z",
+    "event_properties": "feature=export"
+  },
+  {
+    "event_id": "ev_900005",
+    "user_id": "user_2003",
+    "device_id": "dev_cc03",
+    "event_type": "purchase",
+    "event_time": "2026-05-04T14:11:19Z",
+    "event_properties": "revenue=89.00;currency=USD"
+  },
+  {
+    "event_id": "ev_900006",
+    "user_id": "user_2001",
+    "device_id": "dev_aa01",
+    "event_type": "purchase",
+    "event_time": "2026-05-05T09:45:51Z",
+    "event_properties": "revenue=24.50;currency=USD"
+  },
+  {
+    "event_id": "ev_900007",
+    "user_id": "user_2004",
+    "device_id": "dev_dd04",
+    "event_type": "session_start",
+    "event_time": "2026-05-06T18:02:33Z",
+    "event_properties": "platform=ios"
+  },
+  {
+    "event_id": "ev_900008",
+    "user_id": "user_2004",
+    "device_id": "dev_dd04",
+    "event_type": "feature_used",
+    "event_time": "2026-05-06T18:10:09Z",
+    "event_properties": "feature=share"
+  },
+  {
+    "event_id": "ev_900009",
+    "user_id": "user_2003",
+    "device_id": "dev_cc03",
+    "event_type": "page_view",
+    "event_time": "2026-05-07T11:27:44Z",
+    "event_properties": "page=pricing"
+  },
+  {
+    "event_id": "ev_900010",
+    "user_id": "user_2005",
+    "device_id": "dev_ee05",
+    "event_type": "signup_completed",
+    "event_time": "2026-05-08T07:14:02Z",
+    "event_properties": "plan=pro"
+  }
+]

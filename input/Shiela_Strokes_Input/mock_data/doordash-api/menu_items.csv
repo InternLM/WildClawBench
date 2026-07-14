@@ -1,0 +1,13 @@
+item_id,store_id,name,description,category,price,calories,popular,available
+mi_001,store_001,Cafe Cherie Breakfast Plate,"Eggs, plantain, beans, toast",Breakfast,4500,780,true,true
+mi_002,store_001,Maitama Pastry Box (4 pieces),Assorted morning pastries,Breakfast,3200,620,true,true
+mi_003,store_001,House Coffee + Croissant,Pour-over coffee with butter croissant,Beverages,2800,420,false,true
+mi_004,store_002,Continental Lunch Bowl,"Quinoa, grilled chicken, vegetables",Lunch,5800,650,true,true
+mi_005,store_002,Salamander Salad,"Greens, walnut, feta, balsamic",Lunch,4200,480,false,true
+mi_006,store_002,Cafe Latte Large,"Locally roasted coffee, oat milk",Beverages,2200,180,true,true
+mi_007,store_003,Wakkis Signature Jollof,Smoky jollof rice with grilled meat,Mains,8500,920,true,true
+mi_008,store_003,Pepper Soup Catfish,Light pepper soup with catfish,Soups,7200,480,true,true
+mi_009,store_003,Chapman Cocktail (Non-Alcoholic),Classic Nigerian Chapman,Beverages,2800,220,false,true
+mi_010,store_004,Beef Suya Pack,"Spicy beef suya, onions, tomatoes",Mains,3500,780,true,true
+mi_011,store_004,Chicken Suya Pack,"Spicy chicken suya, onions, peppers",Mains,3200,640,true,true
+mi_012,store_004,Suya Combo Family,Beef + chicken + ram suya family pack,Mains,12500,2400,false,true

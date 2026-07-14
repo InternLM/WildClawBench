@@ -1,0 +1,42 @@
+[
+  {
+    "user_id": "PU001",
+    "name": "Amelia Ortega",
+    "email": "amelia.ortega@orbit-labs.com",
+    "role": "admin",
+    "time_zone": "America/Los_Angeles",
+    "job_title": "SRE Lead"
+  },
+  {
+    "user_id": "PU002",
+    "name": "Jonas Pereira",
+    "email": "jonas.pereira@orbit-labs.com",
+    "role": "user",
+    "time_zone": "America/Los_Angeles",
+    "job_title": "Backend Engineer"
+  },
+  {
+    "user_id": "PU003",
+    "name": "Helena Park",
+    "email": "helena.park@orbit-labs.com",
+    "role": "user",
+    "time_zone": "Europe/Berlin",
+    "job_title": "Platform Engineer"
+  },
+  {
+    "user_id": "PU004",
+    "name": "Rohit Bansal",
+    "email": "rohit.bansal@orbit-labs.com",
+    "role": "user",
+    "time_zone": "Asia/Kolkata",
+    "job_title": "Site Reliability Engineer"
+  },
+  {
+    "user_id": "PU005",
+    "name": "Noor Aziz",
+    "email": "noor.aziz@orbit-labs.com",
+    "role": "manager",
+    "time_zone": "America/New_York",
+    "job_title": "Engineering Manager"
+  }
+]

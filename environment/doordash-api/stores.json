@@ -1,0 +1,72 @@
+[
+  {
+    "store_id": "store-sakura",
+    "name": "Sakura Ramen House",
+    "cuisine": "Japanese",
+    "rating": "4.7",
+    "review_count": "1284",
+    "price_range": "$$",
+    "delivery_fee": "2.99",
+    "eta_minutes": "28",
+    "latitude": "37.7842",
+    "longitude": "-122.4078",
+    "address": "512 Geary St San Francisco",
+    "is_open": "true"
+  },
+  {
+    "store_id": "store-bellaroma",
+    "name": "Bella Roma Trattoria",
+    "cuisine": "Italian",
+    "rating": "4.5",
+    "review_count": "876",
+    "price_range": "$$$",
+    "delivery_fee": "3.99",
+    "eta_minutes": "38",
+    "latitude": "37.7990",
+    "longitude": "-122.4014",
+    "address": "233 Columbus Ave San Francisco",
+    "is_open": "true"
+  },
+  {
+    "store_id": "store-tacolibre",
+    "name": "Taco Libre",
+    "cuisine": "Mexican",
+    "rating": "4.6",
+    "review_count": "2031",
+    "price_range": "$",
+    "delivery_fee": "1.99",
+    "eta_minutes": "22",
+    "latitude": "37.7599",
+    "longitude": "-122.4148",
+    "address": "2800 Mission St San Francisco",
+    "is_open": "true"
+  },
+  {
+    "store_id": "store-greenfork",
+    "name": "Green Fork Salads",
+    "cuisine": "Healthy",
+    "rating": "4.3",
+    "review_count": "512",
+    "price_range": "$$",
+    "delivery_fee": "2.49",
+    "eta_minutes": "18",
+    "latitude": "37.7906",
+    "longitude": "-122.4011",
+    "address": "88 Kearny St San Francisco",
+    "is_open": "true"
+  },
+  {
+    "store_id": "store-dragongate",
+    "name": "Dragon Gate Dim Sum",
+    "cuisine": "Chinese",
+    "rating": "4.4",
+    "review_count": "1567",
+    "price_range": "$$",
+    "delivery_fee": "2.99",
+    "eta_minutes": "33",
+    "latitude": "37.7941",
+    "longitude": "-122.4078",
+    "address": "640 Jackson St San Francisco",
+    "is_open": "false"
+  }
+]

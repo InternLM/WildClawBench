@@ -1,0 +1,30 @@
+[
+  {
+    "id": "prod_Starter",
+    "name": "Starter Plan",
+    "description": "Up to 3 seats and basic reporting",
+    "active": "true",
+    "created": "1700000000"
+  },
+  {
+    "id": "prod_Pro",
+    "name": "Pro Plan",
+    "description": "Unlimited seats and advanced analytics",
+    "active": "true",
+    "created": "1700000000"
+  },
+  {
+    "id": "prod_Enterprise",
+    "name": "Enterprise Plan",
+    "description": "Dedicated support and SSO",
+    "active": "true",
+    "created": "1700000000"
+  },
+  {
+    "id": "prod_POS",
+    "name": "POS Hardware Bundle",
+    "description": "Card reader plus stand",
+    "active": "true",
+    "created": "1702000000"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "broadcaster_id": "40001",
+    "broadcaster_login": "pixelpaladin",
+    "broadcaster_name": "PixelPaladin",
+    "game_id": "30003",
+    "game_name": "Elden Ring",
+    "title": "Blind Elden Ring run - no spoilers please",
+    "broadcaster_language": "en",
+    "tags": "RPG;Blind;English",
+    "follower_count": "512000"
+  },
+  {
+    "broadcaster_id": "40002",
+    "broadcaster_login": "nightowlcodes",
+    "broadcaster_name": "NightOwlCodes",
+    "game_id": "30002",
+    "game_name": "Software and Game Development",
+    "title": "Building a roguelike in Rust - day 14",
+    "broadcaster_language": "en",
+    "tags": "Coding;Rust;Gamedev",
+    "follower_count": "24300"
+  },
+  {
+    "broadcaster_id": "40003",
+    "broadcaster_login": "sprintqueen",
+    "broadcaster_name": "SprintQueen",
+    "game_id": "30005",
+    "game_name": "Speedrunning",
+    "title": "WR attempts all morning",
+    "broadcaster_language": "en",
+    "tags": "Speedrun;Competitive",
+    "follower_count": "890000"
+  },
+  {
+    "broadcaster_id": "40004",
+    "broadcaster_login": "tacticalturtle",
+    "broadcaster_name": "TacticalTurtle",
+    "game_id": "30004",
+    "game_name": "Cities: Skylines II",
+    "title": "Building the perfect transit network",
+    "broadcaster_language": "en",
+    "tags": "CityBuilder;Chill",
+    "follower_count": "14200"
+  },
+  {
+    "broadcaster_id": "40005",
+    "broadcaster_login": "orbit_dev",
+    "broadcaster_name": "OrbitDev",
+    "game_id": "30002",
+    "game_name": "Software and Game Development",
+    "title": "Orbit CLI 2.0 launch stream and live Q&A",
+    "broadcaster_language": "en",
+    "tags": "Coding;DevTools",
+    "follower_count": "41000"
+  },
+  {
+    "broadcaster_id": "40006",
+    "broadcaster_login": "casualcartographer",
+    "broadcaster_name": "CasualCartographer",
+    "game_id": "30006",
+    "game_name": "Strategy",
+    "title": "Map making sunday",
+    "broadcaster_language": "en",
+    "tags": "Strategy;Creative",
+    "follower_count": "6300"
+  }
+]

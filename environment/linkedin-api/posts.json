@@ -1,0 +1,62 @@
+[
+  {
+    "id": "6001",
+    "author_id": "urn:li:person:amelia-ortega",
+    "commentary": "We just open-sourced our internal feature-flag library. Battle-tested across three years of rollouts. Link in comments.",
+    "visibility": "PUBLIC",
+    "created_at": "2026-05-19T15:00:00.000Z",
+    "like_count": "318",
+    "comment_count": "42",
+    "share_count": "57"
+  },
+  {
+    "id": "6002",
+    "author_id": "urn:li:person:amelia-ortega",
+    "commentary": "Hiring two senior backend engineers for the platform team. Remote-friendly across EU and US time zones. DM me.",
+    "visibility": "PUBLIC",
+    "created_at": "2026-05-22T09:30:00.000Z",
+    "like_count": "156",
+    "comment_count": "38",
+    "share_count": "21"
+  },
+  {
+    "id": "6003",
+    "author_id": "urn:li:organization:orbit-labs",
+    "commentary": "Orbit CLI 2.0 is live. Faster cold starts and a new plugin system. Read the launch post on our blog.",
+    "visibility": "PUBLIC",
+    "created_at": "2026-05-21T17:00:00.000Z",
+    "like_count": "904",
+    "comment_count": "112",
+    "share_count": "210"
+  },
+  {
+    "id": "6004",
+    "author_id": "urn:li:person:helena-park",
+    "commentary": "Accessibility is not a feature you bolt on at the end. Sharing the audit checklist my team uses every sprint.",
+    "visibility": "PUBLIC",
+    "created_at": "2026-05-23T12:00:00.000Z",
+    "like_count": "421",
+    "comment_count": "55",
+    "share_count": "68"
+  },
+  {
+    "id": "6005",
+    "author_id": "urn:li:person:noor-aziz",
+    "commentary": "New migration guide is up: moving to the Orbit plugin API without downtime. Took us a week to get right.",
+    "visibility": "CONNECTIONS",
+    "created_at": "2026-05-24T11:00:00.000Z",
+    "like_count": "87",
+    "comment_count": "12",
+    "share_count": "9"
+  },
+  {
+    "id": "6006",
+    "author_id": "urn:li:person:amelia-ortega",
+    "commentary": "Reliability tip: gate every rollout on p95 latency, not averages. Averages hide the pain your users feel.",
+    "visibility": "PUBLIC",
+    "created_at": "2026-05-25T08:15:00.000Z",
+    "like_count": "512",
+    "comment_count": "71",
+    "share_count": "94"
+  }
+]

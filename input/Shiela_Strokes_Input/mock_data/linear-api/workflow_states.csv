@@ -1,0 +1,7 @@
+id,name,type,color,position,teamId,description
+wfs_triage,Triage,triage,#95A2B3,1,team_5g,Newly filed customer issues
+wfs_backlog,Backlog,backlog,#BEC2C8,2,team_5g,"Acknowledged, not started"
+wfs_in_progress,In Progress,started,#F2C94C,3,team_5g,Active work
+wfs_in_qa,In QA,started,#5E6AD2,4,team_5g,Patch in QA testing
+wfs_done,Done,completed,#26B5CE,5,team_5g,Resolved
+wfs_cancelled,Cancelled,cancelled,#E83A82,6,team_5g,Closed without resolution

@@ -1,0 +1,11 @@
+{
+  "id": "matt.garcia",
+  "display_name": "Matt Garcia",
+  "email": "matt.garcia@voissync.ai",
+  "country": "US",
+  "product": "premium",
+  "followers": 3,
+  "images": [
+    {"url": "https://img.spotify.kf.local/matt_garcia.png", "height": 300, "width": 300}
+  ]
+}

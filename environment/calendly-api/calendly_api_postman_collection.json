@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "Calendly Mock API",
+    "description": "Test collection for the mock Calendly API service. Base URL defaults to http://localhost:8054. In docker-compose, the service is reachable at http://calendly-api:8054.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8054"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/users/me"}},
+    {"name": "list event types", "request": {"method": "GET", "url": "{{baseUrl}}/event_types?user=user-amelia-ortega"}},
+    {"name": "get event type", "request": {"method": "GET", "url": "{{baseUrl}}/event_types/et-discovery-30"}},
+    {"name": "list scheduled events", "request": {"method": "GET", "url": "{{baseUrl}}/scheduled_events?user=user-amelia-ortega&status=active"}},
+    {"name": "get scheduled event", "request": {"method": "GET", "url": "{{baseUrl}}/scheduled_events/sev-1001"}},
+    {"name": "list invitees", "request": {"method": "GET", "url": "{{baseUrl}}/scheduled_events/sev-1001/invitees"}},
+    {"name": "book event", "request": {"method": "POST", "url": "{{baseUrl}}/scheduled_events",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"event_type\": \"et-intro-15\", \"start_time\": \"2026-06-03T17:00:00.000000Z\", \"end_time\": \"2026-06-03T17:15:00.000000Z\", \"location_type\": \"zoom\", \"location\": \"https://zoom.us/j/8801234999\", \"invitee\": {\"name\": \"Noor Aziz\", \"email\": \"noor.aziz@example.com\"}}"}}},
+    {"name": "cancel event", "request": {"method": "POST", "url": "{{baseUrl}}/scheduled_events/sev-1002/cancellation",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"reason\": \"Host out of office\"}"}}}
+  ]
+}

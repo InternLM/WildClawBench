@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tor-5001",
+    "employeeId": "emp-102",
+    "type": "Vacation",
+    "status": "approved",
+    "start": "2026-06-08",
+    "end": "2026-06-12",
+    "amount": "5",
+    "unit": "days",
+    "notes": "Family trip",
+    "created": "2026-05-10"
+  },
+  {
+    "id": "tor-5002",
+    "employeeId": "emp-103",
+    "type": "Sick",
+    "status": "approved",
+    "start": "2026-05-19",
+    "end": "2026-05-20",
+    "amount": "2",
+    "unit": "days",
+    "notes": "Flu recovery",
+    "created": "2026-05-18"
+  },
+  {
+    "id": "tor-5003",
+    "employeeId": "emp-104",
+    "type": "Vacation",
+    "status": "requested",
+    "start": "2026-07-01",
+    "end": "2026-07-10",
+    "amount": "8",
+    "unit": "days",
+    "notes": "Summer holiday",
+    "created": "2026-05-22"
+  },
+  {
+    "id": "tor-5004",
+    "employeeId": "emp-106",
+    "type": "Personal",
+    "status": "denied",
+    "start": "2026-06-15",
+    "end": "2026-06-16",
+    "amount": "2",
+    "unit": "days",
+    "notes": "Overlaps with quarter close",
+    "created": "2026-05-12"
+  },
+  {
+    "id": "tor-5005",
+    "employeeId": "emp-107",
+    "type": "Vacation",
+    "status": "approved",
+    "start": "2026-05-28",
+    "end": "2026-05-30",
+    "amount": "3",
+    "unit": "days",
+    "notes": "Long weekend",
+    "created": "2026-05-05"
+  },
+  {
+    "id": "tor-5006",
+    "employeeId": "emp-108",
+    "type": "Vacation",
+    "status": "requested",
+    "start": "2026-08-04",
+    "end": "2026-08-15",
+    "amount": "10",
+    "unit": "days",
+    "notes": "Annual leave",
+    "created": "2026-05-25"
+  },
+  {
+    "id": "tor-5007",
+    "employeeId": "emp-105",
+    "type": "Sick",
+    "status": "approved",
+    "start": "2026-05-26",
+    "end": "2026-05-26",
+    "amount": "1",
+    "unit": "days",
+    "notes": "Doctor appointment",
+    "created": "2026-05-25"
+  },
+  {
+    "id": "tor-5008",
+    "employeeId": "emp-112",
+    "type": "Personal",
+    "status": "requested",
+    "start": "2026-06-20",
+    "end": "2026-06-20",
+    "amount": "1",
+    "unit": "days",
+    "notes": "Moving day",
+    "created": "2026-05-24"
+  },
+  {
+    "id": "tor-5009",
+    "employeeId": "emp-109",
+    "type": "Vacation",
+    "status": "denied",
+    "start": "2026-09-01",
+    "end": "2026-09-05",
+    "amount": "5",
+    "unit": "days",
+    "notes": "Sales kickoff conflict",
+    "created": "2026-05-20"
+  },
+  {
+    "id": "tor-5010",
+    "employeeId": "emp-103",
+    "type": "Vacation",
+    "status": "approved",
+    "start": "2026-12-22",
+    "end": "2026-12-31",
+    "amount": "8",
+    "unit": "days",
+    "notes": "Winter break",
+    "created": "2026-05-15"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "WooCommerce REST API v3 Mock",
+    "description": "Test collection for the mock WooCommerce REST API v3 service (products, orders, customers). Base URL defaults to http://localhost:8085. In docker-compose, the service is reachable at http://woocommerce-api:8085.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8085"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list products", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wc/v3/products?per_page=5&page=1"}},
+    {"name": "search products", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wc/v3/products?search=mug"}},
+    {"name": "get product", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wc/v3/products/201"}},
+    {"name": "list orders", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wc/v3/orders?customer=301"}},
+    {"name": "get order", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wc/v3/orders/401"}},
+    {"name": "create order", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\"customer_id\": 302, \"status\": \"pending\", \"payment_method\": \"stripe\", \"payment_method_title\": \"Credit Card (Stripe)\", \"billing\": {\"first_name\": \"Noah\", \"last_name\": \"Kim\", \"email\": \"noah.kim@example.com\"}, \"line_items\": [{\"product_id\": 203, \"quantity\": 2}]}"}, "url": "{{baseUrl}}/wp-json/wc/v3/orders"}},
+    {"name": "list customers", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wc/v3/customers?email=emma"}}
+  ]
+}

@@ -1,0 +1,5 @@
+[service]
+name = "amadeus-api"
+port = 8076
+env_var_name = "AMADEUS_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "00g1eng",
+    "name": "Engineering",
+    "description": "All engineering staff",
+    "type": "OKTA_GROUP",
+    "created": "2024-01-10T10:00:00.000Z"
+  },
+  {
+    "id": "00g2plat",
+    "name": "Platform Team",
+    "description": "Platform and infrastructure engineers",
+    "type": "OKTA_GROUP",
+    "created": "2024-01-12T10:00:00.000Z"
+  },
+  {
+    "id": "00g3admins",
+    "name": "Administrators",
+    "description": "Tenant administrators",
+    "type": "OKTA_GROUP",
+    "created": "2024-01-10T10:00:00.000Z"
+  },
+  {
+    "id": "00g4everyone",
+    "name": "Everyone",
+    "description": "All users in the org",
+    "type": "BUILT_IN",
+    "created": "2024-01-10T10:00:00.000Z"
+  }
+]

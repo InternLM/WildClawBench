@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Zendesk Mock Support API v2",
+    "description": "Test collection for the mock Zendesk Support API service. Base URL defaults to http://localhost:8025. In docker-compose, the service is reachable at http://zendesk-api:8025.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8025"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list tickets", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/tickets?status=open"}},
+    {"name": "get ticket", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/tickets/701"}},
+    {"name": "create ticket", "request": {"method": "POST", "url": "{{baseUrl}}/api/v2/tickets",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"ticket\": {\"subject\": \"Card reader keeps disconnecting\", \"priority\": \"high\", \"type\": \"problem\", \"requester_id\": 604, \"comment\": {\"body\": \"The reader drops the bluetooth connection every few minutes.\"}}}"}}},
+    {"name": "update ticket (status/assignee/priority)", "request": {"method": "PUT", "url": "{{baseUrl}}/api/v2/tickets/704",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"ticket\": {\"status\": \"open\", \"assignee_id\": 602, \"priority\": \"high\", \"comment\": {\"body\": \"Picking this up now.\", \"public\": false}}}"}}},
+    {"name": "list ticket comments", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/tickets/701/comments"}},
+    {"name": "create comment", "request": {"method": "POST", "url": "{{baseUrl}}/api/v2/tickets/701/comments",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"comment\": {\"body\": \"We shipped a firmware fix; please update and retry.\", \"public\": true, \"author_id\": 602}}"}}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/users?role=agent"}},
+    {"name": "get user", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/users/602"}},
+    {"name": "list organizations", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/organizations"}}
+  ]
+}

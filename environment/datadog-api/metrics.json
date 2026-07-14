@@ -1,0 +1,37 @@
+[
+  {
+    "metric": "trace.http.request.duration",
+    "scope": "service:auth-service",
+    "base_value": "0.42",
+    "amplitude": "0.18",
+    "unit": "second"
+  },
+  {
+    "metric": "trace.http.request.errors",
+    "scope": "service:web-frontend",
+    "base_value": "38.0",
+    "amplitude": "22.0",
+    "unit": "error"
+  },
+  {
+    "metric": "system.cpu.user",
+    "scope": "host:web-01",
+    "base_value": "68.0",
+    "amplitude": "15.0",
+    "unit": "percent"
+  },
+  {
+    "metric": "billing.queue.depth",
+    "scope": "service:billing-service",
+    "base_value": "640.0",
+    "amplitude": "210.0",
+    "unit": "job"
+  },
+  {
+    "metric": "system.disk.in_use",
+    "scope": "host:db-01",
+    "base_value": "0.82",
+    "amplitude": "0.06",
+    "unit": "fraction"
+  }
+]

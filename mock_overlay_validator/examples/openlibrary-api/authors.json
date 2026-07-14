@@ -1,0 +1,56 @@
+[
+  {
+    "author_id": "OL26320A",
+    "name": "J. R. R. Tolkien",
+    "birth_date": "3 January 1892",
+    "death_date": "2 September 1973",
+    "bio": "English writer and philologist best known for high fantasy.",
+    "top_work": "The Lord of the Rings",
+    "work_count": "142"
+  },
+  {
+    "author_id": "OL34184A",
+    "name": "Ursula K. Le Guin",
+    "birth_date": "21 October 1929",
+    "death_date": "22 January 2018",
+    "bio": "American author of speculative fiction and essays.",
+    "top_work": "A Wizard of Earthsea",
+    "work_count": "98"
+  },
+  {
+    "author_id": "OL23919A",
+    "name": "Isaac Asimov",
+    "birth_date": "2 January 1920",
+    "death_date": "6 April 1992",
+    "bio": "American writer and professor of biochemistry; prolific science fiction author.",
+    "top_work": "Foundation",
+    "work_count": "210"
+  },
+  {
+    "author_id": "OL2632116A",
+    "name": "N. K. Jemisin",
+    "birth_date": "19 September 1972",
+    "death_date": "",
+    "bio": "American speculative fiction writer and Hugo Award winner.",
+    "top_work": "The Fifth Season",
+    "work_count": "41"
+  },
+  {
+    "author_id": "OL18319A",
+    "name": "Frank Herbert",
+    "birth_date": "8 October 1920",
+    "death_date": "11 February 1986",
+    "bio": "American science fiction author best known for the Dune saga.",
+    "top_work": "Dune",
+    "work_count": "77"
+  },
+  {
+    "author_id": "OL161167A",
+    "name": "Octavia E. Butler",
+    "birth_date": "22 June 1947",
+    "death_date": "24 February 2006",
+    "bio": "American science fiction author and MacArthur Fellow.",
+    "top_work": "Kindred",
+    "work_count": "53"
+  }
+]

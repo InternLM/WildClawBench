@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "Freshdesk Mock API",
+    "description": "Test collection for the mock Freshdesk v2 API service (tickets, contacts, agents). Base URL defaults to http://localhost:8093. In docker-compose, the service is reachable at http://freshdesk-api:8093.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8093"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list tickets", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/tickets"}},
+    {"name": "list tickets filtered", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/tickets?status=2&priority=2"}},
+    {"name": "get ticket", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/tickets/70001"}},
+    {"name": "create ticket", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/api/v2/tickets", "body": {"mode": "raw", "raw": "{\"subject\": \"Billing question\", \"description\": \"Please clarify my last invoice.\", \"status\": 2, \"priority\": 2, \"requester_id\": 90001, \"type\": \"Question\", \"tags\": [\"billing\"]}"}}},
+    {"name": "update ticket", "request": {"method": "PUT", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/api/v2/tickets/70001", "body": {"mode": "raw", "raw": "{\"status\": 4, \"priority\": 3, \"responder_id\": 80002}"}}},
+    {"name": "list contacts", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/contacts"}},
+    {"name": "list agents", "request": {"method": "GET", "url": "{{baseUrl}}/api/v2/agents"}}
+  ]
+}

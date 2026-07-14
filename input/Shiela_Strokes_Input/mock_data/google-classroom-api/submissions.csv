@@ -1,0 +1,5 @@
+courseId,courseWorkId,id,userId,state,assignedGrade,draftGrade,late,creationTime,updateTime,alternateLink
+course_year_5_maitama,cw_y5_001,sub_adunola_001,stu_adunola_stokes,NEW,,,false,2026-09-15T10:00:00Z,2026-09-15T10:00:00Z,https://classroom.google.com/sub/sub_adunola_001
+course_year_5_maitama,cw_y5_002,sub_adunola_002,stu_adunola_stokes,NEW,,,false,2026-09-30T07:48:00Z,2026-09-30T07:48:00Z,https://classroom.google.com/sub/sub_adunola_002
+crs_year_5,cw_y5_2026_09_01,sub_y5_adunola_01,user_adunola_stokes,TURNED_IN,16,,false,2026-09-02T07:00:00Z,2026-09-03T15:00:00Z,https://classroom.example/u/0/c/crs_year_5/sw/sub_y5_adunola_01
+crs_year_2,cw_y2_2026_09_01,sub_y2_olufemi_01,user_olufemi_stokes,TURNED_IN,8,,false,2026-09-02T07:30:00Z,2026-09-03T15:30:00Z,https://classroom.example/u/0/c/crs_year_2/sw/sub_y2_olufemi_01

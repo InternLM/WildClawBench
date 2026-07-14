@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "Microsoft Teams Mock API",
+    "description": "Test collection for the mock Microsoft Teams (Graph v1.0) API service (joined teams, teams, channels, messages). Base URL defaults to http://localhost:8086. In docker-compose, the service is reachable at http://microsoft-teams-api:8086. Graph collections are wrapped as {\"value\": [...]}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8086"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "joined teams", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/me/joinedTeams"}},
+    {"name": "get team", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/teams/19:team-eng0001@thread.tacv2"}},
+    {"name": "list channels", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/teams/19:team-eng0001@thread.tacv2/channels"}},
+    {"name": "list channel messages", "request": {"method": "GET", "url": "{{baseUrl}}/v1.0/teams/19:team-eng0001@thread.tacv2/channels/19:chan-eng-gen01@thread.tacv2/messages"}},
+    {"name": "send channel message", "request": {"method": "POST", "url": "{{baseUrl}}/v1.0/teams/19:team-eng0001@thread.tacv2/channels/19:chan-eng-gen01@thread.tacv2/messages",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"body\": {\"contentType\": \"html\", \"content\": \"Deploy window confirmed for 3pm.\"}, \"importance\": \"high\"}"}}}
+  ]
+}

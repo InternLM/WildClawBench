@@ -1,0 +1,62 @@
+[
+  {
+    "id": "301",
+    "first_name": "Emma",
+    "last_name": "Wright",
+    "email": "emma.wright@example.com",
+    "username": "emmaw",
+    "role": "customer",
+    "billing_city": "Portland",
+    "billing_country": "US",
+    "is_paying_customer": "true",
+    "date_created": "2026-01-03T10:00:00"
+  },
+  {
+    "id": "302",
+    "first_name": "Noah",
+    "last_name": "Kim",
+    "email": "noah.kim@example.com",
+    "username": "noahk",
+    "role": "customer",
+    "billing_city": "Seattle",
+    "billing_country": "US",
+    "is_paying_customer": "true",
+    "date_created": "2026-01-19T11:20:00"
+  },
+  {
+    "id": "303",
+    "first_name": "Ava",
+    "last_name": "Martinez",
+    "email": "ava.martinez@example.com",
+    "username": "avam",
+    "role": "customer",
+    "billing_city": "Austin",
+    "billing_country": "US",
+    "is_paying_customer": "false",
+    "date_created": "2026-02-07T09:15:00"
+  },
+  {
+    "id": "304",
+    "first_name": "Lucas",
+    "last_name": "Brown",
+    "email": "lucas.brown@example.com",
+    "username": "lucasb",
+    "role": "customer",
+    "billing_city": "Denver",
+    "billing_country": "US",
+    "is_paying_customer": "true",
+    "date_created": "2026-03-02T14:45:00"
+  },
+  {
+    "id": "305",
+    "first_name": "Mia",
+    "last_name": "Chen",
+    "email": "mia.chen@example.com",
+    "username": "miac",
+    "role": "customer",
+    "billing_city": "Boston",
+    "billing_country": "US",
+    "is_paying_customer": "false",
+    "date_created": "2026-03-28T08:30:00"
+  }
+]

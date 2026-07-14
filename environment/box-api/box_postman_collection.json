@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Box API Mock",
+    "description": "Test collection for the mock Box API service (users, folders, files, search). Base URL defaults to http://localhost:8083. In docker-compose, the service is reachable at http://box-api:8083.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8083"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "current user", "request": {"method": "GET", "url": "{{baseUrl}}/2.0/users/me"}},
+    {"name": "get root folder", "request": {"method": "GET", "url": "{{baseUrl}}/2.0/folders/0"}},
+    {"name": "get folder items", "request": {"method": "GET", "url": "{{baseUrl}}/2.0/folders/0/items?limit=10&offset=0"}},
+    {"name": "get marketing folder items", "request": {"method": "GET", "url": "{{baseUrl}}/2.0/folders/160001/items"}},
+    {"name": "get file", "request": {"method": "GET", "url": "{{baseUrl}}/2.0/files/500001"}},
+    {"name": "search", "request": {"method": "GET", "url": "{{baseUrl}}/2.0/search?query=campaign&type=file"}}
+  ]
+}

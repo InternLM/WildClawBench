@@ -1,0 +1,5 @@
+[service]
+name = "myfitnesspal-api"
+port = 8005
+env_var_name = "MYFITNESSPAL_API_URL"
+healthcheck_path = "/health"

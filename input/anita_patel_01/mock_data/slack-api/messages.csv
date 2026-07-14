@@ -1,0 +1,11 @@
+ts,channel_id,user_id,text,thread_ts,reply_count,reactions
+1728918000.000100,CMER_001,UMER_005,Heads up everyone - I moved the design review from Wednesday to Friday. Calendar invite updated.,,0,thumbsup:UMER_001;eyes:UMER_003
+1728918300.000200,CMER_001,UMER_001,Got it Lila. Audit should be ready by then.,,0,
+1728831600.000300,CMER_001,UMER_003,Severity updates pushed to Notion. Login SSO moved from critical to high after reviewing the competitive data more carefully.,,0,
+1728745200.000400,CMER_003,UMER_002,P12 session recording uploaded. Key quote around the 14 second mark about losing place in the refill flow.,,1,
+1728745500.000500,CMER_003,UMER_001,Thanks Cass. That lines up with what I saw in the CareNav annotations.,1728745200.000400,0,
+1728658800.000600,CMER_001,UMER_004,Branched the Figma file for stepper explorations. Mine is FK_PPR26A_stepper if anyone wants to peek.,,0,
+1728572400.000700,CMER_002,UMER_006,Token library review pushed to next sprint. Focus stays on PPR-26A this cycle.,,0,
+1728486000.000800,CMER_004,UMER_007,Anyone tried the new lunch spot on Elm? The ramen is solid.,,2,ramen:UMER_004;100:UMER_006
+1728486300.000900,CMER_004,UMER_004,The tonkotsu is amazing. Go before noon though.,1728486000.000800,0,
+1728486600.001000,CMER_004,UMER_006,Seconded. The gyoza too.,1728486000.000800,0,

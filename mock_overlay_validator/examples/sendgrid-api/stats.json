@@ -1,0 +1,86 @@
+[
+  {
+    "date": "2026-05-20",
+    "requests": "520",
+    "delivered": "512",
+    "opens": "310",
+    "unique_opens": "260",
+    "clicks": "88",
+    "unique_clicks": "71",
+    "bounces": "8",
+    "spam_reports": "1",
+    "unsubscribes": "3"
+  },
+  {
+    "date": "2026-05-21",
+    "requests": "610",
+    "delivered": "601",
+    "opens": "402",
+    "unique_opens": "330",
+    "clicks": "120",
+    "unique_clicks": "95",
+    "bounces": "9",
+    "spam_reports": "0",
+    "unsubscribes": "4"
+  },
+  {
+    "date": "2026-05-22",
+    "requests": "580",
+    "delivered": "560",
+    "opens": "355",
+    "unique_opens": "290",
+    "clicks": "101",
+    "unique_clicks": "80",
+    "bounces": "20",
+    "spam_reports": "2",
+    "unsubscribes": "5"
+  },
+  {
+    "date": "2026-05-23",
+    "requests": "470",
+    "delivered": "465",
+    "opens": "288",
+    "unique_opens": "240",
+    "clicks": "77",
+    "unique_clicks": "60",
+    "bounces": "5",
+    "spam_reports": "0",
+    "unsubscribes": "2"
+  },
+  {
+    "date": "2026-05-24",
+    "requests": "640",
+    "delivered": "629",
+    "opens": "440",
+    "unique_opens": "360",
+    "clicks": "150",
+    "unique_clicks": "118",
+    "bounces": "11",
+    "spam_reports": "1",
+    "unsubscribes": "6"
+  },
+  {
+    "date": "2026-05-25",
+    "requests": "300",
+    "delivered": "297",
+    "opens": "180",
+    "unique_opens": "150",
+    "clicks": "55",
+    "unique_clicks": "44",
+    "bounces": "3",
+    "spam_reports": "0",
+    "unsubscribes": "1"
+  },
+  {
+    "date": "2026-05-26",
+    "requests": "710",
+    "delivered": "700",
+    "opens": "510",
+    "unique_opens": "420",
+    "clicks": "170",
+    "unique_clicks": "135",
+    "bounces": "10",
+    "spam_reports": "2",
+    "unsubscribes": "7"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "list-newsletter",
+    "name": "Orbit Monthly Newsletter",
+    "company": "Orbit Labs",
+    "from_name": "Orbit Labs",
+    "from_email": "news@orbit-labs.com",
+    "subject": "Orbit Monthly",
+    "member_count": "5",
+    "unsubscribe_count": "1",
+    "date_created": "2025-09-01T10:00:00.000Z"
+  },
+  {
+    "id": "list-product",
+    "name": "Product Updates",
+    "company": "Orbit Labs",
+    "from_name": "Orbit Product",
+    "from_email": "product@orbit-labs.com",
+    "subject": "Product Updates",
+    "member_count": "4",
+    "unsubscribe_count": "0",
+    "date_created": "2025-09-15T10:00:00.000Z"
+  }
+]

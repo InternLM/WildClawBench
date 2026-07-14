@@ -1,0 +1,62 @@
+item_id,board_id,group_id,name,created_at
+mitem_0001,brd_nsw_p1,grp_p1_milestones,Phase 1 milestone - 15 sites live,2026-09-29T14:00:00+01:00
+mitem_0002,brd_nsw_p1,grp_p1_milestones,Phase 1 - vendor permitting closeout (Lafia),2026-09-25T11:00:00+01:00
+mitem_0003,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S01 acquisition,2026-09-04T11:00:00+01:00
+mitem_0004,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S02 acquisition,2026-09-07T11:00:00+01:00
+mitem_0005,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S03 acquisition,2026-09-10T11:00:00+01:00
+mitem_0006,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S04 acquisition,2026-09-13T11:00:00+01:00
+mitem_0007,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S05 acquisition,2026-09-16T11:00:00+01:00
+mitem_0008,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S06 acquisition,2026-09-19T11:00:00+01:00
+mitem_0009,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S07 acquisition,2026-09-22T11:00:00+01:00
+mitem_0010,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S08 acquisition,2026-09-25T11:00:00+01:00
+mitem_0011,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S09 acquisition,2026-09-28T11:00:00+01:00
+mitem_0012,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S10 acquisition,2026-09-03T11:00:00+01:00
+mitem_0013,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S11 acquisition,2026-09-06T11:00:00+01:00
+mitem_0014,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S12 acquisition,2026-09-09T11:00:00+01:00
+mitem_0015,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S13 acquisition,2026-09-12T11:00:00+01:00
+mitem_0016,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S14 acquisition,2026-09-15T11:00:00+01:00
+mitem_0017,brd_nsw_p1,grp_p1_acquisition,NSW-PHASE1-S15 acquisition,2026-09-18T11:00:00+01:00
+mitem_0018,brd_nsw_p1,grp_p1_obstacles,Lafia-Akun community objection,2026-10-01T13:00:00+01:00
+mitem_0019,brd_nsw_p1,grp_p1_obstacles,Akwanga-Andaha community objection,2026-10-01T13:00:00+01:00
+mitem_0020,brd_nsw_p1,grp_p1_obstacles,Karu-Mararaba community objection,2026-10-01T13:00:00+01:00
+mitem_0021,brd_nsw_p1,grp_p1_obstacles,Keffi-Angwa community objection,2026-10-01T13:00:00+01:00
+mitem_0022,brd_nsw_p1,grp_p1_obstacles,Nasarawa-Toto community objection,2026-10-01T13:00:00+01:00
+mitem_0023,brd_nsw_p1,grp_p1_obstacles,PHASE1-S07 traditional leader engagement,2026-10-01T13:00:00+01:00
+mitem_0024,brd_nsw_p2,grp_p2_milestones,Phase 2 milestone - 30 sites live,2026-09-29T14:00:00+01:00
+mitem_0025,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S01 acquisition,2026-09-03T10:00:00+01:00
+mitem_0026,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S02 acquisition,2026-09-05T10:00:00+01:00
+mitem_0027,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S03 acquisition,2026-09-07T10:00:00+01:00
+mitem_0028,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S04 acquisition,2026-09-09T10:00:00+01:00
+mitem_0029,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S05 acquisition,2026-09-11T10:00:00+01:00
+mitem_0030,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S06 acquisition,2026-09-13T10:00:00+01:00
+mitem_0031,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S07 acquisition,2026-09-15T10:00:00+01:00
+mitem_0032,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S08 acquisition,2026-09-17T10:00:00+01:00
+mitem_0033,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S09 acquisition,2026-09-19T10:00:00+01:00
+mitem_0034,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S10 acquisition,2026-09-21T10:00:00+01:00
+mitem_0035,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S11 acquisition,2026-09-23T10:00:00+01:00
+mitem_0036,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S12 acquisition,2026-09-25T10:00:00+01:00
+mitem_0037,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S13 acquisition,2026-09-27T10:00:00+01:00
+mitem_0038,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S14 acquisition,2026-09-01T10:00:00+01:00
+mitem_0039,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S15 acquisition,2026-09-03T10:00:00+01:00
+mitem_0040,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S16 acquisition,2026-09-05T10:00:00+01:00
+mitem_0041,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S17 acquisition,2026-09-07T10:00:00+01:00
+mitem_0042,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S18 acquisition,2026-09-09T10:00:00+01:00
+mitem_0043,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S19 acquisition,2026-09-11T10:00:00+01:00
+mitem_0044,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S20 acquisition,2026-09-13T10:00:00+01:00
+mitem_0045,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S21 acquisition,2026-09-15T10:00:00+01:00
+mitem_0046,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S22 acquisition,2026-09-17T10:00:00+01:00
+mitem_0047,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S23 acquisition,2026-09-19T10:00:00+01:00
+mitem_0048,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S24 acquisition,2026-09-21T10:00:00+01:00
+mitem_0049,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S25 acquisition,2026-09-23T10:00:00+01:00
+mitem_0050,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S26 acquisition,2026-09-25T10:00:00+01:00
+mitem_0051,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S27 acquisition,2026-09-27T10:00:00+01:00
+mitem_0052,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S28 acquisition,2026-09-01T10:00:00+01:00
+mitem_0053,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S29 acquisition,2026-09-03T10:00:00+01:00
+mitem_0054,brd_nsw_p2,grp_p2_acquisition,NSW-PHASE2-S30 acquisition,2026-09-05T10:00:00+01:00
+mitem_0055,brd_5g_cbd,grp_5g_hearing,NCC spectrum hearing - Mon Oct 5 (presenting),2026-09-15T10:00:00+01:00
+mitem_0056,brd_5g_cbd,grp_5g_hearing,NCC filing window - Mon Oct 5,2026-09-15T10:00:00+01:00
+mitem_0057,brd_5g_cbd,grp_5g_equipment,FCBD-101 5G NR Massive MIMO radio acceptance,2026-09-15T10:00:00+01:00
+mitem_0058,brd_5g_cbd,grp_5g_hearing,FCBD-118 BBU-7600 firmware crash,2026-09-15T10:00:00+01:00
+mitem_0059,brd_5g_cbd,grp_5g_hearing,FCBD-124 NCC Form 7B technical exhibits,2026-09-15T10:00:00+01:00
+mitem_0060,brd_5g_cbd,grp_5g_equipment,Vendor equipment delivery Oct 19,2026-09-15T10:00:00+01:00
+mitem_0061,brd_5g_cbd,grp_5g_equipment,Customs expedite quote TCH-EXP-2026-0017 review,2026-09-15T10:00:00+01:00

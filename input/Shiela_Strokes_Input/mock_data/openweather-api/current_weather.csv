@@ -1,0 +1,7 @@
+city_id,weather_id,weather_main,weather_description,weather_icon,temp,feels_like,temp_min,temp_max,pressure,humidity,wind_speed,wind_deg,clouds,visibility,dt
+2352778,500,Rain,light rain,10d,24.5,26.5,23.0,26.0,1010,88,5.2,200,75,8000,1791140400
+2332459,500,Rain,light rain,10d,24.5,26.5,23.0,26.0,1010,88,5.2,200,75,8000,1791140400
+2335724,501,Rain,moderate rain,10d,23.5,25.0,22.0,25.0,1009,92,6.8,210,90,6000,1791140400
+2335278,501,Rain,moderate rain,10d,23.5,25.0,22.0,25.0,1009,92,6.8,210,90,6000,1791140400
+2336036,501,Rain,moderate rain,10d,23.5,25.0,22.0,25.0,1009,92,6.8,210,90,6000,1791140400
+2335875,500,Rain,light rain,10d,24.5,26.5,23.0,26.0,1010,88,5.2,200,75,8000,1791140400

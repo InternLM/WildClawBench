@@ -1,0 +1,98 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "side": "bid",
+    "price": "67250.00",
+    "qty": "0.512"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "bid",
+    "price": "67249.50",
+    "qty": "1.230"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "bid",
+    "price": "67248.10",
+    "qty": "0.875"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "bid",
+    "price": "67247.00",
+    "qty": "2.140"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "bid",
+    "price": "67245.20",
+    "qty": "0.330"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "ask",
+    "price": "67251.00",
+    "qty": "0.640"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "ask",
+    "price": "67252.40",
+    "qty": "1.080"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "ask",
+    "price": "67253.90",
+    "qty": "0.420"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "ask",
+    "price": "67255.00",
+    "qty": "1.770"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "side": "ask",
+    "price": "67256.80",
+    "qty": "0.295"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "bid",
+    "price": "3520.10",
+    "qty": "4.120"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "bid",
+    "price": "3519.85",
+    "qty": "8.330"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "bid",
+    "price": "3519.40",
+    "qty": "2.600"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "ask",
+    "price": "3520.50",
+    "qty": "3.940"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "ask",
+    "price": "3521.00",
+    "qty": "6.210"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "side": "ask",
+    "price": "3521.75",
+    "qty": "1.880"
+  }
+]

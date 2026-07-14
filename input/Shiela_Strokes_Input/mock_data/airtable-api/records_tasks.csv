@@ -1,0 +1,16 @@
+id,createdTime,Name,Status,Project,EstimateHours,Done
+recTsk0000000001,2026-09-15T08:00:00.000Z,Prepare NCC spectrum hearing slide deck for 5 October,In Progress,Abuja 5G CBD Densification Pilot,8,false
+recTsk0000000002,2026-09-17T09:00:00.000Z,Review Tachyon MSA Annex A line items against PO TCH-PO-2026-019,Blocked - awaiting Ola written confirmation,Abuja 5G CBD Densification Pilot,3,false
+recTsk0000000003,2026-09-20T10:00:00.000Z,Track NAS-011 community-objection escalation with traditional council,In Progress,Nasarawa Rural Coverage Expansion - 45 Sites,4,false
+recTsk0000000004,2026-09-22T11:00:00.000Z,Sign off NAS-001 to NAS-015 readiness pack for 9 October Phase 1 milestone,Pending,Nasarawa Rural Coverage Expansion - 45 Sites,5,false
+recTsk0000000005,2026-09-23T14:00:00.000Z,Review Yetunde biweekly mentorship notes and prep senior promotion path discussion,In Progress,Mentorship,1,false
+recTsk0000000006,2026-09-25T16:00:00.000Z,Confirm 5G equipment delivery slot for 19 October with Tachyon logistics,Pending,Abuja 5G CBD Densification Pilot,2,false
+recTsk0000000007,2026-09-26T08:30:00.000Z,Draft Niger State Q2 hotspot brief (HSP-05/10/04 medians 165/152/142 ms),In Progress,Niger State 3G/4G QoS Optimization,6,false
+recTsk0000000008,2026-09-28T17:00:00.000Z,Book Lagos trip flights and Eko Hotels stay for 24 October family visit,Pending - awaiting Adeyemi confirmation,Personal,1,false
+recTsk0000000009,2026-09-29T18:00:00.000Z,Confirm anniversary dinner reservation 3 October once Adeyemi clears schedule,Pending,Personal,1,false
+recTsk0000000010,2026-09-30T07:00:00.000Z,"Monthly financial review (savings 200K, investment 100K, parents support 100K)",Recurring - first of month,Personal,1,false
+recTsk0000000011,2026-10-01T08:00:00.000Z,Plan Adunola end-of-year school project support,In Progress,Personal,3,false
+recTsk0000000012,2026-09-12T09:00:00.000Z,Send Phase 1 weekly snapshot to Olatunji,Done,Nasarawa Rural Coverage Expansion - 45 Sites,1,true
+recTsk0000000013,2026-09-15T11:00:00.000Z,File Q3 mentee circle quarterly review with Confluence ENGG-MENTEE-CIRCLE-Q3,Done,Mentorship,2,true
+recTsk0000000014,2026-09-22T15:00:00.000Z,Close NAS-014 acquisition paperwork (acquired this week),Done,Nasarawa Rural Coverage Expansion - 45 Sites,2,true
+recTsk0000000015,2026-10-02T09:00:00.000Z,Reconfirm ComTech Summit Day 1 presentation slot for 1 December,Pending,Personal,2,false

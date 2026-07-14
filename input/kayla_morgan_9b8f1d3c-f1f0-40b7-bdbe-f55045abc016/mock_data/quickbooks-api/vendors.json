@@ -1,0 +1,86 @@
+{
+  "QueryResponse": {
+    "Vendor": [
+      {
+        "Id": "1",
+        "DisplayName": "Appalachian Catering",
+        "PrimaryEmailAddr": { "Address": "billing@appalachiancatering.com" },
+        "PrimaryPhone": { "FreeFormNumber": "(828) 555-0411" },
+        "BillAddr": { "Line1": "128 Biltmore Ave", "City": "Asheville", "CountrySubDivisionCode": "NC", "PostalCode": "28801" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "Reception and event catering. Used for the May 21 'Asheville Through the Decades' exhibit reception."
+      },
+      {
+        "Id": "2",
+        "DisplayName": "Foothills Audio Rental",
+        "PrimaryEmailAddr": { "Address": "rentals@foothillsaudio.com" },
+        "PrimaryPhone": { "FreeFormNumber": "(828) 555-0398" },
+        "BillAddr": { "Line1": "42 Riverside Dr", "City": "Asheville", "CountrySubDivisionCode": "NC", "PostalCode": "28801" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "A/V rental for receptions and lectures."
+      },
+      {
+        "Id": "3",
+        "DisplayName": "Ridge Print Co.",
+        "PrimaryEmailAddr": { "Address": "info@ridgeprintco.com" },
+        "PrimaryPhone": { "FreeFormNumber": "(828) 555-0192" },
+        "BillAddr": { "Line1": "205 Haywood Rd", "City": "Asheville", "CountrySubDivisionCode": "NC", "PostalCode": "28806" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "Exhibit panels, programs, signage."
+      },
+      {
+        "Id": "4",
+        "DisplayName": "Mountain Linens & Co.",
+        "PrimaryEmailAddr": { "Address": "orders@mountainlinens.com" },
+        "PrimaryPhone": { "FreeFormNumber": "(828) 555-0276" },
+        "BillAddr": { "Line1": "78 Coxe Ave", "City": "Asheville", "CountrySubDivisionCode": "NC", "PostalCode": "28801" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "Linen and tableware rentals."
+      },
+      {
+        "Id": "5",
+        "DisplayName": "Kayla Morgan",
+        "PrimaryEmailAddr": { "Address": "kayla.morgan@gmail.com" },
+        "PrimaryPhone": { "FreeFormNumber": "(828) 555-0103" },
+        "BillAddr": { "Line1": "12 Laurel Hollow Lane", "City": "Asheville", "CountrySubDivisionCode": "NC", "PostalCode": "28804" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "Volunteer — archival, Tue/Thu shifts. Reimbursable out-of-pocket purchases tracked under this vendor record."
+      },
+      {
+        "Id": "6",
+        "DisplayName": "Dorothy Ainsworth",
+        "PrimaryEmailAddr": { "Address": "dorothy.ainsworth@gmail.com" },
+        "PrimaryPhone": { "FreeFormNumber": "(828) 555-0178" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "Volunteer — Saturday docent. Occasional reimbursable purchases."
+      },
+      {
+        "Id": "7",
+        "DisplayName": "Duke Energy",
+        "PrimaryEmailAddr": { "Address": "business@duke-energy.com" },
+        "PrimaryPhone": { "FreeFormNumber": "(800) 555-3782" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "Electric utility — Society building. Acct #8827-4401-55."
+      },
+      {
+        "Id": "8",
+        "DisplayName": "Asheville Water Resources",
+        "PrimaryEmailAddr": { "Address": "billing@ashevillenc.gov" },
+        "PrimaryPhone": { "FreeFormNumber": "(828) 555-0021" },
+        "Balance": 0,
+        "Active": true,
+        "Notes": "Water/sewer — Society building."
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 8,
+    "totalCount": 8
+  }
+}

@@ -1,0 +1,4 @@
+id,name,description,state,leadId,teamIds,startDate,targetDate,createdAt,updatedAt
+proj-5gcbd,5G CBD Densification Pilot,Deploy 5G small cells in the Abuja CBD,started,user-sheila,team-ncr,2026-06-01,2026-10-19,2026-06-01T09:00:00Z,2026-09-30T09:00:00Z
+proj-nasarawa,Nasarawa Rural Coverage Expansion,45-site rural 4G expansion,started,user-sheila,team-ncr,2026-03-01,2026-12-11,2026-03-01T09:00:00Z,2026-09-28T09:00:00Z
+proj-niger,Niger State Network Optimization,3G/4G QoS optimization,started,user-grace,team-ncr,2026-01-15,2026-11-30,2026-01-15T09:00:00Z,2026-09-22T09:00:00Z

@@ -1,0 +1,5 @@
+account_id,name,official_name,mask,type,subtype,available,current,limit,iso_currency_code
+acc_chk_001,Personal Checking,GSB Personal Checking Account,7842,depository,checking,850000.00,850000.00,,NGN
+acc_sav_001,Emergency Fund,GSB Premium Savings Account,7843,depository,savings,8500000.00,8500000.00,,NGN
+acc_inv_001,Savanna Capital MF,Savanna Capital Managers Fund A,3201,investment,mutual_fund,3200000.00,3200000.00,,NGN
+acc_cc_001,Guaranty Premium CC,GSB Premium Credit Card,5678,credit,credit card,455000.00,-45000.00,500000.00,NGN

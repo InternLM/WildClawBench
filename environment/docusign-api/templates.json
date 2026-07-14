@@ -1,0 +1,26 @@
+[
+  {
+    "template_id": "tmpl-msa",
+    "name": "Master Services Agreement",
+    "description": "Standard MSA for new enterprise customers",
+    "shared": "true",
+    "owner_name": "Amelia Ortega",
+    "created_time": "2026-01-10T09:00:00Z"
+  },
+  {
+    "template_id": "tmpl-nda",
+    "name": "Mutual NDA",
+    "description": "Two-way confidentiality agreement",
+    "shared": "true",
+    "owner_name": "Jonas Pereira",
+    "created_time": "2026-01-12T10:30:00Z"
+  },
+  {
+    "template_id": "tmpl-vendor",
+    "name": "Vendor Onboarding Form",
+    "description": "Vendor compliance and banking details",
+    "shared": "false",
+    "owner_name": "Helena Park",
+    "created_time": "2026-02-01T13:00:00Z"
+  }
+]

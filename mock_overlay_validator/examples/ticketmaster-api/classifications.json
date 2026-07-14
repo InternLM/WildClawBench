@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cls-music-rock",
+    "segment": "Music",
+    "genre": "Rock",
+    "subgenre": "Alternative Rock"
+  },
+  {
+    "id": "cls-music-pop",
+    "segment": "Music",
+    "genre": "Pop",
+    "subgenre": "Pop"
+  },
+  {
+    "id": "cls-music-jazz",
+    "segment": "Music",
+    "genre": "Jazz",
+    "subgenre": "Jazz"
+  },
+  {
+    "id": "cls-sports-basketball",
+    "segment": "Sports",
+    "genre": "Basketball",
+    "subgenre": "NBA"
+  },
+  {
+    "id": "cls-sports-soccer",
+    "segment": "Sports",
+    "genre": "Soccer",
+    "subgenre": "MLS"
+  },
+  {
+    "id": "cls-arts-theatre",
+    "segment": "Arts & Theatre",
+    "genre": "Theatre",
+    "subgenre": "Musical"
+  },
+  {
+    "id": "cls-arts-comedy",
+    "segment": "Arts & Theatre",
+    "genre": "Comedy",
+    "subgenre": "Comedy"
+  }
+]

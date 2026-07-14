@@ -1,0 +1,122 @@
+[
+  {
+    "place_id": "ChIJplace0000001",
+    "name": "Blue Bottle Coffee",
+    "formatted_address": "66 Mint St San Francisco CA 94103",
+    "lat": "37.7825",
+    "lng": "-122.4061",
+    "rating": "4.4",
+    "user_ratings_total": "1820",
+    "types": "cafe|food|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "2"
+  },
+  {
+    "place_id": "ChIJplace0000002",
+    "name": "Tartine Bakery",
+    "formatted_address": "600 Guerrero St San Francisco CA 94110",
+    "lat": "37.7614",
+    "lng": "-122.4241",
+    "rating": "4.5",
+    "user_ratings_total": "5400",
+    "types": "bakery|food|store",
+    "business_status": "OPERATIONAL",
+    "price_level": "2"
+  },
+  {
+    "place_id": "ChIJplace0000003",
+    "name": "Ferry Building Marketplace",
+    "formatted_address": "1 Ferry Building San Francisco CA 94111",
+    "lat": "37.7955",
+    "lng": "-122.3937",
+    "rating": "4.7",
+    "user_ratings_total": "21000",
+    "types": "shopping_mall|food|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "2"
+  },
+  {
+    "place_id": "ChIJplace0000004",
+    "name": "Golden Gate Park",
+    "formatted_address": "501 Stanyan St San Francisco CA 94117",
+    "lat": "37.7694",
+    "lng": "-122.4862",
+    "rating": "4.8",
+    "user_ratings_total": "42000",
+    "types": "park|tourist_attraction|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "0"
+  },
+  {
+    "place_id": "ChIJplace0000005",
+    "name": "SFMOMA",
+    "formatted_address": "151 3rd St San Francisco CA 94103",
+    "lat": "37.7857",
+    "lng": "-122.4011",
+    "rating": "4.6",
+    "user_ratings_total": "18000",
+    "types": "museum|tourist_attraction|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "2"
+  },
+  {
+    "place_id": "ChIJplace0000006",
+    "name": "Zuni Cafe",
+    "formatted_address": "1658 Market St San Francisco CA 94102",
+    "lat": "37.7726",
+    "lng": "-122.4218",
+    "rating": "4.3",
+    "user_ratings_total": "3100",
+    "types": "restaurant|food|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "3"
+  },
+  {
+    "place_id": "ChIJplace0000007",
+    "name": "Dolores Park",
+    "formatted_address": "Dolores St and 19th St San Francisco CA 94114",
+    "lat": "37.7596",
+    "lng": "-122.4269",
+    "rating": "4.8",
+    "user_ratings_total": "9800",
+    "types": "park|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "0"
+  },
+  {
+    "place_id": "ChIJplace0000008",
+    "name": "Philz Coffee",
+    "formatted_address": "3101 24th St San Francisco CA 94110",
+    "lat": "37.7525",
+    "lng": "-122.4127",
+    "rating": "4.5",
+    "user_ratings_total": "2600",
+    "types": "cafe|food|store",
+    "business_status": "OPERATIONAL",
+    "price_level": "1"
+  },
+  {
+    "place_id": "ChIJplace0000009",
+    "name": "House of Prime Rib",
+    "formatted_address": "1906 Van Ness Ave San Francisco CA 94109",
+    "lat": "37.7937",
+    "lng": "-122.4225",
+    "rating": "4.6",
+    "user_ratings_total": "7200",
+    "types": "restaurant|food|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "4"
+  },
+  {
+    "place_id": "ChIJplace0000010",
+    "name": "Exploratorium",
+    "formatted_address": "Pier 15 Embarcadero San Francisco CA 94111",
+    "lat": "37.8017",
+    "lng": "-122.3973",
+    "rating": "4.7",
+    "user_ratings_total": "15000",
+    "types": "museum|tourist_attraction|point_of_interest",
+    "business_status": "OPERATIONAL",
+    "price_level": "2"
+  }
+]

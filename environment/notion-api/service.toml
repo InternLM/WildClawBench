@@ -1,0 +1,5 @@
+[service]
+name = "notion-api"
+port = 8010
+env_var_name = "NOTION_API_URL"
+healthcheck_path = "/health"

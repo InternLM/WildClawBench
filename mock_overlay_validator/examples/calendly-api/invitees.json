@@ -1,0 +1,42 @@
+[
+  {
+    "uuid": "inv-5001",
+    "event": "sev-1001",
+    "name": "Maria Chen",
+    "email": "maria.chen@acme-corp.com",
+    "status": "active",
+    "timezone": "America/New_York",
+    "created_at": "2026-05-25T09:00:00.000000Z",
+    "questions_and_answers": "What would you like to discuss?|Pricing and onboarding"
+  },
+  {
+    "uuid": "inv-5002",
+    "event": "sev-1002",
+    "name": "Tomas Reyes",
+    "email": "tomas.reyes@partner.io",
+    "status": "active",
+    "timezone": "Europe/Madrid",
+    "created_at": "2026-05-26T11:30:00.000000Z",
+    "questions_and_answers": "Company size?|50-100 employees"
+  },
+  {
+    "uuid": "inv-5003",
+    "event": "sev-1003",
+    "name": "Lena Voss",
+    "email": "lena.voss@vendorco.com",
+    "status": "active",
+    "timezone": "America/Los_Angeles",
+    "created_at": "2026-05-26T15:45:00.000000Z",
+    "questions_and_answers": "Main technical concern?|Multi-region failover"
+  },
+  {
+    "uuid": "inv-5004",
+    "event": "sev-1004",
+    "name": "Devon Clark",
+    "email": "devon.clark@contractor.dev",
+    "status": "canceled",
+    "timezone": "America/Chicago",
+    "created_at": "2026-05-20T08:00:00.000000Z",
+    "questions_and_answers": ""
+  }
+]

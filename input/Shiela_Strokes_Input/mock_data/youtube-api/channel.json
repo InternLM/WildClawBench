@@ -1,0 +1,24 @@
+{
+  "id": "ch_user_sheila_personal",
+  "snippet": {
+    "title": "Sheila",
+    "description": "Personal subscriptions for engineering reference and kids' content.",
+    "country": "NG"
+  },
+  "statistics": {
+    "viewCount": 0,
+    "subscriberCount": 0,
+    "videoCount": 0
+  },
+  "contentDetails": {
+    "relatedPlaylists": {
+      "likes": "LL_sheila",
+      "uploads": "UU_sheila"
+    }
+  },
+  "brandingSettings": {
+    "channel": {
+      "defaultTab": "Home"
+    }
+  }
+}

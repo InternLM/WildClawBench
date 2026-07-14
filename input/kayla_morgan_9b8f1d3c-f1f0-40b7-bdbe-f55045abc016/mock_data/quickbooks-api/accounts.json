@@ -1,0 +1,81 @@
+{
+  "QueryResponse": {
+    "Account": [
+      {
+        "Id": "11",
+        "Name": "Utilities",
+        "AccountType": "Expense",
+        "AccountSubType": "Utilities",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "Description": "Society building utilities",
+        "MetaData": {"CreateTime": "2020-01-15T10:00:00-05:00", "LastUpdatedTime": "2026-05-01T09:00:00-04:00"},
+        "SyncToken": "0"
+      },
+      {
+        "Id": "12",
+        "Name": "Office & Supplies",
+        "AccountType": "Expense",
+        "AccountSubType": "OfficeGeneralAdministrativeExpenses",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "Description": "General office supplies",
+        "MetaData": {"CreateTime": "2020-01-15T10:00:00-05:00", "LastUpdatedTime": "2026-05-01T09:00:00-04:00"},
+        "SyncToken": "0"
+      },
+      {
+        "Id": "13",
+        "Name": "Event Expenses",
+        "AccountType": "Expense",
+        "AccountSubType": "Entertainment",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "Description": "Receptions and openings",
+        "MetaData": {"CreateTime": "2020-01-15T10:00:00-05:00", "LastUpdatedTime": "2026-05-01T09:00:00-04:00"},
+        "SyncToken": "0"
+      },
+      {
+        "Id": "14",
+        "Name": "Archival Supplies",
+        "AccountType": "Expense",
+        "AccountSubType": "SuppliesMaterials",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "Description": "Acid-free folders, sleeves, boxes",
+        "MetaData": {"CreateTime": "2020-01-15T10:00:00-05:00", "LastUpdatedTime": "2026-05-01T09:00:00-04:00"},
+        "SyncToken": "0"
+      },
+      {
+        "Id": "20",
+        "Name": "Volunteer Reimbursements",
+        "AccountType": "Expense",
+        "AccountSubType": "TravelMeals",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "Description": "Out-of-pocket reimbursements to volunteers",
+        "MetaData": {"CreateTime": "2020-01-15T10:00:00-05:00", "LastUpdatedTime": "2026-05-01T09:00:00-04:00"},
+        "SyncToken": "0"
+      },
+      {
+        "Id": "30",
+        "Name": "Operating Bank",
+        "AccountType": "Bank",
+        "AccountSubType": "Checking",
+        "CurrentBalance": 42850.16,
+        "Active": true,
+        "Classification": "Asset",
+        "Description": "Society operating checking account",
+        "MetaData": {"CreateTime": "2020-01-15T10:00:00-05:00", "LastUpdatedTime": "2026-05-01T09:00:00-04:00"},
+        "SyncToken": "0"
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 6,
+    "totalCount": 6
+  }
+}

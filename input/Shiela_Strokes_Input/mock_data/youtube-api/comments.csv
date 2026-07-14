@@ -1,0 +1,16 @@
+comment_id,videoId,channelId,parentId,authorDisplayName,authorChannelId,textDisplay,likeCount,publishedAt,updatedAt,moderationStatus
+cmt_001,v_3gpp_01,ch_3gpp_lab,,Sheila,ch_user_sheila_personal,Saved this. Clearest PUCCH primer I have seen.,18,2025-11-12T09:14:00Z,2025-11-12T09:14:00Z,published
+cmt_002,v_3gpp_02,ch_3gpp_lab,,Sheila,ch_user_sheila_personal,Bookmarked for the Q1 review session.,11,2026-01-20T18:42:00Z,2026-01-20T18:42:00Z,published
+cmt_003,v_3gpp_05,ch_3gpp_lab,,Sheila,ch_user_sheila_personal,Useful diagram at minute 14.,14,2026-03-04T07:55:00Z,2026-03-04T07:55:00Z,published
+cmt_004,v_3gpp_06,ch_3gpp_lab,,Sheila,ch_user_sheila_personal,Carrier aggregation slides are gold.,9,2026-05-19T11:32:00Z,2026-05-19T11:32:00Z,published
+cmt_005,v_3gpp_08,ch_3gpp_lab,,Sheila,ch_user_sheila_personal,Sub-band masking section saved my week.,12,2026-07-08T17:21:00Z,2026-07-08T17:21:00Z,published
+cmt_006,v_vrad_01,ch_vendor_radios,,Sheila,ch_user_sheila_personal,Operator panel was a great roundtable.,8,2025-12-14T08:10:00Z,2025-12-14T08:10:00Z,published
+cmt_007,v_vrad_03,ch_vendor_radios,,Sheila,ch_user_sheila_personal,West Africa case study segment is on point.,10,2026-02-11T19:00:00Z,2026-02-11T19:00:00Z,published
+cmt_008,v_vrad_06,ch_vendor_radios,,Sheila,ch_user_sheila_personal,Vendor API survey was a great overview.,15,2026-04-22T20:44:00Z,2026-04-22T20:44:00Z,published
+cmt_009,v_kid_01,ch_kids_curated,,Sheila,ch_user_sheila_personal,My Year 5 loved this one.,5,2026-09-13T16:11:00Z,2026-09-13T16:11:00Z,published
+cmt_010,v_kid_03,ch_kids_curated,,Sheila,ch_user_sheila_personal,Saved for weekend viewing with the kids.,7,2026-09-20T10:24:00Z,2026-09-20T10:24:00Z,published
+cmt_011,v_kid_12,ch_kids_curated,,Sheila,ch_user_sheila_personal,Step by step is exactly what we needed.,6,2026-09-27T14:55:00Z,2026-09-27T14:55:00Z,published
+cmt_012,v_sci_03,ch_science_kids,,Sheila,ch_user_sheila_personal,Harmattan explanation is so age-appropriate.,4,2026-09-06T11:18:00Z,2026-09-06T11:18:00Z,published
+cmt_013,v_news_02,ch_telco_news,,Sheila,ch_user_sheila_personal,Spectrum reform segment is balanced.,6,2026-09-12T19:42:00Z,2026-09-12T19:42:00Z,published
+cmt_014,v_news_07,ch_telco_news,,Sheila,ch_user_sheila_personal,Auction recap was a useful summary.,4,2026-09-26T20:08:00Z,2026-09-26T20:08:00Z,published
+cmt_015,v_gard_02,ch_garden_hour,,Sheila,ch_user_sheila_personal,Pepper trough idea is brilliant for our balcony.,3,2026-08-30T07:12:00Z,2026-08-30T07:12:00Z,published

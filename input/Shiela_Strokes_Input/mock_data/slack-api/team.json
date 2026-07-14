@@ -1,0 +1,9 @@
+{
+  "id": "T123ABC",
+  "name": "TelcoNG-NetPlan",
+  "domain": "telcong-netplan",
+  "email_domain": "telecorpng.com",
+  "icon": {
+    "image_default": true
+  }
+}

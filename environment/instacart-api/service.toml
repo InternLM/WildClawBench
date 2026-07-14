@@ -1,0 +1,5 @@
+[service]
+name = "instacart-api"
+port = 8012
+env_var_name = "INSTACART_API_URL"
+healthcheck_path = "/health"

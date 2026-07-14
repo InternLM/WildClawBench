@@ -1,0 +1,90 @@
+[
+  {
+    "id": "cycle-port-1",
+    "name": "Sprint 1",
+    "number": "1",
+    "teamId": "team-ux",
+    "startsAt": "2026-03-09",
+    "endsAt": "2026-03-22",
+    "completedAt": "2026-03-22T17:00:00",
+    "createdAt": "2026-02-28T09:00:00",
+    "updatedAt": "2026-03-22T17:00:00"
+  },
+  {
+    "id": "cycle-port-2",
+    "name": "Sprint 2",
+    "number": "2",
+    "teamId": "team-ux",
+    "startsAt": "2026-03-23",
+    "endsAt": "2026-04-05",
+    "completedAt": "2026-04-05T17:00:00",
+    "createdAt": "2026-03-15T09:00:00",
+    "updatedAt": "2026-04-05T17:00:00"
+  },
+  {
+    "id": "cycle-port-3",
+    "name": "Sprint 3",
+    "number": "3",
+    "teamId": "team-ux",
+    "startsAt": "2026-04-06",
+    "endsAt": "2026-04-19",
+    "completedAt": "2026-04-19T17:00:00",
+    "createdAt": "2026-03-29T09:00:00",
+    "updatedAt": "2026-04-19T17:00:00"
+  },
+  {
+    "id": "cycle-port-4",
+    "name": "Sprint 4",
+    "number": "4",
+    "teamId": "team-ux",
+    "startsAt": "2026-04-20",
+    "endsAt": "2026-05-03",
+    "completedAt": "2026-05-03T17:00:00",
+    "createdAt": "2026-04-13T09:00:00",
+    "updatedAt": "2026-05-03T17:00:00"
+  },
+  {
+    "id": "cycle-port-5",
+    "name": "Sprint 5",
+    "number": "5",
+    "teamId": "team-ux",
+    "startsAt": "2026-05-04",
+    "endsAt": "2026-05-17",
+    "completedAt": "",
+    "createdAt": "2026-04-27T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "cycle-port-6",
+    "name": "Sprint 6",
+    "number": "6",
+    "teamId": "team-ux",
+    "startsAt": "2026-05-18",
+    "endsAt": "2026-05-31",
+    "completedAt": "",
+    "createdAt": "2026-05-10T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "cycle-bkd-1",
+    "name": "Backend Sprint 1",
+    "number": "1",
+    "teamId": "team-backend",
+    "startsAt": "2026-04-06",
+    "endsAt": "2026-04-19",
+    "completedAt": "2026-04-19T17:00:00",
+    "createdAt": "2026-03-29T09:00:00",
+    "updatedAt": "2026-04-19T17:00:00"
+  },
+  {
+    "id": "cycle-bkd-2",
+    "name": "Backend Sprint 2",
+    "number": "2",
+    "teamId": "team-backend",
+    "startsAt": "2026-04-20",
+    "endsAt": "2026-05-03",
+    "completedAt": "",
+    "createdAt": "2026-04-13T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "title": "Acme Annual Plan",
+    "contact_id": "1",
+    "value": "1200000",
+    "currency": "usd",
+    "status": "0",
+    "stage": "2",
+    "owner": "3",
+    "created_timestamp": "2026-04-10T09:00:00-05:00",
+    "updated_timestamp": "2026-05-20T12:00:00-05:00"
+  },
+  {
+    "id": "2",
+    "title": "Northwind Pilot",
+    "contact_id": "4",
+    "value": "450000",
+    "currency": "usd",
+    "status": "0",
+    "stage": "1",
+    "owner": "3",
+    "created_timestamp": "2026-04-18T10:00:00-05:00",
+    "updated_timestamp": "2026-05-19T09:30:00-05:00"
+  },
+  {
+    "id": "3",
+    "title": "Dubois Enterprise",
+    "contact_id": "5",
+    "value": "2400000",
+    "currency": "eur",
+    "status": "0",
+    "stage": "3",
+    "owner": "4",
+    "created_timestamp": "2026-04-25T11:00:00-05:00",
+    "updated_timestamp": "2026-05-22T14:00:00-05:00"
+  },
+  {
+    "id": "4",
+    "title": "Rossi Expansion",
+    "contact_id": "6",
+    "value": "300000",
+    "currency": "eur",
+    "status": "1",
+    "stage": "4",
+    "owner": "4",
+    "created_timestamp": "2026-05-02T13:00:00-05:00",
+    "updated_timestamp": "2026-05-15T16:00:00-05:00"
+  },
+  {
+    "id": "5",
+    "title": "Nguyen Upgrade",
+    "contact_id": "7",
+    "value": "180000",
+    "currency": "usd",
+    "status": "0",
+    "stage": "1",
+    "owner": "3",
+    "created_timestamp": "2026-05-09T09:00:00-05:00",
+    "updated_timestamp": "2026-05-24T10:30:00-05:00"
+  },
+  {
+    "id": "6",
+    "title": "Muller Trial Close",
+    "contact_id": "8",
+    "value": "90000",
+    "currency": "eur",
+    "status": "2",
+    "stage": "1",
+    "owner": "4",
+    "created_timestamp": "2026-05-12T15:00:00-05:00",
+    "updated_timestamp": "2026-05-21T11:00:00-05:00"
+  },
+  {
+    "id": "7",
+    "title": "Kim Renewal",
+    "contact_id": "2",
+    "value": "600000",
+    "currency": "usd",
+    "status": "0",
+    "stage": "2",
+    "owner": "3",
+    "created_timestamp": "2026-05-14T08:30:00-05:00",
+    "updated_timestamp": "2026-05-25T09:00:00-05:00"
+  }
+]

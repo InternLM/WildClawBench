@@ -1,0 +1,7 @@
+id,createdTime,Name,Status,Owner,Budget
+recA01,2026-10-20T00:00:00.000Z,Keuken op maat Haren,In productie,J. Bosman,9800.00
+recA02,2027-06-01T00:00:00.000Z,Restauratie boerderij Loppersum,Gepland,Onbekend,0.00
+recA03,2026-04-10T00:00:00.000Z,Vensterbank Smit,Afgerond,Annelies Smit,540.00
+recA04,2026-06-02T00:00:00.000Z,Boekenplank de Boer,Afgerond,Marieke de Boer,415.00
+recA07,2025-09-01T00:00:00.000Z,Restauratie kast Hofman,Afgerond,Pieter Hofman,1280.00
+recA09,2026-08-01T00:00:00.000Z,Boekenkast op maat Veldkamp,In productie,Hendrik Veldkamp,4185.00

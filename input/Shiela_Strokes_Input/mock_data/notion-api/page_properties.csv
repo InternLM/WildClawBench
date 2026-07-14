@@ -1,0 +1,23 @@
+page_id,property_name,property_type,value
+pg_quarterly_q4_2026,Status,select,Active
+pg_quarterly_q4_2026,Quarter,select,Q4 2026
+pg_quarterly_q4_2026,Themes,multi_select,"5G CBD pilot launch, Nasarawa Phase 1 close, mentorship expansion, ComTech speaking"
+pg_mentorship_yetunde,Status,select,Active
+pg_mentorship_yetunde,Cadence,select,Bi-weekly Tue 14:00
+pg_mentorship_yetunde,Goals_2026,text,Senior promotion pathway; first conference paper; technical depth in capacity planning
+pg_mentorship_network,Status,select,Active
+pg_mentorship_network,Members,number,8
+pg_executive_program,Status,select,Researching
+pg_executive_program,Target_start,date,2027-04
+pg_linkedin_articles,Status,select,Active
+pg_linkedin_articles,Published_count,number,3
+pg_5g_research,Status,select,Active
+pg_session_2026_09_22,Session_date,date,2026-09-22
+pg_session_2026_09_22,Mentee,select,Yetunde Bakare
+pg_session_2026_10_06,Session_date,date,2026-10-06
+pg_session_2026_10_06,Mentee,select,Yetunde Bakare
+pg_session_2026_10_06,Status,select,Prep
+pg_anniversary_ideas,Status,select,Done
+pg_lagos_trip_logistics,Trip_window,date,2026-10-24/2026-10-28
+pg_lagos_trip_logistics,Party_size,number,4
+pg_q4_reading,Status,select,Active

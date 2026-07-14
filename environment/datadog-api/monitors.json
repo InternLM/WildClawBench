@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1001",
+    "name": "High API p95 latency",
+    "type": "metric alert",
+    "query": "avg(last_5m):avg:trace.http.request.duration{service:auth-service} > 0.6",
+    "message": "Auth API latency is high",
+    "overall_state": "Alert",
+    "priority": "1",
+    "tags": "service:auth-service;team:platform",
+    "created": "2025-11-01T10:00:00+00:00",
+    "modified": "2026-05-26T09:00:00+00:00"
+  },
+  {
+    "id": "1002",
+    "name": "Error rate above threshold",
+    "type": "metric alert",
+    "query": "sum(last_5m):sum:trace.http.request.errors{service:web-frontend}.as_count() > 50",
+    "message": "Web error rate elevated",
+    "overall_state": "Warn",
+    "priority": "2",
+    "tags": "service:web-frontend;team:frontend",
+    "created": "2025-11-05T10:00:00+00:00",
+    "modified": "2026-05-26T07:30:00+00:00"
+  },
+  {
+    "id": "1003",
+    "name": "Host CPU saturation",
+    "type": "metric alert",
+    "query": "avg(last_10m):avg:system.cpu.user{host:web-01} > 90",
+    "message": "CPU saturated on web-01",
+    "overall_state": "OK",
+    "priority": "3",
+    "tags": "host:web-01;team:infra",
+    "created": "2025-12-01T10:00:00+00:00",
+    "modified": "2026-05-25T18:00:00+00:00"
+  },
+  {
+    "id": "1004",
+    "name": "Billing queue backlog",
+    "type": "metric alert",
+    "query": "avg(last_15m):avg:billing.queue.depth{service:billing-service} > 1000",
+    "message": "Billing queue is backing up",
+    "overall_state": "OK",
+    "priority": "2",
+    "tags": "service:billing-service;team:platform",
+    "created": "2026-01-10T10:00:00+00:00",
+    "modified": "2026-05-24T12:00:00+00:00"
+  },
+  {
+    "id": "1005",
+    "name": "Disk space low",
+    "type": "service check",
+    "query": "avg(last_5m):avg:system.disk.in_use{host:db-01} > 0.9",
+    "message": "Disk usage high on db-01",
+    "overall_state": "Warn",
+    "priority": "1",
+    "tags": "host:db-01;team:infra",
+    "created": "2026-02-01T10:00:00+00:00",
+    "modified": "2026-05-26T06:00:00+00:00"
+  }
+]

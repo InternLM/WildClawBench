@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "email": "olivia.bennett@example.com",
+    "first_name": "Olivia",
+    "last_name": "Bennett",
+    "phone": "+1-415-555-0182",
+    "status": "1",
+    "created_timestamp": "2026-04-02T09:12:00-05:00",
+    "updated_timestamp": "2026-05-18T11:30:00-05:00"
+  },
+  {
+    "id": "2",
+    "email": "noah.kim@example.com",
+    "first_name": "Noah",
+    "last_name": "Kim",
+    "phone": "+1-206-555-0143",
+    "status": "1",
+    "created_timestamp": "2026-04-05T14:25:00-05:00",
+    "updated_timestamp": "2026-05-10T08:05:00-05:00"
+  },
+  {
+    "id": "3",
+    "email": "emma.alvarez@example.com",
+    "first_name": "Emma",
+    "last_name": "Alvarez",
+    "phone": "+1-512-555-0199",
+    "status": "0",
+    "created_timestamp": "2026-04-09T10:40:00-05:00",
+    "updated_timestamp": "2026-04-09T10:40:00-05:00"
+  },
+  {
+    "id": "4",
+    "email": "liam.osei@example.com",
+    "first_name": "Liam",
+    "last_name": "Osei",
+    "phone": "+44-20-7946-0321",
+    "status": "1",
+    "created_timestamp": "2026-04-15T16:00:00-05:00",
+    "updated_timestamp": "2026-05-21T13:45:00-05:00"
+  },
+  {
+    "id": "5",
+    "email": "ava.dubois@example.com",
+    "first_name": "Ava",
+    "last_name": "Dubois",
+    "phone": "+33-1-7000-0145",
+    "status": "1",
+    "created_timestamp": "2026-04-20T08:30:00-05:00",
+    "updated_timestamp": "2026-05-22T09:15:00-05:00"
+  },
+  {
+    "id": "6",
+    "email": "mateo.rossi@example.com",
+    "first_name": "Mateo",
+    "last_name": "Rossi",
+    "phone": "+39-06-555-0177",
+    "status": "2",
+    "created_timestamp": "2026-04-28T12:10:00-05:00",
+    "updated_timestamp": "2026-05-05T15:20:00-05:00"
+  },
+  {
+    "id": "7",
+    "email": "sofia.nguyen@example.com",
+    "first_name": "Sofia",
+    "last_name": "Nguyen",
+    "phone": "+1-718-555-0166",
+    "status": "1",
+    "created_timestamp": "2026-05-03T11:05:00-05:00",
+    "updated_timestamp": "2026-05-24T10:00:00-05:00"
+  },
+  {
+    "id": "8",
+    "email": "ethan.muller@example.com",
+    "first_name": "Ethan",
+    "last_name": "Muller",
+    "phone": "+49-30-555-0188",
+    "status": "1",
+    "created_timestamp": "2026-05-08T09:50:00-05:00",
+    "updated_timestamp": "2026-05-25T17:35:00-05:00"
+  }
+]

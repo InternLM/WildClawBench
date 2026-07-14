@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "Xero Mock API",
+    "description": "Test collection for the mock Xero Accounting API service (Invoices, Contacts, Accounts). Base URL defaults to http://localhost:8088. In docker-compose, the service is reachable at http://xero-api:8088. Xero collections are wrapped under a PascalCase key like {\"Invoices\": [...]}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8088"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list invoices", "request": {"method": "GET", "url": "{{baseUrl}}/api.xro/2.0/Invoices"}},
+    {"name": "list authorised invoices", "request": {"method": "GET", "url": "{{baseUrl}}/api.xro/2.0/Invoices?Status=AUTHORISED"}},
+    {"name": "get invoice", "request": {"method": "GET", "url": "{{baseUrl}}/api.xro/2.0/Invoices/i0000001-0000-0000-0000-000000000001"}},
+    {"name": "create invoice", "request": {"method": "POST", "url": "{{baseUrl}}/api.xro/2.0/Invoices",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"Invoices\": [{\"Type\": \"ACCREC\", \"Contact\": {\"ContactID\": \"c0000003-0000-0000-0000-000000000003\"}, \"Date\": \"2026-05-28\", \"DueDate\": \"2026-06-27\", \"Reference\": \"New project\", \"LineItems\": [{\"Description\": \"Implementation\", \"Quantity\": 10, \"UnitAmount\": 150.00}]}]}"}}},
+    {"name": "list contacts", "request": {"method": "GET", "url": "{{baseUrl}}/api.xro/2.0/Contacts"}},
+    {"name": "list accounts", "request": {"method": "GET", "url": "{{baseUrl}}/api.xro/2.0/Accounts"}}
+  ]
+}

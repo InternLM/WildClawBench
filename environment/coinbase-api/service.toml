@@ -1,0 +1,5 @@
+[service]
+name = "coinbase-api"
+port = 8023
+env_var_name = "COINBASE_API_URL"
+healthcheck_path = "/health"

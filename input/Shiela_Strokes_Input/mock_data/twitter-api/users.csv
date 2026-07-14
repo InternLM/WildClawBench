@@ -1,0 +1,13 @@
+id,username,name,description,verified,protected,location,profile_image_url,created_at,followers_count,following_count,tweet_count
+tw_user_sheila,sheila_lurker,Sheila,Engineering. Quiet account.,true,false,"Abuja, Nigeria",https://example-tw.com/sheila.jpg,2018-05-12T09:00:00Z,87,412,3
+tw_user_techpulse,techpulse_ng,TechPulse Nigeria,Telecom and technology news for Nigeria.,true,false,"Lagos, Nigeria",https://example-tw.com/techpulse.jpg,2014-02-08T07:00:00Z,54200,320,6420
+tw_user_telcomwk_af,telecomweekly_af,Telecom Weekly Africa,Weekly digest of African telecom news.,true,false,Johannesburg,https://example-tw.com/twa.jpg,2015-09-14T10:00:00Z,24800,188,4120
+tw_user_wpc_africa,wireless_pol_africa,Wireless Policy Africa,Spectrum policy and regulation across Africa.,true,false,Nairobi,https://example-tw.com/wpa.jpg,2016-11-22T11:00:00Z,18400,142,3180
+tw_user_5g_global,5g_global_news,5G Global News,Daily round-up of 5G deployment news worldwide.,true,false,London,https://example-tw.com/5g.jpg,2019-01-15T08:00:00Z,92400,220,8900
+tw_user_ieee_comsoc,ieee_comsoc,IEEE ComSoc,IEEE Communications Society.,true,false,New York,https://example-tw.com/ieee.jpg,2010-04-08T10:00:00Z,184000,410,12400
+tw_user_chimamanda,chimamanda_official,Chimamanda Ngozi Adichie,Author.,true,false,"Lagos, Nigeria",https://example-tw.com/chima.jpg,2012-08-21T08:00:00Z,1240000,188,3100
+tw_user_lola_shon,lola_shoneyin,Lola Shoneyin,Author. Festival founder.,true,false,"Lagos, Nigeria",https://example-tw.com/lola.jpg,2011-05-19T12:00:00Z,84200,412,4800
+tw_user_nigeria_eng,engineers_naija,Engineers Naija,Community of engineers across disciplines in Nigeria.,true,false,"Abuja, Nigeria",https://example-tw.com/en.jpg,2013-11-04T09:00:00Z,42400,218,2900
+tw_user_nwit_tw,nigwomenintech,Nigerian Women in Tech,Community account.,true,false,"Lagos, Nigeria",https://example-tw.com/nwit.jpg,2017-03-22T11:00:00Z,38400,188,2400
+tw_user_lagos_traffic,lagos_traffic,Lagos Traffic,Traffic updates for Lagos commuters.,true,false,"Lagos, Nigeria",https://example-tw.com/lagos.jpg,2016-07-12T07:00:00Z,224000,28,18400
+tw_user_naija_books,naija_book_club,Naija Book Club,Monthly book pick discussions.,true,false,"Abuja, Nigeria",https://example-tw.com/books.jpg,2015-02-11T09:00:00Z,18400,88,1200

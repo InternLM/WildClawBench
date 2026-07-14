@@ -1,0 +1,5 @@
+[service]
+name = "etsy-api"
+port = 8001
+env_var_name = "ETSY_API_URL"
+healthcheck_path = "/health"

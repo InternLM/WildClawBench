@@ -1,0 +1,10 @@
+{
+  "id": "MERCH_RIVERSIDE",
+  "business_name": "Riverside Coffee Co.",
+  "country": "US",
+  "language_code": "en-US",
+  "currency": "USD",
+  "status": "ACTIVE",
+  "main_location_id": "LOC_MAIN",
+  "created_at": "2025-08-01T00:00:00Z"
+}

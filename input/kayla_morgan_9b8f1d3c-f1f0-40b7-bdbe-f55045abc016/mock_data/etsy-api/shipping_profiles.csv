@@ -1,0 +1,2 @@
+shipping_profile_id,shop_id,title,origin_country,origin_postal_code,processing_min,processing_max,min_delivery_days,max_delivery_days,cost,secondary_cost
+50001,48211903,Standard Shipping,US,28804,3,5,3,7,7.50,3.00

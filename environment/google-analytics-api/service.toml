@@ -1,0 +1,5 @@
+[service]
+name = "google-analytics-api"
+port = 8068
+env_var_name = "GOOGLE_ANALYTICS_API_URL"
+healthcheck_path = "/health"

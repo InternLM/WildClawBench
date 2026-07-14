@@ -1,0 +1,68 @@
+[
+  {
+    "id": "C01GENERAL",
+    "name": "general",
+    "is_private": "false",
+    "is_archived": "false",
+    "topic": "Company-wide announcements",
+    "purpose": "Default channel for all",
+    "creator": "U01AMELIA",
+    "created": "1700000000",
+    "num_members": "5"
+  },
+  {
+    "id": "C01ENG",
+    "name": "eng",
+    "is_private": "false",
+    "is_archived": "false",
+    "topic": "All engineering discussion",
+    "purpose": "Engineering team chat",
+    "creator": "U01AMELIA",
+    "created": "1700000100",
+    "num_members": "5"
+  },
+  {
+    "id": "C01DEPLOY",
+    "name": "deploys",
+    "is_private": "false",
+    "is_archived": "false",
+    "topic": "Deploy notifications",
+    "purpose": "Automated deploy + incident notifications",
+    "creator": "U01AMELIA",
+    "created": "1700000200",
+    "num_members": "5"
+  },
+  {
+    "id": "C01RANDOM",
+    "name": "random",
+    "is_private": "false",
+    "is_archived": "false",
+    "topic": "Off-topic",
+    "purpose": "Memes welcome",
+    "creator": "U01JONAS",
+    "created": "1700000300",
+    "num_members": "5"
+  },
+  {
+    "id": "C01AUTHV2",
+    "name": "proj-auth-v2",
+    "is_private": "false",
+    "is_archived": "false",
+    "topic": "Auth v2 rollout tracking",
+    "purpose": "Project channel for auth migration",
+    "creator": "U01AMELIA",
+    "created": "1740000000",
+    "num_members": "3"
+  },
+  {
+    "id": "G01LEADS",
+    "name": "leads",
+    "is_private": "true",
+    "is_archived": "false",
+    "topic": "Engineering leads sync",
+    "purpose": "Private leads channel",
+    "creator": "U01AMELIA",
+    "created": "1740000100",
+    "num_members": "2"
+  }
+]

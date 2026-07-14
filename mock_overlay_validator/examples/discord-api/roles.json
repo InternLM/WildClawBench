@@ -1,0 +1,62 @@
+[
+  {
+    "id": "700100200300400001",
+    "guild_id": "900100200300400001",
+    "name": "Admin",
+    "color": "15158332",
+    "position": "4",
+    "hoist": "true",
+    "mentionable": "true",
+    "permissions": "8"
+  },
+  {
+    "id": "700100200300400002",
+    "guild_id": "900100200300400001",
+    "name": "Moderator",
+    "color": "3447003",
+    "position": "3",
+    "hoist": "true",
+    "mentionable": "true",
+    "permissions": "268435456"
+  },
+  {
+    "id": "700100200300400003",
+    "guild_id": "900100200300400001",
+    "name": "Member",
+    "color": "0",
+    "position": "1",
+    "hoist": "false",
+    "mentionable": "false",
+    "permissions": "104324673"
+  },
+  {
+    "id": "700100200300400004",
+    "guild_id": "900100200300400001",
+    "name": "Bots",
+    "color": "9807270",
+    "position": "2",
+    "hoist": "false",
+    "mentionable": "false",
+    "permissions": "104324673"
+  },
+  {
+    "id": "700100200300400005",
+    "guild_id": "900100200300400002",
+    "name": "Organizer",
+    "color": "10181046",
+    "position": "3",
+    "hoist": "true",
+    "mentionable": "true",
+    "permissions": "8"
+  },
+  {
+    "id": "700100200300400006",
+    "guild_id": "900100200300400002",
+    "name": "Dev",
+    "color": "5763719",
+    "position": "1",
+    "hoist": "false",
+    "mentionable": "true",
+    "permissions": "104324673"
+  }
+]

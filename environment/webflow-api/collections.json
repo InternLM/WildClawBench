@@ -1,0 +1,47 @@
+[
+  {
+    "id": "660b2a0000000000000002b1",
+    "site_id": "650a1f0000000000000001a1",
+    "display_name": "Blog Posts",
+    "singular_name": "Blog Post",
+    "slug": "blog-posts",
+    "created_on": "2026-01-16T10:30:00.000Z",
+    "last_updated": "2026-05-19T12:00:00.000Z"
+  },
+  {
+    "id": "660b2a0000000000000002b2",
+    "site_id": "650a1f0000000000000001a1",
+    "display_name": "Authors",
+    "singular_name": "Author",
+    "slug": "authors",
+    "created_on": "2026-01-16T10:35:00.000Z",
+    "last_updated": "2026-05-10T09:00:00.000Z"
+  },
+  {
+    "id": "660b2a0000000000000002b3",
+    "site_id": "650a1f0000000000000001a2",
+    "display_name": "Help Articles",
+    "singular_name": "Help Article",
+    "slug": "help-articles",
+    "created_on": "2026-02-03T09:50:00.000Z",
+    "last_updated": "2026-05-21T15:20:00.000Z"
+  },
+  {
+    "id": "660b2a0000000000000002b4",
+    "site_id": "650a1f0000000000000001a3",
+    "display_name": "Menu Items",
+    "singular_name": "Menu Item",
+    "slug": "menu-items",
+    "created_on": "2026-03-12T14:10:00.000Z",
+    "last_updated": "2026-05-17T10:10:00.000Z"
+  },
+  {
+    "id": "660b2a0000000000000002b5",
+    "site_id": "650a1f0000000000000001a4",
+    "display_name": "Products",
+    "singular_name": "Product",
+    "slug": "products",
+    "created_on": "2026-04-02T16:30:00.000Z",
+    "last_updated": "2026-05-24T18:00:00.000Z"
+  }
+]

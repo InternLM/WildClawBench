@@ -1,0 +1,52 @@
+[
+  {
+    "alias": "cafes",
+    "title": "Cafes",
+    "parent": "food"
+  },
+  {
+    "alias": "bakeries",
+    "title": "Bakeries",
+    "parent": "food"
+  },
+  {
+    "alias": "coffee",
+    "title": "Coffee & Tea",
+    "parent": "food"
+  },
+  {
+    "alias": "restaurants",
+    "title": "Restaurants",
+    "parent": "restaurants"
+  },
+  {
+    "alias": "steak",
+    "title": "Steakhouses",
+    "parent": "restaurants"
+  },
+  {
+    "alias": "chinese",
+    "title": "Chinese",
+    "parent": "restaurants"
+  },
+  {
+    "alias": "mexican",
+    "title": "Mexican",
+    "parent": "restaurants"
+  },
+  {
+    "alias": "seafood",
+    "title": "Seafood",
+    "parent": "restaurants"
+  },
+  {
+    "alias": "burmese",
+    "title": "Burmese",
+    "parent": "restaurants"
+  },
+  {
+    "alias": "diners",
+    "title": "Diners",
+    "parent": "restaurants"
+  }
+]

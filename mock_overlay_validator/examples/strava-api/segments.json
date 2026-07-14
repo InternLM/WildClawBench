@@ -1,0 +1,41 @@
+[
+  {
+    "id": "3301",
+    "name": "Waterfront Loop",
+    "activity_type": "Run",
+    "distance": "3200",
+    "average_grade": "0.4",
+    "maximum_grade": "2.1",
+    "elevation_high": "18.2",
+    "elevation_low": "9.5",
+    "climb_category": "0",
+    "city": "Portland",
+    "state": "OR"
+  },
+  {
+    "id": "3302",
+    "name": "Powell Butte Climb",
+    "activity_type": "Run",
+    "distance": "1800",
+    "average_grade": "6.8",
+    "maximum_grade": "11.2",
+    "elevation_high": "188.0",
+    "elevation_low": "66.0",
+    "climb_category": "2",
+    "city": "Portland",
+    "state": "OR"
+  },
+  {
+    "id": "3303",
+    "name": "Springwater Corridor",
+    "activity_type": "Ride",
+    "distance": "12400",
+    "average_grade": "0.6",
+    "maximum_grade": "3.4",
+    "elevation_high": "42.0",
+    "elevation_low": "11.0",
+    "climb_category": "0",
+    "city": "Portland",
+    "state": "OR"
+  }
+]

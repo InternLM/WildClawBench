@@ -1,0 +1,42 @@
+[
+  {
+    "id": "500001",
+    "title": "Deployment auth-service 2.0.3",
+    "text": "Deployed auth-service version 2.0.3 to production.",
+    "alert_type": "info",
+    "priority": "normal",
+    "host": "web-01",
+    "tags": "service:auth-service;event:deploy",
+    "date_happened": "1748250000"
+  },
+  {
+    "id": "500002",
+    "title": "Monitor alert: High API p95 latency",
+    "text": "Monitor triggered: avg latency exceeded 0.6s.",
+    "alert_type": "error",
+    "priority": "normal",
+    "host": "web-01",
+    "tags": "service:auth-service;monitor:1001",
+    "date_happened": "1748250600"
+  },
+  {
+    "id": "500003",
+    "title": "Monitor recovered: Host CPU saturation",
+    "text": "Monitor recovered: CPU back under threshold on web-01.",
+    "alert_type": "success",
+    "priority": "low",
+    "host": "web-01",
+    "tags": "host:web-01;monitor:1003",
+    "date_happened": "1748190000"
+  },
+  {
+    "id": "500004",
+    "title": "Scaling event web-frontend",
+    "text": "Autoscaler added 2 pods to web-frontend.",
+    "alert_type": "warning",
+    "priority": "normal",
+    "host": "web-02",
+    "tags": "service:web-frontend;event:autoscale",
+    "date_happened": "1748232000"
+  }
+]

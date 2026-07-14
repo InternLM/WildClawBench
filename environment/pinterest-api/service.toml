@@ -1,0 +1,5 @@
+[service]
+name = "pinterest-api"
+port = 8006
+env_var_name = "PINTEREST_API_URL"
+healthcheck_path = "/health"

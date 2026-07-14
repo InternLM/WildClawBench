@@ -1,0 +1,480 @@
+[
+  {
+    "Id": "3001",
+    "DocNumber": "RENT-2026-03",
+    "VendorRef": {
+      "value": "1",
+      "name": "Westbrook Property Management"
+    },
+    "TxnDate": "2026-03-01",
+    "DueDate": "2026-03-05",
+    "Line": [
+      {
+        "Amount": 700.0,
+        "Description": "Monthly rent - March 2026. 4827 SW Cedar Hills Blvd.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Rent Expense",
+            "value": "7"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 700.0,
+    "Balance": 0,
+    "PrivateNote": "Paid on time."
+  },
+  {
+    "Id": "3002",
+    "DocNumber": "PGE-2026-03",
+    "VendorRef": {
+      "value": "3",
+      "name": "Portland General Electric"
+    },
+    "TxnDate": "2026-03-12",
+    "DueDate": "2026-03-28",
+    "Line": [
+      {
+        "Amount": 185.0,
+        "Description": "Electric service Feb 10 - Mar 10. Acct #8827-4401-55.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Utilities",
+            "value": "8"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 185.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3003",
+    "DocNumber": "BWD-2026-03",
+    "VendorRef": {
+      "value": "4",
+      "name": "Beaverton Water District"
+    },
+    "TxnDate": "2026-03-15",
+    "DueDate": "2026-03-31",
+    "Line": [
+      {
+        "Amount": 62.0,
+        "Description": "Water/sewer service - March. Acct #WS-91204.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Utilities",
+            "value": "8"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 62.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3004",
+    "DocNumber": "RAJ-2026-03",
+    "VendorRef": {
+      "value": "6",
+      "name": "Raj Patel (Instructor Pay)"
+    },
+    "TxnDate": "2026-03-15",
+    "DueDate": "2026-03-15",
+    "Line": [
+      {
+        "Amount": 1200.0,
+        "Description": "Instructor draw - March 2026. Judo T/Th + Sat.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Instructor Pay",
+            "value": "10"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 1200.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3005",
+    "DocNumber": "WCS-2026-03A",
+    "VendorRef": {
+      "value": "7",
+      "name": "Willamette Cleaning Services"
+    },
+    "TxnDate": "2026-03-07",
+    "DueDate": "2026-03-14",
+    "Line": [
+      {
+        "Amount": 150.0,
+        "Description": "Bi-weekly deep clean - Mar 7",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Cleaning Services",
+            "value": "12"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 150.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3006",
+    "DocNumber": "WCS-2026-03B",
+    "VendorRef": {
+      "value": "7",
+      "name": "Willamette Cleaning Services"
+    },
+    "TxnDate": "2026-03-21",
+    "DueDate": "2026-03-28",
+    "Line": [
+      {
+        "Amount": 150.0,
+        "Description": "Bi-weekly deep clean - Mar 21",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Cleaning Services",
+            "value": "12"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 150.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3007",
+    "DocNumber": "RENT-2026-04",
+    "VendorRef": {
+      "value": "1",
+      "name": "Westbrook Property Management"
+    },
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-05",
+    "Line": [
+      {
+        "Amount": 700.0,
+        "Description": "Monthly rent - April 2026. NOTE: Lease review scheduled Jun 2026. Westbrook indicated potential increase to $850/mo effective Jul 1.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Rent Expense",
+            "value": "7"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 700.0,
+    "Balance": 0,
+    "PrivateNote": "Paid 4/2. Talk to Allison about rent increase impact before June meeting."
+  },
+  {
+    "Id": "3008",
+    "DocNumber": "PGE-2026-04",
+    "VendorRef": {
+      "value": "3",
+      "name": "Portland General Electric"
+    },
+    "TxnDate": "2026-04-11",
+    "DueDate": "2026-04-28",
+    "Line": [
+      {
+        "Amount": 172.0,
+        "Description": "Electric service Mar 10 - Apr 10. Acct #8827-4401-55.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Utilities",
+            "value": "8"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 172.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3009",
+    "DocNumber": "BWD-2026-04",
+    "VendorRef": {
+      "value": "4",
+      "name": "Beaverton Water District"
+    },
+    "TxnDate": "2026-04-14",
+    "DueDate": "2026-04-30",
+    "Line": [
+      {
+        "Amount": 58.0,
+        "Description": "Water/sewer service - April. Acct #WS-91204.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Utilities",
+            "value": "8"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 58.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3010",
+    "DocNumber": "RAJ-2026-04",
+    "VendorRef": {
+      "value": "6",
+      "name": "Raj Patel (Instructor Pay)"
+    },
+    "TxnDate": "2026-04-15",
+    "DueDate": "2026-04-15",
+    "Line": [
+      {
+        "Amount": 1200.0,
+        "Description": "Instructor draw - April 2026. Judo T/Th + Sat.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Instructor Pay",
+            "value": "10"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 1200.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3011",
+    "DocNumber": "WCS-2026-04A",
+    "VendorRef": {
+      "value": "7",
+      "name": "Willamette Cleaning Services"
+    },
+    "TxnDate": "2026-04-04",
+    "DueDate": "2026-04-11",
+    "Line": [
+      {
+        "Amount": 150.0,
+        "Description": "Bi-weekly deep clean - Apr 4",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Cleaning Services",
+            "value": "12"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 150.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3012",
+    "DocNumber": "WCS-2026-04B",
+    "VendorRef": {
+      "value": "7",
+      "name": "Willamette Cleaning Services"
+    },
+    "TxnDate": "2026-04-18",
+    "DueDate": "2026-04-25",
+    "Line": [
+      {
+        "Amount": 150.0,
+        "Description": "Bi-weekly deep clean - Apr 18",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Cleaning Services",
+            "value": "12"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 150.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3013",
+    "DocNumber": "PNWIG-2026-Q2",
+    "VendorRef": {
+      "value": "2",
+      "name": "Pacific Northwest Insurance Group"
+    },
+    "TxnDate": "2026-04-01",
+    "DueDate": "2026-04-15",
+    "Line": [
+      {
+        "Amount": 900.0,
+        "Description": "Quarterly insurance premium - Q2 2026 (Apr-Jun). Policy #PNW-2026-04471.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Insurance",
+            "value": "9"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 900.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3014",
+    "DocNumber": "PMR-2026-04",
+    "VendorRef": {
+      "value": "8",
+      "name": "Pacific Mat Rentals"
+    },
+    "TxnDate": "2026-03-28",
+    "DueDate": "2026-04-05",
+    "Line": [
+      {
+        "Amount": 280.0,
+        "Description": "Judo mat rental - Spring Tournament Apr 5. 8 extra mats × $35.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Tournament Expenses",
+            "value": "13"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 280.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3015",
+    "DocNumber": "CTA-2026-04",
+    "VendorRef": {
+      "value": "9",
+      "name": "Columbia Trophy & Awards"
+    },
+    "TxnDate": "2026-03-25",
+    "DueDate": "2026-04-02",
+    "Line": [
+      {
+        "Amount": 345.0,
+        "Description": "Spring Tournament medals (30) and trophies (6). Order #CT-8891.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Tournament Expenses",
+            "value": "13"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 345.0,
+    "Balance": 0
+  },
+  {
+    "Id": "3016",
+    "DocNumber": "BSC-2026-04",
+    "VendorRef": {
+      "value": "5",
+      "name": "Bushido Supply Co."
+    },
+    "TxnDate": "2026-04-10",
+    "DueDate": "2026-05-10",
+    "Line": [
+      {
+        "Amount": 425.0,
+        "Description": "Quarterly restock: shinai (12), bokken (6), mat cleaner (4 gal). PO#BSC-2290.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Supplies & Equipment",
+            "value": "11"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 425.0,
+    "Balance": 425.0,
+    "PrivateNote": "Net-30. Due May 10."
+  },
+  {
+    "Id": "3017",
+    "DocNumber": "RENT-2026-05",
+    "VendorRef": {
+      "value": "1",
+      "name": "Westbrook Property Management"
+    },
+    "TxnDate": "2026-05-01",
+    "DueDate": "2026-05-05",
+    "Line": [
+      {
+        "Amount": 700.0,
+        "Description": "Monthly rent - May 2026. 4827 SW Cedar Hills Blvd.",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "name": "Rent Expense",
+            "value": "7"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 700.0,
+    "Balance": 700.0,
+    "PrivateNote": "Due 5/5. Not yet paid as of report date."
+  },
+  {
+    "Id": "3401",
+    "DocNumber": "INV-MC-8821",
+    "VendorRef": {
+      "value": "401",
+      "name": "Marine Catch Seafood"
+    },
+    "TxnDate": "2026-05-14",
+    "DueDate": "2026-05-21",
+    "Line": [
+      {
+        "Amount": 797.5,
+        "Description": "Atlantic Salmon (Invoice says 55lb, Maria counted 50lb)",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "value": "421",
+            "name": "Food Cost - Seafood"
+          }
+        },
+        "Quantity": 55,
+        "UnitPrice": 14.5,
+        "Id": "1",
+        "LineNum": 1,
+        "DetailType": "AccountBasedExpenseLineDetail"
+      },
+      {
+        "Amount": 216.0,
+        "Description": "Blue Point Oysters (12 doz) - TEMP 45F ON ARRIVAL",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "value": "421",
+            "name": "Food Cost - Seafood"
+          }
+        },
+        "Quantity": 12,
+        "UnitPrice": 18.0,
+        "Id": "2",
+        "LineNum": 2,
+        "DetailType": "AccountBasedExpenseLineDetail"
+      },
+      {
+        "Amount": 285.0,
+        "Description": "Sea Bass (10lb) - MISSING FROM DELIVERY",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": {
+            "value": "421",
+            "name": "Food Cost - Seafood"
+          }
+        },
+        "Quantity": 10,
+        "UnitPrice": 28.5,
+        "Id": "3",
+        "LineNum": 3,
+        "DetailType": "AccountBasedExpenseLineDetail"
+      }
+    ],
+    "TotalAmt": 1298.5,
+    "Balance": 1298.5,
+    "PrivateNote": "Morning delivery check by Maria. Multiple discrepancies found.",
+    "Status": "Open",
+    "MetaData": {
+      "CreateTime": "2026-05-14T09:00:00-07:00",
+      "LastUpdatedTime": "2026-05-14T11:30:00-07:00"
+    },
+    "SyncToken": "0"
+  }
+]

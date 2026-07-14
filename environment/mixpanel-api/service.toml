@@ -1,0 +1,5 @@
+[service]
+name = "mixpanel-api"
+port = 8056
+env_var_name = "MIXPANEL_API_URL"
+healthcheck_path = "/health"

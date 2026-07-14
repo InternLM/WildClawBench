@@ -1,0 +1,74 @@
+[
+  {
+    "id": "app-4001",
+    "candidate_id": "cand-7001",
+    "job_id": "job-3001",
+    "status": "active",
+    "current_stage": "Application Review",
+    "applied_at": "2026-04-02T10:05:00Z",
+    "last_activity_at": "2026-04-03T09:00:00Z"
+  },
+  {
+    "id": "app-4002",
+    "candidate_id": "cand-7005",
+    "job_id": "job-3001",
+    "status": "active",
+    "current_stage": "Interview",
+    "applied_at": "2026-04-15T08:25:00Z",
+    "last_activity_at": "2026-04-20T11:00:00Z"
+  },
+  {
+    "id": "app-4003",
+    "candidate_id": "cand-7002",
+    "job_id": "job-3002",
+    "status": "active",
+    "current_stage": "Interview",
+    "applied_at": "2026-04-05T11:35:00Z",
+    "last_activity_at": "2026-04-18T15:30:00Z"
+  },
+  {
+    "id": "app-4004",
+    "candidate_id": "cand-7003",
+    "job_id": "job-3003",
+    "status": "active",
+    "current_stage": "Offer",
+    "applied_at": "2026-04-09T09:20:00Z",
+    "last_activity_at": "2026-04-25T10:00:00Z"
+  },
+  {
+    "id": "app-4005",
+    "candidate_id": "cand-7007",
+    "job_id": "job-3003",
+    "status": "active",
+    "current_stage": "Application Review",
+    "applied_at": "2026-04-22T13:15:00Z",
+    "last_activity_at": "2026-04-23T08:00:00Z"
+  },
+  {
+    "id": "app-4006",
+    "candidate_id": "cand-7004",
+    "job_id": "job-3004",
+    "status": "active",
+    "current_stage": "Interview",
+    "applied_at": "2026-04-12T14:50:00Z",
+    "last_activity_at": "2026-04-21T09:30:00Z"
+  },
+  {
+    "id": "app-4007",
+    "candidate_id": "cand-7006",
+    "job_id": "job-3005",
+    "status": "active",
+    "current_stage": "Application Review",
+    "applied_at": "2026-04-18T16:05:00Z",
+    "last_activity_at": "2026-04-19T10:00:00Z"
+  },
+  {
+    "id": "app-4008",
+    "candidate_id": "cand-7008",
+    "job_id": "job-3006",
+    "status": "rejected",
+    "current_stage": "Interview",
+    "applied_at": "2026-02-01T10:00:00Z",
+    "last_activity_at": "2026-03-15T12:00:00Z"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "sc-6001",
+    "application_id": "app-4002",
+    "candidate_id": "cand-7005",
+    "interviewer": "Amelia Ortega",
+    "stage": "Interview",
+    "overall_recommendation": "strong_yes",
+    "rating": "5",
+    "submitted_at": "2026-04-20T11:30:00Z",
+    "notes": "Excellent system design depth."
+  },
+  {
+    "id": "sc-6002",
+    "application_id": "app-4003",
+    "candidate_id": "cand-7002",
+    "interviewer": "Jonas Pereira",
+    "stage": "Interview",
+    "overall_recommendation": "yes",
+    "rating": "4",
+    "submitted_at": "2026-04-18T16:00:00Z",
+    "notes": "Solid React fundamentals; good communication."
+  },
+  {
+    "id": "sc-6003",
+    "application_id": "app-4004",
+    "candidate_id": "cand-7003",
+    "interviewer": "Priya Nair",
+    "stage": "Interview",
+    "overall_recommendation": "strong_yes",
+    "rating": "5",
+    "submitted_at": "2026-04-24T14:00:00Z",
+    "notes": "Outstanding portfolio and craft."
+  },
+  {
+    "id": "sc-6004",
+    "application_id": "app-4006",
+    "candidate_id": "cand-7004",
+    "interviewer": "Rohit Bansal",
+    "stage": "Interview",
+    "overall_recommendation": "no",
+    "rating": "2",
+    "submitted_at": "2026-04-21T10:00:00Z",
+    "notes": "Weak on statistics fundamentals."
+  },
+  {
+    "id": "sc-6005",
+    "application_id": "app-4008",
+    "candidate_id": "cand-7008",
+    "interviewer": "Amelia Ortega",
+    "stage": "Interview",
+    "overall_recommendation": "no",
+    "rating": "2",
+    "submitted_at": "2026-03-14T15:00:00Z",
+    "notes": "Leadership examples lacked depth."
+  },
+  {
+    "id": "sc-6006",
+    "application_id": "app-4002",
+    "candidate_id": "cand-7005",
+    "interviewer": "Helena Park",
+    "stage": "Interview",
+    "overall_recommendation": "yes",
+    "rating": "4",
+    "submitted_at": "2026-04-19T13:00:00Z",
+    "notes": "Strong coding; clarify scaling tradeoffs."
+  }
+]

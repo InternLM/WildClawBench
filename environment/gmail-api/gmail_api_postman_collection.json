@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Gmail API Mock v1",
+    "description": "Mock Gmail API v1. Base URL: http://localhost:8017. In docker-compose: http://gmail-api:8017.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8017"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "profile", "request": {"method": "GET", "url": "{{baseUrl}}/gmail/v1/users/me/profile"}},
+    {"name": "labels", "request": {"method": "GET", "url": "{{baseUrl}}/gmail/v1/users/me/labels"}},
+    {"name": "create label", "request": {"method": "POST", "url": "{{baseUrl}}/gmail/v1/users/me/labels",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"Customer escalations\"}"}}},
+    {"name": "list inbox", "request": {"method": "GET", "url": "{{baseUrl}}/gmail/v1/users/me/messages?labelIds=INBOX"}},
+    {"name": "search unread from jonas", "request": {"method": "GET", "url": "{{baseUrl}}/gmail/v1/users/me/messages?q=is:unread%20from:jonas"}},
+    {"name": "get message", "request": {"method": "GET", "url": "{{baseUrl}}/gmail/v1/users/me/messages/msg-100"}},
+    {"name": "send message", "request": {"method": "POST", "url": "{{baseUrl}}/gmail/v1/users/me/messages/send",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"to\": \"helena@orbit-labs.com\", \"subject\": \"Re: Latency spike alert\", \"body\": \"Helena — let's correlate the spike with shim warmup. Pulling timing now.\", \"threadId\": \"thr-101\"}"}}},
+    {"name": "mark message read", "request": {"method": "POST", "url": "{{baseUrl}}/gmail/v1/users/me/messages/msg-101/modify",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"removeLabelIds\": [\"UNREAD\"]}"}}},
+    {"name": "star message", "request": {"method": "POST", "url": "{{baseUrl}}/gmail/v1/users/me/messages/msg-105/modify",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"addLabelIds\": [\"STARRED\"]}"}}},
+    {"name": "trash spam", "request": {"method": "POST", "url": "{{baseUrl}}/gmail/v1/users/me/messages/msg-104/trash"}},
+    {"name": "list threads", "request": {"method": "GET", "url": "{{baseUrl}}/gmail/v1/users/me/threads?q=label:Orbit%20Labs"}},
+    {"name": "get thread", "request": {"method": "GET", "url": "{{baseUrl}}/gmail/v1/users/me/threads/thr-100"}},
+    {"name": "create draft", "request": {"method": "POST", "url": "{{baseUrl}}/gmail/v1/users/me/drafts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"to\": \"jonas@orbit-labs.com\", \"subject\": \"Cutover dry-run notes\", \"body\": \"Few quick notes from the dry-run...\"}"}}},
+    {"name": "send draft", "request": {"method": "POST", "url": "{{baseUrl}}/gmail/v1/users/me/drafts/draft-001/send"}}
+  ]
+}

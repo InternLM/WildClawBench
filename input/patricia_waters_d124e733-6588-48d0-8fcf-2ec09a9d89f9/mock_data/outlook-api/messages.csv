@@ -1,0 +1,9 @@
+id,subject,from_name,from_address,to_name,to_address,body_preview,content_type,is_read,importance,received_date
+ol-0,HSE team notice,HSE EI Renmore,office@galwayregional.hse.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Team day logistics for the month.,text,true,normal,2026-09-30T08:00:00
+ol-1,CPD reminder,Irish OT Association,cpd@irishotassociation.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Upcoming CPD modules this autumn.,text,true,normal,2026-09-25T10:00:00
+ol-2,Journal access,Library,library@irishotreview.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Your journal access has been renewed.,text,true,normal,2026-09-22T09:00:00
+ol-3,Parking notice,Clinic admin,admin@dominickclinic.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Parking arrangements for the building.,text,true,normal,2026-09-20T07:30:00
+ol-4,Supervision network,Peer group,peer@otsupervision.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Next peer supervision date proposed.,text,true,normal,2026-09-18T11:00:00
+ol-5,Insurance renewal,Broker,renewals@otinsure.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Your professional indemnity is due for renewal.,text,true,normal,2026-09-15T13:00:00
+ol-6,Survey request,Quality,quality@galwayregional.hse.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Please complete the annual service survey.,text,true,normal,2026-09-10T14:00:00
+ol-7,Seminar invite,Connacht University,events@connacht.ie,Patricia Waters,patricia.waters@hse-affiliated.ie,Invitation to a clinical-educator information seminar.,text,true,normal,2026-09-08T10:00:00

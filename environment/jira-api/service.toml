@@ -1,0 +1,5 @@
+[service]
+name = "jira-api"
+port = 8029
+env_var_name = "JIRA_API_URL"
+healthcheck_path = "/health"

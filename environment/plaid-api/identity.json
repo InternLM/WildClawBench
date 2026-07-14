@@ -1,0 +1,38 @@
+{
+  "owners": {
+    "acc_chk_001": [
+      {
+        "names": ["Amelia Ortega"],
+        "emails": [
+          {"data": "amelia.ortega@orbit-labs.com", "primary": true, "type": "primary"}
+        ],
+        "phone_numbers": [
+          {"data": "+14155550101", "primary": true, "type": "mobile"}
+        ],
+        "addresses": [
+          {
+            "data": {"street": "118 Cascade Ave", "city": "Portland", "region": "OR", "postal_code": "97201", "country": "US"},
+            "primary": true
+          }
+        ]
+      }
+    ],
+    "acc_sav_002": [
+      {
+        "names": ["Amelia Ortega"],
+        "emails": [
+          {"data": "amelia.ortega@orbit-labs.com", "primary": true, "type": "primary"}
+        ],
+        "phone_numbers": [
+          {"data": "+14155550101", "primary": true, "type": "mobile"}
+        ],
+        "addresses": [
+          {
+            "data": {"street": "118 Cascade Ave", "city": "Portland", "region": "OR", "postal_code": "97201", "country": "US"},
+            "primary": true
+          }
+        ]
+      }
+    ]
+  }
+}

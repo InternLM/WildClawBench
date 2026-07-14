@@ -1,0 +1,74 @@
+[
+  {
+    "work_id": "OL27448W",
+    "title": "The Lord of the Rings",
+    "author_id": "OL26320A",
+    "first_publish_year": "1954",
+    "subjects": "fantasy;adventure;middle-earth;epic",
+    "description": "An epic high-fantasy novel following the quest to destroy the One Ring.",
+    "edition_count": "312"
+  },
+  {
+    "work_id": "OL45804W",
+    "title": "A Wizard of Earthsea",
+    "author_id": "OL34184A",
+    "first_publish_year": "1968",
+    "subjects": "fantasy;coming of age;magic;wizards",
+    "description": "A young wizard learns the cost of power in the archipelago of Earthsea.",
+    "edition_count": "118"
+  },
+  {
+    "work_id": "OL46125W",
+    "title": "Foundation",
+    "author_id": "OL23919A",
+    "first_publish_year": "1951",
+    "subjects": "science fiction;galactic empire;psychohistory",
+    "description": "A mathematician predicts the fall of a galactic empire and plans to shorten the dark age.",
+    "edition_count": "205"
+  },
+  {
+    "work_id": "OL17930368W",
+    "title": "The Fifth Season",
+    "author_id": "OL2632116A",
+    "first_publish_year": "2015",
+    "subjects": "science fiction;fantasy;apocalyptic;hugo award",
+    "description": "In a world of recurring catastrophes a woman searches for her abducted daughter.",
+    "edition_count": "62"
+  },
+  {
+    "work_id": "OL893415W",
+    "title": "Dune",
+    "author_id": "OL18319A",
+    "first_publish_year": "1965",
+    "subjects": "science fiction;desert;politics;ecology",
+    "description": "On the desert planet Arrakis a noble family fights for control of the spice melange.",
+    "edition_count": "287"
+  },
+  {
+    "work_id": "OL27482W",
+    "title": "Kindred",
+    "author_id": "OL161167A",
+    "first_publish_year": "1979",
+    "subjects": "science fiction;time travel;slavery;historical",
+    "description": "A modern woman is pulled back in time to an antebellum Maryland plantation.",
+    "edition_count": "94"
+  },
+  {
+    "work_id": "OL27513W",
+    "title": "The Left Hand of Darkness",
+    "author_id": "OL34184A",
+    "first_publish_year": "1969",
+    "subjects": "science fiction;gender;winter;diplomacy",
+    "description": "An envoy navigates the ambisexual society of an icebound planet.",
+    "edition_count": "141"
+  },
+  {
+    "work_id": "OL46128W",
+    "title": "I, Robot",
+    "author_id": "OL23919A",
+    "first_publish_year": "1950",
+    "subjects": "science fiction;robots;short stories;ethics",
+    "description": "Linked stories exploring the Three Laws of Robotics.",
+    "edition_count": "176"
+  }
+]

@@ -1,0 +1,16 @@
+id,event_id,name,quantity_total,quantity_sold,cost,fee,free,sales_start,sales_end
+tc-comtech-speaker,evt-comtech-2026,Speaker Pass,40,38,0,0,true,2026-06-15T10:00:00Z,2026-11-25T23:59:00Z
+tc-comtech-vip,evt-comtech-2026,VIP Delegate,100,87,150000,7500,false,2026-06-15T10:00:00Z,2026-11-25T23:59:00Z
+tc-comtech-standard,evt-comtech-2026,Standard Delegate,660,512,75000,3750,false,2026-06-15T10:00:00Z,2026-11-25T23:59:00Z
+tc-wtn-october-member,evt-wtn-october-2026,Member,100,73,0,0,true,2026-08-01T10:00:00Z,2026-10-17T23:59:00Z
+tc-wtn-october-guest,evt-wtn-october-2026,Guest,50,21,5000,250,false,2026-08-01T10:00:00Z,2026-10-17T23:59:00Z
+tc-ncc-stakeholder,evt-ncc-stakeholder-q4,Stakeholder Pass,200,142,0,0,true,2026-08-20T10:00:00Z,2026-11-14T23:59:00Z
+tc-ieee-webinar,evt-ieee-comsoc-webinar,Free Registration,500,287,0,0,true,2026-08-10T10:00:00Z,2026-10-08T14:00:00Z
+tc-nape-agm-member,evt-nape-agm-2026,Member,300,256,25000,1250,false,2026-07-01T10:00:00Z,2026-11-20T23:59:00Z
+tc-nape-agm-guest,evt-nape-agm-2026,Guest,100,48,50000,2500,false,2026-07-01T10:00:00Z,2026-11-20T23:59:00Z
+tc-comtech-2025-speaker,evt-comtech-2025,Speaker pass,40,40,0,0,true,2025-06-22T10:00:00Z,2025-11-28T23:59:00Z
+tc-3gpp-engineering,evt-3gpp-workshop-2026,Engineering pass,200,142,75000,3750,false,2026-04-22T10:00:00Z,2026-11-08T23:59:00Z
+tc-wtn-mar-member,evt-wtn-mar-2026,Member,100,98,0,0,true,2026-01-12T10:00:00Z,2026-03-07T23:59:00Z
+tc-wtn-sep-member,evt-wtn-sep-2026,Member,100,82,0,0,true,2026-08-04T10:00:00Z,2026-09-11T23:59:00Z
+tc-nape-mar-member,evt-nape-mar-2026,Member,300,212,25000,1250,false,2026-01-12T10:00:00Z,2026-03-20T23:59:00Z
+tc-rural-conn-2026-standard,evt-rural-conn-2026,Standard,300,142,45000,2250,false,2026-06-22T10:00:00Z,2026-10-20T23:59:00Z

@@ -1,0 +1,5 @@
+[service]
+name = "posthog-api"
+port = 8092
+env_var_name = "POSTHOG_API_URL"
+healthcheck_path = "/health"

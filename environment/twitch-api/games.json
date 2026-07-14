@@ -1,0 +1,44 @@
+[
+  {
+    "id": "30001",
+    "name": "Just Chatting",
+    "box_art_url": "https://static.example.com/box/justchatting.jpg",
+    "rank": "1",
+    "viewer_count": "420000"
+  },
+  {
+    "id": "30002",
+    "name": "Software and Game Development",
+    "box_art_url": "https://static.example.com/box/gamedev.jpg",
+    "rank": "2",
+    "viewer_count": "38000"
+  },
+  {
+    "id": "30003",
+    "name": "Elden Ring",
+    "box_art_url": "https://static.example.com/box/eldenring.jpg",
+    "rank": "3",
+    "viewer_count": "156000"
+  },
+  {
+    "id": "30004",
+    "name": "Cities: Skylines II",
+    "box_art_url": "https://static.example.com/box/cities2.jpg",
+    "rank": "4",
+    "viewer_count": "21000"
+  },
+  {
+    "id": "30005",
+    "name": "Speedrunning",
+    "box_art_url": "https://static.example.com/box/speedrun.jpg",
+    "rank": "5",
+    "viewer_count": "64000"
+  },
+  {
+    "id": "30006",
+    "name": "Strategy",
+    "box_art_url": "https://static.example.com/box/strategy.jpg",
+    "rank": "6",
+    "viewer_count": "18000"
+  }
+]

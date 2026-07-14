@@ -1,0 +1,9 @@
+account_id,code,name,type,tax_type,status,description,enable_payments_to_account
+acc_010,010,Bank - GSB Operating,BANK,NONE,ACTIVE,Main operating bank account,true
+acc_200,200,Sales,REVENUE,NONE,ACTIVE,Sales revenue,false
+acc_310,310,Cost of Goods Sold,DIRECTCOSTS,NONE,ACTIVE,COGS - vendor equipment,false
+acc_408,408,Professional Services,EXPENSE,NONE,ACTIVE,Consulting and engineering,false
+acc_420,420,Vendor - Equipment,EXPENSE,NONE,ACTIVE,Vendor equipment purchases,false
+acc_421,421,Vendor - Customs and Logistics,EXPENSE,NONE,ACTIVE,Customs and logistics fees,false
+acc_500,500,Accounts Payable,CURRLIAB,NONE,ACTIVE,AP control account,false
+acc_510,510,Accounts Receivable,CURRENT,NONE,ACTIVE,AR control account,false

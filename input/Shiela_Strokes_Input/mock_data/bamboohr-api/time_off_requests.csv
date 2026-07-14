@@ -1,0 +1,91 @@
+id,employeeId,type,status,start,end,amount,unit,notes,created
+tor-2026-001,emp_chinedu_okafor,Vacation,approved,2026-04-08,2026-04-12,5,days,Easter break with family,2026-03-18
+tor-2026-002,emp_tunde_salami,Sick,approved,2026-05-22,2026-05-22,1,days,Migraine,2026-05-22
+tor-2026-003,emp_funmi_ade,Vacation,approved,2026-06-15,2026-06-26,10,days,Annual leave,2026-05-04
+tor-2026-004,emp_ifeoma_olatunji,Vacation,approved,2026-07-01,2026-07-05,5,days,Family wedding in Enugu,2026-06-10
+tor-2026-005,emp_bayo_adeyinka,Personal,approved,2026-07-14,2026-07-14,1,days,Father in-law sixtieth,2026-06-25
+tor-2026-006,emp_ngozi_okonkwo,Vacation,approved,2026-08-04,2026-08-15,10,days,UK family visit,2026-06-30
+tor-2026-007,emp_aisha_bello,Sick,approved,2026-08-19,2026-08-20,2,days,Flu,2026-08-19
+tor-2026-008,emp_kabiru_mohammed,Vacation,approved,2026-08-25,2026-08-29,5,days,Eid extension,2026-07-20
+tor-2026-009,emp_sheila_stokes,Personal,approved,2026-09-15,2026-09-15,1,days,Adunola parent teacher conference,2026-09-01
+tor-2026-010,emp_chinedu_okafor,Vacation,approved,2026-09-22,2026-09-23,2,days,Long weekend,2026-09-08
+tor-h-2026-101,emp_chinedu_okafor,Sick,approved,2026-01-05,2026-01-09,5,days,Sick day,2025-12-26
+tor-h-2026-102,emp_tunde_salami,Vacation,approved,2026-01-12,2026-01-13,2,days,Routine entry,2026-01-02
+tor-h-2026-103,emp_funmi_ade,Vacation,approved,2026-01-19,2026-01-20,2,days,Routine entry,2026-01-09
+tor-h-2026-104,emp_ifeoma_olatunji,Sick,approved,2026-01-26,2026-01-30,5,days,Sick day,2026-01-16
+tor-h-2026-105,emp_bayo_adeyinka,Vacation,approved,2026-02-02,2026-02-03,2,days,Routine entry,2026-01-23
+tor-h-2026-106,emp_ngozi_okonkwo,Vacation,approved,2026-02-09,2026-02-10,2,days,Routine entry,2026-01-30
+tor-h-2026-107,emp_aisha_bello,Sick,approved,2026-02-16,2026-02-20,5,days,Sick day,2026-02-06
+tor-h-2026-108,emp_kabiru_mohammed,Vacation,approved,2026-02-23,2026-02-24,2,days,Routine entry,2026-02-13
+tor-h-2026-109,emp_sheila_stokes,Vacation,approved,2026-03-02,2026-03-03,2,days,Routine entry,2026-02-20
+tor-h-2026-110,emp_chinedu_okafor,Sick,approved,2026-03-09,2026-03-13,5,days,Sick day,2026-02-27
+tor-h-2026-111,emp_tunde_salami,Vacation,approved,2026-03-16,2026-03-17,2,days,Routine entry,2026-03-06
+tor-h-2026-112,emp_funmi_ade,Vacation,approved,2026-03-23,2026-03-24,2,days,Routine entry,2026-03-13
+tor-h-2026-113,emp_ifeoma_olatunji,Sick,approved,2026-03-30,2026-04-03,5,days,Sick day,2026-03-20
+tor-h-2026-114,emp_bayo_adeyinka,Vacation,approved,2026-04-06,2026-04-07,2,days,Routine entry,2026-03-27
+tor-h-2026-115,emp_ngozi_okonkwo,Vacation,approved,2026-04-13,2026-04-14,2,days,Routine entry,2026-04-03
+tor-h-2026-116,emp_aisha_bello,Sick,approved,2026-04-20,2026-04-24,5,days,Sick day,2026-04-10
+tor-h-2026-117,emp_kabiru_mohammed,Vacation,approved,2026-04-27,2026-04-28,2,days,Routine entry,2026-04-17
+tor-h-2026-118,emp_sheila_stokes,Vacation,approved,2026-05-04,2026-05-05,2,days,Routine entry,2026-04-24
+tor-h-2026-119,emp_chinedu_okafor,Sick,approved,2026-05-11,2026-05-15,5,days,Sick day,2026-05-01
+tor-h-2026-120,emp_tunde_salami,Vacation,approved,2026-05-18,2026-05-19,2,days,Routine entry,2026-05-08
+tor-h-2026-121,emp_funmi_ade,Vacation,approved,2026-05-25,2026-05-26,2,days,Routine entry,2026-05-15
+tor-h-2026-122,emp_ifeoma_olatunji,Sick,approved,2026-06-01,2026-06-05,5,days,Sick day,2026-05-22
+tor-h-2026-123,emp_bayo_adeyinka,Vacation,approved,2026-06-08,2026-06-09,2,days,Routine entry,2026-05-29
+tor-h-2026-124,emp_ngozi_okonkwo,Vacation,approved,2026-06-15,2026-06-16,2,days,Routine entry,2026-06-05
+tor-h-2026-125,emp_aisha_bello,Sick,approved,2026-06-22,2026-06-26,5,days,Sick day,2026-06-12
+tor-h-2026-126,emp_kabiru_mohammed,Vacation,approved,2026-06-29,2026-06-30,2,days,Routine entry,2026-06-19
+tor-h-2026-127,emp_sheila_stokes,Vacation,approved,2026-07-06,2026-07-07,2,days,Routine entry,2026-06-26
+tor-h-2026-128,emp_chinedu_okafor,Sick,approved,2026-07-13,2026-07-17,5,days,Sick day,2026-07-03
+tor-h-2026-129,emp_tunde_salami,Vacation,approved,2026-07-20,2026-07-21,2,days,Routine entry,2026-07-10
+tor-h-2026-130,emp_funmi_ade,Vacation,approved,2026-07-27,2026-07-28,2,days,Routine entry,2026-07-17
+tor-h-2026-131,emp_ifeoma_olatunji,Sick,approved,2026-08-03,2026-08-07,5,days,Sick day,2026-07-24
+tor-h-2026-132,emp_bayo_adeyinka,Vacation,approved,2026-08-10,2026-08-11,2,days,Routine entry,2026-07-31
+tor-h-2026-133,emp_ngozi_okonkwo,Vacation,approved,2026-08-17,2026-08-18,2,days,Routine entry,2026-08-07
+tor-h-2026-134,emp_aisha_bello,Sick,approved,2026-08-24,2026-08-28,5,days,Sick day,2026-08-14
+tor-h-2026-135,emp_kabiru_mohammed,Vacation,approved,2026-08-31,2026-09-01,2,days,Routine entry,2026-08-21
+tor-h-2026-136,emp_sheila_stokes,Vacation,approved,2026-09-07,2026-09-08,2,days,Routine entry,2026-08-28
+tor-h-2026-137,emp_chinedu_okafor,Sick,approved,2026-09-14,2026-09-18,5,days,Sick day,2026-09-04
+tor-h-2026-138,emp_tunde_salami,Vacation,approved,2026-09-21,2026-09-22,2,days,Routine entry,2026-09-11
+tor-h-2026-139,emp_funmi_ade,Vacation,approved,2026-09-28,2026-09-29,2,days,Routine entry,2026-09-18
+tor-h-2026-140,emp_ifeoma_olatunji,Sick,approved,2026-10-05,2026-10-09,5,days,Sick day,2026-09-25
+tor-h-2024-200,emp_chinedu_okafor,Sick,approved,2024-01-05,2024-01-09,5,days,Sick day,2023-12-26
+tor-h-2024-201,emp_tunde_salami,Vacation,approved,2024-01-19,2024-01-20,2,days,Historical entry,2024-01-09
+tor-h-2024-202,emp_funmi_ade,Vacation,approved,2024-02-02,2024-02-03,2,days,Historical entry,2024-01-23
+tor-h-2024-203,emp_ifeoma_olatunji,Sick,approved,2024-02-16,2024-02-20,5,days,Sick day,2024-02-06
+tor-h-2024-204,emp_bayo_adeyinka,Vacation,approved,2024-03-01,2024-03-02,2,days,Historical entry,2024-02-20
+tor-h-2024-205,emp_ngozi_okonkwo,Vacation,approved,2024-03-15,2024-03-16,2,days,Historical entry,2024-03-05
+tor-h-2024-206,emp_aisha_bello,Sick,approved,2024-03-29,2024-04-02,5,days,Sick day,2024-03-19
+tor-h-2024-207,emp_kabiru_mohammed,Vacation,approved,2024-04-12,2024-04-13,2,days,Historical entry,2024-04-02
+tor-h-2024-208,emp_sheila_stokes,Vacation,approved,2024-04-26,2024-04-27,2,days,Historical entry,2024-04-16
+tor-h-2024-209,emp_adaeze_nwosu,Sick,approved,2024-05-10,2024-05-14,5,days,Sick day,2024-04-30
+tor-h-2024-210,emp_olatunji,Vacation,approved,2024-05-24,2024-05-25,2,days,Historical entry,2024-05-14
+tor-h-2024-211,emp_chinedu_okafor,Vacation,approved,2024-06-07,2024-06-08,2,days,Historical entry,2024-05-28
+tor-h-2024-212,emp_tunde_salami,Sick,approved,2024-06-21,2024-06-25,5,days,Sick day,2024-06-11
+tor-h-2024-213,emp_funmi_ade,Vacation,approved,2024-07-05,2024-07-06,2,days,Historical entry,2024-06-25
+tor-h-2024-214,emp_ifeoma_olatunji,Vacation,approved,2024-07-19,2024-07-20,2,days,Historical entry,2024-07-09
+tor-h-2024-215,emp_bayo_adeyinka,Sick,approved,2024-08-02,2024-08-06,5,days,Sick day,2024-07-23
+tor-h-2024-216,emp_ngozi_okonkwo,Vacation,approved,2024-08-16,2024-08-17,2,days,Historical entry,2024-08-06
+tor-h-2024-217,emp_aisha_bello,Vacation,approved,2024-08-30,2024-08-31,2,days,Historical entry,2024-08-20
+tor-h-2024-218,emp_kabiru_mohammed,Sick,approved,2024-09-13,2024-09-17,5,days,Sick day,2024-09-03
+tor-h-2024-219,emp_sheila_stokes,Vacation,approved,2024-09-27,2024-09-28,2,days,Historical entry,2024-09-17
+tor-h-2024-220,emp_adaeze_nwosu,Vacation,approved,2024-10-11,2024-10-12,2,days,Historical entry,2024-10-01
+tor-h-2024-221,emp_olatunji,Sick,approved,2024-10-25,2024-10-29,5,days,Sick day,2024-10-15
+tor-h-2024-222,emp_chinedu_okafor,Vacation,approved,2024-11-08,2024-11-09,2,days,Historical entry,2024-10-29
+tor-h-2024-223,emp_tunde_salami,Vacation,approved,2024-11-22,2024-11-23,2,days,Historical entry,2024-11-12
+tor-h-2024-224,emp_funmi_ade,Sick,approved,2024-12-06,2024-12-10,5,days,Sick day,2024-11-26
+tor-h-2024-225,emp_ifeoma_olatunji,Vacation,approved,2024-12-20,2024-12-21,2,days,Historical entry,2024-12-10
+tor-h-2024-226,emp_bayo_adeyinka,Vacation,approved,2025-01-03,2025-01-04,2,days,Historical entry,2024-12-24
+tor-h-2024-227,emp_ngozi_okonkwo,Sick,approved,2025-01-17,2025-01-21,5,days,Sick day,2025-01-07
+tor-h-2024-228,emp_aisha_bello,Vacation,approved,2025-01-31,2025-02-01,2,days,Historical entry,2025-01-21
+tor-h-2024-229,emp_kabiru_mohammed,Vacation,approved,2025-02-14,2025-02-15,2,days,Historical entry,2025-02-04
+tor-h-2024-230,emp_sheila_stokes,Sick,approved,2025-02-28,2025-03-04,5,days,Sick day,2025-02-18
+tor-h-2024-231,emp_adaeze_nwosu,Vacation,approved,2025-03-14,2025-03-15,2,days,Historical entry,2025-03-04
+tor-h-2024-232,emp_olatunji,Vacation,approved,2025-03-28,2025-03-29,2,days,Historical entry,2025-03-18
+tor-h-2024-233,emp_chinedu_okafor,Sick,approved,2025-04-11,2025-04-15,5,days,Sick day,2025-04-01
+tor-h-2024-234,emp_tunde_salami,Vacation,approved,2025-04-25,2025-04-26,2,days,Historical entry,2025-04-15
+tor-h-2024-235,emp_funmi_ade,Vacation,approved,2025-05-09,2025-05-10,2,days,Historical entry,2025-04-29
+tor-h-2024-236,emp_ifeoma_olatunji,Sick,approved,2025-05-23,2025-05-27,5,days,Sick day,2025-05-13
+tor-h-2024-237,emp_bayo_adeyinka,Vacation,approved,2025-06-06,2025-06-07,2,days,Historical entry,2025-05-27
+tor-h-2024-238,emp_ngozi_okonkwo,Vacation,approved,2025-06-20,2025-06-21,2,days,Historical entry,2025-06-10
+tor-h-2024-239,emp_aisha_bello,Sick,approved,2025-07-04,2025-07-08,5,days,Sick day,2025-06-24

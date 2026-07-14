@@ -59,13 +59,160 @@ def build_run_batch_parser(default_model: str, default_parallel: int) -> argpars
     )
     parser.add_argument(
         "--thinking",
-        default=None,
-        help="Thinking/reasoning level for the model (default: high)",
+        default="xhigh",
+        help="Thinking/reasoning level set as agents.defaults.thinkingDefault "
+             "(default: xhigh, matching the kensei harness). Use 'off' to disable.",
     )
     parser.add_argument(
         "--openclaw-image-model",
         default=None,
         help="Optional OpenClaw image tool model. If unset, falls back to the chat --model.",
+    )
+    parser.add_argument(
+        "--no-subagents",
+        dest="no_subagents",
+        action="store_true",
+        default=False,
+        help="Disable sub-agent spawning for every task in this run, overriding "
+             "task_config.yaml multi_agent blocks and the WCB_MULTI_AGENT_DEFAULT "
+             "capability default. The session tools (sessions_spawn etc.) are "
+             "both withheld (no tools.alsoAllow grant) and explicitly denied "
+             "(tools.deny), so the model never sees them.",
+    )
+
+    # ---- LiteLLM / Bedrock routing (openclaw backend) ----
+    routing = parser.add_mutually_exclusive_group()
+    routing.add_argument(
+        "--litellm",
+        dest="litellm",
+        action="store_true",
+        default=None,
+        help="Force routing via the shared LiteLLM sidecar (Bedrock/OpenAI). "
+             "Default: auto-enable when Bedrock/OpenAI env is configured.",
+    )
+    routing.add_argument(
+        "--no-litellm",
+        dest="litellm",
+        action="store_false",
+        help="Force OpenRouter routing even if Bedrock/OpenAI env is set.",
+    )
+    parser.add_argument(
+        "--bedrock-arn",
+        default=None,
+        help="Override the Bedrock inference-profile ARN (else BEDROCK_MODEL_ARN env).",
+    )
+    parser.add_argument(
+        "--aws-region",
+        default=None,
+        help="Override the AWS region for Bedrock (else AWS_REGION env, default ap-south-1).",
+    )
+    parser.add_argument(
+        "--use-claude-oauth",
+        dest="use_claude_oauth",
+        action="store_true",
+        default=None,
+        help="Route opus traffic through the wcbsh-cc-bridge sidecar under a "
+             "Claude Code OAuth subscription instead of Bedrock. Requires "
+             "WCB_CC_ACCOUNT_POOL to point at one or more OAuth credential "
+             "JSON files. Equivalent to WCB_USE_CLAUDE_OAUTH=1.",
+    )
+    parser.add_argument(
+        "--mock-stack",
+        dest="mock_stack",
+        action="store_true",
+        default=False,
+        help="Run all required mock APIs in one shared container on the run network.",
+    )
+    testgen = parser.add_mutually_exclusive_group()
+    testgen.add_argument(
+        "--generate-tests",
+        dest="generate_tests",
+        action="store_true",
+        default=None,
+        help="Run kensei2 test generation via Bedrock for each task before the agent runs "
+             "(populates task.test_code and task.test_weights so harbor can bundle them). "
+             "Default: auto-enable when Bedrock env is configured.",
+    )
+    testgen.add_argument(
+        "--no-generate-tests",
+        dest="generate_tests",
+        action="store_false",
+        help="Skip test generation even when Bedrock env is configured.",
+    )
+    parser.add_argument(
+        "--testgen-max-attempts",
+        type=int,
+        default=3,
+        metavar="N",
+        help="Max LLM retry attempts for test generation lint loop (default: 3).",
+    )
+    parser.add_argument(
+        "--force-testgen",
+        dest="force_testgen",
+        action="store_true",
+        default=False,
+        help="Bypass the on-disk testgen cache and regenerate test_outputs.py + "
+             "test_weights.json even if they already exist under "
+             "<output_root>/<task_id>/data/tests/. Use when the testgen prompt, "
+             "weight scale, or lint rules have changed.",
+    )
+    testexec = parser.add_mutually_exclusive_group()
+    testexec.add_argument(
+        "--execute-tests",
+        dest="execute_tests",
+        action="store_true",
+        default=None,
+        help="After the agent finishes, run the generated test_outputs.py against "
+             "the workspace + live mock stack to compute a real pytest reward "
+             "(reward.txt + ctrf.json). Default: auto-enable when --generate-tests "
+             "and --mock-stack are both on.",
+    )
+    testexec.add_argument(
+        "--no-execute-tests",
+        dest="execute_tests",
+        action="store_false",
+        help="Skip test execution (rubric judge only).",
+    )
+    parser.add_argument(
+        "--testexec-timeout",
+        type=int,
+        default=600,
+        metavar="SEC",
+        help="Outer cap on the test-runner subprocess (default: 600s). Per-test budget is set via WCB_PER_TEST_TIMEOUT inside the runner (default: 30s).",
+    )
+    parser.add_argument(
+        "--rebuild-mocks",
+        dest="rebuild_mocks",
+        action="store_true",
+        default=False,
+        help="Force-rebuild the mock-API image even if the cached tag exists "
+             "(use after editing environment/<api>/ server code or baseline CSVs).",
+    )
+    parser.add_argument(
+        "--judge-council",
+        dest="judge_council",
+        action="store_true",
+        default=None,
+        help="Use a 3-judge council (Sonnet 4.6 + GLM 5 + Kimi k2.5) instead of "
+             "the single JUDGE_MODEL. Runs members in parallel, aggregates by "
+             "per-criterion mean, requires quorum of 2 surviving members. "
+             "Equivalent to JUDGE_COUNCIL=1. Members are overridable via "
+             "JUDGE_COUNCIL_MEMBERS=<m1>,<m2>,<m3>.",
+    )
+    parser.add_argument(
+        "--no-judge-council",
+        dest="judge_council",
+        action="store_false",
+        help="Force-disable the judge council even if JUDGE_COUNCIL=1 in env.",
+    )
+    parser.add_argument(
+        "--tui",
+        dest="tui",
+        action="store_true",
+        default=False,
+        help="Launch the full-screen Textual live dashboard (container lifecycle, "
+             "live log, progress, and final summary). Interactive terminals only; "
+             "auto-falls back to Rich logging when piped/tee'd. Equivalent to WCB_TUI=1.",
     )
     return parser
 

@@ -1,0 +1,5 @@
+id,media_id,user_id,username,text,timestamp,like_count,hidden,parent_id
+igc_matt_001,ig_bri_001,ig_grace_garcia_2026,grace_g_wb26,Wait so just leading question and we are good?,2026-05-29T03:42:00,2,false,
+igc_matt_002,ig_bri_001,ig_haruki_t_2026,haruki_t,isnt there also a selection bias thing with the dining hall lovers group? prof talked about that in lecture,2026-05-29T04:11:00,18,false,
+igc_matt_003,ig_bri_001,ig_brianna_lee_2026,bri_does_data,reply to haruki_t i mean technically yeah but the leading question is the main thing for sure,2026-05-29T04:18:00,4,false,igc_matt_002
+igc_matt_004,ig_bri_002,ig_grace_garcia_2026,grace_g_wb26,omg I was doing one tailed thank u for posting,2026-05-29T22:30:00,1,false,

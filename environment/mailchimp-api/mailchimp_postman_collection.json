@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Mailchimp Mock API",
+    "description": "Test collection for the mock Mailchimp Marketing API service. Base URL defaults to http://localhost:8081. In docker-compose, the service is reachable at http://mailchimp-api:8081. The subscriber_hash is the MD5 of the lowercased email; this collection passes the raw email, which the mock also accepts.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8081"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list lists", "request": {"method": "GET", "url": "{{baseUrl}}/3.0/lists"}},
+    {"name": "get list", "request": {"method": "GET", "url": "{{baseUrl}}/3.0/lists/list-newsletter"}},
+    {"name": "list members", "request": {"method": "GET", "url": "{{baseUrl}}/3.0/lists/list-newsletter/members?status=subscribed"}},
+    {"name": "create member", "request": {"method": "POST", "url": "{{baseUrl}}/3.0/lists/list-newsletter/members",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"email_address\": \"newuser@example.com\", \"status\": \"subscribed\", \"full_name\": \"New User\"}"}}},
+    {"name": "get member", "request": {"method": "GET", "url": "{{baseUrl}}/3.0/lists/list-newsletter/members/mara@brightpath.io"}},
+    {"name": "update member", "request": {"method": "PATCH", "url": "{{baseUrl}}/3.0/lists/list-newsletter/members/tomas@brightpath.io",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"unsubscribed\"}"}}},
+    {"name": "list campaigns", "request": {"method": "GET", "url": "{{baseUrl}}/3.0/campaigns?status=sent"}},
+    {"name": "create campaign", "request": {"method": "POST", "url": "{{baseUrl}}/3.0/campaigns",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"type\": \"regular\", \"recipients\": {\"list_id\": \"list-product\"}, \"settings\": {\"subject_line\": \"December Update\", \"from_name\": \"Orbit Product\", \"reply_to\": \"product@orbit-labs.com\", \"title\": \"December Update\"}}"}}},
+    {"name": "get campaign", "request": {"method": "GET", "url": "{{baseUrl}}/3.0/campaigns/camp-sep-news"}},
+    {"name": "send campaign", "request": {"method": "POST", "url": "{{baseUrl}}/3.0/campaigns/camp-nov-draft/actions/send"}},
+    {"name": "get report", "request": {"method": "GET", "url": "{{baseUrl}}/3.0/reports/camp-oct-news"}}
+  ]
+}

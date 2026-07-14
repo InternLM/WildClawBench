@@ -1,0 +1,5 @@
+[service]
+name = "ups-api"
+port = 8096
+env_var_name = "UPS_API_URL"
+healthcheck_path = "/health"

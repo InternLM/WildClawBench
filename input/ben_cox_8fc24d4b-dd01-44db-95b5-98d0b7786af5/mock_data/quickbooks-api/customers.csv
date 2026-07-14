@@ -1,0 +1,7 @@
+Id,DisplayName,GivenName,FamilyName,CompanyName,PrimaryEmailAddr,PrimaryPhone,BillAddr_Line1,BillAddr_City,BillAddr_CountrySubDivisionCode,BillAddr_PostalCode,Balance,Active,Job,Notes
+201,Hendrik Veldkamp,Hendrik,Veldkamp,,h.veldkamp@home.nl,050-555-0277,Oude Boteringestraat 38,Groningen,GR,9712 GK,0.00,true,Boekenkast studeerkamer,Aanbetaling voldaan; restant bij montage
+202,J. Bosman,Jan,Bosman,,j.bosman@haren-nl.net,06-5500-0500,Rijksstraatweg 109,Haren,GR,9752 BD,0.00,true,Keuken op maat,Levering december
+203,Annelies Smit,Annelies,Smit,,a.smit@ziggo.nl,050-555-0631,Helperzoom 14,Groningen,GR,9722 EP,0.00,true,Vensterbank eiken,Afgerond voorjaar 2026
+204,Pieter Hofman,Pieter,Hofman,,p.hofman@kpnmail.nl,0594-555-209,Nieuwstraat 5,Zuidhorn,GR,9801 KH,0.00,true,Restauratie kast,Afgerond 2025
+205,Marieke de Boer,Marieke,de Boer,,m.deboer@home.nl,050-555-0844,Verlengde Hereweg 77,Groningen,GR,9721 AM,0.00,true,Boekenplank,Afgerond 2025
+206,Familie Wolters,Karel,Wolters,Wolters Bouw,k.wolters@woltersbouw.nl,0594-555-512,Dorpsstraat 23,Aduard,GR,9831 RC,0.00,true,Kozijnen,Offerte fase

@@ -5,3 +5,78 @@ yt-dlp
 modelscope
 python-dotenv
 pyyaml
+httpx
+fastapi
+pytest
+openai
+litellm
+# headroom-ai is a sidecar-container-only dependency (private package, not on
+# public PyPI). The host harness imports it only behind try/except ImportError
+# (judge_litellm.py) and never at module load, so it must NOT be a hard host
+# requirement — it broke `pip install -r requirements.txt` on fresh boxes.
+# It is installed inside the litellm-headroom Docker image, not on the host.
+# headroom-ai>=0.24,<0.25
+tomli; python_version < "3.11"
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.12.1
+boto3==1.42.66
+botocore==1.42.66
+certifi==2026.2.25
+cffi==2.0.0
+charset-normalizer==3.4.6
+click==8.2.1
+cryptography==46.0.5
+et_xmlfile==2.0.0
+exceptiongroup==1.3.1
+fastapi==0.128.8
+filelock==3.19.1
+fsspec==2025.10.0
+google-api-core==2.30.0
+google-api-python-client==2.193.0
+google-auth==2.49.1
+google-auth-httplib2==0.3.0
+googleapis-common-protos==1.73.0
+h11==0.16.0
+hf-xet==1.5.0
+httpcore==1.0.9
+httplib2==0.31.2
+httpx==0.28.1
+huggingface_hub==1.8.0
+idna==3.11
+jmespath==1.1.0
+markdown-it-py==3.0.0
+mdurl==0.1.2
+openpyxl==3.1.5
+packaging==26.2
+pillow==11.3.0
+proto-plus==1.27.1
+protobuf==6.33.6
+pyasn1==0.6.3
+pyasn1_modules==0.4.2
+pycparser==2.23
+pydantic==2.13.4
+pydantic_core==2.46.4
+Pygments==2.20.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
+PyYAML==6.0.3
+requests==2.32.5
+rich==15.0.0
+s3transfer==0.16.0
+shellingham==1.5.4
+starlette==0.49.3
+# Textual terminal UI (opt-in --tui live dashboard) + its transitive deps.
+textual==8.2.8
+platformdirs==4.10.0
+linkify-it-py==2.1.0
+mdit-py-plugins==0.6.1
+uc-micro-py==2.0.0
+tqdm==4.67.3
+typer==0.23.2
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+uritemplate==4.2.0
+urllib3==1.26.20
+httpx[http2]

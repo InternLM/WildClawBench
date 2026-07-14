@@ -1,0 +1,21 @@
+id,title,overview,release_date,vote_average,vote_count,genre_ids,popularity,original_language
+mv_lionheart,Lionheart,Genevieve Nnaji directs this story of a family business in transition.,2018-12-21,7.2,1840,"g_drama,g_african",48.0,en
+mv_october_1,October 1,Detective in colonial Nigeria investigates a murder mystery.,2014-10-01,7.8,2400,"g_drama,g_thriller,g_african",62.0,en
+mv_kings_of_boys,King of Boys,Lagos businesswoman is drawn into power and politics.,2018-10-21,7.6,1980,"g_drama,g_thriller,g_african",58.0,en
+mv_anikulapo,Anikulapo,A traveller in old Oyo is given a second chance at life.,2022-09-30,7.4,2100,"g_drama,g_african,g_history",51.0,yo
+mv_swallow,Swallow,Two friends in 1980s Lagos navigate work and survival.,2021-10-01,7.0,1240,"g_drama,g_african",42.0,en
+mv_jagun_jagun,Jagun Jagun,A young warrior trains under a brutal commander in old Yoruba kingdom.,2023-08-10,7.5,1820,"g_drama,g_african,g_history",55.0,yo
+mv_brotherhood,Brotherhood,Two brothers on opposite sides of the law in modern Lagos.,2022-09-23,7.1,1480,"g_drama,g_thriller,g_african",47.0,en
+mv_namesake,The Namesake,Bengali family in the United States navigates identity across two generations.,2006-09-09,7.6,18200,"g_drama,g_biography",62.0,en
+mv_queen_of_kat,Queen of Katwe,True story of a Ugandan chess prodigy.,2016-09-23,7.4,16800,"g_drama,g_biography",58.0,en
+mv_hidden_figures,Hidden Figures,Three Black women mathematicians at NASA in the 1960s.,2016-12-25,7.8,184000,"g_drama,g_biography,g_history",78.0,en
+mv_call_me_by_your_name,Call Me By Your Name,A coming-of-age summer story in northern Italy.,2017-11-24,7.9,220000,"g_drama,g_romance",72.0,en
+mv_amistad,Amistad,Spielberg historical drama on the Amistad mutiny.,1997-12-10,7.3,80400,"g_drama,g_history",48.0,en
+mv_yardie,Yardie,A young man from Kingston to London in the 1970s.,2018-08-31,6.5,6400,"g_drama,g_thriller",38.0,en
+mv_the_florida_pr,The Florida Project,A summer in Florida from a child's point of view.,2017-10-06,7.7,92000,"g_drama,g_family",66.0,en
+mv_nightcrawler,Nightcrawler,A freelance crime journalist in Los Angeles.,2014-10-31,7.9,320000,"g_drama,g_thriller",74.0,en
+mv_ifs_only_naija,If Only Naija,Lagos comedy about three friends trying to launch a startup.,2022-04-15,6.4,880,"g_comedy,g_african",32.0,en
+mv_chief_daddy,Chief Daddy,Wealthy patriarch's death triggers a family inheritance battle.,2018-12-14,6.2,1240,"g_comedy,g_drama,g_african",30.0,en
+mv_finding_dory,Finding Dory,Animated family adventure sequel.,2016-06-17,7.2,280000,"g_animation,g_family",62.0,en
+mv_paddington_2,Paddington 2,Family adventure with a charming bear.,2017-11-10,7.8,124000,"g_comedy,g_family",58.0,en
+mv_inside_out,Inside Out,Animated film about emotions inside a child's mind.,2015-06-19,8.1,412000,"g_animation,g_family,g_drama",78.0,en

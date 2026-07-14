@@ -1,0 +1,90 @@
+[
+  {
+    "id": "770c3b0000000000000003c1",
+    "collection_id": "660b2a0000000000000002b1",
+    "name": "Shipping Faster With Edge Caching",
+    "slug": "shipping-faster-with-edge-caching",
+    "is_draft": "false",
+    "is_archived": "false",
+    "summary": "How we cut TTFB by 40 percent.",
+    "created_on": "2026-05-02T08:00:00.000Z",
+    "last_updated": "2026-05-02T09:00:00.000Z"
+  },
+  {
+    "id": "770c3b0000000000000003c2",
+    "collection_id": "660b2a0000000000000002b1",
+    "name": "A Field Guide to Design Tokens",
+    "slug": "a-field-guide-to-design-tokens",
+    "is_draft": "false",
+    "is_archived": "false",
+    "summary": "Tokens that scale across brands.",
+    "created_on": "2026-05-09T11:30:00.000Z",
+    "last_updated": "2026-05-09T12:15:00.000Z"
+  },
+  {
+    "id": "770c3b0000000000000003c3",
+    "collection_id": "660b2a0000000000000002b1",
+    "name": "Draft - Roadmap 2026",
+    "slug": "draft-roadmap-2026",
+    "is_draft": "true",
+    "is_archived": "false",
+    "summary": "Internal draft post.",
+    "created_on": "2026-05-15T14:00:00.000Z",
+    "last_updated": "2026-05-15T14:00:00.000Z"
+  },
+  {
+    "id": "770c3b0000000000000003c4",
+    "collection_id": "660b2a0000000000000002b2",
+    "name": "Jamie Okafor",
+    "slug": "jamie-okafor",
+    "is_draft": "false",
+    "is_archived": "false",
+    "summary": "Staff writer covering performance.",
+    "created_on": "2026-04-20T10:00:00.000Z",
+    "last_updated": "2026-05-01T10:00:00.000Z"
+  },
+  {
+    "id": "770c3b0000000000000003c5",
+    "collection_id": "660b2a0000000000000002b3",
+    "name": "Reset Your Password",
+    "slug": "reset-your-password",
+    "is_draft": "false",
+    "is_archived": "false",
+    "summary": "Step-by-step password recovery.",
+    "created_on": "2026-05-04T09:00:00.000Z",
+    "last_updated": "2026-05-20T13:00:00.000Z"
+  },
+  {
+    "id": "770c3b0000000000000003c6",
+    "collection_id": "660b2a0000000000000002b4",
+    "name": "Sourdough Loaf",
+    "slug": "sourdough-loaf",
+    "is_draft": "false",
+    "is_archived": "false",
+    "summary": "Naturally leavened daily loaf.",
+    "created_on": "2026-05-06T07:30:00.000Z",
+    "last_updated": "2026-05-17T07:45:00.000Z"
+  },
+  {
+    "id": "770c3b0000000000000003c7",
+    "collection_id": "660b2a0000000000000002b5",
+    "name": "Alpine Trail Backpack 40L",
+    "slug": "alpine-trail-backpack-40l",
+    "is_draft": "false",
+    "is_archived": "false",
+    "summary": "Lightweight pack for multi-day hikes.",
+    "created_on": "2026-05-12T16:00:00.000Z",
+    "last_updated": "2026-05-24T17:30:00.000Z"
+  },
+  {
+    "id": "770c3b0000000000000003c8",
+    "collection_id": "660b2a0000000000000002b5",
+    "name": "Summit Down Jacket",
+    "slug": "summit-down-jacket",
+    "is_draft": "false",
+    "is_archived": "true",
+    "summary": "Discontinued winter jacket.",
+    "created_on": "2026-03-01T16:00:00.000Z",
+    "last_updated": "2026-05-10T17:30:00.000Z"
+  }
+]

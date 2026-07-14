@@ -1,0 +1,2 @@
+campaign_id,ad_account_id,name,status,objective_type,daily_spend_cap_micro,lifetime_spend_cap_micro,start_time,end_time,created_at,updated_at
+camp_km001,ad_acct_km001,Garden Ideas Boost Spring 2026,ACTIVE,AWARENESS,1000000,30000000,2026-04-01T00:00:00,2026-06-30T23:59:59,2026-03-25T10:00:00,2026-04-15T09:00:00

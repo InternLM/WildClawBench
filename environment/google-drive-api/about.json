@@ -1,0 +1,14 @@
+{
+  "user": {
+    "displayName": "Amelia Ortega",
+    "emailAddress": "amelia@orbit-labs.com",
+    "permissionId": "perm-amelia"
+  },
+  "storageQuota": {
+    "limit": "16106127360",
+    "usage": "4823520102",
+    "usageInDrive": "4500000000",
+    "usageInDriveTrash": "12000000"
+  },
+  "maxUploadSize": "5368709120"
+}

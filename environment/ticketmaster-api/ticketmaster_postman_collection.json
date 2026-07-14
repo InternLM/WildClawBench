@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "Ticketmaster Discovery API Mock",
+    "description": "Test collection for the mock Ticketmaster Discovery API service. Base URL defaults to http://localhost:8075. In docker-compose, the service is reachable at http://ticketmaster-api:8075.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8075"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "search events", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/events"}},
+    {"name": "search events by keyword", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/events?keyword=Aria"}},
+    {"name": "search events by city + classification", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/events?city=New York&classificationName=Music"}},
+    {"name": "search events by startDateTime", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/events?startDateTime=2026-09-01T00:00:00Z"}},
+    {"name": "get event", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/events/evt-1001"}},
+    {"name": "search venues", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/venues?keyword=Arena"}},
+    {"name": "get venue", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/venues/ven-001"}},
+    {"name": "search attractions", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/attractions?keyword=Echoes"}},
+    {"name": "get attraction", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/attractions/att-001"}},
+    {"name": "list classifications", "request": {"method": "GET", "url": "{{baseUrl}}/discovery/v2/classifications"}}
+  ]
+}

@@ -1,0 +1,5 @@
+[service]
+name = "bamboohr-api"
+port = 8072
+env_var_name = "BAMBOOHR_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Sentry Mock API",
+    "description": "Test collection for the mock Sentry API service. Base URL defaults to http://localhost:8047. In docker-compose, the service is reachable at http://sentry-api:8047.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8047"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list org projects", "request": {"method": "GET", "url": "{{baseUrl}}/api/0/organizations/orbit-labs/projects/"}},
+    {"name": "list project issues", "request": {"method": "GET", "url": "{{baseUrl}}/api/0/projects/orbit-labs/auth-service/issues/?status=unresolved"}},
+    {"name": "list project issues by level", "request": {"method": "GET", "url": "{{baseUrl}}/api/0/projects/orbit-labs/web-frontend/issues/?level=error"}},
+    {"name": "get issue", "request": {"method": "GET", "url": "{{baseUrl}}/api/0/organizations/orbit-labs/issues/40001/"}},
+    {"name": "resolve issue", "request": {"method": "PUT", "url": "{{baseUrl}}/api/0/organizations/orbit-labs/issues/40001/",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"resolved\"}"}}},
+    {"name": "ignore issue", "request": {"method": "PUT", "url": "{{baseUrl}}/api/0/organizations/orbit-labs/issues/40002/",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"ignored\"}"}}},
+    {"name": "list issue events", "request": {"method": "GET", "url": "{{baseUrl}}/api/0/organizations/orbit-labs/issues/40001/events/"}},
+    {"name": "list releases", "request": {"method": "GET", "url": "{{baseUrl}}/api/0/organizations/orbit-labs/releases/"}},
+    {"name": "list releases for project", "request": {"method": "GET", "url": "{{baseUrl}}/api/0/organizations/orbit-labs/releases/?project=auth-service"}}
+  ]
+}

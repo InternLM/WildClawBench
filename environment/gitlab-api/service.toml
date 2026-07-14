@@ -1,0 +1,5 @@
+[service]
+name = "gitlab-api"
+port = 8046
+env_var_name = "GITLAB_API_URL"
+healthcheck_path = "/health"

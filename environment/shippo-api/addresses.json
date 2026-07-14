@@ -1,0 +1,62 @@
+[
+  {
+    "object_id": "addr-sender-01",
+    "name": "Orbit Labs Fulfillment",
+    "company": "Orbit Labs",
+    "street1": "500 Treat Ave",
+    "street2": "Suite 200",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110",
+    "country": "US",
+    "phone": "4155550111",
+    "email": "ship@orbit-labs.com",
+    "is_residential": "false",
+    "validated": "true"
+  },
+  {
+    "object_id": "addr-recv-01",
+    "name": "Amelia Ortega",
+    "company": "",
+    "street1": "1842 Maple Grove Rd",
+    "street2": "Apt 4B",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78704",
+    "country": "US",
+    "phone": "5125550182",
+    "email": "amelia.ortega@orbit-labs.com",
+    "is_residential": "true",
+    "validated": "true"
+  },
+  {
+    "object_id": "addr-recv-02",
+    "name": "Jonas Pereira",
+    "company": "Pereira Studio",
+    "street1": "77 Beacon St",
+    "street2": "",
+    "city": "Boston",
+    "state": "MA",
+    "zip": "02108",
+    "country": "US",
+    "phone": "6175550199",
+    "email": "jonas@example.com",
+    "is_residential": "false",
+    "validated": "true"
+  },
+  {
+    "object_id": "addr-recv-03",
+    "name": "Helena Park",
+    "company": "",
+    "street1": "940 NE 12th Ave",
+    "street2": "Unit 310",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97232",
+    "country": "US",
+    "phone": "5035550144",
+    "email": "helena.park@orbit-labs.com",
+    "is_residential": "true",
+    "validated": "false"
+  }
+]

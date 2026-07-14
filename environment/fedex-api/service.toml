@@ -1,0 +1,5 @@
+[service]
+name = "fedex-api"
+port = 8095
+env_var_name = "FEDEX_API_URL"
+healthcheck_path = "/health"

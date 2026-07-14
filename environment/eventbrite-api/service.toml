@@ -1,0 +1,5 @@
+[service]
+name = "eventbrite-api"
+port = 8020
+env_var_name = "EVENTBRITE_API_URL"
+healthcheck_path = "/health"

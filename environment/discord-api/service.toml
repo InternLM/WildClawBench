@@ -1,0 +1,5 @@
+[service]
+name = "discord-api"
+port = 8057
+env_var_name = "DISCORD_API_URL"
+healthcheck_path = "/health"

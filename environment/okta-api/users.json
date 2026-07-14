@@ -1,0 +1,68 @@
+[
+  {
+    "id": "00u1amelia",
+    "first_name": "Amelia",
+    "last_name": "Ortega",
+    "email": "amelia.ortega@orbit-labs.com",
+    "login": "amelia.ortega@orbit-labs.com",
+    "status": "ACTIVE",
+    "created": "2024-01-10T10:00:00.000Z",
+    "activated": "2024-01-10T10:05:00.000Z",
+    "last_login": "2026-05-26T08:00:00.000Z"
+  },
+  {
+    "id": "00u2jonas",
+    "first_name": "Jonas",
+    "last_name": "Pereira",
+    "email": "jonas.pereira@orbit-labs.com",
+    "login": "jonas.pereira@orbit-labs.com",
+    "status": "ACTIVE",
+    "created": "2024-02-04T11:30:00.000Z",
+    "activated": "2024-02-04T11:35:00.000Z",
+    "last_login": "2026-05-25T17:00:00.000Z"
+  },
+  {
+    "id": "00u3helena",
+    "first_name": "Helena",
+    "last_name": "Park",
+    "email": "helena.park@orbit-labs.com",
+    "login": "helena.park@orbit-labs.com",
+    "status": "ACTIVE",
+    "created": "2024-03-12T14:20:00.000Z",
+    "activated": "2024-03-12T14:25:00.000Z",
+    "last_login": "2026-05-26T07:30:00.000Z"
+  },
+  {
+    "id": "00u4rohit",
+    "first_name": "Rohit",
+    "last_name": "Bansal",
+    "email": "rohit.bansal@orbit-labs.com",
+    "login": "rohit.bansal@orbit-labs.com",
+    "status": "SUSPENDED",
+    "created": "2024-05-02T09:10:00.000Z",
+    "activated": "2024-05-02T09:15:00.000Z",
+    "last_login": "2026-04-30T12:00:00.000Z"
+  },
+  {
+    "id": "00u5noor",
+    "first_name": "Noor",
+    "last_name": "Aziz",
+    "email": "noor.aziz@orbit-labs.com",
+    "login": "noor.aziz@orbit-labs.com",
+    "status": "PROVISIONED",
+    "created": "2026-05-20T16:45:00.000Z",
+    "activated": "",
+    "last_login": ""
+  },
+  {
+    "id": "00u6priya",
+    "first_name": "Priya",
+    "last_name": "Nair",
+    "email": "priya.nair@orbit-labs.com",
+    "login": "priya.nair@orbit-labs.com",
+    "status": "ACTIVE",
+    "created": "2024-08-15T10:00:00.000Z",
+    "activated": "2024-08-15T10:05:00.000Z",
+    "last_login": "2026-05-24T09:00:00.000Z"
+  }
+]

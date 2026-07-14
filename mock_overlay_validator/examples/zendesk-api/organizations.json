@@ -1,0 +1,26 @@
+[
+  {
+    "id": "501",
+    "name": "Aurora Bistro LLC",
+    "domain_names": "aurorabistro.com",
+    "created_at": "2025-11-02T10:00:00Z"
+  },
+  {
+    "id": "502",
+    "name": "Helix Robotics Inc",
+    "domain_names": "helixrobotics.io",
+    "created_at": "2025-09-15T09:30:00Z"
+  },
+  {
+    "id": "503",
+    "name": "Lumen Design Studio",
+    "domain_names": "lumendesign.co",
+    "created_at": "2026-01-10T14:00:00Z"
+  },
+  {
+    "id": "504",
+    "name": "Pelagic Freight Co",
+    "domain_names": "pelagicfreight.com",
+    "created_at": "2026-02-20T16:00:00Z"
+  }
+]

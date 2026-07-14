@@ -1,0 +1,72 @@
+[
+  {
+    "id": "reg-0001",
+    "meeting_id": "85012345679",
+    "email": "jonas.pereira@orbit-labs.com",
+    "first_name": "Jonas",
+    "last_name": "Pereira",
+    "status": "approved",
+    "join_time": "",
+    "create_time": "2026-05-21T12:00:00Z"
+  },
+  {
+    "id": "reg-0002",
+    "meeting_id": "85012345679",
+    "email": "helena.park@orbit-labs.com",
+    "first_name": "Helena",
+    "last_name": "Park",
+    "status": "approved",
+    "join_time": "",
+    "create_time": "2026-05-21T12:05:00Z"
+  },
+  {
+    "id": "reg-0003",
+    "meeting_id": "85012345679",
+    "email": "rohit.bansal@orbit-labs.com",
+    "first_name": "Rohit",
+    "last_name": "Bansal",
+    "status": "pending",
+    "join_time": "",
+    "create_time": "2026-05-21T13:00:00Z"
+  },
+  {
+    "id": "reg-0004",
+    "meeting_id": "85012345680",
+    "email": "buyer@acme.example.com",
+    "first_name": "Dana",
+    "last_name": "Reed",
+    "status": "approved",
+    "join_time": "",
+    "create_time": "2026-05-22T10:00:00Z"
+  },
+  {
+    "id": "reg-0005",
+    "meeting_id": "85012345680",
+    "email": "cto@acme.example.com",
+    "first_name": "Marco",
+    "last_name": "Vidal",
+    "status": "approved",
+    "join_time": "",
+    "create_time": "2026-05-22T10:10:00Z"
+  },
+  {
+    "id": "reg-0006",
+    "meeting_id": "85012345670",
+    "email": "jonas.pereira@orbit-labs.com",
+    "first_name": "Jonas",
+    "last_name": "Pereira",
+    "status": "approved",
+    "join_time": "2026-05-22T16:00:30Z",
+    "create_time": "2026-05-15T11:00:00Z"
+  },
+  {
+    "id": "reg-0007",
+    "meeting_id": "85012345670",
+    "email": "noor.aziz@orbit-labs.com",
+    "first_name": "Noor",
+    "last_name": "Aziz",
+    "status": "approved",
+    "join_time": "2026-05-22T16:02:10Z",
+    "create_time": "2026-05-15T11:10:00Z"
+  }
+]

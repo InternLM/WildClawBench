@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "ActiveCampaign Mock API",
+    "description": "Test collection for the mock ActiveCampaign API v3 service (contacts, lists, campaigns, deals). Base URL defaults to http://localhost:8101. In docker-compose, the service is reachable at http://activecampaign-api:8101.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8101"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list contacts", "request": {"method": "GET", "url": "{{baseUrl}}/api/3/contacts?limit=20&offset=0"}},
+    {"name": "filter contacts by email", "request": {"method": "GET", "url": "{{baseUrl}}/api/3/contacts?email=olivia.bennett@example.com"}},
+    {"name": "get contact", "request": {"method": "GET", "url": "{{baseUrl}}/api/3/contacts/4"}},
+    {"name": "create contact", "request": {"method": "POST", "url": "{{baseUrl}}/api/3/contacts", "body": {"mode": "raw", "options": {"raw": {"language": "json"}}, "raw": "{\"contact\": {\"email\": \"grace.park@example.com\", \"firstName\": \"Grace\", \"lastName\": \"Park\", \"phone\": \"+1-503-555-0120\"}}"}}},
+    {"name": "list lists", "request": {"method": "GET", "url": "{{baseUrl}}/api/3/lists"}},
+    {"name": "list campaigns", "request": {"method": "GET", "url": "{{baseUrl}}/api/3/campaigns"}},
+    {"name": "list deals", "request": {"method": "GET", "url": "{{baseUrl}}/api/3/deals"}}
+  ]
+}

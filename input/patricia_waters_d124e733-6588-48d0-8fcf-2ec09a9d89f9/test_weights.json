@@ -1,0 +1,21 @@
+{
+  "test_gmail_new_confirm": 5,
+  "test_gmail_withdrawal": 3,
+  "test_gmail_consent_pending": 3,
+  "test_google_calendar_clash": 5,
+  "test_google_calendar_protected_block": 3,
+  "test_google_calendar_cohort_start": 3,
+  "test_notion_stale_roster": 3,
+  "test_notion_roster_page_read": 3,
+  "test_gmail_supply_vendor_read": 1,
+  "test_notion_program_planning_read": 3,
+  "test_gmail_no_send_to_parent": -1,
+  "test_gmail_no_send_to_tk_parent": -1,
+  "test_google_calendar_no_event_mutation": -1,
+  "test_notion_no_write": -1,
+  "test_microsoft_teams_distractor": -1,
+  "test_calendly_distractor": -1,
+  "test_dropbox_distractor": -1,
+  "test_airtable_distractor": -1,
+  "test_outlook_distractor": -1
+}

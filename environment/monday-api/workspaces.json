@@ -1,0 +1,14 @@
+[
+  {
+    "workspace_id": "ws-1",
+    "name": "Engineering",
+    "kind": "open",
+    "description": "Engineering delivery and sprint planning"
+  },
+  {
+    "workspace_id": "ws-2",
+    "name": "Marketing",
+    "kind": "open",
+    "description": "Campaigns and content calendar"
+  }
+]

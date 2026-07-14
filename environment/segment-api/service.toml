@@ -1,0 +1,5 @@
+[service]
+name = "segment-api"
+port = 8090
+env_var_name = "SEGMENT_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,7 @@
+quote_id,vendor,product_family,quote_date,amount_usd,status,owner
+TCH-Q-2024-0142,Tachyon Networks,RAN spares,2024-04-12,18400.00,closed_won,a.obi
+ZTE-Q-2024-0088,ZTE Nigeria,fiber patch panels,2024-04-15,6200.00,closed_lost,a.obi
+NSN-Q-2024-0211,Nokia Networks,microwave links,2024-05-02,42100.00,closed_won,b.olatunji
+HUA-Q-2024-0307,Huawei Tech,BBU spares,2024-05-18,9800.00,withdrawn,a.obi
+ERI-Q-2024-0119,Ericsson NG,baseband cards,2024-06-04,12500.00,closed_won,b.olatunji
+TCH-Q-2024-0188,Tachyon Networks,RF connectors,2024-06-22,3450.00,closed_won,a.obi

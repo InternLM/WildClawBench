@@ -1,0 +1,106 @@
+[
+  {
+    "id": "cmt-201-1",
+    "body": "PR #482 merged. Tested at 768px and 1024px breakpoints in Chrome and Safari - cards no longer overlap. Moving to Done.",
+    "issueId": "BUG-201",
+    "userId": "user-tyler",
+    "createdAt": "2026-04-28T11:00:00",
+    "updatedAt": "2026-04-28T11:00:00"
+  },
+  {
+    "id": "cmt-201-2",
+    "body": "Pulled the dashboard on a tablet during break - cards holding their grid now at 768px. Signing off as charge nurse - safe to close for the ER floor.",
+    "issueId": "BUG-201",
+    "userId": "user-david",
+    "createdAt": "2026-04-28T19:30:00",
+    "updatedAt": "2026-04-28T19:30:00"
+  },
+  {
+    "id": "cmt-202-1",
+    "body": "Still seeing long drug names cut off (Hydroxyzine Pamoate Metoprolol Succinate). Need tooltip on hover or a min column width.",
+    "issueId": "BUG-202",
+    "userId": "user-david",
+    "createdAt": "2026-03-15T08:20:00",
+    "updatedAt": "2026-03-15T08:20:00"
+  },
+  {
+    "id": "cmt-202-2",
+    "body": "Picked this up. Will land tooltip on hover + ellipsis pattern next sprint.",
+    "issueId": "BUG-202",
+    "userId": "user-mira",
+    "createdAt": "2026-05-04T09:30:00",
+    "updatedAt": "2026-05-04T09:30:00"
+  },
+  {
+    "id": "cmt-204-1",
+    "body": "PR #514 merged 2026-05-06. Password error now wraps above the submit button on iOS Safari and Android Chrome at 360px.",
+    "issueId": "BUG-204",
+    "userId": "user-tyler",
+    "createdAt": "2026-05-06T10:45:00",
+    "updatedAt": "2026-05-06T10:45:00"
+  },
+  {
+    "id": "cmt-204-2",
+    "body": "Looks good in QA staging on my end. Moving to Done.",
+    "issueId": "BUG-204",
+    "userId": "user-patty",
+    "createdAt": "2026-05-06T14:10:00",
+    "updatedAt": "2026-05-06T14:10:00"
+  },
+  {
+    "id": "cmt-204-3",
+    "body": "Confirmed on Android Chrome too. Closing.",
+    "issueId": "BUG-204",
+    "userId": "user-mira",
+    "createdAt": "2026-05-06T15:20:00",
+    "updatedAt": "2026-05-06T15:20:00"
+  },
+  {
+    "id": "cmt-205-1",
+    "body": "Marking Wont Fix - design team says zebra striping is on the v2 roadmap not this sprint.",
+    "issueId": "BUG-205",
+    "userId": "user-patty",
+    "createdAt": "2026-03-21T09:00:00",
+    "updatedAt": "2026-03-21T09:00:00"
+  },
+  {
+    "id": "cmt-209-1",
+    "body": "Reproduced on night shift - timestamps unreadable on the Recent Activity card under low-light ER lighting. Tagging Critical.",
+    "issueId": "BUG-209",
+    "userId": "user-david",
+    "createdAt": "2026-04-01T22:15:00",
+    "updatedAt": "2026-04-01T22:15:00"
+  },
+  {
+    "id": "cmt-209-2",
+    "body": "Token swap landing in next theme refresh. Tracking for sprint 5.",
+    "issueId": "BUG-209",
+    "userId": "user-tyler",
+    "createdAt": "2026-05-04T09:00:00",
+    "updatedAt": "2026-05-04T09:00:00"
+  },
+  {
+    "id": "cmt-210-1",
+    "body": "EHR vendor confirms the indication field is in the v3 payload. Waiting on integration ticket BKD-118 before we can wire it through.",
+    "issueId": "BUG-210",
+    "userId": "user-mira",
+    "createdAt": "2026-04-12T10:00:00",
+    "updatedAt": "2026-04-12T10:00:00"
+  },
+  {
+    "id": "comment-01",
+    "body": "Started prototyping the token-bucket implementation. Initial benchmarks suggest 10ms p99 overhead per request, which is within budget.",
+    "issueId": "issue-01",
+    "userId": "user-01",
+    "createdAt": "2026-04-22T10:00:00",
+    "updatedAt": "2026-04-22T10:00:00"
+  },
+  {
+    "id": "comment-25",
+    "body": "Confirmed the deprecated widgets are no longer referenced in the dashboard repo. Safe to remove.",
+    "issueId": "issue-26",
+    "userId": "user-05",
+    "createdAt": "2026-04-30T15:00:00",
+    "updatedAt": "2026-04-30T15:00:00"
+  }
+]

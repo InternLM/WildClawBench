@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tc-001",
+    "event_id": "evt-7000001",
+    "name": "Standard",
+    "quantity_total": "120",
+    "quantity_sold": "86",
+    "cost": "2500",
+    "fee": "250",
+    "free": "false",
+    "sales_start": "2026-04-01T10:00:00Z",
+    "sales_end": "2026-06-04T01:00:00Z"
+  },
+  {
+    "id": "tc-002",
+    "event_id": "evt-7000001",
+    "name": "Student",
+    "quantity_total": "30",
+    "quantity_sold": "18",
+    "cost": "1000",
+    "fee": "100",
+    "free": "false",
+    "sales_start": "2026-04-01T10:00:00Z",
+    "sales_end": "2026-06-04T01:00:00Z"
+  },
+  {
+    "id": "tc-003",
+    "event_id": "evt-7000002",
+    "name": "Workshop seat",
+    "quantity_total": "40",
+    "quantity_sold": "32",
+    "cost": "7500",
+    "fee": "650",
+    "free": "false",
+    "sales_start": "2026-04-15T10:00:00Z",
+    "sales_end": "2026-06-11T17:00:00Z"
+  },
+  {
+    "id": "tc-004",
+    "event_id": "evt-7000003",
+    "name": "RSVP",
+    "quantity_total": "80",
+    "quantity_sold": "0",
+    "cost": "0",
+    "fee": "0",
+    "free": "true",
+    "sales_start": "2026-05-20T10:00:00Z",
+    "sales_end": "2026-07-09T01:00:00Z"
+  },
+  {
+    "id": "tc-005",
+    "event_id": "evt-7000004",
+    "name": "RSVP",
+    "quantity_total": "30",
+    "quantity_sold": "21",
+    "cost": "0",
+    "fee": "0",
+    "free": "true",
+    "sales_start": "2026-05-10T10:00:00Z",
+    "sales_end": "2026-05-31T15:00:00Z"
+  }
+]

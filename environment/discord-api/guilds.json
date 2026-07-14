@@ -1,0 +1,20 @@
+[
+  {
+    "id": "900100200300400001",
+    "name": "Orbit Labs Community",
+    "owner_id": "500100200300400001",
+    "member_count": "5",
+    "description": "Hangout for Orbit Labs makers and users",
+    "icon": "f1e2d3c4b5a6f7e8d9c0b1a2f3e4d5c6",
+    "region": "us-east"
+  },
+  {
+    "id": "900100200300400002",
+    "name": "Indie Game Devs",
+    "owner_id": "500100200300400003",
+    "member_count": "4",
+    "description": "A guild for solo and small-team game developers",
+    "icon": "a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4",
+    "region": "eu-west"
+  }
+]

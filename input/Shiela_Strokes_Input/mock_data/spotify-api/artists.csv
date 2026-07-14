@@ -1,0 +1,26 @@
+artist_id,name,genres,followers,popularity
+art_burna_boy,Burna Boy,"Afrobeats,Afro-fusion",12500000,92
+art_wizkid,Wizkid,"Afrobeats,Afropop",9800000,90
+art_davido,Davido,"Afrobeats,Afropop",8400000,89
+art_tems,Tems,"Afro-soul,Alternative R&B",6700000,91
+art_asake,Asake,"Afrobeats,Amapiano",5200000,88
+art_rema,Rema,"Afrobeats,Afropop",5800000,88
+art_omah_lay,Omah Lay,"Afrobeats,Afro-fusion",3900000,84
+art_ckay,CKay,"Afrobeats,Afro-soul",4200000,83
+art_simi,Simi,"Afropop,R&B",2800000,79
+art_adekunle_gold,Adekunle Gold,"Afropop,Highlife",3100000,81
+art_johnny_drille,Johnny Drille,"Afro-folk,Soul",1400000,76
+art_brandy,Brandy,"R&B,Soul",2900000,78
+art_jhene_aiko,Jhene Aiko,"R&B,Soul",4100000,84
+art_sade,Sade,"Soul,Sophisti-pop",3300000,82
+art_corinne_bailey,Corinne Bailey Rae,"Neo soul,Jazz",1500000,75
+art_h_e_r,H.E.R.,"R&B,Soul",5700000,86
+art_daniel_caesar,Daniel Caesar,"R&B,Soul",3900000,83
+art_lauryn_hill,Lauryn Hill,"Neo soul,Hip hop",4400000,86
+art_sinach,Sinach,"Gospel,Worship",1900000,78
+art_nathaniel_bassey,Nathaniel Bassey,"Gospel,Worship",1600000,77
+art_dunsin_oyekan,Dunsin Oyekan,"Gospel,Worship",950000,74
+art_mercy_chinwo,Mercy Chinwo,"Gospel,Worship",1700000,78
+art_chandler_moore,Chandler Moore,"Gospel,Contemporary Christian",1300000,75
+art_for_king_country,For King and Country,Contemporary Christian,2200000,80
+art_chimamanda_aud,Chimamanda Ngozi Adichie (audiobooks),"Spoken word,Audiobook",650000,71

@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "PagerDuty Mock API",
+    "description": "Test collection for the mock PagerDuty incident-management API service. Base URL defaults to http://localhost:8040. In docker-compose, the service is reachable at http://pagerduty-api:8040.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8040"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list services", "request": {"method": "GET", "url": "{{baseUrl}}/services"}},
+    {"name": "get service", "request": {"method": "GET", "url": "{{baseUrl}}/services/PS001"}},
+    {"name": "list incidents (open)", "request": {"method": "GET", "url": "{{baseUrl}}/incidents?statuses[]=triggered&statuses[]=acknowledged"}},
+    {"name": "get incident", "request": {"method": "GET", "url": "{{baseUrl}}/incidents/PI001"}},
+    {"name": "trigger incident", "request": {"method": "POST", "url": "{{baseUrl}}/incidents",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"auth-api refresh token endpoint timing out\", \"service_id\": \"PS001\", \"urgency\": \"high\", \"assigned_to\": \"PU004\"}"}}},
+    {"name": "acknowledge incident", "request": {"method": "PUT", "url": "{{baseUrl}}/incidents/PI001",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"acknowledged\"}"}}},
+    {"name": "resolve incident", "request": {"method": "PUT", "url": "{{baseUrl}}/incidents/PI001",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"resolved\"}"}}},
+    {"name": "add incident note", "request": {"method": "POST", "url": "{{baseUrl}}/incidents/PI001/notes",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"content\": \"Rolled back auth-api deploy, p99 recovering.\", \"user_id\": \"PU004\"}"}}},
+    {"name": "list oncalls", "request": {"method": "GET", "url": "{{baseUrl}}/oncalls"}},
+    {"name": "list schedules", "request": {"method": "GET", "url": "{{baseUrl}}/schedules"}},
+    {"name": "list escalation policies", "request": {"method": "GET", "url": "{{baseUrl}}/escalation_policies"}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/users"}}
+  ]
+}

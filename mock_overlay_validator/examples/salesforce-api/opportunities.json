@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "006Ax000001AAAAAA1",
+    "Name": "Northwind POS Rollout",
+    "AccountId": "001Ax000001AAAAAA1",
+    "StageName": "Prospecting",
+    "Amount": "120000",
+    "Probability": "20",
+    "CloseDate": "2026-07-15",
+    "Type": "New Business"
+  },
+  {
+    "Id": "006Ax000002BBBBBB2",
+    "Name": "Initech Platform Upgrade",
+    "AccountId": "001Ax000002BBBBBB2",
+    "StageName": "Proposal/Price Quote",
+    "Amount": "450000",
+    "Probability": "60",
+    "CloseDate": "2026-06-30",
+    "Type": "Existing Business"
+  },
+  {
+    "Id": "006Ax000003CCCCCC3",
+    "Name": "Globex Factory Automation",
+    "AccountId": "001Ax000003CCCCCC3",
+    "StageName": "Negotiation/Review",
+    "Amount": "1250000",
+    "Probability": "75",
+    "CloseDate": "2026-08-10",
+    "Type": "New Business"
+  },
+  {
+    "Id": "006Ax000004DDDDDD4",
+    "Name": "Soylent Telehealth Suite",
+    "AccountId": "001Ax000004DDDDDD4",
+    "StageName": "Closed Won",
+    "Amount": "210000",
+    "Probability": "100",
+    "CloseDate": "2026-05-01",
+    "Type": "New Business"
+  },
+  {
+    "Id": "006Ax000005EEEEEE5",
+    "Name": "Umbrella Fleet Tracking",
+    "AccountId": "001Ax000005EEEEEE5",
+    "StageName": "Qualification",
+    "Amount": "340000",
+    "Probability": "40",
+    "CloseDate": "2026-09-20",
+    "Type": "New Business"
+  },
+  {
+    "Id": "006Ax000006FFFFFF6",
+    "Name": "Initech Support Renewal",
+    "AccountId": "001Ax000002BBBBBB2",
+    "StageName": "Closed Lost",
+    "Amount": "85000",
+    "Probability": "0",
+    "CloseDate": "2026-04-22",
+    "Type": "Existing Business"
+  }
+]

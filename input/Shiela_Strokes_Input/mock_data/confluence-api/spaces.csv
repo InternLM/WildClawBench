@@ -1,0 +1,4 @@
+id,key,name,type,status,description
+sp_eng,ENG,Engineering Wiki,global,current,"Network planning, design standards, deployment runbooks"
+sp_fcbd,FCBD,5G CBD Densification Pilot,global,current,"Abuja CBD 5G pilot - filings, technical position, runbooks"
+sp_reg,REG,Regulatory Affairs,global,current,"NCC, ITU, 3GPP standards canon"

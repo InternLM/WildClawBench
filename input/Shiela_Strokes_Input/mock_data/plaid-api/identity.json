@@ -1,0 +1,32 @@
+{
+  "account_id": "acc_chk_001",
+  "names": [
+    "Sheila Stokes"
+  ],
+  "emails": [
+    {
+      "data": "sheila.stokes@Finthesiss.ai",
+      "primary": true,
+      "type": "primary"
+    }
+  ],
+  "phone_numbers": [
+    {
+      "data": "+234 803 555 7300",
+      "primary": true,
+      "type": "mobile"
+    }
+  ],
+  "addresses": [
+    {
+      "data": {
+        "street": "7 Mississippi Street",
+        "city": "Maitama",
+        "region": "FCT-Abuja",
+        "postal_code": "900271",
+        "country": "NG"
+      },
+      "primary": true
+    }
+  ]
+}

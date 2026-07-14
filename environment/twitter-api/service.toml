@@ -1,0 +1,5 @@
+[service]
+name = "twitter-api"
+port = 8061
+env_var_name = "TWITTER_API_URL"
+healthcheck_path = "/health"

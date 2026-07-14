@@ -1,0 +1,4 @@
+id,team_id,display_name,description,membership_type,web_url,created_date
+chan-northcentral,team-netplanning,North-Central Ops,General channel for North-Central network planning,standard,https://teams.microsoft.com/l/channel/chan-northcentral,2026-01-12T09:00:00Z
+chan-nasarawa,team-netplanning,Nasarawa Acquisition,Site acquisition workstream for Nasarawa,private,https://teams.microsoft.com/l/channel/chan-nasarawa,2026-02-03T09:00:00Z
+chan-qos,team-netplanning,QoS Reviews,Quarterly quality-of-service review materials,standard,https://teams.microsoft.com/l/channel/chan-qos,2026-02-10T09:00:00Z

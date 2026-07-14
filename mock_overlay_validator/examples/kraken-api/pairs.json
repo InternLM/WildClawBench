@@ -1,0 +1,101 @@
+[
+  {
+    "pair": "XXBTZUSD",
+    "altname": "XBTUSD",
+    "wsname": "XBT/USD",
+    "base": "XXBT",
+    "quote": "ZUSD",
+    "pair_decimals": "1",
+    "lot_decimals": "8",
+    "ordermin": "0.0001",
+    "status": "online"
+  },
+  {
+    "pair": "XETHZUSD",
+    "altname": "ETHUSD",
+    "wsname": "ETH/USD",
+    "base": "XETH",
+    "quote": "ZUSD",
+    "pair_decimals": "2",
+    "lot_decimals": "8",
+    "ordermin": "0.01",
+    "status": "online"
+  },
+  {
+    "pair": "XXRPZUSD",
+    "altname": "XRPUSD",
+    "wsname": "XRP/USD",
+    "base": "XXRP",
+    "quote": "ZUSD",
+    "pair_decimals": "5",
+    "lot_decimals": "8",
+    "ordermin": "10",
+    "status": "online"
+  },
+  {
+    "pair": "SOLUSD",
+    "altname": "SOLUSD",
+    "wsname": "SOL/USD",
+    "base": "SOL",
+    "quote": "ZUSD",
+    "pair_decimals": "2",
+    "lot_decimals": "8",
+    "ordermin": "0.1",
+    "status": "online"
+  },
+  {
+    "pair": "ADAUSD",
+    "altname": "ADAUSD",
+    "wsname": "ADA/USD",
+    "base": "ADA",
+    "quote": "ZUSD",
+    "pair_decimals": "6",
+    "lot_decimals": "8",
+    "ordermin": "15",
+    "status": "online"
+  },
+  {
+    "pair": "DOTUSD",
+    "altname": "DOTUSD",
+    "wsname": "DOT/USD",
+    "base": "DOT",
+    "quote": "ZUSD",
+    "pair_decimals": "4",
+    "lot_decimals": "8",
+    "ordermin": "1",
+    "status": "online"
+  },
+  {
+    "pair": "XXBTZEUR",
+    "altname": "XBTEUR",
+    "wsname": "XBT/EUR",
+    "base": "XXBT",
+    "quote": "ZEUR",
+    "pair_decimals": "1",
+    "lot_decimals": "8",
+    "ordermin": "0.0001",
+    "status": "online"
+  },
+  {
+    "pair": "LINKUSD",
+    "altname": "LINKUSD",
+    "wsname": "LINK/USD",
+    "base": "LINK",
+    "quote": "ZUSD",
+    "pair_decimals": "5",
+    "lot_decimals": "8",
+    "ordermin": "0.5",
+    "status": "online"
+  },
+  {
+    "pair": "MATICUSD",
+    "altname": "MATICUSD",
+    "wsname": "MATIC/USD",
+    "base": "MATIC",
+    "quote": "ZUSD",
+    "pair_decimals": "5",
+    "lot_decimals": "8",
+    "ordermin": "10",
+    "status": "online"
+  }
+]

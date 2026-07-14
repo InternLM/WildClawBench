@@ -1,0 +1,18 @@
+[
+  {
+    "id": "98001",
+    "key": "ENG",
+    "name": "Engineering",
+    "type": "global",
+    "status": "current",
+    "description": "Engineering team space for design docs and runbooks"
+  },
+  {
+    "id": "98002",
+    "key": "PROD",
+    "name": "Product",
+    "type": "global",
+    "status": "current",
+    "description": "Product specs roadmaps and release notes"
+  }
+]

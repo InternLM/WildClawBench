@@ -1,0 +1,29 @@
+{
+  "location_id": "loc_martinez_001",
+  "name": "Martinez Home",
+  "address": {
+    "street1": "4821 Ridgeview Dr",
+    "street2": "",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78749",
+    "country": "US"
+  },
+  "latitude": 30.2241,
+  "longitude": -97.8416,
+  "time_zone": "America/Chicago",
+  "mode": "home",
+  "owner": {
+    "id": 100001,
+    "first_name": "Carlos",
+    "last_name": "Martinez",
+    "email": "carlos.martinez@email.com"
+  },
+  "subscription": {
+    "plan": "protect_plus",
+    "status": "active",
+    "video_history_days": 180
+  },
+  "created_at": "2022-06-15T10:00:00.000Z",
+  "updated_at": "2025-04-28T08:00:00.000Z"
+}

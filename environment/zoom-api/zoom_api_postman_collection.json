@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Zoom Mock API v2",
+    "description": "Test collection for the mock Zoom v2 API (users, meetings, recordings, registrants). Base URL defaults to http://localhost:8028. In docker-compose, the service is reachable at http://zoom-api:8028.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8028"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get me", "request": {"method": "GET", "url": "{{baseUrl}}/v2/users/me"}},
+    {"name": "list scheduled meetings", "request": {"method": "GET", "url": "{{baseUrl}}/v2/users/me/meetings?type=scheduled"}},
+    {"name": "list previous meetings", "request": {"method": "GET", "url": "{{baseUrl}}/v2/users/me/meetings?type=previous_meetings"}},
+    {"name": "create meeting", "request": {"method": "POST", "url": "{{baseUrl}}/v2/users/me/meetings",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"topic\": \"Incident Postmortem\", \"type\": 2, \"start_time\": \"2026-06-05T17:00:00Z\", \"duration\": 50, \"timezone\": \"America/Los_Angeles\", \"agenda\": \"Review the 5/26 outage\"}"}}},
+    {"name": "get meeting", "request": {"method": "GET", "url": "{{baseUrl}}/v2/meetings/85012345678"}},
+    {"name": "update meeting", "request": {"method": "PATCH", "url": "{{baseUrl}}/v2/meetings/85012345678",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"duration\": 75, \"agenda\": \"Extended sync\"}"}}},
+    {"name": "delete meeting", "request": {"method": "DELETE", "url": "{{baseUrl}}/v2/meetings/85012345680"}},
+    {"name": "get recordings", "request": {"method": "GET", "url": "{{baseUrl}}/v2/meetings/85012345670/recordings"}},
+    {"name": "list registrants", "request": {"method": "GET", "url": "{{baseUrl}}/v2/meetings/85012345679/registrants?status=approved"}}
+  ]
+}

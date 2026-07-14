@@ -1,0 +1,102 @@
+[
+  {
+    "field_id": "fld-csat-name",
+    "form_id": "frm-csat-01",
+    "title": "What is your name?",
+    "field_type": "short_text",
+    "ref": "name",
+    "required": "true",
+    "choices": "",
+    "order": "1"
+  },
+  {
+    "field_id": "fld-csat-rating",
+    "form_id": "frm-csat-01",
+    "title": "How would you rate our service?",
+    "field_type": "rating",
+    "ref": "service_rating",
+    "required": "true",
+    "choices": "",
+    "order": "2"
+  },
+  {
+    "field_id": "fld-csat-recommend",
+    "form_id": "frm-csat-01",
+    "title": "Would you recommend us?",
+    "field_type": "multiple_choice",
+    "ref": "recommend",
+    "required": "true",
+    "choices": "Definitely|Probably|Not sure|No",
+    "order": "3"
+  },
+  {
+    "field_id": "fld-csat-email",
+    "form_id": "frm-csat-01",
+    "title": "Your email",
+    "field_type": "email",
+    "ref": "contact_email",
+    "required": "false",
+    "choices": "",
+    "order": "4"
+  },
+  {
+    "field_id": "fld-onb-role",
+    "form_id": "frm-onboard-02",
+    "title": "What is your role?",
+    "field_type": "multiple_choice",
+    "ref": "role",
+    "required": "true",
+    "choices": "Engineer|Product Manager|Designer|Executive|Other",
+    "order": "1"
+  },
+  {
+    "field_id": "fld-onb-ease",
+    "form_id": "frm-onboard-02",
+    "title": "How easy was setup?",
+    "field_type": "rating",
+    "ref": "setup_ease",
+    "required": "true",
+    "choices": "",
+    "order": "2"
+  },
+  {
+    "field_id": "fld-onb-comments",
+    "form_id": "frm-onboard-02",
+    "title": "Any additional comments?",
+    "field_type": "short_text",
+    "ref": "comments",
+    "required": "false",
+    "choices": "",
+    "order": "3"
+  },
+  {
+    "field_id": "fld-evt-name",
+    "form_id": "frm-event-03",
+    "title": "Full name",
+    "field_type": "short_text",
+    "ref": "attendee_name",
+    "required": "true",
+    "choices": "",
+    "order": "1"
+  },
+  {
+    "field_id": "fld-evt-email",
+    "form_id": "frm-event-03",
+    "title": "Email address",
+    "field_type": "email",
+    "ref": "attendee_email",
+    "required": "true",
+    "choices": "",
+    "order": "2"
+  },
+  {
+    "field_id": "fld-evt-track",
+    "form_id": "frm-event-03",
+    "title": "Which track will you attend?",
+    "field_type": "multiple_choice",
+    "ref": "track",
+    "required": "true",
+    "choices": "Platform|Frontend|Data|Security",
+    "order": "3"
+  }
+]

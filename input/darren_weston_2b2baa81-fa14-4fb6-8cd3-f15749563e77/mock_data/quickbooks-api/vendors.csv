@@ -1,0 +1,17 @@
+Id,DisplayName,CompanyName,PrimaryEmailAddr,PrimaryPhone,BillAddr_Line1,BillAddr_City,BillAddr_CountrySubDivisionCode,BillAddr_PostalCode,Balance,Active,AcctNum,Vendor1099
+58,Moens & Fils,Moens & Fils Epicerie Fine SPRL,i.moens@moensetfils.be,+32 2 512 44 18,Rue du Bailli 78,Brussels,BRU,1050,1247.50,true,MF-4471,false
+61,Beurrerie de Normandie,Beurrerie de Normandie SA,orders@beurrenormande.fr,+33 2 31 44 90 12,Route de Caen 9,Isigny,NOR,14230,640.00,true,BN-2210,false
+63,Vergers d'Ardenne,Vergers d'Ardenne SCRL,contact@vergersardenne.be,+32 61 23 45 67,Chemin du Verger 3,Bastogne,WLX,6600,318.40,true,VA-0098,false
+66,Emballages Dupuis,Emballages Dupuis SPRL,ventes@dupuis-emball.be,+32 2 478 11 22,Quai des Usines 14,Brussels,BRU,1000,142.00,true,ED-3120,false
+70,Atelier du Sucre,Atelier du Sucre SPRL,info@atelierdusucre.be,+32 2 640 71 80,Rue Berckmans 22,Saint-Gilles,BRU,1060,0.00,true,AS-7781,false
+72,Cristallerie Wagner,Cristallerie Wagner GmbH,kontakt@wagner-glas.de,+49 30 555 21 09,Lindenstrasse 4,Berlin,BE,10969,0.00,true,CW-1140,false
+75,La Ferme aux Oeufs,La Ferme aux Oeufs SCRL,ventes@fermeauxoeufs.be,+32 10 45 67 89,Rue du Poulailler 7,Wavre,WBR,1300,88.20,true,FO-3380,false
+78,Cafes Moka Brussels,Cafes Moka SA,b2b@cafesmoka.be,+32 2 511 22 33,Rue au Beurre 12,Brussels,BRU,1000,54.00,true,CM-9920,false
+80,Papeterie Centrale,Papeterie Centrale SPRL,commande@papcentrale.be,+32 2 217 88 90,Boulevard Anspach 90,Brussels,BRU,1000,31.50,true,PC-4410,false
+83,Froid Service Bruxelles,Froid Service SPRL,sav@froidservice.be,+32 2 332 14 70,Rue de Birmingham 50,Anderlecht,BRU,1070,0.00,true,FS-2207,false
+86,Maison du Fruit Confit,Maison du Fruit Confit SARL,contact@fruitconfit.fr,+33 4 90 12 34 56,Cours Mirabeau 18,Aix-en-Provence,PAC,13100,210.75,true,FC-6612,false
+88,Linge Pro Horeca,Linge Pro SPRL,location@lingepro.be,+32 2 425 90 12,Chaussee de Mons 220,Anderlecht,BRU,1070,0.00,false,LP-5530,false
+90,Gaz et Energie SA,Gaz et Energie SA,pro@gazenergie.be,+32 2 700 10 20,Rue de la Loi 155,Brussels,BRU,1040,0.00,true,GE-1009,false
+92,Vins Selection Devos,Vins Selection SPRL,cave@vinsdevos.be,+32 2 538 77 60,Rue du Page 41,Ixelles,BRU,1050,126.00,true,VD-7741,false
+95,Imprimerie Flagey,Imprimerie Flagey SPRL,devis@impflagey.be,+32 2 640 33 21,Place Flagey 9,Ixelles,BRU,1050,0.00,true,IF-2280,false
+97,Nettoyage Excel,Nettoyage Excel SPRL,planning@nettexcel.be,+32 2 360 45 12,Avenue Brugmann 200,Forest,BRU,1190,0.00,true,NE-3315,false

@@ -1,0 +1,5 @@
+[service]
+name = "whatsapp-api"
+port = 8015
+env_var_name = "WHATSAPP_API_URL"
+healthcheck_path = "/health"

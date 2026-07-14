@@ -1,0 +1,86 @@
+[
+  {
+    "id": "PAY_AURORA01",
+    "order_id": "ORD_AURORA01",
+    "customer_id": "CUST_HARPER01",
+    "amount": "825",
+    "currency": "USD",
+    "status": "COMPLETED",
+    "source_type": "CARD",
+    "location_id": "LOC_MAIN",
+    "receipt_number": "RCP001",
+    "created_at": "2026-05-20T08:15:00Z"
+  },
+  {
+    "id": "PAY_BOREAL02",
+    "order_id": "ORD_BOREAL02",
+    "customer_id": "CUST_DIEGO02",
+    "amount": "500",
+    "currency": "USD",
+    "status": "COMPLETED",
+    "source_type": "CARD",
+    "location_id": "LOC_MAIN",
+    "receipt_number": "RCP002",
+    "created_at": "2026-05-20T09:40:00Z"
+  },
+  {
+    "id": "PAY_CITRON03",
+    "order_id": "ORD_CITRON03",
+    "customer_id": "CUST_MAYA03",
+    "amount": "2400",
+    "currency": "USD",
+    "status": "COMPLETED",
+    "source_type": "CARD",
+    "location_id": "LOC_MAIN",
+    "receipt_number": "RCP003",
+    "created_at": "2026-05-21T10:05:00Z"
+  },
+  {
+    "id": "PAY_DELTA04",
+    "order_id": "ORD_DELTA04",
+    "customer_id": "CUST_OMAR04",
+    "amount": "375",
+    "currency": "USD",
+    "status": "COMPLETED",
+    "source_type": "CASH",
+    "location_id": "LOC_MAIN",
+    "receipt_number": "RCP004",
+    "created_at": "2026-05-21T11:25:00Z"
+  },
+  {
+    "id": "PAY_ECHO05",
+    "order_id": "ORD_ECHO05",
+    "customer_id": "CUST_LENA05",
+    "amount": "1600",
+    "currency": "USD",
+    "status": "APPROVED",
+    "source_type": "CARD",
+    "location_id": "LOC_MAIN",
+    "receipt_number": "RCP005",
+    "created_at": "2026-05-22T12:00:00Z"
+  },
+  {
+    "id": "PAY_FJORD06",
+    "order_id": "ORD_FJORD06",
+    "customer_id": "CUST_PRIYA06",
+    "amount": "900",
+    "currency": "USD",
+    "status": "COMPLETED",
+    "source_type": "CARD",
+    "location_id": "LOC_MAIN",
+    "receipt_number": "RCP006",
+    "created_at": "2026-05-22T13:30:00Z"
+  },
+  {
+    "id": "PAY_GROVE07",
+    "order_id": "ORD_GROVE07",
+    "customer_id": "CUST_TOMAS07",
+    "amount": "1275",
+    "currency": "USD",
+    "status": "FAILED",
+    "source_type": "CARD",
+    "location_id": "LOC_MAIN",
+    "receipt_number": "RCP007",
+    "created_at": "2026-05-23T14:10:00Z"
+  }
+]

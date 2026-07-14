@@ -1,0 +1,42 @@
+[
+  {
+    "id": "10",
+    "name": "Engineering",
+    "slug": "engineering",
+    "description": "Posts about how we build software.",
+    "parent": "0",
+    "count": "4"
+  },
+  {
+    "id": "11",
+    "name": "Reliability",
+    "slug": "reliability",
+    "description": "On-call, incidents, and SLOs.",
+    "parent": "10",
+    "count": "2"
+  },
+  {
+    "id": "12",
+    "name": "Frontend",
+    "slug": "frontend",
+    "description": "UI, design systems, and accessibility.",
+    "parent": "10",
+    "count": "1"
+  },
+  {
+    "id": "13",
+    "name": "Announcements",
+    "slug": "announcements",
+    "description": "Product and company news.",
+    "parent": "0",
+    "count": "2"
+  },
+  {
+    "id": "14",
+    "name": "Tutorials",
+    "slug": "tutorials",
+    "description": "Step-by-step guides.",
+    "parent": "0",
+    "count": "1"
+  }
+]

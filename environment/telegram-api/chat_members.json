@@ -1,0 +1,47 @@
+[
+  {
+    "chat_id": "-200500",
+    "user_id": "9001",
+    "status": "creator"
+  },
+  {
+    "chat_id": "-200500",
+    "user_id": "9002",
+    "status": "administrator"
+  },
+  {
+    "chat_id": "-200500",
+    "user_id": "9003",
+    "status": "member"
+  },
+  {
+    "chat_id": "-200500",
+    "user_id": "9004",
+    "status": "member"
+  },
+  {
+    "chat_id": "-200500",
+    "user_id": "7654321098",
+    "status": "administrator"
+  },
+  {
+    "chat_id": "-200501",
+    "user_id": "9001",
+    "status": "creator"
+  },
+  {
+    "chat_id": "-200501",
+    "user_id": "7654321098",
+    "status": "administrator"
+  },
+  {
+    "chat_id": "-200502",
+    "user_id": "9004",
+    "status": "creator"
+  },
+  {
+    "chat_id": "-200502",
+    "user_id": "9005",
+    "status": "member"
+  }
+]

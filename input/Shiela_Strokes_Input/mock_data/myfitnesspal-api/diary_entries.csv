@@ -1,0 +1,117 @@
+entry_id,date,meal,food_id,food_name,brand,serving_size,serving_unit,servings,calories,total_fat_g,saturated_fat_g,cholesterol_mg,sodium_mg,total_carbs_g,dietary_fiber_g,sugars_g,protein_g
+8001,2026-09-01,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8002,2026-09-01,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8003,2026-09-01,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8004,2026-09-01,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8005,2026-09-02,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8006,2026-09-02,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8007,2026-09-02,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8008,2026-09-02,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8009,2026-09-03,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8010,2026-09-03,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8011,2026-09-03,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8012,2026-09-03,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8013,2026-09-04,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8014,2026-09-04,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8015,2026-09-04,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8016,2026-09-04,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8017,2026-09-05,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8018,2026-09-05,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8019,2026-09-05,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8020,2026-09-05,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8021,2026-09-06,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8022,2026-09-06,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8023,2026-09-06,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8024,2026-09-06,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8025,2026-09-07,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8026,2026-09-07,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8027,2026-09-07,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8028,2026-09-07,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8029,2026-09-08,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8030,2026-09-08,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8031,2026-09-08,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8032,2026-09-08,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8033,2026-09-09,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8034,2026-09-09,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8035,2026-09-09,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8036,2026-09-09,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8037,2026-09-10,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8038,2026-09-10,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8039,2026-09-10,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8040,2026-09-10,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8041,2026-09-11,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8042,2026-09-11,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8043,2026-09-11,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8044,2026-09-11,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8045,2026-09-12,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8046,2026-09-12,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8047,2026-09-12,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8048,2026-09-12,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8049,2026-09-13,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8050,2026-09-13,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8051,2026-09-13,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8052,2026-09-13,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8053,2026-09-14,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8054,2026-09-14,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8055,2026-09-14,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8056,2026-09-14,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8057,2026-09-15,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8058,2026-09-15,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8059,2026-09-15,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8060,2026-09-15,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8061,2026-09-16,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8062,2026-09-16,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8063,2026-09-16,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8064,2026-09-16,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8065,2026-09-17,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8066,2026-09-17,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8067,2026-09-17,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8068,2026-09-17,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8069,2026-09-18,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8070,2026-09-18,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8071,2026-09-18,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8072,2026-09-18,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8073,2026-09-19,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8074,2026-09-19,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8075,2026-09-19,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8076,2026-09-19,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8077,2026-09-20,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8078,2026-09-20,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8079,2026-09-20,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8080,2026-09-20,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8081,2026-09-21,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8082,2026-09-21,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8083,2026-09-21,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8084,2026-09-21,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8085,2026-09-22,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8086,2026-09-22,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8087,2026-09-22,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8088,2026-09-22,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8089,2026-09-23,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8090,2026-09-23,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8091,2026-09-23,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8092,2026-09-23,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8093,2026-09-24,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8094,2026-09-24,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8095,2026-09-24,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8096,2026-09-24,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8097,2026-09-25,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8098,2026-09-25,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8099,2026-09-25,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8100,2026-09-25,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8101,2026-09-26,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8102,2026-09-26,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8103,2026-09-26,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8104,2026-09-26,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8105,2026-09-27,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8106,2026-09-27,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8107,2026-09-27,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8108,2026-09-27,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8109,2026-09-28,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8110,2026-09-28,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8111,2026-09-28,lunch,2,Egusi,Home kitchen,180g,g,1,320,18.4,22.3,55,480,12,4.1,1.4,18.2
+8112,2026-09-28,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3
+8113,2026-09-29,breakfast,9,"Pap (ogi, plain)",Home kitchen,240g,g,1,96,2.2,0.8,0,18,20,0.8,3.4,2.2
+8114,2026-09-29,breakfast,10,"Egg (boiled, large)",Sahad open market,50g,g,1,78,6.3,5.3,186,62,0.6,0,0.6,6.3
+8115,2026-09-29,lunch,1,Jollof,Home kitchen,180g,g,1,285,8.1,1.4,0,340,52,1.8,3.2,6.8
+8116,2026-09-29,dinner,17,Vegetable salad (mixed),Home kitchen,200g,g,1,62,2.3,1.4,0,130,11,4.2,5.4,2.3

@@ -1,0 +1,6 @@
+id,name,type,color,position,teamId,description
+st-backlog,Backlog,backlog,#bec2c8,0,team-ncr,
+st-todo,Todo,unstarted,#e2e2e2,1,team-ncr,
+st-progress,In Progress,started,#f2c94c,2,team-ncr,
+st-blocked,Blocked,started,#eb5757,3,team-ncr,Cannot proceed
+st-done,Done,completed,#5e6ad2,4,team-ncr,

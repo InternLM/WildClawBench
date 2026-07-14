@@ -1,0 +1,9 @@
+uuid,owner,event_type,name,status,start_time,end_time,location_type,location,created_at,canceled_reason
+cal-evt-901,sheila.stokes@Finthesiss.ai,30 Minute Meeting,Intro call,active,2026-11-11T12:00:00.000000Z,2026-11-11T12:30:00.000000Z,zoom,https://zoom.example/j/abc123,2026-09-16T08:00:00Z,
+cal-evt-902,sheila.stokes@Finthesiss.ai,30 Minute Meeting,Mentorship chat,active,2026-11-12T12:00:00.000000Z,2026-11-12T12:30:00.000000Z,google_meet,https://meet.google.com/xyz-abc-def,2026-09-17T08:00:00Z,
+cal-evt-903,sheila.stokes@Finthesiss.ai,Demo,Vendor demo,active,2026-11-13T12:00:00.000000Z,2026-11-13T12:30:00.000000Z,zoom,https://zoom.example/j/def456,2026-09-18T08:00:00Z,
+cal-evt-904,sheila.stokes@Finthesiss.ai,Interview,Press interview,canceled,2026-11-14T12:00:00.000000Z,2026-11-14T12:30:00.000000Z,in_person,TeleCorp HQ Abuja,2026-09-19T08:00:00Z,scheduling conflict
+cal-evt-905,sheila.stokes@Finthesiss.ai,Working Session,Panel prep,active,2026-11-15T12:00:00.000000Z,2026-11-15T12:30:00.000000Z,zoom,https://zoom.example/j/ghi789,2026-09-20T08:00:00Z,
+cal-evt-906,sheila.stokes@Finthesiss.ai,Coffee Chat,Alumni coffee,active,2026-11-16T12:00:00.000000Z,2026-11-16T12:30:00.000000Z,in_person,Transcorp Hilton Lobby,2026-09-21T08:00:00Z,
+cal-evt-907,sheila.stokes@Finthesiss.ai,Recording,Podcast recording,active,2026-11-17T12:00:00.000000Z,2026-11-17T12:30:00.000000Z,google_meet,https://meet.google.com/mno-pqr-stu,2026-09-22T08:00:00Z,
+cal-evt-908,sheila.stokes@Finthesiss.ai,Q&A,Student Q&A,canceled,2026-11-18T12:00:00.000000Z,2026-11-18T12:30:00.000000Z,zoom,https://zoom.example/j/jkl012,2026-09-23T08:00:00Z,scheduling conflict

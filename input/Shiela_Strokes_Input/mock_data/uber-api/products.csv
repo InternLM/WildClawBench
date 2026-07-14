@@ -1,0 +1,7 @@
+product_id,display_name,description,capacity,base_fare,cost_per_mile,cost_per_minute,booking_fee,minimum_fare,image_url,shared
+p_uberx_abj,UberX Abuja,Affordable everyday rides for up to 4 riders.,4,300.0,90.0,6.0,250.0,600.0,https://example-uber.com/uberx.png,false
+p_ubercomfort_abj,Uber Comfort Abuja,Newer cars with extra legroom for up to 4 riders.,4,450.0,130.0,9.0,250.0,900.0,https://example-uber.com/comfort.png,false
+p_uberblack_abj,Uber Black Abuja,"Premium rides in higher-end vehicles, professional drivers.",4,700.0,220.0,14.0,250.0,1500.0,https://example-uber.com/black.png,false
+p_uberxl_abj,Uber XL Abuja,Larger vehicles for up to 6 riders.,6,650.0,180.0,12.0,250.0,1300.0,https://example-uber.com/xl.png,false
+p_uberxl_los,Uber XL Lagos,Larger vehicles for up to 6 riders.,6,650.0,180.0,12.0,250.0,1300.0,https://example-uber.com/xl.png,false
+p_uberx_los,UberX Lagos,Affordable everyday rides for up to 4 riders.,4,300.0,90.0,6.0,250.0,600.0,https://example-uber.com/uberx.png,false

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ClipAlpha01",
+    "broadcaster_id": "40001",
+    "broadcaster_name": "PixelPaladin",
+    "creator_id": "40004",
+    "creator_name": "TacticalTurtle",
+    "game_id": "30003",
+    "title": "Insane last-second parry",
+    "view_count": "48200",
+    "duration": "28.5",
+    "created_at": "2026-05-25T19:12:00Z",
+    "url": "https://clips.example.com/ClipAlpha01"
+  },
+  {
+    "id": "ClipBeta02",
+    "broadcaster_id": "40003",
+    "broadcaster_name": "SprintQueen",
+    "creator_id": "40006",
+    "creator_name": "CasualCartographer",
+    "game_id": "30005",
+    "title": "New world record by 0.3s",
+    "view_count": "132000",
+    "duration": "15.0",
+    "created_at": "2026-05-26T11:40:00Z",
+    "url": "https://clips.example.com/ClipBeta02"
+  },
+  {
+    "id": "ClipGamma03",
+    "broadcaster_id": "40005",
+    "broadcaster_name": "OrbitDev",
+    "creator_id": "40002",
+    "creator_name": "NightOwlCodes",
+    "game_id": "30002",
+    "title": "Live debugging a heisenbug",
+    "view_count": "7600",
+    "duration": "42.0",
+    "created_at": "2026-05-27T15:48:00Z",
+    "url": "https://clips.example.com/ClipGamma03"
+  },
+  {
+    "id": "ClipDelta04",
+    "broadcaster_id": "40001",
+    "broadcaster_name": "PixelPaladin",
+    "creator_id": "40003",
+    "creator_name": "SprintQueen",
+    "game_id": "30003",
+    "title": "Chat trolls the boss fight",
+    "view_count": "21900",
+    "duration": "33.2",
+    "created_at": "2026-05-24T20:05:00Z",
+    "url": "https://clips.example.com/ClipDelta04"
+  },
+  {
+    "id": "ClipEpsilon05",
+    "broadcaster_id": "40002",
+    "broadcaster_name": "NightOwlCodes",
+    "creator_id": "40005",
+    "creator_name": "OrbitDev",
+    "game_id": "30002",
+    "title": "Rust borrow checker wins again",
+    "view_count": "3100",
+    "duration": "19.8",
+    "created_at": "2026-05-23T22:30:00Z",
+    "url": "https://clips.example.com/ClipEpsilon05"
+  }
+]

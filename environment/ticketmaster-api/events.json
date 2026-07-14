@@ -1,0 +1,122 @@
+[
+  {
+    "id": "evt-1001",
+    "name": "The Midnight Echoes Live",
+    "classification_id": "cls-music-rock",
+    "venue_id": "ven-001",
+    "attraction_id": "att-001",
+    "start_datetime": "2026-07-12T20:00:00Z",
+    "status": "onsale",
+    "price_min": "55.00",
+    "price_max": "180.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1002",
+    "name": "Aria Sloane World Tour",
+    "classification_id": "cls-music-pop",
+    "venue_id": "ven-002",
+    "attraction_id": "att-002",
+    "start_datetime": "2026-08-03T19:30:00Z",
+    "status": "onsale",
+    "price_min": "75.00",
+    "price_max": "250.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1003",
+    "name": "Blue Note Collective Evening",
+    "classification_id": "cls-music-jazz",
+    "venue_id": "ven-006",
+    "attraction_id": "att-003",
+    "start_datetime": "2026-06-21T21:00:00Z",
+    "status": "onsale",
+    "price_min": "40.00",
+    "price_max": "95.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1004",
+    "name": "Metro City Hoops vs Bay United Classic",
+    "classification_id": "cls-sports-basketball",
+    "venue_id": "ven-001",
+    "attraction_id": "att-004",
+    "start_datetime": "2026-06-15T18:00:00Z",
+    "status": "onsale",
+    "price_min": "30.00",
+    "price_max": "400.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1005",
+    "name": "Bay United FC Home Match",
+    "classification_id": "cls-sports-soccer",
+    "venue_id": "ven-002",
+    "attraction_id": "att-005",
+    "start_datetime": "2026-07-05T16:00:00Z",
+    "status": "onsale",
+    "price_min": "25.00",
+    "price_max": "150.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1006",
+    "name": "Starlight Musical Premiere",
+    "classification_id": "cls-arts-theatre",
+    "venue_id": "ven-003",
+    "attraction_id": "att-006",
+    "start_datetime": "2026-09-10T19:00:00Z",
+    "status": "onsale",
+    "price_min": "60.00",
+    "price_max": "200.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1007",
+    "name": "Danny Vega Comedy Special",
+    "classification_id": "cls-arts-comedy",
+    "venue_id": "ven-005",
+    "attraction_id": "att-007",
+    "start_datetime": "2026-06-28T20:30:00Z",
+    "status": "onsale",
+    "price_min": "45.00",
+    "price_max": "120.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1008",
+    "name": "The Midnight Echoes Acoustic Night",
+    "classification_id": "cls-music-rock",
+    "venue_id": "ven-005",
+    "attraction_id": "att-001",
+    "start_datetime": "2026-10-02T20:00:00Z",
+    "status": "onsale",
+    "price_min": "50.00",
+    "price_max": "140.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1009",
+    "name": "Metro City Hoops Playoff Game",
+    "classification_id": "cls-sports-basketball",
+    "venue_id": "ven-004",
+    "attraction_id": "att-004",
+    "start_datetime": "2026-06-22T19:00:00Z",
+    "status": "onsale",
+    "price_min": "80.00",
+    "price_max": "650.00",
+    "currency": "USD"
+  },
+  {
+    "id": "evt-1010",
+    "name": "Aria Sloane Intimate Session",
+    "classification_id": "cls-music-pop",
+    "venue_id": "ven-006",
+    "attraction_id": "att-002",
+    "start_datetime": "2026-11-14T20:00:00Z",
+    "status": "offsale",
+    "price_min": "90.00",
+    "price_max": "300.00",
+    "currency": "USD"
+  }
+]

@@ -1,0 +1,563 @@
+{
+  "info": {
+    "name": "Pinterest Mock API v5",
+    "description": "Complete test collection for the mock Pinterest API v5 service (CozyNest Interiors). Base URL defaults to http://localhost:8005.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8005"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "User Account",
+      "item": [
+        {
+          "name": "GET User Account",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/user_account",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "user_account"]
+            }
+          }
+        },
+        {
+          "name": "GET User Analytics",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/user_account/analytics",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "user_account", "analytics"]
+            }
+          }
+        },
+        {
+          "name": "GET User Analytics - Date Range",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/user_account/analytics?start_date=2026-04-01&end_date=2026-04-05",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "user_account", "analytics"],
+              "query": [
+                {"key": "start_date", "value": "2026-04-01"},
+                {"key": "end_date", "value": "2026-04-05"}
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Boards",
+      "item": [
+        {
+          "name": "GET List Boards",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards"]
+            }
+          }
+        },
+        {
+          "name": "GET List Boards - Public Only",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards?privacy=PUBLIC",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards"],
+              "query": [{"key": "privacy", "value": "PUBLIC"}]
+            }
+          }
+        },
+        {
+          "name": "GET List Boards - Paginated",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards?limit=3&offset=0",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards"],
+              "query": [
+                {"key": "limit", "value": "3"},
+                {"key": "offset", "value": "0"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Board",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1001",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1001"]
+            }
+          }
+        },
+        {
+          "name": "GET Board - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_99999",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_99999"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Board",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v5/boards",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Outdoor Living Spaces\", \"description\": \"Patio and garden design ideas\", \"privacy\": \"PUBLIC\"}"
+            }
+          }
+        },
+        {
+          "name": "PATCH Update Board",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1001",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1001"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"description\": \"Updated: Beautiful living room designs and modern interior inspiration\"}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Board",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1009",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1009"]
+            }
+          }
+        },
+        {
+          "name": "GET Board Pins",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1001/pins",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1001", "pins"]
+            }
+          }
+        },
+        {
+          "name": "GET Board Pins - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_99999/pins",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_99999", "pins"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Board Sections",
+      "item": [
+        {
+          "name": "GET List Board Sections",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1002/sections",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1002", "sections"]
+            }
+          }
+        },
+        {
+          "name": "GET List Board Sections - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_99999/sections",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_99999", "sections"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Board Section",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1002/sections",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1002", "sections"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Electrical Projects\"}"
+            }
+          }
+        },
+        {
+          "name": "GET Section Pins",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1002/sections/section_2001/pins",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1002", "sections", "section_2001", "pins"]
+            }
+          }
+        },
+        {
+          "name": "GET Section Pins - 404 Board",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_99999/sections/section_2001/pins",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_99999", "sections", "section_2001", "pins"]
+            }
+          }
+        },
+        {
+          "name": "GET Section Pins - 404 Section",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/boards/board_1002/sections/section_99999/pins",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "boards", "board_1002", "sections", "section_99999", "pins"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pins",
+      "item": [
+        {
+          "name": "GET List Pins",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/pins",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins"]
+            }
+          }
+        },
+        {
+          "name": "GET List Pins - Paginated",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/pins?limit=5&offset=0",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins"],
+              "query": [
+                {"key": "limit", "value": "5"},
+                {"key": "offset", "value": "0"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Pin",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_3001",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_3001"]
+            }
+          }
+        },
+        {
+          "name": "GET Pin - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_99999",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_99999"]
+            }
+          }
+        },
+        {
+          "name": "POST Create Pin",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/v5/pins",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"board_id\": \"board_1001\", \"title\": \"Boho Living Room Makeover\", \"description\": \"Transform your space with these boho-chic design tips #boho #livingroom\", \"link\": \"https://www.cozynestinteriors.com/blog/boho-makeover\", \"media_type\": \"image\", \"alt_text\": \"A boho-styled living room with macrame and plants\"}"
+            }
+          }
+        },
+        {
+          "name": "PATCH Update Pin",
+          "request": {
+            "method": "PATCH",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_3001",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_3001"]
+            },
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"title\": \"Scandinavian Living Room with Warm Neutrals - Updated Guide\", \"description\": \"Updated 2026 guide to creating a cozy Scandinavian-inspired living room\"}"
+            }
+          }
+        },
+        {
+          "name": "DELETE Pin",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_3016",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_3016"]
+            }
+          }
+        },
+        {
+          "name": "DELETE Pin - 404",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_99999",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_99999"]
+            }
+          }
+        },
+        {
+          "name": "GET Pin Analytics",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_3001/analytics",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_3001", "analytics"]
+            }
+          }
+        },
+        {
+          "name": "GET Pin Analytics - Date Range",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_3005/analytics?start_date=2026-04-01&end_date=2026-04-03",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_3005", "analytics"],
+              "query": [
+                {"key": "start_date", "value": "2026-04-01"},
+                {"key": "end_date", "value": "2026-04-03"}
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Pin Analytics - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/pins/pin_99999/analytics",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "pins", "pin_99999", "analytics"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "item": [
+        {
+          "name": "GET Search Pins - DIY",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/search/pins?query=DIY",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "search", "pins"],
+              "query": [{"key": "query", "value": "DIY"}]
+            }
+          }
+        },
+        {
+          "name": "GET Search Pins - Kitchen",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/search/pins?query=kitchen",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "search", "pins"],
+              "query": [{"key": "query", "value": "kitchen"}]
+            }
+          }
+        },
+        {
+          "name": "GET Search Pins - No Results",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/search/pins?query=xyznonexistent",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "search", "pins"],
+              "query": [{"key": "query", "value": "xyznonexistent"}]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "item": [
+        {
+          "name": "GET Media Status - Existing Pin",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/media/pin_3001",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "media", "pin_3001"]
+            }
+          }
+        },
+        {
+          "name": "GET Media Status - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/media/media_99999",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "media", "media_99999"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ad Accounts",
+      "item": [
+        {
+          "name": "GET List Ad Accounts",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/ad_accounts",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "ad_accounts"]
+            }
+          }
+        },
+        {
+          "name": "GET Ad Account",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/ad_accounts/ad_acct_7001",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "ad_accounts", "ad_acct_7001"]
+            }
+          }
+        },
+        {
+          "name": "GET Ad Account - 404",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/ad_accounts/ad_acct_99999",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "ad_accounts", "ad_acct_99999"]
+            }
+          }
+        },
+        {
+          "name": "GET List Campaigns",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/ad_accounts/ad_acct_7001/campaigns",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "ad_accounts", "ad_acct_7001", "campaigns"]
+            }
+          }
+        },
+        {
+          "name": "GET List Campaigns - Filter Active",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/ad_accounts/ad_acct_7001/campaigns?status=ACTIVE",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "ad_accounts", "ad_acct_7001", "campaigns"],
+              "query": [{"key": "status", "value": "ACTIVE"}]
+            }
+          }
+        },
+        {
+          "name": "GET List Campaigns - 404 Account",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/v5/ad_accounts/ad_acct_99999/campaigns",
+              "host": ["{{base_url}}"],
+              "path": ["v5", "ad_accounts", "ad_acct_99999", "campaigns"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

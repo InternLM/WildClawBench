@@ -1,0 +1,7 @@
+message_id,to_email,from_email,subject,template_id,status,opens,clicks,sent_at
+sg_msg_001,b.olatunji@telecorpng.com,sheila.stokes@Finthesiss.ai,Re: NCC pre-hearing coordination,tpl_ncc_followup,delivered,2,0,2026-10-01T18:30:00Z
+sg_msg_002,f.musa@telecorpng.com,sheila.stokes@Finthesiss.ai,Re: NCC Form 7B - final exhibits pull,tpl_ncc_followup,delivered,3,1,2026-10-02T11:00:00Z
+sg_msg_003,ola.adeyemo@tachyon-networks.ng,sheila.stokes@Finthesiss.ai,Re: Tachyon Networks - acceptance test plan v3,tpl_vendor_summary,delivered,1,0,2026-09-30T15:00:00Z
+sg_msg_004,yetunde.bakare.engineer@gmail.com,sheila.stokes@Finthesiss.ai,Re: Yetunde - mentorship Tue agenda,tpl_mentorship_brief,delivered,4,0,2026-10-02T20:00:00Z
+sg_msg_005,i.okeke@telecorpng.com,sheila.stokes@Finthesiss.ai,Re: Nasarawa Phase 1 - Friday status,tpl_status_update,delivered,5,0,2026-10-02T19:00:00Z
+sg_msg_006,b.olatunji@telecorpng.com,sheila.stokes@Finthesiss.ai,Re: 5G CBD - filing window v3 plan,tpl_status_update,delivered,2,0,2026-09-29T17:00:00Z

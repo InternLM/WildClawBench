@@ -1,0 +1,12 @@
+id,body,issueId,userId,createdAt,updatedAt
+lcmt_001,Patch in QA now. Will share build 24.10.2-rc3 with the customer team for parallel validation by Wed.,lissue_0118,luser_ola,2026-10-03T18:00:00Z,2026-10-03T18:00:00Z
+lcmt_002,Acknowledged. Will hold cold-start regression in our test bed.,lissue_0118,luser_tunde,2026-10-03T19:00:00Z,2026-10-03T19:00:00Z
+lcmt_003,Visible. Thanks for the timeline.,lissue_0118,luser_sheila,2026-10-04T11:00:00Z,2026-10-04T11:00:00Z
+lcmt_004,Soak test methodology drafted. Will share for customer comment in cycle 6.,lissue_0124,luser_tachfw2,2026-09-30T15:00:00Z,2026-09-30T15:00:00Z
+lcmt_005,Standing by for the methodology share.,lissue_0124,luser_tunde,2026-10-01T16:00:00Z,2026-10-01T16:00:00Z
+lcmt_006,Expedite quote TCH-EXP-2026-0017 issued to customer. Pending decision.,lissue_0127,luser_ola,2026-10-04T03:30:00Z,2026-10-04T03:30:00Z
+lcmt_007,Visible. Will revert after weekend review.,lissue_0127,luser_sheila,2026-10-04T11:30:00Z,2026-10-04T11:30:00Z
+lcmt_008,Customer requested the methodology be soak-tested before commissioning.,lissue_0101,luser_ola,2026-09-26T15:00:00Z,2026-09-26T15:00:00Z
+lcmt_009,Unit tests scoped for cold-start path.,lissue_0102,luser_tachfw1,2026-10-01T11:00:00Z,2026-10-01T11:00:00Z
+lcmt_010,Section draft ready for review.,lissue_0103,luser_ola,2026-10-02T12:00:00Z,2026-10-02T12:00:00Z
+lcmt_011,Paper draft in progress.,lissue_0108,luser_tachfw2,2026-10-02T14:00:00Z,2026-10-02T14:00:00Z

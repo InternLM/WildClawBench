@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sl_0001",
+    "url": "https://www.dropbox.com/s/abc123def456/Q2-Report.pdf?dl=0",
+    "name": "Q2-Report.pdf",
+    "path_lower": "/documents/q2-report.pdf",
+    "visibility": "public",
+    "file_id": "id:a4ayc_80000000000000000000004"
+  },
+  {
+    "id": "sl_0002",
+    "url": "https://www.dropbox.com/s/ghi789jkl012/Budget-2026.xlsx?dl=0",
+    "name": "Budget-2026.xlsx",
+    "path_lower": "/documents/budget-2026.xlsx",
+    "visibility": "team_only",
+    "file_id": "id:a4ayc_80000000000000000000005"
+  },
+  {
+    "id": "sl_0003",
+    "url": "https://www.dropbox.com/s/mno345pqr678/launch.png?dl=0",
+    "name": "launch.png",
+    "path_lower": "/photos/launch.png",
+    "visibility": "public",
+    "file_id": "id:a4ayc_80000000000000000000007"
+  },
+  {
+    "id": "sl_0004",
+    "url": "https://www.dropbox.com/s/stu901vwx234/proposal.pdf?dl=0",
+    "name": "proposal.pdf",
+    "path_lower": "/projects/proposal.pdf",
+    "visibility": "password",
+    "file_id": "id:a4ayc_80000000000000000000009"
+  }
+]

@@ -1,0 +1,4 @@
+board_id,workspace_id,name,description,state,board_kind
+brd_nsw_p1,ws_netplan,Nasarawa Phase 1 Deployment,45-site rural 4G expansion Phase 1 (15 sites),active,public
+brd_nsw_p2,ws_netplan,Nasarawa Phase 2 Deployment,45-site rural 4G expansion Phase 2 (30 sites),active,public
+brd_5g_cbd,ws_netplan,5G CBD Pilot Coordination,Abuja CBD 5G densification pilot,active,public

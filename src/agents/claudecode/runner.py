@@ -357,6 +357,12 @@ class ClaudeCodeAgent(BaseAgent):
             logger.warning("[%s] ClaudeCode log dir copy failed: %s", task_id, r.stderr.strip())
 
     def _start_container(self, task_id: str, workspace_path: str) -> None:
+        from src.utils.docker_utils import (
+            build_env_args,
+            _validate_docker_token,
+        )
+        _validate_docker_token("task_id", task_id)
+
         proxy_http = os.environ.get("HTTP_PROXY_INNER", "")
         proxy_https = os.environ.get("HTTPS_PROXY_INNER", "")
         env_map = {
@@ -374,10 +380,10 @@ class ClaudeCodeAgent(BaseAgent):
             "HTTP_PROXY": proxy_http,
             "HTTPS_PROXY": proxy_https,
         }
-        env_args: list[str] = []
-        for key, value in env_map.items():
-            if value:
-                env_args += ["-e", f"{key}={value}"]
+        env_args = build_env_args(
+            [(k, v) for k, v in env_map.items() if v]
+        )
+        image = _validate_docker_token("image", self.image)
 
         exec_path = os.path.join(workspace_path, "exec")
         os.makedirs(exec_path, exist_ok=True)
@@ -390,7 +396,7 @@ class ClaudeCodeAgent(BaseAgent):
             *env_args,
             "-v",
             f"{exec_path}:/workspace:ro",
-            self.image,
+            image,
             "/bin/bash",
             "-c",
             "tail -f /dev/null",
@@ -695,6 +701,11 @@ PY"""
         return None
 
     def _estimate_cost(self, totals: dict[str, Any]) -> float:
+        # Prices input_tokens in full (no cache subtraction): Claude Code's usage
+        # already reports input_tokens cache-exclusive, with cache_read/cache_write
+        # broken out separately. (Codex's estimator subtracts cache first because its
+        # input field is cache-inclusive.) Rates default to 0 -> $0 if unset; see
+        # CLAUDECODE_*_PRICE_PER_MTOK in .env.example.
         input_price = float(os.environ.get("CLAUDECODE_INPUT_PRICE_PER_MTOK", "0"))
         output_price = float(os.environ.get("CLAUDECODE_OUTPUT_PRICE_PER_MTOK", "0"))
         cache_read_price = float(os.environ.get("CLAUDECODE_CACHE_READ_PRICE_PER_MTOK", "0"))

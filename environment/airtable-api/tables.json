@@ -1,0 +1,23 @@
+[
+  {
+    "baseId": "appNW1studio0001",
+    "id": "tblProjects00001",
+    "name": "Projects",
+    "primaryFieldId": "fldProjName00001",
+    "records_csv": "records_projects.json"
+  },
+  {
+    "baseId": "appNW1studio0001",
+    "id": "tblTasks00000001",
+    "name": "Tasks",
+    "primaryFieldId": "fldTaskName00001",
+    "records_csv": "records_tasks.json"
+  },
+  {
+    "baseId": "appNW1studio0001",
+    "id": "tblContacts00001",
+    "name": "Contacts",
+    "primaryFieldId": "fldContactNm0001",
+    "records_csv": "records_contacts.json"
+  }
+]

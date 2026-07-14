@@ -1,0 +1,5 @@
+[service]
+name = "google-maps-api"
+port = 8033
+env_var_name = "GOOGLE_MAPS_API_URL"
+healthcheck_path = "/health"

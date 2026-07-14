@@ -1,0 +1,80 @@
+[
+  {
+    "id": "01HZCAMP000000000000000001",
+    "name": "May Newsletter",
+    "status": "Sent",
+    "channel": "email",
+    "subject": "Whats New in May",
+    "from_email": "hello@contoso.com",
+    "from_label": "Contoso",
+    "list_id": "01HZLIST000000000000000001",
+    "send_time": "2026-05-05T15:00:00Z",
+    "created": "2026-05-01T09:00:00Z",
+    "updated": "2026-05-05T15:05:00Z"
+  },
+  {
+    "id": "01HZCAMP000000000000000002",
+    "name": "Spring Sale Kickoff",
+    "status": "Sent",
+    "channel": "email",
+    "subject": "Spring Sale - Up to 40 percent off",
+    "from_email": "sales@contoso.com",
+    "from_label": "Contoso Sales",
+    "list_id": "01HZLIST000000000000000004",
+    "send_time": "2026-05-10T16:00:00Z",
+    "created": "2026-05-06T10:00:00Z",
+    "updated": "2026-05-10T16:10:00Z"
+  },
+  {
+    "id": "01HZCAMP000000000000000003",
+    "name": "VIP Early Access",
+    "status": "Scheduled",
+    "channel": "email",
+    "subject": "Your VIP early access is here",
+    "from_email": "vip@contoso.com",
+    "from_label": "Contoso VIP",
+    "list_id": "01HZLIST000000000000000002",
+    "send_time": "2026-05-30T14:00:00Z",
+    "created": "2026-05-20T11:00:00Z",
+    "updated": "2026-05-26T09:00:00Z"
+  },
+  {
+    "id": "01HZCAMP000000000000000004",
+    "name": "Cart Reminder SMS",
+    "status": "Sent",
+    "channel": "sms",
+    "subject": "",
+    "from_email": "+18885550100",
+    "from_label": "Contoso",
+    "list_id": "01HZLIST000000000000000003",
+    "send_time": "2026-05-18T18:00:00Z",
+    "created": "2026-05-15T12:00:00Z",
+    "updated": "2026-05-18T18:02:00Z"
+  },
+  {
+    "id": "01HZCAMP000000000000000005",
+    "name": "Webinar Reminder",
+    "status": "Draft",
+    "channel": "email",
+    "subject": "Dont miss tomorrows webinar",
+    "from_email": "events@contoso.com",
+    "from_label": "Contoso Events",
+    "list_id": "01HZLIST000000000000000005",
+    "send_time": "",
+    "created": "2026-05-22T08:00:00Z",
+    "updated": "2026-05-24T08:00:00Z"
+  },
+  {
+    "id": "01HZCAMP000000000000000006",
+    "name": "Win Back Offer",
+    "status": "Scheduled",
+    "channel": "email",
+    "subject": "We miss you - 20 percent off",
+    "from_email": "hello@contoso.com",
+    "from_label": "Contoso",
+    "list_id": "01HZLIST000000000000000006",
+    "send_time": "2026-06-01T15:00:00Z",
+    "created": "2026-05-25T10:00:00Z",
+    "updated": "2026-05-27T10:00:00Z"
+  }
+]

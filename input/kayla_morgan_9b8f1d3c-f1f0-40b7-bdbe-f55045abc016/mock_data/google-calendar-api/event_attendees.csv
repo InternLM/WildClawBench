@@ -1,0 +1,17 @@
+event_id,email,display_name,response_status,optional,organizer
+evt-001,frances.dillard@buncombeheritage.org,Frances Dillard,accepted,false,true
+evt-001,kayla.morgan@gmail.com,Kayla Morgan,accepted,false,false
+evt-001,dorothy.ainsworth@gmail.com,Dorothy Ainsworth,accepted,false,false
+evt-001,evelyn.marsh@gmail.com,Evelyn Marsh,accepted,false,false
+evt-002,kayla.morgan@gmail.com,Kayla Morgan,accepted,false,true
+evt-003,kayla.morgan@gmail.com,Kayla Morgan,accepted,false,true
+evt-004,kayla.morgan@gmail.com,Kayla Morgan,accepted,false,true
+evt-005,frances.dillard@buncombeheritage.org,Frances Dillard,accepted,false,true
+evt-005,kayla.morgan@gmail.com,Kayla Morgan,accepted,false,false
+evt-006,kayla.morgan@gmail.com,Kayla Morgan,accepted,false,true
+evt-008,frances.dillard@buncombeheritage.org,Frances Dillard,accepted,false,true
+evt-008,kayla.morgan@gmail.com,Kayla Morgan,tentative,true,false
+evt-010,kayla.morgan@gmail.com,Kayla Morgan,accepted,false,false
+evt-010,dorothy.ainsworth@gmail.com,Dorothy Ainsworth,accepted,false,true
+evt-010,evelyn.marsh@gmail.com,Evelyn Marsh,accepted,false,false
+evt-010,margaret.cope@gmail.com,Margaret Cope,accepted,false,false

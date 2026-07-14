@@ -1,0 +1,82 @@
+[
+  {
+    "guild_id": "900100200300400001",
+    "user_id": "500100200300400001",
+    "username": "amelia",
+    "global_name": "Amelia O",
+    "nick": "Amelia",
+    "bot": "false",
+    "joined_at": "2024-11-02T10:00:00Z",
+    "roles": "700100200300400001;700100200300400002"
+  },
+  {
+    "guild_id": "900100200300400001",
+    "user_id": "500100200300400002",
+    "username": "jonas",
+    "global_name": "Jonas P",
+    "nick": "",
+    "bot": "false",
+    "joined_at": "2024-11-05T12:30:00Z",
+    "roles": "700100200300400002"
+  },
+  {
+    "guild_id": "900100200300400001",
+    "user_id": "500100200300400003",
+    "username": "helena",
+    "global_name": "Helena K",
+    "nick": "Hel",
+    "bot": "false",
+    "joined_at": "2024-12-01T09:15:00Z",
+    "roles": "700100200300400003"
+  },
+  {
+    "guild_id": "900100200300400001",
+    "user_id": "500100200300400004",
+    "username": "rohit",
+    "global_name": "Rohit B",
+    "nick": "",
+    "bot": "false",
+    "joined_at": "2025-01-10T14:45:00Z",
+    "roles": "700100200300400003"
+  },
+  {
+    "guild_id": "900100200300400001",
+    "user_id": "300100200300400001",
+    "username": "orbitbot",
+    "global_name": "Orbit Bot",
+    "nick": "",
+    "bot": "true",
+    "joined_at": "2024-11-02T10:05:00Z",
+    "roles": "700100200300400004"
+  },
+  {
+    "guild_id": "900100200300400002",
+    "user_id": "500100200300400003",
+    "username": "helena",
+    "global_name": "Helena K",
+    "nick": "",
+    "bot": "false",
+    "joined_at": "2025-02-01T08:00:00Z",
+    "roles": "700100200300400005"
+  },
+  {
+    "guild_id": "900100200300400002",
+    "user_id": "500100200300400005",
+    "username": "bode",
+    "global_name": "Bode L",
+    "nick": "Bode",
+    "bot": "false",
+    "joined_at": "2025-02-03T11:20:00Z",
+    "roles": "700100200300400006"
+  },
+  {
+    "guild_id": "900100200300400002",
+    "user_id": "500100200300400006",
+    "username": "cleo",
+    "global_name": "Cleo F",
+    "nick": "",
+    "bot": "false",
+    "joined_at": "2025-02-09T17:40:00Z",
+    "roles": "700100200300400006"
+  }
+]

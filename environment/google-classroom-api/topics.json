@@ -1,0 +1,182 @@
+[
+  {
+    "courseId": "course_001",
+    "topicId": "topic_101",
+    "name": "Unit 1: Primitive Types",
+    "updateTime": "2025-01-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_001",
+    "topicId": "topic_102",
+    "name": "Unit 2: Using Objects",
+    "updateTime": "2025-01-27T08:00:00Z"
+  },
+  {
+    "courseId": "course_001",
+    "topicId": "topic_103",
+    "name": "Unit 3: Boolean Expressions and if Statements",
+    "updateTime": "2025-02-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_001",
+    "topicId": "topic_104",
+    "name": "Unit 4: Iteration",
+    "updateTime": "2025-02-24T08:00:00Z"
+  },
+  {
+    "courseId": "course_001",
+    "topicId": "topic_105",
+    "name": "Unit 5: Writing Classes",
+    "updateTime": "2025-03-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_001",
+    "topicId": "topic_106",
+    "name": "Unit 6: Arrays",
+    "updateTime": "2025-03-24T08:00:00Z"
+  },
+  {
+    "courseId": "course_001",
+    "topicId": "topic_107",
+    "name": "Unit 7: ArrayList",
+    "updateTime": "2025-04-07T08:00:00Z"
+  },
+  {
+    "courseId": "course_002",
+    "topicId": "topic_201",
+    "name": "Unit 1: HTML Fundamentals",
+    "updateTime": "2025-01-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_002",
+    "topicId": "topic_202",
+    "name": "Unit 2: CSS Styling",
+    "updateTime": "2025-01-27T08:00:00Z"
+  },
+  {
+    "courseId": "course_002",
+    "topicId": "topic_203",
+    "name": "Unit 3: CSS Layout (Flexbox and Grid)",
+    "updateTime": "2025-02-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_002",
+    "topicId": "topic_204",
+    "name": "Unit 4: JavaScript Basics",
+    "updateTime": "2025-02-24T08:00:00Z"
+  },
+  {
+    "courseId": "course_002",
+    "topicId": "topic_205",
+    "name": "Unit 5: DOM Manipulation",
+    "updateTime": "2025-03-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_002",
+    "topicId": "topic_206",
+    "name": "Unit 6: APIs and Fetch",
+    "updateTime": "2025-03-31T08:00:00Z"
+  },
+  {
+    "courseId": "course_003",
+    "topicId": "topic_301",
+    "name": "Unit 1: Digital Information",
+    "updateTime": "2025-01-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_003",
+    "topicId": "topic_302",
+    "name": "Unit 2: The Internet",
+    "updateTime": "2025-01-27T08:00:00Z"
+  },
+  {
+    "courseId": "course_003",
+    "topicId": "topic_303",
+    "name": "Unit 3: Algorithms and Programming",
+    "updateTime": "2025-02-17T08:00:00Z"
+  },
+  {
+    "courseId": "course_003",
+    "topicId": "topic_304",
+    "name": "Unit 4: Big Data and Privacy",
+    "updateTime": "2025-03-10T08:00:00Z"
+  },
+  {
+    "courseId": "course_003",
+    "topicId": "topic_305",
+    "name": "Unit 5: Computing Innovations",
+    "updateTime": "2025-03-31T08:00:00Z"
+  },
+  {
+    "courseId": "course_005",
+    "topicId": "topic_501",
+    "name": "Protocols & Methods",
+    "updateTime": "2025-01-20T09:00:00Z"
+  },
+  {
+    "courseId": "course_005",
+    "topicId": "topic_502",
+    "name": "Mackworth 2024",
+    "updateTime": "2025-04-10T14:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "topicId": "topic_401",
+    "name": "Fire Safety Equipment",
+    "updateTime": "2026-04-21T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "topicId": "topic_402",
+    "name": "Personal Flotation & Throwable Devices",
+    "updateTime": "2026-04-21T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "topicId": "topic_403",
+    "name": "Visual & Sound Distress Signals",
+    "updateTime": "2026-04-21T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "topicId": "topic_404",
+    "name": "Navigation & Communication",
+    "updateTime": "2026-04-21T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "topicId": "topic_405",
+    "name": "Hull Pumps & Pollution Compliance",
+    "updateTime": "2026-04-21T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "topicId": "topic_406",
+    "name": "Fire Safety Equipment",
+    "updateTime": "2025-04-23T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "topicId": "topic_407",
+    "name": "Personal Flotation & Throwable Devices",
+    "updateTime": "2025-04-23T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "topicId": "topic_408",
+    "name": "Visual & Sound Distress Signals",
+    "updateTime": "2025-04-23T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "topicId": "topic_409",
+    "name": "Navigation & Communication",
+    "updateTime": "2025-04-23T08:00:00Z"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "topicId": "topic_410",
+    "name": "Hull Pumps & Pollution Compliance",
+    "updateTime": "2025-04-23T08:00:00Z"
+  }
+]

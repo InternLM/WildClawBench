@@ -1,0 +1,16 @@
+[
+  {
+    "Id": "4001",
+    "TxnDate": "2026-03-15",
+    "CustomerRef": {"value": "1", "name": "Asheville Historical Society"},
+    "TotalAmt": 500.00,
+    "Line": [
+      {
+        "LinkedTxn": [{"TxnId": "3001", "TxnType": "Invoice"}],
+        "Amount": 500.00
+      }
+    ],
+    "MetaData": {"CreateTime": "2026-03-15T10:00:00-04:00", "LastUpdatedTime": "2026-03-15T10:00:00-04:00"},
+    "SyncToken": "0"
+  }
+]

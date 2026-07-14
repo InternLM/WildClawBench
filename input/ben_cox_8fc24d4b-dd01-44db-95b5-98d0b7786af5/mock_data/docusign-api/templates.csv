@@ -1,0 +1,4 @@
+template_id,name,description,shared,owner_name,created_time
+tmpl001,Offerte akkoord maatwerk,Standaard akkoord sjabloon voor maatwerkmeubels,true,Ben Cox,2024-02-01T00:00:00Z
+tmpl002,Onderaannemersovereenkomst,Overeenkomst voor onderaannemers en samenwerkingspartners,false,Ben Cox,2025-03-01T00:00:00Z
+tmpl003,Oplevering en garantie,Opleveringsverklaring inclusief garantieperiode,true,Ben Cox,2024-06-18T00:00:00Z

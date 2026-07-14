@@ -1,0 +1,15 @@
+{
+  "id": "u-amelia-9f4b2e8d",
+  "first_name": "Amelia",
+  "last_name": "Ortega",
+  "email": "amelia.ortega@orbit-labs.com",
+  "type": 2,
+  "role_name": "Owner",
+  "pmi": 4155550123,
+  "timezone": "America/Los_Angeles",
+  "verified": 1,
+  "dept": "Engineering",
+  "account_id": "acc-orbit-labs-001",
+  "status": "active",
+  "created_at": "2025-09-01T10:00:00Z"
+}

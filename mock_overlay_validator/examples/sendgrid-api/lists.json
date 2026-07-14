@@ -1,0 +1,26 @@
+[
+  {
+    "id": "list-7788aa11",
+    "name": "Newsletter Subscribers",
+    "contact_count": "4",
+    "created_at": "2025-09-01T10:00:00Z"
+  },
+  {
+    "id": "list-7788aa22",
+    "name": "Active Customers",
+    "contact_count": "3",
+    "created_at": "2025-09-05T11:00:00Z"
+  },
+  {
+    "id": "list-7788aa33",
+    "name": "Trial Users",
+    "contact_count": "2",
+    "created_at": "2025-10-10T12:00:00Z"
+  },
+  {
+    "id": "list-7788aa44",
+    "name": "Beta Testers",
+    "contact_count": "1",
+    "created_at": "2026-01-15T09:00:00Z"
+  }
+]

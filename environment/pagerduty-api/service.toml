@@ -1,0 +1,5 @@
+[service]
+name = "pagerduty-api"
+port = 8040
+env_var_name = "PAGERDUTY_API_URL"
+healthcheck_path = "/health"

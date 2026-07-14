@@ -1,0 +1,13 @@
+id,name,title,public_description,subscribers,created_utc,over18
+sb_telecom,telecom,Telecom Engineering,Working professionals discussing telecom engineering.,84200,2008-08-12T10:00:00Z,false
+sb_5g,5G,5G Engineering,"5G deployment, planning, and engineering discussions.",142400,2016-04-22T11:00:00Z,false
+sb_smallcells,SmallCells,Small Cell Deployments,Small cell and densification engineering discussions.,18400,2018-11-08T07:00:00Z,false
+sb_open_ran,OpenRAN,Open RAN,"Open RAN, vendor-neutral architecture discussions.",24200,2019-09-12T09:00:00Z,false
+sb_ruralconnect,RuralConnectivity,Rural Connectivity,"Rural broadband, satellite, mobile coverage in underserved areas.",6800,2017-12-04T08:00:00Z,false
+sb_ams_panel,AskEngineers,Ask Engineers,Q&A for engineers across disciplines.,680000,2009-02-14T10:00:00Z,false
+sb_femineng,WomenInEngineering,Women in Engineering,Discussion for women engineers across disciplines.,58200,2014-05-22T12:00:00Z,false
+sb_lagos,lagos,Lagos,Discussion for Lagosians.,48400,2010-11-12T08:00:00Z,false
+sb_abuja,abuja,Abuja,Discussion for Abuja residents.,18200,2012-04-08T09:00:00Z,false
+sb_nigeria,Nigeria,Nigeria,General discussion for Nigerians.,820000,2009-09-14T11:00:00Z,false
+sb_books_naija,naijabooks,Naija Books,Nigerian and African literature discussion.,14200,2015-08-22T08:00:00Z,false
+sb_gardening,tropicalgardening,Tropical Gardening,Container and balcony gardening in tropical climates.,42400,2013-06-12T07:00:00Z,false

@@ -1,0 +1,32 @@
+{
+  "user_id": "mfp_sheila_abj_2024",
+  "username": "sheila_consistency",
+  "display_name": "Sheila",
+  "email": "sheila.stokes@Finthesiss.ai",
+  "date_of_birth": "1985-11-22",
+  "sex": "F",
+  "height_cm": 168,
+  "current_weight_lbs": 137.5,
+  "goal_weight_lbs": 135.0,
+  "activity_level": "moderately_active",
+  "profile_image_url": "https://img.example-mfp.com/profile/sheila.jpg",
+  "location": "Abuja, Nigeria",
+  "joined_date": "2024-03-08",
+  "daily_calorie_goal": 2100,
+  "macro_goals": {
+    "protein_pct": 25,
+    "carbs_pct": 50,
+    "fat_pct": 25
+  },
+  "nutrient_goals": {
+    "fiber_g": 28,
+    "sodium_mg": 2300,
+    "sugar_g": 50
+  },
+  "weekly_weight_goal_lbs": 0.0,
+  "units": {
+    "weight": "lbs",
+    "distance": "km",
+    "energy": "kcal"
+  }
+}

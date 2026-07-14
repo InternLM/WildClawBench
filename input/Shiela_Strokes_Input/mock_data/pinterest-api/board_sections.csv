@@ -1,0 +1,29 @@
+section_id,board_id,name,pin_count
+sec_study_lighting,brd_study_corner,Lighting and lamps,12
+sec_study_desks,brd_study_corner,Desks and chairs,10
+sec_study_shelving,brd_study_corner,Shelving and storage,9
+sec_study_palette,brd_study_corner,Colour palettes,11
+sec_garden_herbs,brd_balcony_garden,Herb walls and pots,14
+sec_garden_tomatoes,brd_balcony_garden,Tomato troughs,10
+sec_garden_shade,brd_balcony_garden,Shade plants,12
+sec_garden_compost,brd_balcony_garden,Balcony compost,8
+sec_garden_irrigation,brd_balcony_garden,Drip irrigation kits,12
+sec_anniv_tablescape,brd_anniversary_decor,Tablescapes,13
+sec_anniv_candles,brd_anniversary_decor,Candle arrangements,11
+sec_xmas_wraps,brd_christmas_2025,Gift wrapping,14
+sec_xmas_dinner,brd_christmas_2025,Christmas dinner table,13
+sec_xmas_decor,brd_christmas_2025,Living room decor,11
+sec_recipe_breakfast,brd_recipes_savings,Quick breakfast,18
+sec_recipe_dinner,brd_recipes_savings,Weeknight dinner,22
+sec_recipe_meal_prep,brd_recipes_savings,Sunday meal prep,14
+sec_recipe_lunchbox,brd_recipes_savings,Kids lunchbox,10
+sec_book_verandah,brd_book_nooks,Verandah reading nook,16
+sec_book_family,brd_book_nooks,Family room nook,15
+sec_aso_trails,brd_aso_hikes,Trails and routes,12
+sec_aso_snacks,brd_aso_hikes,Hike snacks,10
+sec_skin_evening,brd_evening_skincare,Evening routine steps,12
+sec_skin_products,brd_evening_skincare,Product reviews,6
+sec_work_capsule,brd_workwear_minimal,Capsule outfits,15
+sec_work_adire,brd_workwear_minimal,Adire and ankara accents,12
+sec_birthday_decor,brd_birthday_kids,Party decor,14
+sec_birthday_food,brd_birthday_kids,Party food,7

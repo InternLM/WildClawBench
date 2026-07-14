@@ -1,0 +1,7 @@
+tracking_number,service_type,service_name,ship_date,origin_zip,dest_zip,weight_lb,currency,net_charge,label_url
+613902248871,GROUND,FedEx Economy,2026-10-05,14230,1050,55.1,EUR,44.80,https://fedex.example/label/613902248871
+772011500394,PRIORITY,FedEx International Priority,2026-09-30,6600,1050,132.3,EUR,70.10,https://fedex.example/label/772011500394
+518204773190,GROUND,FedEx Economy,2026-10-04,10969,1050,22.5,EUR,31.00,https://fedex.example/label/518204773190
+640118299052,PRIORITY,FedEx International Priority,2026-10-06,13100,1050,18.7,EUR,28.40,https://fedex.example/label/640118299052
+905512340087,GROUND,FedEx Economy,2026-10-01,1000,1050,40.0,EUR,26.50,https://fedex.example/label/905512340087
+773460028115,PRIORITY,FedEx International Priority,2026-09-29,1300,1050,15.2,EUR,24.90,https://fedex.example/label/773460028115

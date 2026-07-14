@@ -1,0 +1,31 @@
+transaction_id,account_id,amount,iso_currency_code,date,name,merchant_name,category,pending,payment_channel
+txn_0001,acc_chk_001,-350000.00,NGN,2026-10-01,Rent payment - Maitama apartment,Apex Properties Ltd,"Housing,Rent",false,online
+txn_0002,acc_chk_001,-200000.00,NGN,2026-10-01,Savings transfer to GSB Emergency Fund,Guaranty Savings Bank,"Transfer,Savings",false,online
+txn_0003,acc_chk_001,-100000.00,NGN,2026-10-01,Investment contribution - Savanna Capital,Savanna Capital Managers,"Transfer,Investment",false,online
+txn_0004,acc_chk_001,-100000.00,NGN,2026-10-01,Parents support - monthly,GTBank Folake Stokes,"Transfer,Family",false,online
+txn_0005,acc_chk_001,-180000.00,NGN,2026-10-02,School fees - Maitama Premier Primary Q4,Maitama Premier Primary,"Education,School fees",false,online
+txn_0006,acc_chk_001,-150000.00,NGN,2026-10-03,Groceries - Wuse Market batch,Wuse Market,"Food and Drink,Groceries",false,in_store
+txn_0007,acc_chk_001,-80000.00,NGN,2026-09-30,Housekeeper - Mrs. Binta monthly,Binta Adekunle,"Service,Housekeeping",false,online
+txn_0008,acc_chk_001,-120000.00,NGN,2026-09-28,Fuel + car maintenance + driver,Total Filling Maitama,"Transportation,Fuel",false,in_store
+txn_0009,acc_chk_001,-35000.00,NGN,2026-10-01,Maitama Fitness Center membership,Maitama Fitness Center,"Recreation,Fitness",false,online
+txn_0010,acc_chk_001,-25000.00,NGN,2026-10-01,Phone and internet bill,MTN Nigeria,"Service,Telecommunications",false,online
+txn_0011,acc_chk_001,-15000.00,NGN,2026-10-01,Subscription - Netflix family + Spotify,Netflix and Spotify,"Subscription,Entertainment",false,online
+txn_0012,acc_chk_001,-40000.00,NGN,2026-09-29,Insurance monthly premium,Leadway Assurance,"Service,Insurance",false,online
+txn_0013,acc_chk_001,-60000.00,NGN,2026-09-29,Dining - Wakkis anniversary dinner (advance),Wakkis Restaurant,"Food and Drink,Restaurants",false,online
+txn_0014,acc_chk_001,-22500.00,NGN,2026-10-03,Dining - Wakkis dinner finalization,Wakkis Restaurant,"Food and Drink,Restaurants",false,in_store
+txn_0015,acc_chk_001,-15000.00,NGN,2026-10-02,Pharmacy + supplements refill,HealthPlus Maitama,"Health,Pharmacy",false,in_store
+txn_0016,acc_chk_001,-50000.00,NGN,2026-09-25,Clothing - work blouse and trousers,Yellow Sisi Designs,"Apparel,Clothing",false,in_store
+txn_0017,acc_chk_001,-25000.00,NGN,2026-09-27,Church + charity,Holy Trinity Anglican,"Charity,Religious",false,in_store
+txn_0018,acc_chk_001,-30000.00,NGN,2026-09-26,Children activities - Adunola reading club,Maitama Reading Club,"Education,Activities",false,online
+txn_0019,acc_chk_001,-20000.00,NGN,2026-09-24,Books + professional reading,Cassava Republic Books,"Education,Books",false,in_store
+txn_0020,acc_chk_001,1200000.00,NGN,2026-09-30,Salary - Sheila Stokes,TelcoNG NetPlan Ltd,"Payroll,Salary",false,online
+txn_0021,acc_chk_001,-12000.00,NGN,2026-09-27,Miscellaneous - Adeyemi anniversary gift,Photo Frames Maitama,"Gifts,Personal",false,in_store
+txn_0022,acc_chk_001,-45000.00,NGN,2026-09-23,Credit card statement payment,Guaranty Savings Bank,"Payment,Credit Card",false,online
+txn_0023,acc_cc_001,-25000.00,NGN,2026-09-22,Restaurant - Salamander Cafe Wuse 2,Salamander Cafe,"Food and Drink,Restaurants",true,in_store
+txn_0024,acc_cc_001,-12000.00,NGN,2026-09-26,Online subscription - LinkedIn Premium,LinkedIn Corp,"Subscription,Professional",true,online
+txn_0025,acc_cc_001,-8000.00,NGN,2026-09-29,Online subscription - IEEE membership,IEEE Org,"Subscription,Professional",true,online
+txn_0026,acc_inv_001,100000.00,NGN,2026-10-01,Contribution - Savanna Capital MF,Savanna Capital Managers,"Investment,Mutual Fund",false,online
+txn_0027,acc_sav_001,200000.00,NGN,2026-10-01,Savings transfer from checking,Guaranty Savings Bank,"Transfer,Savings",false,online
+txn_0028,acc_chk_001,-65000.00,NGN,2026-09-21,Children school uniforms + supplies,Maitama School Supplies,"Apparel,Children",false,in_store
+txn_0029,acc_chk_001,-30000.00,NGN,2026-09-20,Salon - Maitama hair and styling,Maitama Hair Studio,"Personal,Beauty",false,in_store
+txn_0030,acc_chk_001,-95000.00,NGN,2026-09-19,Annual eye check + new glasses,Eye Lab Maitama,"Health,Optical",false,in_store

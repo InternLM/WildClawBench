@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "Reddit Mock API",
+    "description": "Test collection for the mock Reddit API service. Base URL defaults to http://localhost:8058. In docker-compose, the service is reachable at http://reddit-api:8058.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8058"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "subreddit about", "request": {"method": "GET", "url": "{{baseUrl}}/r/programming/about"}},
+    {"name": "subreddit hot", "request": {"method": "GET", "url": "{{baseUrl}}/r/programming/hot?limit=10"}},
+    {"name": "subreddit new", "request": {"method": "GET", "url": "{{baseUrl}}/r/homelab/new?limit=10"}},
+    {"name": "post comments", "request": {"method": "GET", "url": "{{baseUrl}}/comments/t3_p001"}},
+    {"name": "submit post", "request": {"method": "POST", "url": "{{baseUrl}}/api/submit",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"sr\": \"programming\", \"title\": \"Show: a tiny CSV diff tool I built this weekend\", \"kind\": \"link\", \"url\": \"https://example.com/csv-diff\", \"author\": \"buildbot\"}"}}},
+    {"name": "vote up", "request": {"method": "POST", "url": "{{baseUrl}}/api/vote",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"id\": \"t3_p002\", \"dir\": 1}"}}},
+    {"name": "user about", "request": {"method": "GET", "url": "{{baseUrl}}/user/devkat/about"}}
+  ]
+}

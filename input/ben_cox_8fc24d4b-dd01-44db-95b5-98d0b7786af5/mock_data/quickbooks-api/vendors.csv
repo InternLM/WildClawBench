@@ -1,0 +1,8 @@
+Id,DisplayName,CompanyName,PrimaryEmailAddr,PrimaryPhone,BillAddr_Line1,BillAddr_City,BillAddr_CountrySubDivisionCode,BillAddr_PostalCode,Balance,Active,AcctNum,Vendor1099
+101,Groningen Houtcentrum,Groningen Houtcentrum BV,verkoop@groningenhout.nl,050-555-0533,Bornholmstraat 22,Groningen,GR,9723 AX,188.40,true,GH-1042,false
+102,Bouwmarkt Zuidhorn,Bouwmarkt Zuidhorn VOF,info@bouwmarktzuidhorn.nl,0594-555-118,Hanckemaweg 8,Zuidhorn,GR,9801 PA,64.30,true,BZ-3310,false
+103,De Vries IJzerwaren,De Vries IJzerwaren,info@devriesijzerwaren.nl,050-555-0712,Friesestraatweg 145,Groningen,GR,9743 AC,0.00,true,DV-2207,false
+104,Hubo Leek,Hubo Leek,leek@hubo.nl,0594-555-440,Tolberterstraat 60,Leek,GR,9351 BJ,41.80,true,HL-8801,false
+105,Faber Olie en Lak,Faber Afwerkingsproducten,verkoop@faberlak.nl,050-555-0990,Gideonweg 11,Groningen,GR,9723 BR,122.00,true,FL-5530,false
+106,Noord Transport,Noord Transport en Logistiek,planning@noordtransport.nl,050-555-0345,Rouaanstraat 4,Groningen,GR,9723 CA,210.00,true,NT-6612,false
+107,Houthandel Drenthe,Houthandel Drenthe BV,info@houthandeldrenthe.nl,0592-555-280,Industrieweg 3,Assen,DR,9402 NP,0.00,false,HD-4419,false

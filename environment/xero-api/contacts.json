@@ -1,0 +1,79 @@
+[
+  {
+    "contact_id": "c0000001-0000-0000-0000-000000000001",
+    "name": "Vandelay Industries",
+    "first_name": "Omar",
+    "last_name": "Haddad",
+    "email": "ap@vandelay.com",
+    "is_customer": "true",
+    "is_supplier": "false",
+    "status": "ACTIVE",
+    "account_number": "VAND-001"
+  },
+  {
+    "contact_id": "c0000002-0000-0000-0000-000000000002",
+    "name": "Initech LLC",
+    "first_name": "Bill",
+    "last_name": "Lumbergh",
+    "email": "accounts@initech.com",
+    "is_customer": "true",
+    "is_supplier": "false",
+    "status": "ACTIVE",
+    "account_number": "INIT-002"
+  },
+  {
+    "contact_id": "c0000003-0000-0000-0000-000000000003",
+    "name": "Globex Corporation",
+    "first_name": "Hank",
+    "last_name": "Scorpio",
+    "email": "billing@globex.com",
+    "is_customer": "true",
+    "is_supplier": "false",
+    "status": "ACTIVE",
+    "account_number": "GLOB-003"
+  },
+  {
+    "contact_id": "c0000004-0000-0000-0000-000000000004",
+    "name": "Acme Supplies",
+    "first_name": "Wile",
+    "last_name": "Coyote",
+    "email": "sales@acmesupplies.com",
+    "is_customer": "false",
+    "is_supplier": "true",
+    "status": "ACTIVE",
+    "account_number": "ACME-004"
+  },
+  {
+    "contact_id": "c0000005-0000-0000-0000-000000000005",
+    "name": "Stark Industries",
+    "first_name": "Pepper",
+    "last_name": "Potts",
+    "email": "finance@stark.com",
+    "is_customer": "true",
+    "is_supplier": "false",
+    "status": "ACTIVE",
+    "account_number": "STARK-005"
+  },
+  {
+    "contact_id": "c0000006-0000-0000-0000-000000000006",
+    "name": "Wonka Distribution",
+    "first_name": "Charlie",
+    "last_name": "Bucket",
+    "email": "orders@wonka.com",
+    "is_customer": "false",
+    "is_supplier": "true",
+    "status": "ACTIVE",
+    "account_number": "WONK-006"
+  },
+  {
+    "contact_id": "c0000007-0000-0000-0000-000000000007",
+    "name": "Hooli Inc",
+    "first_name": "Gavin",
+    "last_name": "Belson",
+    "email": "ar@hooli.com",
+    "is_customer": "true",
+    "is_supplier": "false",
+    "status": "ARCHIVED",
+    "account_number": "HOOL-007"
+  }
+]

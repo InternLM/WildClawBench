@@ -1,0 +1,9 @@
+conversation_id,wa_id,started_at,last_message_at,origin,within_24h_window
+conv-71,32474456789,2026-10-07T20:01:00Z,2026-10-07T20:06:00Z,user_initiated,false
+conv-72,32472234567,2026-10-07T17:25:00Z,2026-10-07T17:30:00Z,user_initiated,false
+conv-73,32473345678,2026-10-07T13:12:00Z,2026-10-07T13:20:00Z,user_initiated,false
+conv-74,32470123456,2026-10-07T19:42:00Z,2026-10-07T19:50:00Z,user_initiated,false
+conv-75,32475560011,2026-10-08T07:10:00Z,2026-10-08T07:10:00Z,business_initiated,true
+conv-76,32476678901,2026-10-08T07:52:00Z,2026-10-08T07:55:00Z,user_initiated,true
+conv-77,32479001122,2026-10-06T07:46:00Z,2026-10-06T07:50:00Z,user_initiated,false
+conv-78,32470992211,2026-10-05T13:50:00Z,2026-10-05T13:50:00Z,user_initiated,false

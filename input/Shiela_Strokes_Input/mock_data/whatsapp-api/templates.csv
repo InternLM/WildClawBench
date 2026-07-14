@@ -1,0 +1,5 @@
+name,language,category,status,body_text,header_text
+appointment_reminder,en_US,UTILITY,APPROVED,"Hi {{1}}, reminder of your appointment on {{2}}.",Reminder
+delivery_notification,en_US,UTILITY,APPROVED,"Hello {{1}}, your delivery is scheduled for {{2}}.",Delivery
+consultation_followup,en_US,UTILITY,APPROVED,"Hi {{1}}, following up on our discussion about {{2}}.",Follow-up
+school_notice,en_US,AUTHENTICATION,APPROVED,"Dear Parent, please note: {{1}}",School Notice

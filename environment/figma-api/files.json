@@ -1,0 +1,42 @@
+[
+  {
+    "file_key": "FK001abcdefg",
+    "project_id": "proj-201",
+    "name": "Onboarding Flow",
+    "thumbnail_url": "https://figma-thumbs.example.com/FK001.png",
+    "last_modified": "2026-05-22T14:30:00Z",
+    "version": "4920183",
+    "role": "owner",
+    "editor_type": "figma"
+  },
+  {
+    "file_key": "FK002hijklmn",
+    "project_id": "proj-201",
+    "name": "Checkout Redesign",
+    "thumbnail_url": "https://figma-thumbs.example.com/FK002.png",
+    "last_modified": "2026-05-24T09:12:00Z",
+    "version": "4920455",
+    "role": "editor",
+    "editor_type": "figma"
+  },
+  {
+    "file_key": "FK003opqrstu",
+    "project_id": "proj-202",
+    "name": "Landing Page",
+    "thumbnail_url": "https://figma-thumbs.example.com/FK003.png",
+    "last_modified": "2026-05-20T18:45:00Z",
+    "version": "4918002",
+    "role": "owner",
+    "editor_type": "figma"
+  },
+  {
+    "file_key": "FK004vwxyz12",
+    "project_id": "proj-203",
+    "name": "Component Library",
+    "thumbnail_url": "https://figma-thumbs.example.com/FK004.png",
+    "last_modified": "2026-05-25T11:05:00Z",
+    "version": "4921330",
+    "role": "owner",
+    "editor_type": "figma"
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "exercise_type_id": "1",
+    "exercise_name": "Running (6 mph / 10 min mile)",
+    "category": "cardio",
+    "calories_per_minute_low": "10.0",
+    "calories_per_minute_high": "12.0",
+    "met_value": "9.8"
+  },
+  {
+    "exercise_type_id": "2",
+    "exercise_name": "Running (7.5 mph / 8 min mile)",
+    "category": "cardio",
+    "calories_per_minute_low": "12.5",
+    "calories_per_minute_high": "15.0",
+    "met_value": "11.5"
+  },
+  {
+    "exercise_type_id": "3",
+    "exercise_name": "Cycling (moderate 12-14 mph)",
+    "category": "cardio",
+    "calories_per_minute_low": "7.0",
+    "calories_per_minute_high": "9.0",
+    "met_value": "8.0"
+  },
+  {
+    "exercise_type_id": "4",
+    "exercise_name": "Cycling (vigorous 14-16 mph)",
+    "category": "cardio",
+    "calories_per_minute_low": "9.5",
+    "calories_per_minute_high": "12.0",
+    "met_value": "10.0"
+  },
+  {
+    "exercise_type_id": "5",
+    "exercise_name": "Walking (3.5 mph brisk)",
+    "category": "cardio",
+    "calories_per_minute_low": "4.0",
+    "calories_per_minute_high": "5.5",
+    "met_value": "4.3"
+  },
+  {
+    "exercise_type_id": "6",
+    "exercise_name": "Weight Training (moderate)",
+    "category": "strength",
+    "calories_per_minute_low": "5.0",
+    "calories_per_minute_high": "7.0",
+    "met_value": "5.0"
+  },
+  {
+    "exercise_type_id": "7",
+    "exercise_name": "Weight Training (vigorous)",
+    "category": "strength",
+    "calories_per_minute_low": "7.0",
+    "calories_per_minute_high": "9.5",
+    "met_value": "6.0"
+  },
+  {
+    "exercise_type_id": "8",
+    "exercise_name": "Swimming (moderate laps)",
+    "category": "cardio",
+    "calories_per_minute_low": "7.5",
+    "calories_per_minute_high": "10.0",
+    "met_value": "7.0"
+  },
+  {
+    "exercise_type_id": "9",
+    "exercise_name": "Elliptical Trainer (moderate)",
+    "category": "cardio",
+    "calories_per_minute_low": "7.0",
+    "calories_per_minute_high": "9.0",
+    "met_value": "7.0"
+  },
+  {
+    "exercise_type_id": "10",
+    "exercise_name": "Yoga (Vinyasa)",
+    "category": "flexibility",
+    "calories_per_minute_low": "4.5",
+    "calories_per_minute_high": "6.5",
+    "met_value": "4.0"
+  },
+  {
+    "exercise_type_id": "11",
+    "exercise_name": "Jump Rope (moderate)",
+    "category": "cardio",
+    "calories_per_minute_low": "10.0",
+    "calories_per_minute_high": "13.0",
+    "met_value": "10.0"
+  },
+  {
+    "exercise_type_id": "12",
+    "exercise_name": "Rowing Machine (moderate)",
+    "category": "cardio",
+    "calories_per_minute_low": "7.0",
+    "calories_per_minute_high": "9.5",
+    "met_value": "7.0"
+  },
+  {
+    "exercise_type_id": "13",
+    "exercise_name": "HIIT (High Intensity Interval Training)",
+    "category": "cardio",
+    "calories_per_minute_low": "10.0",
+    "calories_per_minute_high": "14.0",
+    "met_value": "12.0"
+  },
+  {
+    "exercise_type_id": "14",
+    "exercise_name": "Hiking (moderate terrain)",
+    "category": "cardio",
+    "calories_per_minute_low": "5.5",
+    "calories_per_minute_high": "8.0",
+    "met_value": "6.0"
+  },
+  {
+    "exercise_type_id": "15",
+    "exercise_name": "Basketball (recreational)",
+    "category": "cardio",
+    "calories_per_minute_low": "6.5",
+    "calories_per_minute_high": "9.0",
+    "met_value": "6.5"
+  },
+  {
+    "exercise_type_id": "16",
+    "exercise_name": "Stretching (general)",
+    "category": "flexibility",
+    "calories_per_minute_low": "2.0",
+    "calories_per_minute_high": "3.0",
+    "met_value": "2.3"
+  },
+  {
+    "exercise_type_id": "17",
+    "exercise_name": "Stair Climbing",
+    "category": "cardio",
+    "calories_per_minute_low": "8.0",
+    "calories_per_minute_high": "11.0",
+    "met_value": "9.0"
+  },
+  {
+    "exercise_type_id": "18",
+    "exercise_name": "Push-ups (moderate effort)",
+    "category": "strength",
+    "calories_per_minute_low": "5.5",
+    "calories_per_minute_high": "7.5",
+    "met_value": "5.0"
+  },
+  {
+    "exercise_type_id": "101",
+    "exercise_name": "Walking (easy pace)",
+    "category": "cardio",
+    "calories_per_minute_low": "3",
+    "calories_per_minute_high": "4",
+    "met_value": "3"
+  },
+  {
+    "exercise_type_id": "102",
+    "exercise_name": "Walking (brisk pace)",
+    "category": "cardio",
+    "calories_per_minute_low": "4",
+    "calories_per_minute_high": "5.5",
+    "met_value": "4.3"
+  },
+  {
+    "exercise_type_id": "103",
+    "exercise_name": "Stationary Bike (light)",
+    "category": "cardio",
+    "calories_per_minute_low": "4",
+    "calories_per_minute_high": "6",
+    "met_value": "4"
+  },
+  {
+    "exercise_type_id": "104",
+    "exercise_name": "Resistance Training (light)",
+    "category": "strength",
+    "calories_per_minute_low": "3",
+    "calories_per_minute_high": "5",
+    "met_value": "3.5"
+  },
+  {
+    "exercise_type_id": "105",
+    "exercise_name": "Stretching / Mobility",
+    "category": "flexibility",
+    "calories_per_minute_low": "2",
+    "calories_per_minute_high": "3",
+    "met_value": "2.3"
+  }
+]

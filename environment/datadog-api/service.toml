@@ -1,0 +1,5 @@
+[service]
+name = "datadog-api"
+port = 8048
+env_var_name = "DATADOG_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,5 @@
+order_id,item_id,quantity,unit_price,line_total
+ord_001,mi_001,1,4500,4500
+ord_001,mi_003,1,2800,2800
+ord_002,mi_010,1,3500,3500
+ord_002,mi_011,1,3200,3200

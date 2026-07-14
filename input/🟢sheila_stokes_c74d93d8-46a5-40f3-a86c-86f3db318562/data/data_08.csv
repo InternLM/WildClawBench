@@ -1,0 +1,6 @@
+site_code,zone,avg_throughput_mbps,congestion_index
+NGR-114,Minna,42.1,0.61
+NGR-118,Suleja,38.7,0.66
+NGR-121,Bida,45.3,0.52
+NGR-127,Kontagora,33.9,0.71
+NGR-130,Lapai,40.2,0.58

@@ -1,0 +1,3 @@
+id,name,section,descriptionHeading,description,room,ownerId,courseState,creationTime,updateTime,enrollmentCode,alternateLink,guardiansEnabled,calendarId
+course_year_5_maitama,Year 5 Maitama International,Class 5A,Year 5 Mixed,"Year 5 mixed subjects with Mrs. Adebayo",Room 12,user_mrs_adebayo_year5,ACTIVE,2026-09-05T10:00:00Z,2026-09-30T07:48:00Z,Y5MA26,https://classroom.google.com/c/Y5MA26,true,
+course_year_2_maitama,Year 2 Maitama International,Class 2B,Year 2 Mixed,"Year 2 mixed subjects with Mrs. Olaitan",Room 5,user_mrs_olaitan_year2,ACTIVE,2026-09-05T10:00:00Z,2026-09-22T09:00:00Z,Y2MA26,https://classroom.google.com/c/Y2MA26,true,

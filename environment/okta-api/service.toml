@@ -1,0 +1,5 @@
+[service]
+name = "okta-api"
+port = 8049
+env_var_name = "OKTA_API_URL"
+healthcheck_path = "/health"

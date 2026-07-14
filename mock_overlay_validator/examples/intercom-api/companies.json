@@ -1,0 +1,42 @@
+[
+  {
+    "id": "company-brightpath",
+    "company_id": "BP-001",
+    "name": "Brightpath",
+    "plan": "Pro",
+    "monthly_spend": "499.0",
+    "user_count": "2",
+    "industry": "Software",
+    "created_at": "2025-09-01T08:00:00.000Z"
+  },
+  {
+    "id": "company-nimbus",
+    "company_id": "NB-002",
+    "name": "Nimbus Co",
+    "plan": "Growth",
+    "monthly_spend": "199.0",
+    "user_count": "2",
+    "industry": "Marketing",
+    "created_at": "2025-09-20T08:00:00.000Z"
+  },
+  {
+    "id": "company-helio",
+    "company_id": "HL-003",
+    "name": "Helio Labs",
+    "plan": "Enterprise",
+    "monthly_spend": "1499.0",
+    "user_count": "2",
+    "industry": "Hardware",
+    "created_at": "2025-10-05T08:00:00.000Z"
+  },
+  {
+    "id": "company-vela",
+    "company_id": "VT-004",
+    "name": "Vela Tech",
+    "plan": "Starter",
+    "monthly_spend": "49.0",
+    "user_count": "1",
+    "industry": "Consulting",
+    "created_at": "2025-11-10T08:00:00.000Z"
+  }
+]

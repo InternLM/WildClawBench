@@ -1,0 +1,2 @@
+Id,Name,Description,Type,UnitPrice,IncomeAccountRef_value,IncomeAccountRef_name,Active,Taxable
+1,General Services,General services and program fees,Service,0.00,13,Event Expenses,true,false

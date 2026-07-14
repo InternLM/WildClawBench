@@ -1,0 +1,14 @@
+{
+  "id": "urn:li:person:amelia-ortega",
+  "localizedFirstName": "Amelia",
+  "localizedLastName": "Ortega",
+  "headline": "VP Engineering at Orbit Labs | Distributed Systems",
+  "vanityName": "amelia-ortega",
+  "location": "Seattle, Washington, United States",
+  "industry": "Software Development",
+  "summary": "Engineering leader focused on developer platforms and reliability. Previously infra lead at two high-growth startups.",
+  "profilePicture": "https://media.example.com/amelia.png",
+  "publicProfileUrl": "https://www.linkedin.com/in/amelia-ortega",
+  "numConnections": 842,
+  "currentOrganizationId": "5001"
+}

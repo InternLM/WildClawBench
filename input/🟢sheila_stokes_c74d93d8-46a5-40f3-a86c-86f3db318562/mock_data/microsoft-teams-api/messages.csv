@@ -1,0 +1,13 @@
+id,channel_id,team_id,from_user_id,from_display_name,content,content_type,importance,created_date
+tm-501,chan-northcentral,team-netplanning,user-11,Yetunde Bakare,"Nasarawa acquisition standup at 10, room 3.",text,normal,2026-09-11T09:01:00Z
+tm-502,chan-northcentral,team-netplanning,user-12,Babatunde Olatunji,Niger State congestion pack uploaded to the channel files.,text,normal,2026-09-12T09:02:00Z
+tm-503,chan-northcentral,team-netplanning,user-13,Field Ops,Can someone confirm the generator delivery window for the rural masts?,text,normal,2026-09-13T09:03:00Z
+tm-504,chan-qos,team-netplanning,user-14,QoS Team,Reminder: quarterly QoS review slides due Friday.,text,high,2026-09-14T09:04:00Z
+tm-505,chan-nasarawa,team-netplanning,user-15,Grace Effiong,Community engagement notes from Lafia added.,html,normal,2026-09-15T09:05:00Z
+tm-506,chan-northcentral,team-netplanning,user-16,Site Team,"Field team back from Minna, report to follow.",text,normal,2026-09-16T09:06:00Z
+tm-507,chan-nasarawa,team-netplanning,user-17,Ibrahim Sani,Who is covering the Suleja site visit next week?,text,normal,2026-09-17T09:07:00Z
+tm-508,chan-qos,team-netplanning,user-18,Capacity Desk,Capacity upgrade list for Kontagora looks good to me.,html,normal,2026-09-18T09:08:00Z
+tm-509,chan-northcentral,team-netplanning,user-19,PMO,Please update the deployment tracker by EOD.,text,urgent,2026-09-19T09:09:00Z
+tm-510,chan-northcentral,team-netplanning,user-20,Training,Lunch and learn on RF planning moved to Thursday.,text,normal,2026-09-20T09:10:00Z
+tm-511,chan-northcentral,team-netplanning,user-21,HR,Welcome to the new graduate engineers joining the team.,html,normal,2026-09-21T09:11:00Z
+tm-512,chan-northcentral,team-netplanning,user-22,Facilities,"Printer on 4th floor is down, use the 3rd floor one.",text,low,2026-09-22T09:12:00Z

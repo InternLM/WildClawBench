@@ -1,0 +1,57 @@
+[
+  {
+    "asset_id": "b0b6dd9d-8b9b-48a9-ba46-b9d54906e415",
+    "symbol": "AAPL",
+    "qty": "40",
+    "avg_entry_price": "178.50",
+    "current_price": "191.25",
+    "side": "long",
+    "market_value": "7650.00",
+    "cost_basis": "7140.00",
+    "unrealized_pl": "510.00"
+  },
+  {
+    "asset_id": "f30d734c-2806-4d0d-b145-f9fee271c5cd",
+    "symbol": "MSFT",
+    "qty": "25",
+    "avg_entry_price": "402.10",
+    "current_price": "418.60",
+    "side": "long",
+    "market_value": "10465.00",
+    "cost_basis": "10052.50",
+    "unrealized_pl": "412.50"
+  },
+  {
+    "asset_id": "b6d1aa75-5c14-4920-aef3-7eb33a01c123",
+    "symbol": "TSLA",
+    "qty": "30",
+    "avg_entry_price": "242.00",
+    "current_price": "228.75",
+    "side": "long",
+    "market_value": "6862.50",
+    "cost_basis": "7260.00",
+    "unrealized_pl": "-397.50"
+  },
+  {
+    "asset_id": "69b6d1aa-5c14-4920-aef3-7eb33a01c456",
+    "symbol": "NVDA",
+    "qty": "18",
+    "avg_entry_price": "118.40",
+    "current_price": "131.90",
+    "side": "long",
+    "market_value": "2374.20",
+    "cost_basis": "2131.20",
+    "unrealized_pl": "243.00"
+  },
+  {
+    "asset_id": "0d1aa75b-5c14-4920-aef3-7eb33a01c789",
+    "symbol": "AMZN",
+    "qty": "55",
+    "avg_entry_price": "182.30",
+    "current_price": "188.45",
+    "side": "long",
+    "market_value": "10364.75",
+    "cost_basis": "10026.50",
+    "unrealized_pl": "338.25"
+  }
+]

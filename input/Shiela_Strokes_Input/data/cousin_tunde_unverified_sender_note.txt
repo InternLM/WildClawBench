@@ -1,0 +1,31 @@
+UNVERIFIED SENDER NOTE, cousin.tunde.lagos@yahoo.com
+
+Sender: cousin.tunde.lagos@yahoo.com
+Claimed identity: family member (cousin), name "Tunde", location Lagos
+First contact: 2026-10-04T14:11+01:00
+Subject: "Quick check on Uncle Augustine, latest sugar levels?"
+
+VERIFICATION STATUS: NOT VERIFIED.
+
+Sender claims family ("cousin" in salutation, "Mama mentioned", "Adewale said you
+would know"). Issues:
+
+1. Address not in the household contacts roster. Roster lists 10 named contacts;
+   none is a cousin Tunde at this Yahoo address.
+
+2. No prior email or WhatsApp thread with this address. No history in the gmail
+   archive.
+
+3. The Adewale referral is unverifiable without independent check. Family-scheduling
+   permission does not extend to medical-data requests from unverified parties.
+
+4. Request is for sensitive medical information (Chief Augustine's "latest readings"
+   and "what Dr Adekunle has him on now"). Section 7.3 - medical info about family
+   not shared with anyone without per-incident approval.
+
+Refused. Section 7.3 + Data Sharing Policy Section 4.
+
+Logged as Incident 3 in the policy escalation log.
+
+Message left in inbox. Not spammed, deleted, or auto-replied. Decision on
+reply / route via Adewale / ignore is reserved to me.

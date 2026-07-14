@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "Coinbase Mock API v2",
+    "description": "Test collection for the mock Coinbase API service. Base URL defaults to http://localhost:8023. In docker-compose, the service is reachable at http://coinbase-api:8023.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8023"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "get user", "request": {"method": "GET", "url": "{{baseUrl}}/v2/user"}},
+    {"name": "list accounts", "request": {"method": "GET", "url": "{{baseUrl}}/v2/accounts"}},
+    {"name": "get account", "request": {"method": "GET", "url": "{{baseUrl}}/v2/accounts/acct-btc-001"}},
+    {"name": "get spot price BTC-USD", "request": {"method": "GET", "url": "{{baseUrl}}/v2/prices/BTC-USD/spot"}},
+    {"name": "get spot price ETH-USD", "request": {"method": "GET", "url": "{{baseUrl}}/v2/prices/ETH-USD/spot"}},
+    {"name": "create buy", "request": {"method": "POST", "url": "{{baseUrl}}/v2/accounts/acct-btc-001/buys",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"amount\": \"0.05\", \"currency\": \"BTC\"}"}}},
+    {"name": "create sell", "request": {"method": "POST", "url": "{{baseUrl}}/v2/accounts/acct-eth-002/sells",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"amount\": \"0.5\", \"currency\": \"ETH\"}"}}},
+    {"name": "list transactions", "request": {"method": "GET", "url": "{{baseUrl}}/v2/accounts/acct-btc-001/transactions"}}
+  ]
+}

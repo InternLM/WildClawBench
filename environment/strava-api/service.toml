@@ -1,0 +1,5 @@
+[service]
+name = "strava-api"
+port = 8060
+env_var_name = "STRAVA_API_URL"
+healthcheck_path = "/health"

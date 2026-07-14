@@ -1,0 +1,5 @@
+[service]
+name = "servicenow-api"
+port = 8071
+env_var_name = "SERVICENOW_API_URL"
+healthcheck_path = "/health"

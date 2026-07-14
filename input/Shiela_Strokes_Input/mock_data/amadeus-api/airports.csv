@@ -1,0 +1,5 @@
+iata_code,name,city_name,city_code,country_name,country_code,latitude,longitude,timezone
+ABV,Nnamdi Azikiwe Intl,Abuja,ABV,Nigeria,NG,9.0068,7.2630,Africa/Lagos
+LOS,Murtala Muhammed Intl,Lagos,LOS,Nigeria,NG,6.5774,3.3211,Africa/Lagos
+PHC,Port Harcourt Intl,Port Harcourt,PHC,Nigeria,NG,5.0151,6.9496,Africa/Lagos
+KAN,Mallam Aminu Kano Intl,Kano,KAN,Nigeria,NG,12.0476,8.5246,Africa/Lagos

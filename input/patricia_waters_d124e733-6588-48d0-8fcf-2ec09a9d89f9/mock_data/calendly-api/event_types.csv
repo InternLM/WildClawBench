@@ -1,0 +1,3 @@
+uuid,owner,name,slug,duration,kind,color,active,description,scheduling_url,created_at
+et-1,patricia.waters@Finthesiss.ai,Intake call,intake-call,20,solo,#0099ff,false,Initial intake call (not currently shared with parents),https://calendly.example/patricia/intake-call,2025-06-01T09:00:00
+et-2,patricia.waters@Finthesiss.ai,Professional chat,prof-chat,30,solo,#22aa66,true,Colleague coordination,https://calendly.example/patricia/prof-chat,2025-06-01T09:05:00

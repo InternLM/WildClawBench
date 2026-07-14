@@ -1,0 +1,56 @@
+[
+  {
+    "id": "job-3001",
+    "title": "Senior Backend Engineer",
+    "status": "open",
+    "department": "Engineering",
+    "location": "San Francisco",
+    "opened_at": "2026-03-01T00:00:00Z",
+    "closed_at": ""
+  },
+  {
+    "id": "job-3002",
+    "title": "Frontend Engineer",
+    "status": "open",
+    "department": "Engineering",
+    "location": "Remote",
+    "opened_at": "2026-03-10T00:00:00Z",
+    "closed_at": ""
+  },
+  {
+    "id": "job-3003",
+    "title": "Product Designer",
+    "status": "open",
+    "department": "Design",
+    "location": "New York",
+    "opened_at": "2026-03-15T00:00:00Z",
+    "closed_at": ""
+  },
+  {
+    "id": "job-3004",
+    "title": "Data Scientist",
+    "status": "open",
+    "department": "Data",
+    "location": "Remote",
+    "opened_at": "2026-03-20T00:00:00Z",
+    "closed_at": ""
+  },
+  {
+    "id": "job-3005",
+    "title": "DevOps Engineer",
+    "status": "open",
+    "department": "Engineering",
+    "location": "Austin",
+    "opened_at": "2026-04-01T00:00:00Z",
+    "closed_at": ""
+  },
+  {
+    "id": "job-3006",
+    "title": "Engineering Manager",
+    "status": "closed",
+    "department": "Engineering",
+    "location": "San Francisco",
+    "opened_at": "2026-01-05T00:00:00Z",
+    "closed_at": "2026-03-28T00:00:00Z"
+  }
+]

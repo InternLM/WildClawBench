@@ -1,0 +1,7 @@
+id,name,activity_type,distance,average_grade,maximum_grade,elevation_high,elevation_low,climb_category,city,state
+seg_aso_main_trail,Aso Rock Main Trail,Hike,5800,6.2,14.5,920,480,categorized,Abuja,FCT
+seg_aso_summit_loop,Aso Rock Summit Loop,Hike,2400,9.1,16.2,945,720,categorized,Abuja,FCT
+seg_maitama_circ,Maitama Long Circuit,Walk,4100,1.4,3.2,480,470,flat,Abuja,FCT
+seg_wuse_zone_5,Wuse Zone 5 Loop,Walk,3800,0.8,2.1,478,472,flat,Abuja,FCT
+seg_three_arms,Three Arms Zone Loop,Walk,4500,1.2,2.6,481,472,flat,Abuja,FCT
+seg_asokoro_quiet,Asokoro Quiet Streets,Walk,3200,0.9,2.3,475,468,flat,Abuja,FCT

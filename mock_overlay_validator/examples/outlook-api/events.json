@@ -1,0 +1,74 @@
+[
+  {
+    "id": "AAMkAGevt0000001",
+    "subject": "Sprint Planning",
+    "organizer_name": "Alex Carter",
+    "organizer_address": "alex.carter@contoso.com",
+    "location": "Teams Meeting",
+    "start_date": "2026-05-11T14:00:00Z",
+    "end_date": "2026-05-11T15:00:00Z",
+    "is_all_day": "false",
+    "is_online": "true",
+    "attendees": "priya.nair@contoso.com;diego.santos@contoso.com"
+  },
+  {
+    "id": "AAMkAGevt0000002",
+    "subject": "1:1 with Priya",
+    "organizer_name": "Priya Nair",
+    "organizer_address": "priya.nair@contoso.com",
+    "location": "Office 4B",
+    "start_date": "2026-05-12T10:00:00Z",
+    "end_date": "2026-05-12T10:30:00Z",
+    "is_all_day": "false",
+    "is_online": "false",
+    "attendees": "alex.carter@contoso.com"
+  },
+  {
+    "id": "AAMkAGevt0000003",
+    "subject": "Q3 Roadmap Workshop",
+    "organizer_name": "Lena Fischer",
+    "organizer_address": "lena.fischer@contoso.com",
+    "location": "Boardroom",
+    "start_date": "2026-05-18T13:00:00Z",
+    "end_date": "2026-05-18T16:00:00Z",
+    "is_all_day": "false",
+    "is_online": "false",
+    "attendees": "alex.carter@contoso.com;sam.okoro@contoso.com"
+  },
+  {
+    "id": "AAMkAGevt0000004",
+    "subject": "Company Holiday",
+    "organizer_name": "HR",
+    "organizer_address": "hr@contoso.com",
+    "location": "",
+    "start_date": "2026-05-25T00:00:00Z",
+    "end_date": "2026-05-26T00:00:00Z",
+    "is_all_day": "true",
+    "is_online": "false",
+    "attendees": ""
+  },
+  {
+    "id": "AAMkAGevt0000005",
+    "subject": "Customer Demo - Vandelay",
+    "organizer_name": "Grace Lee",
+    "organizer_address": "grace.lee@contoso.com",
+    "location": "Teams Meeting",
+    "start_date": "2026-05-22T17:00:00Z",
+    "end_date": "2026-05-22T18:00:00Z",
+    "is_all_day": "false",
+    "is_online": "true",
+    "attendees": "alex.carter@contoso.com;omar.haddad@contoso.com"
+  },
+  {
+    "id": "AAMkAGevt0000006",
+    "subject": "All Hands",
+    "organizer_name": "Alex Carter",
+    "organizer_address": "alex.carter@contoso.com",
+    "location": "Auditorium",
+    "start_date": "2026-05-29T10:00:00Z",
+    "end_date": "2026-05-29T11:00:00Z",
+    "is_all_day": "false",
+    "is_online": "true",
+    "attendees": ""
+  }
+]

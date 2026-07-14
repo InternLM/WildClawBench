@@ -1,0 +1,5 @@
+[service]
+name = "nasa-api"
+port = 8077
+env_var_name = "NASA_API_URL"
+healthcheck_path = "/health"

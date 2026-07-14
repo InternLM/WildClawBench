@@ -1,0 +1,74 @@
+[
+  {
+    "id": "perm-001",
+    "file_id": "folder-eng",
+    "type": "user",
+    "role": "owner",
+    "email": "amelia@orbit-labs.com",
+    "display_name": "Amelia Ortega"
+  },
+  {
+    "id": "perm-002",
+    "file_id": "folder-eng",
+    "type": "user",
+    "role": "writer",
+    "email": "jonas@orbit-labs.com",
+    "display_name": "Jonas Pereira"
+  },
+  {
+    "id": "perm-003",
+    "file_id": "folder-eng",
+    "type": "user",
+    "role": "writer",
+    "email": "helena@orbit-labs.com",
+    "display_name": "Helena Park"
+  },
+  {
+    "id": "perm-004",
+    "file_id": "file-rfc-auth",
+    "type": "user",
+    "role": "owner",
+    "email": "amelia@orbit-labs.com",
+    "display_name": "Amelia Ortega"
+  },
+  {
+    "id": "perm-005",
+    "file_id": "file-rfc-auth",
+    "type": "user",
+    "role": "commenter",
+    "email": "jonas@orbit-labs.com",
+    "display_name": "Jonas Pereira"
+  },
+  {
+    "id": "perm-006",
+    "file_id": "file-rfc-billing",
+    "type": "user",
+    "role": "owner",
+    "email": "jonas@orbit-labs.com",
+    "display_name": "Jonas Pereira"
+  },
+  {
+    "id": "perm-007",
+    "file_id": "file-rfc-billing",
+    "type": "user",
+    "role": "writer",
+    "email": "amelia@orbit-labs.com",
+    "display_name": "Amelia Ortega"
+  },
+  {
+    "id": "perm-008",
+    "file_id": "file-budget",
+    "type": "domain",
+    "role": "reader",
+    "email": "orbit-labs.com",
+    "display_name": "Orbit Labs"
+  },
+  {
+    "id": "perm-009",
+    "file_id": "file-trace",
+    "type": "user",
+    "role": "owner",
+    "email": "helena@orbit-labs.com",
+    "display_name": "Helena Park"
+  }
+]

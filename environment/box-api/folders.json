@@ -1,0 +1,52 @@
+[
+  {
+    "id": "0",
+    "name": "All Files",
+    "parent_id": "",
+    "owner_id": "11446498",
+    "description": "Root folder",
+    "created_at": "2025-09-01T10:00:00-07:00",
+    "modified_at": "2026-05-20T14:00:00-07:00",
+    "item_count": "3"
+  },
+  {
+    "id": "160001",
+    "name": "Marketing",
+    "parent_id": "0",
+    "owner_id": "11446498",
+    "description": "Marketing collateral and assets",
+    "created_at": "2025-10-01T09:00:00-07:00",
+    "modified_at": "2026-05-18T16:20:00-07:00",
+    "item_count": "3"
+  },
+  {
+    "id": "160002",
+    "name": "Engineering",
+    "parent_id": "0",
+    "owner_id": "11446498",
+    "description": "Engineering docs and specs",
+    "created_at": "2025-10-02T09:00:00-07:00",
+    "modified_at": "2026-05-19T10:10:00-07:00",
+    "item_count": "2"
+  },
+  {
+    "id": "160003",
+    "name": "Finance",
+    "parent_id": "0",
+    "owner_id": "11446498",
+    "description": "Financial reports",
+    "created_at": "2025-10-03T09:00:00-07:00",
+    "modified_at": "2026-05-15T13:45:00-07:00",
+    "item_count": "1"
+  },
+  {
+    "id": "160004",
+    "name": "Campaigns",
+    "parent_id": "160001",
+    "owner_id": "22893011",
+    "description": "Active campaign folder",
+    "created_at": "2026-02-10T11:00:00-08:00",
+    "modified_at": "2026-05-10T12:00:00-08:00",
+    "item_count": "1"
+  }
+]

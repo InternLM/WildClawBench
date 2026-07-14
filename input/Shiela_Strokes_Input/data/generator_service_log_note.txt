@@ -1,0 +1,12 @@
+Gen-set service log location
+
+Hard copy:    facilities cupboard, level G, behind the front desk (key with Mr Sani)
+Soft copy:    facilities shared drive: /facilities/genset/service_log_2026.xlsx
+Maintained by: Aluko Generators Ltd (quarterly service contract)
+Next service: 2026-11-12 (per contract; reminder set on calendar)
+Last service: 2026-08-12 (300hr full, oil change, filters, load test passed)
+
+If gen fails:
+  Step 1: switch to UPS bank (90 min runtime)
+  Step 2: call Mr Sani, ext 4422
+  Step 3: if after-hours, Aluko emergency line +234 802 555 1010

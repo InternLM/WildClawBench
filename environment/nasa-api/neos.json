@@ -1,0 +1,98 @@
+[
+  {
+    "id": "3542519",
+    "name": "(2010 PK9)",
+    "close_approach_date": "2026-05-20",
+    "absolute_magnitude_h": "21.3",
+    "est_diameter_min_km": "0.1487",
+    "est_diameter_max_km": "0.3325",
+    "is_potentially_hazardous": "false",
+    "miss_distance_km": "4521330.5",
+    "relative_velocity_kph": "38211.7",
+    "orbiting_body": "Earth"
+  },
+  {
+    "id": "3726710",
+    "name": "(2015 TB145)",
+    "close_approach_date": "2026-05-20",
+    "absolute_magnitude_h": "19.9",
+    "est_diameter_min_km": "0.2837",
+    "est_diameter_max_km": "0.6343",
+    "is_potentially_hazardous": "true",
+    "miss_distance_km": "1980455.2",
+    "relative_velocity_kph": "126400.4",
+    "orbiting_body": "Earth"
+  },
+  {
+    "id": "3837604",
+    "name": "(2019 GT3)",
+    "close_approach_date": "2026-05-21",
+    "absolute_magnitude_h": "24.1",
+    "est_diameter_min_km": "0.0409",
+    "est_diameter_max_km": "0.0914",
+    "is_potentially_hazardous": "false",
+    "miss_distance_km": "7211900.8",
+    "relative_velocity_kph": "21044.9",
+    "orbiting_body": "Earth"
+  },
+  {
+    "id": "54016152",
+    "name": "(2020 SO)",
+    "close_approach_date": "2026-05-21",
+    "absolute_magnitude_h": "28.2",
+    "est_diameter_min_km": "0.0061",
+    "est_diameter_max_km": "0.0137",
+    "is_potentially_hazardous": "false",
+    "miss_distance_km": "310220.4",
+    "relative_velocity_kph": "8915.3",
+    "orbiting_body": "Earth"
+  },
+  {
+    "id": "2453309",
+    "name": "453309 (2008 UL90)",
+    "close_approach_date": "2026-05-22",
+    "absolute_magnitude_h": "18.4",
+    "est_diameter_min_km": "0.5650",
+    "est_diameter_max_km": "1.2632",
+    "is_potentially_hazardous": "true",
+    "miss_distance_km": "5602117.0",
+    "relative_velocity_kph": "98221.6",
+    "orbiting_body": "Earth"
+  },
+  {
+    "id": "3989218",
+    "name": "(2020 BX12)",
+    "close_approach_date": "2026-05-22",
+    "absolute_magnitude_h": "22.7",
+    "est_diameter_min_km": "0.0779",
+    "est_diameter_max_km": "0.1742",
+    "is_potentially_hazardous": "false",
+    "miss_distance_km": "3344210.9",
+    "relative_velocity_kph": "45120.2",
+    "orbiting_body": "Earth"
+  },
+  {
+    "id": "3092278",
+    "name": "(1999 RQ36)",
+    "close_approach_date": "2026-05-23",
+    "absolute_magnitude_h": "20.6",
+    "est_diameter_min_km": "0.2052",
+    "est_diameter_max_km": "0.4589",
+    "is_potentially_hazardous": "true",
+    "miss_distance_km": "890145.3",
+    "relative_velocity_kph": "72330.1",
+    "orbiting_body": "Earth"
+  },
+  {
+    "id": "3837012",
+    "name": "(2018 VP1)",
+    "close_approach_date": "2026-05-23",
+    "absolute_magnitude_h": "29.6",
+    "est_diameter_min_km": "0.0032",
+    "est_diameter_max_km": "0.0072",
+    "is_potentially_hazardous": "false",
+    "miss_distance_km": "150900.7",
+    "relative_velocity_kph": "17502.8",
+    "orbiting_body": "Earth"
+  }
+]

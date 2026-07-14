@@ -1,0 +1,58 @@
+[
+  {
+    "review_id": "rev-001",
+    "listing_id": "lst-101",
+    "guest_name": "Tomas R.",
+    "rating": "5",
+    "comment": "Bright and spotless, great location near taquerias.",
+    "created_at": "2026-04-12"
+  },
+  {
+    "review_id": "rev-002",
+    "listing_id": "lst-101",
+    "guest_name": "Hana K.",
+    "rating": "5",
+    "comment": "Ava was a wonderful host, super responsive.",
+    "created_at": "2026-04-28"
+  },
+  {
+    "review_id": "rev-003",
+    "listing_id": "lst-103",
+    "guest_name": "Liam O.",
+    "rating": "5",
+    "comment": "The bay views are unreal. Would book again.",
+    "created_at": "2026-03-30"
+  },
+  {
+    "review_id": "rev-004",
+    "listing_id": "lst-103",
+    "guest_name": "Sara M.",
+    "rating": "4",
+    "comment": "Lovely place, a bit of street noise at night.",
+    "created_at": "2026-05-02"
+  },
+  {
+    "review_id": "rev-005",
+    "listing_id": "lst-106",
+    "guest_name": "Greg P.",
+    "rating": "5",
+    "comment": "Perfect lake getaway, cabin was cozy and clean.",
+    "created_at": "2026-05-10"
+  },
+  {
+    "review_id": "rev-006",
+    "listing_id": "lst-105",
+    "guest_name": "Yuki T.",
+    "rating": "4",
+    "comment": "Comfortable room, shared kitchen was tidy.",
+    "created_at": "2026-04-19"
+  },
+  {
+    "review_id": "rev-007",
+    "listing_id": "lst-108",
+    "guest_name": "Marie L.",
+    "rating": "5",
+    "comment": "Steps from the beach, hammock was a nice touch.",
+    "created_at": "2026-05-15"
+  }
+]

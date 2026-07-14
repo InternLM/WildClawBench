@@ -1,0 +1,169 @@
+message_id,conversation_id,direction,from_wa_id,to_wa_id,type,text,template_name,status,sent_at
+wamsg_0073,conv_family_stokes,inbound,2348035557304,2348035557300,text,See you,,received,2026-08-06T09:24:00+01:00
+wamsg_0093,conv_funke,inbound,2348035557310,2348035557300,text,Driver here,,received,2026-08-06T10:03:00+01:00
+wamsg_0061,conv_family_stokes,outbound,2348035557300,2348035557300,text,Got it,,delivered,2026-08-06T17:56:00+01:00
+wamsg_0144,conv_brother,inbound,2348035557306,2348035557300,text,Thanks,,received,2026-08-06T20:22:00+01:00
+wamsg_0113,conv_binta,outbound,2348035557300,2348035557311,text,Praying for you,,delivered,2026-08-08T10:55:00+01:00
+wamsg_0168,conv_vendor,inbound,2348055559220,2348035557300,text,Heading out,,received,2026-08-08T15:58:00+01:00
+wamsg_0070,conv_family_stokes,inbound,2348035557304,2348035557300,text,Will do,,received,2026-08-08T19:39:00+01:00
+wamsg_0065,conv_family_stokes,inbound,2348035557304,2348035557300,text,Driver here,,received,2026-08-09T19:54:00+01:00
+wamsg_0117,conv_binta,outbound,2348035557300,2348035557311,text,Will check,,delivered,2026-08-10T10:27:00+01:00
+wamsg_0090,conv_funke,inbound,2348035557310,2348035557300,text,Bless,,received,2026-08-10T12:12:00+01:00
+wamsg_0069,conv_family_stokes,inbound,2348035557306,2348035557300,text,Driver here,,received,2026-08-10T12:34:00+01:00
+wamsg_0075,conv_family_stokes,inbound,2348035557301,2348035557300,text,See you,,received,2026-08-10T13:07:00+01:00
+wamsg_0154,conv_yetunde,inbound,2348035557308,2348035557300,text,Reached safely,,received,2026-08-10T16:25:00+01:00
+wamsg_0131,conv_mum,inbound,2348035557305,2348035557300,text,Praying for you,,received,2026-08-11T08:22:00+01:00
+wamsg_0142,conv_brother,outbound,2348035557300,2348035557306,text,OK,,delivered,2026-08-12T11:51:00+01:00
+wamsg_0127,conv_mum,inbound,2348035557305,2348035557300,text,Bless,,received,2026-08-12T19:47:00+01:00
+wamsg_0157,conv_school,outbound,2348035557300,2348035557350,text,Thanks,,delivered,2026-08-13T12:03:00+01:00
+wamsg_0110,conv_binta,outbound,2348035557300,2348035557311,text,Reached safely,,delivered,2026-08-13T19:02:00+01:00
+wamsg_0078,conv_family_stokes,inbound,2348035557305,2348035557300,text,Will do,,received,2026-08-14T08:58:00+01:00
+wamsg_0165,conv_vendor,inbound,2348055559220,2348035557300,text,Praying for you,,received,2026-08-14T19:35:00+01:00
+wamsg_0077,conv_family_stokes,inbound,2348035557305,2348035557300,text,Thanks,,received,2026-08-15T07:19:00+01:00
+wamsg_0109,conv_binta,inbound,2348035557311,2348035557300,text,Talk soon,,received,2026-08-15T14:47:00+01:00
+wamsg_0097,conv_funke,inbound,2348035557310,2348035557300,text,Will do,,received,2026-08-16T11:35:00+01:00
+wamsg_0124,conv_mum,inbound,2348035557305,2348035557300,text,Reached safely,,received,2026-08-16T13:06:00+01:00
+wamsg_0101,conv_funke,outbound,2348035557300,2348035557310,text,OK,,delivered,2026-08-16T19:41:00+01:00
+wamsg_0112,conv_binta,inbound,2348035557311,2348035557300,text,Sounds good,,received,2026-08-18T14:16:00+01:00
+wamsg_0162,conv_school,outbound,2348035557300,2348035557350,text,See you,,delivered,2026-08-18T20:07:00+01:00
+wamsg_0122,conv_mum,outbound,2348035557300,2348035557305,text,See you,,delivered,2026-08-20T19:30:00+01:00
+wamsg_0167,conv_vendor,outbound,2348035557300,2348055559220,text,Will do,,delivered,2026-08-21T11:06:00+01:00
+wamsg_0067,conv_family_stokes,inbound,2348035557305,2348035557300,text,Reached safely,,received,2026-08-22T09:34:00+01:00
+wamsg_0126,conv_mum,outbound,2348035557300,2348035557305,text,Thanks,,delivered,2026-08-22T20:20:00+01:00
+wamsg_0074,conv_family_stokes,inbound,2348035557301,2348035557300,text,Got it,,received,2026-08-22T20:46:00+01:00
+wamsg_0071,conv_family_stokes,inbound,2348035557305,2348035557300,text,Heading out,,received,2026-08-23T09:53:00+01:00
+wamsg_0089,conv_funke,inbound,2348035557310,2348035557300,text,Bless,,received,2026-08-25T13:08:00+01:00
+wamsg_0118,conv_binta,outbound,2348035557300,2348035557311,text,Driver here,,delivered,2026-08-25T13:24:00+01:00
+wamsg_0138,conv_brother,inbound,2348035557306,2348035557300,text,Talk soon,,received,2026-08-25T20:38:00+01:00
+wamsg_0095,conv_funke,inbound,2348035557310,2348035557300,text,Praying for you,,received,2026-08-26T11:31:00+01:00
+wamsg_0098,conv_funke,outbound,2348035557300,2348035557310,text,Lunch ready,,delivered,2026-08-26T21:06:00+01:00
+wamsg_0096,conv_funke,outbound,2348035557300,2348035557310,text,Got it,,delivered,2026-08-27T21:08:00+01:00
+wamsg_0099,conv_funke,outbound,2348035557300,2348035557310,text,See you,,delivered,2026-08-29T08:29:00+01:00
+wamsg_0066,conv_family_stokes,inbound,2348035557305,2348035557300,text,Talk soon,,received,2026-08-29T09:48:00+01:00
+wamsg_0057,conv_family_stokes,inbound,2348035557301,2348035557300,text,Thanks,,received,2026-08-30T11:07:00+01:00
+wamsg_0158,conv_school,outbound,2348035557300,2348035557350,text,Will check,,delivered,2026-08-30T18:26:00+01:00
+wamsg_0149,conv_yetunde,inbound,2348035557308,2348035557300,text,Lunch ready,,received,2026-08-30T21:18:00+01:00
+wamsg_0143,conv_brother,outbound,2348035557300,2348035557306,text,Will check,,delivered,2026-08-31T11:14:00+01:00
+wamsg_0058,conv_family_stokes,inbound,2348035557306,2348035557300,text,See you,,received,2026-08-31T12:07:00+01:00
+wamsg_0076,conv_family_stokes,inbound,2348035557301,2348035557300,text,Sounds good,,received,2026-08-31T16:30:00+01:00
+wamsg_0060,conv_family_stokes,inbound,2348035557306,2348035557300,text,Will check,,received,2026-08-31T22:52:00+01:00
+wamsg_0130,conv_mum,inbound,2348035557305,2348035557300,text,See you,,received,2026-09-01T09:01:00+01:00
+wamsg_0091,conv_funke,outbound,2348035557300,2348035557310,text,OK,,delivered,2026-09-01T20:14:00+01:00
+wamsg_0062,conv_family_stokes,inbound,2348035557301,2348035557300,text,Driver here,,received,2026-09-01T21:10:00+01:00
+wamsg_0094,conv_funke,outbound,2348035557300,2348035557310,text,Praying for you,,delivered,2026-09-02T08:01:00+01:00
+wamsg_0001,conv_family_stokes,inbound,2348035557301,2348035557300,text,"love, picking the kids up at 3:30 today. Will be late at the firm.",,received,2026-09-02T08:34:00+01:00
+wamsg_0092,conv_funke,inbound,2348035557310,2348035557300,text,Lunch ready,,received,2026-09-02T08:40:00+01:00
+wamsg_0002,conv_family_stokes,outbound,2348035557300,2348035557300,text,OK thanks. Tell Adunola I am proud of her test grade.,,delivered,2026-09-02T10:37:00+01:00
+wamsg_0114,conv_binta,inbound,2348035557311,2348035557300,text,Lunch ready,,received,2026-09-03T09:56:00+01:00
+wamsg_0059,conv_family_stokes,inbound,2348035557304,2348035557300,text,Heading out,,received,2026-09-03T17:55:00+01:00
+wamsg_0151,conv_yetunde,outbound,2348035557300,2348035557308,text,See you,,delivered,2026-09-03T21:20:00+01:00
+wamsg_0153,conv_yetunde,outbound,2348035557300,2348035557308,text,Heading out,,delivered,2026-09-04T21:40:00+01:00
+wamsg_0139,conv_brother,outbound,2348035557300,2348035557306,text,Sounds good,,delivered,2026-09-05T09:51:00+01:00
+wamsg_0141,conv_brother,outbound,2348035557300,2348035557306,text,See you,,delivered,2026-09-06T08:28:00+01:00
+wamsg_0160,conv_school,outbound,2348035557300,2348035557350,text,See you,,delivered,2026-09-06T13:38:00+01:00
+wamsg_0003,conv_family_stokes,inbound,2348035557304,2348035557300,text,Sheila ore. Today is a good day. Took the morning walk Mama suggested.,,received,2026-09-06T14:44:00+01:00
+wamsg_0004,conv_family_stokes,outbound,2348035557300,2348035557300,text,"Baba, glad to hear. Will call after church Sunday.",,delivered,2026-09-06T16:17:00+01:00
+wamsg_0111,conv_binta,inbound,2348035557311,2348035557300,text,Will check,,received,2026-09-07T08:33:00+01:00
+wamsg_0080,conv_family_stokes,inbound,2348035557305,2348035557300,text,Heading out,,received,2026-09-07T09:43:00+01:00
+wamsg_0159,conv_school,outbound,2348035557300,2348035557350,text,Driver here,,delivered,2026-09-07T14:32:00+01:00
+wamsg_0132,conv_mum,outbound,2348035557300,2348035557305,text,Sounds good,,delivered,2026-09-07T15:17:00+01:00
+wamsg_0166,conv_vendor,outbound,2348035557300,2348055559220,text,Driver here,,delivered,2026-09-07T16:10:00+01:00
+wamsg_0129,conv_mum,inbound,2348035557305,2348035557300,text,Will do,,received,2026-09-07T16:37:00+01:00
+wamsg_0161,conv_school,outbound,2348035557300,2348035557350,text,Lunch ready,,delivered,2026-09-07T17:15:00+01:00
+wamsg_0068,conv_family_stokes,outbound,2348035557300,2348035557300,text,OK,,delivered,2026-09-07T18:15:00+01:00
+wamsg_0100,conv_funke,outbound,2348035557300,2348035557310,text,Bless,,delivered,2026-09-07T20:24:00+01:00
+wamsg_0005,conv_family_stokes,inbound,2348035557305,2348035557300,text,"Sheila, planning the lunch for when you come next month. Olufemi requests jollof.",,received,2026-09-09T11:42:00+01:00
+wamsg_0072,conv_family_stokes,outbound,2348035557300,2348035557300,text,Thanks,,delivered,2026-09-10T12:05:00+01:00
+wamsg_0079,conv_family_stokes,inbound,2348035557304,2348035557300,text,See you,,received,2026-09-11T11:30:00+01:00
+wamsg_0137,conv_brother,outbound,2348035557300,2348035557306,text,Got it,,delivered,2026-09-11T12:24:00+01:00
+wamsg_0006,conv_family_stokes,inbound,2348035557306,2348035557300,text,"Sis, ran some errands for Baba today. All sorted.",,received,2026-09-12T17:54:00+01:00
+wamsg_0007,conv_family_stokes,outbound,2348035557300,2348035557300,text,Adewale - bless. Will transfer for it.,,delivered,2026-09-12T18:13:00+01:00
+wamsg_0063,conv_family_stokes,inbound,2348035557305,2348035557300,text,Thanks,,received,2026-09-13T08:17:00+01:00
+wamsg_0064,conv_family_stokes,inbound,2348035557306,2348035557300,text,Reached safely,,received,2026-09-13T08:38:00+01:00
+wamsg_0123,conv_mum,inbound,2348035557305,2348035557300,text,Will check,,received,2026-09-15T09:55:00+01:00
+wamsg_0116,conv_binta,inbound,2348035557311,2348035557300,text,See you,,received,2026-09-15T17:13:00+01:00
+wamsg_0128,conv_mum,outbound,2348035557300,2348035557305,text,OK,,delivered,2026-09-16T08:46:00+01:00
+wamsg_0009,conv_family_stokes,outbound,2348035557300,2348035557300,text,"Yes, locked. Will leave the office on time.",,delivered,2026-09-16T09:15:00+01:00
+wamsg_0008,conv_family_stokes,inbound,2348035557301,2348035557300,text,Anniversary plans Saturday - Wakkis at 19:30 confirmed.,,received,2026-09-16T09:31:00+01:00
+wamsg_0150,conv_yetunde,inbound,2348035557308,2348035557300,text,Got it,,received,2026-09-17T10:03:00+01:00
+wamsg_0115,conv_binta,outbound,2348035557300,2348035557311,text,Praying for you,,delivered,2026-09-17T15:31:00+01:00
+wamsg_0140,conv_brother,outbound,2348035557300,2348035557306,text,Talk soon,,delivered,2026-09-18T12:38:00+01:00
+wamsg_0102,conv_funke,outbound,2348035557300,2348035557310,text,Bless,,delivered,2026-09-18T19:00:00+01:00
+wamsg_0010,conv_family_stokes,inbound,2348035557305,2348035557300,text,"Ore mi, Adunola's birthday card in the post.",,received,2026-09-19T13:20:00+01:00
+wamsg_0152,conv_yetunde,inbound,2348035557308,2348035557300,text,Sounds good,,received,2026-09-19T14:15:00+01:00
+wamsg_0125,conv_mum,inbound,2348035557305,2348035557300,text,Got it,,received,2026-09-19T21:13:00+01:00
+wamsg_0011,conv_family_stokes,inbound,2348035557301,2348035557300,text,Adunola's school PTA newsletter dropped. Reading it tonight.,,received,2026-09-22T19:19:00+01:00
+wamsg_0012,conv_family_stokes,inbound,2348035557304,2348035557300,text,Heading out with Adewale on Wednesday morning. Will tell you about it after.,,received,2026-09-24T10:16:00+01:00
+wamsg_0013,conv_family_stokes,outbound,2348035557300,2348035557300,text,"Baba, message me after. Have a good day.",,delivered,2026-09-24T11:10:00+01:00
+wamsg_0014,conv_family_stokes,inbound,2348035557301,2348035557300,text,Olufemi's football boots - one size up. Will get on Saturday.,,received,2026-09-26T14:06:00+01:00
+wamsg_0016,conv_family_stokes,outbound,2348035557300,2348035557300,text,Excellent. One less thing.,,delivered,2026-09-28T09:22:00+01:00
+wamsg_0015,conv_family_stokes,inbound,2348035557306,2348035557300,text,"Sis, Baba's pension paperwork went through fully.",,received,2026-09-28T09:33:00+01:00
+wamsg_0017,conv_family_stokes,inbound,2348035557305,2348035557300,text,Lagos visit next month - both rooms ready.,,received,2026-09-30T17:19:00+01:00
+wamsg_0106,conv_binta,outbound,2348035557300,2348035557300,text,OK I will get from Wuse market.,,delivered,2026-10-01T09:01:00+01:00
+wamsg_0105,conv_binta,inbound,2348035557311,2348035557300,text,"Madam, market list for Saturday - palm oil running low.",,received,2026-10-01T09:17:00+01:00
+wamsg_0019,conv_family_stokes,outbound,2348035557300,2348035557300,text,Locked. Looking forward.,,delivered,2026-10-01T11:05:00+01:00
+wamsg_0018,conv_family_stokes,inbound,2348035557301,2348035557300,text,I confirmed dinner reservation Wakkis 7:30 PM Saturday.,,received,2026-10-01T11:20:00+01:00
+wamsg_0155,conv_school,inbound,2348035557350,2348035557300,text,"Dear Parents, half term Oct 23-25 reminder. School Office.",,received,2026-10-01T12:00:00+01:00
+wamsg_0156,conv_school,inbound,2348035557350,2348035557300,text,"Dear Parents, PE schedule moves to Wednesdays starting Oct 14. School Office.",,received,2026-10-02T10:36:00+01:00
+wamsg_0145,conv_yetunde,inbound,2348035557308,2348035557300,text,"Sheila, draft agenda for Tue mentorship session in email.",,received,2026-10-02T14:45:00+01:00
+wamsg_0146,conv_yetunde,outbound,2348035557300,2348035557300,text,Good. Looks tight. See you Tue.,,delivered,2026-10-02T14:49:00+01:00
+wamsg_0133,conv_brother,inbound,2348035557306,2348035557300,text,Sis lets coordinate the Lagos trip end of month.,,received,2026-10-02T15:24:00+01:00
+wamsg_0134,conv_brother,outbound,2348035557300,2348035557300,text,Yes. Will firm up dates today.,,delivered,2026-10-02T15:33:00+01:00
+wamsg_0081,conv_funke,inbound,2348035557310,2348035557300,text,Wed dinner Salamander 6:30. Bringing the gossip.,,received,2026-10-02T19:40:00+01:00
+wamsg_0082,conv_funke,outbound,2348035557300,2348035557300,text,Confirmed. See you then.,,delivered,2026-10-02T19:43:00+01:00
+wamsg_0119,conv_mum,inbound,2348035557305,2348035557300,text,"Sheila, did you sleep well last night?",,received,2026-10-03T07:32:00+01:00
+wamsg_0120,conv_mum,outbound,2348035557300,2348035557300,text,"Mama, late night after dinner. Will catch up tonight.",,delivered,2026-10-03T08:36:00+01:00
+wamsg_0135,conv_brother,inbound,2348035557306,2348035557300,text,Will Bayo pick you up from the airport?,,received,2026-10-03T11:30:00+01:00
+wamsg_0136,conv_brother,outbound,2348035557300,2348035557300,text,Yes confirm with him please.,,delivered,2026-10-03T11:33:00+01:00
+wamsg_0083,conv_funke,inbound,2348035557310,2348035557300,text,"Sheila, my office Christmas plans clashing yours?",,received,2026-10-03T12:30:00+01:00
+wamsg_0084,conv_funke,outbound,2348035557300,2348035557300,text,Not sure yet. Will know by Wed.,,delivered,2026-10-03T13:51:00+01:00
+wamsg_0104,conv_binta,outbound,2348035557300,2348035557300,text,Yes 7 is good Binta. Thank you.,,delivered,2026-10-03T16:31:00+01:00
+wamsg_0103,conv_binta,inbound,2348035557311,2348035557300,text,"Madam, soup for tonight ready. Shall I serve before 7?",,received,2026-10-03T16:39:00+01:00
+wamsg_0020,conv_family_stokes,inbound,2348035557301,2348035557300,text,Heading home early. See you at 7.,,received,2026-10-03T18:17:00+01:00
+wamsg_0021,conv_family_stokes,outbound,2348035557300,2348035557300,text,Walking out now. See you soon.,,delivered,2026-10-03T18:42:00+01:00
+wamsg_0022,conv_family_stokes,inbound,2348035557304,2348035557300,text,Happy anniversary! 13 strong years.,,received,2026-10-03T19:57:00+01:00
+wamsg_0023,conv_family_stokes,inbound,2348035557305,2348035557300,text,"Eba ti pe e mi, 13 odun! Congratulations.",,received,2026-10-03T20:15:00+01:00
+wamsg_0024,conv_family_stokes,outbound,2348035557300,2348035557300,text,Mama thank you. Just sat down with him.,,delivered,2026-10-03T20:31:00+01:00
+wamsg_0026,conv_family_stokes,outbound,2348035557300,2348035557300,text,Adewale - very funny.,,delivered,2026-10-03T21:03:00+01:00
+wamsg_0025,conv_family_stokes,inbound,2348035557306,2348035557300,text,"Sis, 13 years! Tell Adeyemi well done for putting up with you.",,received,2026-10-03T21:08:00+01:00
+wamsg_0027,conv_family_stokes,outbound,2348035557300,2348035557300,text,"Mama, late church today. See you at 1.",,delivered,2026-10-04T07:10:00+01:00
+wamsg_0028,conv_family_stokes,inbound,2348035557305,2348035557300,text,OK ore. The pepper soup is on already.,,received,2026-10-04T07:32:00+01:00
+wamsg_0029,conv_family_stokes,inbound,2348035557301,2348035557300,text,Picked up kids breakfast croissants. Be back by 9.,,received,2026-10-04T08:20:00+01:00
+wamsg_0107,conv_binta,inbound,2348035557311,2348035557300,text,"Madam, Olufemi's school uniform washed and ironed.",,received,2026-10-04T08:27:00+01:00
+wamsg_0108,conv_binta,outbound,2348035557300,2348035557300,text,Thank you Binta.,,delivered,2026-10-04T08:54:00+01:00
+wamsg_0031,conv_family_stokes,outbound,2348035557300,2348035557300,text,After lunch yes. Bring your notes.,,delivered,2026-10-04T10:10:00+01:00
+wamsg_0121,conv_mum,inbound,2348035557305,2348035557300,text,Adunola called and asked about her grandfather. So sweet.,,received,2026-10-04T10:14:00+01:00
+wamsg_0030,conv_family_stokes,inbound,2348035557301,2348035557300,text,"Mum, can we work on the science project this afternoon?",,received,2026-10-04T10:20:00+01:00
+wamsg_0032,conv_family_stokes,inbound,2348035557301,2348035557300,text,Looking at the Lagos trip dates - flights Oct 24 morning?,,received,2026-10-04T11:06:00+01:00
+wamsg_0088,conv_funke,outbound,2348035557300,2348035557300,text,Always.,,delivered,2026-10-04T11:31:00+01:00
+wamsg_0085,conv_funke,inbound,2348035557310,2348035557300,text,Adunola's reading club photos - lovely.,,received,2026-10-04T11:40:00+01:00
+wamsg_0087,conv_funke,inbound,2348035557310,2348035557300,text,Ha - he loses?,,received,2026-10-04T11:43:00+01:00
+wamsg_0033,conv_family_stokes,outbound,2348035557300,2348035557300,text,Yes morning. Will lock with assistant this evening.,,delivered,2026-10-04T11:49:00+01:00
+wamsg_0086,conv_funke,outbound,2348035557300,2348035557300,text,She enjoys it. Better than playing chess against Adeyemi.,,delivered,2026-10-04T11:49:00+01:00
+wamsg_0034,conv_family_stokes,inbound,2348035557306,2348035557300,text,Sis what time you landing the 24th?,,received,2026-10-04T12:10:00+01:00
+wamsg_0163,conv_vendor,inbound,2348055559220,2348035557300,text,"Sheila, sent through the formal quote for the customs expedite. Pls confirm by EOD Mon. Ola.",,received,2026-10-04T12:24:00+01:00
+wamsg_0164,conv_vendor,outbound,2348035557300,2348035557300,text,"Ola, received. Will review and revert.",,delivered,2026-10-04T12:25:00+01:00
+wamsg_0035,conv_family_stokes,outbound,2348035557300,2348035557300,text,Aim morning flight ABV-LOS. Will confirm by tonight.,,delivered,2026-10-04T12:51:00+01:00
+wamsg_0036,conv_family_stokes,inbound,2348035557304,2348035557300,text,Looking forward to seeing the children.,,received,2026-10-04T13:03:00+01:00
+wamsg_0037,conv_family_stokes,outbound,2348035557300,2348035557300,text,We are too Baba.,,delivered,2026-10-04T13:30:00+01:00
+wamsg_0039,conv_family_stokes,outbound,2348035557300,2348035557300,text,Will do mama.,,delivered,2026-10-04T14:22:00+01:00
+wamsg_0038,conv_family_stokes,inbound,2348035557305,2348035557300,text,"Sheila, bring the bread you like from Maitama.",,received,2026-10-04T14:52:00+01:00
+wamsg_0040,conv_family_stokes,inbound,2348035557301,2348035557300,text,Adunola has been asking about her end-of-year homework. Lets sit with her this evening.,,received,2026-10-04T15:07:00+01:00
+wamsg_0041,conv_family_stokes,outbound,2348035557300,2348035557300,text,OK lets review with her after dinner.,,delivered,2026-10-04T15:08:00+01:00
+wamsg_0042,conv_family_stokes,inbound,2348035557301,2348035557300,text,"Mum I drew a diagram of the planet poster, can I show you?",,received,2026-10-04T16:02:00+01:00
+wamsg_0045,conv_family_stokes,outbound,2348035557300,2348035557300,text,Will help her work it out after lunch.,,delivered,2026-10-04T16:02:00+01:00
+wamsg_0044,conv_family_stokes,inbound,2348035557301,2348035557300,text,She showed me the diagram - she has the proportions wrong but the idea is solid.,,received,2026-10-04T16:06:00+01:00
+wamsg_0148,conv_yetunde,outbound,2348035557300,2348035557300,text,Excellent. Lets discuss approach Tuesday.,,delivered,2026-10-04T16:40:00+01:00
+wamsg_0043,conv_family_stokes,outbound,2348035557300,2348035557300,text,Yes - bring it now love.,,delivered,2026-10-04T16:52:00+01:00
+wamsg_0147,conv_yetunde,inbound,2348035557308,2348035557300,text,Conference abstract submitted on time. Thanks for the push.,,received,2026-10-04T16:54:00+01:00
+wamsg_0046,conv_family_stokes,inbound,2348035557305,2348035557300,text,"Sheila, did you call Funke about the Christmas plans yet?",,received,2026-10-04T17:34:00+01:00
+wamsg_0047,conv_family_stokes,outbound,2348035557300,2348035557300,text,Wednesday dinner mama. Will ask then.,,delivered,2026-10-04T17:59:00+01:00
+wamsg_0049,conv_family_stokes,outbound,2348035557300,2348035557300,text,Hotel like always. Mama's place too crowded with Adewale's kids.,,delivered,2026-10-04T18:07:00+01:00
+wamsg_0048,conv_family_stokes,inbound,2348035557301,2348035557300,text,Have you decided on hotel or my mums place for the Lagos trip?,,received,2026-10-04T18:33:00+01:00
+wamsg_0052,conv_family_stokes,inbound,2348035557306,2348035557300,text,"Sis, dropping by Mama's later this week. Will keep her company.",,received,2026-10-04T19:01:00+01:00
+wamsg_0055,conv_family_stokes,outbound,2348035557300,2348035557300,text,Move him to bed - I am on a call.,,delivered,2026-10-04T19:05:00+01:00
+wamsg_0050,conv_family_stokes,inbound,2348035557301,2348035557300,text,Mum can I play football tomorrow morning before school?,,received,2026-10-04T19:08:00+01:00
+wamsg_0054,conv_family_stokes,inbound,2348035557301,2348035557300,text,Olufemi is asleep on the rug.,,received,2026-10-04T19:26:00+01:00
+wamsg_0053,conv_family_stokes,outbound,2348035557300,2348035557300,text,Bless. Take care of Baba too.,,delivered,2026-10-04T19:30:00+01:00
+wamsg_0056,conv_family_stokes,inbound,2348035557301,2348035557300,text,Done. He barely woke.,,received,2026-10-04T19:39:00+01:00
+wamsg_0051,conv_family_stokes,outbound,2348035557300,2348035557300,text,Only if you finish your homework tonight Femi.,,delivered,2026-10-04T19:44:00+01:00

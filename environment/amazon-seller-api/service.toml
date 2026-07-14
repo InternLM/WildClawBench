@@ -1,0 +1,5 @@
+[service]
+name = "amazon-seller-api"
+port = 8000
+env_var_name = "AMAZON_SELLER_API_URL"
+healthcheck_path = "/health"

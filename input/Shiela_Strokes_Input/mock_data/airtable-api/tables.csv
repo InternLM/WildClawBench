@@ -1,0 +1,11 @@
+baseId,id,name,primaryFieldId,records_csv
+appNetPlanCore,tblNasarawaSites,Nasarawa Sites,fldNSWPrimary,records_nasarawa_sites.csv
+appNetPlanCore,tblVendorManifest,Vendor Manifest,fldVNDPrimary,records_vendor_manifest.csv
+appMentorship,tblMentees,Mentees,fldMNTPrimary,records_mentees.csv
+appNetPlanCore,tblContacts,Contacts,fldCNTPrimary,records_contacts.csv
+appNetPlanCore,tblTeam,Team,fldTeamPrimary,records_team.csv
+appNetPlanCore,tblTasks,Tasks,fldTskPrimary,records_tasks.csv
+appNetPlanCore,tblProjects,Projects,fldPrjPrimary,records_projects.csv
+appNetPlanCore,tblHotspots,Niger Hotspots,fldHspPrimary,records_hotspots.csv
+appNetPlanCore,tblMeasurementsQ1,Measurements Q1,fldMQ1Primary,records_measurements_q1.csv
+appNetPlanCore,tblMeasurementsQ2,Measurements Q2,fldMQ2Primary,records_measurements_q2.csv

@@ -1,0 +1,5 @@
+[service]
+name = "tmdb-api"
+port = 8059
+env_var_name = "TMDB_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,5 @@
+[service]
+name = "salesforce-api"
+port = 8044
+env_var_name = "SALESFORCE_API_URL"
+healthcheck_path = "/health"

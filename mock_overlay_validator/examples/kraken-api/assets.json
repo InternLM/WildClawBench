@@ -1,0 +1,72 @@
+[
+  {
+    "asset": "XXBT",
+    "altname": "XBT",
+    "aclass": "currency",
+    "decimals": "10",
+    "display_decimals": "5"
+  },
+  {
+    "asset": "XETH",
+    "altname": "ETH",
+    "aclass": "currency",
+    "decimals": "10",
+    "display_decimals": "5"
+  },
+  {
+    "asset": "ZUSD",
+    "altname": "USD",
+    "aclass": "currency",
+    "decimals": "4",
+    "display_decimals": "2"
+  },
+  {
+    "asset": "ZEUR",
+    "altname": "EUR",
+    "aclass": "currency",
+    "decimals": "4",
+    "display_decimals": "2"
+  },
+  {
+    "asset": "XXRP",
+    "altname": "XRP",
+    "aclass": "currency",
+    "decimals": "8",
+    "display_decimals": "5"
+  },
+  {
+    "asset": "SOL",
+    "altname": "SOL",
+    "aclass": "currency",
+    "decimals": "8",
+    "display_decimals": "5"
+  },
+  {
+    "asset": "ADA",
+    "altname": "ADA",
+    "aclass": "currency",
+    "decimals": "8",
+    "display_decimals": "6"
+  },
+  {
+    "asset": "DOT",
+    "altname": "DOT",
+    "aclass": "currency",
+    "decimals": "10",
+    "display_decimals": "5"
+  },
+  {
+    "asset": "LINK",
+    "altname": "LINK",
+    "aclass": "currency",
+    "decimals": "10",
+    "display_decimals": "5"
+  },
+  {
+    "asset": "MATIC",
+    "altname": "MATIC",
+    "aclass": "currency",
+    "decimals": "10",
+    "display_decimals": "5"
+  }
+]

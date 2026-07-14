@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "FedEx Mock API",
+    "description": "Test collection for the mock FedEx Web Services API (rate quotes, shipment creation, tracking). Base URL defaults to http://localhost:8095. In docker-compose, the service is reachable at http://fedex-api:8095.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8095"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "rate quote", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/rate/v1/rates/quotes", "body": {"mode": "raw", "raw": "{\n  \"origin_zip\": \"38116\",\n  \"dest_zip\": \"10001\",\n  \"weight_lb\": 5.0\n}"}}},
+    {"name": "create shipment", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/ship/v1/shipments", "body": {"mode": "raw", "raw": "{\n  \"origin_zip\": \"38116\",\n  \"dest_zip\": \"10001\",\n  \"weight_lb\": 5.0,\n  \"service_type\": \"FEDEX_GROUND\"\n}"}}},
+    {"name": "track", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/track/v1/trackingnumbers", "body": {"mode": "raw", "raw": "{\n  \"tracking_number\": \"794612035840\"\n}"}}}
+  ]
+}

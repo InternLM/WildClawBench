@@ -1,0 +1,150 @@
+[
+  {
+    "Id": "5001",
+    "TxnDate": "2026-03-08",
+    "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" },
+    "EntityRef": { "value": "5", "type": "Vendor", "name": "Kayla Morgan" },
+    "PaymentType": "Check",
+    "TotalAmt": 36.50,
+    "Line": [
+      {
+        "Id": "1",
+        "Amount": 36.50,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Reimbursement to Kayla Morgan — archival sleeves and acid-free folders, March cataloging",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" }
+        }
+      }
+    ],
+    "DocNumber": "REIM-1042",
+    "MetaData": {
+      "CreateTime": "2026-03-08T15:00:00-05:00",
+      "LastUpdatedTime": "2026-03-08T15:00:00-05:00"
+    },
+    "SyncToken": "0"
+  },
+  {
+    "Id": "5002",
+    "TxnDate": "2026-04-04",
+    "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" },
+    "EntityRef": { "value": "6", "type": "Vendor", "name": "Dorothy Ainsworth" },
+    "PaymentType": "Check",
+    "TotalAmt": 22.00,
+    "Line": [
+      {
+        "Id": "1",
+        "Amount": 22.00,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Reimbursement to Dorothy Ainsworth — Saturday docent refreshments",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" }
+        }
+      }
+    ],
+    "DocNumber": "REIM-1058",
+    "MetaData": {
+      "CreateTime": "2026-04-04T11:00:00-04:00",
+      "LastUpdatedTime": "2026-04-04T11:00:00-04:00"
+    },
+    "SyncToken": "0"
+  },
+  {
+    "Id": "5003",
+    "TxnDate": "2026-04-18",
+    "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" },
+    "EntityRef": { "value": "5", "type": "Vendor", "name": "Kayla Morgan" },
+    "PaymentType": "Check",
+    "TotalAmt": 48.00,
+    "Line": [
+      {
+        "Id": "1",
+        "Amount": 48.00,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Reimbursement to Kayla Morgan — volunteer mileage, March-April archival research trips",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" }
+        }
+      }
+    ],
+    "DocNumber": "REIM-1071",
+    "MetaData": {
+      "CreateTime": "2026-04-18T10:30:00-04:00",
+      "LastUpdatedTime": "2026-04-18T10:30:00-04:00"
+    },
+    "SyncToken": "0"
+  },
+  {
+    "Id": "5004",
+    "TxnDate": "2026-05-08",
+    "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" },
+    "EntityRef": { "value": "5", "type": "Vendor", "name": "Kayla Morgan" },
+    "PaymentType": "Check",
+    "TotalAmt": 28.40,
+    "Line": [
+      {
+        "Id": "1",
+        "Amount": 28.40,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Reimbursement to Kayla Morgan — manila folders and labels for Caldwell letter transcription project",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" }
+        }
+      }
+    ],
+    "DocNumber": "REIM-1088",
+    "MetaData": {
+      "CreateTime": "2026-05-08T14:00:00-04:00",
+      "LastUpdatedTime": "2026-05-08T14:00:00-04:00"
+    },
+    "SyncToken": "0"
+  },
+  {
+    "Id": "5005",
+    "TxnDate": "2026-05-22",
+    "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" },
+    "EntityRef": { "value": "5", "type": "Vendor", "name": "Kayla Morgan" },
+    "PaymentType": "Check",
+    "TotalAmt": 185.00,
+    "Line": [
+      {
+        "Id": "1",
+        "Amount": 185.00,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Reimbursement to Kayla Morgan — linen tablecloth rental for May 21 reception (Mountain Linens & Co. order #2647)",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "20", "name": "Volunteer Reimbursements" }
+        }
+      }
+    ],
+    "DocNumber": "REIM-1102",
+    "MetaData": {
+      "CreateTime": "2026-05-22T15:30:00-04:00",
+      "LastUpdatedTime": "2026-05-22T15:30:00-04:00"
+    },
+    "SyncToken": "0"
+  },
+  {
+    "Id": "5006",
+    "TxnDate": "2026-02-15",
+    "AccountRef": { "value": "11", "name": "Utilities" },
+    "PaymentType": "Check",
+    "TotalAmt": 405.00,
+    "Line": [
+      {
+        "Id": "1",
+        "Amount": 405.00,
+        "DetailType": "AccountBasedExpenseLineDetail",
+        "Description": "Duke Energy — February electric (paid direct)",
+        "AccountBasedExpenseLineDetail": {
+          "AccountRef": { "value": "11", "name": "Utilities" }
+        }
+      }
+    ],
+    "MetaData": {
+      "CreateTime": "2026-02-15T09:00:00-05:00",
+      "LastUpdatedTime": "2026-02-15T09:00:00-05:00"
+    },
+    "SyncToken": "0"
+  }
+]

@@ -1,0 +1,5 @@
+[service]
+name = "algolia-api"
+port = 8067
+env_var_name = "ALGOLIA_API_URL"
+healthcheck_path = "/health"

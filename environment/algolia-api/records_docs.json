@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "doc-quickstart",
+    "title": "Quickstart Guide",
+    "body": "Get up and running with the search API in minutes",
+    "section": "getting-started",
+    "tags": "intro"
+  },
+  {
+    "objectID": "doc-indexing",
+    "title": "Indexing Records",
+    "body": "How to add and update records in an index",
+    "section": "guides",
+    "tags": "indexing"
+  },
+  {
+    "objectID": "doc-querying",
+    "title": "Querying an Index",
+    "body": "Search records using query and filters",
+    "section": "guides",
+    "tags": "search"
+  },
+  {
+    "objectID": "doc-settings",
+    "title": "Configuring Settings",
+    "body": "Set searchable attributes and ranking",
+    "section": "guides",
+    "tags": "settings"
+  },
+  {
+    "objectID": "doc-pagination",
+    "title": "Pagination",
+    "body": "Use page and hitsPerPage to paginate results",
+    "section": "guides",
+    "tags": "search"
+  },
+  {
+    "objectID": "doc-faq",
+    "title": "Frequently Asked Questions",
+    "body": "Answers to common questions about the API",
+    "section": "reference",
+    "tags": "faq"
+  }
+]

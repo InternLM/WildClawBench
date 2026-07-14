@@ -1,0 +1,4 @@
+album_id,name,artist_id,album_type,release_date,total_tracks,label
+alb_bach_suites,Bach: Cello Suites,art_bach001,album,1994-01-01,6,Deutsche Grammophon
+alb_debussy_piano,Debussy: Piano Works,art_debussy001,album,1988-01-01,12,DG Classica
+alb_mitchell_clouds,Clouds,art_mitchell001,album,1969-05-01,10,Reprise Records

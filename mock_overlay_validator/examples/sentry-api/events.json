@@ -1,0 +1,57 @@
+[
+  {
+    "id": "70001",
+    "issue_id": "40001",
+    "event_id": "a1b2c3d4e5f64718a1b2c3d4e5f64718",
+    "message": "DeadlineExceeded refreshing session token",
+    "platform": "go",
+    "environment": "production",
+    "release": "auth-service@2.0.3",
+    "user_email": "user-1842@example.com",
+    "date_created": "2026-05-26T09:00:00.000Z"
+  },
+  {
+    "id": "70002",
+    "issue_id": "40001",
+    "event_id": "b2c3d4e5f6471801b2c3d4e5f6471801",
+    "message": "DeadlineExceeded refreshing session token",
+    "platform": "go",
+    "environment": "production",
+    "release": "auth-service@2.0.3",
+    "user_email": "user-1801@example.com",
+    "date_created": "2026-05-26T08:55:00.000Z"
+  },
+  {
+    "id": "70003",
+    "issue_id": "40010",
+    "event_id": "c3d4e5f64718012ac3d4e5f64718012a",
+    "message": "TypeError reading property avatar of null",
+    "platform": "javascript",
+    "environment": "production",
+    "release": "web-frontend@5.4.1",
+    "user_email": "user-701@example.com",
+    "date_created": "2026-05-26T07:30:00.000Z"
+  },
+  {
+    "id": "70004",
+    "issue_id": "40020",
+    "event_id": "d4e5f64718012a3bd4e5f64718012a3b",
+    "message": "gRPC UNAVAILABLE during deploy",
+    "platform": "java",
+    "environment": "production",
+    "release": "billing-service@3.1.0",
+    "user_email": "user-12@example.com",
+    "date_created": "2026-05-25T11:00:00.000Z"
+  },
+  {
+    "id": "70005",
+    "issue_id": "40002",
+    "event_id": "e5f64718012a3b4ce5f64718012a3b4c",
+    "message": "NilPointer in token validator",
+    "platform": "go",
+    "environment": "staging",
+    "release": "auth-service@2.1.0-rc1",
+    "user_email": "user-40@example.com",
+    "date_created": "2026-05-26T07:00:00.000Z"
+  }
+]

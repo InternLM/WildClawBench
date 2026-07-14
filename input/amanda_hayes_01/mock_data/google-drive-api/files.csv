@@ -1,0 +1,4 @@
+id,name,mime_type,parent_id,size,created_time,modified_time,owner_email,starred,trashed,web_view_link
+folder-root,My Drive,application/vnd.google-apps.folder,,0,2026-01-01T00:00:00Z,2026-01-01T00:00:00Z,amanda.hayes@example.com,false,false,
+folder-budget,Budget,application/vnd.google-apps.folder,folder-root,0,2026-01-15T08:00:00Z,2026-09-01T08:00:00Z,amanda.hayes@example.com,true,false,https://drive.google.com/drive/folders/folder-budget
+file-sept-budget,September_Budget_Notes.md,text/markdown,folder-budget,512,2026-09-01T08:30:00Z,2026-09-29T18:45:00Z,amanda.hayes@example.com,true,false,https://drive.google.com/file/d/file-sept-budget/view

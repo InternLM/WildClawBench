@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Datadog Mock API v1",
+    "description": "Test collection for the mock Datadog API service. Base URL defaults to http://localhost:8048. In docker-compose, the service is reachable at http://datadog-api:8048.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8048"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "query metric series", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/query?from=1748160000&to=1748250600&query=avg:trace.http.request.duration{service:auth-service}"}},
+    {"name": "list monitors", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/monitor"}},
+    {"name": "list monitors alerting", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/monitor?overall_state=Alert"}},
+    {"name": "get monitor", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/monitor/1001"}},
+    {"name": "create monitor", "request": {"method": "POST", "url": "{{baseUrl}}/api/v1/monitor",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"5xx rate alert\", \"type\": \"metric alert\", \"query\": \"sum(last_5m):sum:trace.http.request.errors{service:auth-service}.as_count() > 25\", \"message\": \"Auth 5xx elevated\", \"priority\": 2, \"tags\": [\"service:auth-service\"]}"}}},
+    {"name": "update monitor (mute via state)", "request": {"method": "PUT", "url": "{{baseUrl}}/api/v1/monitor/1001",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"overall_state\": \"OK\"}"}}},
+    {"name": "list dashboards", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/dashboard"}},
+    {"name": "get dashboard", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/dashboard/abc-123-def"}},
+    {"name": "list events", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/events"}},
+    {"name": "create event", "request": {"method": "POST", "url": "{{baseUrl}}/api/v1/events",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"Manual rollback auth-service\", \"text\": \"Rolled back to 2.0.2 after latency spike.\", \"alert_type\": \"warning\", \"host\": \"web-01\", \"tags\": [\"service:auth-service\", \"event:rollback\"]}"}}},
+    {"name": "list hosts", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/hosts"}}
+  ]
+}

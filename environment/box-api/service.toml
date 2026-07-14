@@ -1,0 +1,5 @@
+[service]
+name = "box-api"
+port = 8083
+env_var_name = "BOX_API_URL"
+healthcheck_path = "/health"

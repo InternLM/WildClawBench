@@ -1,0 +1,13 @@
+id,domain,message_id,event,recipient,timestamp,reason
+mge_mg_msg_001_sent,telecorpng.com,mg_msg_001,accepted,b.olatunji@telecorpng.com,2026-10-01T18:30:00Z,
+mge_mg_msg_001_delivered,telecorpng.com,mg_msg_001,delivered,b.olatunji@telecorpng.com,2026-10-01T18:30:00Z,
+mge_mg_msg_002_sent,telecorpng.com,mg_msg_002,accepted,f.musa@telecorpng.com,2026-10-02T11:00:00Z,
+mge_mg_msg_002_delivered,telecorpng.com,mg_msg_002,delivered,f.musa@telecorpng.com,2026-10-02T11:00:00Z,
+mge_mg_msg_003_sent,telecorpng.com,mg_msg_003,accepted,ola.adeyemo@tachyon-networks.ng,2026-09-30T15:00:00Z,
+mge_mg_msg_003_delivered,telecorpng.com,mg_msg_003,delivered,ola.adeyemo@tachyon-networks.ng,2026-09-30T15:00:00Z,
+mge_mg_msg_004_sent,telecorpng.com,mg_msg_004,accepted,yetunde.bakare.engineer@gmail.com,2026-10-02T20:00:00Z,
+mge_mg_msg_004_delivered,telecorpng.com,mg_msg_004,delivered,yetunde.bakare.engineer@gmail.com,2026-10-02T20:00:00Z,
+mge_mg_msg_005_sent,telecorpng.com,mg_msg_005,accepted,i.okeke@telecorpng.com,2026-10-02T19:00:00Z,
+mge_mg_msg_005_delivered,telecorpng.com,mg_msg_005,delivered,i.okeke@telecorpng.com,2026-10-02T19:00:00Z,
+mge_mg_msg_006_sent,telecorpng.com,mg_msg_006,accepted,b.olatunji@telecorpng.com,2026-09-29T17:00:00Z,
+mge_mg_msg_006_delivered,telecorpng.com,mg_msg_006,delivered,b.olatunji@telecorpng.com,2026-09-29T17:00:00Z,

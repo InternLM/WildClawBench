@@ -1,0 +1,5 @@
+[service]
+name = "doordash-api"
+port = 8037
+env_var_name = "DOORDASH_API_URL"
+healthcheck_path = "/health"

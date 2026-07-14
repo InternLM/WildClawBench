@@ -1,0 +1,5 @@
+[service]
+name = "activecampaign-api"
+port = 8101
+env_var_name = "ACTIVECAMPAIGN_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,28 @@
+{
+  "rider_id": "rider_sheila_personal",
+  "first_name": "Sheila",
+  "last_name": "",
+  "email": "sheila.stokes@Finthesiss.ai",
+  "phone_number": "+234 803 555 0000",
+  "rating": 4.94,
+  "member_since": "2021-04-15",
+  "promo_code": "SHEILA21",
+  "payment_methods": [
+    {
+      "id": "pm_card_master_5421",
+      "type": "credit_card",
+      "brand": "Mastercard",
+      "last4": "5421",
+      "default": true
+    },
+    {
+      "id": "pm_card_visa_8807",
+      "type": "credit_card",
+      "brand": "Visa",
+      "last4": "8807",
+      "default": false
+    }
+  ],
+  "home_address": "Maitama, Abuja",
+  "work_address": "Office Maitama HQ, Abuja"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "state-port-backlog",
+    "name": "Backlog",
+    "type": "backlog",
+    "color": "#bec2c8",
+    "position": "0",
+    "teamId": "team-ux",
+    "description": "Issues that are not yet prioritized"
+  },
+  {
+    "id": "state-port-todo",
+    "name": "Todo",
+    "type": "unstarted",
+    "color": "#e2e2e2",
+    "position": "1",
+    "teamId": "team-ux",
+    "description": "Issues ready to be picked up"
+  },
+  {
+    "id": "state-port-inprogress",
+    "name": "In Progress",
+    "type": "started",
+    "color": "#f2c94c",
+    "position": "2",
+    "teamId": "team-ux",
+    "description": "Issues actively being worked on"
+  },
+  {
+    "id": "state-port-inreview",
+    "name": "In Review",
+    "type": "started",
+    "color": "#f2994a",
+    "position": "3",
+    "teamId": "team-ux",
+    "description": "Issues in code review"
+  },
+  {
+    "id": "state-port-done",
+    "name": "Done",
+    "type": "completed",
+    "color": "#5e6ad2",
+    "position": "4",
+    "teamId": "team-ux",
+    "description": "Completed issues"
+  },
+  {
+    "id": "state-port-canceled",
+    "name": "Canceled",
+    "type": "canceled",
+    "color": "#95a2b3",
+    "position": "5",
+    "teamId": "team-ux",
+    "description": "Won't fix or otherwise canceled"
+  },
+  {
+    "id": "state-bkd-backlog",
+    "name": "Backlog",
+    "type": "backlog",
+    "color": "#bec2c8",
+    "position": "0",
+    "teamId": "team-backend",
+    "description": "Issues that are not yet prioritized"
+  },
+  {
+    "id": "state-bkd-todo",
+    "name": "Todo",
+    "type": "unstarted",
+    "color": "#e2e2e2",
+    "position": "1",
+    "teamId": "team-backend",
+    "description": "Issues ready to be picked up"
+  },
+  {
+    "id": "state-bkd-inprogress",
+    "name": "In Progress",
+    "type": "started",
+    "color": "#f2c94c",
+    "position": "2",
+    "teamId": "team-backend",
+    "description": "Issues actively being worked on"
+  },
+  {
+    "id": "state-bkd-inreview",
+    "name": "In Review",
+    "type": "started",
+    "color": "#f2994a",
+    "position": "3",
+    "teamId": "team-backend",
+    "description": "Issues in code review"
+  },
+  {
+    "id": "state-bkd-done",
+    "name": "Done",
+    "type": "completed",
+    "color": "#5e6ad2",
+    "position": "4",
+    "teamId": "team-backend",
+    "description": "Completed issues"
+  },
+  {
+    "id": "state-bkd-canceled",
+    "name": "Canceled",
+    "type": "canceled",
+    "color": "#95a2b3",
+    "position": "5",
+    "teamId": "team-backend",
+    "description": "Won't fix or otherwise canceled"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "t5_aaa001",
+    "name": "programming",
+    "title": "Programming",
+    "public_description": "Computer programming news and discussion",
+    "subscribers": "6800000",
+    "created_utc": "1201234567",
+    "over18": "false"
+  },
+  {
+    "id": "t5_aaa002",
+    "name": "homelab",
+    "title": "r/homelab",
+    "public_description": "For people who run servers and labs at home",
+    "subscribers": "920000",
+    "created_utc": "1301234567",
+    "over18": "false"
+  },
+  {
+    "id": "t5_aaa003",
+    "name": "gardening",
+    "title": "Gardening",
+    "public_description": "A place to grow your green thumb",
+    "subscribers": "5400000",
+    "created_utc": "1251234567",
+    "over18": "false"
+  }
+]

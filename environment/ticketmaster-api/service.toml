@@ -1,0 +1,5 @@
+[service]
+name = "ticketmaster-api"
+port = 8075
+env_var_name = "TICKETMASTER_API_URL"
+healthcheck_path = "/health"

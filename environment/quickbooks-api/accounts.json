@@ -1,0 +1,289 @@
+{
+  "QueryResponse": {
+    "Account": [
+      {
+        "Id": "1",
+        "Name": "Operating Checking",
+        "AccountType": "Bank",
+        "AccountSubType": "Checking",
+        "CurrentBalance": 5842.5,
+        "Active": true,
+        "Description": "Primary operating account - OnPoint Credit Union"
+      },
+      {
+        "Id": "2",
+        "Name": "Tournament Reserve",
+        "AccountType": "Bank",
+        "AccountSubType": "Savings",
+        "CurrentBalance": 1450.0,
+        "Active": true,
+        "Description": "Set aside for tournament expenses and equipment replacement"
+      },
+      {
+        "Id": "3",
+        "Name": "Membership Income",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Monthly membership dues - $95/member"
+      },
+      {
+        "Id": "4",
+        "Name": "Drop-in Fees",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Walk-in class fees - $20/session"
+      },
+      {
+        "Id": "5",
+        "Name": "Tournament Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Registration fees and spectator entry for tournaments"
+      },
+      {
+        "Id": "6",
+        "Name": "Equipment Sales",
+        "AccountType": "Income",
+        "AccountSubType": "SalesOfProductIncome",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Gi, shinai, bokken sales to students"
+      },
+      {
+        "Id": "7",
+        "Name": "Rent Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "RentOrLeaseOfBuildings",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Monthly lease - Westbrook Property Mgmt"
+      },
+      {
+        "Id": "8",
+        "Name": "Utilities",
+        "AccountType": "Expense",
+        "AccountSubType": "Utilities",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Electric + water/sewer"
+      },
+      {
+        "Id": "9",
+        "Name": "Insurance",
+        "AccountType": "Expense",
+        "AccountSubType": "Insurance",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "General liability + property - quarterly"
+      },
+      {
+        "Id": "10",
+        "Name": "Instructor Pay",
+        "AccountType": "Expense",
+        "AccountSubType": "PayrollExpenses",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Raj Patel monthly draw"
+      },
+      {
+        "Id": "11",
+        "Name": "Supplies & Equipment",
+        "AccountType": "Expense",
+        "AccountSubType": "SuppliesMaterials",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Training equipment, cleaning supplies, mat maintenance"
+      },
+      {
+        "Id": "12",
+        "Name": "Cleaning Services",
+        "AccountType": "Expense",
+        "AccountSubType": "RepairMaintenance",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Willamette Cleaning - bi-weekly"
+      },
+      {
+        "Id": "13",
+        "Name": "Tournament Expenses",
+        "AccountType": "Expense",
+        "AccountSubType": "EntertainmentMeals",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Mats rental, trophies, referee fees, event costs"
+      },
+      {
+        "Id": "14",
+        "Name": "Marketing & Advertising",
+        "AccountType": "Expense",
+        "AccountSubType": "Advertising",
+        "CurrentBalance": 0,
+        "Active": true,
+        "Description": "Flyers, social media ads, community board postings"
+      },
+      {
+        "Id": "201",
+        "Name": "Beat Sales Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Revenue",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "202",
+        "Name": "Streaming Royalties",
+        "AccountType": "Income",
+        "AccountSubType": "OtherPrimaryIncome",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Revenue",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "203",
+        "Name": "Consulting Revenue",
+        "AccountType": "Income",
+        "AccountSubType": "ServiceFeeIncome",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Revenue",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "204",
+        "Name": "Business Checking",
+        "AccountType": "Bank",
+        "AccountSubType": "Checking",
+        "CurrentBalance": 2850000.0,
+        "Active": true,
+        "Classification": "Asset",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "205",
+        "Name": "Software Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OtherBusinessExpenses",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "206",
+        "Name": "Equipment Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "EquipmentRental",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "207",
+        "Name": "Studio Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OtherBusinessExpenses",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "208",
+        "Name": "Marketing Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "Advertising",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "209",
+        "Name": "Meals Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "Meals",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "210",
+        "Name": "Workspace Expense",
+        "AccountType": "Expense",
+        "AccountSubType": "OtherBusinessExpenses",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "MetaData": {
+          "CreateTime": "2024-01-15T10:00:00",
+          "LastUpdatedTime": "2024-06-01T10:00:00"
+        },
+        "Description": ""
+      },
+      {
+        "Id": "421",
+        "Name": "Food Cost - Seafood",
+        "AccountType": "Expense",
+        "AccountSubType": "CostOfLaborCos",
+        "CurrentBalance": 0.0,
+        "Active": true,
+        "Classification": "Expense",
+        "MetaData": {
+          "CreateTime": "2026-05-14T09:00:00",
+          "LastUpdatedTime": "2026-05-14T09:00:00"
+        },
+        "Description": ""
+      }
+    ],
+    "startPosition": 1,
+    "maxResults": 25,
+    "totalCount": 25
+  }
+}

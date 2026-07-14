@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "NASA Open Mock API",
+    "description": "Test collection for the mock NASA Open API service (APOD, Mars Rover Photos, NeoWs, EPIC). Base URL defaults to http://localhost:8077. In docker-compose, the service is reachable at http://nasa-api:8077.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8077"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "apod latest", "request": {"method": "GET", "url": "{{baseUrl}}/planetary/apod"}},
+    {"name": "apod by date", "request": {"method": "GET", "url": "{{baseUrl}}/planetary/apod?date=2026-05-24"}},
+    {"name": "apod range", "request": {"method": "GET", "url": "{{baseUrl}}/planetary/apod?start_date=2026-05-20&end_date=2026-05-23"}},
+    {"name": "rover photos", "request": {"method": "GET", "url": "{{baseUrl}}/mars-photos/api/v1/rovers/curiosity/photos?sol=4100&camera=MAST"}},
+    {"name": "rover manifest", "request": {"method": "GET", "url": "{{baseUrl}}/mars-photos/api/v1/rovers/perseverance"}},
+    {"name": "neo feed", "request": {"method": "GET", "url": "{{baseUrl}}/neo/rest/v1/feed?start_date=2026-05-20&end_date=2026-05-21"}},
+    {"name": "neo by id", "request": {"method": "GET", "url": "{{baseUrl}}/neo/rest/v1/neo/3726710"}},
+    {"name": "epic natural", "request": {"method": "GET", "url": "{{baseUrl}}/EPIC/api/natural"}}
+  ]
+}

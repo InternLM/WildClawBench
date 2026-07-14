@@ -1,0 +1,26 @@
+[
+  {
+    "service_id": "PS001",
+    "name": "auth-api",
+    "description": "Authentication and session service",
+    "status": "critical",
+    "escalation_policy_id": "EP001",
+    "auto_resolve_timeout": "14400"
+  },
+  {
+    "service_id": "PS002",
+    "name": "billing-api",
+    "description": "Subscription billing and invoicing",
+    "status": "active",
+    "escalation_policy_id": "EP002",
+    "auto_resolve_timeout": "14400"
+  },
+  {
+    "service_id": "PS003",
+    "name": "notifications-api",
+    "description": "Email and push notification dispatch",
+    "status": "active",
+    "escalation_policy_id": "EP001",
+    "auto_resolve_timeout": "14400"
+  }
+]

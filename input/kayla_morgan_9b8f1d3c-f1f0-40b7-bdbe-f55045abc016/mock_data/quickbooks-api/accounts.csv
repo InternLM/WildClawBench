@@ -1,0 +1,7 @@
+Id,Name,AccountType,AccountSubType,CurrentBalance,Active,Classification,Description
+11,Utilities,Expense,Utilities,0,true,Expense,Society building utilities
+12,Office & Supplies,Expense,OfficeGeneralAdministrativeExpenses,0,true,Expense,General office supplies
+13,Event Expenses,Expense,Entertainment,0,true,Expense,Receptions and openings
+14,Archival Supplies,Expense,SuppliesMaterials,0,true,Expense,"Acid-free folders, sleeves, boxes"
+20,Volunteer Reimbursements,Expense,TravelMeals,0,true,Expense,Out-of-pocket reimbursements to volunteers
+30,Operating Bank,Bank,Checking,42850.16,true,Asset,Society operating checking account

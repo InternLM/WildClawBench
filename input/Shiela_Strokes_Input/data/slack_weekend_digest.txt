@@ -1,0 +1,46 @@
+SLACK WEEKEND DIGEST - SHEILA STOKES
+Window: 2026-10-03 00:00 to 2026-10-04 20:00 WAT
+Channels: #nasarawa-phase1 (28 msgs), #five-g-cbd-pilot (24 msgs), #vendor-tachyon (22 msgs but only 31 in weekend window after dedup)
+Total weekend messages: 31
+
+#vendor-tachyon (10 weekend msgs)
+================================
+[2026-10-04T11:50] @ola.adeyemo (Tachyon Account Engineer): heads up @sheila.stokes - expedite quote TCH-EXP-2026-0017 for VND-0061 and 0072 customs hold sent to your inbox. NGN 75K total. validity until Mon 09:00 before the hearing
+[2026-10-04T09:30] @ola.adeyemo: @sheila.stokes the customs delay has been escalated to our broker team. we're putting together an expedite quote, will land in next 2 hours
+[2026-10-04T07:00] @ola.adeyemo: morning team. updating the customs status - both 0061 and 0072 are formally in customs delayed as of 03:14 UTC overnight
+[2026-10-04T03:45] @noreply (Tachyon ops bot): airtable manifest updated - VND-2026-Q4-0061 status: in customs - delayed
+[2026-10-04T03:45] @noreply (Tachyon ops bot): airtable manifest updated - VND-2026-Q4-0072 status: in customs - delayed
+[2026-10-04T03:30] @ola.adeyemo: vendor war room alert - 0061 hit customs hold for NCC type-approval cross-check. 0072 hit customs hold for tariff classification dispute. updating airtable now
+[2026-10-03T16:00] @sheila.stokes: @ola.adeyemo - confirming the acceptance test plan v3 is locked. tunde published the confluence page. we're set on the test framework for receipt
+[2026-10-03T11:00] @ola.adeyemo: @tunde.bello - PO TCH-PO-2026-019 delivery still on track for Oct 19. 78 of 80 lines moving as expected
+[2026-10-03T09:00] @amaka.obi (PMO): tachyon weekly update - all 80 manifest lines status-good as of Friday close
+[2026-10-03T08:30] @ola.adeyemo: morning all - week of Oct 6 onwards we have site installation kickoff at S01, S02, S04
+
+#five-g-cbd-pilot (11 weekend msgs)
+====================================
+[2026-10-04T11:47] @b.olatunji (Director Network Ops): @sheila.stokes - made an edit to pg_5g_filing_plan_v3. moving the filing window from 16:00 post-hearing to 12:00 noon pre-hearing. v4. talk Mon morning if you have concerns
+[2026-10-04T10:00] @f.musa: @sheila.stokes - dry run dialogue script v1 in the confluence FCBD space. ready for your eyes whenever
+[2026-10-04T08:00] @f.musa: morning team - hearing logistics for tomorrow: badges issued by NCC reception at 09:50; please bring 2 forms of ID
+[2026-10-03T21:00] @t.bello: FCBD-118 BBU cold-start crash reproduced in the lab. ola got our team a workaround firmware patch. testing on Mon
+[2026-10-03T17:00] @f.musa: NCC hearing tomorrow at 10:00. final brief content lock at Sun 16:00 please
+[2026-10-03T15:00] @sheila.stokes: technical position v3 is locked per confluence. filing position MUST align with v3. anyone working on form 7B section D needs to read pg_5g_tech_position_v3 first
+[2026-10-03T12:00] @f.musa: form 7B section A draft up for review @sheila.stokes @b.olatunji
+[2026-10-03T10:00] @e.adeniyi (Capacity Planner): 5g pilot coverage simulation re-run with latest beamforming codebook from Tachyon. results consistent with the gap analysis published Sep 18
+[2026-10-03T09:00] @amaka.obi: weekly PMO digest is out - FCBD sprint metrics on track
+[2026-10-03T08:00] @t.bello: morning all - FCBD-101 acceptance test plan v3 published Sep 28. ready for vendor receipt next week
+[2026-10-04T18:00] @sheila.stokes: hearing brief shaping up. will share Sun evening. anyone with questions come to my office Mon 09:00 standup
+
+#nasarawa-phase1 (10 weekend msgs)
+====================================
+[2026-10-04T16:00] @c.ndukwe (Community Engagement Coordinator): @sheila.stokes - S03 chief musa adamu call summary - he wants to push the consultation back to Tue Oct 7 instead of Sat Oct 10. ifeanyi added pen note to the typed letter
+[2026-10-03T22:14] @noreply (airtable bot): records_nasarawa_sites updated - NSW-PHASE1-S07 acquisition_status: acquired (was: in negotiation)
+[2026-10-03T22:00] @noreply (jira bot): NSW-247 transitioned to Done (PHASE1-S07 acquisition closure paperwork)
+[2026-10-03T21:45] @i.okeke (Field Acquisition Lead): @sheila.stokes - S07 closure paperwork signed off. acquisition status going to acquired as of 22:14. NSW-247 closing now
+[2026-10-03T18:00] @c.ndukwe: S08 patience yakubu letter received. logging in airtable now. response template due Oct 13
+[2026-10-03T16:30] @i.okeke: S03 phone call with chief musa adamu - rescheduling consultation to Tue Oct 7. pen note added to typed letter. let's discuss Mon
+[2026-10-03T14:00] @i.okeke: weekly field summary - all 5 objection threads tracking; 3 acquisition closures expected next 7 days
+[2026-10-03T11:00] @c.eze (RF Engineer): @sheila.stokes - S03 alternative parcels analyzed. parcel B (1.2km from current proposal) viable, parcel A not viable due to LOS to existing tower
+[2026-10-03T09:00] @i.okeke: morning team - field cycle continues for the week. NSW-247 likely closing today
+[2026-10-04T12:00] @sheila.stokes: @c.ndukwe - good. let me know if margin note on the S03 typed letter survives the consultation rescheduling. don't lose the Oct 7 commitment
+
+End of digest. Total 31 weekend messages across 3 channels.

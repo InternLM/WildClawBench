@@ -1,0 +1,10 @@
+{
+  "id": "comp-001",
+  "name": "Orbit Labs Inc.",
+  "ein": "84-1234567",
+  "entity_type": "C-Corporation",
+  "company_status": "Approved",
+  "primary_address": "500 Market St, San Francisco, CA 94105",
+  "pay_schedule": "Semimonthly",
+  "currency": "USD"
+}

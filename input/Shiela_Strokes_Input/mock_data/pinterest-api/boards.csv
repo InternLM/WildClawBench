@@ -1,0 +1,11 @@
+board_id,name,description,privacy,created_at,updated_at,pin_count,follower_count,collaborator_count
+brd_study_corner,Study Corner Inspiration,"Aesthetic, calm desks for primary schoolers. Soft palettes, plenty of light.",secret,2024-09-12T07:00:00Z,2026-09-18T07:00:00Z,42,18,0
+brd_balcony_garden,Balcony Garden Tropical,"Container tropicals for an Abuja balcony. Pots, herbs, tomato troughs, shade plants.",secret,2024-04-22T06:30:00Z,2026-09-22T18:00:00Z,56,24,0
+brd_anniversary_decor,Anniversary Dinner Table,"Quiet anniversary table setting ideas. Candles, linen, neutral palette.",secret,2025-07-04T08:00:00Z,2025-09-30T07:00:00Z,24,11,0
+brd_christmas_2025,Christmas 2025 Family,Family Christmas decor and gift wrap ideas. Saved across the year.,secret,2025-01-05T10:00:00Z,2025-12-21T16:00:00Z,38,14,0
+brd_recipes_savings,Weeknight Quick Recipes,Weeknight family meals under 30 minutes. Nigerian and Mediterranean mix.,secret,2024-11-12T18:00:00Z,2026-09-25T20:00:00Z,64,27,0
+brd_book_nooks,Book Nook Ideas,Cosy reading nooks for the verandah and family room.,secret,2025-02-08T09:00:00Z,2026-08-19T15:00:00Z,31,13,0
+brd_aso_hikes,Aso Rock Weekend Hikes,"Saturday hike ideas, trail snacks, hydration packs.",secret,2025-05-17T07:00:00Z,2026-09-21T08:00:00Z,22,9,0
+brd_evening_skincare,Evening Skincare Minimal,Five-step minimal evening skincare routines.,secret,2024-12-09T20:00:00Z,2026-09-12T21:00:00Z,18,7,0
+brd_workwear_minimal,Workwear Capsule Minimal,Engineering office workwear capsule. Adire and ankara accents allowed.,secret,2024-08-22T07:00:00Z,2026-09-08T12:00:00Z,27,11,0
+brd_birthday_kids,Kids Birthday Party Themes,Year 5 and Year 2 birthday party ideas. Outdoor and at-home options.,secret,2025-03-18T18:00:00Z,2026-09-15T19:00:00Z,21,8,0

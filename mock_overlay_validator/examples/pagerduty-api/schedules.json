@@ -1,0 +1,29 @@
+[
+  {
+    "schedule_id": "SCH001",
+    "name": "Platform Primary",
+    "time_zone": "America/Los_Angeles",
+    "escalation_policy_id": "EP001",
+    "current_oncall_user_id": "PU004",
+    "oncall_start": "2026-05-26T17:00:00Z",
+    "oncall_end": "2026-06-02T17:00:00Z"
+  },
+  {
+    "schedule_id": "SCH002",
+    "name": "Platform Secondary",
+    "time_zone": "Europe/Berlin",
+    "escalation_policy_id": "EP001",
+    "current_oncall_user_id": "PU003",
+    "oncall_start": "2026-05-26T17:00:00Z",
+    "oncall_end": "2026-06-02T17:00:00Z"
+  },
+  {
+    "schedule_id": "SCH003",
+    "name": "Billing Primary",
+    "time_zone": "America/New_York",
+    "escalation_policy_id": "EP002",
+    "current_oncall_user_id": "PU002",
+    "oncall_start": "2026-05-25T17:00:00Z",
+    "oncall_end": "2026-06-01T17:00:00Z"
+  }
+]

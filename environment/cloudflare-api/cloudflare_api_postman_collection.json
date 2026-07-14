@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Cloudflare Mock API v4",
+    "description": "Test collection for the mock Cloudflare API service. Base URL defaults to http://localhost:8050. In docker-compose, the service is reachable at http://cloudflare-api:8050.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8050"},
+    {"key": "zoneId", "value": "zone1aaaa1111bbbb2222cccc3333dddd"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list zones", "request": {"method": "GET", "url": "{{baseUrl}}/client/v4/zones"}},
+    {"name": "get zone", "request": {"method": "GET", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}"}},
+    {"name": "list dns records", "request": {"method": "GET", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}/dns_records"}},
+    {"name": "list dns records by type", "request": {"method": "GET", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}/dns_records?type=A"}},
+    {"name": "get dns record", "request": {"method": "GET", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}/dns_records/rec0001aaaa"}},
+    {"name": "create dns record", "request": {"method": "POST", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}/dns_records",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"type\": \"A\", \"name\": \"docs.orbit-labs.com\", \"content\": \"203.0.113.55\", \"ttl\": 3600, \"proxied\": true}"}}},
+    {"name": "update dns record", "request": {"method": "PUT", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}/dns_records/rec0001aaaa",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"content\": \"203.0.113.11\", \"proxied\": false}"}}},
+    {"name": "delete dns record", "request": {"method": "DELETE", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}/dns_records/rec0005eeee"}},
+    {"name": "list firewall rules", "request": {"method": "GET", "url": "{{baseUrl}}/client/v4/zones/{{zoneId}}/firewall/rules"}}
+  ]
+}

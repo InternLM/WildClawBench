@@ -1,0 +1,6 @@
+{
+  "stage": 0,
+  "description": "Seed anchor",
+  "fires_after_turn": 0,
+  "mutations": []
+}

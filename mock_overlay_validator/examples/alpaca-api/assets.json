@@ -1,0 +1,65 @@
+[
+  {
+    "id": "b0b6dd9d-8b9b-48a9-ba46-b9d54906e415",
+    "symbol": "AAPL",
+    "name": "Apple Inc. Common Stock",
+    "exchange": "NASDAQ",
+    "asset_class": "us_equity",
+    "tradable": "true",
+    "fractionable": "true"
+  },
+  {
+    "id": "f30d734c-2806-4d0d-b145-f9fee271c5cd",
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation Common Stock",
+    "exchange": "NASDAQ",
+    "asset_class": "us_equity",
+    "tradable": "true",
+    "fractionable": "true"
+  },
+  {
+    "id": "b6d1aa75-5c14-4920-aef3-7eb33a01c123",
+    "symbol": "TSLA",
+    "name": "Tesla Inc. Common Stock",
+    "exchange": "NASDAQ",
+    "asset_class": "us_equity",
+    "tradable": "true",
+    "fractionable": "true"
+  },
+  {
+    "id": "69b6d1aa-5c14-4920-aef3-7eb33a01c456",
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation Common Stock",
+    "exchange": "NASDAQ",
+    "asset_class": "us_equity",
+    "tradable": "true",
+    "fractionable": "true"
+  },
+  {
+    "id": "0d1aa75b-5c14-4920-aef3-7eb33a01c789",
+    "symbol": "AMZN",
+    "name": "Amazon.com Inc. Common Stock",
+    "exchange": "NASDAQ",
+    "asset_class": "us_equity",
+    "tradable": "true",
+    "fractionable": "true"
+  },
+  {
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc. Class A",
+    "exchange": "NASDAQ",
+    "asset_class": "us_equity",
+    "tradable": "true",
+    "fractionable": "true"
+  },
+  {
+    "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+    "symbol": "SPY",
+    "name": "SPDR S&P 500 ETF Trust",
+    "exchange": "ARCA",
+    "asset_class": "us_equity",
+    "tradable": "true",
+    "fractionable": "false"
+  }
+]

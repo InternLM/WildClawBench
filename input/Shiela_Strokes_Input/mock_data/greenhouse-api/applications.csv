@@ -1,0 +1,35 @@
+id,candidate_id,job_id,status,current_stage,applied_at,last_activity_at
+app_001,cand_001_aminu_hassan,req_field_engineer_2026_q4,active,Phone Screen Complete,2026-09-05T10:00:00Z,2026-09-15T14:00:00Z
+app_002,cand_002_blessing_okonkwo,req_field_engineer_2026_q4,active,Technical Assessment,2026-09-10T11:00:00Z,2026-09-22T16:00:00Z
+app_003,cand_003_emeka_iwu,req_field_engineer_2026_q4,active,Interview Round One Scheduled,2026-09-15T12:00:00Z,2026-09-25T10:00:00Z
+app_004,cand_004_fatima_yusuf,req_field_engineer_2026_q4,active,Offer Pending,2026-09-20T14:00:00Z,2026-09-28T17:00:00Z
+app_005,cand_005_olusegun_dada,req_field_engineer_2026_q4,active,Phone Screen Scheduled,2026-09-25T09:00:00Z,2026-09-29T11:00:00Z
+app_006,cand_006_zainab_mohammed,req_rf_specialist_2026_q4,active,Sourcing,2026-08-25T11:00:00Z,2026-09-15T13:00:00Z
+app_0200,cnd_0200,job_field_engineer_2026_q4,application_review,Application Review,2026-09-02T10:00:00Z,2026-09-05T10:00:00Z
+app_0201,cnd_0201,job_field_engineer_2026_q4,phone_screen,Phone Screen,2026-09-04T10:00:00Z,2026-09-07T10:00:00Z
+app_0202,cnd_0202,job_field_engineer_2026_q4,technical_assessment,Technical Assessment,2026-09-06T10:00:00Z,2026-09-09T10:00:00Z
+app_0203,cnd_0203,job_field_engineer_2026_q4,onsite,Onsite,2026-09-08T10:00:00Z,2026-09-11T10:00:00Z
+app_0204,cnd_0204,job_field_engineer_2026_q4,offer_pending,Offer Pending,2026-09-10T10:00:00Z,2026-09-13T10:00:00Z
+app_0205,cnd_0205,job_field_engineer_2026_q4,hired,Hired,2026-09-12T10:00:00Z,2026-09-15T10:00:00Z
+app_0206,cnd_0206,job_field_engineer_2026_q4,rejected,Rejected,2026-09-14T10:00:00Z,2026-09-17T10:00:00Z
+app_0207,cnd_0207,job_field_engineer_2026_q4,application_review,Application Review,2026-09-16T10:00:00Z,2026-09-19T10:00:00Z
+app_hist_0001,cnd_hist_0001,job_field_engineer_2025_q2,rejected,Rejected,2025-02-15T10:00:00Z,2025-02-25T10:00:00Z
+app_hist_0002,cnd_hist_0002,job_regulatory_analyst_2025,hired,Hired,2025-03-15T10:00:00Z,2025-03-25T10:00:00Z
+app_hist_0003,cnd_hist_0003,job_intern_2026_q2,rejected,Rejected,2025-04-15T10:00:00Z,2025-04-25T10:00:00Z
+app_hist_0004,cnd_hist_0004,job_qa_eng_2026,rejected,Rejected,2025-05-15T10:00:00Z,2025-05-25T10:00:00Z
+app_hist_0005,cnd_hist_0005,job_ran_planner_2025,rejected,Rejected,2025-06-15T10:00:00Z,2025-06-25T10:00:00Z
+app_hist_0006,cnd_hist_0006,job_field_engineer_2025_q2,rejected,Rejected,2025-07-15T10:00:00Z,2025-07-25T10:00:00Z
+app_hist_0007,cnd_hist_0007,job_regulatory_analyst_2025,hired,Hired,2025-08-15T10:00:00Z,2025-08-25T10:00:00Z
+app_hist_0008,cnd_hist_0008,job_intern_2026_q2,rejected,Rejected,2025-09-15T10:00:00Z,2025-09-25T10:00:00Z
+app_hist_0009,cnd_hist_0009,job_qa_eng_2026,rejected,Rejected,2025-10-15T10:00:00Z,2025-10-25T10:00:00Z
+app_hist_0010,cnd_hist_0010,job_ran_planner_2025,rejected,Rejected,2025-11-15T10:00:00Z,2025-11-25T10:00:00Z
+app_hist_0011,cnd_hist_0011,job_field_engineer_2025_q2,rejected,Rejected,2025-12-15T10:00:00Z,2025-12-25T10:00:00Z
+app_hist_0012,cnd_hist_0012,job_regulatory_analyst_2025,hired,Hired,2025-01-15T10:00:00Z,2025-01-25T10:00:00Z
+app_hist_0013,cnd_hist_0013,job_intern_2026_q2,rejected,Rejected,2025-02-15T10:00:00Z,2025-02-25T10:00:00Z
+app_hist_0014,cnd_hist_0014,job_qa_eng_2026,rejected,Rejected,2025-03-15T10:00:00Z,2025-03-25T10:00:00Z
+app_hist_0015,cnd_hist_0015,job_ran_planner_2025,rejected,Rejected,2025-04-15T10:00:00Z,2025-04-25T10:00:00Z
+app_hist_0016,cnd_hist_0016,job_field_engineer_2025_q2,rejected,Rejected,2025-05-15T10:00:00Z,2025-05-25T10:00:00Z
+app_hist_0017,cnd_hist_0017,job_regulatory_analyst_2025,hired,Hired,2025-06-15T10:00:00Z,2025-06-25T10:00:00Z
+app_hist_0018,cnd_hist_0018,job_intern_2026_q2,rejected,Rejected,2025-07-15T10:00:00Z,2025-07-25T10:00:00Z
+app_hist_0019,cnd_hist_0019,job_qa_eng_2026,rejected,Rejected,2025-08-15T10:00:00Z,2025-08-25T10:00:00Z
+app_hist_0020,cnd_hist_0020,job_ran_planner_2025,rejected,Rejected,2025-09-15T10:00:00Z,2025-09-25T10:00:00Z

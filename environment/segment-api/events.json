@@ -1,0 +1,82 @@
+[
+  {
+    "messageId": "msg_0a1b2c3d01",
+    "type": "track",
+    "userId": "user_1001",
+    "event": "Order Completed",
+    "timestamp": "2026-05-02T09:14:22Z",
+    "properties": "order_id=ord_5501;revenue=129.99;currency=USD"
+  },
+  {
+    "messageId": "msg_0a1b2c3d02",
+    "type": "track",
+    "userId": "user_1002",
+    "event": "Product Viewed",
+    "timestamp": "2026-05-03T11:42:05Z",
+    "properties": "product_id=sku_204;category=footwear"
+  },
+  {
+    "messageId": "msg_0a1b2c3d03",
+    "type": "identify",
+    "userId": "user_1003",
+    "event": "",
+    "timestamp": "2026-05-04T08:30:11Z",
+    "properties": "email=ana@example.com;plan=pro"
+  },
+  {
+    "messageId": "msg_0a1b2c3d04",
+    "type": "page",
+    "userId": "user_1001",
+    "event": "",
+    "timestamp": "2026-05-05T16:01:48Z",
+    "properties": "name=Pricing;url=/pricing"
+  },
+  {
+    "messageId": "msg_0a1b2c3d05",
+    "type": "track",
+    "userId": "user_1004",
+    "event": "Signed Up",
+    "timestamp": "2026-05-06T13:25:33Z",
+    "properties": "source=organic;plan=free"
+  },
+  {
+    "messageId": "msg_0a1b2c3d06",
+    "type": "track",
+    "userId": "user_1002",
+    "event": "Added to Cart",
+    "timestamp": "2026-05-07T10:09:57Z",
+    "properties": "product_id=sku_204;quantity=2"
+  },
+  {
+    "messageId": "msg_0a1b2c3d07",
+    "type": "page",
+    "userId": "user_1005",
+    "event": "",
+    "timestamp": "2026-05-08T19:44:12Z",
+    "properties": "name=Home;url=/"
+  },
+  {
+    "messageId": "msg_0a1b2c3d08",
+    "type": "identify",
+    "userId": "user_1004",
+    "event": "",
+    "timestamp": "2026-05-09T07:55:40Z",
+    "properties": "email=lee@example.com;plan=free"
+  },
+  {
+    "messageId": "msg_0a1b2c3d09",
+    "type": "track",
+    "userId": "user_1003",
+    "event": "Subscription Started",
+    "timestamp": "2026-05-10T14:18:26Z",
+    "properties": "plan=pro;mrr=49.00;currency=USD"
+  },
+  {
+    "messageId": "msg_0a1b2c3d10",
+    "type": "track",
+    "userId": "user_1005",
+    "event": "Order Completed",
+    "timestamp": "2026-05-11T20:33:09Z",
+    "properties": "order_id=ord_5502;revenue=58.50;currency=USD"
+  }
+]

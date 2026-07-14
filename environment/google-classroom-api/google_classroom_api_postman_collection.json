@@ -1,0 +1,511 @@
+{
+  "info": {
+    "name": "Google Classroom API (Mock)",
+    "_postman_id": "gc-mock-api-collection",
+    "description": "Mock Google Classroom API for Kensei2 RL evaluation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "base_url", "value": "http://localhost:8011"}
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/health", "host": ["{{base_url}}"], "path": ["health"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Courses",
+      "item": [
+        {
+          "name": "List All Courses",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses", "host": ["{{base_url}}"], "path": ["v1", "courses"]}
+          }
+        },
+        {
+          "name": "List Active Courses",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses?courseStates=ACTIVE", "host": ["{{base_url}}"], "path": ["v1", "courses"], "query": [{"key": "courseStates", "value": "ACTIVE"}]}
+          }
+        },
+        {
+          "name": "Get Course (Intertidal Lab)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_005", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_005"]}
+          }
+        },
+        {
+          "name": "List Archived Courses",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses?courseStates=ARCHIVED", "host": ["{{base_url}}"], "path": ["v1", "courses"], "query": [{"key": "courseStates", "value": "ARCHIVED"}]}
+          }
+        },
+        {
+          "name": "Get Course (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001"]}
+          }
+        },
+        {
+          "name": "Get Course (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_999"]}
+          }
+        },
+        {
+          "name": "Create Course",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses", "host": ["{{base_url}}"], "path": ["v1", "courses"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"name\": \"Data Structures (Spring 2025)\", \"section\": \"Period 7\", \"description\": \"Advanced data structures using Java\", \"room\": \"Room 214\"}"}
+          }
+        },
+        {
+          "name": "Update Course",
+          "request": {
+            "method": "PATCH",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"description\": \"Updated: Rigorous college-level Java course with emphasis on AP exam preparation.\"}"}
+          }
+        },
+        {
+          "name": "Archive Course",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_004:archive", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_004:archive"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "CourseWork",
+      "item": [
+        {
+          "name": "List CourseWork",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork"]}
+          }
+        },
+        {
+          "name": "List CourseWork (Intertidal Lab)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_005/courseWork", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_005", "courseWork"]}
+          }
+        },
+        {
+          "name": "List CourseWork by Topic",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork?topicId=topic_104", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork"], "query": [{"key": "topicId", "value": "topic_104"}]}
+          }
+        },
+        {
+          "name": "List CourseWork ordered by dueDate",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork?orderBy=dueDate desc", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork"], "query": [{"key": "orderBy", "value": "dueDate desc"}]}
+          }
+        },
+        {
+          "name": "Get CourseWork (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_101", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_101"]}
+          }
+        },
+        {
+          "name": "Get CourseWork (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_999"]}
+          }
+        },
+        {
+          "name": "Create CourseWork (Assignment)",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"title\": \"Recursion Challenge\", \"description\": \"Implement recursive solutions for factorial, fibonacci, and tower of hanoi.\", \"workType\": \"ASSIGNMENT\", \"maxPoints\": 75, \"topicId\": \"topic_107\", \"dueDate\": {\"year\": 2025, \"month\": 5, \"day\": 9}, \"dueTime\": {\"hours\": 23, \"minutes\": 59}}"}
+          }
+        },
+        {
+          "name": "Create CourseWork (Question)",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_002/courseWork", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_002", "courseWork"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"title\": \"CSS Box Model Quiz\", \"description\": \"What is the difference between content-box and border-box?\", \"workType\": \"SHORT_ANSWER_QUESTION\", \"maxPoints\": 10, \"topicId\": \"topic_202\"}"}
+          }
+        },
+        {
+          "name": "Update CourseWork (Due Date)",
+          "request": {
+            "method": "PATCH",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_109", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_109"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"dueDate\": {\"year\": 2025, \"month\": 5, \"day\": 5}, \"maxPoints\": 120}"}
+          }
+        },
+        {
+          "name": "Delete CourseWork",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_103", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_103"]}
+          }
+        },
+        {
+          "name": "Delete CourseWork (404)",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_999"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Topics",
+      "item": [
+        {
+          "name": "List Topics",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/topics", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "topics"]}
+          }
+        },
+        {
+          "name": "List Topics (Intertidal Lab)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_005/topics", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_005", "topics"]}
+          }
+        },
+        {
+          "name": "Get Topic (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/topics/topic_101", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "topics", "topic_101"]}
+          }
+        },
+        {
+          "name": "Get Topic (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/topics/topic_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "topics", "topic_999"]}
+          }
+        },
+        {
+          "name": "Create Topic",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/topics", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "topics"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"name\": \"Unit 8: 2D Arrays\"}"}
+          }
+        },
+        {
+          "name": "Update Topic",
+          "request": {
+            "method": "PATCH",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/topics/topic_101", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "topics", "topic_101"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"name\": \"Unit 1: Primitive Types & Expressions\"}"}
+          }
+        },
+        {
+          "name": "Delete Topic",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/topics/topic_107", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "topics", "topic_107"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Student Submissions",
+      "item": [
+        {
+          "name": "List Submissions",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_101/studentSubmissions", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_101", "studentSubmissions"]}
+          }
+        },
+        {
+          "name": "List Submissions (Intertidal Lab - Kelp Upload)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_005/courseWork/cw_501/studentSubmissions", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_005", "courseWork", "cw_501", "studentSubmissions"]}
+          }
+        },
+        {
+          "name": "List Submissions (TURNED_IN filter)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_108/studentSubmissions?states=TURNED_IN", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_108", "studentSubmissions"], "query": [{"key": "states", "value": "TURNED_IN"}]}
+          }
+        },
+        {
+          "name": "List Submissions (RETURNED filter)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_101/studentSubmissions?states=RETURNED", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_101", "studentSubmissions"], "query": [{"key": "states", "value": "RETURNED"}]}
+          }
+        },
+        {
+          "name": "List Submissions (Late filter)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_101/studentSubmissions?late=true", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_101", "studentSubmissions"], "query": [{"key": "late", "value": "true"}]}
+          }
+        },
+        {
+          "name": "Get Submission (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_101/studentSubmissions/sub_001", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_101", "studentSubmissions", "sub_001"]}
+          }
+        },
+        {
+          "name": "Get Submission (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_101/studentSubmissions/sub_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_101", "studentSubmissions", "sub_999"]}
+          }
+        },
+        {
+          "name": "Grade Submission",
+          "request": {
+            "method": "PATCH",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_108/studentSubmissions/sub_024", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_108", "studentSubmissions", "sub_024"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"assignedGrade\": 45, \"draftGrade\": 45}"}
+          }
+        },
+        {
+          "name": "Return Submission",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_108/studentSubmissions/sub_024:return", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_108", "studentSubmissions", "sub_024:return"]}
+          }
+        },
+        {
+          "name": "Reclaim Submission",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWork/cw_108/studentSubmissions/sub_025:reclaim", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWork", "cw_108", "studentSubmissions", "sub_025:reclaim"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Students",
+      "item": [
+        {
+          "name": "List Students",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/students", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "students"]}
+          }
+        },
+        {
+          "name": "List Students (Intertidal Lab)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_005/students", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_005", "students"]}
+          }
+        },
+        {
+          "name": "List Students (Page 2)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_002/students?pageSize=10&pageToken=10", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_002", "students"], "query": [{"key": "pageSize", "value": "10"}, {"key": "pageToken", "value": "10"}]}
+          }
+        },
+        {
+          "name": "Get Student (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/students/student_001", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "students", "student_001"]}
+          }
+        },
+        {
+          "name": "Get Student (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/students/student_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "students", "student_999"]}
+          }
+        },
+        {
+          "name": "Invite Student",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/students", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "students"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"emailAddress\": \"newstudent@westlake.edu\", \"fullName\": \"New Student\"}"}
+          }
+        },
+        {
+          "name": "Remove Student",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/students/student_048", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "students", "student_048"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Teachers",
+      "item": [
+        {
+          "name": "List Teachers",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/teachers", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "teachers"]}
+          }
+        },
+        {
+          "name": "Get Teacher (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/teachers/teacher_001", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "teachers", "teacher_001"]}
+          }
+        },
+        {
+          "name": "Get Teacher (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/teachers/teacher_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "teachers", "teacher_999"]}
+          }
+        },
+        {
+          "name": "List Teachers (course_002 - multiple)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_002/teachers", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_002", "teachers"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Announcements",
+      "item": [
+        {
+          "name": "List Announcements",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/announcements", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "announcements"]}
+          }
+        },
+        {
+          "name": "Get Announcement (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/announcements/ann_001", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "announcements", "ann_001"]}
+          }
+        },
+        {
+          "name": "Get Announcement (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/announcements/ann_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "announcements", "ann_999"]}
+          }
+        },
+        {
+          "name": "Create Announcement",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/announcements", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "announcements"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"text\": \"Extra credit opportunity: attend the CS guest speaker event this Thursday at 3pm in the auditorium.\"}"}
+          }
+        },
+        {
+          "name": "Update Announcement",
+          "request": {
+            "method": "PATCH",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/announcements/ann_002", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "announcements", "ann_002"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"text\": \"UPDATED: Unit 2 test moved to Monday. Extra review session Friday after school.\"}"}
+          }
+        },
+        {
+          "name": "Delete Announcement",
+          "request": {
+            "method": "DELETE",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/announcements/ann_004", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "announcements", "ann_004"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "Course Work Materials",
+      "item": [
+        {
+          "name": "List Materials",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWorkMaterials", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWorkMaterials"]}
+          }
+        },
+        {
+          "name": "Get Material (Valid)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWorkMaterials/mat_001", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWorkMaterials", "mat_001"]}
+          }
+        },
+        {
+          "name": "Get Material (404)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWorkMaterials/mat_999", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWorkMaterials", "mat_999"]}
+          }
+        },
+        {
+          "name": "Create Material",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_001/courseWorkMaterials", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_001", "courseWorkMaterials"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"title\": \"ArrayList Tutorial Video\", \"description\": \"Comprehensive video tutorial on Java ArrayList operations\", \"topicId\": \"topic_107\", \"materials\": [{\"link\": {\"url\": \"https://www.youtube.com/watch?v=example\", \"title\": \"ArrayList Tutorial\"}}]}"}
+          }
+        },
+        {
+          "name": "Create Material (Intertidal Lab - Evidence Plates)",
+          "request": {
+            "method": "POST",
+            "url": {"raw": "{{base_url}}/v1/courses/course_005/courseWorkMaterials", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_005", "courseWorkMaterials"]},
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\"title\": \"Survey Evidence Plates - May 2025\", \"description\": \"Photographic evidence plates from Mackworth Island intertidal survey\", \"topicId\": \"topic_501\", \"materials\": [{\"link\": {\"url\": \"https://drive.google.com/file/d/evidence_plates_may2025\", \"title\": \"Evidence Plates\"}}]}"}
+          }
+        },
+        {
+          "name": "List Materials (course_002)",
+          "request": {
+            "method": "GET",
+            "url": {"raw": "{{base_url}}/v1/courses/course_002/courseWorkMaterials", "host": ["{{base_url}}"], "path": ["v1", "courses", "course_002", "courseWorkMaterials"]}
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+store_id,name,cuisine,rating,review_count,price_range,delivery_fee,eta_minutes,latitude,longitude,address,is_open
+store_001,Cafe Cherie Maitama,Cafe + Light Meals,4.6,892,$$,850,35,9.0820,7.4951,"Plot 15, Maitama, Abuja",true
+store_002,Salamander Cafe Wuse 2,Continental + Cafe,4.5,1240,$$$,1200,45,9.0580,7.4820,"Aminu Kano Crescent, Wuse 2, Abuja",true
+store_003,Wakkis Restaurant Wuse 2,Nigerian Fine Dining,4.7,1580,$$$,1500,55,9.0590,7.4810,"Adetokunbo Ademola Crescent, Wuse 2",true
+store_004,Bayo's Suya Place Maitama,Nigerian Suya,4.4,640,$,500,25,9.0825,7.4955,"Aguiyi Ironsi Street, Maitama, Abuja",true

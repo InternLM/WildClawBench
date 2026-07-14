@@ -1,0 +1,101 @@
+[
+  {
+    "edition_id": "OL7891234M",
+    "work_id": "OL27448W",
+    "title": "The Lord of the Rings (50th Anniversary Edition)",
+    "isbn_13": "9780618640157",
+    "isbn_10": "0618640150",
+    "publisher": "Houghton Mifflin",
+    "publish_date": "2005-10-17",
+    "number_of_pages": "1216",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL7891235M",
+    "work_id": "OL27448W",
+    "title": "The Fellowship of the Ring",
+    "isbn_13": "9780261103573",
+    "isbn_10": "0261103571",
+    "publisher": "HarperCollins",
+    "publish_date": "2007-04-16",
+    "number_of_pages": "576",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL8123401M",
+    "work_id": "OL45804W",
+    "title": "A Wizard of Earthsea",
+    "isbn_13": "9780553262506",
+    "isbn_10": "0553262505",
+    "publisher": "Bantam Spectra",
+    "publish_date": "1984-09-01",
+    "number_of_pages": "183",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL9024501M",
+    "work_id": "OL46125W",
+    "title": "Foundation",
+    "isbn_13": "9780553293357",
+    "isbn_10": "0553293354",
+    "publisher": "Bantam Books",
+    "publish_date": "1991-10-01",
+    "number_of_pages": "244",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL31250112M",
+    "work_id": "OL17930368W",
+    "title": "The Fifth Season",
+    "isbn_13": "9780316229296",
+    "isbn_10": "0316229296",
+    "publisher": "Orbit",
+    "publish_date": "2015-08-04",
+    "number_of_pages": "512",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL2456789M",
+    "work_id": "OL893415W",
+    "title": "Dune",
+    "isbn_13": "9780441013593",
+    "isbn_10": "0441013597",
+    "publisher": "Ace Books",
+    "publish_date": "2005-08-02",
+    "number_of_pages": "688",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL3389012M",
+    "work_id": "OL27482W",
+    "title": "Kindred",
+    "isbn_13": "9780807083697",
+    "isbn_10": "0807083690",
+    "publisher": "Beacon Press",
+    "publish_date": "2004-02-01",
+    "number_of_pages": "287",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL5567123M",
+    "work_id": "OL27513W",
+    "title": "The Left Hand of Darkness",
+    "isbn_13": "9780441478125",
+    "isbn_10": "0441478123",
+    "publisher": "Ace Books",
+    "publish_date": "2000-04-04",
+    "number_of_pages": "304",
+    "language": "eng"
+  },
+  {
+    "edition_id": "OL6678234M",
+    "work_id": "OL46128W",
+    "title": "I, Robot",
+    "isbn_13": "9780553294385",
+    "isbn_10": "0553294385",
+    "publisher": "Spectra",
+    "publish_date": "2008-08-26",
+    "number_of_pages": "224",
+    "language": "eng"
+  }
+]

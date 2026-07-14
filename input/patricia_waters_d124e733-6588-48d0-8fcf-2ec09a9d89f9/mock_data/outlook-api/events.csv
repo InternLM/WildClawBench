@@ -1,0 +1,6 @@
+id,subject,organizer_name,organizer_address,location,start_date,end_date,is_all_day,is_online,attendees
+ole-0,HSE team meeting,HSE,office@galwayregional.hse.ie,Renmore,2026-10-15T09:30:00,2026-10-15T10:30:00,false,false,1
+ole-1,Case review (general),HSE,office@galwayregional.hse.ie,Renmore,2026-10-13T11:00:00,2026-10-13T12:00:00,false,false,1
+ole-2,CPD webinar,HSE,office@galwayregional.hse.ie,Renmore,2026-09-24T12:00:00,2026-09-24T13:00:00,false,false,1
+ole-3,Peer supervision,HSE,office@galwayregional.hse.ie,Renmore,2026-09-19T15:00:00,2026-09-19T16:00:00,false,false,1
+ole-4,Information seminar,HSE,office@galwayregional.hse.ie,Renmore,2026-09-26T17:00:00,2026-09-26T18:00:00,false,false,1

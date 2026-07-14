@@ -1,0 +1,20 @@
+{
+  "item": {
+    "item_id": "item_orbit_8a1f2c",
+    "institution_id": "ins_109512",
+    "webhook": "https://example.com/plaid/webhook",
+    "available_products": ["balance", "identity"],
+    "billed_products": ["transactions", "auth"],
+    "consent_expiration_time": null,
+    "update_type": "background"
+  },
+  "institution": {
+    "institution_id": "ins_109512",
+    "name": "Cascade Federal Bank",
+    "products": ["transactions", "auth", "balance", "identity"],
+    "country_codes": ["US"],
+    "url": "https://www.cascadefed.example.com",
+    "primary_color": "#1a73a8",
+    "routing_numbers": ["122105155"]
+  }
+}

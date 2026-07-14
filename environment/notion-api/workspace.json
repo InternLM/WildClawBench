@@ -1,0 +1,14 @@
+{
+  "id": "workspace-orbit-labs",
+  "name": "Orbit Labs",
+  "domain": "orbit-labs",
+  "owner_user_id": "user-amelia",
+  "plan": "team",
+  "created_time": "2025-09-01T10:00:00.000Z",
+  "icon": "https://www.notion.so/icons/orbit_blue.svg",
+  "settings": {
+    "default_page_size": 50,
+    "ai_blocks_enabled": true,
+    "public_sharing_enabled": false
+  }
+}

@@ -1,0 +1,35 @@
+event_id,email,display_name,response_status,optional,organizer
+evt_ncc_hearing_oct5,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_ncc_hearing_oct5,b.olatunji@telecorpng.com,Eng. Babatunde Olatunji,accepted,false,false
+evt_ncc_hearing_oct5,f.musa@telecorpng.com,Fatima Musa,accepted,false,false
+evt_ncc_hearing_oct5,y.ibrahim@ncc.gov.ng,Dr. Yusuf Ibrahim,tentative,false,false
+evt_filing_window_oct5,b.olatunji@telecorpng.com,Eng. Babatunde Olatunji,accepted,false,true
+evt_filing_window_oct5,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,false
+evt_filing_window_oct5,f.musa@telecorpng.com,Fatima Musa,accepted,false,false
+evt_team_standup_oct5,b.olatunji@telecorpng.com,Eng. Babatunde Olatunji,accepted,false,true
+evt_team_standup_oct5,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,false
+evt_team_standup_oct5,t.bello@telecorpng.com,Tunde Bello,accepted,false,false
+evt_team_standup_oct5,c.eze@telecorpng.com,Chinwe Eze,accepted,false,false
+evt_team_standup_oct5,e.adeniyi@telecorpng.com,Emeka Adeniyi,accepted,false,false
+evt_team_standup_oct5,i.okeke@telecorpng.com,Ifeanyi Okeke,accepted,false,false
+evt_team_standup_oct5,c.ndukwe@telecorpng.com,Chioma Ndukwe,accepted,false,false
+evt_team_standup_oct5,f.musa@telecorpng.com,Fatima Musa,accepted,false,false
+evt_team_standup_oct5,a.obi@telecorpng.com,Amaka Obi,accepted,false,false
+evt_yetunde_oct6,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_yetunde_oct6,yetunde.bakare.engineer@gmail.com,Yetunde Bakare,accepted,false,false
+evt_trad_leader_oct7,c.ndukwe@telecorpng.com,Chioma Ndukwe,accepted,false,true
+evt_trad_leader_oct7,i.okeke@telecorpng.com,Ifeanyi Okeke,accepted,false,false
+evt_funke_dinner_oct7,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_funke_dinner_oct7,funke.adebayo.banker@gmail.com,Funke Adebayo,accepted,false,false
+evt_phase1_milestone_oct9,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_phase1_milestone_oct9,b.olatunji@telecorpng.com,Eng. Babatunde Olatunji,tentative,false,false
+evt_phase1_milestone_oct9,i.okeke@telecorpng.com,Ifeanyi Okeke,accepted,false,false
+evt_oct12_eod_review,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_anniversary_oct3,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_anniversary_oct3,adeyemi.stokes.architect@gmail.com,Adeyemi Stokes,accepted,false,false
+evt_lagos_trip_out,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_lagos_trip_out,adeyemi.stokes.architect@gmail.com,Adeyemi Stokes,accepted,false,false
+evt_lagos_trip_return,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_lagos_trip_return,adeyemi.stokes.architect@gmail.com,Adeyemi Stokes,accepted,false,false
+evt_equipment_oct19,sheila.stokes@Finthesiss.ai,Sheila Stokes,accepted,false,true
+evt_equipment_oct19,ola.adeyemo@tachyon-networks.ng,Ola Adeyemo,tentative,false,false

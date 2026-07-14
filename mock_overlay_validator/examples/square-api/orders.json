@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ORD_AURORA01",
+    "customer_id": "CUST_HARPER01",
+    "location_id": "LOC_MAIN",
+    "line_items": "VAR_LATTE_R x1; VAR_CROISSANT_R x1",
+    "total_amount": "825",
+    "currency": "USD",
+    "state": "COMPLETED",
+    "created_at": "2026-05-20T08:14:00Z"
+  },
+  {
+    "id": "ORD_BOREAL02",
+    "customer_id": "CUST_DIEGO02",
+    "location_id": "LOC_MAIN",
+    "line_items": "VAR_COLDBREW_R x1",
+    "total_amount": "500",
+    "currency": "USD",
+    "state": "COMPLETED",
+    "created_at": "2026-05-20T09:39:00Z"
+  },
+  {
+    "id": "ORD_CITRON03",
+    "customer_id": "CUST_MAYA03",
+    "location_id": "LOC_MAIN",
+    "line_items": "VAR_MUG_R x2",
+    "total_amount": "2400",
+    "currency": "USD",
+    "state": "COMPLETED",
+    "created_at": "2026-05-21T10:04:00Z"
+  },
+  {
+    "id": "ORD_DELTA04",
+    "customer_id": "CUST_OMAR04",
+    "location_id": "LOC_MAIN",
+    "line_items": "VAR_CROISSANT_R x1",
+    "total_amount": "375",
+    "currency": "USD",
+    "state": "COMPLETED",
+    "created_at": "2026-05-21T11:24:00Z"
+  },
+  {
+    "id": "ORD_ECHO05",
+    "customer_id": "CUST_LENA05",
+    "location_id": "LOC_MAIN",
+    "line_items": "VAR_BEANS_12 x1",
+    "total_amount": "1600",
+    "currency": "USD",
+    "state": "OPEN",
+    "created_at": "2026-05-22T11:59:00Z"
+  },
+  {
+    "id": "ORD_FJORD06",
+    "customer_id": "CUST_PRIYA06",
+    "location_id": "LOC_MAIN",
+    "line_items": "VAR_TEA_TIN x1",
+    "total_amount": "900",
+    "currency": "USD",
+    "state": "COMPLETED",
+    "created_at": "2026-05-22T13:29:00Z"
+  },
+  {
+    "id": "ORD_GROVE07",
+    "customer_id": "CUST_TOMAS07",
+    "location_id": "LOC_MAIN",
+    "line_items": "VAR_LATTE_R x1; VAR_BAGEL_R x1; VAR_TEA_TIN x1",
+    "total_amount": "1650",
+    "currency": "USD",
+    "state": "OPEN",
+    "created_at": "2026-05-23T14:09:00Z"
+  }
+]

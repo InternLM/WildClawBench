@@ -1,0 +1,39 @@
+{
+  "id": "UChadley_rm305",
+  "snippet": {
+    "title": "Hadley RM305",
+    "description": "Lecture recordings and clarifications for Research Methods 305 Spring 2026. Westbrook University. Videos unlisted for currently enrolled students and their families.",
+    "customUrl": "@hadley-rm305",
+    "publishedAt": "2026-01-15T19:00:00Z",
+    "thumbnails": {
+      "default": {"url": "https://yt3.ggpht.com/hadley_rm305_default.jpg", "width": 88, "height": 88},
+      "medium": {"url": "https://yt3.ggpht.com/hadley_rm305_medium.jpg", "width": 240, "height": 240},
+      "high": {"url": "https://yt3.ggpht.com/hadley_rm305_high.jpg", "width": 800, "height": 800}
+    },
+    "country": "US"
+  },
+  "statistics": {
+    "viewCount": "1124",
+    "subscriberCount": "38",
+    "hiddenSubscriberCount": true,
+    "videoCount": "14"
+  },
+  "contentDetails": {
+    "relatedPlaylists": {
+      "likes": "LL_hadley_rm305",
+      "uploads": "UU_hadley_rm305"
+    }
+  },
+  "brandingSettings": {
+    "channel": {
+      "title": "Hadley RM305",
+      "description": "Lecture recordings and posted clarifications for Research Methods 305 Spring 2026 at Westbrook University.",
+      "keywords": "research methods statistics westbrook university rm305 lecture clarifications",
+      "unsubscribedTrailer": "vid_week01_intro",
+      "country": "US"
+    },
+    "image": {
+      "bannerExternalUrl": "https://yt3.googleusercontent.com/hadley_rm305_banner.jpg"
+    }
+  }
+}

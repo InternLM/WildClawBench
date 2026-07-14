@@ -1,0 +1,112 @@
+[
+  {
+    "id": "id:a4ayc_80000000000000000000001",
+    "name": "Documents",
+    "path_lower": "/documents",
+    "path_display": "/Documents",
+    "is_folder": "true",
+    "size": "0",
+    "client_modified": "2026-05-02T09:14:00Z",
+    "rev": ""
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000002",
+    "name": "Photos",
+    "path_lower": "/photos",
+    "path_display": "/Photos",
+    "is_folder": "true",
+    "size": "0",
+    "client_modified": "2026-05-03T11:20:00Z",
+    "rev": ""
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000003",
+    "name": "Projects",
+    "path_lower": "/projects",
+    "path_display": "/Projects",
+    "is_folder": "true",
+    "size": "0",
+    "client_modified": "2026-05-04T08:05:00Z",
+    "rev": ""
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000004",
+    "name": "Q2-Report.pdf",
+    "path_lower": "/documents/q2-report.pdf",
+    "path_display": "/Documents/Q2-Report.pdf",
+    "is_folder": "false",
+    "size": "284517",
+    "client_modified": "2026-05-10T14:32:00Z",
+    "rev": "0123456789abcdef01000001"
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000005",
+    "name": "Budget-2026.xlsx",
+    "path_lower": "/documents/budget-2026.xlsx",
+    "path_display": "/Documents/Budget-2026.xlsx",
+    "is_folder": "false",
+    "size": "51230",
+    "client_modified": "2026-05-12T16:48:00Z",
+    "rev": "0123456789abcdef01000002"
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000006",
+    "name": "Roadmap.docx",
+    "path_lower": "/documents/roadmap.docx",
+    "path_display": "/Documents/Roadmap.docx",
+    "is_folder": "false",
+    "size": "38912",
+    "client_modified": "2026-05-14T10:11:00Z",
+    "rev": "0123456789abcdef01000003"
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000007",
+    "name": "launch.png",
+    "path_lower": "/photos/launch.png",
+    "path_display": "/Photos/launch.png",
+    "is_folder": "false",
+    "size": "1048576",
+    "client_modified": "2026-05-15T18:22:00Z",
+    "rev": "0123456789abcdef01000004"
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000008",
+    "name": "team-offsite.jpg",
+    "path_lower": "/photos/team-offsite.jpg",
+    "path_display": "/Photos/team-offsite.jpg",
+    "is_folder": "false",
+    "size": "2097152",
+    "client_modified": "2026-05-16T12:40:00Z",
+    "rev": "0123456789abcdef01000005"
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000009",
+    "name": "proposal.pdf",
+    "path_lower": "/projects/proposal.pdf",
+    "path_display": "/Projects/proposal.pdf",
+    "is_folder": "false",
+    "size": "156789",
+    "client_modified": "2026-05-18T09:55:00Z",
+    "rev": "0123456789abcdef01000006"
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000010",
+    "name": "notes.txt",
+    "path_lower": "/projects/notes.txt",
+    "path_display": "/Projects/notes.txt",
+    "is_folder": "false",
+    "size": "4096",
+    "client_modified": "2026-05-20T13:07:00Z",
+    "rev": "0123456789abcdef01000007"
+  },
+  {
+    "id": "id:a4ayc_80000000000000000000011",
+    "name": "Roadmap.md",
+    "path_lower": "/documents/roadmap.md",
+    "path_display": "/Documents/Roadmap.md",
+    "is_folder": "false",
+    "size": "256",
+    "client_modified": "2026-05-20T09:00:00Z",
+    "rev": "0123456789abcdef01000011"
+  }
+]

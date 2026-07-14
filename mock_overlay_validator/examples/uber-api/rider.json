@@ -1,0 +1,16 @@
+{
+  "rider_id": "rider-marco",
+  "first_name": "Marco",
+  "last_name": "Reyes",
+  "email": "marco.reyes@example.com",
+  "phone_number": "+14155550142",
+  "rating": 4.91,
+  "member_since": "2021-03-14",
+  "promo_code": "RIDE5OFF",
+  "payment_methods": [
+    {"payment_method_id": "pm-visa-9921", "type": "card", "brand": "Visa", "last_four": "9921", "default": true},
+    {"payment_method_id": "pm-ubercash", "type": "uber_cash", "balance": 18.50, "default": false}
+  ],
+  "home_address": "1455 Market St, San Francisco, CA",
+  "work_address": "701 Mission St, San Francisco, CA"
+}

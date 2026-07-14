@@ -1,0 +1,5 @@
+[service]
+name = "confluence-api"
+port = 8045
+env_var_name = "CONFLUENCE_API_URL"
+healthcheck_path = "/health"

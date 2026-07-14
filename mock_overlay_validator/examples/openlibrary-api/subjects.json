@@ -1,0 +1,32 @@
+[
+  {
+    "subject": "science_fiction",
+    "name": "Science Fiction",
+    "subject_type": "subject"
+  },
+  {
+    "subject": "fantasy",
+    "name": "Fantasy",
+    "subject_type": "subject"
+  },
+  {
+    "subject": "robots",
+    "name": "Robots",
+    "subject_type": "subject"
+  },
+  {
+    "subject": "time_travel",
+    "name": "Time Travel",
+    "subject_type": "subject"
+  },
+  {
+    "subject": "magic",
+    "name": "Magic",
+    "subject_type": "subject"
+  },
+  {
+    "subject": "adventure",
+    "name": "Adventure",
+    "subject_type": "subject"
+  }
+]

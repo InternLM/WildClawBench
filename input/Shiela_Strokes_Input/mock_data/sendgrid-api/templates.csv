@@ -1,0 +1,6 @@
+id,name,generation,subject,html_content,active,updated_at
+tpl_status_update,Project Status Update,dynamic,Status Update - {{project}},<p>Status update for {{project}} - {{summary}}.</p>,true,2026-09-15T10:00:00Z
+tpl_milestone_alert,Milestone Alert,dynamic,Milestone Alert - {{milestone}},<p>Milestone alert: {{milestone}} - {{detail}}.</p>,true,2026-09-15T10:00:00Z
+tpl_vendor_summary,Vendor Weekly Summary,dynamic,Tachyon Weekly Summary - {{week}},<p>Tachyon weekly summary for {{week}}.</p>,true,2026-09-15T10:00:00Z
+tpl_ncc_followup,NCC Follow-Up,dynamic,Follow-Up - {{filing}},<p>Follow-up regarding {{filing}}.</p>,true,2026-09-15T10:00:00Z
+tpl_mentorship_brief,Mentorship Session Brief,dynamic,Session Brief - {{session_date}},<p>Brief for {{session_date}}.</p>,true,2026-09-15T10:00:00Z

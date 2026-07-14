@@ -1,0 +1,52 @@
+[
+  {
+    "id": "INV2-AB12-CD34-EF56-GH78",
+    "invoice_number": "INV-0001",
+    "status": "PAID",
+    "recipient_email": "harper.nguyen@example.com",
+    "amount_value": "49.99",
+    "currency_code": "USD",
+    "due_date": "2026-05-15",
+    "note": "Thank you for your business"
+  },
+  {
+    "id": "INV2-IJ90-KL12-MN34-OP56",
+    "invoice_number": "INV-0002",
+    "status": "SENT",
+    "recipient_email": "diego.ramos@example.com",
+    "amount_value": "129.00",
+    "currency_code": "USD",
+    "due_date": "2026-06-01",
+    "note": "Net 15 terms"
+  },
+  {
+    "id": "INV2-QR78-ST90-UV12-WX34",
+    "invoice_number": "INV-0003",
+    "status": "DRAFT",
+    "recipient_email": "maya.fischer@example.com",
+    "amount_value": "19.00",
+    "currency_code": "USD",
+    "due_date": "2026-06-05",
+    "note": "Monthly subscription"
+  },
+  {
+    "id": "INV2-YZ56-AB78-CD90-EF12",
+    "invoice_number": "INV-0004",
+    "status": "PAID",
+    "recipient_email": "omar.haddad@example.com",
+    "amount_value": "7.50",
+    "currency_code": "USD",
+    "due_date": "2026-05-20",
+    "note": "Usage overage"
+  },
+  {
+    "id": "INV2-GH34-IJ56-KL78-MN90",
+    "invoice_number": "INV-0005",
+    "status": "SENT",
+    "recipient_email": "lena.sorensen@example.com",
+    "amount_value": "84.25",
+    "currency_code": "USD",
+    "due_date": "2026-06-10",
+    "note": "Hardware accessory"
+  }
+]

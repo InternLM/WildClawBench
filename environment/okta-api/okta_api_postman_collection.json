@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Okta Mock API v1",
+    "description": "Test collection for the mock Okta API service. Base URL defaults to http://localhost:8049. In docker-compose, the service is reachable at http://okta-api:8049.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8049"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/users"}},
+    {"name": "list users by status", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/users?status=ACTIVE"}},
+    {"name": "get user", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/users/00u1amelia"}},
+    {"name": "create user", "request": {"method": "POST", "url": "{{baseUrl}}/api/v1/users?activate=true",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"profile\": {\"firstName\": \"Dana\", \"lastName\": \"Cole\", \"email\": \"dana.cole@orbit-labs.com\"}}"}}},
+    {"name": "activate user", "request": {"method": "POST", "url": "{{baseUrl}}/api/v1/users/00u5noor/lifecycle/activate"}},
+    {"name": "suspend user", "request": {"method": "POST", "url": "{{baseUrl}}/api/v1/users/00u1amelia/lifecycle/suspend"}},
+    {"name": "deactivate user", "request": {"method": "POST", "url": "{{baseUrl}}/api/v1/users/00u4rohit/lifecycle/deactivate"}},
+    {"name": "list groups", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/groups"}},
+    {"name": "get group", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/groups/00g1eng"}},
+    {"name": "list group users", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/groups/00g1eng/users"}},
+    {"name": "list apps", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/apps"}}
+  ]
+}

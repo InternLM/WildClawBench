@@ -1,0 +1,5 @@
+[service]
+name = "mailchimp-api"
+port = 8081
+env_var_name = "MAILCHIMP_API_URL"
+healthcheck_path = "/health"

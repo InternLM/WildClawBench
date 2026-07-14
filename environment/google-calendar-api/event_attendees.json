@@ -1,0 +1,98 @@
+[
+  {
+    "event_id": "evt-001",
+    "email": "amelia@orbit-labs.com",
+    "display_name": "Amelia Ortega",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "true"
+  },
+  {
+    "event_id": "evt-001",
+    "email": "jonas@orbit-labs.com",
+    "display_name": "Jonas Pereira",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "false"
+  },
+  {
+    "event_id": "evt-002",
+    "email": "amelia@orbit-labs.com",
+    "display_name": "Amelia Ortega",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "false"
+  },
+  {
+    "event_id": "evt-002",
+    "email": "helena@orbit-labs.com",
+    "display_name": "Helena Park",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "true"
+  },
+  {
+    "event_id": "evt-002",
+    "email": "jonas@orbit-labs.com",
+    "display_name": "Jonas Pereira",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "false"
+  },
+  {
+    "event_id": "evt-002",
+    "email": "rohit@orbit-labs.com",
+    "display_name": "Rohit Bansal",
+    "response_status": "tentative",
+    "optional": "false",
+    "organizer": "false"
+  },
+  {
+    "event_id": "evt-003",
+    "email": "amelia@orbit-labs.com",
+    "display_name": "Amelia Ortega",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "true"
+  },
+  {
+    "event_id": "evt-003",
+    "email": "helena@orbit-labs.com",
+    "display_name": "Helena Park",
+    "response_status": "needsAction",
+    "optional": "false",
+    "organizer": "false"
+  },
+  {
+    "event_id": "evt-003",
+    "email": "jonas@orbit-labs.com",
+    "display_name": "Jonas Pereira",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "false"
+  },
+  {
+    "event_id": "evt-004",
+    "email": "helena@orbit-labs.com",
+    "display_name": "Helena Park",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "true"
+  },
+  {
+    "event_id": "evt-004",
+    "email": "amelia@orbit-labs.com",
+    "display_name": "Amelia Ortega",
+    "response_status": "accepted",
+    "optional": "false",
+    "organizer": "false"
+  },
+  {
+    "event_id": "evt-004",
+    "email": "jonas@orbit-labs.com",
+    "display_name": "Jonas Pereira",
+    "response_status": "accepted",
+    "optional": "true",
+    "organizer": "false"
+  }
+]

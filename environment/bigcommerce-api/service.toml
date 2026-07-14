@@ -1,0 +1,5 @@
+[service]
+name = "bigcommerce-api"
+port = 8084
+env_var_name = "BIGCOMMERCE_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,290 @@
+[
+  {
+    "Id": "7001",
+    "DocNumber": "INV-2026-1001",
+    "TxnDate": "2026-02-11",
+    "DueDate": "2026-03-02",
+    "CustomerRef": {
+      "value": "2",
+      "name": "Lagos Tech Hub"
+    },
+    "Line": [
+      {
+        "Amount": 121250.0,
+        "Description": "Workshop facilitation",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 121250.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "7002",
+    "DocNumber": "INV-2026-1002",
+    "TxnDate": "2026-03-12",
+    "DueDate": "2026-04-03",
+    "CustomerRef": {
+      "value": "3",
+      "name": "Bright Futures Academy"
+    },
+    "Line": [
+      {
+        "Amount": 62500.0,
+        "Description": "Training session",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 62500.0,
+    "Balance": 62500.0,
+    "Status": "Open"
+  },
+  {
+    "Id": "7003",
+    "DocNumber": "INV-2026-1003",
+    "TxnDate": "2026-04-13",
+    "DueDate": "2026-05-04",
+    "CustomerRef": {
+      "value": "4",
+      "name": "Savanna Capital Managers"
+    },
+    "Line": [
+      {
+        "Amount": 47900.0,
+        "Description": "Design review",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 47900.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "7004",
+    "DocNumber": "INV-2026-1004",
+    "TxnDate": "2026-05-14",
+    "DueDate": "2026-06-05",
+    "CustomerRef": {
+      "value": "5",
+      "name": "Maitama Residences Ltd"
+    },
+    "Line": [
+      {
+        "Amount": 35000.0,
+        "Description": "Guest lecture",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 35000.0,
+    "Balance": 35000.0,
+    "Status": "Open"
+  },
+  {
+    "Id": "7005",
+    "DocNumber": "INV-2026-1005",
+    "TxnDate": "2026-06-15",
+    "DueDate": "2026-07-06",
+    "CustomerRef": {
+      "value": "6",
+      "name": "Premier Medical Centre"
+    },
+    "Line": [
+      {
+        "Amount": 86250.0,
+        "Description": "Equipment rental",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 86250.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "7006",
+    "DocNumber": "INV-2026-1006",
+    "TxnDate": "2026-01-16",
+    "DueDate": "2026-02-07",
+    "CustomerRef": {
+      "value": "1",
+      "name": "Adeyemi Design Studio"
+    },
+    "Line": [
+      {
+        "Amount": 102500.0,
+        "Description": "Consulting - advisory",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 102500.0,
+    "Balance": 102500.0,
+    "Status": "Open"
+  },
+  {
+    "Id": "7007",
+    "DocNumber": "INV-2026-1007",
+    "TxnDate": "2026-02-17",
+    "DueDate": "2026-03-08",
+    "CustomerRef": {
+      "value": "2",
+      "name": "Lagos Tech Hub"
+    },
+    "Line": [
+      {
+        "Amount": 128750.0,
+        "Description": "Workshop facilitation",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 128750.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "7008",
+    "DocNumber": "INV-2026-1008",
+    "TxnDate": "2026-03-18",
+    "DueDate": "2026-04-09",
+    "CustomerRef": {
+      "value": "3",
+      "name": "Bright Futures Academy"
+    },
+    "Line": [
+      {
+        "Amount": 70000.0,
+        "Description": "Training session",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 70000.0,
+    "Balance": 70000.0,
+    "Status": "Open"
+  },
+  {
+    "Id": "7009",
+    "DocNumber": "INV-2026-1009",
+    "TxnDate": "2026-04-10",
+    "DueDate": "2026-05-01",
+    "CustomerRef": {
+      "value": "4",
+      "name": "Savanna Capital Managers"
+    },
+    "Line": [
+      {
+        "Amount": 56250.0,
+        "Description": "Design review",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 56250.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "7010",
+    "DocNumber": "INV-2026-1010",
+    "TxnDate": "2026-05-11",
+    "DueDate": "2026-06-02",
+    "CustomerRef": {
+      "value": "5",
+      "name": "Maitama Residences Ltd"
+    },
+    "Line": [
+      {
+        "Amount": 42500.0,
+        "Description": "Guest lecture",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 42500.0,
+    "Balance": 42500.0,
+    "Status": "Open"
+  },
+  {
+    "Id": "7011",
+    "DocNumber": "INV-2026-1011",
+    "TxnDate": "2026-06-12",
+    "DueDate": "2026-07-03",
+    "CustomerRef": {
+      "value": "6",
+      "name": "Premier Medical Centre"
+    },
+    "Line": [
+      {
+        "Amount": 93750.0,
+        "Description": "Equipment rental",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 93750.0,
+    "Balance": 0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "7012",
+    "DocNumber": "INV-2026-1012",
+    "TxnDate": "2026-01-13",
+    "DueDate": "2026-02-04",
+    "CustomerRef": {
+      "value": "1",
+      "name": "Adeyemi Design Studio"
+    },
+    "Line": [
+      {
+        "Amount": 110000.0,
+        "Description": "Consulting - advisory",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Service Income"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 110000.0,
+    "Balance": 110000.0,
+    "Status": "Open"
+  }
+]

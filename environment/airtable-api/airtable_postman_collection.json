@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Airtable Mock API",
+    "description": "Test collection for the mock Airtable API service. Base URL defaults to http://localhost:8032. In docker-compose, the service is reachable at http://airtable-api:8032.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8032"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list bases", "request": {"method": "GET", "url": "{{baseUrl}}/v0/meta/bases"}},
+    {"name": "list tables", "request": {"method": "GET", "url": "{{baseUrl}}/v0/meta/bases/appNW1studio0001/tables"}},
+    {"name": "list records", "request": {"method": "GET", "url": "{{baseUrl}}/v0/appNW1studio0001/Tasks?pageSize=5"}},
+    {"name": "list records filtered", "request": {"method": "GET", "url": "{{baseUrl}}/v0/appNW1studio0001/Tasks?filterByFormula={Status}='Done'"}},
+    {"name": "list records paginated", "request": {"method": "GET", "url": "{{baseUrl}}/v0/appNW1studio0001/Contacts?pageSize=3&offset=3"}},
+    {"name": "get record", "request": {"method": "GET", "url": "{{baseUrl}}/v0/appNW1studio0001/Tasks/recTask0000000001"}},
+    {"name": "create records", "request": {"method": "POST", "url": "{{baseUrl}}/v0/appNW1studio0001/Tasks",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"records\": [{\"fields\": {\"Name\": \"Write API docs\", \"Status\": \"Todo\", \"Project\": \"Mobile App v2\", \"EstimateHours\": 6, \"Done\": false}}]}"}}},
+    {"name": "update record", "request": {"method": "PATCH", "url": "{{baseUrl}}/v0/appNW1studio0001/Tasks/recTask0000000002",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"fields\": {\"Status\": \"Done\", \"Done\": true}}"}}},
+    {"name": "delete record", "request": {"method": "DELETE", "url": "{{baseUrl}}/v0/appNW1studio0001/Tasks/recTask0000000010"}}
+  ]
+}

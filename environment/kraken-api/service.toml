@@ -1,0 +1,5 @@
+[service]
+name = "kraken-api"
+port = 8098
+env_var_name = "KRAKEN_API_URL"
+healthcheck_path = "/health"

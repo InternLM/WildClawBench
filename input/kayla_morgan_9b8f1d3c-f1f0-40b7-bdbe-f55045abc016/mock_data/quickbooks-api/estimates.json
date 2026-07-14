@@ -1,0 +1,25 @@
+[
+  {
+    "Id": "6001",
+    "DocNumber": "E-6001",
+    "TxnDate": "2026-04-01",
+    "ExpirationDate": "2026-05-01",
+    "CustomerRef": {"value": "1", "name": "Asheville Historical Society"},
+    "Line": [
+      {
+        "Id": "1",
+        "LineNum": 1,
+        "Amount": 800.00,
+        "DetailType": "SalesItemLineDetail",
+        "Description": "Exhibit program printing and design - summer 2026 exhibition",
+        "SalesItemLineDetail": {"ItemRef": {"value": "1", "name": "General Services"}, "UnitPrice": 800.00, "Qty": 1}
+      }
+    ],
+    "TotalAmt": 800.00,
+    "TxnStatus": "Pending",
+    "AcceptedDate": null,
+    "LinkedTxn": [],
+    "MetaData": {"CreateTime": "2026-04-01T11:00:00-04:00", "LastUpdatedTime": "2026-04-01T11:00:00-04:00"},
+    "SyncToken": "0"
+  }
+]

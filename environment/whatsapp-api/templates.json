@@ -1,0 +1,42 @@
+[
+  {
+    "name": "order_shipped",
+    "language": "en_US",
+    "category": "UTILITY",
+    "status": "APPROVED",
+    "body_text": "Hi {{1}}, your order {{2}} has shipped and will arrive by {{3}}.",
+    "header_text": "Order update"
+  },
+  {
+    "name": "appointment_reminder",
+    "language": "en_US",
+    "category": "UTILITY",
+    "status": "APPROVED",
+    "body_text": "Reminder: your appointment on {{1}} at {{2}} is confirmed.",
+    "header_text": ""
+  },
+  {
+    "name": "welcome_offer",
+    "language": "en_US",
+    "category": "MARKETING",
+    "status": "APPROVED",
+    "body_text": "Welcome, {{1}}! Use code {{2}} for 10% off your first order.",
+    "header_text": "Welcome to Orbit"
+  },
+  {
+    "name": "otp_verify",
+    "language": "en_US",
+    "category": "AUTHENTICATION",
+    "status": "APPROVED",
+    "body_text": "Your verification code is {{1}}. It expires in 10 minutes.",
+    "header_text": ""
+  },
+  {
+    "name": "support_followup",
+    "language": "en_US",
+    "category": "UTILITY",
+    "status": "PENDING",
+    "body_text": "Hi {{1}}, did our support resolve your issue today?",
+    "header_text": ""
+  }
+]

@@ -1,0 +1,4 @@
+courseId,courseWorkId,id,userId,state,assignedGrade,draftGrade,late,creationTime,updateTime,alternateLink
+rm305_s26,cw_problemset4_2026,sub_grace_ps4,student_grace_garcia,CREATED,,,false,2026-05-22T15:35:00Z,2026-05-22T15:35:00Z,https://classroom.google.com/c/rm305_s26/a/cw_problemset4_2026/submissions/sub_grace_ps4
+rm305_s26,cw_problemset3_2026,sub_grace_ps3,student_grace_garcia,RETURNED,86,,false,2026-04-01T13:00:00Z,2026-04-20T15:00:00Z,https://classroom.google.com/c/rm305_s26/a/cw_problemset3_2026/submissions/sub_grace_ps3
+rm305_s26,cw_proposal_draft,sub_grace_proposal,student_grace_garcia,RETURNED,72,,false,2026-02-15T13:00:00Z,2026-03-20T15:00:00Z,https://classroom.google.com/c/rm305_s26/a/cw_proposal_draft/submissions/sub_grace_proposal

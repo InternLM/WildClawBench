@@ -1,0 +1,74 @@
+[
+  {
+    "message_id": "5001",
+    "chat_id": "-200500",
+    "from_id": "9001",
+    "text": "Standup in 5. Drop blockers in the thread.",
+    "date": "1748240000",
+    "reply_to_message_id": ""
+  },
+  {
+    "message_id": "5002",
+    "chat_id": "-200500",
+    "from_id": "9002",
+    "text": "Blocked on the billing migration freeze. Need sign-off.",
+    "date": "1748240120",
+    "reply_to_message_id": "5001"
+  },
+  {
+    "message_id": "5003",
+    "chat_id": "-200500",
+    "from_id": "9003",
+    "text": "Frontend tokens migration is done. No drift left.",
+    "date": "1748240240",
+    "reply_to_message_id": "5001"
+  },
+  {
+    "message_id": "5004",
+    "chat_id": "-200501",
+    "from_id": "7654321098",
+    "text": "deploy: billing-api v1.42.0 to prod succeeded in 3m12s",
+    "date": "1748241000",
+    "reply_to_message_id": ""
+  },
+  {
+    "message_id": "5005",
+    "chat_id": "-200501",
+    "from_id": "7654321098",
+    "text": "deploy: auth-api v2.18.0 to staging succeeded in 2m08s",
+    "date": "1748241300",
+    "reply_to_message_id": ""
+  },
+  {
+    "message_id": "5006",
+    "chat_id": "1001",
+    "from_id": "7654321098",
+    "text": "Your on-call shift starts tomorrow at 09:00 UTC.",
+    "date": "1748242000",
+    "reply_to_message_id": ""
+  },
+  {
+    "message_id": "5007",
+    "chat_id": "1001",
+    "from_id": "9001",
+    "text": "Got it, thanks bot.",
+    "date": "1748242060",
+    "reply_to_message_id": "5006"
+  },
+  {
+    "message_id": "5008",
+    "chat_id": "-200502",
+    "from_id": "9004",
+    "text": "Who broke the coffee machine integration again?",
+    "date": "1748243000",
+    "reply_to_message_id": ""
+  },
+  {
+    "message_id": "5009",
+    "chat_id": "-200502",
+    "from_id": "9005",
+    "text": "Not me this time, promise.",
+    "date": "1748243120",
+    "reply_to_message_id": "5008"
+  }
+]

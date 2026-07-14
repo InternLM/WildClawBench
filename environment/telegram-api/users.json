@@ -1,0 +1,50 @@
+[
+  {
+    "id": "9001",
+    "is_bot": "false",
+    "first_name": "Amelia",
+    "last_name": "Ortega",
+    "username": "amelia_o",
+    "language_code": "en"
+  },
+  {
+    "id": "9002",
+    "is_bot": "false",
+    "first_name": "Jonas",
+    "last_name": "Pereira",
+    "username": "jonas_p",
+    "language_code": "pt"
+  },
+  {
+    "id": "9003",
+    "is_bot": "false",
+    "first_name": "Helena",
+    "last_name": "Park",
+    "username": "helena_park",
+    "language_code": "en"
+  },
+  {
+    "id": "9004",
+    "is_bot": "false",
+    "first_name": "Rohit",
+    "last_name": "Bansal",
+    "username": "rohit_b",
+    "language_code": "en"
+  },
+  {
+    "id": "9005",
+    "is_bot": "false",
+    "first_name": "Noor",
+    "last_name": "Aziz",
+    "username": "noor_codes",
+    "language_code": "ar"
+  },
+  {
+    "id": "7654321098",
+    "is_bot": "true",
+    "first_name": "Orbit Ops Bot",
+    "last_name": "",
+    "username": "orbit_ops_bot",
+    "language_code": "en"
+  }
+]

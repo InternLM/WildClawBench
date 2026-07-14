@@ -1,0 +1,74 @@
+[
+  {
+    "list_id": "list-newsletter",
+    "email_address": "mara@brightpath.io",
+    "full_name": "Mara Lindgren",
+    "status": "subscribed",
+    "timestamp_signup": "2025-09-02T08:00:00.000Z",
+    "member_rating": "4"
+  },
+  {
+    "list_id": "list-newsletter",
+    "email_address": "tomas@brightpath.io",
+    "full_name": "Tomas Vega",
+    "status": "subscribed",
+    "timestamp_signup": "2025-09-05T09:00:00.000Z",
+    "member_rating": "3"
+  },
+  {
+    "list_id": "list-newsletter",
+    "email_address": "yara@nimbus-co.com",
+    "full_name": "Yara Khalil",
+    "status": "unsubscribed",
+    "timestamp_signup": "2025-09-10T10:00:00.000Z",
+    "member_rating": "2"
+  },
+  {
+    "list_id": "list-newsletter",
+    "email_address": "ethan@nimbus-co.com",
+    "full_name": "Ethan Walsh",
+    "status": "subscribed",
+    "timestamp_signup": "2025-09-18T11:00:00.000Z",
+    "member_rating": "5"
+  },
+  {
+    "list_id": "list-newsletter",
+    "email_address": "grace@helio-labs.com",
+    "full_name": "Grace Okafor",
+    "status": "cleaned",
+    "timestamp_signup": "2025-10-01T12:00:00.000Z",
+    "member_rating": "1"
+  },
+  {
+    "list_id": "list-product",
+    "email_address": "sven@helio-labs.com",
+    "full_name": "Sven Nyberg",
+    "status": "subscribed",
+    "timestamp_signup": "2025-09-20T08:00:00.000Z",
+    "member_rating": "4"
+  },
+  {
+    "list_id": "list-product",
+    "email_address": "lucia@orbit-mark.com",
+    "full_name": "Lucia Romano",
+    "status": "subscribed",
+    "timestamp_signup": "2025-09-22T09:00:00.000Z",
+    "member_rating": "3"
+  },
+  {
+    "list_id": "list-product",
+    "email_address": "kenji@orbit-mark.com",
+    "full_name": "Kenji Sato",
+    "status": "subscribed",
+    "timestamp_signup": "2025-10-05T10:00:00.000Z",
+    "member_rating": "4"
+  },
+  {
+    "list_id": "list-product",
+    "email_address": "hannah@vela-tech.com",
+    "full_name": "Hannah Frost",
+    "status": "subscribed",
+    "timestamp_signup": "2025-10-12T11:00:00.000Z",
+    "member_rating": "5"
+  }
+]

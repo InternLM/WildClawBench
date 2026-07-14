@@ -1,0 +1,302 @@
+{
+  "doorbots": [
+    {
+      "id": 987001,
+      "description": "Front Door",
+      "device_id": "doorbell_front",
+      "address": "4821 Ridgeview Dr",
+      "kind": "lpd_v2",
+      "firmware_version": "3.22.8",
+      "battery_life": 82,
+      "external_connection": true,
+      "latitude": 30.2241,
+      "longitude": -97.8416,
+      "location_id": "loc_martinez_001",
+      "time_zone": "America/Chicago",
+      "alerts": {
+        "connection": "online"
+      },
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "advanced_motion_enabled": true,
+        "people_only_enabled": true,
+        "shadow_correction_enabled": true,
+        "motion_message_enabled": false
+      },
+      "motion_snooze": null,
+      "ring_snooze": null,
+      "owned": true,
+      "owner": {
+        "id": 100001,
+        "first_name": "Carlos",
+        "last_name": "Martinez"
+      },
+      "led_status": "on",
+      "night_mode_status": "enabled",
+      "settings": {
+        "doorbell_volume": 8,
+        "chime_settings": {
+          "type": "mechanical",
+          "enabled": true,
+          "duration": 5
+        },
+        "motion_detection_enabled": true,
+        "motion_sensitivity": 7,
+        "people_detection_enabled": true,
+        "package_detection_enabled": true
+      },
+      "created_at": "2022-06-20T14:30:00.000Z"
+    }
+  ],
+  "stickup_cams": [
+    {
+      "id": 987002,
+      "description": "Backyard Patio",
+      "device_id": "cam_backyard",
+      "address": "4821 Ridgeview Dr",
+      "kind": "stickup_cam_v4",
+      "firmware_version": "3.20.5",
+      "battery_life": 67,
+      "external_connection": false,
+      "latitude": 30.2241,
+      "longitude": -97.8416,
+      "location_id": "loc_martinez_001",
+      "time_zone": "America/Chicago",
+      "alerts": {
+        "connection": "online"
+      },
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "advanced_motion_enabled": true,
+        "people_only_enabled": false,
+        "shadow_correction_enabled": true,
+        "night_vision_enabled": true,
+        "motion_message_enabled": false
+      },
+      "motion_snooze": null,
+      "led_status": "on",
+      "night_mode_status": "enabled",
+      "owned": true,
+      "owner": {
+        "id": 100001,
+        "first_name": "Carlos",
+        "last_name": "Martinez"
+      },
+      "settings": {
+        "motion_detection_enabled": true,
+        "motion_sensitivity": 5,
+        "people_detection_enabled": false,
+        "package_detection_enabled": false,
+        "light_on_duration_seconds": 30,
+        "light_schedule_enabled": false
+      },
+      "created_at": "2022-07-10T09:00:00.000Z",
+      "siren_status": {
+        "seconds_remaining": 0
+      },
+      "floodlight_status": {
+        "on": false
+      },
+      "wifi_signal_category": "good",
+      "wifi_signal_strength": -55
+    },
+    {
+      "id": 987003,
+      "description": "Driveway",
+      "device_id": "cam_driveway",
+      "address": "4821 Ridgeview Dr",
+      "kind": "floodlight_v2",
+      "firmware_version": "3.21.1",
+      "battery_life": null,
+      "external_connection": true,
+      "latitude": 30.2241,
+      "longitude": -97.8416,
+      "location_id": "loc_martinez_001",
+      "time_zone": "America/Chicago",
+      "alerts": {
+        "connection": "online"
+      },
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "advanced_motion_enabled": true,
+        "people_only_enabled": true,
+        "shadow_correction_enabled": true,
+        "night_vision_enabled": true,
+        "motion_message_enabled": false
+      },
+      "motion_snooze": null,
+      "led_status": "on",
+      "night_mode_status": "enabled",
+      "siren_status": {
+        "seconds_remaining": 0
+      },
+      "floodlight_status": {
+        "on": false
+      },
+      "owned": true,
+      "owner": {
+        "id": 100001,
+        "first_name": "Carlos",
+        "last_name": "Martinez"
+      },
+      "settings": {
+        "motion_detection_enabled": true,
+        "motion_sensitivity": 8,
+        "people_detection_enabled": true,
+        "package_detection_enabled": false,
+        "light_schedule_enabled": true,
+        "light_on_duration_seconds": 30
+      },
+      "wifi_signal_strength": -68,
+      "wifi_signal_category": "poor",
+      "created_at": "2022-06-20T15:00:00.000Z"
+    },
+    {
+      "id": 987004,
+      "description": "Living Room",
+      "device_id": "cam_living_room",
+      "address": "4821 Ridgeview Dr",
+      "kind": "stickup_cam_mini",
+      "firmware_version": "3.19.8",
+      "battery_life": null,
+      "external_connection": true,
+      "latitude": 30.2241,
+      "longitude": -97.8416,
+      "location_id": "loc_martinez_001",
+      "time_zone": "America/Chicago",
+      "alerts": {
+        "connection": "online"
+      },
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "advanced_motion_enabled": false,
+        "people_only_enabled": false,
+        "shadow_correction_enabled": false,
+        "night_vision_enabled": true,
+        "motion_message_enabled": false
+      },
+      "motion_snooze": null,
+      "led_status": "off",
+      "night_mode_status": "enabled",
+      "owned": true,
+      "owner": {
+        "id": 100001,
+        "first_name": "Carlos",
+        "last_name": "Martinez"
+      },
+      "settings": {
+        "motion_detection_enabled": true,
+        "motion_sensitivity": 3,
+        "people_detection_enabled": false,
+        "package_detection_enabled": false,
+        "light_on_duration_seconds": 30,
+        "light_schedule_enabled": false
+      },
+      "created_at": "2023-01-05T11:30:00.000Z",
+      "siren_status": {
+        "seconds_remaining": 0
+      },
+      "floodlight_status": {
+        "on": false
+      },
+      "wifi_signal_category": "good",
+      "wifi_signal_strength": -55
+    },
+    {
+      "id": 987005,
+      "description": "Side Gate",
+      "device_id": "cam_side_gate",
+      "address": "4821 Ridgeview Dr",
+      "kind": "spotlight_cam_v2",
+      "firmware_version": "3.18.2",
+      "battery_life": 23,
+      "external_connection": false,
+      "latitude": 30.2241,
+      "longitude": -97.8416,
+      "location_id": "loc_martinez_001",
+      "time_zone": "America/Chicago",
+      "alerts": {
+        "connection": "online"
+      },
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "advanced_motion_enabled": true,
+        "people_only_enabled": false,
+        "shadow_correction_enabled": true,
+        "night_vision_enabled": true,
+        "motion_message_enabled": false
+      },
+      "motion_snooze": null,
+      "led_status": "on",
+      "night_mode_status": "enabled",
+      "siren_status": {
+        "seconds_remaining": 0
+      },
+      "owned": true,
+      "owner": {
+        "id": 100001,
+        "first_name": "Carlos",
+        "last_name": "Martinez"
+      },
+      "settings": {
+        "motion_detection_enabled": true,
+        "motion_sensitivity": 6,
+        "people_detection_enabled": false,
+        "package_detection_enabled": false,
+        "light_on_duration_seconds": 30,
+        "light_schedule_enabled": false
+      },
+      "created_at": "2023-03-18T16:45:00.000Z",
+      "floodlight_status": {
+        "on": false
+      },
+      "wifi_signal_category": "good",
+      "wifi_signal_strength": -55
+    }
+  ],
+  "chimes": [
+    {
+      "id": 987006,
+      "description": "Hallway Chime",
+      "device_id": "chime_hallway",
+      "address": "4821 Ridgeview Dr",
+      "kind": "chime_pro_v2",
+      "firmware_version": "3.16.4",
+      "latitude": 30.2241,
+      "longitude": -97.8416,
+      "location_id": "loc_martinez_001",
+      "time_zone": "America/Chicago",
+      "alerts": {
+        "connection": "online"
+      },
+      "features": {
+        "ringtones_enabled": true,
+        "wifi_extender_enabled": true
+      },
+      "owned": true,
+      "owner": {
+        "id": 100001,
+        "first_name": "Carlos",
+        "last_name": "Martinez"
+      },
+      "settings": {
+        "volume": 7,
+        "ding_audio_id": "ring_default",
+        "ding_audio_user_id": null,
+        "motion_audio_id": null,
+        "motion_audio_user_id": null,
+        "linked_doorbots": [
+          987001
+        ]
+      },
+      "wifi_signal_strength": -42,
+      "wifi_signal_category": "good",
+      "created_at": "2022-06-20T14:45:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "t1_c001",
+    "post_id": "t3_p001",
+    "parent_id": "t3_p001",
+    "author": "grpcfan",
+    "body": "Streaming and codegen alone made the switch worth it for us.",
+    "score": "140",
+    "created_utc": "1716801000"
+  },
+  {
+    "id": "t1_c002",
+    "post_id": "t3_p001",
+    "parent_id": "t1_c001",
+    "author": "skeptic9",
+    "body": "Did you measure latency wins or was it mostly DX?",
+    "score": "38",
+    "created_utc": "1716801500"
+  },
+  {
+    "id": "t1_c003",
+    "post_id": "t3_p001",
+    "parent_id": "t3_p001",
+    "author": "oldschool",
+    "body": "REST with proper caching still wins for public APIs imo.",
+    "score": "72",
+    "created_utc": "1716802000"
+  },
+  {
+    "id": "t1_c004",
+    "post_id": "t3_p002",
+    "parent_id": "t3_p002",
+    "author": "monorepoer",
+    "body": "We use Bazel with one package per service and shared libs at the root.",
+    "score": "55",
+    "created_utc": "1716811000"
+  },
+  {
+    "id": "t1_c005",
+    "post_id": "t3_p002",
+    "parent_id": "t1_c004",
+    "author": "curiousdev",
+    "body": "How long are your CI runs with that setup?",
+    "score": "21",
+    "created_utc": "1716811800"
+  },
+  {
+    "id": "t1_c006",
+    "post_id": "t3_p003",
+    "parent_id": "t3_p003",
+    "author": "quietpc",
+    "body": "What drives did you go with for the 8 bays?",
+    "score": "44",
+    "created_utc": "1716701000"
+  },
+  {
+    "id": "t1_c007",
+    "post_id": "t3_p003",
+    "parent_id": "t1_c006",
+    "author": "rackmonkey",
+    "body": "Four refurb enterprise drives plus four new ones for balance.",
+    "score": "30",
+    "created_utc": "1716701600"
+  },
+  {
+    "id": "t1_c008",
+    "post_id": "t3_p004",
+    "parent_id": "t3_p004",
+    "author": "labeledlife",
+    "body": "Learned this the hard way too. Brother label maker changed my life.",
+    "score": "18",
+    "created_utc": "1716721000"
+  },
+  {
+    "id": "t1_c009",
+    "post_id": "t3_p005",
+    "parent_id": "t3_p005",
+    "author": "greenthumb",
+    "body": "Those look great. Which variety did you grow?",
+    "score": "25",
+    "created_utc": "1716651000"
+  },
+  {
+    "id": "t1_c010",
+    "post_id": "t3_p005",
+    "parent_id": "t1_c009",
+    "author": "leafyleo",
+    "body": "Sungold cherries. They thrive in containers.",
+    "score": "12",
+    "created_utc": "1716651500"
+  },
+  {
+    "id": "t1_c011",
+    "post_id": "t3_p006",
+    "parent_id": "t3_p006",
+    "author": "botanybob",
+    "body": "Looks like a squash seedling from your compost.",
+    "score": "9",
+    "created_utc": "1716661000"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "team-ux",
+    "name": "Patient Portal UX",
+    "key": "PORT",
+    "description": "UX team building and reviewing the Cumberland patient portal redesign",
+    "color": "#5E6AD2",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-05-01T10:00:00"
+  },
+  {
+    "id": "team-backend",
+    "name": "Backend Engineering",
+    "key": "BKD",
+    "description": "Backend services team owning API gateway, auth, and core data services",
+    "color": "#26B5CE",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "team-frontend",
+    "name": "Frontend Engineering",
+    "key": "FRT",
+    "description": "Frontend team owning the web and mobile clients",
+    "color": "#F2C94C",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  },
+  {
+    "id": "team-platform",
+    "name": "Platform Engineering",
+    "key": "PLT",
+    "description": "Platform team owning infrastructure, CI/CD, and observability",
+    "color": "#6FCF97",
+    "createdAt": "2026-01-15T09:00:00",
+    "updatedAt": "2026-05-10T10:00:00"
+  }
+]

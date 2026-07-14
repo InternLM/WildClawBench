@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "Kubernetes Mock API",
+    "description": "Test collection for the mock Kubernetes API service. Base URL defaults to http://localhost:8051. In docker-compose, the service is reachable at http://kubernetes-api:8051.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8051"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list namespaces", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/namespaces"}},
+    {"name": "list pods", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/namespaces/prod/pods"}},
+    {"name": "get pod", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/namespaces/prod/pods/api-gateway-5d8f7c"}},
+    {"name": "delete pod", "request": {"method": "DELETE", "url": "{{baseUrl}}/api/v1/namespaces/prod/pods/billing-worker-9af21"}},
+    {"name": "list deployments", "request": {"method": "GET", "url": "{{baseUrl}}/apis/apps/v1/namespaces/prod/deployments"}},
+    {"name": "get deployment", "request": {"method": "GET", "url": "{{baseUrl}}/apis/apps/v1/namespaces/prod/deployments/api-gateway"}},
+    {"name": "scale deployment", "request": {"method": "PATCH", "url": "{{baseUrl}}/apis/apps/v1/namespaces/prod/deployments/api-gateway/scale",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"spec\": {\"replicas\": 4}}"}}},
+    {"name": "list services", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/namespaces/prod/services"}},
+    {"name": "list nodes", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/nodes"}}
+  ]
+}

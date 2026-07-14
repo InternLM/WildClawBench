@@ -1,0 +1,10 @@
+host_id,name,superhost,joined_year,response_rate,languages
+host_la_001,Nkechi A.,true,2018,0.98,"EN,IG,YO"
+host_la_002,Kunle S.,true,2019,0.97,"EN,YO"
+host_la_003,Ada O.,false,2020,0.93,"EN,IG"
+host_la_004,Folarin J.,true,2017,0.99,"EN,YO"
+host_la_005,Tope M.,true,2021,0.96,"EN,YO"
+host_la_006,Maryam I.,true,2019,0.97,"EN,HA"
+host_la_007,Chioma N.,false,2022,0.92,"EN,IG"
+host_la_008,Bukola E.,true,2018,0.98,"EN,YO"
+host_la_009,Segun B.,true,2020,0.94,"EN,YO"

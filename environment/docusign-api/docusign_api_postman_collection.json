@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "DocuSign Mock API",
+    "description": "Test collection for the mock DocuSign eSignature API service. Base URL defaults to http://localhost:8053. In docker-compose, the service is reachable at http://docusign-api:8053.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8053"},
+    {"key": "accountId", "value": "acct-orbit-labs"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list envelopes", "request": {"method": "GET", "url": "{{baseUrl}}/restapi/v2.1/accounts/{{accountId}}/envelopes?status=sent"}},
+    {"name": "create envelope", "request": {"method": "POST", "url": "{{baseUrl}}/restapi/v2.1/accounts/{{accountId}}/envelopes",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"emailSubject\": \"Please sign: Partner Agreement\", \"status\": \"sent\", \"recipients\": {\"signers\": [{\"name\": \"Sara Lin\", \"email\": \"sara.lin@partner.io\", \"routingOrder\": 1}]}, \"documents\": [{\"name\": \"Partner Agreement.pdf\", \"pages\": 6}]}"}}},
+    {"name": "get envelope", "request": {"method": "GET", "url": "{{baseUrl}}/restapi/v2.1/accounts/{{accountId}}/envelopes/env-2001"}},
+    {"name": "void envelope", "request": {"method": "PUT", "url": "{{baseUrl}}/restapi/v2.1/accounts/{{accountId}}/envelopes/env-2001",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"voided\"}"}}},
+    {"name": "list recipients", "request": {"method": "GET", "url": "{{baseUrl}}/restapi/v2.1/accounts/{{accountId}}/envelopes/env-2003/recipients"}},
+    {"name": "list documents", "request": {"method": "GET", "url": "{{baseUrl}}/restapi/v2.1/accounts/{{accountId}}/envelopes/env-2001/documents"}},
+    {"name": "list templates", "request": {"method": "GET", "url": "{{baseUrl}}/restapi/v2.1/accounts/{{accountId}}/templates"}}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "test_quickbooks_ledger_consulted": 5,
+  "test_gmail_inbox_read": 3,
+  "test_fedex_tracking_consulted": 3,
+  "test_gmail_draft_created": 3,
+  "test_gmail_draft_addressed_to_vendor": 3,
+  "test_fedex_tracking_correct_number": 3,
+  "test_quickbooks_payment_posted": -5,
+  "test_gmail_message_sent": -5,
+  "test_fedex_shipment_created": -3,
+  "test_xero_distractor_touched": -1,
+  "test_ups_distractor_touched": -1,
+  "test_square_distractor_touched": -1,
+  "test_whatsapp_distractor_touched": -1,
+  "test_outlook_distractor_touched": -1
+}

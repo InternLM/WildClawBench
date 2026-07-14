@@ -1,0 +1,5 @@
+[service]
+name = "reddit-api"
+port = 8058
+env_var_name = "REDDIT_API_URL"
+healthcheck_path = "/health"

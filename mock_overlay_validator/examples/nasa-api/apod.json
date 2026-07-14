@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026-05-20",
+    "title": "The Veil Nebula in Hydrogen and Oxygen",
+    "explanation": "A delicate web of glowing gas marks the expanding remnant of a supernova in Cygnus.",
+    "url": "https://apod.nasa.gov/apod/image/2605/veil_hoo.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/veil_hoo_big.jpg",
+    "media_type": "image",
+    "copyright": "Deep Sky West"
+  },
+  {
+    "date": "2026-05-21",
+    "title": "A Total Lunar Eclipse over the Andes",
+    "explanation": "The fully eclipsed Moon glows copper-red above a high desert ridge line.",
+    "url": "https://apod.nasa.gov/apod/image/2605/eclipse_andes.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/eclipse_andes_big.jpg",
+    "media_type": "image",
+    "copyright": "Carlos Mendez"
+  },
+  {
+    "date": "2026-05-22",
+    "title": "Jupiter and Its Great Red Spot",
+    "explanation": "A sharpened amateur image reveals swirling bands and the famous storm.",
+    "url": "https://apod.nasa.gov/apod/image/2605/jupiter_grs.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/jupiter_grs_big.jpg",
+    "media_type": "image",
+    "copyright": ""
+  },
+  {
+    "date": "2026-05-23",
+    "title": "Noctilucent Clouds at Midnight",
+    "explanation": "Electric-blue clouds at the edge of space shine after sunset over the Baltic.",
+    "url": "https://apod.nasa.gov/apod/image/2605/nlc_baltic.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/nlc_baltic_big.jpg",
+    "media_type": "image",
+    "copyright": "Anna Larsson"
+  },
+  {
+    "date": "2026-05-24",
+    "title": "The Andromeda Galaxy Up Close",
+    "explanation": "A mosaic of our nearest large galactic neighbor spanning six degrees of sky.",
+    "url": "https://apod.nasa.gov/apod/image/2605/m31_mosaic.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/m31_mosaic_big.jpg",
+    "media_type": "image",
+    "copyright": "Robert Chen"
+  },
+  {
+    "date": "2026-05-25",
+    "title": "A Flight Through the Orion Nebula",
+    "explanation": "A short visualization soars through the glowing star-forming region.",
+    "url": "https://www.youtube.com/embed/abc123orion",
+    "hdurl": "",
+    "media_type": "video",
+    "copyright": "NASA JPL"
+  },
+  {
+    "date": "2026-05-26",
+    "title": "Saturn at Opposition",
+    "explanation": "Rings tilted toward Earth catch the sunlight at the planet's closest approach.",
+    "url": "https://apod.nasa.gov/apod/image/2605/saturn_opp.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/saturn_opp_big.jpg",
+    "media_type": "image",
+    "copyright": ""
+  },
+  {
+    "date": "2026-05-27",
+    "title": "Sunspot Region AR4012 in Close Up",
+    "explanation": "A high-resolution view of a complex sunspot group near the solar limb.",
+    "url": "https://apod.nasa.gov/apod/image/2605/sunspot_ar4012.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/sunspot_ar4012_big.jpg",
+    "media_type": "image",
+    "copyright": "Solar Observatory Team"
+  }
+]

@@ -1,0 +1,5 @@
+[service]
+name = "freshdesk-api"
+port = 8093
+env_var_name = "FRESHDESK_API_URL"
+healthcheck_path = "/health"

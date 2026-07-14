@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Open Library Mock API",
+    "description": "Test collection for the mock Open Library API service. Base URL defaults to http://localhost:8078. In docker-compose, the service is reachable at http://openlibrary-api:8078.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8078"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "search by q", "request": {"method": "GET", "url": "{{baseUrl}}/search.json?q=foundation"}},
+    {"name": "search by author", "request": {"method": "GET", "url": "{{baseUrl}}/search.json?author=Le%20Guin"}},
+    {"name": "search by title", "request": {"method": "GET", "url": "{{baseUrl}}/search.json?title=Dune"}},
+    {"name": "get work", "request": {"method": "GET", "url": "{{baseUrl}}/works/OL893415W.json"}},
+    {"name": "get work editions", "request": {"method": "GET", "url": "{{baseUrl}}/works/OL27448W/editions.json"}},
+    {"name": "get author", "request": {"method": "GET", "url": "{{baseUrl}}/authors/OL26320A.json"}},
+    {"name": "get author works", "request": {"method": "GET", "url": "{{baseUrl}}/authors/OL34184A/works.json"}},
+    {"name": "get subject", "request": {"method": "GET", "url": "{{baseUrl}}/subjects/science_fiction.json"}},
+    {"name": "get isbn", "request": {"method": "GET", "url": "{{baseUrl}}/isbn/9780441013593.json"}}
+  ]
+}

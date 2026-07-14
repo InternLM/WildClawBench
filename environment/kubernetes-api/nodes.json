@@ -1,0 +1,46 @@
+[
+  {
+    "name": "node-control-1",
+    "status": "Ready",
+    "role": "control-plane",
+    "cpu_capacity": "4",
+    "memory_capacity": "16Gi",
+    "kubelet_version": "v1.29.4",
+    "os_image": "Ubuntu 22.04.4 LTS",
+    "internal_ip": "10.0.1.10",
+    "created_time": "2025-08-01T08:55:00Z"
+  },
+  {
+    "name": "node-worker-1",
+    "status": "Ready",
+    "role": "worker",
+    "cpu_capacity": "8",
+    "memory_capacity": "32Gi",
+    "kubelet_version": "v1.29.4",
+    "os_image": "Ubuntu 22.04.4 LTS",
+    "internal_ip": "10.0.1.11",
+    "created_time": "2025-08-01T08:56:00Z"
+  },
+  {
+    "name": "node-worker-2",
+    "status": "Ready",
+    "role": "worker",
+    "cpu_capacity": "8",
+    "memory_capacity": "32Gi",
+    "kubelet_version": "v1.29.4",
+    "os_image": "Ubuntu 22.04.4 LTS",
+    "internal_ip": "10.0.1.12",
+    "created_time": "2025-08-01T08:57:00Z"
+  },
+  {
+    "name": "node-worker-3",
+    "status": "Ready",
+    "role": "worker",
+    "cpu_capacity": "8",
+    "memory_capacity": "32Gi",
+    "kubelet_version": "v1.29.4",
+    "os_image": "Ubuntu 22.04.4 LTS",
+    "internal_ip": "10.0.1.13",
+    "created_time": "2025-08-14T10:20:00Z"
+  }
+]

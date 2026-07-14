@@ -1,0 +1,10 @@
+id,name,is_private,is_archived,topic,purpose,creator,created,num_members
+C001,general,false,false,company wide,all-hands announcements,U001,2024-01-15,12
+C002,network-planning,false,false,engineering team room,network planning core team,U001,2024-02-01,10
+C003,nasarawa-phase1,false,false,45-site rural 4G expansion,Nasarawa Phase 1 coordination,U001,2025-11-10,6
+C004,five-g-cbd-pilot,false,false,Abuja CBD 5G densification,5G CBD pilot coordination,U001,2026-03-05,7
+C005,vendor-tachyon,false,false,Tachyon Networks coordination,vendor war room,U001,2026-04-12,5
+C006,niger-qos,false,false,Niger State 3G/4G QoS,Niger optimization,U001,2025-08-20,3
+C007,ncc-prep,true,false,NCC regulatory prep,spectrum hearing war room,U001,2026-08-18,4
+C008,regulatory-affairs,true,false,NCC + ITU + 3GPP standards,regulatory affairs,U002,2024-06-01,4
+C009,hiring-north-central,true,false,open requisitions,hiring NC region,U002,2026-06-01,3

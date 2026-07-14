@@ -1,0 +1,32 @@
+[
+  {
+    "app_id": "0oa1github",
+    "user_id": "00u1amelia",
+    "scope": "USER"
+  },
+  {
+    "app_id": "0oa1github",
+    "user_id": "00u2jonas",
+    "scope": "USER"
+  },
+  {
+    "app_id": "0oa2slack",
+    "user_id": "00u1amelia",
+    "scope": "USER"
+  },
+  {
+    "app_id": "0oa2slack",
+    "user_id": "00u3helena",
+    "scope": "USER"
+  },
+  {
+    "app_id": "0oa3aws",
+    "user_id": "00u1amelia",
+    "scope": "USER"
+  },
+  {
+    "app_id": "0oa4datadog",
+    "user_id": "00u3helena",
+    "scope": "USER"
+  }
+]

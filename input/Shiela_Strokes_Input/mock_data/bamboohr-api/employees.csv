@@ -1,0 +1,13 @@
+id,firstName,lastName,workEmail,department,jobTitle,location,hireDate,status,supervisorId
+emp_sheila_stokes,Sheila,Stokes,sheila.stokes@Finthesiss.ai,Network Planning - North Central,Senior Network Planning Engineer,Maitama Abuja,2012-10-15,active,emp_olatunji
+emp_olatunji,Babatunde,Olatunji,b.olatunji@telecorpng.com,Network Operations,Director Network Operations,Maitama Abuja,2008-03-01,active,
+emp_aisha_bello,Aisha,Bello,aisha.bello@telecorpng.com,Network Planning - North Central,Engineer III - Niger State QoS,Maitama Abuja,2024-03-15,active,emp_sheila_stokes
+emp_chinedu_okafor,Chinedu,Okafor,chinedu.okafor@telecorpng.com,Network Planning - North Central,Senior Engineer - Niger State Optimization,Maitama Abuja,2023-09-15,active,emp_sheila_stokes
+emp_ifeoma_olatunji,Ifeoma,Olatunji,ifeoma.olatunji@telecorpng.com,Network Planning - North Central,Engineer II - 5G CBD Pilot,Maitama Abuja,2024-01-08,active,emp_sheila_stokes
+emp_tunde_salami,Tunde,Salami,tunde.salami@telecorpng.com,Network Planning - North Central,Senior Engineer - Nasarawa Phase 1 Lead,Maitama Abuja,2022-06-12,active,emp_sheila_stokes
+emp_funmi_ade,Funmi,Ade,funmi.ade@telecorpng.com,Network Planning - North Central,Engineer I - Documentation and Standards,Maitama Abuja,2024-09-10,active,emp_sheila_stokes
+emp_bayo_adeyinka,Bayo,Adeyinka,bayo.adeyinka@telecorpng.com,Network Planning - North Central,Engineer III - RF Propagation Modelling,Maitama Abuja,2023-04-22,active,emp_sheila_stokes
+emp_ngozi_okonkwo,Ngozi,Okonkwo,ngozi.okonkwo@telecorpng.com,Network Planning - North Central,Engineer II - Vendor Coordination,Maitama Abuja,2024-05-20,active,emp_sheila_stokes
+emp_kabiru_mohammed,Kabiru,Mohammed,kabiru.mohammed@telecorpng.com,Network Planning - North Central,Senior Engineer - Nasarawa Phase 2 Planning,Maitama Abuja,2022-11-30,active,emp_sheila_stokes
+emp_adaeze_nwosu,Adaeze,Nwosu,adaeze.nwosu@telecorpng.com,Regulatory Affairs,Regulatory Affairs Lead,Maitama Abuja,2019-05-10,active,emp_olatunji
+emp_yetunde_bakare,Yetunde,Bakare,yetunde.bakare.engineer@gmail.com,Network Planning - North Central,Junior Network Planning Engineer,Maitama Abuja,2023-08-14,active,emp_sheila_stokes

@@ -1,0 +1,5 @@
+[service]
+name = "monday-api"
+port = 8080
+env_var_name = "MONDAY_API_URL"
+healthcheck_path = "/health"

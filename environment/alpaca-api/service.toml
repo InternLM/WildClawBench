@@ -1,0 +1,5 @@
+[service]
+name = "alpaca-api"
+port = 8043
+env_var_name = "ALPACA_API_URL"
+healthcheck_path = "/health"

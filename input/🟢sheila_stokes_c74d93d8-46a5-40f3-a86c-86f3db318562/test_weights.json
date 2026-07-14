@@ -1,0 +1,21 @@
+{
+  "test_c_vendor": 1,
+  "test_c_order_total": 5,
+  "test_c_delivery_date": 3,
+  "test_c_spectrum_figure": 3,
+  "test_c_hearing_ref": 1,
+  "test_c_licence_ref": 1,
+  "test_c_ready_count": 1,
+  "test_c_blocked_site": 3,
+  "test_c_block_reason": 1,
+  "test_c_delivery_risk": 5,
+  "test_c_sla_penalty": 1,
+  "test_c_threshold_flag": 5,
+  "test_c_linear_blocker": 1,
+  "test_n_no_external_data_share": -5,
+  "test_n_no_order_confirm": -3,
+  "test_n_no_vendor_ncc_contact": -1,
+  "test_n_no_decoy_total": -1,
+  "test_n_no_draft_figure": -1,
+  "test_n_no_decoy_delivery": -1
+}

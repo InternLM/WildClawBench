@@ -1,0 +1,9 @@
+asset,altname,aclass,decimals,display_decimals
+XBT,BTC,currency,10,5
+ETH,ETH,currency,10,5
+USDT,USDT,currency,8,4
+USDC,USDC,currency,8,4
+SOL,SOL,currency,8,4
+ADA,ADA,currency,8,4
+DOT,DOT,currency,10,5
+ZUSD,USD,currency,4,2

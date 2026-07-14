@@ -1,0 +1,62 @@
+[
+  {
+    "id": "17950001001",
+    "user_id": "17841400123456789",
+    "media_type": "IMAGE",
+    "media_url": "https://instagram.mock/stories/17950001001.jpg",
+    "timestamp": "2026-05-04T08:00:00",
+    "expiring_at": "2026-05-05T08:00:00",
+    "caption": "Friday roast day! Costa Rica Tarrazu drops at 10am ☕ #coffee #freshroast",
+    "link": "https://brewedawakening.co/shop",
+    "poll_question": "",
+    "poll_options": ""
+  },
+  {
+    "id": "17950001008",
+    "user_id": "17841400123456789",
+    "media_type": "IMAGE",
+    "media_url": "https://instagram.mock/stories/17950001008.jpg",
+    "timestamp": "2026-03-11T18:00:00",
+    "expiring_at": "2026-03-12T18:00:00",
+    "caption": "Track Meet TOMORROW! 🏃 Come cheer on our athletes at the field! #trackmeet #schoolsports",
+    "link": "",
+    "poll_question": "",
+    "poll_options": ""
+  },
+  {
+    "id": "17950001009",
+    "user_id": "17841400123456789",
+    "media_type": "IMAGE",
+    "media_url": "https://instagram.mock/stories/17950001009.jpg",
+    "timestamp": "2026-04-06T18:00:00",
+    "expiring_at": "2026-04-07T18:00:00",
+    "caption": "Fitness Day is TOMORROW! 💪 All students welcome — games, challenges, and prizes!",
+    "link": "",
+    "poll_question": "Favorite event?",
+    "poll_options": "Relay Race|Tug of War|Obstacle Course|Dance Battle"
+  },
+  {
+    "id": "17950001010",
+    "user_id": "17841400123456789",
+    "media_type": "IMAGE",
+    "media_url": "https://instagram.mock/stories/17950001010.jpg",
+    "timestamp": "2026-05-14T18:00:00",
+    "expiring_at": "2026-05-15T18:00:00",
+    "caption": "Sports Festival TOMORROW! 🎉 The biggest event of the year — don't miss it! #sportsfestival #schoolspirit",
+    "link": "",
+    "poll_question": "",
+    "poll_options": ""
+  },
+  {
+    "id": "17950001011",
+    "user_id": "17841400123456789",
+    "media_type": "IMAGE",
+    "media_url": "https://instagram.mock/stories/17950001011.jpg",
+    "timestamp": "2026-06-07T18:00:00",
+    "expiring_at": "2026-06-08T18:00:00",
+    "caption": "Summer Conditioning Camp starts TOMORROW! Get ready for an epic summer of training! #summercamp #conditioning",
+    "link": "",
+    "poll_question": "",
+    "poll_options": ""
+  }
+]

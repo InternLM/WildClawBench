@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1001",
+    "type": "private",
+    "title": "",
+    "username": "amelia_o",
+    "first_name": "Amelia",
+    "last_name": "Ortega",
+    "description": "",
+    "member_count": "2"
+  },
+  {
+    "id": "1002",
+    "type": "private",
+    "title": "",
+    "username": "jonas_p",
+    "first_name": "Jonas",
+    "last_name": "Pereira",
+    "description": "",
+    "member_count": "2"
+  },
+  {
+    "id": "-200500",
+    "type": "group",
+    "title": "Orbit Eng Standup",
+    "username": "",
+    "first_name": "",
+    "last_name": "",
+    "description": "Daily standup and incident coordination for the platform team.",
+    "member_count": "6"
+  },
+  {
+    "id": "-200501",
+    "type": "supergroup",
+    "title": "Orbit Deploys",
+    "username": "",
+    "first_name": "",
+    "last_name": "",
+    "description": "Automated deploy and alerting notifications.",
+    "member_count": "12"
+  },
+  {
+    "id": "-200502",
+    "type": "group",
+    "title": "Orbit Random",
+    "username": "",
+    "first_name": "",
+    "last_name": "",
+    "description": "Off-topic chatter and memes.",
+    "member_count": "9"
+  }
+]

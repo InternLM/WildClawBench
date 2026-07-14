@@ -1,0 +1,6 @@
+id,name,overview,first_air_date,vote_average,vote_count,genre_ids,popularity,number_of_seasons,number_of_episodes
+tv_official_cha,The Official Christmas Channel,Annual holiday romance shorts collection.,2021-12-10,7.0,14200,"g_romance,g_family",32.0,4,28
+tv_kindred,Kindred,Adaptation of the Octavia Butler novel.,2022-12-13,7.2,18200,"g_drama,g_history",48.0,1,8
+tv_anatomy_naija,Lagos Anatomy,Medical drama set in a teaching hospital in Lagos.,2023-04-12,6.8,4800,"g_drama,g_african",34.0,2,24
+tv_the_johnsons,The Johnsons,Long-running family comedy set in Lagos.,2012-04-12,6.5,8800,"g_comedy,g_family,g_african",28.0,11,420
+tv_naija_news,Naija News Tonight,Daily news magazine programme.,2018-01-15,5.8,1240,g_documentary,18.0,8,1840

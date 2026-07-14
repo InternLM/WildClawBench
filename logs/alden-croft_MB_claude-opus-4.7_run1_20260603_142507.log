@@ -1,0 +1,186 @@
+14:25:07 [INFO] Agent image wildclawbench-ubuntu:v1.3 present
+14:25:07 [INFO] Pulling LiteLLM image ghcr.io/berriai/litellm:main-stable
+14:25:11 [INFO] LiteLLM image ghcr.io/berriai/litellm:main-stable ready
+14:25:11 [INFO] Network k3net-2315b20bbbe1 created (internal=True)
+14:25:11 [INFO] [ll-2315b20bbbe1] Starting LiteLLM sidecar on network k3net-2315b20bbbe1
+14:25:11 [INFO] [ll-2315b20bbbe1] LiteLLM sidecar dual-homed (internal + default bridge)
+14:25:24 [INFO] [ll-2315b20bbbe1] LiteLLM healthy
+14:25:29 [INFO] [ll-2315b20bbbe1] LiteLLM upstream reachable (OK status=200)
+14:25:29 [INFO] LiteLLM sidecar ll-2315b20bbbe1 ready on network k3net-2315b20bbbe1
+14:25:29 [INFO] Mock image kensei3-mocks:v1 already built (content_hash=cd8591ce7979dcc9)
+14:25:29 [INFO] [mocks-2315b20bbbe1] mock-stack container started
+14:25:44 [INFO] [mocks-2315b20bbbe1] mock-stack healthy
+14:25:44 [INFO] Mock stack mocks-2315b20bbbe1 ready (101 service URLs)
+14:25:44 [INFO] Judge council enabled via --judge-council
+14:25:44 [INFO] Test generation enabled (Bedrock ap-south-1, max_attempts=3)
+14:25:44 [INFO] Test execution enabled (timeout=600s, network=k3net-2315b20bbbe1)
+14:25:44 [INFO] Single task mode: alden-croft_MB (format=native)
+14:25:44 [INFO] [TESTGEN] task=alden-croft_MB required=['calendly-api', 'dropbox-api', 'gmail-api', 'google-calendar-api', 'stripe-api', 'youtube-api'] distractors=['activecampaign-api', 'airbnb-api', 'airtable-api', 'algolia-api', 'alpaca-api', 'amadeus-api', 'amazon-seller-api', 'amplitude-api', 'asana-api', 'bamboohr-api', 'bigcommerce-api', 'binance-api', 'box-api', 'cloudflare-api', 'coinbase-api', 'confluence-api', 'contentful-api', 'datadog-api', 'discord-api', 'docusign-api', 'doordash-api', 'etsy-api', 'eventbrite-api', 'fedex-api', 'figma-api', 'freshdesk-api', 'github-api', 'gitlab-api', 'google-analytics-api', 'google-classroom-api', 'google-drive-api', 'google-maps-api', 'greenhouse-api', 'gusto-api', 'hubspot-api', 'instacart-api', 'instagram-api', 'intercom-api', 'jira-api', 'klaviyo-api', 'kraken-api', 'kubernetes-api', 'linear-api', 'linkedin-api', 'mailchimp-api', 'mailgun-api', 'microsoft-teams-api', 'mixpanel-api', 'monday-api', 'myfitnesspal-api', 'nasa-api', 'notion-api', 'obsidian-api', 'okta-api', 'openlibrary-api', 'openweather-api', 'outlook-api', 'pagerduty-api', 'paypal-api', 'pinterest-api', 'plaid-api', 'posthog-api', 'quickbooks-api', 'reddit-api', 'ring-api', 'salesforce-api', 'segment-api', 'sendgrid-api', 'sentry-api', 'servicenow-api', 'shippo-api', 'slack-api', 'spotify-api', 'square-api', 'strava-api', 'telegram-api', 'ticketmaster-api', 'tmdb-api', 'trello-api', 'twilio-api', 'twitch-api', 'twitter-api', 'typeform-api', 'uber-api', 'ups-api', 'vimeo-api', 'webflow-api', 'whatsapp-api', 'woocommerce-api', 'wordpress-api', 'xero-api', 'yelp-api', 'zendesk-api', 'zillow-api', 'zoom-api'] services=101 output_format=final_answer
+14:25:49 [INFO] HTTP Request: POST https://bedrock-runtime.ap-south-1.amazonaws.com/model/arn%3Aaws%3Abedrock%3Aap-south-1%3A426628337772%3Aapplication-inference-profile%2F96j5zamnqlci/converse-stream "HTTP/2 200 OK"
+14:31:39 [INFO] [TESTGEN] Attempt 1/3 failed 2 lints (task=alden-croft_MB): L1: forbidden assertion polarity '== 0' — rephrase positively, encode bad behavior with a negative weight; L12: triviality pattern 'len(non_get) > 0' — assert on a specific value, not on existence/non-emptiness
+14:31:43 [INFO] HTTP Request: POST https://bedrock-runtime.ap-south-1.amazonaws.com/model/arn%3Aaws%3Abedrock%3Aap-south-1%3A426628337772%3Aapplication-inference-profile%2F96j5zamnqlci/converse-stream "HTTP/2 200 OK"
+14:35:15 [INFO] [TESTGEN] Passed all lints on attempt 2 (task=alden-croft_MB)
+14:35:15 [INFO] [TESTGEN] Done task=alden-croft_MB code=78230ch weights=106 tokens_in=120371 tokens_out=72730 cache_r=0 cache_w=26234 total=219335 duration=570850ms attempts=2 lint_failures=0 fallback=False
+14:35:15 [INFO] [alden-croft_MB] testgen done: 78230ch code, 106 weights, 2 attempts, fallback=False, key=0aabf3b325e7700769fa666e76a5c9c7
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay calendly-api/scheduled_events.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/calendly-api/scheduled_events.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay calendly-api/invitees.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/calendly-api/invitees.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay calendly-api/user.json -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/calendly-api/user.json
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay calendly-api/availability.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/calendly-api/availability.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay calendly-api/event_types.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/calendly-api/event_types.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay dropbox-api/shared_links.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/dropbox-api/shared_links.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay dropbox-api/files.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/dropbox-api/files.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay dropbox-api/account.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/dropbox-api/account.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay gmail-api/labels.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/gmail-api/labels.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay gmail-api/messages.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/gmail-api/messages.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay gmail-api/drafts.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/gmail-api/drafts.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay gmail-api/profile.json -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/gmail-api/profile.json
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay google-calendar-api/calendars.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/google-calendar-api/calendars.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay google-calendar-api/event_attendees.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/google-calendar-api/event_attendees.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay google-calendar-api/events.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/google-calendar-api/events.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay stripe-api/invoices.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/stripe-api/invoices.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay stripe-api/customers.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/stripe-api/customers.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay stripe-api/products.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/stripe-api/products.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay stripe-api/balance.json -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/stripe-api/balance.json
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay stripe-api/prices.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/stripe-api/prices.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay stripe-api/charges.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/stripe-api/charges.csv
+14:35:15 [INFO] [mocks-task-alden-croft_mb-2eae0a] overlay stripe-api/subscriptions.csv -> /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/mock_data/stripe-api/subscriptions.csv
+14:35:16 [INFO] [mocks-task-alden-croft_mb-2eae0a] mock-stack container started
+14:35:23 [INFO] [mocks-task-alden-croft_mb-2eae0a] target ports healthy: 8054 8082 8017 8016 8021
+14:35:23 [INFO] [alden-croft_MB] per-task mock stack mocks-task-alden-croft_mb-2eae0a ready (5 overlay APIs, ports [8054, 8082, 8017, 8016, 8021], 101 URLs)
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ACTIVECAMPAIGN_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8101
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: AIRBNB_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8038
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: AIRTABLE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8032
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ALGOLIA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8067
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ALPACA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8043
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: AMADEUS_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8076
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: AMAZON_SELLER_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8000
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: AMPLITUDE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8091
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ASANA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8031
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: BAMBOOHR_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8072
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: BIGCOMMERCE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8084
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: BINANCE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8097
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: BOX_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8083
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: CALENDLY_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8054
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: CLOUDFLARE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8050
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: COINBASE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8023
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: CONFLUENCE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8045
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: CONTENTFUL_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8066
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: DATADOG_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8048
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: DISCORD_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8057
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: DOCUSIGN_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8053
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: DOORDASH_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8037
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: DROPBOX_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8082
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ETSY_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8001
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: EVENTBRITE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8020
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: FEDEX_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8095
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: FIGMA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8079
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: FRESHDESK_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8093
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GITHUB_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8019
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GITLAB_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8046
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GMAIL_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8017
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GOOGLE_ANALYTICS_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8068
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GOOGLE_CALENDAR_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8016
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GOOGLE_CLASSROOM_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8002
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GOOGLE_DRIVE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8018
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GOOGLE_MAPS_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8033
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GREENHOUSE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8073
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: GUSTO_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8074
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: HUBSPOT_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8024
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: INSTACART_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8012
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: INSTAGRAM_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8003
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: INTERCOM_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8070
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: JIRA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8029
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: KLAVIYO_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8089
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: KRAKEN_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8098
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: KUBERNETES_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8051
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: LINEAR_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8004
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: LINKEDIN_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8062
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: MAILCHIMP_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8081
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: MAILGUN_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8094
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: MICROSOFT_TEAMS_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8086
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: MIXPANEL_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8056
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: MONDAY_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8080
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: MYFITNESSPAL_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8005
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: NASA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8077
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: NOTION_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8010
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: OBSIDIAN_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8014
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: OKTA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8049
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: OPENLIBRARY_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8078
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: OPENWEATHER_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8035
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: OUTLOOK_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8087
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: PAGERDUTY_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8040
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: PAYPAL_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8042
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: PINTEREST_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8006
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: PLAID_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8022
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: POSTHOG_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8092
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: QUICKBOOKS_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8007
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: REDDIT_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8058
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: RING_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8008
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SALESFORCE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8044
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SEGMENT_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8090
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SENDGRID_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8027
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SENTRY_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8047
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SERVICENOW_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8071
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SHIPPO_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8052
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SLACK_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8013
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SPOTIFY_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8039
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: SQUARE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8041
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: STRAVA_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8060
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: STRIPE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8021
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TELEGRAM_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8063
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TICKETMASTER_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8075
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TMDB_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8059
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TRELLO_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8030
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TWILIO_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8026
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TWITCH_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8064
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TWITTER_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8061
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: TYPEFORM_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8055
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: UBER_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8036
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: UPS_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8096
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: VIMEO_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8099
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: WEBFLOW_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8100
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: WHATSAPP_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8015
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: WOOCOMMERCE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8085
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: WORDPRESS_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8065
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: XERO_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8088
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: YELP_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8034
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: YOUTUBE_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8009
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ZENDESK_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8025
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ZILLOW_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8011
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injecting extra env: ZOOM_API_URL=http://mocks-task-alden-croft_mb-2eae0a:8028
+14:35:23 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Starting container, mounting /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/work/alden-croft_MB/exec → /app (ro)
+14:35:24 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Container ID: b1b76b13404e
+14:35:39 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Bootstrap limits raised: per_file=1000000000 total=1000000000 (verified)
+14:35:39 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Lobster workspace copied: /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/input/alden-croft_MB/persona → /root/
+14:35:39 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Persona MDs landed at /root/: ['AGENTS.md', 'MEMORY.md', 'SOUL.md']
+14:35:42 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Bootstrap MDs indexed: verified=['MEMORY.md', 'SOUL.md', 'AGENTS.md', '2026-06-03.md', '2026-06-02.md'] missing=['AGENT.md', 'IDENTITY.md', 'USER.md', 'TOOLS.md', 'HEARTBEAT.md']
+14:35:42 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] openclaw memory index: Memory index updated (main).
+14:35:42 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Copying /app → /tmp_workspace
+14:35:43 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Setting thinkingDefault to xhigh
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injected API_DOCUMENTATION.md → /root/API_DOCUMENTATION.md
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injected API connectors (101): calendly-api,dropbox-api,gmail-api,google-calendar-api,stripe-api,youtube-api,activecampaign-api,airbnb-api,airtable-api,algolia-api,alpaca-api,amadeus-api,amazon-seller-api,amplitude-api,asana-api,bamboohr-api,bigcommerce-api,binance-api,box-api,cloudflare-api,coinbase-api,confluence-api,contentful-api,datadog-api,discord-api,docusign-api,doordash-api,etsy-api,eventbrite-api,fedex-api,figma-api,freshdesk-api,github-api,gitlab-api,google-analytics-api,google-classroom-api,google-drive-api,google-maps-api,greenhouse-api,gusto-api,hubspot-api,instacart-api,instagram-api,intercom-api,jira-api,klaviyo-api,kraken-api,kubernetes-api,linear-api,linkedin-api,mailchimp-api,mailgun-api,microsoft-teams-api,mixpanel-api,monday-api,myfitnesspal-api,nasa-api,notion-api,obsidian-api,okta-api,openlibrary-api,openweather-api,outlook-api,pagerduty-api,paypal-api,pinterest-api,plaid-api,posthog-api,quickbooks-api,reddit-api,ring-api,salesforce-api,segment-api,sendgrid-api,sentry-api,servicenow-api,shippo-api,slack-api,spotify-api,square-api,strava-api,telegram-api,ticketmaster-api,tmdb-api,trello-api,twilio-api,twitch-api,twitter-api,typeform-api,uber-api,ups-api,vimeo-api,webflow-api,whatsapp-api,woocommerce-api,wordpress-api,xero-api,yelp-api,zendesk-api,zillow-api,zoom-api
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Injected utility skills (4): audio-extract,pdf-extract,self-improving-agent-3.0.5,video-frames
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Workspace baseline saved at /tmp/wildclaw_workspace_baseline.json
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Model set in openclaw.json: litellm/claude-opus-4.7
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] imageModel already set via _set_model (litellm mode)
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Started process PID=47163 → /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/output/openclaw/alden-croft_MB/trajectories/claude/run_1/gateway.log
+14:36:06 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Waiting for gateway (2s)...
+14:36:08 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Started process PID=47173 → /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/output/openclaw/alden-croft_MB/trajectories/claude/run_1/agent.log
+14:36:08 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Waiting for agent to finish...
+14:45:45 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Agent finished (576.66s)
+14:45:45 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Agent exit code: 0
+14:45:45 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] No Automated Checks, skipping grading
+14:45:45 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Collected container directory /tmp/openclaw/. → /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/output/openclaw/alden-croft_MB/trajectories/claude/run_1/task_output
+14:45:46 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Collected container directory /tmp_workspace/. → /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/output/openclaw/alden-croft_MB/trajectories/claude/run_1/task_output/workspace_full
+14:45:46 [INFO] [testexec] docker run image=wildclawbench-ubuntu:v1.3 network=k3net-2315b20bbbe1 tests=/var/folders/_x/xzr97r152lg0b6yh0tph2q1w0000gn/T/wcb-testexec-l3fbgou9/test_outputs.py
+14:45:48 [INFO] [testexec] 0/106 passed (106 failed, 0 errored) — reward=0.000
+14:45:48 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Tests executed: 0/106 passed reward=0.000 (2154ms)
+14:45:48 [INFO] [THINKING-DEBUG] sanitize BEFORE: role=assistant thinking_blocks=1 first_thinking_len=70 has_signature=True
+14:45:48 [INFO] [THINKING-DEBUG] sanitize AFTER: role=assistant thinking_blocks=1 first_thinking_len=70 has_signature=True
+14:45:48 [INFO] [alden-croft_MB] Trajectory written: /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/output/openclaw/alden-croft_MB/trajectories/claude/run_1/output.json (thinking_blocks=1)
+14:47:24 [INFO] [alden-croft_MB] Rubric judged: overall=0.049 (4.92%) — 18/66 criteria passed, model=council
+14:47:24 [INFO] [alden-croft_MB] Harbor bundle written: /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/output/openclaw/alden-croft_MB (required=6, distractor=95)
+14:47:24 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Token usage TOTAL - input:1680720 output:93216 cache_read:0 cache_write:26234 total:1800170 cost:$6.0883 sources=[agent(in=1187674,out=5999,cR=0) testgen(in=120371,out=72730,cR=0) judge(in=372675,out=14487,cR=0)]
+14:47:24 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Usage written to /Users/apple/Downloads/WildClaw 2/Wildclow_forked_image_finalized/output/openclaw/alden-croft_MB/trajectories/claude/run_1/usage.json
+14:47:25 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Container cleaned up
+14:47:26 [INFO] [alden-croft_MB_claude-opus-4.7_20260603_1435_4214e8] Per-task mock stack mocks-task-alden-croft_mb-2eae0a cleaned up

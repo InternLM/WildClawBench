@@ -1,0 +1,5 @@
+[service]
+name = "obsidian-api"
+port = 8014
+env_var_name = "OBSIDIAN_API_URL"
+healthcheck_path = "/health"

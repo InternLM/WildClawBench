@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "Slack Web API Mock",
+    "description": "Mock subset of Slack's Web API. Base URL: http://localhost:8013. In docker-compose: http://slack-api:8013.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8013"}],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "auth.test", "request": {"method": "GET", "url": "{{baseUrl}}/api/auth.test"}},
+    {"name": "team.info", "request": {"method": "GET", "url": "{{baseUrl}}/api/team.info"}},
+    {"name": "users.list", "request": {"method": "GET", "url": "{{baseUrl}}/api/users.list"}},
+    {"name": "users.info", "request": {"method": "GET", "url": "{{baseUrl}}/api/users.info?user=U01AMELIA"}},
+    {"name": "users.setPresence", "request": {"method": "POST", "url": "{{baseUrl}}/api/users.setPresence",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"user\": \"U01AMELIA\", \"presence\": \"away\"}"}}},
+    {"name": "conversations.list", "request": {"method": "GET", "url": "{{baseUrl}}/api/conversations.list"}},
+    {"name": "conversations.info", "request": {"method": "GET", "url": "{{baseUrl}}/api/conversations.info?channel=C01ENG"}},
+    {"name": "conversations.create", "request": {"method": "POST", "url": "{{baseUrl}}/api/conversations.create",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"name\": \"proj-billing-grpc\", \"is_private\": false}"}}},
+    {"name": "conversations.history", "request": {"method": "GET", "url": "{{baseUrl}}/api/conversations.history?channel=C01ENG&limit=5"}},
+    {"name": "conversations.replies", "request": {"method": "GET", "url": "{{baseUrl}}/api/conversations.replies?channel=C01ENG&ts=1748210000.000100"}},
+    {"name": "conversations.invite", "request": {"method": "POST", "url": "{{baseUrl}}/api/conversations.invite",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"channel\": \"C01AUTHV2\", \"users\": \"U01ROHIT\"}"}}},
+    {"name": "chat.postMessage", "request": {"method": "POST", "url": "{{baseUrl}}/api/chat.postMessage",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"channel\": \"C01AUTHV2\", \"text\": \"Cutover scheduled for Friday 8am PT.\", \"user\": \"U01AMELIA\"}"}}},
+    {"name": "chat.update", "request": {"method": "POST", "url": "{{baseUrl}}/api/chat.update",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"channel\": \"C01ENG\", \"ts\": \"1748210000.000100\", \"text\": \"Updated agenda in the doc.\"}"}}},
+    {"name": "reactions.add", "request": {"method": "POST", "url": "{{baseUrl}}/api/reactions.add",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"channel\": \"C01AUTHV2\", \"timestamp\": \"1748220500.000300\", \"name\": \"shipit\", \"user\": \"U01HELENA\"}"}}},
+    {"name": "search.messages", "request": {"method": "GET", "url": "{{baseUrl}}/api/search.messages?query=cutover"}}
+  ]
+}

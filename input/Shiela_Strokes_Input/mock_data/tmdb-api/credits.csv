@@ -1,0 +1,20 @@
+movie_id,person_id,credit_type,character,job,order
+mv_lionheart,p_gen_nnaji,Acting,Adaeze,,1
+mv_lionheart,p_gen_nnaji,Directing,,Director,2
+mv_october_1,p_kunle_afolayan,Directing,,Director,1
+mv_october_1,p_ramsey_nouah,Acting,Inspector Waziri,,2
+mv_kings_of_boys,p_jade_osiberu,Directing,,Director,1
+mv_kings_of_boys,p_o_o_okonkwo,Acting,Eniola Salami,,2
+mv_anikulapo,p_kunle_afolayan,Directing,,Director,1
+mv_anikulapo,p_florence_o,Acting,Awarun,,2
+mv_jagun_jagun,p_funke_akindele,Acting,Kitan,,3
+mv_swallow,p_kayode_kasum,Directing,,Director,1
+mv_brotherhood,p_jade_osiberu,Directing,,Director,1
+mv_brotherhood,p_ramsey_nouah,Acting,Chief Inspector,,2
+mv_queen_of_kat,p_lupita_n,Acting,Harriet Mutesi,,1
+mv_hidden_figures,p_taraji_p_hen,Acting,Katherine Johnson,,1
+mv_hidden_figures,p_octavia_spencer,Acting,Dorothy Vaughan,,2
+mv_namesake,p_kal_penn,Acting,Gogol Ganguli,,1
+mv_inside_out,p_pixar_dir,Directing,,Director,1
+mv_finding_dory,p_pixar_dir,Directing,,Director,1
+mv_chief_daddy,p_funke_akindele,Acting,Famzy,,1

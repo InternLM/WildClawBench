@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "Telegram Bot Mock API",
+    "description": "Test collection for the mock Telegram Bot API service. Base URL defaults to http://localhost:8063. In docker-compose, the service is reachable at http://telegram-api:8063.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8063"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "getMe", "request": {"method": "GET", "url": "{{baseUrl}}/bot/getMe"}},
+    {"name": "getUpdates", "request": {"method": "GET", "url": "{{baseUrl}}/bot/getUpdates?limit=10"}},
+    {"name": "getChat", "request": {"method": "GET", "url": "{{baseUrl}}/bot/getChat?chat_id=-200500"}},
+    {"name": "getChatMember", "request": {"method": "GET", "url": "{{baseUrl}}/bot/getChatMember?chat_id=-200500&user_id=9002"}},
+    {"name": "sendMessage", "request": {"method": "POST", "url": "{{baseUrl}}/bot/sendMessage",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"chat_id\": -200500, \"text\": \"Standup starting now.\"}"}}},
+    {"name": "sendPhoto", "request": {"method": "POST", "url": "{{baseUrl}}/bot/sendPhoto",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"chat_id\": -200501, \"photo\": \"AgACAgIAAxkBAAIB\", \"caption\": \"Latest deploy dashboard\"}"}}},
+    {"name": "editMessageText", "request": {"method": "POST", "url": "{{baseUrl}}/bot/editMessageText",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"chat_id\": 1001, \"message_id\": 5006, \"text\": \"Your on-call shift starts tomorrow at 10:00 UTC.\"}"}}},
+    {"name": "deleteMessage", "request": {"method": "POST", "url": "{{baseUrl}}/bot/deleteMessage",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"chat_id\": -200502, \"message_id\": 5008}"}}}
+  ]
+}

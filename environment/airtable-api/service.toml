@@ -1,0 +1,5 @@
+[service]
+name = "airtable-api"
+port = 8032
+env_var_name = "AIRTABLE_API_URL"
+healthcheck_path = "/health"

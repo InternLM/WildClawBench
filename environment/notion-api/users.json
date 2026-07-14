@@ -1,0 +1,62 @@
+[
+  {
+    "id": "user-amelia",
+    "name": "Amelia Ortega",
+    "email": "amelia.ortega@orbit-labs.com",
+    "avatar_url": "https://avatars.example.com/amelia.png",
+    "type": "person",
+    "bot": "false",
+    "owner_workspace": "workspace-orbit-labs",
+    "created_time": "2025-09-01T10:00:00.000Z"
+  },
+  {
+    "id": "user-jonas",
+    "name": "Jonas Pereira",
+    "email": "jonas.pereira@orbit-labs.com",
+    "avatar_url": "https://avatars.example.com/jonas.png",
+    "type": "person",
+    "bot": "false",
+    "owner_workspace": "workspace-orbit-labs",
+    "created_time": "2025-09-04T11:30:00.000Z"
+  },
+  {
+    "id": "user-helena",
+    "name": "Helena Park",
+    "email": "helena.park@orbit-labs.com",
+    "avatar_url": "https://avatars.example.com/helena.png",
+    "type": "person",
+    "bot": "false",
+    "owner_workspace": "workspace-orbit-labs",
+    "created_time": "2025-09-12T14:20:00.000Z"
+  },
+  {
+    "id": "user-rohit",
+    "name": "Rohit Bansal",
+    "email": "rohit.bansal@orbit-labs.com",
+    "avatar_url": "https://avatars.example.com/rohit.png",
+    "type": "person",
+    "bot": "false",
+    "owner_workspace": "workspace-orbit-labs",
+    "created_time": "2025-10-02T09:10:00.000Z"
+  },
+  {
+    "id": "user-noor",
+    "name": "Noor Aziz",
+    "email": "noor.aziz@orbit-labs.com",
+    "avatar_url": "https://avatars.example.com/noor.png",
+    "type": "person",
+    "bot": "false",
+    "owner_workspace": "workspace-orbit-labs",
+    "created_time": "2025-10-18T16:45:00.000Z"
+  },
+  {
+    "id": "bot-notebot",
+    "name": "Orbit Sync Bot",
+    "email": "",
+    "avatar_url": "https://avatars.example.com/bot.png",
+    "type": "bot",
+    "bot": "true",
+    "owner_workspace": "workspace-orbit-labs",
+    "created_time": "2025-09-02T08:00:00.000Z"
+  }
+]

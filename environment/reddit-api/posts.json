@@ -1,0 +1,74 @@
+[
+  {
+    "id": "t3_p001",
+    "subreddit": "programming",
+    "title": "Why I switched from REST to gRPC for internal services",
+    "author": "devkat",
+    "url": "https://example.com/grpc-post",
+    "selftext": "",
+    "score": "1820",
+    "num_comments": "3",
+    "created_utc": "1716800000",
+    "is_self": "false"
+  },
+  {
+    "id": "t3_p002",
+    "subreddit": "programming",
+    "title": "Ask: how do you structure a monorepo for 30 microservices?",
+    "author": "buildbot",
+    "url": "",
+    "selftext": "Looking for real-world layouts and tooling that scaled past 30 services.",
+    "score": "640",
+    "num_comments": "2",
+    "created_utc": "1716810000",
+    "is_self": "true"
+  },
+  {
+    "id": "t3_p003",
+    "subreddit": "homelab",
+    "title": "My quiet 8-bay NAS build for under 600 dollars",
+    "author": "rackmonkey",
+    "url": "https://example.com/nas-build",
+    "selftext": "",
+    "score": "2310",
+    "num_comments": "2",
+    "created_utc": "1716700000",
+    "is_self": "false"
+  },
+  {
+    "id": "t3_p004",
+    "subreddit": "homelab",
+    "title": "PSA: label your cables before you regret it",
+    "author": "cablechaos",
+    "url": "",
+    "selftext": "A cautionary tale about an unlabeled patch panel and a long debugging night.",
+    "score": "990",
+    "num_comments": "1",
+    "created_utc": "1716720000",
+    "is_self": "true"
+  },
+  {
+    "id": "t3_p005",
+    "subreddit": "gardening",
+    "title": "First tomato harvest from my balcony containers",
+    "author": "leafyleo",
+    "url": "https://example.com/tomatoes",
+    "selftext": "",
+    "score": "1450",
+    "num_comments": "2",
+    "created_utc": "1716650000",
+    "is_self": "false"
+  },
+  {
+    "id": "t3_p006",
+    "subreddit": "gardening",
+    "title": "Identify this volunteer sprout in my raised bed?",
+    "author": "sprouthunter",
+    "url": "",
+    "selftext": "It came up on its own and I have no idea what it is. Photos in comments.",
+    "score": "210",
+    "num_comments": "1",
+    "created_utc": "1716660000",
+    "is_self": "true"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "with": "Dorothy Ainsworth",
+  "cadence": "Mon/Fri 8:30 AM",
+  "route": "Laurel Hollow and Birchwood loop",
+  "distance_miles": 1.5,
+  "log": [
+    {
+      "date": "2026-05-04",
+      "done": true
+    },
+    {
+      "date": "2026-05-08",
+      "done": true
+    },
+    {
+      "date": "2026-05-11",
+      "done": true
+    },
+    {
+      "date": "2026-05-15",
+      "done": false,
+      "note": "rain"
+    },
+    {
+      "date": "2026-05-18",
+      "done": true
+    }
+  ]
+}

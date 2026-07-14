@@ -1,0 +1,162 @@
+[
+  {
+    "courseId": "course_001",
+    "id": "ann_001",
+    "text": "Welcome to AP Computer Science A! Please review the syllabus linked in Materials and complete the intro survey by Friday.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-01-06T09:00:00Z",
+    "updateTime": "2025-01-06T09:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_001/p/ann_001"
+  },
+  {
+    "courseId": "course_001",
+    "id": "ann_002",
+    "text": "Reminder: Unit 2 test on Friday. Review String methods and Scanner input. Office hours Tuesday and Thursday after school.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-02-03T08:00:00Z",
+    "updateTime": "2025-02-03T08:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_001/p/ann_002"
+  },
+  {
+    "courseId": "course_001",
+    "id": "ann_003",
+    "text": "AP Exam registration deadline is next Monday March 3. Sign up in the counseling office if you haven't already.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-02-24T08:00:00Z",
+    "updateTime": "2025-02-24T08:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_001/p/ann_003"
+  },
+  {
+    "courseId": "course_001",
+    "id": "ann_004",
+    "text": "No class Thursday due to PSAT testing day. Use the time to work on your BankAccount project.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-03-17T08:00:00Z",
+    "updateTime": "2025-03-17T08:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_001/p/ann_004"
+  },
+  {
+    "courseId": "course_002",
+    "id": "ann_005",
+    "text": "Welcome to Web Dev! Make sure you have VS Code installed and a GitHub account created before next class.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-01-06T11:00:00Z",
+    "updateTime": "2025-01-06T11:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_002/p/ann_005"
+  },
+  {
+    "courseId": "course_002",
+    "id": "ann_006",
+    "text": "Great work on the portfolio projects everyone! I've posted some exemplary examples in Materials for inspiration.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-01-27T11:00:00Z",
+    "updateTime": "2025-01-27T11:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_002/p/ann_006"
+  },
+  {
+    "courseId": "course_002",
+    "id": "ann_007",
+    "text": "Reminder: Weather API project due Wednesday. Make sure your API key is working. See me if you need help with fetch.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-04-14T11:00:00Z",
+    "updateTime": "2025-04-14T11:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_002/p/ann_007"
+  },
+  {
+    "courseId": "course_003",
+    "id": "ann_008",
+    "text": "Welcome to AP CSP! This course is about big ideas in CS not just coding. Come ready to think critically and creatively.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-01-06T14:00:00Z",
+    "updateTime": "2025-01-06T14:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_003/p/ann_008"
+  },
+  {
+    "courseId": "course_003",
+    "id": "ann_009",
+    "text": "Innovation presentations start next week. Sign up for your presentation slot on the shared Google Doc.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-04-14T14:00:00Z",
+    "updateTime": "2025-04-14T14:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_003/p/ann_009"
+  },
+  {
+    "courseId": "course_003",
+    "id": "ann_010",
+    "text": "AP CSP exam is May 12. Create Task portfolio due to College Board by April 30. No extensions possible.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-04-21T14:00:00Z",
+    "updateTime": "2025-04-21T14:00:00Z",
+    "creatorUserId": "teacher_001",
+    "alternateLink": "https://classroom.google.com/c/course_003/p/ann_010"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "id": "ann_011",
+    "text": "Annual USCG near-coastal safety inspection scheduled for May 7. Lucky Strike will be at Marina Slip B-14 starting 0800. Pre-position every equipment item for visual inspection and have expiry tags facing out so they can be photographed in place.",
+    "state": "PUBLISHED",
+    "creationTime": "2026-04-25T09:00:00Z",
+    "updateTime": "2026-04-25T09:00:00Z",
+    "creatorUserId": "teacher_004",
+    "alternateLink": "https://classroom.google.com/c/uscg-charter-inspection-2026/p/ann_011"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "id": "ann_012",
+    "text": "Pre-inspection prep checklist posted in Materials. Verify every expiry tag photograph each mounting point and stage handheld items on the salon table. Marisol will run the dry-bag and PFD count from the forward cabin locker.",
+    "state": "PUBLISHED",
+    "creationTime": "2026-05-01T10:00:00Z",
+    "updateTime": "2026-05-01T10:00:00Z",
+    "creatorUserId": "teacher_004",
+    "alternateLink": "https://classroom.google.com/c/uscg-charter-inspection-2026/p/ann_012"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "id": "ann_013",
+    "text": "Inspection complete. Result 13 PASS / 5 FAIL out of 18 total items. CRITICAL findings — EQ-008 Visual Distress Flare Kit expired Dec 2025 / EQ-004 Type IV throwable flotation missing from stern locker. Additional FAILs — EQ-002 cabin extinguisher gauge in red / EQ-014 EPIRB battery expired Mar 2026 / EQ-017 bilge pump float switch broken. Low-confidence items needing daylight re-shoot — EQ-011 bow nav light housing chip / EQ-018 MARPOL placard fade.",
+    "state": "PUBLISHED",
+    "creationTime": "2026-05-07T19:30:00Z",
+    "updateTime": "2026-05-07T19:30:00Z",
+    "creatorUserId": "teacher_004",
+    "alternateLink": "https://classroom.google.com/c/uscg-charter-inspection-2026/p/ann_013"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2026",
+    "id": "ann_014",
+    "text": "Prioritized repair and replacement list with rough costs. P0 immediate — EQ-008 flare kit $75 / EQ-004 throwable Type IV $35 / EQ-014 EPIRB battery service $185. P1 this week — EQ-002 cabin extinguisher $40 / EQ-017 bilge pump $115. P2 deferred — re-shoot low-confidence items EQ-011 and EQ-018 in daylight. Estimated total replacement budget approximately $450. Vendor contacts in mat_010.",
+    "state": "PUBLISHED",
+    "creationTime": "2026-05-08T09:30:00Z",
+    "updateTime": "2026-05-08T09:30:00Z",
+    "creatorUserId": "teacher_004",
+    "alternateLink": "https://classroom.google.com/c/uscg-charter-inspection-2026/p/ann_014"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "id": "ann_015",
+    "text": "Prior-year USCG near-coastal safety inspection scheduled for May 9. Lucky Strike will be at Marina Slip B-14 starting 0800. All equipment must be staged for visual inspection.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-04-25T09:00:00Z",
+    "updateTime": "2025-04-25T09:00:00Z",
+    "creatorUserId": "teacher_004",
+    "alternateLink": "https://classroom.google.com/c/uscg-charter-inspection-2025/p/ann_015"
+  },
+  {
+    "courseId": "uscg-charter-inspection-2025",
+    "id": "ann_016",
+    "text": "Prior-year inspection complete. Result all 18 items PASS. Warning flags for next year — EQ-008 flare kit expires Dec 2025 / EQ-014 EPIRB battery rated to Mar 2026 / EQ-002 cabin extinguisher gauge trending downward. Schedule replacements before May 2026 inspection.",
+    "state": "PUBLISHED",
+    "creationTime": "2025-05-09T18:00:00Z",
+    "updateTime": "2025-05-09T18:00:00Z",
+    "creatorUserId": "teacher_004",
+    "alternateLink": "https://classroom.google.com/c/uscg-charter-inspection-2025/p/ann_016"
+  }
+]

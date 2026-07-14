@@ -1,0 +1,32 @@
+[
+  {
+    "object_id": "parcel-01",
+    "length": "10",
+    "width": "8",
+    "height": "4",
+    "distance_unit": "in",
+    "weight": "2.5",
+    "mass_unit": "lb",
+    "template": ""
+  },
+  {
+    "object_id": "parcel-02",
+    "length": "16",
+    "width": "12",
+    "height": "8",
+    "distance_unit": "in",
+    "weight": "7.0",
+    "mass_unit": "lb",
+    "template": ""
+  },
+  {
+    "object_id": "parcel-03",
+    "length": "5",
+    "width": "5",
+    "height": "5",
+    "distance_unit": "in",
+    "weight": "0.75",
+    "mass_unit": "lb",
+    "template": "USPS_FlatRatePaddedEnvelope"
+  }
+]

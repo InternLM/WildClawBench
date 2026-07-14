@@ -1,0 +1,36 @@
+[
+  {
+    "id": "sec_01",
+    "snippet": {
+      "title": "3GPP review"
+    },
+    "contentDetails": {
+      "playlists": [
+        "pl_3gpp_review"
+      ]
+    }
+  },
+  {
+    "id": "sec_02",
+    "snippet": {
+      "title": "Vendor webinars"
+    },
+    "contentDetails": {
+      "playlists": [
+        "pl_vendor_reels"
+      ]
+    }
+  },
+  {
+    "id": "sec_03",
+    "snippet": {
+      "title": "Kids safe"
+    },
+    "contentDetails": {
+      "playlists": [
+        "pl_kids_safe",
+        "pl_kids_science"
+      ]
+    }
+  }
+]

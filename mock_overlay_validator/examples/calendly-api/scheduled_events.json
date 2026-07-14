@@ -1,0 +1,54 @@
+[
+  {
+    "uuid": "sev-1001",
+    "owner": "user-amelia-ortega",
+    "event_type": "et-intro-15",
+    "name": "Intro Call",
+    "status": "active",
+    "start_time": "2026-05-28T17:00:00.000000Z",
+    "end_time": "2026-05-28T17:15:00.000000Z",
+    "location_type": "zoom",
+    "location": "https://zoom.us/j/8801234567",
+    "created_at": "2026-05-25T09:00:00.000000Z",
+    "canceled_reason": ""
+  },
+  {
+    "uuid": "sev-1002",
+    "owner": "user-amelia-ortega",
+    "event_type": "et-discovery-30",
+    "name": "Discovery Session",
+    "status": "active",
+    "start_time": "2026-05-29T20:00:00.000000Z",
+    "end_time": "2026-05-29T20:30:00.000000Z",
+    "location_type": "google_conference",
+    "location": "https://meet.google.com/abc-defg-hij",
+    "created_at": "2026-05-26T11:30:00.000000Z",
+    "canceled_reason": ""
+  },
+  {
+    "uuid": "sev-1003",
+    "owner": "user-amelia-ortega",
+    "event_type": "et-deepdive-60",
+    "name": "Technical Deep Dive",
+    "status": "active",
+    "start_time": "2026-06-01T18:00:00.000000Z",
+    "end_time": "2026-06-01T19:00:00.000000Z",
+    "location_type": "physical",
+    "location": "Orbit Labs HQ Room 4",
+    "created_at": "2026-05-26T15:45:00.000000Z",
+    "canceled_reason": ""
+  },
+  {
+    "uuid": "sev-1004",
+    "owner": "user-amelia-ortega",
+    "event_type": "et-intro-15",
+    "name": "Intro Call",
+    "status": "canceled",
+    "start_time": "2026-05-22T16:00:00.000000Z",
+    "end_time": "2026-05-22T16:15:00.000000Z",
+    "location_type": "zoom",
+    "location": "https://zoom.us/j/8809999999",
+    "created_at": "2026-05-20T08:00:00.000000Z",
+    "canceled_reason": "Invitee had a scheduling conflict"
+  }
+]

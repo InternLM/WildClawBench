@@ -1,0 +1,23 @@
+[
+  {
+    "id": "63e1000000000000000000e1",
+    "name": "Design doc tasks",
+    "id_card": "62d1000000000000000000d2",
+    "id_board": "60b1000000000000000000b1",
+    "items": "Threat model:incomplete;API surface:complete;Migration path:incomplete"
+  },
+  {
+    "id": "63e1000000000000000000e2",
+    "name": "Acceptance criteria",
+    "id_card": "62d1000000000000000000d3",
+    "id_board": "60b1000000000000000000b1",
+    "items": "Zero downtime:incomplete;Rollback plan:incomplete"
+  },
+  {
+    "id": "63e1000000000000000000e3",
+    "name": "Newsletter checklist",
+    "id_card": "62d1000000000000000000d7",
+    "id_board": "60b1000000000000000000b2",
+    "items": "Draft copy:complete;Design banner:complete;Send test:complete"
+  }
+]

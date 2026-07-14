@@ -1,0 +1,13 @@
+column_id,board_id,title,type,position
+col_name,brd_nsw_p1,Item,name,0
+col_owner,brd_nsw_p1,Owner,person,1
+col_status,brd_nsw_p1,Status,status,2
+col_due,brd_nsw_p1,Due date,date,3
+col_risk,brd_nsw_p1,Risk,status,4
+col_notes,brd_nsw_p1,Notes,long_text,5
+col_name_p2,brd_nsw_p2,Item,name,0
+col_status_p2,brd_nsw_p2,Status,status,1
+col_due_p2,brd_nsw_p2,Due date,date,2
+col_name_5g,brd_5g_cbd,Item,name,0
+col_status_5g,brd_5g_cbd,Status,status,1
+col_due_5g,brd_5g_cbd,Due date,date,2

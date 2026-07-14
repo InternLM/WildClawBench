@@ -1,0 +1,16 @@
+[
+  {
+    "id": "org-cascade",
+    "name": "Cascade Eng Meetups",
+    "description": "Bay Area engineering and SRE meetups",
+    "vertical": "Tech",
+    "image_url": "https://img.example.com/org-cascade.png"
+  },
+  {
+    "id": "org-sf-runners",
+    "name": "SF Bay Runners",
+    "description": "Group runs around SF Bay Area parks",
+    "vertical": "Sports",
+    "image_url": "https://img.example.com/org-sfrun.png"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "product_id": "uberx",
+    "display_name": "UberX",
+    "description": "Affordable everyday rides",
+    "capacity": "4",
+    "base_fare": "2.55",
+    "cost_per_mile": "1.75",
+    "cost_per_minute": "0.35",
+    "booking_fee": "2.30",
+    "minimum_fare": "7.65",
+    "image_url": "https://img.example.com/uberx.png",
+    "shared": "false"
+  },
+  {
+    "product_id": "uberxl",
+    "display_name": "UberXL",
+    "description": "Affordable rides for groups up to 6",
+    "capacity": "6",
+    "base_fare": "3.85",
+    "cost_per_mile": "2.85",
+    "cost_per_minute": "0.45",
+    "booking_fee": "2.30",
+    "minimum_fare": "9.95",
+    "image_url": "https://img.example.com/uberxl.png",
+    "shared": "false"
+  },
+  {
+    "product_id": "uberblack",
+    "display_name": "Uber Black",
+    "description": "Premium rides in luxury cars",
+    "capacity": "4",
+    "base_fare": "8.00",
+    "cost_per_mile": "3.75",
+    "cost_per_minute": "0.65",
+    "booking_fee": "0.00",
+    "minimum_fare": "15.00",
+    "image_url": "https://img.example.com/uberblack.png",
+    "shared": "false"
+  },
+  {
+    "product_id": "uberpool",
+    "display_name": "Uber Pool",
+    "description": "Share your ride and split the cost",
+    "capacity": "2",
+    "base_fare": "1.95",
+    "cost_per_mile": "1.25",
+    "cost_per_minute": "0.25",
+    "booking_fee": "1.50",
+    "minimum_fare": "5.50",
+    "image_url": "https://img.example.com/uberpool.png",
+    "shared": "true"
+  }
+]

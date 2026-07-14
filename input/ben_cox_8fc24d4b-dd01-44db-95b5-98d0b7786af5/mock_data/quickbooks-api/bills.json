@@ -1,0 +1,228 @@
+[
+  {
+    "Id": "4001",
+    "DocNumber": "BILL-2026-0912",
+    "VendorRef": { "value": "101", "name": "Groningen Houtcentrum" },
+    "TxnDate": "2026-09-25",
+    "DueDate": "2026-10-25",
+    "Line": [
+      {
+        "Amount": 624.00,
+        "Description": "Eiken multiplex 18mm, 4 platen (boekenkast kasten/zijpanelen)",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 624.00,
+    "Balance": 0.00,
+    "PrivateNote": "Project: Boekenkast Veldkamp (Groningen). Geleverd 2026-09-29. Betaald."
+  },
+  {
+    "Id": "4002",
+    "DocNumber": "BILL-2026-0913",
+    "VendorRef": { "value": "101", "name": "Groningen Houtcentrum" },
+    "TxnDate": "2026-09-25",
+    "DueDate": "2026-10-25",
+    "Line": [
+      {
+        "Amount": 142.40,
+        "Description": "Kantenband eiken, rol",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      },
+      {
+        "Amount": 46.00,
+        "Description": "Hardwax olie naturel, 1L",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 188.40,
+    "Balance": 0.00,
+    "PrivateNote": "Project: Boekenkast Veldkamp (Groningen). Geleverd 2026-09-29. Betaald."
+  },
+  {
+    "Id": "4003",
+    "DocNumber": "BILL-2026-0918",
+    "VendorRef": { "value": "103", "name": "De Vries IJzerwaren" },
+    "TxnDate": "2026-09-26",
+    "DueDate": "2026-10-26",
+    "Line": [
+      {
+        "Amount": 96.25,
+        "Description": "Schroeven, plankdragers en beslag",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 96.25,
+    "Balance": 0.00,
+    "PrivateNote": "Project: Boekenkast Veldkamp (Groningen). Geleverd 2026-09-29. Betaald."
+  },
+  {
+    "Id": "4010",
+    "DocNumber": "BILL-2026-0907",
+    "VendorRef": { "value": "101", "name": "Groningen Houtcentrum" },
+    "TxnDate": "2026-09-18",
+    "DueDate": "2026-10-18",
+    "Line": [
+      {
+        "Amount": 312.75,
+        "Description": "Eiken lijst en trim, keuken op maat",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 312.75,
+    "Balance": 0.00,
+    "PrivateNote": "Project: Keuken Bosman (Haren). Levering december."
+  },
+  {
+    "Id": "4020",
+    "DocNumber": "BILL-2025-0455",
+    "VendorRef": { "value": "101", "name": "Groningen Houtcentrum" },
+    "TxnDate": "2025-11-12",
+    "DueDate": "2025-12-12",
+    "Line": [
+      {
+        "Amount": 890.00,
+        "Description": "Eiken en vuren, diverse, afgerond project 2025",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 890.00,
+    "Balance": 0.00,
+    "PrivateNote": "Project: afgerond 2025 (Hofman restauratie). Betaald."
+  },
+  {
+    "Id": "4021",
+    "DocNumber": "BILL-2025-0463",
+    "VendorRef": { "value": "105", "name": "Faber Olie en Lak" },
+    "TxnDate": "2025-06-03",
+    "DueDate": "2025-07-03",
+    "Line": [
+      {
+        "Amount": 145.00,
+        "Description": "Lak en kwasten",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Shop Supplies", "value": "62" } }
+      }
+    ],
+    "TotalAmt": 145.00,
+    "Balance": 0.00,
+    "PrivateNote": "Afgerond 2025. Betaald."
+  },
+  {
+    "Id": "4030",
+    "DocNumber": "BILL-2026-0921",
+    "VendorRef": { "value": "106", "name": "Noord Transport" },
+    "TxnDate": "2026-09-28",
+    "DueDate": "2026-10-28",
+    "Line": [
+      {
+        "Amount": 210.00,
+        "Description": "Transport en bezorging materiaal",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Transport", "value": "64" } }
+      }
+    ],
+    "TotalAmt": 210.00,
+    "Balance": 210.00,
+    "PrivateNote": "Transportkosten, diverse leveringen."
+  },
+  {
+    "Id": "4040",
+    "DocNumber": "BILL-2026-0931",
+    "VendorRef": { "value": "101", "name": "Groningen Houtcentrum" },
+    "TxnDate": "2026-09-25",
+    "DueDate": "2026-10-25",
+    "Line": [
+      {
+        "Amount": 188.40,
+        "Description": "Kantenband eiken en hardwax olie",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 188.40,
+    "Balance": 188.40,
+    "PrivateNote": "Mogelijke duplicaat van BILL-2026-0913. Niet betalen voor controle."
+  },
+  {
+    "Id": "4050",
+    "DocNumber": "BILL-2026-0925",
+    "VendorRef": { "value": "102", "name": "Bouwmarkt Zuidhorn" },
+    "TxnDate": "2026-09-30",
+    "DueDate": "2026-10-30",
+    "Line": [
+      {
+        "Amount": 64.30,
+        "Description": "Verbruiksartikelen werkplaats",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Shop Supplies", "value": "62" } }
+      }
+    ],
+    "TotalAmt": 64.30,
+    "Balance": 64.30,
+    "PrivateNote": "Werkplaats, algemeen."
+  },
+  {
+    "Id": "4051",
+    "DocNumber": "BILL-2026-0926",
+    "VendorRef": { "value": "104", "name": "Hubo Leek" },
+    "TxnDate": "2026-09-30",
+    "DueDate": "2026-10-30",
+    "Line": [
+      {
+        "Amount": 41.80,
+        "Description": "Schuurpapier en kit",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Shop Supplies", "value": "62" } }
+      }
+    ],
+    "TotalAmt": 41.80,
+    "Balance": 41.80,
+    "PrivateNote": "Werkplaats, algemeen."
+  },
+  {
+    "Id": "4052",
+    "DocNumber": "BILL-2026-0922",
+    "VendorRef": { "value": "105", "name": "Faber Olie en Lak" },
+    "TxnDate": "2026-09-22",
+    "DueDate": "2026-10-22",
+    "Line": [
+      {
+        "Amount": 122.00,
+        "Description": "Blanke lak, ander project",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 122.00,
+    "Balance": 122.00,
+    "PrivateNote": "Project: Smit vensterbank (restant)."
+  },
+  {
+    "Id": "4053",
+    "DocNumber": "BILL-2026-0919",
+    "VendorRef": { "value": "103", "name": "De Vries IJzerwaren" },
+    "TxnDate": "2026-09-27",
+    "DueDate": "2026-10-27",
+    "Line": [
+      {
+        "Amount": 37.50,
+        "Description": "Scharnieren, ander project",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Job Materials", "value": "61" } }
+      }
+    ],
+    "TotalAmt": 37.50,
+    "Balance": 0.00,
+    "PrivateNote": "Diverse. Betaald."
+  },
+  {
+    "Id": "4054",
+    "DocNumber": "BILL-2026-0905",
+    "VendorRef": { "value": "102", "name": "Bouwmarkt Zuidhorn" },
+    "TxnDate": "2026-09-10",
+    "DueDate": "2026-10-10",
+    "Line": [
+      {
+        "Amount": 28.90,
+        "Description": "Kleinmateriaal",
+        "AccountBasedExpenseLineDetail": { "AccountRef": { "name": "Shop Supplies", "value": "62" } }
+      }
+    ],
+    "TotalAmt": 28.90,
+    "Balance": 0.00,
+    "PrivateNote": "Werkplaats. Betaald."
+  }
+]

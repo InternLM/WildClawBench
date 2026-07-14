@@ -1,0 +1,13 @@
+listing_id,title,city,country,room_type,price_per_night,cleaning_fee,beds,baths,max_guests,rating,review_count,host_id,instant_book
+lst_la_ikeja_01,Quiet two-bedroom near Ikeja GRA,Lagos,NG,Entire home,65000,8000,3,2,5,4.92,142,host_la_001,true
+lst_la_ikeja_02,Family three-bedroom Ikeja GRA,Lagos,NG,Entire home,92000,10000,4,3,6,4.89,128,host_la_002,true
+lst_la_ikeja_03,Compact one-bedroom Maryland near Ikeja,Lagos,NG,Entire home,42000,6000,2,1,3,4.78,92,host_la_003,false
+lst_la_ikeja_04,Spacious four-bedroom Ikeja GRA,Lagos,NG,Entire home,138000,12000,5,4,8,4.95,184,host_la_004,true
+lst_la_lekki_01,Lekki Phase 1 two-bedroom seaside,Lagos,NG,Entire home,78000,9000,3,2,4,4.86,162,host_la_005,true
+lst_la_lekki_02,Family villa Lekki Phase 1,Lagos,NG,Entire home,188000,16000,6,5,10,4.94,220,host_la_004,true
+lst_la_vi_01,Victoria Island one-bedroom service apartment,Lagos,NG,Entire home,84000,12000,2,1,3,4.81,198,host_la_006,false
+lst_la_vi_02,Victoria Island three-bedroom near Eko,Lagos,NG,Entire home,168000,14000,4,3,6,4.92,240,host_la_006,true
+lst_la_yaba_01,Cosy two-bedroom Yaba near tech hub,Lagos,NG,Entire home,52000,7000,2,2,4,4.78,132,host_la_007,false
+lst_la_surulere_01,Surulere two-bedroom near Sunrise Medical,Lagos,NG,Entire home,48000,7000,2,2,4,4.83,108,host_la_008,true
+lst_la_lagisland,Lagos Island heritage two-bedroom,Lagos,NG,Entire home,68000,8000,2,2,4,4.74,76,host_la_009,false
+lst_la_ikoyi_01,Ikoyi two-bedroom near Glover Court,Lagos,NG,Entire home,124000,12000,3,2,4,4.91,162,host_la_002,true

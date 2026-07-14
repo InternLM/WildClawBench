@@ -1,0 +1,98 @@
+[
+  {
+    "message_id": "msg-001",
+    "conversation_id": "conv-001",
+    "direction": "inbound",
+    "from_wa_id": "15551550101",
+    "to_wa_id": "15551550100",
+    "type": "text",
+    "text": "Hi — my order #SF-220 still shows as preparing. Any update?",
+    "template_name": "",
+    "status": "delivered",
+    "sent_at": "2026-05-26T08:55:00Z"
+  },
+  {
+    "message_id": "msg-002",
+    "conversation_id": "conv-001",
+    "direction": "outbound",
+    "from_wa_id": "15551550100",
+    "to_wa_id": "15551550101",
+    "type": "template",
+    "text": "",
+    "template_name": "order_shipped",
+    "status": "delivered",
+    "sent_at": "2026-05-26T09:00:00Z"
+  },
+  {
+    "message_id": "msg-003",
+    "conversation_id": "conv-002",
+    "direction": "outbound",
+    "from_wa_id": "15551550100",
+    "to_wa_id": "15551550102",
+    "type": "template",
+    "text": "",
+    "template_name": "appointment_reminder",
+    "status": "read",
+    "sent_at": "2026-05-25T18:00:00Z"
+  },
+  {
+    "message_id": "msg-004",
+    "conversation_id": "conv-002",
+    "direction": "inbound",
+    "from_wa_id": "15551550102",
+    "to_wa_id": "15551550100",
+    "type": "text",
+    "text": "Thanks — confirmed!",
+    "template_name": "",
+    "status": "delivered",
+    "sent_at": "2026-05-25T18:30:00Z"
+  },
+  {
+    "message_id": "msg-005",
+    "conversation_id": "conv-003",
+    "direction": "inbound",
+    "from_wa_id": "15551550103",
+    "to_wa_id": "15551550100",
+    "type": "text",
+    "text": "Can I exchange my recent purchase?",
+    "template_name": "",
+    "status": "read",
+    "sent_at": "2026-05-22T13:00:00Z"
+  },
+  {
+    "message_id": "msg-006",
+    "conversation_id": "conv-003",
+    "direction": "outbound",
+    "from_wa_id": "15551550100",
+    "to_wa_id": "15551550103",
+    "type": "text",
+    "text": "Of course! Reply with the order number and we'll get that going.",
+    "template_name": "",
+    "status": "read",
+    "sent_at": "2026-05-22T14:15:00Z"
+  },
+  {
+    "message_id": "msg-007",
+    "conversation_id": "conv-004",
+    "direction": "inbound",
+    "from_wa_id": "15551550105",
+    "to_wa_id": "15551550100",
+    "type": "text",
+    "text": "Order #WC-414 — any tracking yet?",
+    "template_name": "",
+    "status": "delivered",
+    "sent_at": "2026-05-26T07:30:00Z"
+  },
+  {
+    "message_id": "msg-008",
+    "conversation_id": "conv-004",
+    "direction": "outbound",
+    "from_wa_id": "15551550100",
+    "to_wa_id": "15551550105",
+    "type": "template",
+    "text": "",
+    "template_name": "order_shipped",
+    "status": "sent",
+    "sent_at": "2026-05-26T07:45:00Z"
+  }
+]

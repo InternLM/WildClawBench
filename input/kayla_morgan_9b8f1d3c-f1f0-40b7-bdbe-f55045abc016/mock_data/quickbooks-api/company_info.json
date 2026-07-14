@@ -1,0 +1,28 @@
+{
+  "CompanyName": "Asheville Area Historical Society",
+  "LegalName": "Asheville Area Historical Society Inc.",
+  "CompanyAddr": {
+    "Line1": "10 Pack Square",
+    "City": "Asheville",
+    "CountrySubDivisionCode": "NC",
+    "PostalCode": "28801"
+  },
+  "Email": {
+    "Address": "admin@ashevillehistorical.org"
+  },
+  "PrimaryPhone": {
+    "FreeFormNumber": "(828) 555-0100"
+  },
+  "FiscalYearStartMonth": "January",
+  "Country": "US",
+  "IndustryType": "Nonprofit",
+  "NameValue": [
+    {"Name": "OrganizationType", "Value": "501(c)(3) Nonprofit"},
+    {"Name": "ExecutiveDirector", "Value": "Margaret Tillis"},
+    {"Name": "Founded", "Value": "1948"}
+  ],
+  "MetaData": {
+    "CreateTime": "2020-01-15T10:00:00-05:00",
+    "LastUpdatedTime": "2026-05-01T09:00:00-04:00"
+  }
+}

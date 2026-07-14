@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gcomp-301",
+    "employee_id": "gemp-201",
+    "job_title": "VP of Engineering",
+    "rate": "210000.00",
+    "payment_unit": "Year",
+    "flsa_status": "Exempt",
+    "effective_date": "2024-01-01"
+  },
+  {
+    "id": "gcomp-302",
+    "employee_id": "gemp-202",
+    "job_title": "Staff Software Engineer",
+    "rate": "185000.00",
+    "payment_unit": "Year",
+    "flsa_status": "Exempt",
+    "effective_date": "2024-01-01"
+  },
+  {
+    "id": "gcomp-303",
+    "employee_id": "gemp-203",
+    "job_title": "Senior Software Engineer",
+    "rate": "165000.00",
+    "payment_unit": "Year",
+    "flsa_status": "Exempt",
+    "effective_date": "2024-01-01"
+  },
+  {
+    "id": "gcomp-304",
+    "employee_id": "gemp-204",
+    "job_title": "Software Engineer",
+    "rate": "140000.00",
+    "payment_unit": "Year",
+    "flsa_status": "Exempt",
+    "effective_date": "2024-09-19"
+  },
+  {
+    "id": "gcomp-305",
+    "employee_id": "gemp-205",
+    "job_title": "People Operations Manager",
+    "rate": "120000.00",
+    "payment_unit": "Year",
+    "flsa_status": "Exempt",
+    "effective_date": "2024-01-01"
+  },
+  {
+    "id": "gcomp-306",
+    "employee_id": "gemp-206",
+    "job_title": "Account Executive",
+    "rate": "95000.00",
+    "payment_unit": "Year",
+    "flsa_status": "Exempt",
+    "effective_date": "2024-01-01"
+  },
+  {
+    "id": "gcomp-307",
+    "employee_id": "gemp-207",
+    "job_title": "Support Specialist",
+    "rate": "32.50",
+    "payment_unit": "Hour",
+    "flsa_status": "Nonexempt",
+    "effective_date": "2024-03-14"
+  },
+  {
+    "id": "gcomp-308",
+    "employee_id": "gemp-208",
+    "job_title": "Recruiter",
+    "rate": "90000.00",
+    "payment_unit": "Year",
+    "flsa_status": "Exempt",
+    "effective_date": "2024-10-02"
+  }
+]

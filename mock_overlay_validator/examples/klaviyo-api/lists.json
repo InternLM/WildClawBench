@@ -1,0 +1,44 @@
+[
+  {
+    "id": "01HZLIST000000000000000001",
+    "name": "Newsletter Subscribers",
+    "profile_count": "4820",
+    "created": "2026-01-10T09:00:00Z",
+    "updated": "2026-05-26T08:00:00Z"
+  },
+  {
+    "id": "01HZLIST000000000000000002",
+    "name": "VIP Customers",
+    "profile_count": "312",
+    "created": "2026-01-15T10:00:00Z",
+    "updated": "2026-05-25T12:30:00Z"
+  },
+  {
+    "id": "01HZLIST000000000000000003",
+    "name": "Abandoned Cart",
+    "profile_count": "1190",
+    "created": "2026-02-01T11:00:00Z",
+    "updated": "2026-05-27T09:45:00Z"
+  },
+  {
+    "id": "01HZLIST000000000000000004",
+    "name": "Spring Promo 2026",
+    "profile_count": "2640",
+    "created": "2026-04-01T08:00:00Z",
+    "updated": "2026-05-24T14:20:00Z"
+  },
+  {
+    "id": "01HZLIST000000000000000005",
+    "name": "Webinar Registrants",
+    "profile_count": "540",
+    "created": "2026-03-12T13:00:00Z",
+    "updated": "2026-05-20T16:10:00Z"
+  },
+  {
+    "id": "01HZLIST000000000000000006",
+    "name": "Lapsed 90 Days",
+    "profile_count": "875",
+    "created": "2026-02-20T07:30:00Z",
+    "updated": "2026-05-22T10:00:00Z"
+  }
+]

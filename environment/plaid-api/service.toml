@@ -1,0 +1,5 @@
+[service]
+name = "plaid-api"
+port = 8022
+env_var_name = "PLAID_API_URL"
+healthcheck_path = "/health"

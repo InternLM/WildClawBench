@@ -1,0 +1,35 @@
+[
+  {
+    "id": "abc-123-def",
+    "title": "Platform Overview",
+    "description": "Top-level platform health and SLOs",
+    "layout_type": "ordered",
+    "author": "amelia-ortega",
+    "widget_count": "12",
+    "is_read_only": "false",
+    "created": "2025-11-01T10:00:00+00:00",
+    "modified": "2026-05-26T09:00:00+00:00"
+  },
+  {
+    "id": "ghi-456-jkl",
+    "title": "Auth Service Deep Dive",
+    "description": "Latency and error breakdown for auth-service",
+    "layout_type": "ordered",
+    "author": "helena-park",
+    "widget_count": "8",
+    "is_read_only": "false",
+    "created": "2025-11-10T10:00:00+00:00",
+    "modified": "2026-05-25T15:00:00+00:00"
+  },
+  {
+    "id": "mno-789-pqr",
+    "title": "Infra Hosts",
+    "description": "CPU memory and disk across hosts",
+    "layout_type": "free",
+    "author": "rohit-bansal",
+    "widget_count": "15",
+    "is_read_only": "true",
+    "created": "2025-12-01T10:00:00+00:00",
+    "modified": "2026-05-24T12:00:00+00:00"
+  }
+]

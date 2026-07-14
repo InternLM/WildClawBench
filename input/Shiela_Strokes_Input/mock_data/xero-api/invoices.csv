@@ -1,0 +1,26 @@
+invoice_id,invoice_number,type,contact_id,contact_name,date,due_date,status,line_amount_types,sub_total,total_tax,total,amount_due,amount_paid,currency_code,reference
+inv_tch_exp_017,TCH-EXP-2026-0017,ACCPAY,con_tachyon,Tachyon Networks Nigeria Ltd,2026-10-04,2026-10-05,DRAFT,Exclusive,75000.00,7500.00,82500.00,82500.00,0.00,NGN,Vendor expedite service - awaiting customer decision
+inv_tch_po_019,TCH-PO-2026-019,ACCPAY,con_tachyon,Tachyon Networks Nigeria Ltd,2026-09-01,2026-10-31,AUTHORISED,Exclusive,187500000.00,18750000.00,206250000.00,156250000.00,50000000.00,NGN,80-line manifest for Abuja CBD 5G Pilot equipment
+inv_helmer_q3,HLM-2026-Q3,ACCPAY,con_helmer,Helmer Logistics Nigeria,2026-09-15,2026-10-15,AUTHORISED,Exclusive,450000.00,45000.00,495000.00,495000.00,0.00,NGN,Q3 customs broker statement
+inv_dhl_oct,DHL-2026-10,ACCPAY,con_dhl,DHL Express Nigeria,2026-10-01,2026-10-22,AUTHORISED,Exclusive,325000.00,32500.00,357500.00,357500.00,0.00,NGN,October duty payment for PO TCH-PO-2026-019
+inv_apex_oct,APX-2026-10,ACCPAY,con_apex,Apex Properties Ltd,2026-10-01,2026-10-05,PAID,Exclusive,350000.00,0.00,350000.00,0.00,350000.00,NGN,October Maitama apartment rent
+inv_mpp_q4,MPP-2026-Q4,ACCPAY,con_school,Maitama Premier Primary,2026-10-01,2026-10-15,AUTHORISED,Exclusive,180000.00,0.00,180000.00,180000.00,0.00,NGN,Q4 school fees - Adunola and Olufemi
+inv_mtn_oct,MTN-2026-10,ACCPAY,con_mtn,MTN Nigeria,2026-10-01,2026-10-15,PAID,Exclusive,25000.00,2500.00,27500.00,0.00,27500.00,NGN,Phone and internet October
+inv_lwy_oct,LWY-2026-10,ACCPAY,con_leadway,Leadway Assurance,2026-09-29,2026-10-29,AUTHORISED,Exclusive,40000.00,4000.00,44000.00,44000.00,0.00,NGN,Monthly insurance premium
+inv_mfc_q4,MFC-2026-Q4,ACCPAY,con_fitness,Maitama Fitness Center,2026-10-01,2026-10-31,PAID,Exclusive,35000.00,0.00,35000.00,0.00,35000.00,NGN,Q4 fitness membership renewal
+inv_wks_anniv,WKS-2026-0987,ACCPAY,con_wakkis,Wakkis Restaurant,2026-09-29,2026-10-03,PAID,Exclusive,82500.00,0.00,82500.00,0.00,82500.00,NGN,Anniversary dinner Oct 3 - deposit + finalization
+inv_savanna_oct,SVC-2026-10,ACCPAY,con_savanna,Savanna Capital Managers,2026-10-01,2026-10-01,PAID,Exclusive,100000.00,0.00,100000.00,0.00,100000.00,NGN,October mutual fund contribution
+inv_telcong_sal,INT-2026-10-SAL,ACCREC,con_telcong,TelcoNG NetPlan Procurement,2026-09-30,2026-09-30,PAID,Exclusive,1200000.00,0.00,1200000.00,0.00,1200000.00,NGN,Salary September - Sheila Stokes
+inv_telcong_exp,INT-2026-Q3-EXP,ACCREC,con_telcong,TelcoNG NetPlan Procurement,2026-08-15,2026-09-15,PAID,Exclusive,35000.00,0.00,35000.00,0.00,35000.00,NGN,Q3 expense reimbursement - field travel
+inv_amaditech_q3,AMT-2026-Q3,ACCPAY,con_amaditech,AmadiTech Consulting,2026-07-15,2026-08-15,PAID,Exclusive,750000.00,75000.00,825000.00,0.00,825000.00,NGN,Q3 consulting engagement
+inv_clearpath_q3,CLP-2026-Q3,ACCPAY,con_clearpath,ClearPath Sat Backhaul,2026-07-01,2026-07-31,PAID,Exclusive,1250000.00,125000.00,1375000.00,0.00,1375000.00,NGN,Q3 satellite backhaul subscription
+inv_femto_q3,FEM-2026-Q3,ACCPAY,con_femto,Femto Networks Africa,2026-08-01,2026-08-31,PAID,Exclusive,425000.00,42500.00,467500.00,0.00,467500.00,NGN,Q3 femto cell rentals
+inv_smart_q3,SSV-2026-Q3,ACCPAY,con_smart,Smart Survey NG,2026-08-15,2026-09-15,PAID,Exclusive,215000.00,21500.00,236500.00,0.00,236500.00,NGN,Q3 site survey work
+inv_alpha_q3,AEB-2026-Q3,ACCPAY,con_alpha,Alpha Energy Backup Ltd,2026-08-01,2026-09-01,PAID,Exclusive,875000.00,87500.00,962500.00,0.00,962500.00,NGN,Q3 backup power equipment
+inv_ltc_comtech,LTC-2026-COMTECH,ACCPAY,con_lagostech,LagosTech Conferences,2026-09-15,2026-10-15,AUTHORISED,Exclusive,75000.00,7500.00,82500.00,82500.00,0.00,NGN,ComTech Summit registration - Sheila Stokes
+inv_eduplus_q3,EDU-2026-Q3,ACCPAY,con_eduplus,EduPlus Tuition Centre,2026-07-15,2026-08-15,PAID,Exclusive,120000.00,0.00,120000.00,0.00,120000.00,NGN,Q3 tuition tutoring Adunola
+inv_gsb_cc,GSB-2026-10,ACCPAY,con_gsb,Guaranty Savings Bank,2026-09-25,2026-10-25,AUTHORISED,Exclusive,45000.00,0.00,45000.00,45000.00,0.00,NGN,Credit card statement
+inv_dhl_sep,DHL-2026-09,ACCPAY,con_dhl,DHL Express Nigeria,2026-09-01,2026-09-22,PAID,Exclusive,285000.00,28500.00,313500.00,0.00,313500.00,NGN,September duty payment for PO TCH-PO-2026-019
+inv_anglican_oct,HTA-2026-10,ACCPAY,con_anglican,Holy Trinity Anglican,2026-10-01,2026-10-31,AUTHORISED,Exclusive,25000.00,0.00,25000.00,25000.00,0.00,NGN,October contribution and charity
+inv_pta_oct,PTA-2026-10,ACCPAY,con_pta,Maitama Premier Primary PTA,2026-10-01,2026-10-31,AUTHORISED,Exclusive,15000.00,0.00,15000.00,15000.00,0.00,NGN,October PTA contribution
+inv_health_oct,HLP-2026-10,ACCPAY,con_health,HealthPlus Maitama,2026-10-02,2026-10-12,AUTHORISED,Exclusive,15000.00,0.00,15000.00,15000.00,0.00,NGN,October pharmacy refill

@@ -1,0 +1,62 @@
+[
+  {
+    "tracking_number": "1Z999AA10123456784",
+    "status_type": "D",
+    "status_code": "011",
+    "status_description": "Delivered",
+    "service_name": "UPS Ground",
+    "ship_date": "2026-05-20",
+    "scheduled_delivery": "2026-05-25",
+    "latest_activity": "Delivered",
+    "latest_activity_location": "Los Angeles, CA, US",
+    "latest_activity_time": "2026-05-25T14:07:00Z"
+  },
+  {
+    "tracking_number": "1Z999AA10123456795",
+    "status_type": "I",
+    "status_code": "005",
+    "status_description": "In Transit",
+    "service_name": "UPS 2nd Day Air",
+    "ship_date": "2026-05-21",
+    "scheduled_delivery": "2026-05-23",
+    "latest_activity": "Departed from Facility",
+    "latest_activity_location": "Chicago, IL, US",
+    "latest_activity_time": "2026-05-22T02:40:00Z"
+  },
+  {
+    "tracking_number": "1Z999AA10123456806",
+    "status_type": "O",
+    "status_code": "021",
+    "status_description": "Out For Delivery",
+    "service_name": "UPS Next Day Air",
+    "ship_date": "2026-05-22",
+    "scheduled_delivery": "2026-05-23",
+    "latest_activity": "Out For Delivery Today",
+    "latest_activity_location": "Los Angeles, CA, US",
+    "latest_activity_time": "2026-05-23T06:55:00Z"
+  },
+  {
+    "tracking_number": "1Z999AA10123456817",
+    "status_type": "M",
+    "status_code": "003",
+    "status_description": "Label Created",
+    "service_name": "UPS 3 Day Select",
+    "ship_date": "2026-05-23",
+    "scheduled_delivery": "2026-05-28",
+    "latest_activity": "Shipper created a label",
+    "latest_activity_location": "New York, NY, US",
+    "latest_activity_time": "2026-05-23T18:12:00Z"
+  },
+  {
+    "tracking_number": "1Z999AA10123456828",
+    "status_type": "I",
+    "status_code": "005",
+    "status_description": "In Transit",
+    "service_name": "UPS Ground",
+    "ship_date": "2026-05-24",
+    "scheduled_delivery": "2026-05-27",
+    "latest_activity": "Arrived at Facility",
+    "latest_activity_location": "Chicago, IL, US",
+    "latest_activity_time": "2026-05-25T09:33:00Z"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "version": "auth-service@2.0.3",
+    "org_slug": "orbit-labs",
+    "project_slug": "auth-service",
+    "ref": "a1b2c3d",
+    "status": "open",
+    "new_groups": "2",
+    "date_created": "2026-05-20T10:00:00.000Z",
+    "date_released": "2026-05-21T09:00:00.000Z"
+  },
+  {
+    "version": "auth-service@2.1.0-rc1",
+    "org_slug": "orbit-labs",
+    "project_slug": "auth-service",
+    "ref": "b2c3d4e",
+    "status": "open",
+    "new_groups": "1",
+    "date_created": "2026-05-24T10:00:00.000Z",
+    "date_released": ""
+  },
+  {
+    "version": "web-frontend@5.4.1",
+    "org_slug": "orbit-labs",
+    "project_slug": "web-frontend",
+    "ref": "c3d4e5f",
+    "status": "open",
+    "new_groups": "1",
+    "date_created": "2026-05-24T12:00:00.000Z",
+    "date_released": "2026-05-24T15:00:00.000Z"
+  },
+  {
+    "version": "web-frontend@5.3.0",
+    "org_slug": "orbit-labs",
+    "project_slug": "web-frontend",
+    "ref": "d4e5f6a",
+    "status": "open",
+    "new_groups": "0",
+    "date_created": "2026-05-01T10:00:00.000Z",
+    "date_released": "2026-05-02T09:00:00.000Z"
+  },
+  {
+    "version": "billing-service@3.1.0",
+    "org_slug": "orbit-labs",
+    "project_slug": "billing-service",
+    "ref": "e5f6a1b",
+    "status": "open",
+    "new_groups": "1",
+    "date_created": "2026-05-22T10:00:00.000Z",
+    "date_released": "2026-05-23T10:00:00.000Z"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "policy_name": "Reimbursement Policy",
+  "version": "2024.Q4_Updated",
+  "validation_rules": [
+    {
+      "rule": "Alcohol",
+      "requirement": "Alcohol-heavy charges",
+      "action": "Manual Review",
+      "notes": "Client meals only"
+    },
+    {
+      "rule": "Duplicates",
+      "requirement": "Duplicate uploads",
+      "action": "Reject",
+      "notes": "Only one valid receipt allowed"
+    },
+    {
+      "rule": "Reprints",
+      "requirement": "Reprint receipts",
+      "action": "Review",
+      "notes": "Need bank match"
+    },
+    {
+      "rule": "Missing Total",
+      "requirement": "Unreadable totals",
+      "action": "Reject",
+      "notes": "Low OCR confidence"
+    },
+    {
+      "rule": "Late Submission",
+      "requirement": "After 30 days",
+      "action": "Reject",
+      "notes": "Policy violation"
+    }
+  ],
+  "context": "Rules used during reimbursement validation for conference meal receipts."
+}

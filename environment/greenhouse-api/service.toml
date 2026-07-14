@@ -1,0 +1,5 @@
+[service]
+name = "greenhouse-api"
+port = 8073
+env_var_name = "GREENHOUSE_API_URL"
+healthcheck_path = "/health"

@@ -1,0 +1,41 @@
+[
+  {
+    "campaign_id": "camp_8001",
+    "ad_account_id": "ad_acct_7001",
+    "name": "Orchid Show Awareness June 2026",
+    "status": "ACTIVE",
+    "objective_type": "AWARENESS",
+    "daily_spend_cap_micro": "2000000",
+    "lifetime_spend_cap_micro": "60000000",
+    "start_time": "2026-05-01T00:00:00",
+    "end_time": "2026-06-14T23:59:59",
+    "created_at": "2026-04-20T10:00:00",
+    "updated_at": "2026-05-10T08:30:00"
+  },
+  {
+    "campaign_id": "camp_8002",
+    "ad_account_id": "ad_acct_7001",
+    "name": "Orchid Care Content Boost",
+    "status": "ACTIVE",
+    "objective_type": "TRAFFIC",
+    "daily_spend_cap_micro": "1500000",
+    "lifetime_spend_cap_micro": "45000000",
+    "start_time": "2026-03-01T00:00:00",
+    "end_time": "2026-06-30T23:59:59",
+    "created_at": "2026-02-20T14:00:00",
+    "updated_at": "2026-04-20T11:00:00"
+  },
+  {
+    "campaign_id": "camp_8003",
+    "ad_account_id": "ad_acct_7001",
+    "name": "Holiday Macaron Pins",
+    "status": "PAUSED",
+    "objective_type": "TRAFFIC",
+    "daily_spend_cap_micro": "3000000",
+    "lifetime_spend_cap_micro": "75000000",
+    "start_time": "2025-11-15T00:00:00",
+    "end_time": "2025-12-31T23:59:59",
+    "created_at": "2025-11-01T09:00:00",
+    "updated_at": "2025-12-31T23:59:59"
+  }
+]

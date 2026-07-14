@@ -1,0 +1,4 @@
+uuid,owner,event_type,name,status,start_time,end_time,location_type,location,created_at,canceled_reason
+se-0,patricia.waters@Finthesiss.ai,et-2,Professional chat - Orla,active,2026-10-07T13:00:00,2026-10-07T13:30:00,zoom,https://zoom.example/x,2026-09-20T09:00:00,
+se-1,patricia.waters@Finthesiss.ai,et-2,Professional chat - Rachel,active,2026-10-08T13:00:00,2026-10-08T13:30:00,zoom,https://zoom.example/x,2026-09-20T09:00:00,
+se-2,patricia.waters@Finthesiss.ai,et-2,Professional chat - peer,active,2026-10-20T13:00:00,2026-10-20T13:30:00,zoom,https://zoom.example/x,2026-09-20T09:00:00,

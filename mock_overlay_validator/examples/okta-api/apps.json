@@ -1,0 +1,34 @@
+[
+  {
+    "id": "0oa1github",
+    "name": "github_enterprise",
+    "label": "GitHub Enterprise",
+    "status": "ACTIVE",
+    "sign_on_mode": "SAML_2_0",
+    "created": "2024-02-01T10:00:00.000Z"
+  },
+  {
+    "id": "0oa2slack",
+    "name": "slack",
+    "label": "Slack",
+    "status": "ACTIVE",
+    "sign_on_mode": "SAML_2_0",
+    "created": "2024-02-05T10:00:00.000Z"
+  },
+  {
+    "id": "0oa3aws",
+    "name": "amazon_aws",
+    "label": "AWS Console",
+    "status": "ACTIVE",
+    "sign_on_mode": "SAML_2_0",
+    "created": "2024-02-10T10:00:00.000Z"
+  },
+  {
+    "id": "0oa4datadog",
+    "name": "datadog",
+    "label": "Datadog",
+    "status": "INACTIVE",
+    "sign_on_mode": "SAML_2_0",
+    "created": "2024-03-01T10:00:00.000Z"
+  }
+]

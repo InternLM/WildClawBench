@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dst_ga4001",
+    "name": "Google Analytics 4",
+    "slug": "google-analytics-4",
+    "enabled": "true",
+    "source_id": "src_web01",
+    "created_at": "2026-04-13T09:00:00Z"
+  },
+  {
+    "id": "dst_ampl01",
+    "name": "Amplitude",
+    "slug": "amplitude",
+    "enabled": "true",
+    "source_id": "src_web01",
+    "created_at": "2026-04-13T10:00:00Z"
+  },
+  {
+    "id": "dst_bq001",
+    "name": "BigQuery Warehouse",
+    "slug": "bigquery",
+    "enabled": "true",
+    "source_id": "src_srv01",
+    "created_at": "2026-04-19T09:00:00Z"
+  },
+  {
+    "id": "dst_slk001",
+    "name": "Slack Alerts",
+    "slug": "slack",
+    "enabled": "true",
+    "source_id": "src_srv01",
+    "created_at": "2026-04-20T09:00:00Z"
+  },
+  {
+    "id": "dst_mkt001",
+    "name": "Mixpanel",
+    "slug": "mixpanel",
+    "enabled": "false",
+    "source_id": "src_ios01",
+    "created_at": "2026-04-15T09:00:00Z"
+  },
+  {
+    "id": "dst_fb001",
+    "name": "Facebook Conversions",
+    "slug": "facebook-conversions",
+    "enabled": "true",
+    "source_id": "src_web01",
+    "created_at": "2026-04-21T09:00:00Z"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "retailer_id": "ret-safeway",
+    "name": "Safeway",
+    "logo_url": "https://logos.example.com/safeway.png",
+    "delivers_to_zips": "94103,94110,94114",
+    "min_basket": "10.00",
+    "delivery_fee": "3.99",
+    "service_fee_pct": "5.0",
+    "eta_minutes": "75"
+  },
+  {
+    "retailer_id": "ret-wholefoods",
+    "name": "Whole Foods Market",
+    "logo_url": "https://logos.example.com/wholefoods.png",
+    "delivers_to_zips": "94103,94110,94117",
+    "min_basket": "10.00",
+    "delivery_fee": "4.99",
+    "service_fee_pct": "5.0",
+    "eta_minutes": "90"
+  },
+  {
+    "retailer_id": "ret-costco",
+    "name": "Costco",
+    "logo_url": "https://logos.example.com/costco.png",
+    "delivers_to_zips": "94110,94114",
+    "min_basket": "35.00",
+    "delivery_fee": "9.99",
+    "service_fee_pct": "5.0",
+    "eta_minutes": "120"
+  },
+  {
+    "retailer_id": "ret-traderjoes",
+    "name": "Trader Joe's",
+    "logo_url": "https://logos.example.com/tj.png",
+    "delivers_to_zips": "94110,94117",
+    "min_basket": "10.00",
+    "delivery_fee": "5.99",
+    "service_fee_pct": "5.0",
+    "eta_minutes": "90"
+  },
+  {
+    "retailer_id": "ret-cvs",
+    "name": "CVS Pharmacy",
+    "logo_url": "https://logos.example.com/cvs.png",
+    "delivers_to_zips": "94103,94110,94114,94117",
+    "min_basket": "10.00",
+    "delivery_fee": "3.99",
+    "service_fee_pct": "5.0",
+    "eta_minutes": "60"
+  }
+]

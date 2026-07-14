@@ -1,0 +1,9 @@
+Id,DisplayName,CompanyName,PrimaryEmailAddr,PrimaryPhone,BillAddr_Line1,BillAddr_City,BillAddr_CountrySubDivisionCode,BillAddr_PostalCode,Balance,Active,AcctNum,Vendor1099
+1,Appalachian Catering,Appalachian Catering LLC,billing@appalachiancatering.com,(828) 555-0411,128 Biltmore Ave,Asheville,NC,28801,0,true,V-AC-001,false
+2,Foothills Audio Rental,Foothills Audio Rental Inc,rentals@foothillsaudio.com,(828) 555-0398,42 Riverside Dr,Asheville,NC,28801,0,true,V-FAR-002,false
+3,Ridge Print Co.,Ridge Print Co.,info@ridgeprintco.com,(828) 555-0192,205 Haywood Rd,Asheville,NC,28806,0,true,V-RPC-003,false
+4,Mountain Linens & Co.,Mountain Linens & Co.,orders@mountainlinens.com,(828) 555-0276,78 Coxe Ave,Asheville,NC,28801,0,true,V-MLC-004,false
+5,Kayla Morgan,,kayla.morgan@gmail.com,(828) 555-0103,12 Laurel Hollow Lane,Asheville,NC,28804,0,true,V-KM-005,false
+6,Dorothy Ainsworth,,dorothy.ainsworth@gmail.com,(828) 555-0178,,Asheville,NC,28804,0,true,V-DA-006,false
+7,Duke Energy,Duke Energy Carolinas LLC,business@duke-energy.com,(800) 555-3782,,Charlotte,NC,28201,0,true,V-DE-007,false
+8,Asheville Water Resources,City of Asheville,billing@ashevillenc.gov,(828) 555-0021,,Asheville,NC,28801,0,true,V-AWR-008,false

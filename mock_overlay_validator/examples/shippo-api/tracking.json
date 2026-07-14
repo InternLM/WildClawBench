@@ -1,0 +1,65 @@
+[
+  {
+    "carrier": "USPS",
+    "tracking_number": "9400111202555842761023",
+    "status": "DELIVERED",
+    "status_detail": "Delivered front porch",
+    "location_city": "Austin",
+    "location_state": "TX",
+    "status_time": "2026-05-27T16:20:00Z"
+  },
+  {
+    "carrier": "USPS",
+    "tracking_number": "9400111202555842761023",
+    "status": "TRANSIT",
+    "status_detail": "Out for delivery",
+    "location_city": "Austin",
+    "location_state": "TX",
+    "status_time": "2026-05-27T08:10:00Z"
+  },
+  {
+    "carrier": "USPS",
+    "tracking_number": "9400111202555842761023",
+    "status": "TRANSIT",
+    "status_detail": "Arrived at facility",
+    "location_city": "Dallas",
+    "location_state": "TX",
+    "status_time": "2026-05-26T22:00:00Z"
+  },
+  {
+    "carrier": "USPS",
+    "tracking_number": "9400111202555842761023",
+    "status": "PRE_TRANSIT",
+    "status_detail": "Shipping label created",
+    "location_city": "San Francisco",
+    "location_state": "CA",
+    "status_time": "2026-05-25T14:05:00Z"
+  },
+  {
+    "carrier": "UPS",
+    "tracking_number": "1Z999AA10123456784",
+    "status": "TRANSIT",
+    "status_detail": "On the way",
+    "location_city": "Memphis",
+    "location_state": "TN",
+    "status_time": "2026-05-27T11:45:00Z"
+  },
+  {
+    "carrier": "UPS",
+    "tracking_number": "1Z999AA10123456784",
+    "status": "PRE_TRANSIT",
+    "status_detail": "Label created",
+    "location_city": "San Francisco",
+    "location_state": "CA",
+    "status_time": "2026-05-26T10:00:00Z"
+  },
+  {
+    "carrier": "FedEx",
+    "tracking_number": "794611112222",
+    "status": "PRE_TRANSIT",
+    "status_detail": "Shipment information sent to FedEx",
+    "location_city": "San Francisco",
+    "location_state": "CA",
+    "status_time": "2026-05-26T12:00:00Z"
+  }
+]

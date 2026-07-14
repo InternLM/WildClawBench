@@ -1,0 +1,7 @@
+{
+  "test_breadth_all_sources_consulted": 5,
+  "test_docusign_envelopes_read": 1,
+  "test_airtable_records_read": 1,
+  "test_gmail_messages_read": 1,
+  "test_xero_distractor_touched": -5
+}

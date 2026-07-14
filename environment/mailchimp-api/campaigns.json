@@ -1,0 +1,54 @@
+[
+  {
+    "id": "camp-sep-news",
+    "list_id": "list-newsletter",
+    "type": "regular",
+    "status": "sent",
+    "subject_line": "September Highlights",
+    "from_name": "Orbit Labs",
+    "reply_to": "news@orbit-labs.com",
+    "title": "September Newsletter",
+    "emails_sent": "5",
+    "send_time": "2025-09-28T15:00:00.000Z",
+    "create_time": "2025-09-25T10:00:00.000Z"
+  },
+  {
+    "id": "camp-oct-news",
+    "list_id": "list-newsletter",
+    "type": "regular",
+    "status": "sent",
+    "subject_line": "October Roundup",
+    "from_name": "Orbit Labs",
+    "reply_to": "news@orbit-labs.com",
+    "title": "October Newsletter",
+    "emails_sent": "5",
+    "send_time": "2025-10-30T15:00:00.000Z",
+    "create_time": "2025-10-27T10:00:00.000Z"
+  },
+  {
+    "id": "camp-launch",
+    "list_id": "list-product",
+    "type": "regular",
+    "status": "sent",
+    "subject_line": "Introducing Smart Sync",
+    "from_name": "Orbit Product",
+    "reply_to": "product@orbit-labs.com",
+    "title": "Smart Sync Launch",
+    "emails_sent": "4",
+    "send_time": "2025-10-15T16:00:00.000Z",
+    "create_time": "2025-10-12T10:00:00.000Z"
+  },
+  {
+    "id": "camp-nov-draft",
+    "list_id": "list-newsletter",
+    "type": "regular",
+    "status": "save",
+    "subject_line": "November Preview",
+    "from_name": "Orbit Labs",
+    "reply_to": "news@orbit-labs.com",
+    "title": "November Newsletter",
+    "emails_sent": "0",
+    "send_time": "",
+    "create_time": "2025-11-01T10:00:00.000Z"
+  }
+]

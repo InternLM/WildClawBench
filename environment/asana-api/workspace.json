@@ -1,0 +1,7 @@
+{
+  "gid": "1201990000000001",
+  "resource_type": "workspace",
+  "name": "Northwind Studio",
+  "is_organization": true,
+  "email_domains": ["northwind-studio.com"]
+}

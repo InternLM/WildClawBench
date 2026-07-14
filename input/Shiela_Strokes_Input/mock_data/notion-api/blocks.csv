@@ -1,0 +1,91 @@
+id,page_id,parent_block_id,type,text,order,created_time,last_edited_time,has_children,checked
+blk_0001,pg_quarterly_q4_2026,,paragraph,Q4 2026 Theme: Land what you said you would land. 5G CBD launch is the year-defining deliverable; everything else either supports it or holds its line.,1,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0002,pg_quarterly_q4_2026,,paragraph,Top objectives: (1) Successful NCC spectrum hearing and filing Mon Oct 5. (2) Nasarawa Phase 1 milestone close. (3) 5G CBD pilot equipment delivery and acceptance test ready Oct 19. (4) Q4 mentorship cadence held - Yetunde + 2 others.,2,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0003,pg_quarterly_q4_2026,,paragraph,Personal: ComTech Summit Dec 1 talk locked. Executive program application drafted before year-end. Lagos visit Oct 24-28.,3,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0004,pg_quarterly_q4_2026,,paragraph,Non-goals: optimize Phase 2 community engagement before Phase 1 lands. Add new vendors. Take on new mentees.,4,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0005,pg_quarterly_q4_2026,,paragraph,Watch-out: backlog stacking on weekends - protect Sun review or the week starts compromised.,5,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0006,pg_mentorship_yetunde,,paragraph,"Yetunde is on a Senior promotion pathway by mid-2027. Q4 2026 goals: first conference paper draft (Q4 2026), deeper capacity planning rotation (Q1 2027), regulatory exposure (Q2 2027).",6,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0007,pg_mentorship_yetunde,,paragraph,Sep 22 2026 session - covered: NCC interaction etiquette; capacity model intuition; the Niger State QoS dashboard as a case study; conference abstract draft.,7,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0008,pg_mentorship_yetunde,,paragraph,Carry-over for Oct 6 2026: conference abstract feedback; Q4 promotion case prep; regulatory rotation pathway discussion.,8,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0009,pg_mentorship_yetunde,,paragraph,Reading: Sheila's LinkedIn article series; ITU-R working party 5D note; 3GPP Release 18 capacity planning notes.,9,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0010,pg_mentorship_yetunde,,paragraph,Quiet observation: She lights up when she sees a clean signal-to-noise ratio in a model. That is the engineering instinct that will outlast any title. Lean into it.,10,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0011,pg_mentorship_network,,paragraph,Informal mentorship network for younger women in Nigerian telecom engineering. 8 members at end of 2026.,11,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0012,pg_mentorship_network,,paragraph,Cadence: monthly for most; bi-weekly for Yetunde (primary); quarterly for those still finding their feet.,12,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0013,pg_mentorship_network,,paragraph,"Format: small group meet quarterly (October, December venue), 1:1 monthly. Reading list shared via this workspace.",13,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0014,pg_mentorship_network,,paragraph,Outcomes to track: promotion velocity; conference output; cross-team rotation participation; retention in the industry.,14,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0015,pg_executive_program,,paragraph,Target: Lagos Metropolitan University Executive Program in Tech Management. 18-month part-time format.,15,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0016,pg_executive_program,,paragraph,Why: Bridge engineering depth with strategic management before the next career inflection.,16,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0017,pg_executive_program,,paragraph,"Pre-reqs: 10+ years experience, two recommendation letters, GMAT (optional waiver for senior engineers).",17,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0018,pg_executive_program,,paragraph,Timeline: Application Q1 2027. Decision Q2 2027. Cohort start April 2027.,18,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0019,pg_executive_program,,paragraph,"Recommenders: Eng. Olatunji (line manager), Dr. Yusuf Ibrahim (NCC contact for industry reference).",19,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0020,pg_linkedin_articles,,paragraph,Article series: 'Women in Nigerian Telecom Engineering'. 3 articles published; 2 in draft.,20,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0021,pg_linkedin_articles,,paragraph,Published: (1) Why we stayed; (2) The room before the rooms; (3) Models and meaning.,21,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0022,pg_linkedin_articles,,paragraph,In draft: (4) Mentorship as engineering; (5) The next decade.,22,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0023,pg_5g_research,,paragraph,Core: 3GPP Release 18 capacity planning notes (TR 38.821).,23,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0024,pg_5g_research,,paragraph,NCC: Communications Act 2003 Section 121 (spectrum allocation).,24,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0025,pg_5g_research,,paragraph,ITU-R: Working Party 5D notes on 3.5 GHz harmonization.,25,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0026,pg_5g_research,,paragraph,Industry: TechPulse Nigeria weekly; Global Affairs Weekly West Africa connectivity.,26,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0027,pg_5g_research,,paragraph,Engineering books: Capacity Planning for the New Network (3rd ed.); Spectrum Management Foundations (2nd ed.).,27,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0028,pg_session_2026_09_22,,paragraph,"Session - Sep 22 2026, 14:00-15:00, Cafe Cherie Maitama.",28,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0029,pg_session_2026_09_22,,paragraph,Covered: NCC interaction etiquette; capacity model intuition; the Niger State QoS dashboard as a case study; conference abstract draft.,29,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0030,pg_session_2026_09_22,,paragraph,Action items for next session: revised abstract; review Reading 3 (3GPP Release 18 TR 38.821); promotion case skeleton.,30,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0031,pg_session_2026_10_06,,paragraph,"Prep brief - Oct 6 2026, 14:00-15:00, Cafe Cherie Maitama.",31,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0032,pg_session_2026_10_06,,paragraph,Agenda: (1) NCC interaction read-out from Mon hearing; (2) Q4 development goals review; (3) ITU paper review; (4) conference abstract status; (5) Q4 promotion case skeleton.,32,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0033,pg_session_2026_10_06,,paragraph,Materials: Mon hearing brief (Confluence); abstract latest draft (Yetunde share); promotion case structure template.,33,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0034,pg_session_2026_10_06,,paragraph,Want to leave the session with: agreed next abstract submission date; promotion case 1-pager committed for Oct 20 review.,34,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0035,pg_lagos_trip_logistics,,paragraph,"Window: Sat Oct 24 - Wed Oct 28. Party of 4 (Sheila, Adeyemi, Adunola, Olufemi).",35,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0036,pg_lagos_trip_logistics,,paragraph,"Flights: ABV-LOS morning Oct 24, LOS-ABV evening Oct 28. Aim Air Peace or Ibom Air.",36,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0037,pg_lagos_trip_logistics,,paragraph,"Lodging: Hotel (clean, secure, quiet, efficient). Avoid Aero on the morning of Oct 24 if possible (per past trip notes).",37,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0038,pg_lagos_trip_logistics,,paragraph,Ground: Family driver Bayo as before. Avoid Uber for parents-area trips.,38,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0039,pg_lagos_trip_logistics,,paragraph,Family: 4 nights in Lagos with parents. Christmas brought forward in spirit (the children's gift for Chief Augustine).,39,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0040,pg_anniversary_ideas,,paragraph,13th anniversary - Oct 3 2026. Wakkis dinner 19:30. Done.,40,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0041,pg_anniversary_ideas,,paragraph,Gift: framed Maitama dawn photo (Adeyemi's first photograph of the apartment view). Wrapped Tue Sep 29.,41,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0042,pg_q4_reading,,paragraph,Mid-Q4 personal reading goals: 3 books in. Currently 1 done (Capacity Planning for the New Network).,42,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0043,pg_q4_reading,,paragraph,follow-up note pending - placeholder for working context,43,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0044,pg_anniversary_ideas,,paragraph,follow-up note pending - placeholder for working context,44,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0045,pg_mentorship_network,,paragraph,follow-up note pending - placeholder for working context,45,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0046,pg_linkedin_articles,,paragraph,follow-up note pending - placeholder for working context,46,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0047,pg_5g_research,,paragraph,follow-up note pending - placeholder for working context,47,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0048,pg_session_2026_09_22,,paragraph,follow-up note pending - placeholder for working context,48,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0049,pg_quarterly_q4_2026,,paragraph,follow-up note pending - placeholder for working context,49,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0050,pg_linkedin_articles,,paragraph,follow-up note pending - placeholder for working context,50,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0051,pg_session_2026_09_22,,paragraph,follow-up note pending - placeholder for working context,51,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0052,pg_session_2026_09_22,,paragraph,follow-up note pending - placeholder for working context,52,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0053,pg_5g_research,,paragraph,follow-up note pending - placeholder for working context,53,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0054,pg_q4_reading,,paragraph,follow-up note pending - placeholder for working context,54,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0055,pg_q4_reading,,paragraph,follow-up note pending - placeholder for working context,55,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0056,pg_executive_program,,paragraph,follow-up note pending - placeholder for working context,56,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0057,pg_q4_reading,,paragraph,follow-up note pending - placeholder for working context,57,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0058,pg_mentorship_network,,paragraph,follow-up note pending - placeholder for working context,58,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0059,pg_mentorship_network,,paragraph,follow-up note pending - placeholder for working context,59,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0060,pg_mentorship_yetunde,,paragraph,follow-up note pending - placeholder for working context,60,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0061,pg_5g_research,,paragraph,follow-up note pending - placeholder for working context,61,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0062,pg_session_2026_10_06,,paragraph,follow-up note pending - placeholder for working context,62,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0063,pg_mentorship_network,,paragraph,follow-up note pending - placeholder for working context,63,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0064,pg_executive_program,,paragraph,follow-up note pending - placeholder for working context,64,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0065,pg_executive_program,,paragraph,follow-up note pending - placeholder for working context,65,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0066,pg_mentorship_yetunde,,paragraph,follow-up note pending - placeholder for working context,66,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0067,pg_q4_reading,,paragraph,follow-up note pending - placeholder for working context,67,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0068,pg_linkedin_articles,,paragraph,follow-up note pending - placeholder for working context,68,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0069,pg_mentorship_yetunde,,paragraph,follow-up note pending - placeholder for working context,69,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0070,pg_session_2026_09_22,,paragraph,follow-up note pending - placeholder for working context,70,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0071,pg_q4_reading,,paragraph,follow-up note pending - placeholder for working context,71,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0072,pg_anniversary_ideas,,paragraph,follow-up note pending - placeholder for working context,72,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0073,pg_executive_program,,paragraph,follow-up note pending - placeholder for working context,73,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0074,pg_5g_research,,paragraph,follow-up note pending - placeholder for working context,74,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0075,pg_linkedin_articles,,paragraph,follow-up note pending - placeholder for working context,75,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0076,pg_mentorship_network,,paragraph,follow-up note pending - placeholder for working context,76,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0077,pg_anniversary_ideas,,paragraph,follow-up note pending - placeholder for working context,77,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0078,pg_session_2026_09_22,,paragraph,follow-up note pending - placeholder for working context,78,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0079,pg_executive_program,,paragraph,follow-up note pending - placeholder for working context,79,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0080,pg_q4_reading,,paragraph,follow-up note pending - placeholder for working context,80,2026-09-30T19:00:00+01:00,2026-10-02T21:00:00+01:00,false,false
+blk_0081,pg_weekly_review_2026_09_27,,heading_2,Sunday Weekly Review - Sep 27 2026,81,2026-09-27T20:00:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0082,pg_weekly_review_2026_09_27,,paragraph,Week ahead anchors: Phase 1 milestone target Fri Oct 9; vendor pilot equipment delivery target Mon Oct 19; NCC spectrum hearing window opens Mon Oct 5.,82,2026-09-27T20:00:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0083,pg_weekly_review_2026_09_27,,heading_3,Rural rollout - Nasarawa Phase 1,83,2026-09-27T20:05:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0084,pg_weekly_review_2026_09_27,,paragraph,32 sites acquired, 8 in negotiation, 5 with community objections. Risk ranking last refreshed Sat - top of HIGH band sat on S14 and S11; S03 still MED on the back of the Oct 7 leader meeting holding.,84,2026-09-27T20:05:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0085,pg_weekly_review_2026_09_27,,heading_3,Vendor - Tachyon pilot kit,85,2026-09-27T20:08:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0086,pg_weekly_review_2026_09_27,,paragraph,27 lines shipped against the 80-line manifest. No customs holds as of last refresh. PO TCH-PO-2026-019 covers the Abuja CBD pilot lines mislabelled LAG-CSTL on the manifest - confirmed.,86,2026-09-27T20:08:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0087,pg_weekly_review_2026_09_27,,heading_3,Red-line escalations this week,87,2026-09-27T20:12:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0088,pg_weekly_review_2026_09_27,,paragraph,No red-line escalations recorded for the Sep 21-27 week. Standard hold/refuse log clear.,88,2026-09-27T20:12:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0089,pg_weekly_review_2026_09_27,,heading_3,Mentorship - Yetunde,89,2026-09-27T20:15:00+01:00,2026-09-27T22:15:00+01:00,false,false
+blk_0090,pg_weekly_review_2026_09_27,,paragraph,Sep 22 session held. Carry-over for Oct 6: conference abstract feedback; Q4 promotion case prep; regulatory rotation pathway discussion.,90,2026-09-27T20:15:00+01:00,2026-09-27T22:15:00+01:00,false,false

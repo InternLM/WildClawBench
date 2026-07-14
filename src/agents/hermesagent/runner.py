@@ -237,40 +237,53 @@ class HermesAgentAgent(BaseAgent):
         tmp_path: str = "",
         lobster_env: list[str] | None = None,
     ) -> None:
+        from src.utils.docker_utils import (
+            build_env_args,
+            _validate_docker_token,
+            _validate_env_arg,
+        )
+        _validate_docker_token("task_id", task_id)
+
         proxy_http = os.environ.get("HTTP_PROXY_INNER", "")
         proxy_https = os.environ.get("HTTPS_PROXY_INNER", "")
-        env_args = [
-            "-e", f"http_proxy={proxy_http}",
-            "-e", f"https_proxy={proxy_https}",
-            "-e", f"HTTP_PROXY={proxy_http}",
-            "-e", f"HTTPS_PROXY={proxy_https}",
-            "-e", f"BRAVE_API_KEY={self.brave_api_key}",
-            "-e", f"OPENROUTER_API_KEY={api_key}",
-            "-e", f"OPENROUTER_BASE_URL={base_url}",
-            "-e", f"no_proxy={'' if not proxy_http else os.environ.get('NO_PROXY_INNER', '')}",
+        no_proxy = "" if not proxy_http else os.environ.get("NO_PROXY_INNER", "")
+        env_pairs: list[tuple[str, str]] = [
+            ("http_proxy", proxy_http),
+            ("https_proxy", proxy_https),
+            ("HTTP_PROXY", proxy_http),
+            ("HTTPS_PROXY", proxy_https),
+            ("BRAVE_API_KEY", self.brave_api_key),
+            ("OPENROUTER_API_KEY", api_key),
+            ("OPENROUTER_BASE_URL", base_url),
+            ("no_proxy", no_proxy),
         ]
         for line in extra_env.splitlines():
             key = line.strip()
             if not key or key.startswith("#"):
                 continue
             value = os.environ.get(key, "")
-            env_args += ["-e", f"{key}={value}"]
+            _validate_env_arg(key, value)
+            env_pairs.append((key, value))
 
         for key in (lobster_env or []):
             value = os.environ.get(key, "")
             if not value:
                 continue
-            env_args += ["-e", f"{key}={value}"]
+            _validate_env_arg(key, value)
+            env_pairs.append((key, value))
+
+        env_args = build_env_args(env_pairs)
+        image = _validate_docker_token("image", self.image)
 
         cmd = [
             "docker", "run", "-d",
             "--name", task_id,
             *env_args,
             "-v", f"{workspace_path}:/app:ro",
-            self.image,
+            image,
             "/bin/bash", "-c", "tail -f /dev/null",
         ]
-        logger.info("[%s] Starting hermes-agent container (image=%s)", task_id, self.image)
+        logger.info("[%s] Starting hermes-agent container (image=%s)", task_id, image)
         r = subprocess.run(cmd, capture_output=True, text=True)
         if r.returncode != 0:
             raise RuntimeError(f"hermes-agent container startup failed:\n{r.stderr}")

@@ -1,0 +1,32 @@
+[
+  {
+    "gid": "1202000000001001",
+    "name": "Priya Raman",
+    "email": "priya.raman@northwind-studio.com",
+    "workspace_gid": "1201990000000001"
+  },
+  {
+    "gid": "1202000000001002",
+    "name": "Daniel Cho",
+    "email": "daniel.cho@northwind-studio.com",
+    "workspace_gid": "1201990000000001"
+  },
+  {
+    "gid": "1202000000001003",
+    "name": "Sofia Marquez",
+    "email": "sofia.marquez@northwind-studio.com",
+    "workspace_gid": "1201990000000001"
+  },
+  {
+    "gid": "1202000000001004",
+    "name": "Liam OConnor",
+    "email": "liam.oconnor@northwind-studio.com",
+    "workspace_gid": "1201990000000001"
+  },
+  {
+    "gid": "1202000000001005",
+    "name": "Aisha Bello",
+    "email": "aisha.bello@northwind-studio.com",
+    "workspace_gid": "1201990000000001"
+  }
+]

@@ -1,0 +1,5 @@
+[service]
+name = "xero-api"
+port = 8088
+env_var_name = "XERO_API_URL"
+healthcheck_path = "/health"

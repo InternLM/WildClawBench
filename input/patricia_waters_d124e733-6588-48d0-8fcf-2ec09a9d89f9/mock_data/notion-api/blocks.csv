@@ -1,0 +1,8 @@
+id,page_id,parent_block_id,type,text,order,created_time,last_edited_time,has_children,checked
+nb-r1,np-roster,,heading_2,Autumn cohort roster,0,2026-09-01T09:00:00.000Z,2026-09-20T18:00:00.000Z,false,
+nb-r2,np-roster,,paragraph,"Autumn group basically full, about 8 families, give or take, as of 20 Sep. Check room with Robert. Confirm anyone still outstanding before the first session.",1,2026-09-01T09:00:00.000Z,2026-09-20T18:00:00.000Z,false,
+nb-r3,np-roster,,to_do,Chase any outstanding consent forms,2,2026-09-01T09:00:00.000Z,2026-09-20T18:00:00.000Z,false,false
+nb-r4,np-roster,,paragraph,"Early September: still finalising numbers, do not lock the room yet.",3,2026-09-05T11:00:00.000Z,2026-09-05T11:00:00.000Z,false,
+nb-rd,np-reading,,bulleted_list_item,"Pediatric OT reader, regulation chapter",0,2025-03-01T09:00:00.000Z,2026-09-30T21:00:00.000Z,false,
+nb-rf,np-reflect,,paragraph,Protect the first half hour before clinic. Calmer mornings hold the week together.,0,2026-04-01T09:00:00.000Z,2026-10-02T22:00:00.000Z,false,
+nb-rn,np-run,,to_do,Build Sunday long run gradually,0,2026-08-01T09:00:00.000Z,2026-10-04T19:00:00.000Z,false,false

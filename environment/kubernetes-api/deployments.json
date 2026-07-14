@@ -1,0 +1,57 @@
+[
+  {
+    "name": "api-gateway",
+    "namespace": "prod",
+    "replicas": "2",
+    "available_replicas": "2",
+    "ready_replicas": "2",
+    "updated_replicas": "2",
+    "image": "orbit-labs/api-gateway:2.4.1",
+    "strategy": "RollingUpdate",
+    "created_time": "2026-05-01T10:00:00Z"
+  },
+  {
+    "name": "billing-worker",
+    "namespace": "prod",
+    "replicas": "1",
+    "available_replicas": "0",
+    "ready_replicas": "0",
+    "updated_replicas": "1",
+    "image": "orbit-labs/billing-worker:1.8.0",
+    "strategy": "RollingUpdate",
+    "created_time": "2026-05-10T11:00:00Z"
+  },
+  {
+    "name": "auth-service",
+    "namespace": "prod",
+    "replicas": "1",
+    "available_replicas": "0",
+    "ready_replicas": "0",
+    "updated_replicas": "1",
+    "image": "orbit-labs/auth-service:3.1.0",
+    "strategy": "RollingUpdate",
+    "created_time": "2026-05-15T13:20:00Z"
+  },
+  {
+    "name": "web-frontend",
+    "namespace": "default",
+    "replicas": "2",
+    "available_replicas": "2",
+    "ready_replicas": "2",
+    "updated_replicas": "2",
+    "image": "orbit-labs/web-frontend:5.2.0",
+    "strategy": "RollingUpdate",
+    "created_time": "2026-04-22T09:00:00Z"
+  },
+  {
+    "name": "coredns",
+    "namespace": "kube-system",
+    "replicas": "1",
+    "available_replicas": "1",
+    "ready_replicas": "1",
+    "updated_replicas": "1",
+    "image": "registry.k8s.io/coredns/coredns:v1.11.1",
+    "strategy": "RollingUpdate",
+    "created_time": "2025-08-01T09:00:00Z"
+  }
+]

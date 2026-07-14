@@ -1,0 +1,394 @@
+#!/usr/bin/env bash
+# ---------------------------------------------------------------------------
+# wcb — simple login/logout wrapper for the WildClawBench Claude-Max OAuth path
+#
+# WHY THIS EXISTS: running a trajectory on the Claude Max subscription requires a
+# few OAuth env vars to be present. Typing/pasting them every time is error prone,
+# so this wrapper turns them into a `login` / `logout` pair (like tasker):
+#   * `login`  -> loads the OAuth vars from .env into your shell (subscription ON)
+#   * `logout` -> unsets them (subscription OFF; a fresh login is required again)
+#   * `run`    -> runs a trajectory via script/run.sh with the OAuth path + reps
+#
+# NO SECRETS ARE HARDCODED HERE. Every value is read from the repo .env file
+# (the single source of truth). Edit .env to change the pool path / secret / ARN.
+#
+# IMPORTANT: `login` / `logout` must MUTATE YOUR CURRENT SHELL, so you have to
+# SOURCE this script for those two subcommands:
+#       source script/wcb login
+#       source script/wcb logout
+# `run` and `status` work either sourced or executed:
+#       source script/wcb run input/kayla_morgan_9b8f1d3c-... --reps 3
+# FIRST TIME ON A NEW MACHINE: run one command that extracts your Claude Max
+# token from this OS's credential store (macOS Keychain, or on Linux the
+# ~/.claude/.credentials.json file the `claude` CLI writes), writes .env + the
+# pool file, and installs the wcb() shell function into your shell rc
+# (~/.zshrc for zsh / ~/.bashrc for bash) automatically:
+#       source script/wcb setup
+#       source ~/.zshrc     # (or ~/.bashrc on Linux/bash — setup prints the exact file)
+# then just:  wcb login   /   wcb run <task> --reps N   /   wcb logout
+# ---------------------------------------------------------------------------
+
+# Resolve the repo root from this script's own location (works sourced or run).
+if [ -n "${BASH_SOURCE[0]:-}" ]; then _wcb_self="${BASH_SOURCE[0]}"; else _wcb_self="${(%):-%N}"; fi
+_wcb_root="$(cd "$(dirname "$_wcb_self")/.." 2>/dev/null && pwd)"
+_wcb_env="$_wcb_root/.env"
+
+_wcb_ok()   { printf '\033[32m[wcb]\033[0m %s\n' "$*"; }
+_wcb_warn() { printf '\033[33m[wcb]\033[0m %s\n' "$*"; }
+_wcb_err()  { printf '\033[31m[wcb]\033[0m %s\n' "$*" >&2; }
+
+# Read a single KEY=VALUE from .env (last match wins), stripped of surrounding
+# quotes. Returns empty if the key is absent or commented out.
+_wcb_env_get() {
+    [ -f "$_wcb_env" ] || return 0
+    local _line
+    _line="$(grep -E "^[[:space:]]*$1=" "$_wcb_env" 2>/dev/null | tail -n1)"
+    [ -n "$_line" ] || return 0
+    _line="${_line#*=}"
+    _line="${_line%\"}"; _line="${_line#\"}"
+    _line="${_line%\'}"; _line="${_line#\'}"
+    printf '%s' "$_line"
+}
+
+_wcb_login() {
+    if [ ! -f "$_wcb_env" ]; then
+        _wcb_err "no .env found at $_wcb_env — cannot login"
+        return 1
+    fi
+    local _use _pool _secret _stub _arn
+    _use="$(_wcb_env_get WCB_USE_CLAUDE_OAUTH)"
+    _pool="$(_wcb_env_get WCB_CC_ACCOUNT_POOL)"
+    _secret="$(_wcb_env_get WCB_CC_BRIDGE_SECRET)"
+    _stub="$(_wcb_env_get WCB_CC_STUB_KEY)"
+    _arn="$(_wcb_env_get JUDGE_COUNCIL_SONNET_ARN)"
+
+    # Per-laptop pool-path resolution (works for ANY user on ANY laptop):
+    #   The .env may carry an absolute path baked on a different machine
+    #   (e.g. /Users/apple/.wcb/oauth_pool/account_a.json). That path won't
+    #   exist here, so we auto-fall-back to THIS machine's $HOME location,
+    #   which is exactly where `wcb setup` writes the extracted Keychain token.
+    #   Precedence: (1) $HOME pool if it exists -> always prefer it;
+    #   (2) else the .env value if it exists; (3) else the $HOME default.
+    local _home_pool="$HOME/.wcb/oauth_pool/account_a.json"
+    case "$_pool" in
+        default|keychain:*)
+            : ;;  # non-file spec, leave as-is (resolved live by claude_oauth)
+        *)
+            # Prefer this machine's own pool file; only keep the .env path if
+            # it actually exists here; otherwise fall back to the $HOME default.
+            if [ -f "$_home_pool" ]; then
+                _pool="$_home_pool"
+            elif [ -z "$_pool" ] || [ ! -f "$_pool" ]; then
+                _pool="$_home_pool"
+            fi
+            ;;
+    esac
+
+    if [ -z "$_secret" ]; then
+        _wcb_err "WCB_CC_BRIDGE_SECRET missing in .env — run 'wcb setup' first"
+        return 1
+    fi
+    # Pool spec may be a file path, "default", or "keychain:<service>".
+    # Only enforce the file-exists check for actual file-path specs; the
+    # non-file specs are resolved live by src/utils/claude_oauth (Keychain).
+    case "$_pool" in
+        default|keychain:*) ;;
+        *)
+            if [ ! -f "$_pool" ]; then
+                _wcb_err "pool file missing: $_pool — cannot login"
+                return 1
+            fi
+            ;;
+    esac
+
+    export WCB_USE_CLAUDE_OAUTH="${_use:-1}"
+    export WCB_CC_ACCOUNT_POOL="$_pool"
+    export WCB_CC_BRIDGE_SECRET="$_secret"
+    [ -n "$_stub" ] && export WCB_CC_STUB_KEY="$_stub"
+    if [ -n "$_arn" ]; then
+        export JUDGE_COUNCIL_SONNET_ARN="$_arn"
+    fi
+
+    _wcb_ok "logged in — Claude Max subscription ACTIVE"
+    _wcb_ok "  WCB_USE_CLAUDE_OAUTH=$WCB_USE_CLAUDE_OAUTH"
+    _wcb_ok "  WCB_CC_ACCOUNT_POOL=$WCB_CC_ACCOUNT_POOL"
+    _wcb_ok "  WCB_CC_STUB_KEY=$WCB_CC_STUB_KEY (bridge secret set, hidden)"
+    if [ -n "$_arn" ]; then
+        _wcb_ok "  JUDGE_COUNCIL_SONNET_ARN set (sonnet judge enabled)"
+    fi
+    return 0
+}
+
+_wcb_logout() {
+    unset WCB_USE_CLAUDE_OAUTH WCB_CC_ACCOUNT_POOL WCB_CC_BRIDGE_SECRET WCB_CC_STUB_KEY
+    unset JUDGE_COUNCIL_SONNET_ARN
+    unset KENSEI_JUDGE_OAUTH_BRIDGE_URL KENSEI_JUDGE_USE_LITELLM
+    _wcb_ok "logged out — subscription vars cleared (login again to re-enable)"
+}
+
+_wcb_status() {
+    if [ "${WCB_USE_CLAUDE_OAUTH:-0}" = "1" ] && [ -n "${WCB_CC_ACCOUNT_POOL:-}" ]; then
+        _wcb_ok "status: LOGGED IN (pool=$WCB_CC_ACCOUNT_POOL)"
+    else
+        _wcb_warn "status: LOGGED OUT — run 'source script/wcb login'"
+    fi
+}
+
+_wcb_run() {
+    if [ "${WCB_USE_CLAUDE_OAUTH:-0}" != "1" ]; then
+        _wcb_err "not logged in — run 'source script/wcb login' first"
+        return 1
+    fi
+    local task="" model="claude-opus-4.7" reps="1"
+    local -a extra=()
+    while [ $# -gt 0 ]; do
+        case "$1" in
+            -r|--reps|--rep|--iter|--iterations|-k) reps="$2"; shift 2 ;;
+            -m|--model) model="$2"; shift 2 ;;
+            -t|--task) task="$2"; shift 2 ;;
+            *)
+                if [ -z "$task" ] && [ "${1#-}" = "$1" ]; then
+                    task="$1"; shift
+                else
+                    extra+=("$1"); shift
+                fi
+                ;;
+        esac
+    done
+    if [ -z "$task" ]; then
+        _wcb_err "usage: wcb run <task> [--reps N] [--model M] [extra run.sh flags...]"
+        return 1
+    fi
+    export PATH="$_wcb_root/.venv/bin:$PATH"
+    ( cd "$_wcb_root" && ./script/run.sh --task "$task" --model "$model" --reps "$reps" \
+        --backend openclaw --use-claude-oauth "${extra[@]}" )
+}
+
+# One-command per-laptop onboarding. Does everything a fresh machine needs so
+# `wcb login` works without any manual mkdir / copy / path-editing:
+#   1) extract this laptop's OWN Claude Code Max token from the macOS Keychain
+#      into $HOME/.wcb/oauth_pool/account_a.json (chmod 600)
+#   2) create .env from .env.example (if absent) and set the OAuth vars to
+#      per-laptop values ($HOME pool path, a fresh local bridge secret, stub key)
+#   3) install the `wcb()` shell function into ~/.zshrc pointing at THIS repo
+# Safe to re-run (idempotent): it refreshes the token and only fills gaps.
+_wcb_setup() {
+    local _pool_dir="$HOME/.wcb/oauth_pool"
+    local _pool_file="$_pool_dir/account_a.json"
+    local _svc="Claude Code-credentials"
+    local _os; _os="$(uname -s)"
+
+    # --- 1) token from this machine's OS credential store ------------------
+    # macOS: the `claude` CLI stores the blob in the Keychain -> read via
+    #        `security`. Linux: the CLI writes ~/.claude/.credentials.json as a
+    #        plaintext file (no keychain needed); fall back to `secret-tool`
+    #        (Secret Service) if a desktop keyring holds it instead.
+    local _raw=""
+    case "$_os" in
+        Darwin)
+            _raw="$(security find-generic-password -s "$_svc" -w 2>/dev/null)"
+            if [ -z "$_raw" ]; then
+                _wcb_err "no Claude Code credentials in Keychain (service '$_svc')."
+                _wcb_err "Sign into the Claude Code app with your Max subscription first, then re-run 'wcb setup'."
+                return 1
+            fi
+            ;;
+        Linux)
+            local _cred_file="$HOME/.claude/.credentials.json"
+            if [ -f "$_cred_file" ]; then
+                _raw="$(cat "$_cred_file" 2>/dev/null)"
+            fi
+            if [ -z "$_raw" ] && command -v secret-tool >/dev/null 2>&1; then
+                _raw="$(secret-tool lookup service "$_svc" 2>/dev/null)"
+            fi
+            if [ -z "$_raw" ]; then
+                _wcb_err "no Claude Code credentials found on this Linux machine."
+                _wcb_err "Expected $_cred_file (written by the 'claude' CLI on login)."
+                _wcb_err "Sign in with your Max subscription first:  claude   (then log in), then re-run 'wcb setup'."
+                return 1
+            fi
+            ;;
+        *)
+            _wcb_err "unsupported OS for 'wcb setup': $_os (only Darwin/Linux)."
+            _wcb_err "Provide credentials manually via WCB_CC_CREDS_PATH or CLAUDE_CODE_CREDENTIALS."
+            return 1
+            ;;
+    esac
+    mkdir -p "$_pool_dir"
+    if ! printf '%s' "$_raw" | python3 -c 'import sys,json;d=json.load(sys.stdin);inner=d.get("claudeAiOauth",d);assert inner.get("accessToken"),"no accessToken";json.dump({"claudeAiOauth":inner},open(sys.argv[1],"w"),indent=2)' "$_pool_file" 2>/dev/null; then
+        _wcb_err "Keychain payload was not valid Claude OAuth JSON — aborting."
+        return 1
+    fi
+    chmod 600 "$_pool_file"
+    _wcb_ok "wrote OAuth token -> $_pool_file (chmod 600)"
+
+    # --- 2) .env with per-laptop values ------------------------------------
+    if [ ! -f "$_wcb_env" ]; then
+        if [ -f "$_wcb_root/.env.example" ]; then
+            cp "$_wcb_root/.env.example" "$_wcb_env"
+            _wcb_ok "created .env from .env.example"
+        else
+            : > "$_wcb_env"
+            _wcb_warn "no .env.example found — created empty .env"
+        fi
+    fi
+    # Ensure a KEY=VALUE line exists (replace any existing, commented or not).
+    _wcb_set_env() {
+        local _k="$1" _v="$2"
+        # strip any existing definition (commented or active), then append.
+        grep -vE "^[[:space:]]*#?[[:space:]]*$_k=" "$_wcb_env" > "$_wcb_env.tmp" 2>/dev/null || : > "$_wcb_env.tmp"
+        printf '%s=%s\n' "$_k" "$_v" >> "$_wcb_env.tmp"
+        mv "$_wcb_env.tmp" "$_wcb_env"
+    }
+    _wcb_set_env WCB_USE_CLAUDE_OAUTH 1
+    _wcb_set_env WCB_CC_ACCOUNT_POOL "$_pool_file"
+    _wcb_set_env WCB_CC_STUB_KEY "$(_wcb_env_get WCB_CC_STUB_KEY || true)"
+    # stub key: default if empty
+    [ -n "$(_wcb_env_get WCB_CC_STUB_KEY)" ] || _wcb_set_env WCB_CC_STUB_KEY sk-wcb-oauth-stub
+    # bridge secret: keep existing, else generate a fresh per-laptop local secret.
+    local _sec; _sec="$(_wcb_env_get WCB_CC_BRIDGE_SECRET)"
+    if [ -z "$_sec" ]; then
+        _sec="$(openssl rand -hex 32 2>/dev/null)"
+        [ -n "$_sec" ] || _sec="$(python3 -c 'import secrets;print(secrets.token_hex(32))')"
+        _wcb_set_env WCB_CC_BRIDGE_SECRET "$_sec"
+        _wcb_ok "generated a fresh local WCB_CC_BRIDGE_SECRET"
+    else
+        _wcb_ok "kept existing WCB_CC_BRIDGE_SECRET"
+    fi
+    # sonnet judge ARN (a label only; the judge runs on the same subscription):
+    # keep any existing value, else seed the known default so the judge is on.
+    local _arn; _arn="$(_wcb_env_get JUDGE_COUNCIL_SONNET_ARN)"
+    if [ -z "$_arn" ]; then
+        _wcb_set_env JUDGE_COUNCIL_SONNET_ARN "bedrock/arn:aws:bedrock:ap-south-1:426628337772:application-inference-profile/urg0zifsjiga"
+        _wcb_ok "seeded default JUDGE_COUNCIL_SONNET_ARN (sonnet judge enabled)"
+    fi
+    _wcb_ok "updated .env with per-laptop OAuth values"
+
+    # --- 2b) Python venv + deps (needed by run.sh, which calls bare python3) --
+    if [ ! -x "$_wcb_root/.venv/bin/python3" ]; then
+        _wcb_warn "no .venv found — creating one (this is a one-time step)"
+        if python3 -m venv "$_wcb_root/.venv" 2>/dev/null; then
+            if [ -f "$_wcb_root/requirements.txt" ]; then
+                "$_wcb_root/.venv/bin/python3" -m pip install -q --upgrade pip >/dev/null 2>&1
+                if "$_wcb_root/.venv/bin/python3" -m pip install -q -r "$_wcb_root/requirements.txt" >/dev/null 2>&1; then
+                    _wcb_ok "created .venv and installed requirements.txt"
+                else
+                    _wcb_warn ".venv created but 'pip install -r requirements.txt' failed — run it manually"
+                fi
+            else
+                _wcb_warn ".venv created but no requirements.txt found — install deps manually"
+            fi
+        else
+            _wcb_warn "could not create .venv — ensure python3 (3.10+) is installed"
+        fi
+    else
+        _wcb_ok ".venv present"
+    fi
+
+    # --- 2c) cc-bridge docker image (the OAuth proxy container) --------------
+    if command -v docker >/dev/null 2>&1; then
+        if docker image inspect wildclawbench-cc-bridge:v1 >/dev/null 2>&1; then
+            _wcb_ok "cc-bridge image wildclawbench-cc-bridge:v1 present"
+        else
+            _wcb_warn "cc-bridge image missing — building (one-time, ~1 min)"
+            if ( cd "$_wcb_root" && docker build -f docker/cc-bridge/Dockerfile -t wildclawbench-cc-bridge:v1 . >/dev/null 2>&1 ); then
+                _wcb_ok "built wildclawbench-cc-bridge:v1"
+            else
+                _wcb_warn "cc-bridge build failed — build manually: docker build -f docker/cc-bridge/Dockerfile -t wildclawbench-cc-bridge:v1 ."
+            fi
+        fi
+    else
+        if [ "$_os" = "Darwin" ]; then
+            _wcb_warn "docker not found on PATH — install Docker Desktop before running a task"
+        else
+            _wcb_warn "docker not found on PATH — install Docker Engine before running a task (e.g. 'apt-get install docker.io')"
+        fi
+    fi
+
+    # --- 3) shell-rc wcb() function pointing at THIS repo -----------------
+    # Pick the rc file for THIS machine's login shell: zsh -> ~/.zshrc (macOS
+    # default), bash -> ~/.bashrc (Linux default). Falls back by OS if $SHELL
+    # is unset. This is what makes `wcb ...` work without the `source` prefix.
+    local _rc
+    case "${SHELL:-}" in
+        */zsh)  _rc="$HOME/.zshrc" ;;
+        */bash) _rc="$HOME/.bashrc" ;;
+        *)      if [ "$_os" = "Darwin" ]; then _rc="$HOME/.zshrc"; else _rc="$HOME/.bashrc"; fi ;;
+    esac
+    local _fn="wcb() { source \"$_wcb_root/script/wcb\" \"\$@\"; }"
+    touch "$_rc"
+    grep -vE '^[[:space:]]*wcb\(\)' "$_rc" > "$_rc.tmp" 2>/dev/null || : > "$_rc.tmp"
+    printf '%s\n' "$_fn" >> "$_rc.tmp"
+    mv "$_rc.tmp" "$_rc"
+    _wcb_ok "installed wcb() in $_rc -> $_wcb_root/script/wcb"
+
+    _wcb_ok "setup complete. Now run:  source $_rc  &&  wcb login"
+}
+
+# Read-only health check: verifies every prerequisite on THIS machine and
+# reports exactly what is missing, so onboarding issues are self-diagnosable.
+_wcb_doctor() {
+    local _ok=0
+    local _pool="$HOME/.wcb/oauth_pool/account_a.json"
+    local _os; _os="$(uname -s)"
+    local _dockerd_hint="start Docker Desktop"
+    local _dockeri_hint="install Docker Desktop"
+    if [ "$_os" != "Darwin" ]; then
+        _dockerd_hint="start the docker daemon ('systemctl start docker')"
+        _dockeri_hint="install Docker Engine"
+    fi
+    _wcb_ok "repo: $_wcb_root"
+    if [ -f "$_wcb_env" ]; then _wcb_ok ".env present"; else _wcb_err ".env MISSING — run 'wcb setup'"; _ok=1; fi
+    if [ -f "$_pool" ]; then
+        if python3 -c 'import sys,json;d=json.load(open(sys.argv[1]));i=d.get("claudeAiOauth",d);sys.exit(0 if i.get("accessToken") else 1)' "$_pool" 2>/dev/null; then
+            _wcb_ok "OAuth pool token present + valid ($_pool)"
+        else
+            _wcb_err "pool file exists but is not valid Claude OAuth JSON — run 'wcb setup'"; _ok=1
+        fi
+    else
+        _wcb_err "OAuth pool token MISSING ($_pool) — run 'wcb setup'"; _ok=1
+    fi
+    [ -n "$(_wcb_env_get WCB_CC_BRIDGE_SECRET)" ] && _wcb_ok "WCB_CC_BRIDGE_SECRET set" || { _wcb_err "WCB_CC_BRIDGE_SECRET missing — run 'wcb setup'"; _ok=1; }
+    if [ -x "$_wcb_root/.venv/bin/python3" ]; then _wcb_ok ".venv present"; else _wcb_err ".venv MISSING — run 'wcb setup'"; _ok=1; fi
+    if command -v docker >/dev/null 2>&1; then
+        docker info >/dev/null 2>&1 && _wcb_ok "docker daemon up" || { _wcb_err "docker installed but daemon not running — $_dockerd_hint"; _ok=1; }
+        docker image inspect wildclawbench-cc-bridge:v1 >/dev/null 2>&1 && _wcb_ok "cc-bridge image present" || { _wcb_err "cc-bridge image missing — run 'wcb setup'"; _ok=1; }
+    else
+        _wcb_err "docker not found — $_dockeri_hint"; _ok=1
+    fi
+    if [ "$_ok" -eq 0 ]; then _wcb_ok "doctor: all checks passed — ready to 'wcb login' and 'wcb run'"; else _wcb_err "doctor: some checks FAILED (see above)"; fi
+    return "$_ok"
+}
+
+case "${1:-help}" in
+    setup)  _wcb_setup ;;
+    doctor) _wcb_doctor ;;
+    login)  _wcb_login ;;
+    logout) _wcb_logout ;;
+    status) _wcb_status ;;
+    run)    shift; _wcb_run "$@" ;;
+    help|-h|--help)
+        cat <<EOF
+wcb — Claude Max subscription login wrapper (reads all values from .env)
+
+Subcommands:
+  source script/wcb setup                 ONE-TIME per-laptop onboarding (auto)
+  source script/wcb login                 load OAuth vars from .env (subscription ON)
+  source script/wcb logout                unset OAuth vars (subscription OFF)
+  wcb status                              show login state
+  wcb run <task> [--reps N] [--model M]   run a trajectory on the subscription
+
+New machine (one time):
+  source script/wcb setup    # extracts token from this OS's store (macOS Keychain
+                             # or Linux ~/.claude/.credentials.json), writes .env +
+                             # pool file, installs wcb() into your shell rc
+  source ~/.zshrc            # (or ~/.bashrc on Linux/bash — setup prints the file)
+
+Examples:
+  wcb login
+  wcb run input/kayla_morgan_9b8f1d3c-f1f0-40b7-bdbe-f55045abc016 --reps 3
+  wcb logout
+EOF
+        ;;
+    *) _wcb_err "unknown subcommand: $1 (try: setup | login | logout | status | run | help)" ;;
+esac

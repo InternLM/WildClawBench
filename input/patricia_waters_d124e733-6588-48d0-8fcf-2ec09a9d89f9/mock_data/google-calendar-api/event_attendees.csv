@@ -1,0 +1,7 @@
+event_id,email,display_name,response_status,optional,organizer
+evt-superv,patricia.waters@Finthesiss.ai,Patricia Waters,accepted,false,true
+evt-superv,ailbhe.osullivan.supervision@gmail.com,Dr Ailbhe O'Sullivan,accepted,false,false
+evt-hse-tue,patricia.waters@Finthesiss.ai,Patricia Waters,accepted,false,false
+evt-hse-thu,patricia.waters@Finthesiss.ai,Patricia Waters,accepted,false,false
+evt-robert,patricia.waters@Finthesiss.ai,Patricia Waters,accepted,false,true
+evt-robert,robert.waters.accounts@gmail.com,Robert Waters,accepted,false,false

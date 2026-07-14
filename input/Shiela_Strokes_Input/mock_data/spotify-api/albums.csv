@@ -1,0 +1,32 @@
+album_id,name,artist_id,album_type,release_date,total_tracks,label
+alb_burna_love_damini,Love Damini,art_burna_boy,album,2022-07-08,19,Spaceship Entertainment
+alb_burna_african_giant,African Giant,art_burna_boy,album,2019-07-26,19,Spaceship Entertainment
+alb_burna_iworhu,I Told Them,art_burna_boy,album,2023-08-25,15,Spaceship Entertainment
+alb_wizkid_made_lagos,Made in Lagos,art_wizkid,album,2020-10-30,14,Starboy Entertainment
+alb_wizkid_more_love,More Love Less Ego,art_wizkid,album,2022-11-11,13,Starboy Entertainment
+alb_davido_timeless,Timeless,art_davido,album,2023-03-31,17,DMW
+alb_davido_better_time,A Better Time,art_davido,album,2020-11-13,17,DMW
+alb_tems_born_in_wild,Born in the Wild,art_tems,album,2024-06-07,18,RCA
+alb_tems_if_orange,If Orange Was a Place,art_tems,EP,2021-09-24,5,RCA
+alb_asake_work_of_art,Work of Art,art_asake,album,2023-06-30,14,YBNL Nation
+alb_asake_mr_money,Mr. Money With the Vibe,art_asake,album,2022-09-08,12,YBNL Nation
+alb_rema_rave_roses,Rave and Roses,art_rema,album,2022-03-25,16,Mavin Records
+alb_rema_heis,Heis,art_rema,album,2024-07-11,11,Mavin Records
+alb_omah_lay_boy_alone,Boy Alone,art_omah_lay,album,2022-07-14,14,Sire Records
+alb_ckay_sad_romance,Sad Romance,art_ckay,album,2022-08-12,13,Warner Music
+alb_simi_to_be_honest,To Be Honest,art_simi,album,2022-08-12,11,Studio Brat
+alb_simi_omo_charlie,Omo Charlie Champagne,art_simi,album,2019-04-19,13,Studio Brat
+alb_adekunle_catch_me,Catch Me If You Can,art_adekunle_gold,album,2022-02-04,12,Afro Urban Records
+alb_adekunle_tequila,Tequila Ever After,art_adekunle_gold,album,2023-07-28,17,Afro Urban Records
+alb_johnny_dr_believe,Believe,art_johnny_drille,album,2023-04-21,13,Mavin Records
+alb_brandy_human,Human,art_brandy,album,2008-12-09,14,Epic
+alb_jhene_chilombo,Chilombo,art_jhene_aiko,album,2020-03-06,20,Def Jam
+alb_sade_lovers_rock,Lovers Rock,art_sade,album,2000-11-13,11,Epic
+alb_sade_best_of,The Best of Sade,art_sade,compilation,1994-11-08,16,Epic
+alb_corinne_self,Corinne Bailey Rae,art_corinne_bailey,album,2006-02-20,11,Capitol
+alb_her_self_titled,H.E.R.,art_h_e_r,album,2017-10-20,21,MBK Entertainment
+alb_daniel_freudian,Freudian,art_daniel_caesar,album,2017-08-25,10,Golden Child Recordings
+alb_lauryn_miseducation,The Miseducation of Lauryn Hill,art_lauryn_hill,album,1998-08-25,16,Ruffhouse Records
+alb_sinach_way_maker,Way Maker,art_sinach,album,2018-04-13,12,Integrity Music
+alb_nathaniel_hallelujah,Hallelujah Challenge,art_nathaniel_bassey,album,2020-05-21,13,Independent
+alb_mercy_satisfied,Satisfied,art_mercy_chinwo,album,2020-06-06,13,EeZee Concept

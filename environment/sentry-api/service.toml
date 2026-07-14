@@ -1,0 +1,5 @@
+[service]
+name = "sentry-api"
+port = 8047
+env_var_name = "SENTRY_API_URL"
+healthcheck_path = "/health"

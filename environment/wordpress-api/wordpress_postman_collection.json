@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "WordPress Mock REST API (wp/v2)",
+    "description": "Test collection for the mock WordPress REST API service. Base URL defaults to http://localhost:8065. In docker-compose, the service is reachable at http://wordpress-api:8065.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8065"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list posts", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/posts?per_page=5"}},
+    {"name": "list posts by category", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/posts?categories=11"}},
+    {"name": "get post", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/posts/101"}},
+    {"name": "create post", "request": {"method": "POST", "url": "{{baseUrl}}/wp-json/wp/v2/posts",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"title\": \"Postmortem: the cache stampede\", \"content\": \"What happened and how we fixed it.\", \"status\": \"publish\", \"author\": 2, \"categories\": [10, 11], \"tags\": [25]}"}}},
+    {"name": "update post", "request": {"method": "PUT", "url": "{{baseUrl}}/wp-json/wp/v2/posts/106",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"status\": \"publish\", \"title\": \"Rethinking our on-call rotation\"}"}}},
+    {"name": "delete post", "request": {"method": "DELETE", "url": "{{baseUrl}}/wp-json/wp/v2/posts/108"}},
+    {"name": "list pages", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/pages"}},
+    {"name": "list categories", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/categories"}},
+    {"name": "list tags", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/tags"}},
+    {"name": "list comments for post", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/comments?post=101"}},
+    {"name": "create comment", "request": {"method": "POST", "url": "{{baseUrl}}/wp-json/wp/v2/comments",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"post\": 104, \"author_name\": \"Reader One\", \"author_email\": \"reader@example.com\", \"content\": \"Excited to try the new plugin system!\"}"}}},
+    {"name": "list media", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/media"}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/wp-json/wp/v2/users"}}
+  ]
+}

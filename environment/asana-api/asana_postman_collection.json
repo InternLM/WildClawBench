@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Asana Mock API",
+    "description": "Test collection for the mock Asana API service. Base URL defaults to http://localhost:8031. In docker-compose, the service is reachable at http://asana-api:8031.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8031"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "list workspaces", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/workspaces"}},
+    {"name": "list users", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/users?workspace=1201990000000001"}},
+    {"name": "list projects", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/projects?workspace=1201990000000001"}},
+    {"name": "get project", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/projects/1203000000002001"}},
+    {"name": "list project sections", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/projects/1203000000002001/sections"}},
+    {"name": "list project tasks", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/projects/1203000000002001/tasks"}},
+    {"name": "list tasks", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/tasks?project=1203000000002002&completed=false"}},
+    {"name": "get task", "request": {"method": "GET", "url": "{{baseUrl}}/api/1.0/tasks/1205000000004001"}},
+    {"name": "create task", "request": {"method": "POST", "url": "{{baseUrl}}/api/1.0/tasks",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"data\": {\"name\": \"Write release notes\", \"project\": \"1203000000002002\", \"section\": \"1204000000003005\", \"assignee\": \"1202000000001002\", \"due_on\": \"2026-07-10\", \"notes\": \"Summarize v2 changes\"}}"}}},
+    {"name": "complete task", "request": {"method": "PUT", "url": "{{baseUrl}}/api/1.0/tasks/1205000000004002",
+      "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\"data\": {\"completed\": true, \"assignee\": \"1202000000001001\", \"due_on\": \"2026-06-05\"}}"}}}
+  ]
+}

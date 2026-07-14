@@ -1,0 +1,62 @@
+[
+  {
+    "tracking_number": "1Z999AA10123456784",
+    "service_code": "03",
+    "service_name": "UPS Ground",
+    "ship_date": "2026-05-20",
+    "origin_zip": "10001",
+    "dest_zip": "90001",
+    "weight_lb": "5.0",
+    "currency": "USD",
+    "total_charge": "16.20",
+    "label_url": "https://ups.example/labels/1Z999AA10123456784.gif"
+  },
+  {
+    "tracking_number": "1Z999AA10123456795",
+    "service_code": "02",
+    "service_name": "UPS 2nd Day Air",
+    "ship_date": "2026-05-21",
+    "origin_zip": "10001",
+    "dest_zip": "60601",
+    "weight_lb": "3.4",
+    "currency": "USD",
+    "total_charge": "32.40",
+    "label_url": "https://ups.example/labels/1Z999AA10123456795.gif"
+  },
+  {
+    "tracking_number": "1Z999AA10123456806",
+    "service_code": "01",
+    "service_name": "UPS Next Day Air",
+    "ship_date": "2026-05-22",
+    "origin_zip": "10001",
+    "dest_zip": "90001",
+    "weight_lb": "1.8",
+    "currency": "USD",
+    "total_charge": "89.75",
+    "label_url": "https://ups.example/labels/1Z999AA10123456806.gif"
+  },
+  {
+    "tracking_number": "1Z999AA10123456817",
+    "service_code": "12",
+    "service_name": "UPS 3 Day Select",
+    "ship_date": "2026-05-23",
+    "origin_zip": "10001",
+    "dest_zip": "90001",
+    "weight_lb": "6.2",
+    "currency": "USD",
+    "total_charge": "28.60",
+    "label_url": "https://ups.example/labels/1Z999AA10123456817.gif"
+  },
+  {
+    "tracking_number": "1Z999AA10123456828",
+    "service_code": "03",
+    "service_name": "UPS Ground",
+    "ship_date": "2026-05-24",
+    "origin_zip": "10001",
+    "dest_zip": "60601",
+    "weight_lb": "4.0",
+    "currency": "USD",
+    "total_charge": "13.85",
+    "label_url": "https://ups.example/labels/1Z999AA10123456828.gif"
+  }
+]

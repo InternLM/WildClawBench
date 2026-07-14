@@ -1,0 +1,25 @@
+id,application_id,candidate_id,interviewer,stage,overall_recommendation,rating,submitted_at,notes
+sc_001,app_001,cand_001_aminu_hassan,Bayo Adeyinka,Phone Screen,Yes,4,2026-09-15T14:00:00Z,"Strong technical fundamentals, good communication"
+sc_002,app_002,cand_002_blessing_okonkwo,Chinedu Okafor,Technical Assessment,Strong Yes,5,2026-09-22T16:00:00Z,"Exceptional RF knowledge"
+sc_003,app_003,cand_003_emeka_iwu,Tunde Salami,Resume Review,Yes,4,2026-09-22T11:00:00Z,"Solid field experience"
+sc_0201,app_0201,cnd_0201,user_sheila_stokes,Technical Assessment,hold,3,2026-09-08T10:00:00Z,"Solid candidate, recommend proceeding."
+sc_0203,app_0203,cnd_0203,user_sheila_stokes,Onsite,strong,5,2026-09-12T10:00:00Z,"Solid candidate, recommend proceeding."
+sc_0205,app_0205,cnd_0205,user_sheila_stokes,Phone Screen,proceed,4,2026-09-16T10:00:00Z,"Solid candidate, recommend proceeding."
+sc_0207,app_0207,cnd_0207,user_sheila_stokes,Onsite,proceed,4,2026-09-20T10:00:00Z,"Solid candidate, recommend proceeding."
+sc_hist_0003,app_hist_0003,cnd_hist_0003,user_sheila_stokes,Phone Screen,hold,3,2025-04-20T10:00:00Z,"Historical scorecard, candidate not progressed."
+sc_hist_0006,app_hist_0006,cnd_hist_0006,user_sheila_stokes,Phone Screen,hold,3,2025-07-20T10:00:00Z,"Historical scorecard, candidate not progressed."
+sc_hist_0009,app_hist_0009,cnd_hist_0009,user_sheila_stokes,Phone Screen,hold,3,2025-10-20T10:00:00Z,"Historical scorecard, candidate not progressed."
+sc_hist_0012,app_hist_0012,cnd_hist_0012,user_sheila_stokes,Phone Screen,hold,3,2025-01-20T10:00:00Z,"Historical scorecard, candidate not progressed."
+sc_hist_0015,app_hist_0015,cnd_hist_0015,user_sheila_stokes,Phone Screen,hold,3,2025-04-20T10:00:00Z,"Historical scorecard, candidate not progressed."
+sc_hist_0018,app_hist_0018,cnd_hist_0018,user_sheila_stokes,Phone Screen,hold,3,2025-07-20T10:00:00Z,"Historical scorecard, candidate not progressed."
+sc_finalize_0001,app_hist_0002,cnd_hist_0002,user_sheila_stokes,Technical Assessment,hold,3,2025-02-06T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0002,app_hist_0003,cnd_hist_0003,user_sheila_stokes,Onsite,strong,5,2025-03-07T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0003,app_hist_0004,cnd_hist_0004,user_sheila_stokes,Final Review,strong,5,2025-04-08T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0004,app_hist_0005,cnd_hist_0005,user_sheila_stokes,Phone Screen,proceed,4,2025-05-09T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0005,app_hist_0006,cnd_hist_0006,user_sheila_stokes,Phone Screen,proceed,4,2025-06-10T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0006,app_hist_0007,cnd_hist_0007,user_sheila_stokes,Technical Assessment,hold,3,2025-07-11T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0007,app_hist_0008,cnd_hist_0008,user_sheila_stokes,Onsite,strong,5,2025-08-12T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0008,app_hist_0009,cnd_hist_0009,user_sheila_stokes,Final Review,strong,5,2025-09-13T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0009,app_hist_0010,cnd_hist_0010,user_sheila_stokes,Phone Screen,proceed,4,2025-10-14T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0010,app_hist_0011,cnd_hist_0011,user_sheila_stokes,Phone Screen,proceed,4,2025-11-15T10:00:00Z,Backfill scorecard for completeness across historical pipeline.
+sc_finalize_0011,app_hist_0012,cnd_hist_0012,user_sheila_stokes,Technical Assessment,hold,3,2025-01-16T10:00:00Z,Backfill scorecard for completeness across historical pipeline.

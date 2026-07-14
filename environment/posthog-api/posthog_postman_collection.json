@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "PostHog Mock API",
+    "description": "Test collection for the mock PostHog API service (capture, decide, project events/persons/feature_flags). Base URL defaults to http://localhost:8092. In docker-compose, the service is reachable at http://posthog-api:8092.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8092"}
+  ],
+  "item": [
+    {"name": "health", "request": {"method": "GET", "url": "{{baseUrl}}/health"}},
+    {"name": "capture", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/capture", "body": {"mode": "raw", "raw": "{\"project_id\": 1, \"distinct_id\": \"user_3001\", \"event\": \"button_clicked\", \"properties\": {\"name\": \"save\"}}"}}},
+    {"name": "decide", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/decide", "body": {"mode": "raw", "raw": "{\"project_id\": 1, \"distinct_id\": \"user_3001\"}"}}},
+    {"name": "events", "request": {"method": "GET", "url": "{{baseUrl}}/api/projects/1/events"}},
+    {"name": "events filtered", "request": {"method": "GET", "url": "{{baseUrl}}/api/projects/1/events?event=$pageview&distinct_id=user_3001"}},
+    {"name": "feature flags", "request": {"method": "GET", "url": "{{baseUrl}}/api/projects/1/feature_flags"}},
+    {"name": "persons", "request": {"method": "GET", "url": "{{baseUrl}}/api/projects/1/persons"}}
+  ]
+}

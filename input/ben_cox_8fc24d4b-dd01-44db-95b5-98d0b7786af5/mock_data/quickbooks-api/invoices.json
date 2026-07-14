@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "5001",
+    "DocNumber": "INV-2026-0098",
+    "TxnDate": "2026-08-22",
+    "DueDate": "2026-08-29",
+    "CustomerRef": {
+      "value": "201",
+      "name": "Hendrik Veldkamp"
+    },
+    "Line": [
+      {
+        "Amount": 1255.5,
+        "Description": "Aanbetaling boekenkast op maat studeerkamer. Restant bij levering en montage.",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Maatwerk meubel - aanbetaling"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 1255.5,
+    "Balance": 0.0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5002",
+    "DocNumber": "INV-2026-0071",
+    "TxnDate": "2026-07-15",
+    "DueDate": "2026-07-22",
+    "CustomerRef": {
+      "value": "202",
+      "name": "J. Bosman"
+    },
+    "Line": [
+      {
+        "Amount": 1800.0,
+        "Description": "Aanbetaling keuken op maat, Haren.",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Maatwerk meubel - aanbetaling"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 1800.0,
+    "Balance": 0.0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5003",
+    "DocNumber": "INV-2026-0060",
+    "TxnDate": "2026-05-09",
+    "DueDate": "2026-05-23",
+    "CustomerRef": {
+      "value": "203",
+      "name": "Annelies Smit"
+    },
+    "Line": [
+      {
+        "Amount": 540.0,
+        "Description": "Eiken vensterbank op maat, geleverd en gemonteerd.",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Maatwerk - eindfactuur"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 540.0,
+    "Balance": 0.0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5004",
+    "DocNumber": "INV-2026-0042",
+    "TxnDate": "2026-03-18",
+    "DueDate": "2026-04-01",
+    "CustomerRef": {
+      "value": "204",
+      "name": "Pieter Hofman"
+    },
+    "Line": [
+      {
+        "Amount": 1280.0,
+        "Description": "Restauratie kast, eindfactuur.",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Maatwerk - eindfactuur"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 1280.0,
+    "Balance": 0.0,
+    "Status": "Paid"
+  },
+  {
+    "Id": "5005",
+    "DocNumber": "INV-2026-0085",
+    "TxnDate": "2026-06-27",
+    "DueDate": "2026-07-11",
+    "CustomerRef": {
+      "value": "205",
+      "name": "Marieke de Boer"
+    },
+    "Line": [
+      {
+        "Amount": 415.0,
+        "Description": "Boekenplank eiken, geleverd.",
+        "SalesItemLineDetail": {
+          "ItemRef": {
+            "name": "Maatwerk - eindfactuur"
+          }
+        }
+      }
+    ],
+    "TotalAmt": 415.0,
+    "Balance": 0.0,
+    "Status": "Paid"
+  }
+]

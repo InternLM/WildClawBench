@@ -1,0 +1,92 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "price": "67250.45",
+    "priceChange": "1320.55",
+    "priceChangePercent": "2.004",
+    "highPrice": "68110.00",
+    "lowPrice": "65500.20",
+    "volume": "18452.331"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "price": "3520.18",
+    "priceChange": "-45.32",
+    "priceChangePercent": "-1.271",
+    "highPrice": "3601.40",
+    "lowPrice": "3480.05",
+    "volume": "92344.118"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "price": "592.74",
+    "priceChange": "8.16",
+    "priceChangePercent": "1.396",
+    "highPrice": "601.20",
+    "lowPrice": "580.33",
+    "volume": "145220.402"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "price": "168.92",
+    "priceChange": "5.47",
+    "priceChangePercent": "3.347",
+    "highPrice": "172.10",
+    "lowPrice": "160.85",
+    "volume": "884512.770"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "price": "0.5234",
+    "priceChange": "-0.0081",
+    "priceChangePercent": "-1.524",
+    "highPrice": "0.5390",
+    "lowPrice": "0.5180",
+    "volume": "1245332.900"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "price": "0.4612",
+    "priceChange": "0.0123",
+    "priceChangePercent": "2.741",
+    "highPrice": "0.4705",
+    "lowPrice": "0.4480",
+    "volume": "2210456.330"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "price": "0.1582",
+    "priceChange": "0.0044",
+    "priceChangePercent": "2.861",
+    "highPrice": "0.1620",
+    "lowPrice": "0.1530",
+    "volume": "3320112.450"
+  },
+  {
+    "symbol": "MATICUSDT",
+    "price": "0.7245",
+    "priceChange": "-0.0162",
+    "priceChangePercent": "-2.187",
+    "highPrice": "0.7480",
+    "lowPrice": "0.7180",
+    "volume": "1875440.120"
+  },
+  {
+    "symbol": "DOTUSDT",
+    "price": "7.214",
+    "priceChange": "0.182",
+    "priceChangePercent": "2.588",
+    "highPrice": "7.350",
+    "lowPrice": "6.980",
+    "volume": "442318.660"
+  },
+  {
+    "symbol": "LTCUSDT",
+    "price": "84.55",
+    "priceChange": "-1.22",
+    "priceChangePercent": "-1.423",
+    "highPrice": "86.40",
+    "lowPrice": "83.70",
+    "volume": "121884.990"
+  }
+]

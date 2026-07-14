@@ -1,0 +1,7 @@
+envelope_id,status,email_subject,sender_name,sender_email,created_time,sent_time,completed_time,template_id
+env001,completed,Algemene voorwaarden Houtwerkplaats Cox 2024,Ben Cox,ben.cox@finthesiss.ai,2024-01-15T00:00:00Z,2024-01-15T00:00:00Z,2024-01-16T00:00:00Z,tmpl003
+env002,completed,Onderaannemersovereenkomst Kuipers,Ben Cox,ben.cox@finthesiss.ai,2025-03-02T00:00:00Z,2025-03-02T00:00:00Z,2025-03-05T00:00:00Z,tmpl002
+env003,completed,Geheimhoudingsverklaring leverancier,Ben Cox,ben.cox@finthesiss.ai,2025-07-22T00:00:00Z,2025-07-22T00:00:00Z,2025-07-23T00:00:00Z,tmpl002
+env004,completed,Verzekering bedrijfsaansprakelijkheid verlenging,Ben Cox,ben.cox@finthesiss.ai,2026-01-10T00:00:00Z,2026-01-10T00:00:00Z,2026-01-12T00:00:00Z,
+env005,completed,Offerte OFF-2026-074 boekenkast Veldkamp - definitief getekend,Ben Cox,ben.cox@finthesiss.ai,2026-08-19T10:00:00Z,2026-08-19T10:05:00Z,2026-08-20T14:30:00Z,tmpl001
+env006,voided,Concept offerte boekenkast Veldkamp - concept,Ben Cox,ben.cox@finthesiss.ai,2026-08-18T09:00:00Z,2026-08-18T09:05:00Z,,tmpl001

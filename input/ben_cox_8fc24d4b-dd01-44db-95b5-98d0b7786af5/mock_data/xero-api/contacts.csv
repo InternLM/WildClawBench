@@ -1,0 +1,9 @@
+contact_id,name,first_name,last_name,email,is_customer,is_supplier,status,account_number
+X01,Houthandel Noord,,,info@houthandelnoord.nl,false,true,ACTIVE,HN-201
+X02,Timmerwerk Kuipers,,,contact@kuipers-tw.nl,true,false,ACTIVE,TK-455
+X03,Sander Brink,Sander,Brink,s.brink@home.nl,true,false,ACTIVE,SB-077
+X04,Lakcentrum Noord,,,verkoop@lakcentrumnoord.nl,false,true,ACTIVE,LN-318
+X05,Annette Postma,Annette,Postma,a.postma@ziggo.nl,true,false,ACTIVE,AP-129
+X06,Bouwbedrijf Dijk,,,info@bouwdijk.nl,true,false,ARCHIVED,BD-540
+X07,Gereedschap Groningen,,,sales@gereedschapgroningen.nl,false,true,ACTIVE,GG-612
+X08,Rietveld Interieur,,,info@rietveldinterieur.nl,true,false,ACTIVE,RI-088

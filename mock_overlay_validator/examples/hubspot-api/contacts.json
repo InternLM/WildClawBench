@@ -1,0 +1,98 @@
+[
+  {
+    "id": "201",
+    "firstname": "Maya",
+    "lastname": "Fernandez",
+    "email": "maya.fernandez@aurorabistro.com",
+    "phone": "+14155551201",
+    "jobtitle": "Owner",
+    "company": "Aurora Bistro LLC",
+    "lifecyclestage": "customer",
+    "createdate": "2025-11-02T10:00:00Z",
+    "lastmodifieddate": "2026-05-20T12:00:00Z"
+  },
+  {
+    "id": "202",
+    "firstname": "Daniel",
+    "lastname": "Cho",
+    "email": "daniel.cho@helixrobotics.io",
+    "phone": "+14155551202",
+    "jobtitle": "VP Engineering",
+    "company": "Helix Robotics Inc",
+    "lifecyclestage": "customer",
+    "createdate": "2025-09-15T09:30:00Z",
+    "lastmodifieddate": "2026-05-18T08:00:00Z"
+  },
+  {
+    "id": "203",
+    "firstname": "Priya",
+    "lastname": "Nair",
+    "email": "priya.nair@lumendesign.co",
+    "phone": "+14155551203",
+    "jobtitle": "Creative Director",
+    "company": "Lumen Design Studio",
+    "lifecyclestage": "opportunity",
+    "createdate": "2026-01-10T14:00:00Z",
+    "lastmodifieddate": "2026-05-22T11:00:00Z"
+  },
+  {
+    "id": "204",
+    "firstname": "Tomas",
+    "lastname": "Reyes",
+    "email": "tomas.reyes@pelagicfreight.com",
+    "phone": "+14155551204",
+    "jobtitle": "CFO",
+    "company": "Pelagic Freight Co",
+    "lifecyclestage": "lead",
+    "createdate": "2026-02-20T16:00:00Z",
+    "lastmodifieddate": "2026-05-10T09:00:00Z"
+  },
+  {
+    "id": "205",
+    "firstname": "Sara",
+    "lastname": "Lindqvist",
+    "email": "sara.lindqvist@verdantfarms.org",
+    "phone": "+14155551205",
+    "jobtitle": "Operations Lead",
+    "company": "Verdant Farms",
+    "lifecyclestage": "marketingqualifiedlead",
+    "createdate": "2026-03-05T11:30:00Z",
+    "lastmodifieddate": "2026-05-12T15:00:00Z"
+  },
+  {
+    "id": "206",
+    "firstname": "Kenji",
+    "lastname": "Watanabe",
+    "email": "kenji.watanabe@quanta.ai",
+    "phone": "+14155551206",
+    "jobtitle": "Head of Data",
+    "company": "Quanta Analytics",
+    "lifecyclestage": "customer",
+    "createdate": "2025-12-01T08:00:00Z",
+    "lastmodifieddate": "2026-05-25T10:00:00Z"
+  },
+  {
+    "id": "207",
+    "firstname": "Olivia",
+    "lastname": "Brandt",
+    "email": "olivia.brandt@nimbus.coffee",
+    "phone": "+14155551207",
+    "jobtitle": "Founder",
+    "company": "Nimbus Coffee",
+    "lifecyclestage": "lead",
+    "createdate": "2026-04-12T13:00:00Z",
+    "lastmodifieddate": "2026-05-26T09:00:00Z"
+  },
+  {
+    "id": "208",
+    "firstname": "Marcus",
+    "lastname": "Webb",
+    "email": "marcus.webb@driftwood.co",
+    "phone": "+14155551208",
+    "jobtitle": "Procurement Manager",
+    "company": "Driftwood Co",
+    "lifecyclestage": "salesqualifiedlead",
+    "createdate": "2026-04-25T10:15:00Z",
+    "lastmodifieddate": "2026-05-24T14:00:00Z"
+  }
+]

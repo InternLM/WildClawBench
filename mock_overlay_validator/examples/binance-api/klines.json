@@ -1,0 +1,123 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "interval": "1h",
+    "open_time": "1779004800000",
+    "open": "66100.00",
+    "high": "66480.00",
+    "low": "66020.50",
+    "close": "66410.20",
+    "volume": "812.441",
+    "close_time": "1779008399999"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "interval": "1h",
+    "open_time": "1779008400000",
+    "open": "66410.20",
+    "high": "66900.00",
+    "low": "66380.00",
+    "close": "66850.75",
+    "volume": "945.118",
+    "close_time": "1779011999999"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "interval": "1h",
+    "open_time": "1779012000000",
+    "open": "66850.75",
+    "high": "67200.00",
+    "low": "66800.10",
+    "close": "67120.40",
+    "volume": "1023.667",
+    "close_time": "1779015599999"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "interval": "1h",
+    "open_time": "1779015600000",
+    "open": "67120.40",
+    "high": "67350.00",
+    "low": "67000.00",
+    "close": "67050.90",
+    "volume": "889.302",
+    "close_time": "1779019199999"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "interval": "1h",
+    "open_time": "1779019200000",
+    "open": "67050.90",
+    "high": "67400.00",
+    "low": "66950.00",
+    "close": "67250.45",
+    "volume": "1102.554",
+    "close_time": "1779022799999"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "interval": "1h",
+    "open_time": "1779004800000",
+    "open": "3480.10",
+    "high": "3505.00",
+    "low": "3475.20",
+    "close": "3498.60",
+    "volume": "4120.331",
+    "close_time": "1779008399999"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "interval": "1h",
+    "open_time": "1779008400000",
+    "open": "3498.60",
+    "high": "3540.00",
+    "low": "3492.00",
+    "close": "3525.40",
+    "volume": "5230.118",
+    "close_time": "1779011999999"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "interval": "1h",
+    "open_time": "1779012000000",
+    "open": "3525.40",
+    "high": "3560.00",
+    "low": "3518.00",
+    "close": "3548.90",
+    "volume": "4880.902",
+    "close_time": "1779015599999"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "interval": "1h",
+    "open_time": "1779015600000",
+    "open": "3548.90",
+    "high": "3555.00",
+    "low": "3510.00",
+    "close": "3520.18",
+    "volume": "5012.447",
+    "close_time": "1779019199999"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "interval": "1d",
+    "open_time": "1778889600000",
+    "open": "64900.00",
+    "high": "67400.00",
+    "low": "64200.00",
+    "close": "67250.45",
+    "volume": "21044.882",
+    "close_time": "1778975999999"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "interval": "1d",
+    "open_time": "1778889600000",
+    "open": "3450.00",
+    "high": "3560.00",
+    "low": "3410.00",
+    "close": "3520.18",
+    "volume": "98442.117",
+    "close_time": "1778975999999"
+  }
+]

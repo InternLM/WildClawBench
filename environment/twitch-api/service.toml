@@ -1,0 +1,5 @@
+[service]
+name = "twitch-api"
+port = 8064
+env_var_name = "TWITCH_API_URL"
+healthcheck_path = "/health"

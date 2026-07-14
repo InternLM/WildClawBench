@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Daily/2026-05-26.md",
+    "content": "# 2026-05-26\\n\\n- [ ] Review [[Auth v2]] cutover plan\\n- [ ] Send weekly status to leads\\n- Met with @helena re: latency spike on auth.refresh — tracked under [[Auth v2]].\\n"
+  },
+  {
+    "path": "Daily/2026-05-25.md",
+    "content": "# 2026-05-25\\n\\n- Finished draft of [[Billing gRPC migration]] RFC\\n- Quick note: capacity in eu-west-2 is blocking [[Multi-region failover]].\\n"
+  },
+  {
+    "path": "Daily/2026-05-24.md",
+    "content": "# 2026-05-24\\n\\n- Reviewed [[SRE checklist]] before on-call rotation hands off.\\n- Idea: cache warm-up step before failover dry-run.\\n"
+  },
+  {
+    "path": "Projects/Auth v2.md",
+    "content": "# Auth v2\\n\\nMigrate session storage to Redis, cookie-based refresh tokens.\\n\\n## Status\\n- Shim is dual-writing.\\n- Holding rollout until p95 < 250ms.\\n\\n## Open items\\n- [ ] Confirm cookie issuer gating\\n- [ ] Postmortem template prepared\\n\\n## Refs\\n- [[SRE checklist]]\\n"
+  },
+  {
+    "path": "Projects/Billing gRPC migration.md",
+    "content": "# Billing gRPC migration\\n\\nMove the billing-api REST surface to gRPC.\\n\\n## Plan\\n1. Generate proto from existing OpenAPI\\n2. Dual-serve REST+gRPC for two weeks\\n3. Migrate internal callers\\n4. Remove REST surface in v2.0\\n\\n## Risks\\n- Java client lacks robust gRPC retry config — see [[SRE checklist]] section on retries.\\n"
+  },
+  {
+    "path": "Projects/Multi-region failover.md",
+    "content": "# Multi-region failover\\n\\nGoal: fail traffic from us-east-1 to eu-west-2 within 90s.\\n\\n## Blockers\\n- eu-west-2 capacity request pending.\\n- Need cross-region replication validation for billing DB.\\n"
+  },
+  {
+    "path": "References/SRE checklist.md",
+    "content": "# SRE checklist\\n\\n## Pre-deploy\\n- [ ] Capacity headroom > 30%\\n- [ ] Rollback script tested\\n\\n## Retries\\n- Use exponential backoff with jitter, cap at 5 retries.\\n- For gRPC, only retry on UNAVAILABLE / DEADLINE_EXCEEDED.\\n\\n## Post-incident\\n- Postmortem template in /templates.\\n"
+  },
+  {
+    "path": "References/Postgres tuning notes.md",
+    "content": "# Postgres tuning notes\\n\\n- `work_mem` per-connection × max_connections — beware of OOM on bursty workloads.\\n- `shared_buffers`: 25% of RAM as a starting point.\\n- Vacuum analyze after bulk loads.\\n"
+  },
+  {
+    "path": "Inbox/quick capture.md",
+    "content": "- idea: pre-warm L7 caches before failover\\n- TODO: ask infra about eu-west-2 capacity request\\n"
+  }
+]

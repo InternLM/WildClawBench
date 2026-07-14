@@ -1,0 +1,152 @@
+[
+  {
+    "item_id": "item-1001",
+    "column_id": "status",
+    "text": "In Progress",
+    "value": ""
+  },
+  {
+    "item_id": "item-1001",
+    "column_id": "owner",
+    "text": "Helena Park",
+    "value": "usr-2"
+  },
+  {
+    "item_id": "item-1001",
+    "column_id": "due",
+    "text": "2026-05-30",
+    "value": ""
+  },
+  {
+    "item_id": "item-1001",
+    "column_id": "notes",
+    "text": "Blocked on auth service deploy",
+    "value": ""
+  },
+  {
+    "item_id": "item-1002",
+    "column_id": "status",
+    "text": "Todo",
+    "value": ""
+  },
+  {
+    "item_id": "item-1002",
+    "column_id": "owner",
+    "text": "Marco Bianchi",
+    "value": "usr-3"
+  },
+  {
+    "item_id": "item-1002",
+    "column_id": "due",
+    "text": "2026-06-02",
+    "value": ""
+  },
+  {
+    "item_id": "item-1003",
+    "column_id": "status",
+    "text": "Done",
+    "value": ""
+  },
+  {
+    "item_id": "item-1003",
+    "column_id": "owner",
+    "text": "Helena Park",
+    "value": "usr-2"
+  },
+  {
+    "item_id": "item-1003",
+    "column_id": "due",
+    "text": "2026-05-14",
+    "value": ""
+  },
+  {
+    "item_id": "item-1004",
+    "column_id": "status",
+    "text": "Todo",
+    "value": ""
+  },
+  {
+    "item_id": "item-1004",
+    "column_id": "owner",
+    "text": "Amelia Stone",
+    "value": "usr-1"
+  },
+  {
+    "item_id": "item-1004",
+    "column_id": "due",
+    "text": "2026-06-05",
+    "value": ""
+  },
+  {
+    "item_id": "item-2001",
+    "column_id": "status",
+    "text": "Working on it",
+    "value": ""
+  },
+  {
+    "item_id": "item-2001",
+    "column_id": "owner",
+    "text": "Marco Bianchi",
+    "value": "usr-3"
+  },
+  {
+    "item_id": "item-2001",
+    "column_id": "severity",
+    "text": "High",
+    "value": ""
+  },
+  {
+    "item_id": "item-2002",
+    "column_id": "status",
+    "text": "Done",
+    "value": ""
+  },
+  {
+    "item_id": "item-2002",
+    "column_id": "owner",
+    "text": "Helena Park",
+    "value": "usr-2"
+  },
+  {
+    "item_id": "item-2002",
+    "column_id": "severity",
+    "text": "Medium",
+    "value": ""
+  },
+  {
+    "item_id": "item-3001",
+    "column_id": "status",
+    "text": "Todo",
+    "value": ""
+  },
+  {
+    "item_id": "item-3001",
+    "column_id": "owner",
+    "text": "Sara Okonkwo",
+    "value": "usr-4"
+  },
+  {
+    "item_id": "item-3001",
+    "column_id": "launch",
+    "text": "2026-07-01",
+    "value": ""
+  },
+  {
+    "item_id": "item-3002",
+    "column_id": "status",
+    "text": "Done",
+    "value": ""
+  },
+  {
+    "item_id": "item-3002",
+    "column_id": "owner",
+    "text": "Tom Becker",
+    "value": "usr-5"
+  },
+  {
+    "item_id": "item-3002",
+    "column_id": "launch",
+    "text": "2026-05-09",
+    "value": ""
+  }
+]

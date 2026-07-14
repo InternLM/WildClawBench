@@ -1,0 +1,68 @@
+[
+  {
+    "id": "cus_Nb1Aurora",
+    "name": "Aurora Bistro LLC",
+    "email": "billing@aurorabistro.com",
+    "description": "Monthly POS subscription",
+    "currency": "usd",
+    "delinquent": "false",
+    "balance": "0",
+    "created": "1714579200",
+    "phone": "+14155550101"
+  },
+  {
+    "id": "cus_Nb2Helix",
+    "name": "Helix Robotics Inc",
+    "email": "ap@helixrobotics.io",
+    "description": "Enterprise plan",
+    "currency": "usd",
+    "delinquent": "false",
+    "balance": "-2500",
+    "created": "1709251200",
+    "phone": "+14155550102"
+  },
+  {
+    "id": "cus_Nb3Lumen",
+    "name": "Lumen Design Studio",
+    "email": "accounts@lumendesign.co",
+    "description": "Pro plan",
+    "currency": "usd",
+    "delinquent": "false",
+    "balance": "0",
+    "created": "1717200000",
+    "phone": "+14155550103"
+  },
+  {
+    "id": "cus_Nb4Pelagic",
+    "name": "Pelagic Freight Co",
+    "email": "finance@pelagicfreight.com",
+    "description": "Net-30 invoicing",
+    "currency": "usd",
+    "delinquent": "true",
+    "balance": "15000",
+    "created": "1701388800",
+    "phone": "+14155550104"
+  },
+  {
+    "id": "cus_Nb5Verdant",
+    "name": "Verdant Farms",
+    "email": "hello@verdantfarms.org",
+    "description": "Seasonal billing",
+    "currency": "usd",
+    "delinquent": "false",
+    "balance": "0",
+    "created": "1719792000",
+    "phone": "+14155550105"
+  },
+  {
+    "id": "cus_Nb6Quanta",
+    "name": "Quanta Analytics",
+    "email": "billing@quanta.ai",
+    "description": "Annual plan",
+    "currency": "usd",
+    "delinquent": "false",
+    "balance": "0",
+    "created": "1706745600",
+    "phone": "+14155550106"
+  }
+]

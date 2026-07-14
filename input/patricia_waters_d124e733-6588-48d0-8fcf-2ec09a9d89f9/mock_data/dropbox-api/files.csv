@@ -1,0 +1,13 @@
+id,name,path_lower,path_display,is_folder,size,client_modified,rev
+f-0,Reading list.txt,/personal/reading.txt,/personal/reading.txt,false,3200,2026-09-15T10:00:00Z,rev0000
+f-1,Reflective notes.docx,/personal/reflective.docx,/personal/reflective.docx,false,96000,2026-09-15T10:00:00Z,rev0001
+f-2,Sea swim log.csv,/personal/swim_log.csv,/personal/swim_log.csv,false,9100,2026-09-15T10:00:00Z,rev0002
+f-3,Half marathon plan.docx,/personal/run_plan.docx,/personal/run_plan.docx,false,78000,2026-09-15T10:00:00Z,rev0003
+f-4,Family photos index.txt,/family/photos/index.txt,/family/photos/index.txt,false,1800,2026-09-15T10:00:00Z,rev0004
+f-5,Recipes.docx,/family/recipes.docx,/family/recipes.docx,false,120000,2026-09-15T10:00:00Z,rev0005
+f-6,Patio plan.docx,/home/patio.docx,/home/patio.docx,false,41000,2026-09-15T10:00:00Z,rev0006
+f-7,Grocery list.txt,/family/grocery.txt,/family/grocery.txt,false,900,2026-09-15T10:00:00Z,rev0007
+f-8,CPD certificate.pdf,/cpd/certificate.pdf,/cpd/certificate.pdf,false,150000,2026-09-15T10:00:00Z,rev0008
+f-9,Market notes.txt,/personal/market.txt,/personal/market.txt,false,1200,2026-09-15T10:00:00Z,rev0009
+f-10,Yoga sequence.docx,/personal/yoga.docx,/personal/yoga.docx,false,52000,2026-09-15T10:00:00Z,rev0010
+f-11,Run routes.csv,/personal/routes.csv,/personal/routes.csv,false,5400,2026-09-15T10:00:00Z,rev0011
