@@ -505,7 +505,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
   </div>
 
   <div class="gnav-right" style="display:flex;align-items:center;gap:10px">
-    <span>Updated 2026-05-12</span>
+    <span>Updated 2026-07-15</span>
     <a href="https://github.com/InternLM/WildClawBench" target="_blank" style="display:flex;align-items:center;color:var(--ink3);transition:color .15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--ink3)'">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
@@ -528,11 +528,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
         <div class="hp-title">
           <span class="hp-wild">Wild</span><span class="hp-claw">Claw</span><span class="hp-bench">Bench</span>
         </div>
-        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 19 frontier models on the OpenClaw harness.</div>
+        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 20 frontier models on the OpenClaw harness.</div>
       </div>
       <div class="hp-stats">
         <div class="hps">
-          <span class="hps-val red">19</span>
+          <span class="hps-val red">20</span>
           <span class="hps-label">Models</span>
         </div>
         <div class="hps">
@@ -590,6 +590,8 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <span class="fn-item"><sup>†</sup> Gemini 3.1 Pro was evaluated in <em>low-effort mode</em>; scores may not reflect peak capability.</span>
     <span class="fn-sep">·</span>
     <span class="fn-item"><sup>‡</sup> OpenClaw leaderboard matches the technical report Main results table; totals are full 60-task suite time/cost.</span>
+    <span class="fn-sep">·</span>
+    <span class="fn-item"><sup>§</sup> Muse Spark 1.1 scores and time are the mean of three runs. Model-inference cost is the mean of Runs 2 and 3, excluding an anomalously long Run 1 trace on Code Intelligence task 7, and is estimated at $1.25/M input, $0.15/M cached input, and $4.25/M output tokens. Grader and external-tool costs are excluded.</span>
   </div>
 
   <!-- harness comparison (static) -->
@@ -713,6 +715,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="cleg">
       <div class="cli"><span class="cld" style="background:#8c2416"></span>Anthropic</div>
       <div class="cli"><span class="cld" style="background:#1c3448"></span>OpenAI</div>
+      <div class="cli"><span class="cld" style="background:#0866ff"></span>Meta</div>
       <div class="cli"><span class="cld" style="background:#265238"></span>Google</div>
       <div class="cli"><span class="cld" style="background:#604840"></span>Xiaomi / MiMo</div>
       <div class="cli"><span class="cld" style="background:#2563a8"></span>DeepSeek</div>
@@ -739,7 +742,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="hp-stats">
       <div class="hps"><span class="hps-val red">6</span><span class="hps-label">Categories</span></div>
       <div class="hps"><span class="hps-val">60</span><span class="hps-label">Total Tasks</span></div>
-      <div class="hps"><span class="hps-val red">14</span><span class="hps-label">Models</span></div>
+      <div class="hps"><span class="hps-val red">15</span><span class="hps-label">Models</span></div>
     </div>
   </div>
 
@@ -961,6 +964,7 @@ document.querySelectorAll('.ntab').forEach(btn=>btn.addEventListener('click',()=
 const MODELS=[
   {id:0,name:'Claude Opus 4.7',  org:'Anthropic',      prov:'Anthropic',color:'#8c2416',successRate:62.20, elapsed:19680, cost:77.400, change: 0,cat:'claude'},
   {id:1,name:'GPT-5.5',          org:'OpenAI',         prov:'OpenAI',   color:'#1c3448',successRate:58.20, elapsed:15720, cost:37.800, change: 0,cat:'gpt'},
+  {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:64.058, change: 0,cat:'other'},
   {id:2,name:'Claude Opus 4.6',  org:'Anthropic',      prov:'Anthropic',color:'#a83c14',successRate:51.60, elapsed:30480, cost:81.000, change: 0,cat:'claude'},
   {id:3,name:'GPT-5.4',          org:'OpenAI',         prov:'OpenAI',   color:'#304860',successRate:50.30, elapsed:21000, cost:19.800, change: 0,cat:'gpt'},
   {id:4,name:'GLM 5.1',          org:'Zhipu AI',       prov:'Zhipu',    color:'#2d5070',successRate:48.20, elapsed:30900, cost:34.800, change: 0,cat:'other'},
@@ -987,6 +991,7 @@ const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:
 const SPLIT_SCORES={
   0:  {mm:58.5, pt:65.0, mmElapsed:12589, ptElapsed:7091, mmCost:43.420, ptCost:33.980}, // Claude Opus 4.7
   1:  {mm:63.0, pt:54.5, mmElapsed:10327, ptElapsed:5393, mmCost:17.160, ptCost:20.640}, // GPT 5.5
+  19: {mm:53.7, pt:55.7, mmElapsed:13166, ptElapsed:8883, mmCost:32.710, ptCost:31.348}, // Muse Spark 1.1 (3-run scores/time; Run 2-3 mean estimated cost)
   4:  {mm:40.7, pt:53.9, mmElapsed:18938, ptElapsed:11962, mmCost:15.340, ptCost:19.460}, // GLM 5.1
   5:  {mm:33.6, pt:51.4, mmElapsed:22230, ptElapsed:14070, mmCost: 4.940, ptCost: 7.060}, // DeepSeek V4 Pro
   6:  {mm:36.2, pt:48.1, mmElapsed:16349, ptElapsed:10711, mmCost: 4.420, ptCost: 8.180}, // MiMo V2.5 Pro
@@ -1035,12 +1040,13 @@ const CATEGORIES=
       {modelId:15,rate:21.44,elapsed:4740,cost:2.110},
       {modelId:16,rate:18.57,elapsed:7851,cost:3.364},
       {modelId:7,rate:29.84,elapsed:4419,cost:3.823},
+      {modelId:19,rate:47.52,elapsed:4910,cost:18.542},
     ]
   },
   {
     id:'02', key:'code', icon:'💻',
     name:'Code Intelligence', code:'02_Code',
-    accentClass:'cat-c2', tasks:12, topModel:'Claude Opus 4.6',
+    accentClass:'cat-c2', tasks:12, topModel:'Muse Spark 1.1',
     scores:[
       {modelId:2,rate:60.63,elapsed:9662, cost:27.010},
       {modelId:3,rate:47.82,elapsed:5572, cost:5.694},
@@ -1056,6 +1062,7 @@ const CATEGORIES=
       {modelId:15,rate:28.23,elapsed:8865, cost:3.631},
       {modelId:16,rate:14.95,elapsed:11645,cost:2.241},
       {modelId:7,rate:38.16,elapsed:7943, cost:3.268},
+      {modelId:19,rate:60.91,elapsed:7038,cost:30.119},
     ]
   },
   {
@@ -1077,12 +1084,13 @@ const CATEGORIES=
       {modelId:15,rate:35.33,elapsed:1661,cost:0.476},
       {modelId:16,rate:70.43,elapsed:1452,cost:0.154},
       {modelId:7,rate:68.30,elapsed:1568,cost:1.074},
+      {modelId:19,rate:68.58,elapsed:1041,cost:3.152},
     ]
   },
   {
     id:'04', key:'search', icon:'🔍',
     name:'Search & Retrieval', code:'04_Search',
-    accentClass:'cat-c4', tasks:11, topModel:'MiMo V2 Pro',
+    accentClass:'cat-c4', tasks:11, topModel:'Muse Spark 1.1',
     scores:[
       {modelId:2,rate:36.42,elapsed:3541, cost:14.520},
       {modelId:3,rate:52.30,elapsed:3062, cost:3.663},
@@ -1098,12 +1106,13 @@ const CATEGORIES=
       {modelId:15,rate:32.09,elapsed:3829,cost:2.037},
       {modelId:16,rate:38.71,elapsed:3821,cost:2.462},
       {modelId:7,rate:52.63,elapsed:1971,cost:2.177},
+      {modelId:19,rate:69.85,elapsed:2866,cost:10.538},
     ]
   },
   {
     id:'05', key:'creative', icon:'✨',
     name:'Creative Synthesis', code:'05_Creative',
-    accentClass:'cat-c5', tasks:11, topModel:'GPT-5.4',
+    accentClass:'cat-c5', tasks:11, topModel:'Muse Spark 1.1',
     scores:[
       {modelId:2,rate:31.02,elapsed:8101, cost:9.510},
       {modelId:3,rate:38.28,elapsed:7164, cost:4.013},
@@ -1119,6 +1128,7 @@ const CATEGORIES=
       {modelId:15,rate:36.07,elapsed:5946,cost:1.593},
       {modelId:16,rate:10.63,elapsed:6444,cost:1.093},
       {modelId:7,rate:30.83,elapsed:5712,cost:0.830},
+      {modelId:19,rate:44.01,elapsed:5146,cost:8.317},
     ]
   },
   {
@@ -1140,6 +1150,7 @@ const CATEGORIES=
       {modelId:15,rate:33.55,elapsed:967, cost:0.385},
       {modelId:16,rate:29.80,elapsed:1307,cost:0.343},
       {modelId:7,rate:47.36,elapsed:791, cost:0.220},
+      {modelId:19,rate:42.00,elapsed:1048,cost:3.271},
     ]
   },
 ];
