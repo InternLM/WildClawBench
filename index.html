@@ -962,7 +962,7 @@ document.querySelectorAll('.ntab').forEach(btn=>btn.addEventListener('click',()=
 const MODELS=[
   {id:0,name:'Claude Opus 4.7',  org:'Anthropic',      prov:'Anthropic',color:'#8c2416',successRate:62.20, elapsed:19680, cost:77.400, change: 0,cat:'claude'},
   {id:1,name:'GPT-5.5',          org:'OpenAI',         prov:'OpenAI',   color:'#1c3448',successRate:58.20, elapsed:15720, cost:37.800, change: 0,cat:'gpt'},
-  {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:64.058, change: 0,cat:'other'},
+  {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:23.591, change: 0,cat:'other'},
   {id:2,name:'Claude Opus 4.6',  org:'Anthropic',      prov:'Anthropic',color:'#a83c14',successRate:51.60, elapsed:30480, cost:81.000, change: 0,cat:'claude'},
   {id:3,name:'GPT-5.4',          org:'OpenAI',         prov:'OpenAI',   color:'#304860',successRate:50.30, elapsed:21000, cost:19.800, change: 0,cat:'gpt'},
   {id:4,name:'GLM 5.1',          org:'Zhipu AI',       prov:'Zhipu',    color:'#2d5070',successRate:48.20, elapsed:30900, cost:34.800, change: 0,cat:'other'},
@@ -989,7 +989,7 @@ const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:
 const SPLIT_SCORES={
   0:  {mm:58.5, pt:65.0, mmElapsed:12589, ptElapsed:7091, mmCost:43.420, ptCost:33.980}, // Claude Opus 4.7
   1:  {mm:63.0, pt:54.5, mmElapsed:10327, ptElapsed:5393, mmCost:17.160, ptCost:20.640}, // GPT 5.5
-  19: {mm:53.7, pt:55.7, mmElapsed:13166, ptElapsed:8883, mmCost:32.710, ptCost:31.348}, // Muse Spark 1.1 (3-run scores/time; Run 2-3 mean estimated cost)
+  19: {mm:53.7, pt:55.7, mmElapsed:13166, ptElapsed:8883, mmCost:11.271, ptCost:12.320}, // Muse Spark 1.1
   4:  {mm:40.7, pt:53.9, mmElapsed:18938, ptElapsed:11962, mmCost:15.340, ptCost:19.460}, // GLM 5.1
   5:  {mm:33.6, pt:51.4, mmElapsed:22230, ptElapsed:14070, mmCost: 4.940, ptCost: 7.060}, // DeepSeek V4 Pro
   6:  {mm:36.2, pt:48.1, mmElapsed:16349, ptElapsed:10711, mmCost: 4.420, ptCost: 8.180}, // MiMo V2.5 Pro
