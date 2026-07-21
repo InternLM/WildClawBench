@@ -146,6 +146,10 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9000;
    TABLES
 ═══════════════════════════════════════════════════════ */
 .tw{overflow-x:auto}
+.harness-table{table-layout:fixed;min-width:1184px}
+.harness-table col.harness-model-col{width:140px}
+.harness-table col.harness-metric-col{width:calc((100% - 140px)/12)}
+.harness-table th[rowspan],.harness-table td:first-child{white-space:nowrap}
 table{width:100%;border-collapse:collapse;font-size:16px}
 thead th{padding:12px 18px;text-align:left;font-family:var(--fm);font-size:11.5px;letter-spacing:2px;text-transform:uppercase;
   color:var(--ink3);background:var(--surf2);border-bottom:1px solid var(--g);
@@ -505,7 +509,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
   </div>
 
   <div class="gnav-right" style="display:flex;align-items:center;gap:10px">
-    <span>Updated 2026-07-15</span>
+    <span>Updated 2026-07-20</span>
     <a href="https://github.com/InternLM/WildClawBench" target="_blank" style="display:flex;align-items:center;color:var(--ink3);transition:color .15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--ink3)'">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
@@ -528,11 +532,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
         <div class="hp-title">
           <span class="hp-wild">Wild</span><span class="hp-claw">Claw</span><span class="hp-bench">Bench</span>
         </div>
-        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 20 frontier models on the OpenClaw harness.</div>
+        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 26 frontier models on the OpenClaw harness.</div>
       </div>
       <div class="hp-stats">
         <div class="hps">
-          <span class="hps-val red">20</span>
+          <span class="hps-val red">26</span>
           <span class="hps-label">Models</span>
         </div>
         <div class="hps">
@@ -540,7 +544,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
           <span class="hps-label">Tasks</span>
         </div>
         <div class="hps">
-          <span class="hps-val red">62.2%</span>
+          <span class="hps-val red">67.2%</span>
           <span class="hps-label">Top Score · OpenClaw</span>
         </div>
       </div>
@@ -552,8 +556,8 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="msw-tabs">
       <button class="mt on" data-m="successRate">
         <span class="mt-label">Overall Score</span>
-        <span class="mt-val">62.2%</span>
-        <span class="mt-sub">Best — Claude Opus 4.7 (OpenClaw)</span>
+        <span class="mt-val">67.2%</span>
+        <span class="mt-sub">Best — GPT-5.6 Sol (OpenClaw)</span>
       </button>
       <button class="mt" data-m="elapsed">
         <span class="mt-label">Speed</span>
@@ -562,8 +566,8 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
       </button>
       <button class="mt" data-m="cost">
         <span class="mt-label">Cost Efficiency</span>
-        <span class="mt-val">$6.60</span>
-        <span class="mt-sub">Cheapest — Step 3.5 Flash</span>
+        <span class="mt-val">$2.13</span>
+        <span class="mt-sub">Cheapest — Hy3</span>
       </button>
     </div>
     <div class="msw-body">
@@ -590,7 +594,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <span class="fn-item"><sup>†</sup> Gemini 3.1 Pro was evaluated in <em>low-effort mode</em>; scores may not reflect peak capability.</span>
     <span class="fn-sep">·</span>
     <span class="fn-item"><sup>‡</sup> OpenClaw leaderboard matches the technical report Main results table; totals are full 60-task suite time/cost.</span>
-</div>
+  </div>
 
   <!-- harness comparison (static) -->
   <div class="sect fi fi-2"><h2>Harness Comparison</h2></div>
@@ -598,7 +602,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="tw" style="padding:0">
       <p style="padding:14px 24px;color:var(--ink3);font-size:12px;line-height:1.7;border-bottom:1px solid var(--g);margin:0">
         Per-task averages (minutes / USD). <strong>Bold</strong> = best harness for that model.</p>
-      <table style="font-size:13px">
+      <table class="harness-table" style="font-size:13px">
+        <colgroup>
+          <col class="harness-model-col">
+          <col class="harness-metric-col" span="12">
+        </colgroup>
         <thead>
           <tr>
             <th rowspan="2">Model</th>
@@ -740,7 +748,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="hp-stats">
       <div class="hps"><span class="hps-val red">6</span><span class="hps-label">Categories</span></div>
       <div class="hps"><span class="hps-val">60</span><span class="hps-label">Total Tasks</span></div>
-      <div class="hps"><span class="hps-val red">15</span><span class="hps-label">Models</span></div>
+      <div class="hps"><span class="hps-val red">21</span><span class="hps-label">Models</span></div>
     </div>
   </div>
 
@@ -960,11 +968,17 @@ document.querySelectorAll('.ntab').forEach(btn=>btn.addEventListener('click',()=
    LEADERBOARD DATA
 ═══════════════════════════════════════════════════════ */
 const MODELS=[
+  {id:20,name:'GPT-5.6 Sol',      org:'OpenAI',         prov:'OpenAI',   color:'#0d4f73',successRate:67.18, elapsed:13302, cost:56.775, change: 0,cat:'gpt'},
   {id:0,name:'Claude Opus 4.7',  org:'Anthropic',      prov:'Anthropic',color:'#8c2416',successRate:62.20, elapsed:19680, cost:77.400, change: 0,cat:'claude'},
+  {id:21,name:'Claude Fable 5',  org:'Anthropic',      prov:'Anthropic',color:'#b6532d',successRate:62.00, elapsed:19656, cost:87.709, change: 0,cat:'claude'},
   {id:1,name:'GPT-5.5',          org:'OpenAI',         prov:'OpenAI',   color:'#1c3448',successRate:58.20, elapsed:15720, cost:37.800, change: 0,cat:'gpt'},
+  {id:22,name:'Grok 4.5',        org:'xAI',            prov:'xAI',      color:'#087f78',successRate:57.51, elapsed:21521, cost:28.432, change: 0,cat:'other'},
   {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:23.591, change: 0,cat:'other'},
+  {id:23,name:'Kimi K3',         org:'Moonshot AI',    prov:'Moonshot', color:'#6d28d9',successRate:54.47, elapsed:29306, cost:40.079, change: 0,cat:'other'},
+  {id:24,name:'GLM 5.2',         org:'Zhipu AI',       prov:'Zhipu',    color:'#2563eb',successRate:54.19, elapsed:26510, cost:17.098, change: 0,cat:'other'},
   {id:2,name:'Claude Opus 4.6',  org:'Anthropic',      prov:'Anthropic',color:'#a83c14',successRate:51.60, elapsed:30480, cost:81.000, change: 0,cat:'claude'},
   {id:3,name:'GPT-5.4',          org:'OpenAI',         prov:'OpenAI',   color:'#304860',successRate:50.30, elapsed:21000, cost:19.800, change: 0,cat:'gpt'},
+  {id:25,name:'Hy3',             org:'Tencent',        prov:'Tencent',  color:'#d94841',successRate:49.70, elapsed:20288, cost: 2.126, change: 0,cat:'other'},
   {id:4,name:'GLM 5.1',          org:'Zhipu AI',       prov:'Zhipu',    color:'#2d5070',successRate:48.20, elapsed:30900, cost:34.800, change: 0,cat:'other'},
   {id:5,name:'DeepSeek V4 Pro',  org:'DeepSeek',       prov:'DeepSeek', color:'#2563a8',successRate:43.70, elapsed:36300, cost:12.000, change: 0,cat:'deepseek'},
   {id:6,name:'MiMo V2.5 Pro',    org:'Xiaomi',         prov:'Xiaomi',   color:'#604840',successRate:43.00, elapsed:27060, cost:12.600, change: 0,cat:'other'},
@@ -981,7 +995,10 @@ const MODELS=[
   {id:17,name:'Step 3.5 Flash',  org:'StepFun',        prov:'StepFun',  color:'#3c5840',successRate:26.70, elapsed:25800, cost: 6.600, change: 0,cat:'other'},
   {id:18,name:'Grok 4.20 Beta',  org:'xAI',           prov:'xAI',       color:'#2a4858',successRate:19.30, elapsed: 5640, cost: 9.600, change: 0,cat:'other'},
 ];
-const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:{label:'Elapsed Time',fmt:v=>(v/60).toFixed(0)+'min'},cost:{label:'Total Cost',fmt:v=>'$'+v.toFixed(2)}};
+/* Display USD values with explicit round-half-up rounding to two decimals. */
+const roundUsd=v=>Math.round((v+1e-9)*100)/100;
+const fmtUsd=v=>'$'+roundUsd(v).toFixed(2);
+const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:{label:'Elapsed Time',fmt:v=>(v/60).toFixed(0)+'min'},cost:{label:'Total Cost',fmt:fmtUsd}};
 
 /* ─── Multimodal / Pure-text split scores (26 mm tasks, 34 pt tasks) ─── */
 /* Split scores use the same one-decimal values as the paper table. Elapsed time
@@ -989,7 +1006,13 @@ const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:
 const SPLIT_SCORES={
   0:  {mm:58.5, pt:65.0, mmElapsed:12589, ptElapsed:7091, mmCost:43.420, ptCost:33.980}, // Claude Opus 4.7
   1:  {mm:63.0, pt:54.5, mmElapsed:10327, ptElapsed:5393, mmCost:17.160, ptCost:20.640}, // GPT 5.5
-  19: {mm:53.7, pt:55.7, mmElapsed:13166, ptElapsed:8883, mmCost:11.271, ptCost:12.320}, // Muse Spark 1.1
+  19: {mm:53.7, pt:55.7, mmElapsed:13166, ptElapsed:8883, mmCost:11.271, ptCost:12.320}, // Muse Spark 1.1 (published leaderboard cost)
+  20: {mm:69.3, pt:65.6, mmElapsed:8486,  ptElapsed:4816, mmCost:26.931, ptCost:29.844}, // GPT-5.6 Sol
+  21: {mm:68.6, pt:57.0, mmElapsed:12153, ptElapsed:7503, mmCost:50.771, ptCost:36.938}, // Claude Fable 5 (steady-state cache estimate)
+  22: {mm:55.3, pt:59.2, mmElapsed:14251, ptElapsed:7270, mmCost:16.142, ptCost:12.290}, // Grok 4.5
+  23: {mm:43.8, pt:62.7, mmElapsed:17856, ptElapsed:11450,mmCost:22.427, ptCost:17.652}, // Kimi K3
+  24: {mm:50.9, pt:56.7, mmElapsed:15936, ptElapsed:10574,mmCost: 7.687, ptCost: 9.411}, // GLM 5.2
+  25: {mm:43.1, pt:54.8, mmElapsed:12090, ptElapsed:8198, mmCost: 1.126, ptCost: 1.000}, // Hy3 (paid-rate estimate)
   4:  {mm:40.7, pt:53.9, mmElapsed:18938, ptElapsed:11962, mmCost:15.340, ptCost:19.460}, // GLM 5.1
   5:  {mm:33.6, pt:51.4, mmElapsed:22230, ptElapsed:14070, mmCost: 4.940, ptCost: 7.060}, // DeepSeek V4 Pro
   6:  {mm:36.2, pt:48.1, mmElapsed:16349, ptElapsed:10711, mmCost: 4.420, ptCost: 8.180}, // MiMo V2.5 Pro
@@ -1022,7 +1045,7 @@ const CATEGORIES=
   {
     id:'01', key:'productivity', icon:'📋',
     name:'Productivity & Flow', code:'01_Productivity',
-    accentClass:'cat-c1', tasks:10, topModel:'Claude Opus 4.6',
+    accentClass:'cat-c1', tasks:10, topModel:'GPT-5.6 Sol',
     scores:[
       {modelId:2,rate:59.43,elapsed:5401, cost:19.500},
       {modelId:3,rate:53.96,elapsed:3429, cost:4.460},
@@ -1039,12 +1062,18 @@ const CATEGORIES=
       {modelId:16,rate:18.57,elapsed:7851,cost:3.364},
       {modelId:7,rate:29.84,elapsed:4419,cost:3.823},
       {modelId:19,rate:47.52,elapsed:4910,cost:6.168},
+      {modelId:20,rate:67.24,elapsed:1723,cost:15.321},
+      {modelId:21,rate:59.17,elapsed:4937,cost:23.022},
+      {modelId:22,rate:61.39,elapsed:3339,cost:5.628},
+      {modelId:23,rate:38.17,elapsed:5994,cost:10.408},
+      {modelId:24,rate:38.76,elapsed:4609,cost:3.454},
+      {modelId:25,rate:49.25,elapsed:3631,cost:0.547},
     ]
   },
   {
     id:'02', key:'code', icon:'💻',
     name:'Code Intelligence', code:'02_Code',
-    accentClass:'cat-c2', tasks:12, topModel:'Muse Spark 1.1',
+    accentClass:'cat-c2', tasks:12, topModel:'Claude Fable 5',
     scores:[
       {modelId:2,rate:60.63,elapsed:9662, cost:27.010},
       {modelId:3,rate:47.82,elapsed:5572, cost:5.694},
@@ -1061,12 +1090,18 @@ const CATEGORIES=
       {modelId:16,rate:14.95,elapsed:11645,cost:2.241},
       {modelId:7,rate:38.16,elapsed:7943, cost:3.268},
       {modelId:19,rate:60.91,elapsed:7038,cost:8.517},
+      {modelId:20,rate:74.26,elapsed:3745,cost:15.473},
+      {modelId:21,rate:75.67,elapsed:5522,cost:24.253},
+      {modelId:22,rate:59.10,elapsed:7318,cost:10.105},
+      {modelId:23,rate:55.80,elapsed:9383,cost:13.151},
+      {modelId:24,rate:64.34,elapsed:8282,cost:4.547},
+      {modelId:25,rate:52.64,elapsed:5122,cost:0.591},
     ]
   },
   {
     id:'03', key:'social', icon:'💬',
     name:'Social Interaction', code:'03_Social',
-    accentClass:'cat-c3', tasks:6, topModel:'GPT-5.4',
+    accentClass:'cat-c3', tasks:6, topModel:'Grok 4.5',
     scores:[
       {modelId:2,rate:71.89,elapsed:1860, cost:4.390},
       {modelId:3,rate:87.62,elapsed:1041, cost:1.283},
@@ -1083,12 +1118,18 @@ const CATEGORIES=
       {modelId:16,rate:70.43,elapsed:1452,cost:0.154},
       {modelId:7,rate:68.30,elapsed:1568,cost:1.074},
       {modelId:19,rate:68.58,elapsed:1041,cost:1.230},
+      {modelId:20,rate:86.68,elapsed:901,cost:2.534},
+      {modelId:21,rate:85.23,elapsed:1226,cost:5.977},
+      {modelId:22,rate:91.80,elapsed:1028,cost:1.723},
+      {modelId:23,rate:76.82,elapsed:2328,cost:2.453},
+      {modelId:24,rate:90.72,elapsed:1481,cost:0.944},
+      {modelId:25,rate:73.71,elapsed:1217,cost:0.145},
     ]
   },
   {
     id:'04', key:'search', icon:'🔍',
     name:'Search & Retrieval', code:'04_Search',
-    accentClass:'cat-c4', tasks:11, topModel:'Muse Spark 1.1',
+    accentClass:'cat-c4', tasks:11, topModel:'GPT-5.6 Sol',
     scores:[
       {modelId:2,rate:36.42,elapsed:3541, cost:14.520},
       {modelId:3,rate:52.30,elapsed:3062, cost:3.663},
@@ -1105,12 +1146,18 @@ const CATEGORIES=
       {modelId:16,rate:38.71,elapsed:3821,cost:2.462},
       {modelId:7,rate:52.63,elapsed:1971,cost:2.177},
       {modelId:19,rate:69.85,elapsed:2866,cost:3.973},
+      {modelId:20,rate:77.27,elapsed:1940,cost:10.655},
+      {modelId:21,rate:63.18,elapsed:1948,cost:8.931},
+      {modelId:22,rate:47.73,elapsed:3397,cost:4.750},
+      {modelId:23,rate:69.09,elapsed:3111,cost:4.620},
+      {modelId:24,rate:56.36,elapsed:5027,cost:5.232},
+      {modelId:25,rate:57.27,elapsed:2902,cost:0.260},
     ]
   },
   {
     id:'05', key:'creative', icon:'✨',
     name:'Creative Synthesis', code:'05_Creative',
-    accentClass:'cat-c5', tasks:11, topModel:'Muse Spark 1.1',
+    accentClass:'cat-c5', tasks:11, topModel:'GPT-5.6 Sol',
     scores:[
       {modelId:2,rate:31.02,elapsed:8101, cost:9.510},
       {modelId:3,rate:38.28,elapsed:7164, cost:4.013},
@@ -1127,6 +1174,12 @@ const CATEGORIES=
       {modelId:16,rate:10.63,elapsed:6444,cost:1.093},
       {modelId:7,rate:30.83,elapsed:5712,cost:0.830},
       {modelId:19,rate:44.01,elapsed:5146,cost:2.236},
+      {modelId:20,rate:65.22,elapsed:4062,cost:9.877},
+      {modelId:21,rate:59.47,elapsed:5655,cost:22.731},
+      {modelId:22,rate:60.14,elapsed:5906,cost:5.187},
+      {modelId:23,rate:38.75,elapsed:7508,cost:8.136},
+      {modelId:24,rate:41.59,elapsed:6262,cost:2.213},
+      {modelId:25,rate:35.96,elapsed:6587,cost:0.485},
     ]
   },
   {
@@ -1149,6 +1202,12 @@ const CATEGORIES=
       {modelId:16,rate:29.80,elapsed:1307,cost:0.343},
       {modelId:7,rate:47.36,elapsed:791, cost:0.220},
       {modelId:19,rate:42.00,elapsed:1048,cost:1.468},
+      {modelId:20,rate:38.00,elapsed:931,cost:2.914},
+      {modelId:21,rate:36.00,elapsed:368,cost:2.795},
+      {modelId:22,rate:39.00,elapsed:533,cost:1.040},
+      {modelId:23,rate:57.00,elapsed:982,cost:1.310},
+      {modelId:24,rate:47.00,elapsed:849,cost:0.707},
+      {modelId:25,rate:39.00,elapsed:829,cost:0.098},
     ]
   },
 ];
@@ -1231,7 +1290,7 @@ function renderActiveCat(){
                 <span class="cat-bar-val bv-r">${s.rate!==null?s.rate.toFixed(1)+'%':'—'}</span>
               </div></td>
               <td><span class="bv bv-t">${s.elapsed!==null?(s.elapsed/60).toFixed(0)+'<small style="color:var(--ink4)">min</small>':'—'}</span></td>
-              <td><span class="bv bv-c">${s.cost!==null?'$'+s.cost.toFixed(2):'—'}</span></td>
+              <td><span class="bv bv-c">${s.cost!==null?fmtUsd(s.cost):'—'}</span></td>
             </tr>`;
           }).join('')}</tbody>
         </table></div>
@@ -1441,7 +1500,7 @@ function initCatChart3D(uid,cat){
   }
   /* ── Axis labels ── */
   let cAxX='elapsed',cAxY='rate',cAxZ='cost';
-  const catAxes={rate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:{label:'Elapsed',fmt:v=>(v/60).toFixed(0)+'min'},cost:{label:'Cost',fmt:v=>'$'+v.toFixed(2)}};
+  const catAxes={rate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:{label:'Elapsed',fmt:v=>(v/60).toFixed(0)+'min'},cost:{label:'Cost',fmt:fmtUsd}};
   function _catMakeLabel(txt,hex){const cv=document.createElement('canvas');cv.width=220;cv.height=64;const cx=cv.getContext('2d');cx.fillStyle='rgba(240,234,216,.88)';cx.beginPath();if(cx.roundRect)cx.roundRect(3,3,214,58,10);else cx.rect(3,3,214,58);cx.fill();cx.fillStyle=hex;cx.font='bold 24px IBM Plex Mono,monospace';cx.textAlign='center';cx.textBaseline='middle';cx.fillText(txt,110,34);const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),transparent:true,depthTest:false}));sp.scale.set(.32,.09,1);return sp;}
   function _catMakeTick(txt,hex){const cv=document.createElement('canvas');cv.width=72;cv.height=28;const cx=cv.getContext('2d');cx.fillStyle=hex;cx.font='400 16px IBM Plex Mono,monospace';cx.textAlign='center';cx.textBaseline='middle';cx.fillText(txt,36,14);const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),transparent:true,depthTest:false}));sp.scale.set(.10,.04,1);return sp;}
   const _cLX=_catMakeLabel(catAxes[cAxX].label.toUpperCase(),'#8c2416');_cLX.position.set(L+.18,0,0);axG.add(_cLX);
@@ -1590,10 +1649,10 @@ function renderRate(){
   const th=document.getElementById('top-score-th');
   if(th){th.childNodes[0].textContent=(topMode==='multimodal'?'Multimodal Score':topMode==='puretext'?'Pure Text Score':'Overall Score')+' ';}
   const sorted=[...MODELS].sort((a,b)=>{const va=getTopMetric(a,mSt.rate.k),vb=getTopMetric(b,mSt.rate.k);return(va<vb?-1:va>vb?1:0)*mSt.rate.d;});
-  document.getElementById('tb-r').innerHTML=sorted.map((m,i)=>mkRow(m,i+1,'successRate','bf-r','bv-r',()=>getTopScore(m).toFixed(1)+'%',()=>getTopScore(m),m=>`<td><span class="bv bv-t">${(getModeElapsed(m,topMode)/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td><td><span class="bv bv-c">$${getModeCost(m,topMode).toFixed(2)}</span></td>`)).join('');
+  document.getElementById('tb-r').innerHTML=sorted.map((m,i)=>mkRow(m,i+1,'successRate','bf-r','bv-r',()=>getTopScore(m).toFixed(1)+'%',()=>getTopScore(m),m=>`<td><span class="bv bv-t">${(getModeElapsed(m,topMode)/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td><td><span class="bv bv-c">${fmtUsd(getModeCost(m,topMode))}</span></td>`)).join('');
 }
-function renderTime(){document.getElementById('tb-t').innerHTML=sortBy(mSt.time.k,mSt.time.d).map((m,i)=>mkRow(m,i+1,'elapsed','bf-t','bv-t',v=>(v/60).toFixed(0)+'min',v=>Math.max(5,v/mxT*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-c">$${m.cost.toFixed(2)}</span></td>`)).join('');}
-function renderCost(){document.getElementById('tb-c').innerHTML=sortBy(mSt.cost.k,mSt.cost.d).map((m,i)=>mkRow(m,i+1,'cost','bf-c','bv-c',v=>m.cost===0?'N/A':'$'+v.toFixed(2),v=>m.cost===0?0:Math.max(5,(1-v/mxC)*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-t">${(m.elapsed/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td>`)).join('');}
+function renderTime(){document.getElementById('tb-t').innerHTML=sortBy(mSt.time.k,mSt.time.d).map((m,i)=>mkRow(m,i+1,'elapsed','bf-t','bv-t',v=>(v/60).toFixed(0)+'min',v=>Math.max(5,v/mxT*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-c">${fmtUsd(m.cost)}</span></td>`)).join('');}
+function renderCost(){document.getElementById('tb-c').innerHTML=sortBy(mSt.cost.k,mSt.cost.d).map((m,i)=>mkRow(m,i+1,'cost','bf-c','bv-c',v=>m.free?'Free':m.cost===0?'N/A':fmtUsd(v),v=>m.free?100:m.cost===0?0:Math.max(5,(1-v/mxC)*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-t">${(m.elapsed/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td>`)).join('');}
 function renderAllM(){renderRate();renderTime();renderCost();}
 function handleHash(){
   const hash = location.hash.replace('#','') || 'home';
@@ -1740,8 +1799,8 @@ function bindScatterHover(cid,ttId){
     if(hit){
       tt.classList.add('show');tt.style.left=(mx+14)+'px';tt.style.top=(my-10)+'px';
       const xK=canvas._xKey,yK=canvas._yKey;
-      const xF=xK==='cost'?'$'+hit.m[xK].toFixed(2):xK==='elapsed'?(hit.m[xK]/60).toFixed(0)+'min':hit.m[xK].toFixed(1)+'%';
-      const yF=yK==='cost'?'$'+hit.m[yK].toFixed(2):yK==='elapsed'?(hit.m[yK]/60).toFixed(0)+'min':hit.m[yK].toFixed(1)+'%';
+      const xF=xK==='cost'?fmtUsd(hit.m[xK]):xK==='elapsed'?(hit.m[xK]/60).toFixed(0)+'min':hit.m[xK].toFixed(1)+'%';
+      const yF=yK==='cost'?fmtUsd(hit.m[yK]):yK==='elapsed'?(hit.m[yK]/60).toFixed(0)+'min':hit.m[yK].toFixed(1)+'%';
       tt.innerHTML=`<div class="plot-tt-name">${hit.m.name}</div><div class="plot-tt-row"><span>${AXES[xK].label}</span><strong>${xF}</strong></div><div class="plot-tt-row"><span>${AXES[yK].label}</span><strong>${yF}</strong></div><div class="plot-tt-row"><span>Provider</span><strong>${hit.m.prov}</strong></div>`;
     }else{tt.classList.remove('show');}
   });
@@ -1762,8 +1821,8 @@ function drawAccCostScatter(){
   const pw=W-PAD.left-PAD.right,ph=H-PAD.top-PAD.bottom;
   ctx.fillStyle='#faf6ee';ctx.fillRect(0,0,W,H);
 
-  // filter out models with cost=0 (no data)
-  const data=MODELS.filter(m=>m.cost>0);
+  // Keep verified free models while excluding models whose cost is unknown.
+  const data=MODELS.filter(m=>m.cost>0||m.free);
   let xMin=Math.min(...data.map(m=>m.cost));
   let xMax=Math.max(...data.map(m=>m.cost));
   let yMin=Math.min(...data.map(m=>m.successRate));
@@ -1859,7 +1918,7 @@ function drawAccCostScatter(){
         tt.classList.add('show');tt.style.left=(mx+14)+'px';tt.style.top=(my-10)+'px';
         tt.innerHTML=`<div class="plot-tt-name">${hit.m.name}</div>
           <div class="plot-tt-row"><span>Overall Score</span><strong>${hit.m.successRate.toFixed(1)}%</strong></div>
-          <div class="plot-tt-row"><span>Total Cost</span><strong>$${hit.m.cost.toFixed(2)}</strong></div>
+          <div class="plot-tt-row"><span>Total Cost</span><strong>${fmtUsd(hit.m.cost)}</strong></div>
           <div class="plot-tt-row"><span>Elapsed</span><strong>${(hit.m.elapsed/60).toFixed(0)}min</strong></div>
           <div class="plot-tt-row"><span>Provider</span><strong>${hit.m.prov}</strong></div>`;
       }else{tt.classList.remove('show');}
@@ -1909,7 +1968,7 @@ function renderRank(){
       <td><div class="mc"><span class="md" style="background:${m.color}"></span><div><div class="mn">${m.name}</div><div class="mo">${m.org}</div></div></div></td>
       <td class="bc"><div class="br"><div class="bb"><div class="bf bf-r" style="width:${sc.toFixed(1)}%"></div></div><span class="bv bv-r">${sc.toFixed(1)}%</span></div></td>
       <td><span class="bv bv-t">${(el/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td>
-      <td><span class="bv bv-c">$${co.toFixed(2)}</span></td>
+      <td><span class="bv bv-c">${m.free?'Free':fmtUsd(co)}</span></td>
       <td>${chH(m.change)}</td>
     </tr>`;}).join('');
   document.querySelectorAll('#tb-rank tr').forEach(tr=>tr.addEventListener('click',()=>{const id=+tr.dataset.id;rSt.sel=rSt.sel===id?null:id;renderRank();chart3d?.hl(rSt.sel);}));
@@ -1940,7 +1999,13 @@ function renderSplit(){
     return(va<vb?-1:va>vb?1:0)*splitSortDir;
   });
   document.getElementById('tb-split-body').innerHTML=sorted.map((m,i)=>{
-    const sp=SPLIT_SCORES[m.id]||{mm:0,pt:0};
+    const sp=SPLIT_SCORES[m.id];
+    if(!sp)return`<tr data-id="${m.id}" style="${rSt.sel===m.id?'background:rgba(140,36,22,.05);box-shadow:inset 3px 0 0 var(--scarlet)':''}">
+      <td class="rk rn">—</td>
+      <td><div style="display:flex;align-items:center;gap:8px"><span class="md" style="background:${m.color}"></span><span style="font-family:var(--fm);font-size:12px;white-space:nowrap">${m.name}</span></div></td>
+      <td><span class="bv" style="font-size:13px;color:var(--ink4)">—</span></td>
+      <td><span class="bv" style="font-size:13px;color:var(--ink4)">—</span></td>
+    </tr>`;
     const diff=sp.mm-sp.pt;
     const diffCol=diff>3?'color:var(--mr)':diff<-3?'color:var(--mt)':'color:var(--ink4)';
     const diffStr=(diff>0?'+':'')+diff.toFixed(1)+'%';
