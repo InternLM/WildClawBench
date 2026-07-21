@@ -966,7 +966,7 @@ document.querySelectorAll('.ntab').forEach(btn=>btn.addEventListener('click',()=
 const MODELS=[
   {id:20,name:'GPT-5.6 Sol',      org:'OpenAI',         prov:'OpenAI',   color:'#0d4f73',successRate:67.18, elapsed:13302, cost:56.775, change: 0,cat:'gpt'},
   {id:0,name:'Claude Opus 4.7',  org:'Anthropic',      prov:'Anthropic',color:'#8c2416',successRate:62.20, elapsed:19680, cost:77.400, change: 0,cat:'claude'},
-  {id:21,name:'Claude Fable 5',  org:'Anthropic',      prov:'Anthropic',color:'#b6532d',successRate:62.00, elapsed:19656, cost:87.709, change: 0,cat:'claude'},
+  {id:21,name:'Claude Fable 5',  org:'Anthropic',      prov:'Anthropic',color:'#b6532d',successRate:62.00, elapsed:19414, cost:87.709, change: 0,cat:'claude'},
   {id:1,name:'GPT-5.5',          org:'OpenAI',         prov:'OpenAI',   color:'#1c3448',successRate:58.20, elapsed:15720, cost:37.800, change: 0,cat:'gpt'},
   {id:22,name:'Grok 4.5',        org:'xAI',            prov:'xAI',      color:'#087f78',successRate:57.51, elapsed:21521, cost:28.432, change: 0,cat:'other'},
   {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:23.591, change: 0,cat:'other'},
@@ -1004,7 +1004,7 @@ const SPLIT_SCORES={
   1:  {mm:63.0, pt:54.5, mmElapsed:10327, ptElapsed:5393, mmCost:17.160, ptCost:20.640}, // GPT 5.5
   19: {mm:53.7, pt:55.7, mmElapsed:13166, ptElapsed:8883, mmCost:11.271, ptCost:12.320}, // Muse Spark 1.1 (published leaderboard cost)
   20: {mm:69.3, pt:65.6, mmElapsed:8486,  ptElapsed:4816, mmCost:26.931, ptCost:29.844}, // GPT-5.6 Sol
-  21: {mm:68.6, pt:57.0, mmElapsed:12153, ptElapsed:7503, mmCost:50.771, ptCost:36.938}, // Claude Fable 5 (steady-state cache estimate)
+  21: {mm:68.6, pt:57.0, mmElapsed:12153, ptElapsed:7261, mmCost:50.771, ptCost:36.938}, // Claude Fable 5 (steady-state cache estimate)
   22: {mm:55.3, pt:59.2, mmElapsed:14251, ptElapsed:7270, mmCost:16.142, ptCost:12.290}, // Grok 4.5
   23: {mm:43.8, pt:62.7, mmElapsed:17856, ptElapsed:11450,mmCost:22.427, ptCost:17.652}, // Kimi K3
   24: {mm:50.9, pt:56.7, mmElapsed:15936, ptElapsed:10574,mmCost: 7.687, ptCost: 9.411}, // GLM 5.2
@@ -1059,7 +1059,7 @@ const CATEGORIES=
       {modelId:7,rate:29.84,elapsed:4419,cost:3.823},
       {modelId:19,rate:47.52,elapsed:4910,cost:6.168},
       {modelId:20,rate:67.24,elapsed:1723,cost:15.321},
-      {modelId:21,rate:59.17,elapsed:4937,cost:23.022},
+      {modelId:21,rate:59.17,elapsed:4830,cost:23.022},
       {modelId:22,rate:61.39,elapsed:3339,cost:5.628},
       {modelId:23,rate:38.17,elapsed:5994,cost:10.408},
       {modelId:24,rate:38.76,elapsed:4609,cost:3.454},
@@ -1115,7 +1115,7 @@ const CATEGORIES=
       {modelId:7,rate:68.30,elapsed:1568,cost:1.074},
       {modelId:19,rate:68.58,elapsed:1041,cost:1.230},
       {modelId:20,rate:86.68,elapsed:901,cost:2.534},
-      {modelId:21,rate:85.23,elapsed:1226,cost:5.977},
+      {modelId:21,rate:85.23,elapsed:1106,cost:5.977},
       {modelId:22,rate:91.80,elapsed:1028,cost:1.723},
       {modelId:23,rate:76.82,elapsed:2328,cost:2.453},
       {modelId:24,rate:90.72,elapsed:1481,cost:0.944},
@@ -1199,7 +1199,7 @@ const CATEGORIES=
       {modelId:7,rate:47.36,elapsed:791, cost:0.220},
       {modelId:19,rate:42.00,elapsed:1048,cost:1.468},
       {modelId:20,rate:38.00,elapsed:931,cost:2.914},
-      {modelId:21,rate:36.00,elapsed:368,cost:2.795},
+      {modelId:21,rate:36.00,elapsed:353,cost:2.795},
       {modelId:22,rate:39.00,elapsed:533,cost:1.040},
       {modelId:23,rate:57.00,elapsed:982,cost:1.310},
       {modelId:24,rate:47.00,elapsed:849,cost:0.707},
