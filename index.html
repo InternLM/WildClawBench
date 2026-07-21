@@ -183,10 +183,6 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
 .bf-r{background:var(--mr)}.bv-r{color:var(--mr)}
 .bf-t{background:var(--mt)}.bv-t{color:var(--mt)}
 .bf-c{background:var(--mc)}.bv-c{color:var(--mc)}
-.ch-tag{font-family:var(--fm);font-size:9.5px;padding:2px 7px;border-radius:2px}
-.ch-up{color:var(--forest);background:rgba(38,82,56,.1)}
-.ch-dn{color:var(--scarlet);background:rgba(140,36,22,.1)}
-.ch-eq{color:var(--ink4)}
 
 /* ═══════════════════════════════════════════════════════
    TWO-COL
@@ -580,13 +576,13 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
             <button class="ftab" data-tmode="puretext">📝 PT</button>
           </div>
         </div>
-        <table><thead><tr><th>#</th><th>Model</th><th data-s1="successRate" class="sk" id="top-score-th">Overall Score <span class="sa">↓</span></th><th data-s1="elapsed">Elapsed <span class="sa">↕</span></th><th data-s1="cost">Cost <span class="sa">↕</span></th><th>Δ</th></tr></thead><tbody id="tb-r"></tbody></table>
+        <table><thead><tr><th>#</th><th>Model</th><th data-s1="successRate" class="sk" id="top-score-th">Overall Score <span class="sa">↓</span></th><th data-s1="elapsed">Elapsed <span class="sa">↕</span></th><th data-s1="cost">Cost <span class="sa">↕</span></th></tr></thead><tbody id="tb-r"></tbody></table>
       </div>
       <div class="mv" id="mv-elapsed">
-        <table><thead><tr><th>#</th><th>Model</th><th data-s2="elapsed" class="sk">Speed · Shorter = Faster <span class="sa">↑</span></th><th data-s2="successRate">Overall Score <span class="sa">↕</span></th><th data-s2="cost">Cost <span class="sa">↕</span></th><th>Δ</th></tr></thead><tbody id="tb-t"></tbody></table>
+        <table><thead><tr><th>#</th><th>Model</th><th data-s2="elapsed" class="sk">Speed · Shorter = Faster <span class="sa">↑</span></th><th data-s2="successRate">Overall Score <span class="sa">↕</span></th><th data-s2="cost">Cost <span class="sa">↕</span></th></tr></thead><tbody id="tb-t"></tbody></table>
       </div>
       <div class="mv" id="mv-cost">
-        <table><thead><tr><th>#</th><th>Model</th><th data-s3="cost" class="sk">Cost Efficiency (longer = cheaper) <span class="sa">↑</span></th><th data-s3="successRate">Overall Score <span class="sa">↕</span></th><th data-s3="elapsed">Elapsed <span class="sa">↕</span></th><th>Δ</th></tr></thead><tbody id="tb-c"></tbody></table>
+        <table><thead><tr><th>#</th><th>Model</th><th data-s3="cost" class="sk">Cost Efficiency (longer = cheaper) <span class="sa">↑</span></th><th data-s3="successRate">Overall Score <span class="sa">↕</span></th><th data-s3="elapsed">Elapsed <span class="sa">↕</span></th></tr></thead><tbody id="tb-c"></tbody></table>
       </div>
     </div>
   </div>
@@ -702,7 +698,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
       </div>
     </div>
     <div class="tw">
-      <table><thead><tr><th>#</th><th>Model</th><th data-rs="successRate" class="sk">Overall Score <span class="sa">↓</span></th><th data-rs="elapsed">Elapsed <span class="sa">↕</span></th><th data-rs="cost">Cost <span class="sa">↕</span></th><th>Δ</th></tr></thead><tbody id="tb-rank"></tbody></table>
+      <table><thead><tr><th>#</th><th>Model</th><th data-rs="successRate" class="sk">Overall Score <span class="sa">↓</span></th><th data-rs="elapsed">Elapsed <span class="sa">↕</span></th><th data-rs="cost">Cost <span class="sa">↕</span></th></tr></thead><tbody id="tb-rank"></tbody></table>
     </div>
   </div>
 
@@ -1627,12 +1623,11 @@ const norm=vals=>{const mn=Math.min(...vals),mx=Math.max(...vals);return vals.ma
 const normFixed=(vals,fixedMin,fixedMax)=>vals.map(v=>Math.max(0,Math.min(1,(v-fixedMin)/(fixedMax-fixedMin))));
 const maxV=k=>Math.max(...MODELS.map(m=>m[k]));
 const rkC=r=>r===1?'r1':r===2?'r2':r===3?'r3':'rn';
-const chH=n=>n>0?`<span class="ch-tag ch-up">▲${n}</span>`:n<0?`<span class="ch-tag ch-dn">▼${Math.abs(n)}</span>`:`<span class="ch-tag ch-eq">—</span>`;
 function mkRow(m,rank,bKey,bfC,bvC,fmtFn,pctFn,extra){
   return`<tr data-id="${m.id}"><td class="rk ${rkC(rank)}">${rank}</td>
   <td><div class="mc"><span class="md" style="background:${m.color}"></span><div><div class="mn">${m.name}</div><div class="mo">${m.org}</div></div></div></td>
   <td class="bc"><div class="br"><div class="bb"><div class="bf ${bfC}" style="width:${pctFn(m[bKey]).toFixed(1)}%"></div></div><span class="bv ${bvC}">${fmtFn(m[bKey])}</span></div></td>
-  ${extra(m)}<td>${chH(m.change)}</td></tr>`;
+  ${extra(m)}</tr>`;
 }
 
 /* metric switcher */
@@ -1969,7 +1964,6 @@ function renderRank(){
       <td class="bc"><div class="br"><div class="bb"><div class="bf bf-r" style="width:${sc.toFixed(1)}%"></div></div><span class="bv bv-r">${sc.toFixed(1)}%</span></div></td>
       <td><span class="bv bv-t">${(el/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td>
       <td><span class="bv bv-c">${m.free?'Free':fmtUsd(co)}</span></td>
-      <td>${chH(m.change)}</td>
     </tr>`;}).join('');
   document.querySelectorAll('#tb-rank tr').forEach(tr=>tr.addEventListener('click',()=>{const id=+tr.dataset.id;rSt.sel=rSt.sel===id?null:id;renderRank();chart3d?.hl(rSt.sel);}));
 }
