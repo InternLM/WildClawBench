@@ -403,6 +403,8 @@ For independent verification and side-by-side comparison, we have provided the c
 - MiniMax M2.7 Details: [MiniMax M2.7](https://drive.google.com/file/d/15K65XZxkUqKWj3rp-d-gZN0DEL1iu2Kf/view?usp=drive_link)
 - Claude Opus 4.6 Details: [Claude 4.6 Opus](https://drive.google.com/file/d/1qCPxy0-Z-LveiVAmPTVlrh3x2fe9qlU6/view?usp=drive_link)
 
+More models's (fable5, glm5.2, gpt5.6, grok4.5, hy3, kimi_k3, muse_spark) details in [internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)
+
 ## Personal OpenClaw Evaluation
 
 "Raising lobsters" has become a phenomenon — users gradually teach their OpenClaw agents new skills, customize personalities, and build up long-term memory through daily interaction. A natural question follows: **whose lobster is better?** Beyond bragging rights, there is real value in understanding which skill combinations, persona designs, and memory strategies actually improve agent performance on a given model. That's why we created the **Personal OpenClaw Leaderboard**. Submit your lobster's results and see how it stacks up!
