@@ -528,11 +528,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
         <div class="hp-title">
           <span class="hp-wild">Wild</span><span class="hp-claw">Claw</span><span class="hp-bench">Bench</span>
         </div>
-        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 26 frontier models on the OpenClaw harness.</div>
+        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 27 frontier models on the OpenClaw harness.</div>
       </div>
       <div class="hp-stats">
         <div class="hps">
-          <span class="hps-val red">26</span>
+          <span class="hps-val red">27</span>
           <span class="hps-label">Models</span>
         </div>
         <div class="hps">
@@ -744,7 +744,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="hp-stats">
       <div class="hps"><span class="hps-val red">6</span><span class="hps-label">Categories</span></div>
       <div class="hps"><span class="hps-val">60</span><span class="hps-label">Total Tasks</span></div>
-      <div class="hps"><span class="hps-val red">21</span><span class="hps-label">Models</span></div>
+      <div class="hps"><span class="hps-val red">27</span><span class="hps-label">Models</span></div>
     </div>
   </div>
 
@@ -799,14 +799,14 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <p>AI agents are impressive in demos. They book flights in one turn, summarize documents on command, and generate code that almost works. But ask an agent to watch a full football match and write a report with clipped video highlights — or negotiate a meeting time over multiple rounds of email with three busy colleagues — and things fall apart fast.</p>
     <p>We built <strong>WildClawBench</strong> because we wanted to know: <em>how well do today's best models actually perform when dropped into a real working environment with real tools, real files, and real complexity?</em></p>
 
-    <blockquote>The answer: not well enough. Every frontier model we tested — GPT-5.4, Claude Opus 4.6, Gemini 3.1 Pro, Grok 4.20, Kimi K2.5, Qwen 3.5 — scores below 0.55 out of 1.0. Most hover between 0.15 and 0.45.</blockquote>
+    <blockquote>The answer: not well enough. Most frontier models we tested — including GPT-5.4, Gemini 3.1 Pro, Grok 4.20, Kimi K2.5, and Qwen 3.5 — score below 0.55 out of 1.0. Claude Opus 4.8 reaches 64.7%, placing second on the current OpenClaw leaderboard.</blockquote>
 
     <p>The tasks aren't exotic. They're the kind of work a competent human assistant handles every day. That gap is what makes WildClawBench useful.</p>
 
     <div class="blog-stat-strip">
-      <div class="blog-stat"><div class="blog-stat-val">14</div><div class="blog-stat-label">Frontier Models</div></div>
+      <div class="blog-stat"><div class="blog-stat-val">27</div><div class="blog-stat-label">Frontier Models</div></div>
       <div class="blog-stat"><div class="blog-stat-val">60</div><div class="blog-stat-label">Hand-crafted Tasks</div></div>
-      <div class="blog-stat"><div class="blog-stat-val">51.6%</div><div class="blog-stat-label">Top Score</div></div>
+      <div class="blog-stat"><div class="blog-stat-val">67.2%</div><div class="blog-stat-label">Top Score</div></div>
       <div class="blog-stat"><div class="blog-stat-val">6</div><div class="blog-stat-label">Task Categories</div></div>
     </div>
 
@@ -814,15 +814,15 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <hr class="blog-hr"/>
     <h2>How Frontier Models Perform in the Wild</h2>
 
-    <p>WildClawBench makes one thing clear: each frontier model has its own distinct strengths. <strong>Claude Opus 4.6</strong> takes the overall lead. Its edge is most apparent in complex workflows involving multiple steps, specifically in coding tasks that demand reliable tool use and codebase understanding rather than just plausible output. However, this top tier performance comes at the highest cost.</p>
+    <p>WildClawBench makes one thing clear: each frontier model has its own distinct strengths. <strong>Claude Opus 4.8</strong> now ranks second at 64.7%, behind GPT-5.6 Sol. Its edge is most apparent in complex workflows involving multiple steps, specifically in coding and social-interaction tasks that demand reliable tool use and long-horizon reasoning rather than just plausible output.</p>
 
     <p>At a quarter of that price, <strong>GPT-5.4</strong> follows closely behind across nearly every metric and shines particularly bright in Creative Synthesis. Additionally, while <strong>MiMo V2 Pro</strong> does not top the leaderboards, it remains a noteworthy competitor — its solid performance proves that newer model families are rapidly becoming serious players in practical agent environments. Finally, when considering cost effectiveness, <strong>MiniMax M2.7</strong> stands out as the cheapest usable option, making it highly practical for broad deployment.</p>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin:32px 0;border:1px solid var(--g);border-radius:var(--r);overflow:hidden">
       <div style="padding:22px 24px;background:var(--surf);border-right:1px solid var(--g)">
-        <div style="font-family:var(--fm);font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink4);margin-bottom:10px">Best Overall</div>
-        <div style="font-family:var(--fd);font-size:26px;font-weight:700;font-style:italic;color:var(--scarlet);line-height:1.1">Claude Opus 4.6</div>
-        <div style="font-family:var(--fm);font-size:11px;color:var(--ink3);margin-top:6px">51.6% · Excels at complex multi-step coding workflows</div>
+        <div style="font-family:var(--fm);font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink4);margin-bottom:10px">Second Place</div>
+        <div style="font-family:var(--fd);font-size:26px;font-weight:700;font-style:italic;color:var(--scarlet);line-height:1.1">Claude Opus 4.8</div>
+        <div style="font-family:var(--fm);font-size:11px;color:var(--ink3);margin-top:6px">64.7% · Excels at long-horizon coding and social-interaction workflows</div>
       </div>
       <div style="padding:22px 24px;background:var(--surf)">
         <div style="font-family:var(--fm);font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink4);margin-bottom:10px">Best Value</div>
@@ -965,6 +965,7 @@ document.querySelectorAll('.ntab').forEach(btn=>btn.addEventListener('click',()=
 ═══════════════════════════════════════════════════════ */
 const MODELS=[
   {id:20,name:'GPT-5.6 Sol',      org:'OpenAI',         prov:'OpenAI',   color:'#0d4f73',successRate:67.18, elapsed:13302, cost:56.775, change: 0,cat:'gpt'},
+  {id:26,name:'Claude Opus 4.8',  org:'Anthropic',      prov:'Anthropic',color:'#6f1d4d',successRate:64.73, elapsed:24019.86, cost:95.954792, change: 0,cat:'claude'},
   {id:0,name:'Claude Opus 4.7',  org:'Anthropic',      prov:'Anthropic',color:'#8c2416',successRate:62.20, elapsed:19680, cost:77.400, change: 0,cat:'claude'},
   {id:21,name:'Claude Fable 5',  org:'Anthropic',      prov:'Anthropic',color:'#b6532d',successRate:62.00, elapsed:19414, cost:87.709, change: 0,cat:'claude'},
   {id:1,name:'GPT-5.5',          org:'OpenAI',         prov:'OpenAI',   color:'#1c3448',successRate:58.20, elapsed:15720, cost:37.800, change: 0,cat:'gpt'},
@@ -1000,6 +1001,7 @@ const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:
 /* Split scores use the same one-decimal values as the paper table. Elapsed time
    and cost are calibrated so the split sums match the released totals. */
 const SPLIT_SCORES={
+  26: {mm:65.3, pt:64.3, mmElapsed:13734.45, ptElapsed:10285.41, mmCost:58.692, ptCost:37.263}, // Claude Opus 4.8 (dynamic base-tier rates)
   0:  {mm:58.5, pt:65.0, mmElapsed:12589, ptElapsed:7091, mmCost:43.420, ptCost:33.980}, // Claude Opus 4.7
   1:  {mm:63.0, pt:54.5, mmElapsed:10327, ptElapsed:5393, mmCost:17.160, ptCost:20.640}, // GPT 5.5
   19: {mm:53.7, pt:55.7, mmElapsed:13166, ptElapsed:8883, mmCost:11.271, ptCost:12.320}, // Muse Spark 1.1 (published leaderboard cost)
@@ -1041,7 +1043,7 @@ const CATEGORIES=
   {
     id:'01', key:'productivity', icon:'📋',
     name:'Productivity & Flow', code:'01_Productivity',
-    accentClass:'cat-c1', tasks:10, topModel:'GPT-5.6 Sol',
+    accentClass:'cat-c1', tasks:10, topModel:'Claude Opus 4.8',
     scores:[
       {modelId:2,rate:59.43,elapsed:5401, cost:19.500},
       {modelId:3,rate:53.96,elapsed:3429, cost:4.460},
@@ -1064,6 +1066,7 @@ const CATEGORIES=
       {modelId:23,rate:38.17,elapsed:5994,cost:10.408},
       {modelId:24,rate:38.76,elapsed:4609,cost:3.454},
       {modelId:25,rate:49.25,elapsed:3631,cost:0.547},
+      {modelId:26,rate:73.04,elapsed:5612.74,cost:21.518},
     ]
   },
   {
@@ -1092,12 +1095,13 @@ const CATEGORIES=
       {modelId:23,rate:55.80,elapsed:9383,cost:13.151},
       {modelId:24,rate:64.34,elapsed:8282,cost:4.547},
       {modelId:25,rate:52.64,elapsed:5122,cost:0.591},
+      {modelId:26,rate:74.89,elapsed:6259.18,cost:19.176},
     ]
   },
   {
     id:'03', key:'social', icon:'💬',
     name:'Social Interaction', code:'03_Social',
-    accentClass:'cat-c3', tasks:6, topModel:'Grok 4.5',
+    accentClass:'cat-c3', tasks:6, topModel:'Claude Opus 4.8',
     scores:[
       {modelId:2,rate:71.89,elapsed:1860, cost:4.390},
       {modelId:3,rate:87.62,elapsed:1041, cost:1.283},
@@ -1120,6 +1124,7 @@ const CATEGORIES=
       {modelId:23,rate:76.82,elapsed:2328,cost:2.453},
       {modelId:24,rate:90.72,elapsed:1481,cost:0.944},
       {modelId:25,rate:73.71,elapsed:1217,cost:0.145},
+      {modelId:26,rate:91.86,elapsed:1338.79,cost:5.684},
     ]
   },
   {
@@ -1148,6 +1153,7 @@ const CATEGORIES=
       {modelId:23,rate:69.09,elapsed:3111,cost:4.620},
       {modelId:24,rate:56.36,elapsed:5027,cost:5.232},
       {modelId:25,rate:57.27,elapsed:2902,cost:0.260},
+      {modelId:26,rate:45.91,elapsed:3716.17,cost:8.809},
     ]
   },
   {
@@ -1176,6 +1182,7 @@ const CATEGORIES=
       {modelId:23,rate:38.75,elapsed:7508,cost:8.136},
       {modelId:24,rate:41.59,elapsed:6262,cost:2.213},
       {modelId:25,rate:35.96,elapsed:6587,cost:0.485},
+      {modelId:26,rate:61.66,elapsed:6452.59,cost:35.378},
     ]
   },
   {
@@ -1204,6 +1211,7 @@ const CATEGORIES=
       {modelId:23,rate:57.00,elapsed:982,cost:1.310},
       {modelId:24,rate:47.00,elapsed:849,cost:0.707},
       {modelId:25,rate:39.00,elapsed:829,cost:0.098},
+      {modelId:26,rate:52.00,elapsed:640.39,cost:5.389},
     ]
   },
 ];
