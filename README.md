@@ -9,7 +9,7 @@
 
 [![Tasks](https://img.shields.io/badge/Tasks-60-blue)]()
 [![Harnesses](https://img.shields.io/badge/Harnesses-4-purple)]()
-[![Models](https://img.shields.io/badge/Models-26-green)]()
+[![Models](https://img.shields.io/badge/Models-27-green)]()
 [![Leaderboard](https://img.shields.io/badge/🏆_Leaderboard-WildClawBench-8c2416)](https://internlm.github.io/WildClawBench/)
 <br>
 [![arXiv](https://img.shields.io/badge/arXiv-2605.10912-b31b1b.svg)](https://arxiv.org/abs/2605.10912)
