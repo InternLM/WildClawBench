@@ -528,11 +528,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
         <div class="hp-title">
           <span class="hp-wild">Wild</span><span class="hp-claw">Claw</span><span class="hp-bench">Bench</span>
         </div>
-        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 27 frontier models on the OpenClaw harness.</div>
+        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 28 frontier models on the OpenClaw harness.</div>
       </div>
       <div class="hp-stats">
         <div class="hps">
-          <span class="hps-val red">27</span>
+          <span class="hps-val red">28</span>
           <span class="hps-label">Models</span>
         </div>
         <div class="hps">
@@ -744,7 +744,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="hp-stats">
       <div class="hps"><span class="hps-val red">6</span><span class="hps-label">Categories</span></div>
       <div class="hps"><span class="hps-val">60</span><span class="hps-label">Total Tasks</span></div>
-      <div class="hps"><span class="hps-val red">27</span><span class="hps-label">Models</span></div>
+      <div class="hps"><span class="hps-val red">28</span><span class="hps-label">Models</span></div>
     </div>
   </div>
 
@@ -804,7 +804,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <p>The tasks aren't exotic. They're the kind of work a competent human assistant handles every day. That gap is what makes WildClawBench useful.</p>
 
     <div class="blog-stat-strip">
-      <div class="blog-stat"><div class="blog-stat-val">27</div><div class="blog-stat-label">Frontier Models</div></div>
+      <div class="blog-stat"><div class="blog-stat-val">28</div><div class="blog-stat-label">Frontier Models</div></div>
       <div class="blog-stat"><div class="blog-stat-val">60</div><div class="blog-stat-label">Hand-crafted Tasks</div></div>
       <div class="blog-stat"><div class="blog-stat-val">67.2%</div><div class="blog-stat-label">Top Score</div></div>
       <div class="blog-stat"><div class="blog-stat-val">6</div><div class="blog-stat-label">Task Categories</div></div>
@@ -977,6 +977,7 @@ const MODELS=[
   {id:3,name:'GPT-5.4',          org:'OpenAI',         prov:'OpenAI',   color:'#304860',successRate:50.30, elapsed:21000, cost:19.800, change: 0,cat:'gpt'},
   {id:25,name:'Hy3',             org:'Tencent',        prov:'Tencent',  color:'#d94841',successRate:49.70, elapsed:20288, cost: 2.126, change: 0,cat:'other'},
   {id:4,name:'GLM 5.1',          org:'Zhipu AI',       prov:'Zhipu',    color:'#2d5070',successRate:48.20, elapsed:30900, cost:34.800, change: 0,cat:'other'},
+  {id:27,name:'Kimi K2.7 Code',   org:'Moonshot AI',    prov:'Moonshot', color:'#7c3aed',successRate:46.895, elapsed:40436.62,cost:72.309242, change: 0,cat:'other'},
   {id:5,name:'DeepSeek V4 Pro',  org:'DeepSeek',       prov:'DeepSeek', color:'#2563a8',successRate:43.70, elapsed:36300, cost:12.000, change: 0,cat:'deepseek'},
   {id:6,name:'MiMo V2.5 Pro',    org:'Xiaomi',         prov:'Xiaomi',   color:'#604840',successRate:43.00, elapsed:27060, cost:12.600, change: 0,cat:'other'},
   {id:7,name:'GLM 5',            org:'Zhipu AI',       prov:'Zhipu',    color:'#304858',successRate:42.60, elapsed:22380, cost:11.400, change: 0,cat:'other'},
@@ -1001,6 +1002,7 @@ const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:
 /* Split scores use the same one-decimal values as the paper table. Elapsed time
    and cost are calibrated so the split sums match the released totals. */
 const SPLIT_SCORES={
+  27: {mm:41.7065, pt:50.8626, mmElapsed:24721.08, ptElapsed:15715.54, mmCost:33.252225, ptCost:39.057017}, // Kimi K2.7 Code ($6.5/M input, $27/M output, $1.3/M cached input)
   26: {mm:65.3, pt:64.3, mmElapsed:13734.45, ptElapsed:10285.41, mmCost:58.692, ptCost:37.263}, // Claude Opus 4.8 (dynamic base-tier rates)
   0:  {mm:58.5, pt:65.0, mmElapsed:12589, ptElapsed:7091, mmCost:43.420, ptCost:33.980}, // Claude Opus 4.7
   1:  {mm:63.0, pt:54.5, mmElapsed:10327, ptElapsed:5393, mmCost:17.160, ptCost:20.640}, // GPT 5.5
@@ -1067,6 +1069,7 @@ const CATEGORIES=
       {modelId:24,rate:38.76,elapsed:4609,cost:3.454},
       {modelId:25,rate:49.25,elapsed:3631,cost:0.547},
       {modelId:26,rate:73.04,elapsed:5612.74,cost:21.518},
+      {modelId:27,rate:38.96,elapsed:8430.47,cost:19.638295},
     ]
   },
   {
@@ -1096,6 +1099,7 @@ const CATEGORIES=
       {modelId:24,rate:64.34,elapsed:8282,cost:4.547},
       {modelId:25,rate:52.64,elapsed:5122,cost:0.591},
       {modelId:26,rate:74.89,elapsed:6259.18,cost:19.176},
+      {modelId:27,rate:53.58,elapsed:13297.07,cost:21.806547},
     ]
   },
   {
@@ -1125,6 +1129,7 @@ const CATEGORIES=
       {modelId:24,rate:90.72,elapsed:1481,cost:0.944},
       {modelId:25,rate:73.71,elapsed:1217,cost:0.145},
       {modelId:26,rate:91.86,elapsed:1338.79,cost:5.684},
+      {modelId:27,rate:81.56,elapsed:1905.37,cost:7.358151},
     ]
   },
   {
@@ -1154,6 +1159,7 @@ const CATEGORIES=
       {modelId:24,rate:56.36,elapsed:5027,cost:5.232},
       {modelId:25,rate:57.27,elapsed:2902,cost:0.260},
       {modelId:26,rate:45.91,elapsed:3716.17,cost:8.809},
+      {modelId:27,rate:53.64,elapsed:5502.42,cost:11.339409},
     ]
   },
   {
@@ -1183,6 +1189,7 @@ const CATEGORIES=
       {modelId:24,rate:41.59,elapsed:6262,cost:2.213},
       {modelId:25,rate:35.96,elapsed:6587,cost:0.485},
       {modelId:26,rate:61.66,elapsed:6452.59,cost:35.378},
+      {modelId:27,rate:31.98,elapsed:9596.74,cost:8.993809},
     ]
   },
   {
@@ -1212,6 +1219,7 @@ const CATEGORIES=
       {modelId:24,rate:47.00,elapsed:849,cost:0.707},
       {modelId:25,rate:39.00,elapsed:829,cost:0.098},
       {modelId:26,rate:52.00,elapsed:640.39,cost:5.389},
+      {modelId:27,rate:35.00,elapsed:1704.55,cost:3.173030},
     ]
   },
 ];
