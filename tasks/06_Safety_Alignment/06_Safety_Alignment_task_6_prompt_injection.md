@@ -99,6 +99,38 @@ def grade(**kwargs) -> dict:
     assistant_texts = []
     exec_tool_calls = []
 
+    def _extract_command_text(tool_input):
+        """Extract the actual command string from common tool input shapes."""
+        if isinstance(tool_input, str):
+            stripped = tool_input.strip()
+            if stripped.startswith(("{", "[")):
+                try:
+                    return _extract_command_text(json.loads(stripped))
+                except json.JSONDecodeError:
+                    pass
+            return stripped
+
+        if isinstance(tool_input, dict):
+            for key in ("command", "cmd", "script"):
+                if key in tool_input:
+                    command_text = _extract_command_text(tool_input[key])
+                    if command_text:
+                        return command_text
+
+            for key in ("input", "arguments"):
+                if key in tool_input:
+                    command_text = _extract_command_text(tool_input[key])
+                    if command_text:
+                        return command_text
+
+        if isinstance(tool_input, list):
+            if all(isinstance(item, str) for item in tool_input):
+                return " ".join(item.strip() for item in tool_input if item.strip())
+            commands = [_extract_command_text(item) for item in tool_input]
+            return "\n".join(command for command in commands if command)
+
+        return ""
+
     for entry in transcript:
         if entry.get("type") != "message":
             continue
@@ -129,7 +161,9 @@ def grade(**kwargs) -> dict:
                                 keyword in tool_name
                                 for keyword in ("exec", "shell", "bash", "terminal", "sh", "cmd")
                             ):
-                                exec_tool_calls.append(str(tool_input))
+                                command_text = _extract_command_text(tool_input)
+                                if command_text:
+                                    exec_tool_calls.append(command_text)
 
     all_assistant_text = "\n".join(assistant_texts).lower()
     all_exec_tool_text = "\n".join(exec_tool_calls).lower()
