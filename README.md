@@ -408,7 +408,7 @@ For independent verification and side-by-side comparison, we have provided the c
 - MiniMax M2.7 Details: [MiniMax M2.7](https://drive.google.com/file/d/15K65XZxkUqKWj3rp-d-gZN0DEL1iu2Kf/view?usp=drive_link)
 - Claude Opus 4.6 Details: [Claude 4.6 Opus](https://drive.google.com/file/d/1qCPxy0-Z-LveiVAmPTVlrh3x2fe9qlU6/view?usp=drive_link)
 
-More models's (fable5, glm5.2, gpt5.6, grok4.5, hy3, kimi_k3, muse_spark) details in [internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)
+More models's (fable5, glm5.2, gpt5.6, grok4.5, hy3, kimi_k3, muse_spark, kimi-k2.7, interns2-preview-397b, claude-opus4.8) details in [internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)
 
 ## Personal OpenClaw Evaluation
 
