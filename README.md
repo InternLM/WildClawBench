@@ -88,7 +88,7 @@ Full interactive leaderboard at [internlm.github.io/WildClawBench](https://inter
 | 11 | GPT-5.4 | OpenAI | 50.3% | 350 min | $19.80 |
 | 12 | Hy3 | Tencent | 49.7% | 338 min | $2.13 |
 | 13 | GLM 5.1 | Zhipu AI | 48.2% | 515 min | $34.80 |
-| 14 | **Kimi K2.7 Code** | Moonshot AI | 46.9% | 674 min | $72.31 |
+| 14 | Kimi K2.7 Code | Moonshot AI | 46.9% | 674 min | $72.31 |
 | 15 | DeepSeek V4 Pro | DeepSeek | 43.7% | 605 min | $12.00 |
 | 16 | MiMo V2.5 Pro | Xiaomi | 43.0% | 451 min | $12.60 |
 | 17 | GLM 5 | Zhipu AI | 42.6% | 373 min | $11.40 |
