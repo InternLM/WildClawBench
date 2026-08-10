@@ -685,7 +685,8 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
           <button class="ftab on" data-f="all">All</button>
           <button class="ftab" data-f="claude">Claude</button>
           <button class="ftab" data-f="gpt">GPT</button>
-          <button class="ftab" data-f="gemini">Gemini</button>
+          <button class="ftab" data-f="google">Google</button>
+          <button class="ftab" data-f="meta">Meta</button>
           <button class="ftab" data-f="deepseek">DeepSeek</button>
           <button class="ftab" data-f="other">Other</button>
         </div>
@@ -970,22 +971,22 @@ const MODELS=[
   {id:21,name:'Claude Fable 5',  org:'Anthropic',      prov:'Anthropic',color:'#b6532d',successRate:62.00, elapsed:19414, cost:87.709, change: 0,cat:'claude'},
   {id:1,name:'GPT-5.5',          org:'OpenAI',         prov:'OpenAI',   color:'#1c3448',successRate:58.20, elapsed:15720, cost:37.800, change: 0,cat:'gpt'},
   {id:22,name:'Grok 4.5',        org:'xAI',            prov:'xAI',      color:'#087f78',successRate:57.51, elapsed:21521, cost:28.432, change: 0,cat:'other'},
-  {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:23.591, change: 0,cat:'other'},
+  {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:23.591, change: 0,cat:'meta'},
   {id:23,name:'Kimi K3',         org:'Moonshot AI',    prov:'Moonshot', color:'#6d28d9',successRate:54.47, elapsed:29306, cost:40.079, change: 0,cat:'other'},
   {id:24,name:'GLM 5.2',         org:'Zhipu AI',       prov:'Zhipu',    color:'#2563eb',successRate:54.19, elapsed:26510, cost:17.098, change: 0,cat:'other'},
   {id:2,name:'Claude Opus 4.6',  org:'Anthropic',      prov:'Anthropic',color:'#a83c14',successRate:51.60, elapsed:30480, cost:81.000, change: 0,cat:'claude'},
   {id:3,name:'GPT-5.4',          org:'OpenAI',         prov:'OpenAI',   color:'#304860',successRate:50.30, elapsed:21000, cost:19.800, change: 0,cat:'gpt'},
   {id:25,name:'Hy3',             org:'Tencent',        prov:'Tencent',  color:'#d94841',successRate:49.70, elapsed:20288, cost: 2.126, change: 0,cat:'other'},
   {id:4,name:'GLM 5.1',          org:'Zhipu AI',       prov:'Zhipu',    color:'#2d5070',successRate:48.20, elapsed:30900, cost:34.800, change: 0,cat:'other'},
-  {id:28,name:'Muse Glimmer 30B',org:'Meta',           prov:'Meta',     color:'#4f63c6',successRate:47.621833,elapsed:21102.2167,cost:null, change: 0,cat:'other'},
+  {id:28,name:'Muse Glimmer 30B',org:'Meta',           prov:'Meta',     color:'#4f63c6',successRate:47.621833,elapsed:21102.2167,cost:null, change: 0,cat:'meta'},
   {id:27,name:'Kimi K2.7 Code',   org:'Moonshot AI',    prov:'Moonshot', color:'#7c3aed',successRate:46.895, elapsed:40436.62,cost:72.309242, change: 0,cat:'other'},
   {id:5,name:'DeepSeek V4 Pro',  org:'DeepSeek',       prov:'DeepSeek', color:'#2563a8',successRate:43.70, elapsed:36300, cost:12.000, change: 0,cat:'deepseek'},
   {id:29,name:'Qwen3.6 27B',      org:'Alibaba Cloud',  prov:'Alibaba',  color:'#615ced',successRate:43.199222,elapsed:25233.4567,cost:20.909388,change: 0,cat:'other'},
   {id:6,name:'MiMo V2.5 Pro',    org:'Xiaomi',         prov:'Xiaomi',   color:'#604840',successRate:43.00, elapsed:27060, cost:12.600, change: 0,cat:'other'},
   {id:7,name:'GLM 5',            org:'Zhipu AI',       prov:'Zhipu',    color:'#304858',successRate:42.60, elapsed:22380, cost:11.400, change: 0,cat:'other'},
-  {id:8,name:'Gemini 3.1 Pro',   org:'Google DeepMind',prov:'Google',   color:'#265238',successRate:40.80, elapsed:14400, cost:18.000, change: 0,cat:'gemini'},
+  {id:8,name:'Gemini 3.1 Pro',   org:'Google DeepMind',prov:'Google',   color:'#265238',successRate:40.80, elapsed:14400, cost:18.000, change: 0,cat:'google'},
   {id:9,name:'MiMo V2 Pro',      org:'Xiaomi',         prov:'Xiaomi',   color:'#786050',successRate:40.20, elapsed:27480, cost:26.400, change: 0,cat:'other'},
-  {id:30,name:'Gemma 4 31B IT',  org:'Google DeepMind',prov:'Google',   color:'#4285f4',successRate:37.598611,elapsed:23057.4400,cost:3.464117, change: 0,cat:'other'},
+  {id:30,name:'Gemma 4 31B IT',  org:'Google DeepMind',prov:'Google',   color:'#4285f4',successRate:37.598611,elapsed:23057.4400,cost:3.464117, change: 0,cat:'google'},
   {id:10,name:'Qwen3.5 397B',    org:'Alibaba Cloud',  prov:'Alibaba',  color:'#7a3828',successRate:34.50, elapsed:27540, cost:22.200, change: 0,cat:'other'},
   {id:11,name:'DeepSeek V3.2',   org:'DeepSeek',       prov:'DeepSeek', color:'#1e5590',successRate:34.00, elapsed:32940, cost:11.400, change: 0,cat:'deepseek'},
   {id:12,name:'GLM 5 Turbo',     org:'Zhipu AI',       prov:'Zhipu',    color:'#405868',successRate:33.90, elapsed:29940, cost:15.000, change: 0,cat:'other'},
