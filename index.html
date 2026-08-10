@@ -1710,12 +1710,30 @@ document.querySelectorAll('.stab').forEach(btn=>btn.addEventListener('click',()=
     if(sp==='speed') drawScatter('sc-speed','tt-speed','elapsed', 'successRate', hp.speed);
   });
 }));
+/* Provider colors are the single source of truth for provider-grouped charts.
+   Models from the same provider must use the same color in both dots and legend. */
+const PROVIDER_COLORS=Object.freeze({
+  OpenAI:'#0d4f73',
+  Anthropic:'#8c2416',
+  Meta:'#0866ff',
+  Google:'#265238',
+  xAI:'#1f2937',
+  DeepSeek:'#2563a8',
+  Moonshot:'#6d28d9',
+  Alibaba:'#b45309',
+  Zhipu:'#c2410c',
+  Tencent:'#0e7490',
+  Xiaomi:'#604840',
+  MiniMax:'#a21caf',
+  StepFun:'#3c5840',
+});
+const providerColor=prov=>PROVIDER_COLORS[prov]||'#64748b';
 const PROVS=[...new Set(MODELS.map(m=>m.prov))];
 const hp={cost:new Set(),speed:new Set()};
 function buildLegend(elId,hpSet,cid,ttId,xK,yK){
   const el=document.getElementById(elId);el.innerHTML='';
   PROVS.forEach(prov=>{
-    const color=MODELS.find(m=>m.prov===prov)?.color||'#888';
+    const color=providerColor(prov);
     const item=document.createElement('div');
     item.className='prov-item'+(hpSet.has(prov)?' hp':'');
     item.innerHTML=`<span class="prov-dot" style="background:${color}"></span>${prov}`;
@@ -1732,8 +1750,11 @@ function drawScatter(cid,ttId,xKey,yKey,hiddenSet){
   const ctx=canvas.getContext('2d');ctx.scale(DPR,DPR);
   const PAD={top:28,right:52,bottom:60,left:70};const pw=W-PAD.left-PAD.right,ph=H-PAD.top-PAD.bottom;
   ctx.fillStyle='#faf6ee';ctx.fillRect(0,0,W,H);
-  let xMin=Math.min(...MODELS.map(m=>m[xKey])),xMax=Math.max(...MODELS.map(m=>m[xKey]));
-  let yMin=Math.min(...MODELS.map(m=>m[yKey])),yMax=Math.max(...MODELS.map(m=>m[yKey]));
+  // Unknown metrics (for example, an N/A cost) are omitted instead of being
+  // coerced to zero and incorrectly presented as free.
+  const data=MODELS.filter(m=>Number.isFinite(m[xKey])&&Number.isFinite(m[yKey]));
+  let xMin=Math.min(...data.map(m=>m[xKey])),xMax=Math.max(...data.map(m=>m[xKey]));
+  let yMin=Math.min(...data.map(m=>m[yKey])),yMax=Math.max(...data.map(m=>m[yKey]));
   const xPad=(xMax-xMin)*.18,yPad=(yMax-yMin)*.18;
   xMin-=xPad;xMax+=xPad;yMin-=yPad;yMax+=yPad;
   const toX=v=>PAD.left+(v-xMin)/(xMax-xMin)*pw;
@@ -1763,7 +1784,7 @@ function drawScatter(cid,ttId,xKey,yKey,hiddenSet){
   ctx.fillText(AXES[xKey].label.toUpperCase(),PAD.left+pw/2,H-12);
   ctx.save();ctx.translate(15,PAD.top+ph/2);ctx.rotate(-Math.PI/2);ctx.fillText(AXES[yKey].label.toUpperCase(),0,0);ctx.restore();
   // First pass: compute positions
-  const pts=MODELS.map(m=>({m,x:toX(m[xKey]),y:toY(m[yKey]),hidden:hiddenSet.has(m.prov)}));
+  const pts=data.map(m=>({m,x:toX(m[xKey]),y:toY(m[yKey]),hidden:hiddenSet.has(m.prov)}));
   // Draw labels first (so dots render on top)
   ctx.font='500 9.5px IBM Plex Mono,monospace';
   const placed=[];
@@ -1798,13 +1819,14 @@ function drawScatter(cid,ttId,xKey,yKey,hiddenSet){
   // Draw dots on top of labels
   pts.forEach(({m,x,y,hidden})=>{
     const r=7;
+    const color=providerColor(m.prov);
     ctx.save();ctx.globalAlpha=hidden?.15:1;
-    if(!hidden){ctx.shadowColor=m.color;ctx.shadowBlur=10;}
-    ctx.fillStyle=m.color;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
+    if(!hidden){ctx.shadowColor=color;ctx.shadowBlur=10;}
+    ctx.fillStyle=color;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
     if(!hidden){ctx.strokeStyle='rgba(255,255,255,.7)';ctx.lineWidth=1.2;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.stroke();}
     ctx.restore();
   });
-  canvas._pts=MODELS.map(m=>({m,x:toX(m[xKey]),y:toY(m[yKey]),hidden:hiddenSet.has(m.prov)}));
+  canvas._pts=data.map(m=>({m,x:toX(m[xKey]),y:toY(m[yKey]),hidden:hiddenSet.has(m.prov)}));
   canvas._xKey=xKey;canvas._yKey=yKey;
 }
 function bindScatterHover(cid,ttId){
