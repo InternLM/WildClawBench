@@ -499,12 +499,13 @@ To preview which containers would be removed (dry run), drop the `docker rm -f` 
 MIT — see [LICENSE](LICENSE) for details.
 
 ---
+
 ## Star History
 
 <a href="https://www.star-history.com/?repos=internlm%2FWildClawBench&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=internlm/WildClawBench&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=internlm/WildClawBench&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=internlm/WildClawBench&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=internlm/WildClawBench&type=date&theme=dark&legend=top-left&sealed_token=uOE3PXZranBUxC9q3pvz0oRRTksC3hKub6Y69tgdPgf3FZ0kurMi1a4jofUYZLkXYgMKgc2OvBvpJ3kCRHiVM1PzjpMKlxhLwnGwYKBzeJe_wVmL2KNolg" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=internlm/WildClawBench&type=date&legend=top-left&sealed_token=uOE3PXZranBUxC9q3pvz0oRRTksC3hKub6Y69tgdPgf3FZ0kurMi1a4jofUYZLkXYgMKgc2OvBvpJ3kCRHiVM1PzjpMKlxhLwnGwYKBzeJe_wVmL2KNolg" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=internlm/WildClawBench&type=date&legend=top-left&sealed_token=uOE3PXZranBUxC9q3pvz0oRRTksC3hKub6Y69tgdPgf3FZ0kurMi1a4jofUYZLkXYgMKgc2OvBvpJ3kCRHiVM1PzjpMKlxhLwnGwYKBzeJe_wVmL2KNolg" />
  </picture>
 </a>
