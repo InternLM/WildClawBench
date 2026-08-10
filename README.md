@@ -51,6 +51,7 @@ Most agent benchmarks test isolated capabilities — calling a function, parsing
 
 ## News
 
+- **2026-08** Meta's **[Muse Glimmer release](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)** reports WildClawBench evaluation scores. Thanks for the recognition!
 - **2026-07** We expanded the OpenClaw leaderboard with evaluations of the latest frontier models, including **GPT-5.6 Sol, Claude Fable 5, Kimi K3 and etc**.
 - **2026-06** ByteDance Seed's **[Seed2.1 release](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity)** includes WildClawBench in its agent evaluations. Thanks for the recognition!
 - **2026-05** We released a new version with **four agent harnesses** — OpenClaw, Claude Code, Codex CLI, and Hermes Agent — so the same 60-task suite can be evaluated under multiple scaffolds.
@@ -88,21 +89,24 @@ Full interactive leaderboard at [internlm.github.io/WildClawBench](https://inter
 | 11 | GPT-5.4 | OpenAI | 50.3% | 350 min | $19.80 |
 | 12 | Hy3 | Tencent | 49.7% | 338 min | $2.13 |
 | 13 | GLM 5.1 | Zhipu AI | 48.2% | 515 min | $34.80 |
-| 14 | Kimi K2.7 Code | Moonshot AI | 46.9% | 674 min | $72.31 |
-| 15 | DeepSeek V4 Pro | DeepSeek | 43.7% | 605 min | $12.00 |
-| 16 | MiMo V2.5 Pro | Xiaomi | 43.0% | 451 min | $12.60 |
-| 17 | GLM 5 | Zhipu AI | 42.6% | 373 min | $11.40 |
-| 18 | Gemini 3.1 Pro | Google DeepMind | 40.8% | 240 min | $18.00 |
-| 19 | MiMo V2 Pro | Xiaomi | 40.2% | 458 min | $26.40 |
-| 20 | Qwen3.5 397B | Alibaba Cloud | 34.5% | 459 min | $22.20 |
-| 21 | DeepSeek V3.2 | DeepSeek | 34.0% | 549 min | $11.40 |
-| 22 | GLM 5 Turbo | Zhipu AI | 33.9% | 499 min | $15.00 |
-| 23 | MiniMax M2.7 | MiniMax | 33.8% | 551 min | $7.20 |
-| 24 | Kimi K2.5 | Moonshot AI | 30.8% | 406 min | $6.60 |
-| 25 | MiMo V2 Flash | Xiaomi | 30.8% | 433 min | $10.20 |
-| 26 | MiniMax M2.5 | MiniMax | 27.1% | 542 min | $9.60 |
-| 27 | Step 3.5 Flash | StepFun | 26.7% | 430 min | $6.60 |
-| 28 | Grok 4.20 Beta | xAI | 19.3% | 94 min | $9.60 |
+| 14 | Muse Glimmer 30B | Meta | 47.6% | 352 min | N/A |
+| 15 | Kimi K2.7 Code | Moonshot AI | 46.9% | 674 min | $72.31 |
+| 16 | DeepSeek V4 Pro | DeepSeek | 43.7% | 605 min | $12.00 |
+| 17 | Qwen3.6 27B | Alibaba Cloud | 43.2% | 421 min | N/A |
+| 18 | MiMo V2.5 Pro | Xiaomi | 43.0% | 451 min | $12.60 |
+| 19 | GLM 5 | Zhipu AI | 42.6% | 373 min | $11.40 |
+| 20 | Gemini 3.1 Pro | Google DeepMind | 40.8% | 240 min | $18.00 |
+| 21 | MiMo V2 Pro | Xiaomi | 40.2% | 458 min | $26.40 |
+| 22 | Gemma 4 31B IT | Google DeepMind | 37.6% | 384 min | N/A |
+| 23 | Qwen3.5 397B | Alibaba Cloud | 34.5% | 459 min | $22.20 |
+| 24 | DeepSeek V3.2 | DeepSeek | 34.0% | 549 min | $11.40 |
+| 25 | GLM 5 Turbo | Zhipu AI | 33.9% | 499 min | $15.00 |
+| 26 | MiniMax M2.7 | MiniMax | 33.8% | 551 min | $7.20 |
+| 27 | Kimi K2.5 | Moonshot AI | 30.8% | 406 min | $6.60 |
+| 28 | MiMo V2 Flash | Xiaomi | 30.8% | 433 min | $10.20 |
+| 29 | MiniMax M2.5 | MiniMax | 27.1% | 542 min | $9.60 |
+| 30 | Step 3.5 Flash | StepFun | 26.7% | 430 min | $6.60 |
+| 31 | Grok 4.20 Beta | xAI | 19.3% | 94 min | $9.60 |
 
 > Claude Opus 4.8 cost uses the dynamic base-tier rates for this evaluation: $5/M input, $25/M output, $0.5/M cache read, and $6.25/M cache write.
 > Kimi K2.7 Code cost uses the published rates for this evaluation: $6.5/M input, $27/M output, and $1.3/M cached input.
