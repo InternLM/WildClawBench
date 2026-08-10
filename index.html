@@ -528,11 +528,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
         <div class="hp-title">
           <span class="hp-wild">Wild</span><span class="hp-claw">Claw</span><span class="hp-bench">Bench</span>
         </div>
-        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 28 frontier models on the OpenClaw harness.</div>
+        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 31 frontier models on the OpenClaw harness.</div>
       </div>
       <div class="hp-stats">
         <div class="hps">
-          <span class="hps-val red">28</span>
+          <span class="hps-val red">31</span>
           <span class="hps-label">Models</span>
         </div>
         <div class="hps">
@@ -744,7 +744,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="hp-stats">
       <div class="hps"><span class="hps-val red">6</span><span class="hps-label">Categories</span></div>
       <div class="hps"><span class="hps-val">60</span><span class="hps-label">Total Tasks</span></div>
-      <div class="hps"><span class="hps-val red">28</span><span class="hps-label">Models</span></div>
+      <div class="hps"><span class="hps-val red">31</span><span class="hps-label">Models</span></div>
     </div>
   </div>
 
@@ -804,7 +804,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <p>The tasks aren't exotic. They're the kind of work a competent human assistant handles every day. That gap is what makes WildClawBench useful.</p>
 
     <div class="blog-stat-strip">
-      <div class="blog-stat"><div class="blog-stat-val">28</div><div class="blog-stat-label">Frontier Models</div></div>
+      <div class="blog-stat"><div class="blog-stat-val">31</div><div class="blog-stat-label">Frontier Models</div></div>
       <div class="blog-stat"><div class="blog-stat-val">60</div><div class="blog-stat-label">Hand-crafted Tasks</div></div>
       <div class="blog-stat"><div class="blog-stat-val">67.2%</div><div class="blog-stat-label">Top Score</div></div>
       <div class="blog-stat"><div class="blog-stat-val">6</div><div class="blog-stat-label">Task Categories</div></div>
@@ -977,12 +977,15 @@ const MODELS=[
   {id:3,name:'GPT-5.4',          org:'OpenAI',         prov:'OpenAI',   color:'#304860',successRate:50.30, elapsed:21000, cost:19.800, change: 0,cat:'gpt'},
   {id:25,name:'Hy3',             org:'Tencent',        prov:'Tencent',  color:'#d94841',successRate:49.70, elapsed:20288, cost: 2.126, change: 0,cat:'other'},
   {id:4,name:'GLM 5.1',          org:'Zhipu AI',       prov:'Zhipu',    color:'#2d5070',successRate:48.20, elapsed:30900, cost:34.800, change: 0,cat:'other'},
+  {id:28,name:'Muse Glimmer 30B',org:'Meta',           prov:'Meta',     color:'#4f63c6',successRate:47.621833,elapsed:21102.2167,cost:null, change: 0,cat:'other'},
   {id:27,name:'Kimi K2.7 Code',   org:'Moonshot AI',    prov:'Moonshot', color:'#7c3aed',successRate:46.895, elapsed:40436.62,cost:72.309242, change: 0,cat:'other'},
   {id:5,name:'DeepSeek V4 Pro',  org:'DeepSeek',       prov:'DeepSeek', color:'#2563a8',successRate:43.70, elapsed:36300, cost:12.000, change: 0,cat:'deepseek'},
+  {id:29,name:'Qwen3.6 27B',      org:'Alibaba Cloud',  prov:'Alibaba',  color:'#615ced',successRate:43.199222,elapsed:25233.4567,cost:20.909388,change: 0,cat:'other'},
   {id:6,name:'MiMo V2.5 Pro',    org:'Xiaomi',         prov:'Xiaomi',   color:'#604840',successRate:43.00, elapsed:27060, cost:12.600, change: 0,cat:'other'},
   {id:7,name:'GLM 5',            org:'Zhipu AI',       prov:'Zhipu',    color:'#304858',successRate:42.60, elapsed:22380, cost:11.400, change: 0,cat:'other'},
   {id:8,name:'Gemini 3.1 Pro',   org:'Google DeepMind',prov:'Google',   color:'#265238',successRate:40.80, elapsed:14400, cost:18.000, change: 0,cat:'gemini'},
   {id:9,name:'MiMo V2 Pro',      org:'Xiaomi',         prov:'Xiaomi',   color:'#786050',successRate:40.20, elapsed:27480, cost:26.400, change: 0,cat:'other'},
+  {id:30,name:'Gemma 4 31B IT',  org:'Google DeepMind',prov:'Google',   color:'#4285f4',successRate:37.598611,elapsed:23057.4400,cost:3.464117, change: 0,cat:'other'},
   {id:10,name:'Qwen3.5 397B',    org:'Alibaba Cloud',  prov:'Alibaba',  color:'#7a3828',successRate:34.50, elapsed:27540, cost:22.200, change: 0,cat:'other'},
   {id:11,name:'DeepSeek V3.2',   org:'DeepSeek',       prov:'DeepSeek', color:'#1e5590',successRate:34.00, elapsed:32940, cost:11.400, change: 0,cat:'deepseek'},
   {id:12,name:'GLM 5 Turbo',     org:'Zhipu AI',       prov:'Zhipu',    color:'#405868',successRate:33.90, elapsed:29940, cost:15.000, change: 0,cat:'other'},
@@ -995,13 +998,16 @@ const MODELS=[
 ];
 /* Display USD values with explicit round-half-up rounding to two decimals. */
 const roundUsd=v=>Math.round((v+1e-9)*100)/100;
-const fmtUsd=v=>'$'+roundUsd(v).toFixed(2);
+const fmtUsd=v=>v==null?'N/A':'$'+roundUsd(v).toFixed(2);
 const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:{label:'Elapsed Time',fmt:v=>(v/60).toFixed(0)+'min'},cost:{label:'Total Cost',fmt:fmtUsd}};
 
 /* ─── Multimodal / Pure-text split scores (26 mm tasks, 34 pt tasks) ─── */
-/* Split scores use the same one-decimal values as the paper table. Elapsed time
-   and cost are calibrated so the split sums match the released totals. */
+/* Split scores use the released paper values or task-level means from the
+   evaluation bundle. Elapsed time and cost splits sum to the released totals. */
 const SPLIT_SCORES={
+  28: {mm:46.638333, pt:48.373922, mmElapsed:11950.6800, ptElapsed:9151.5367, mmCost:null, ptCost:null}, // Muse Glimmer 30B
+  29: {mm:38.220769, pt:47.006275, mmElapsed:17592.2233, ptElapsed:7641.2333, mmCost:8.949735, ptCost:11.959653}, // Qwen3.6 27B (OpenRouter rate estimate)
+  30: {mm:34.706795, pt:39.810000, mmElapsed:14170.5300, ptElapsed:8886.9100, mmCost:1.695311, ptCost:1.768806}, // Gemma 4 31B IT (OpenRouter rate estimate)
   27: {mm:41.7065, pt:50.8626, mmElapsed:24721.08, ptElapsed:15715.54, mmCost:33.252225, ptCost:39.057017}, // Kimi K2.7 Code ($6.5/M input, $27/M output, $1.3/M cached input)
   26: {mm:65.3, pt:64.3, mmElapsed:13734.45, ptElapsed:10285.41, mmCost:58.692, ptCost:37.263}, // Claude Opus 4.8 (dynamic base-tier rates)
   0:  {mm:58.5, pt:65.0, mmElapsed:12589, ptElapsed:7091, mmCost:43.420, ptCost:33.980}, // Claude Opus 4.7
@@ -1637,7 +1643,7 @@ function initCatChart3D(uid,cat){
 function syncCatHighlight(){}
 const norm=vals=>{const mn=Math.min(...vals),mx=Math.max(...vals);return vals.map(v=>mx===mn?.5:(v-mn)/(mx-mn));};
 const normFixed=(vals,fixedMin,fixedMax)=>vals.map(v=>Math.max(0,Math.min(1,(v-fixedMin)/(fixedMax-fixedMin))));
-const maxV=k=>Math.max(...MODELS.map(m=>m[k]));
+const maxV=k=>Math.max(...MODELS.map(m=>m[k]).filter(Number.isFinite));
 const rkC=r=>r===1?'r1':r===2?'r2':r===3?'r3':'rn';
 function mkRow(m,rank,bKey,bfC,bvC,fmtFn,pctFn,extra){
   return`<tr data-id="${m.id}"><td class="rk ${rkC(rank)}">${rank}</td>
@@ -1649,7 +1655,8 @@ function mkRow(m,rank,bKey,bfC,bvC,fmtFn,pctFn,extra){
 /* metric switcher */
 const mxR=maxV('successRate'),mxT=maxV('elapsed'),mxC=maxV('cost');
 const mSt={rate:{k:'successRate',d:-1},time:{k:'elapsed',d:1},cost:{k:'cost',d:1}};
-const sortBy=(k,d)=>[...MODELS].sort((a,b)=>(a[k]<b[k]?-1:a[k]>b[k]?1:0)*d);
+const cmpMetric=(va,vb,d)=>{const ma=!Number.isFinite(va),mb=!Number.isFinite(vb);if(ma||mb)return ma===mb?0:ma?1:-1;return(va<vb?-1:va>vb?1:0)*d;};
+const sortBy=(k,d)=>[...MODELS].sort((a,b)=>cmpMetric(a[k],b[k],d));
 let topMode='overall';
 function getModeScore(m,mode){if(mode==='multimodal')return SPLIT_SCORES[m.id]?.mm??m.successRate;if(mode==='puretext')return SPLIT_SCORES[m.id]?.pt??m.successRate;return m.successRate;}
 function getModeElapsed(m,mode){if(mode==='multimodal')return SPLIT_SCORES[m.id]?.mmElapsed??m.elapsed;if(mode==='puretext')return SPLIT_SCORES[m.id]?.ptElapsed??m.elapsed;return m.elapsed;}
@@ -1659,11 +1666,11 @@ function getTopMetric(m,k){if(k==='successRate')return getModeScore(m,topMode);i
 function renderRate(){
   const th=document.getElementById('top-score-th');
   if(th){th.childNodes[0].textContent=(topMode==='multimodal'?'Multimodal Score':topMode==='puretext'?'Pure Text Score':'Overall Score')+' ';}
-  const sorted=[...MODELS].sort((a,b)=>{const va=getTopMetric(a,mSt.rate.k),vb=getTopMetric(b,mSt.rate.k);return(va<vb?-1:va>vb?1:0)*mSt.rate.d;});
+  const sorted=[...MODELS].sort((a,b)=>cmpMetric(getTopMetric(a,mSt.rate.k),getTopMetric(b,mSt.rate.k),mSt.rate.d));
   document.getElementById('tb-r').innerHTML=sorted.map((m,i)=>mkRow(m,i+1,'successRate','bf-r','bv-r',()=>getTopScore(m).toFixed(1)+'%',()=>getTopScore(m),m=>`<td><span class="bv bv-t">${(getModeElapsed(m,topMode)/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td><td><span class="bv bv-c">${fmtUsd(getModeCost(m,topMode))}</span></td>`)).join('');
 }
 function renderTime(){document.getElementById('tb-t').innerHTML=sortBy(mSt.time.k,mSt.time.d).map((m,i)=>mkRow(m,i+1,'elapsed','bf-t','bv-t',v=>(v/60).toFixed(0)+'min',v=>Math.max(5,v/mxT*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-c">${fmtUsd(m.cost)}</span></td>`)).join('');}
-function renderCost(){document.getElementById('tb-c').innerHTML=sortBy(mSt.cost.k,mSt.cost.d).map((m,i)=>mkRow(m,i+1,'cost','bf-c','bv-c',v=>m.free?'Free':m.cost===0?'N/A':fmtUsd(v),v=>m.free?100:m.cost===0?0:Math.max(5,(1-v/mxC)*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-t">${(m.elapsed/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td>`)).join('');}
+function renderCost(){document.getElementById('tb-c').innerHTML=sortBy(mSt.cost.k,mSt.cost.d).map((m,i)=>mkRow(m,i+1,'cost','bf-c','bv-c',v=>m.free?'Free':fmtUsd(v),v=>m.free?100:m.cost==null?0:Math.max(5,(1-v/mxC)*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-t">${(m.elapsed/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td>`)).join('');}
 function renderAllM(){renderRate();renderTime();renderCost();}
 function handleHash(){
   const hash = location.hash.replace('#','') || 'home';
@@ -1966,7 +1973,7 @@ function getCost(m){
 function getRankMetric(m,k){if(k==='successRate')return getScore(m);if(k==='elapsed')return getElapsed(m);if(k==='cost')return getCost(m);return m[k];}
 function modeScoreLabel(mode){return mode==='multimodal'?'Multimodal Score':mode==='puretext'?'Pure Text Score':'Overall Score';}
 function rankAxisLabel(k){return k==='successRate'?modeScoreLabel(rankMode):(AXES[k]?.label||k);}
-function fSorted(){let data=rSt.filter==='all'?[...MODELS]:MODELS.filter(m=>m.cat===rSt.filter);return data.sort((a,b)=>{const va=getRankMetric(a,rSt.k),vb=getRankMetric(b,rSt.k);return(va<vb?-1:va>vb?1:0)*rSt.d});}
+function fSorted(){let data=rSt.filter==='all'?[...MODELS]:MODELS.filter(m=>m.cat===rSt.filter);return data.sort((a,b)=>cmpMetric(getRankMetric(a,rSt.k),getRankMetric(b,rSt.k),rSt.d));}
 function renderRank(){
   const scoreLabel=modeScoreLabel(rankMode);
   document.querySelectorAll('[data-rs="successRate"]').forEach(th=>{th.childNodes[0].textContent=scoreLabel+' ';});
@@ -2121,12 +2128,13 @@ function initChart3D(){
   function buildSpheres(){
     meshes.forEach(m=>{scene.remove(m);scene.remove(m.userData.halo);if(m.userData.label)scene.remove(m.userData.label);});meshes=[];
     const axisVal=(m,k)=>getRankMetric(m,k);
-    const fixedRanges={successRate:[0,100],elapsed:[0,Math.max(...MODELS.map(m=>axisVal(m,'elapsed')))],cost:[0,Math.max(...MODELS.map(m=>axisVal(m,'cost')))]};
-    const getRange=k=>fixedRanges[k]||[0,Math.max(...MODELS.map(m=>axisVal(m,k)))];
-    const xs=normFixed(MODELS.map(m=>axisVal(m,rSt.axX)),...getRange(rSt.axX));
-    const ys=normFixed(MODELS.map(m=>axisVal(m,rSt.axY)),...getRange(rSt.axY));
-    const zs=normFixed(MODELS.map(m=>axisVal(m,rSt.axZ)),...getRange(rSt.axZ));
-    MODELS.forEach((model,i)=>{
+    const chartModels=MODELS.filter(m=>[rSt.axX,rSt.axY,rSt.axZ].every(k=>Number.isFinite(axisVal(m,k))));
+    const fixedRanges={successRate:[0,100],elapsed:[0,Math.max(...chartModels.map(m=>axisVal(m,'elapsed')))],cost:[0,Math.max(...chartModels.map(m=>axisVal(m,'cost')))]};
+    const getRange=k=>fixedRanges[k]||[0,Math.max(...chartModels.map(m=>axisVal(m,k)))];
+    const xs=normFixed(chartModels.map(m=>axisVal(m,rSt.axX)),...getRange(rSt.axX));
+    const ys=normFixed(chartModels.map(m=>axisVal(m,rSt.axY)),...getRange(rSt.axY));
+    const zs=normFixed(chartModels.map(m=>axisVal(m,rSt.axZ)),...getRange(rSt.axZ));
+    chartModels.forEach((model,i)=>{
       const col=new THREE.Color(model.color);
       const mesh=new THREE.Mesh(SPHERE_GEO,new THREE.MeshPhongMaterial({color:col,emissive:col,emissiveIntensity:.12,shininess:150,specular:new THREE.Color(0xffffff)}));
       mesh.scale.setScalar(1);mesh.position.set(xs[i]-.5,ys[i]-.5,zs[i]-.5);mesh.userData={model,orig:col.clone()};
