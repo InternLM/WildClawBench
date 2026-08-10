@@ -9,7 +9,7 @@
 
 [![Tasks](https://img.shields.io/badge/Tasks-60-blue)]()
 [![Harnesses](https://img.shields.io/badge/Harnesses-4-purple)]()
-[![Models](https://img.shields.io/badge/Models-28-green)]()
+[![Models](https://img.shields.io/badge/Models-31-green)]()
 [![Leaderboard](https://img.shields.io/badge/🏆_Leaderboard-WildClawBench-8c2416)](https://internlm.github.io/WildClawBench/)
 <br>
 [![arXiv](https://img.shields.io/badge/arXiv-2605.10912-b31b1b.svg)](https://arxiv.org/abs/2605.10912)
@@ -92,12 +92,12 @@ Full interactive leaderboard at [internlm.github.io/WildClawBench](https://inter
 | 14 | Muse Glimmer 30B | Meta | 47.6% | 352 min | N/A |
 | 15 | Kimi K2.7 Code | Moonshot AI | 46.9% | 674 min | $72.31 |
 | 16 | DeepSeek V4 Pro | DeepSeek | 43.7% | 605 min | $12.00 |
-| 17 | Qwen3.6 27B | Alibaba Cloud | 43.2% | 421 min | N/A |
+| 17 | Qwen3.6 27B | Alibaba Cloud | 43.2% | 421 min | $20.91 |
 | 18 | MiMo V2.5 Pro | Xiaomi | 43.0% | 451 min | $12.60 |
 | 19 | GLM 5 | Zhipu AI | 42.6% | 373 min | $11.40 |
 | 20 | Gemini 3.1 Pro | Google DeepMind | 40.8% | 240 min | $18.00 |
 | 21 | MiMo V2 Pro | Xiaomi | 40.2% | 458 min | $26.40 |
-| 22 | Gemma 4 31B IT | Google DeepMind | 37.6% | 384 min | N/A |
+| 22 | Gemma 4 31B IT | Google DeepMind | 37.6% | 384 min | $3.46 |
 | 23 | Qwen3.5 397B | Alibaba Cloud | 34.5% | 459 min | $22.20 |
 | 24 | DeepSeek V3.2 | DeepSeek | 34.0% | 549 min | $11.40 |
 | 25 | GLM 5 Turbo | Zhipu AI | 33.9% | 499 min | $15.00 |
