@@ -528,11 +528,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
         <div class="hp-title">
           <span class="hp-wild">Wild</span><span class="hp-claw">Claw</span><span class="hp-bench">Bench</span>
         </div>
-        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 31 frontier models on the OpenClaw harness.</div>
+        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 32 frontier models on the OpenClaw harness.</div>
       </div>
       <div class="hp-stats">
         <div class="hps">
-          <span class="hps-val red">31</span>
+          <span class="hps-val red">32</span>
           <span class="hps-label">Models</span>
         </div>
         <div class="hps">
@@ -745,7 +745,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="hp-stats">
       <div class="hps"><span class="hps-val red">6</span><span class="hps-label">Categories</span></div>
       <div class="hps"><span class="hps-val">60</span><span class="hps-label">Total Tasks</span></div>
-      <div class="hps"><span class="hps-val red">31</span><span class="hps-label">Models</span></div>
+      <div class="hps"><span class="hps-val red">32</span><span class="hps-label">Models</span></div>
     </div>
   </div>
 
@@ -805,7 +805,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <p>The tasks aren't exotic. They're the kind of work a competent human assistant handles every day. That gap is what makes WildClawBench useful.</p>
 
     <div class="blog-stat-strip">
-      <div class="blog-stat"><div class="blog-stat-val">31</div><div class="blog-stat-label">Frontier Models</div></div>
+      <div class="blog-stat"><div class="blog-stat-val">32</div><div class="blog-stat-label">Frontier Models</div></div>
       <div class="blog-stat"><div class="blog-stat-val">60</div><div class="blog-stat-label">Hand-crafted Tasks</div></div>
       <div class="blog-stat"><div class="blog-stat-val">67.2%</div><div class="blog-stat-label">Top Score</div></div>
       <div class="blog-stat"><div class="blog-stat-val">6</div><div class="blog-stat-label">Task Categories</div></div>
@@ -971,6 +971,7 @@ const MODELS=[
   {id:21,name:'Claude Fable 5',  org:'Anthropic',      prov:'Anthropic',color:'#b6532d',successRate:62.00, elapsed:19414, cost:87.709, change: 0,cat:'claude'},
   {id:1,name:'GPT-5.5',          org:'OpenAI',         prov:'OpenAI',   color:'#1c3448',successRate:58.20, elapsed:15720, cost:37.800, change: 0,cat:'gpt'},
   {id:22,name:'Grok 4.5',        org:'xAI',            prov:'xAI',      color:'#087f78',successRate:57.51, elapsed:21521, cost:28.432, change: 0,cat:'other'},
+  {id:31,name:'Qwen3.8-Max',      org:'Alibaba Cloud',  prov:'Alibaba',  color:'#615ced',successRate:56.155167,elapsed:42455.73,cost:24.700284,change: 0,cat:'other'},
   {id:19,name:'Muse Spark 1.1',  org:'Meta',           prov:'Meta',     color:'#0866ff',successRate:54.83, elapsed:22049, cost:23.591, change: 0,cat:'meta'},
   {id:23,name:'Kimi K3',         org:'Moonshot AI',    prov:'Moonshot', color:'#6d28d9',successRate:54.47, elapsed:29306, cost:40.079, change: 0,cat:'other'},
   {id:24,name:'GLM 5.2',         org:'Zhipu AI',       prov:'Zhipu',    color:'#2563eb',successRate:54.19, elapsed:26510, cost:17.098, change: 0,cat:'other'},
@@ -1006,6 +1007,7 @@ const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:
 /* Split scores use the released paper values or task-level means from the
    evaluation bundle. Elapsed time and cost splits sum to the released totals. */
 const SPLIT_SCORES={
+  31: {mm:59.423077, pt:53.656176, mmElapsed:29050.87, ptElapsed:13404.86, mmCost:14.937335, ptCost:9.762950}, // Qwen3.8-Max ($1.7535/M input, $5.2605/M output, $0.219186/M cache read)
   28: {mm:46.638333, pt:48.373922, mmElapsed:11950.6800, ptElapsed:9151.5367, mmCost:2.572105, ptCost:3.485553}, // Muse Glimmer 30B (OpenRouter rate estimate: $0.35/M input, $1.50/M output, $0.04/M cache read)
   29: {mm:38.220769, pt:47.006275, mmElapsed:17592.2233, ptElapsed:7641.2333, mmCost:8.949735, ptCost:11.959653}, // Qwen3.6 27B (OpenRouter rate estimate)
   30: {mm:34.706795, pt:39.810000, mmElapsed:14170.5300, ptElapsed:8886.9100, mmCost:1.695311, ptCost:1.768806}, // Gemma 4 31B IT (OpenRouter rate estimate)
@@ -1077,6 +1079,7 @@ const CATEGORIES=
       {modelId:25,rate:49.25,elapsed:3631,cost:0.547},
       {modelId:26,rate:73.04,elapsed:5612.74,cost:21.518},
       {modelId:27,rate:38.96,elapsed:8430.47,cost:19.638295},
+      {modelId:31,rate:46.202,elapsed:7261.30,cost:5.164222},
     ]
   },
   {
@@ -1107,6 +1110,7 @@ const CATEGORIES=
       {modelId:25,rate:52.64,elapsed:5122,cost:0.591},
       {modelId:26,rate:74.89,elapsed:6259.18,cost:19.176},
       {modelId:27,rate:53.58,elapsed:13297.07,cost:21.806547},
+      {modelId:31,rate:55.719167,elapsed:10446.86,cost:6.517370},
     ]
   },
   {
@@ -1137,6 +1141,7 @@ const CATEGORIES=
       {modelId:25,rate:73.71,elapsed:1217,cost:0.145},
       {modelId:26,rate:91.86,elapsed:1338.79,cost:5.684},
       {modelId:27,rate:81.56,elapsed:1905.37,cost:7.358151},
+      {modelId:31,rate:32.048333,elapsed:1151.30,cost:0.842572},
     ]
   },
   {
@@ -1167,6 +1172,7 @@ const CATEGORIES=
       {modelId:25,rate:57.27,elapsed:2902,cost:0.260},
       {modelId:26,rate:45.91,elapsed:3716.17,cost:8.809},
       {modelId:27,rate:53.64,elapsed:5502.42,cost:11.339409},
+      {modelId:31,rate:81.818182,elapsed:3682.10,cost:2.424367},
     ]
   },
   {
@@ -1197,6 +1203,7 @@ const CATEGORIES=
       {modelId:25,rate:35.96,elapsed:6587,cost:0.485},
       {modelId:26,rate:61.66,elapsed:6452.59,cost:35.378},
       {modelId:27,rate:31.98,elapsed:9596.74,cost:8.993809},
+      {modelId:31,rate:66.033636,elapsed:17495.35,cost:7.907456},
     ]
   },
   {
@@ -1227,6 +1234,7 @@ const CATEGORIES=
       {modelId:25,rate:39.00,elapsed:829,cost:0.098},
       {modelId:26,rate:52.00,elapsed:640.39,cost:5.389},
       {modelId:27,rate:35.00,elapsed:1704.55,cost:3.173030},
+      {modelId:31,rate:42.000000,elapsed:2418.82,cost:1.844297},
     ]
   },
 ];
