@@ -89,7 +89,7 @@ Full interactive leaderboard at [internlm.github.io/WildClawBench](https://inter
 | 11 | GPT-5.4 | OpenAI | 50.3% | 350 min | $19.80 |
 | 12 | Hy3 | Tencent | 49.7% | 338 min | $2.13 |
 | 13 | GLM 5.1 | Zhipu AI | 48.2% | 515 min | $34.80 |
-| 14 | Muse Glimmer 30B | Meta | 47.6% | 352 min | N/A |
+| 14 | Muse Glimmer 30B | Meta | 47.6% | 352 min | $6.06 |
 | 15 | Kimi K2.7 Code | Moonshot AI | 46.9% | 674 min | $72.31 |
 | 16 | DeepSeek V4 Pro | DeepSeek | 43.7% | 605 min | $12.00 |
 | 17 | Qwen3.6 27B | Alibaba Cloud | 43.2% | 421 min | $20.91 |
@@ -109,6 +109,7 @@ Full interactive leaderboard at [internlm.github.io/WildClawBench](https://inter
 | 31 | Grok 4.20 Beta | xAI | 19.3% | 94 min | $9.60 |
 
 > Claude Opus 4.8 cost uses the dynamic base-tier rates for this evaluation: $5/M input, $25/M output, $0.5/M cache read, and $6.25/M cache write.
+> Muse Glimmer 30B cost uses the OpenRouter rates for this evaluation: $0.35/M input, $1.50/M output, and $0.04/M cache read.
 > Kimi K2.7 Code cost uses the published rates for this evaluation: $6.5/M input, $27/M output, and $1.3/M cached input.
 
 ### Harness comparison
