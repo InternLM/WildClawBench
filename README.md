@@ -9,7 +9,7 @@
 
 [![Tasks](https://img.shields.io/badge/Tasks-60-blue)]()
 [![Harnesses](https://img.shields.io/badge/Harnesses-4-purple)]()
-[![Models](https://img.shields.io/badge/Models-31-green)]()
+[![Models](https://img.shields.io/badge/Models-32-green)]()
 [![Leaderboard](https://img.shields.io/badge/🏆_Leaderboard-WildClawBench-8c2416)](https://internlm.github.io/WildClawBench/)
 <br>
 [![arXiv](https://img.shields.io/badge/arXiv-2605.10912-b31b1b.svg)](https://arxiv.org/abs/2605.10912)
@@ -82,35 +82,37 @@ Full interactive leaderboard at [internlm.github.io/WildClawBench](https://inter
 | 4 | Claude Fable 5 | Anthropic | 62.0% | 324 min | $87.71 |
 | 5 | GPT-5.5 | OpenAI | 58.2% | 262 min | $37.80 |
 | 6 | Grok 4.5 | xAI | 57.5% | 359 min | $28.43 |
-| 7 | Muse Spark 1.1 | Meta | 54.8% | 367 min | $23.59 |
-| 8 | Kimi K3 | Moonshot AI | 54.5% | 488 min | $40.08 |
-| 9 | GLM 5.2 | Zhipu AI | 54.2% | 442 min | $17.10 |
-| 10 | Claude Opus 4.6 | Anthropic | 51.6% | 508 min | $81.00 |
-| 11 | GPT-5.4 | OpenAI | 50.3% | 350 min | $19.80 |
-| 12 | Hy3 | Tencent | 49.7% | 338 min | $2.13 |
-| 13 | GLM 5.1 | Zhipu AI | 48.2% | 515 min | $34.80 |
-| 14 | Muse Glimmer 30B | Meta | 47.6% | 352 min | $6.06 |
-| 15 | Kimi K2.7 Code | Moonshot AI | 46.9% | 674 min | $72.31 |
-| 16 | DeepSeek V4 Pro | DeepSeek | 43.7% | 605 min | $12.00 |
-| 17 | Qwen3.6 27B | Alibaba Cloud | 43.2% | 421 min | $20.91 |
-| 18 | MiMo V2.5 Pro | Xiaomi | 43.0% | 451 min | $12.60 |
-| 19 | GLM 5 | Zhipu AI | 42.6% | 373 min | $11.40 |
-| 20 | Gemini 3.1 Pro | Google DeepMind | 40.8% | 240 min | $18.00 |
-| 21 | MiMo V2 Pro | Xiaomi | 40.2% | 458 min | $26.40 |
-| 22 | Gemma 4 31B IT | Google DeepMind | 37.6% | 384 min | $3.46 |
-| 23 | Qwen3.5 397B | Alibaba Cloud | 34.5% | 459 min | $22.20 |
-| 24 | DeepSeek V3.2 | DeepSeek | 34.0% | 549 min | $11.40 |
-| 25 | GLM 5 Turbo | Zhipu AI | 33.9% | 499 min | $15.00 |
-| 26 | MiniMax M2.7 | MiniMax | 33.8% | 551 min | $7.20 |
-| 27 | Kimi K2.5 | Moonshot AI | 30.8% | 406 min | $6.60 |
-| 28 | MiMo V2 Flash | Xiaomi | 30.8% | 433 min | $10.20 |
-| 29 | MiniMax M2.5 | MiniMax | 27.1% | 542 min | $9.60 |
-| 30 | Step 3.5 Flash | StepFun | 26.7% | 430 min | $6.60 |
-| 31 | Grok 4.20 Beta | xAI | 19.3% | 94 min | $9.60 |
+| 7 | Qwen3.8-Max | Alibaba Cloud | 56.2% | 708 min | $24.70 |
+| 8 | Muse Spark 1.1 | Meta | 54.8% | 367 min | $23.59 |
+| 9 | Kimi K3 | Moonshot AI | 54.5% | 488 min | $40.08 |
+| 10 | GLM 5.2 | Zhipu AI | 54.2% | 442 min | $17.10 |
+| 11 | Claude Opus 4.6 | Anthropic | 51.6% | 508 min | $81.00 |
+| 12 | GPT-5.4 | OpenAI | 50.3% | 350 min | $19.80 |
+| 13 | Hy3 | Tencent | 49.7% | 338 min | $2.13 |
+| 14 | GLM 5.1 | Zhipu AI | 48.2% | 515 min | $34.80 |
+| 15 | Muse Glimmer 30B | Meta | 47.6% | 352 min | $6.06 |
+| 16 | Kimi K2.7 Code | Moonshot AI | 46.9% | 674 min | $72.31 |
+| 17 | DeepSeek V4 Pro | DeepSeek | 43.7% | 605 min | $12.00 |
+| 18 | Qwen3.6 27B | Alibaba Cloud | 43.2% | 421 min | $20.91 |
+| 19 | MiMo V2.5 Pro | Xiaomi | 43.0% | 451 min | $12.60 |
+| 20 | GLM 5 | Zhipu AI | 42.6% | 373 min | $11.40 |
+| 21 | Gemini 3.1 Pro | Google DeepMind | 40.8% | 240 min | $18.00 |
+| 22 | MiMo V2 Pro | Xiaomi | 40.2% | 458 min | $26.40 |
+| 23 | Gemma 4 31B IT | Google DeepMind | 37.6% | 384 min | $3.46 |
+| 24 | Qwen3.5 397B | Alibaba Cloud | 34.5% | 459 min | $22.20 |
+| 25 | DeepSeek V3.2 | DeepSeek | 34.0% | 549 min | $11.40 |
+| 26 | GLM 5 Turbo | Zhipu AI | 33.9% | 499 min | $15.00 |
+| 27 | MiniMax M2.7 | MiniMax | 33.8% | 551 min | $7.20 |
+| 28 | Kimi K2.5 | Moonshot AI | 30.8% | 406 min | $6.60 |
+| 29 | MiMo V2 Flash | Xiaomi | 30.8% | 433 min | $10.20 |
+| 30 | MiniMax M2.5 | MiniMax | 27.1% | 542 min | $9.60 |
+| 31 | Step 3.5 Flash | StepFun | 26.7% | 430 min | $6.60 |
+| 32 | Grok 4.20 Beta | xAI | 19.3% | 94 min | $9.60 |
 
 > Claude Opus 4.8 cost uses the dynamic base-tier rates for this evaluation: $5/M input, $25/M output, $0.5/M cache read, and $6.25/M cache write.
 > Muse Glimmer 30B cost uses the OpenRouter rates for this evaluation: $0.35/M input, $1.50/M output, and $0.04/M cache read.
 > Kimi K2.7 Code cost uses the published rates for this evaluation: $6.5/M input, $27/M output, and $1.3/M cached input.
+> Qwen3.8-Max cost uses the evaluation rates: $1.7535/M input, $5.2605/M output, and $0.219186/M cache read.
 
 ### Harness comparison
 
