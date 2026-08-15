@@ -16,6 +16,9 @@
 [![HF Daily Paper](https://img.shields.io/badge/🤗_Daily_Paper-Featured-ffcc00)](https://huggingface.co/papers/2605.10912)
 [![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/internlm/WildClawBench)
 [![PDF Report](https://img.shields.io/badge/📄_Paper-PDF-red)](https://github.com/InternLM/WildClawBench/blob/main/WildClawBench_report.pdf)
+<br>
+[![Harbor Format](https://img.shields.io/badge/⚓_Harbor_Format-WildClawBench--Harbor-blue)](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)
+[![Trajectories](https://img.shields.io/badge/🛤️_Trajectories-WildClawBench--Trajectories-orange)](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)
 
 </div>
 
@@ -49,9 +52,20 @@ Most agent benchmarks test isolated capabilities — calling a function, parsing
 - **Four agent harnesses, one task suite.** OpenClaw, Claude Code, Codex CLI, and Hermes Agent all execute the same 60 tasks under the same grading. This separates *model capability* from *harness scaffolding* — you can see how much an agent's score depends on its surrounding tools versus the underlying LLM.
 - **Reproducible & isolated.** Each task runs in its own Docker container. Same image, same data, same grading code. Ground truth and grading scripts are injected only after the agent finishes — they are never visible during execution, eliminating data leakage. Scores are reproducible across machines.
 
+## The WildClawBench Family
+
+The evaluation code lives in this repository; the benchmark data ships as three Hugging Face datasets — pick the one that matches how you want to use it:
+
+| Repository | What's inside | Use it when you want to |
+|---|---|---|
+| **[WildClawBench](https://huggingface.co/datasets/internlm/WildClawBench)** | Task data, Docker images for all four harnesses | Reproduce the paper's evaluation with this repository's pipeline |
+| **[WildClawBench-Harbor](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)** | All 60 tasks repackaged in the [Harbor](https://github.com/harbor-framework/harbor) format | Evaluate any Harbor-supported agent with a single `harbor run` — no benchmark-specific setup ([details](#run-with-harbor)) |
+| **[WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)** | Complete agent trajectories for the full 60-task suite, across a growing roster of frontier models, plus raw evaluation outputs | Inspect how models actually behave — or mine real long-horizon traces for analysis and training ([details](#agent-trajectories)) |
+
 ## News
 
 - **2026-08** Meta's **[Muse Glimmer release](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)** reports WildClawBench evaluation scores. Thanks for the recognition!
+- **2026-08** Released **[WildClawBench-Harbor](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)** — the full 60-task suite in [Harbor](https://github.com/harbor-framework/harbor) format — and **[WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)** — complete agent trajectories from our frontier-model evaluations, browsable in the HF Agent Trace Viewer and continuously updated as new models are evaluated.
 - **2026-07** We expanded the OpenClaw leaderboard with evaluations of the latest frontier models, including **GPT-5.6 Sol, Claude Fable 5, Kimi K3 and etc**.
 - **2026-06** ByteDance Seed's **[Seed2.1 release](https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity)** includes WildClawBench in its agent evaluations. Thanks for the recognition!
 - **2026-05** We released a new version with **four agent harnesses** — OpenClaw, Claude Code, Codex CLI, and Hermes Agent — so the same 60-task suite can be evaluated under multiple scaffolds.
@@ -145,6 +159,8 @@ Same 60 tasks, same grading, four different agent scaffolds. Time and cost are p
 To create new tasks, see the annotated template at [`tasks/task0_template.md`](tasks/task0_template.md).
 
 ## Quick Start
+
+> **Prefer a standard runner?** The suite is also available in [Harbor](https://github.com/harbor-framework/harbor) format — skip the setup below and jump to [Run with Harbor](#run-with-harbor).
 
 ### Install Docker
 
@@ -385,6 +401,26 @@ Provider with explicit API mode and env var key:
 
 </details>
 
+## Run with Harbor
+
+The full suite is also published in the [Harbor](https://github.com/harbor-framework/harbor) task format at **[internlm/WildClawBench-Harbor](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)**. Each of the 60 tasks is a self-contained Harbor task directory (`task.toml` / `instruction.md` / `environment/` / `tests/`), with task content and grading logic identical to this repository. This is the easiest way to evaluate agents that Harbor already supports (Claude Code, OpenHands, Codex CLI, custom agents, ...) — no benchmark-specific pipeline needed.
+
+```bash
+uv tool install harbor   # or: pip install harbor
+
+# Task suite
+hf download internlm/WildClawBench-Harbor --repo-type dataset --local-dir ./WildClawBench-Harbor
+
+# Docker image (same OpenClaw image as above)
+hf download internlm/WildClawBench Images/wildclawbench-ubuntu_v1.3.tar --repo-type dataset --local-dir .
+docker load -i Images/wildclawbench-ubuntu_v1.3.tar
+
+# Run the full benchmark (or point -p at a single task directory)
+harbor run -p ./WildClawBench-Harbor -a claude-code -m anthropic/claude-opus-4-1 --n-concurrent 4
+```
+
+See the [WildClawBench-Harbor card](https://huggingface.co/datasets/internlm/WildClawBench-Harbor) for the task layout, environment details, and scoring.
+
 ## Check the Results
 
 After the run completes, a per-category summary and a global summary (`output/summary_all.json`) are generated automatically. Each metric is scored from `0.00` to `1.00`.
@@ -405,7 +441,15 @@ output/<harness>/<category>/<task_id>/<model_timestamp_runid>/
 
 The subdirectory name is `<short_model>_<timestamp>_<runid>`, where `short_model` is the last segment of the model path (e.g. `claude-sonnet-4.6` from `openrouter/anthropic/claude-sonnet-4.6`) and `runid` is a 6-char random hex string, so parallel or repeated runs never collide.
 
-For independent verification and side-by-side comparison, we have provided the complete evaluation details and trajectories in our Google Drive folder:
+## Agent Trajectories
+
+For independent verification, side-by-side comparison, and trace-level analysis, we release **[internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)**: complete OpenClaw trajectories covering the full 60-task suite for each evaluated model — including recent frontier models such as GPT-5.6 Sol, Claude Fable 5, Claude Opus 4.8, Kimi K3, and more. The collection is continuously updated as new models join the leaderboard; see the [dataset card](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories) for the current roster. The same data is provided in three forms:
+
+- **`train.parquet`** — one row per (task, model) with the full message sequence as a JSON array; loads directly with `load_dataset("internlm/WildClawBench-Trajectories")` and renders in the HF Dataset Viewer (inline images replaced by hash placeholders to keep rows small).
+- **`sessions/<model>/<task_id>.jsonl`** — per-session trace files for the HF **Agent Trace Viewer**: open any file, select the *Trace* tab, and step through reasoning blocks, tool calls, tool results, and token usage. These preserve the original inline image data.
+- **`output_*.tar.gz`** — the raw per-task evaluation outputs (scores, usage, logs, agent-produced files) exactly as generated by the pipeline above.
+
+Earlier evaluation details remain available on Google Drive:
 
 - overall_results.json: [Overall Results](https://drive.google.com/file/d/1EI1_ABNLwEaiguzUU7f0RuEk5KFIMLUu/view?usp=drive_link)
 - overall_dashboard.html: [Performance Dashboard](https://drive.google.com/file/d/1B7nStKfXeyATBM3lIv858M9FaH6QBPWU/view?usp=drive_link)
@@ -414,8 +458,6 @@ For independent verification and side-by-side comparison, we have provided the c
 - Kimi K2.5 Details: [Kimi K2.5](https://drive.google.com/file/d/1Ne7CkE6gtCNR7OQR4ZKcp7qXvNmive9Q/view?usp=drive_link)
 - MiniMax M2.7 Details: [MiniMax M2.7](https://drive.google.com/file/d/15K65XZxkUqKWj3rp-d-gZN0DEL1iu2Kf/view?usp=drive_link)
 - Claude Opus 4.6 Details: [Claude 4.6 Opus](https://drive.google.com/file/d/1qCPxy0-Z-LveiVAmPTVlrh3x2fe9qlU6/view?usp=drive_link)
-
-More models's (fable5, glm5.2, gpt5.6, grok4.5, hy3, kimi_k3, muse_spark, kimi-k2.7, interns2-preview-397b, claude-opus4.8) details in [internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)
 
 ## Personal OpenClaw Evaluation
 
