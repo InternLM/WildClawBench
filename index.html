@@ -528,11 +528,11 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
         <div class="hp-title">
           <span class="hp-wild">Wild</span><span class="hp-claw">Claw</span><span class="hp-bench">Bench</span>
         </div>
-        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 33 frontier models on the OpenClaw harness.</div>
+        <div class="hp-sub">A harder, wilder benchmark for autonomous AI agents — testing real-world task completion across 34 frontier models on the OpenClaw harness.</div>
       </div>
       <div class="hp-stats">
         <div class="hps">
-          <span class="hps-val red">33</span>
+          <span class="hps-val red">34</span>
           <span class="hps-label">Models</span>
         </div>
         <div class="hps">
@@ -745,7 +745,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <div class="hp-stats">
       <div class="hps"><span class="hps-val red">6</span><span class="hps-label">Categories</span></div>
       <div class="hps"><span class="hps-val">60</span><span class="hps-label">Total Tasks</span></div>
-      <div class="hps"><span class="hps-val red">33</span><span class="hps-label">Models</span></div>
+      <div class="hps"><span class="hps-val red">34</span><span class="hps-label">Models</span></div>
     </div>
   </div>
 
@@ -805,7 +805,7 @@ tbody tr:nth-child(9){animation-delay:.18s}tbody tr:nth-child(10){animation-dela
     <p>The tasks aren't exotic. They're the kind of work a competent human assistant handles every day. That gap is what makes WildClawBench useful.</p>
 
     <div class="blog-stat-strip">
-      <div class="blog-stat"><div class="blog-stat-val">33</div><div class="blog-stat-label">Frontier Models</div></div>
+      <div class="blog-stat"><div class="blog-stat-val">34</div><div class="blog-stat-label">Frontier Models</div></div>
       <div class="blog-stat"><div class="blog-stat-val">60</div><div class="blog-stat-label">Hand-crafted Tasks</div></div>
       <div class="blog-stat"><div class="blog-stat-val">67.2%</div><div class="blog-stat-label">Top Score</div></div>
       <div class="blog-stat"><div class="blog-stat-val">6</div><div class="blog-stat-label">Task Categories</div></div>
@@ -982,6 +982,7 @@ const MODELS=[
   {id:32,name:'Qwen3.8 27B',      org:'Alibaba Cloud',  prov:'Alibaba',  color:'#4338ca',successRate:48.015167,elapsed:30970.93,cost:null,change: 0,cat:'other'},
   {id:28,name:'Muse Glimmer 30B',org:'Meta',           prov:'Meta',     color:'#4f63c6',successRate:47.621833,elapsed:21102.2167,cost:6.057658, change: 0,cat:'meta'},
   {id:27,name:'Kimi K2.7 Code',   org:'Moonshot AI',    prov:'Moonshot', color:'#7c3aed',successRate:46.895, elapsed:40436.62,cost:72.309242, change: 0,cat:'other'},
+  {id:33,name:'Intern-S2 Preview 397B',org:'InternLM',  prov:'InternLM', color:'#0f766e',successRate:44.678667,elapsed:32481.83,cost:0,free:true,change: 0,cat:'other'},
   {id:5,name:'DeepSeek V4 Pro',  org:'DeepSeek',       prov:'DeepSeek', color:'#2563a8',successRate:43.70, elapsed:36300, cost:12.000, change: 0,cat:'deepseek'},
   {id:29,name:'Qwen3.6 27B',      org:'Alibaba Cloud',  prov:'Alibaba',  color:'#615ced',successRate:43.199222,elapsed:25233.4567,cost:20.909388,change: 0,cat:'other'},
   {id:6,name:'MiMo V2.5 Pro',    org:'Xiaomi',         prov:'Xiaomi',   color:'#604840',successRate:43.00, elapsed:27060, cost:12.600, change: 0,cat:'other'},
@@ -1008,6 +1009,7 @@ const AXES={successRate:{label:'Overall Score',fmt:v=>v.toFixed(1)+'%'},elapsed:
 /* Split scores use the released paper values or task-level means from the
    evaluation bundle. Elapsed time and cost splits sum to the released totals. */
 const SPLIT_SCORES={
+  33: {mm:34.171923, pt:52.713235, mmElapsed:19671.27, ptElapsed:12810.56, mmCost:0, ptCost:0}, // Intern-S2 Preview 397B (free self-hosted endpoint)
   32: {mm:39.078462, pt:54.849118, mmElapsed:19819.60, ptElapsed:11151.33, mmCost:null, ptCost:null}, // Qwen3.8 27B (self-hosted vLLM; billing data unavailable)
   31: {mm:59.423077, pt:53.656176, mmElapsed:29050.87, ptElapsed:13404.86, mmCost:14.937335, ptCost:9.762950}, // Qwen3.8-Max ($1.7535/M input, $5.2605/M output, $0.219186/M cache read)
   28: {mm:46.638333, pt:48.373922, mmElapsed:11950.6800, ptElapsed:9151.5367, mmCost:2.572105, ptCost:3.485553}, // Muse Glimmer 30B (OpenRouter rate estimate: $0.35/M input, $1.50/M output, $0.04/M cache read)
@@ -1083,6 +1085,7 @@ const CATEGORIES=
       {modelId:27,rate:38.96,elapsed:8430.47,cost:19.638295},
       {modelId:31,rate:46.202,elapsed:7261.30,cost:5.164222},
       {modelId:32,rate:45.701,elapsed:6281.49,cost:null},
+      {modelId:33,rate:44.197,elapsed:7791.54,cost:0},
     ]
   },
   {
@@ -1115,6 +1118,7 @@ const CATEGORIES=
       {modelId:27,rate:53.58,elapsed:13297.07,cost:21.806547},
       {modelId:31,rate:55.719167,elapsed:10446.86,cost:6.517370},
       {modelId:32,rate:50.535,elapsed:9860.87,cost:null},
+      {modelId:33,rate:25.446667,elapsed:11571.18,cost:0},
     ]
   },
   {
@@ -1147,6 +1151,7 @@ const CATEGORIES=
       {modelId:27,rate:81.56,elapsed:1905.37,cost:7.358151},
       {modelId:31,rate:32.048333,elapsed:1151.30,cost:0.842572},
       {modelId:32,rate:87.643333,elapsed:1427.48,cost:null},
+      {modelId:33,rate:73.780000,elapsed:1066.84,cost:0},
     ]
   },
   {
@@ -1179,6 +1184,7 @@ const CATEGORIES=
       {modelId:27,rate:53.64,elapsed:5502.42,cost:11.339409},
       {modelId:31,rate:81.818182,elapsed:3682.10,cost:2.424367},
       {modelId:32,rate:44.545455,elapsed:3736.52,cost:null},
+      {modelId:33,rate:54.545455,elapsed:3466.53,cost:0},
     ]
   },
   {
@@ -1211,6 +1217,7 @@ const CATEGORIES=
       {modelId:27,rate:31.98,elapsed:9596.74,cost:8.993809},
       {modelId:31,rate:66.033636,elapsed:17495.35,cost:7.907456},
       {modelId:32,rate:32.874545,elapsed:8590.72,cost:null},
+      {modelId:33,rate:44.610000,elapsed:7781.66,cost:0},
     ]
   },
   {
@@ -1243,6 +1250,7 @@ const CATEGORIES=
       {modelId:27,rate:35.00,elapsed:1704.55,cost:3.173030},
       {modelId:31,rate:42.000000,elapsed:2418.82,cost:1.844297},
       {modelId:32,rate:44.000000,elapsed:1073.85,cost:null},
+      {modelId:33,rate:40.000000,elapsed:804.08,cost:0},
     ]
   },
 ];
@@ -1325,7 +1333,7 @@ function renderActiveCat(){
                 <span class="cat-bar-val bv-r">${s.rate!==null?s.rate.toFixed(1)+'%':'—'}</span>
               </div></td>
               <td><span class="bv bv-t">${s.elapsed!==null?(s.elapsed/60).toFixed(0)+'<small style="color:var(--ink4)">min</small>':'—'}</span></td>
-              <td><span class="bv bv-c">${s.cost!==null?fmtUsd(s.cost):'—'}</span></td>
+              <td><span class="bv bv-c">${m.free?'Free':s.cost!==null?fmtUsd(s.cost):'—'}</span></td>
             </tr>`;
           }).join('')}</tbody>
         </table></div>
@@ -1684,9 +1692,9 @@ function renderRate(){
   const th=document.getElementById('top-score-th');
   if(th){th.childNodes[0].textContent=(topMode==='multimodal'?'Multimodal Score':topMode==='puretext'?'Pure Text Score':'Overall Score')+' ';}
   const sorted=[...MODELS].sort((a,b)=>cmpMetric(getTopMetric(a,mSt.rate.k),getTopMetric(b,mSt.rate.k),mSt.rate.d));
-  document.getElementById('tb-r').innerHTML=sorted.map((m,i)=>mkRow(m,i+1,'successRate','bf-r','bv-r',()=>getTopScore(m).toFixed(1)+'%',()=>getTopScore(m),m=>`<td><span class="bv bv-t">${(getModeElapsed(m,topMode)/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td><td><span class="bv bv-c">${fmtUsd(getModeCost(m,topMode))}</span></td>`)).join('');
+  document.getElementById('tb-r').innerHTML=sorted.map((m,i)=>mkRow(m,i+1,'successRate','bf-r','bv-r',()=>getTopScore(m).toFixed(1)+'%',()=>getTopScore(m),m=>`<td><span class="bv bv-t">${(getModeElapsed(m,topMode)/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td><td><span class="bv bv-c">${m.free?'Free':fmtUsd(getModeCost(m,topMode))}</span></td>`)).join('');
 }
-function renderTime(){document.getElementById('tb-t').innerHTML=sortBy(mSt.time.k,mSt.time.d).map((m,i)=>mkRow(m,i+1,'elapsed','bf-t','bv-t',v=>(v/60).toFixed(0)+'min',v=>Math.max(5,v/mxT*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-c">${fmtUsd(m.cost)}</span></td>`)).join('');}
+function renderTime(){document.getElementById('tb-t').innerHTML=sortBy(mSt.time.k,mSt.time.d).map((m,i)=>mkRow(m,i+1,'elapsed','bf-t','bv-t',v=>(v/60).toFixed(0)+'min',v=>Math.max(5,v/mxT*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-c">${m.free?'Free':fmtUsd(m.cost)}</span></td>`)).join('');}
 function renderCost(){document.getElementById('tb-c').innerHTML=sortBy(mSt.cost.k,mSt.cost.d).map((m,i)=>mkRow(m,i+1,'cost','bf-c','bv-c',v=>m.free?'Free':fmtUsd(v),v=>m.free?100:m.cost==null?0:Math.max(5,(1-v/mxC)*100),m=>`<td><span class="bv bv-r">${m.successRate.toFixed(1)}<small style="color:var(--ink4)">%</small></span></td><td><span class="bv bv-t">${(m.elapsed/60).toFixed(0)}<small style="color:var(--ink4)">min</small></span></td>`)).join('');}
 function renderAllM(){renderRate();renderTime();renderCost();}
 function handleHash(){
@@ -1975,7 +1983,7 @@ function drawAccCostScatter(){
         tt.classList.add('show');tt.style.left=(mx+14)+'px';tt.style.top=(my-10)+'px';
         tt.innerHTML=`<div class="plot-tt-name">${hit.m.name}</div>
           <div class="plot-tt-row"><span>Overall Score</span><strong>${hit.m.successRate.toFixed(1)}%</strong></div>
-          <div class="plot-tt-row"><span>Total Cost</span><strong>${fmtUsd(hit.m.cost)}</strong></div>
+          <div class="plot-tt-row"><span>Total Cost</span><strong>${hit.m.free?'Free':fmtUsd(hit.m.cost)}</strong></div>
           <div class="plot-tt-row"><span>Elapsed</span><strong>${(hit.m.elapsed/60).toFixed(0)}min</strong></div>
           <div class="plot-tt-row"><span>Provider</span><strong>${hit.m.prov}</strong></div>`;
       }else{tt.classList.remove('show');}
