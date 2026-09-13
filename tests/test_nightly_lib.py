@@ -4,8 +4,29 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "script"))
-from nightly_lib import (load_ledger, pending_tasks, record_result,
-                        save_ledger, short_id, window_active)
+from nightly_lib import (BACKEND, LEDGER, OUT_ROOT, build_run_cmd, load_ledger,
+                        pending_tasks, record_result, save_ledger, short_id,
+                        window_active)
+
+
+def test_backend_defaults_to_dsh_paths():
+    assert BACKEND == "dsh"
+    assert OUT_ROOT.name == "dsh"
+    assert LEDGER.name == "ledger_qwen3.8-flash-next.json"
+
+
+def test_build_run_cmd_dsh():
+    cmd = build_run_cmd("dsh", "m1", Path("/t/x_task_1_a.md"))
+    assert "--agent-backend" in cmd and "dsh" in cmd
+    assert str(Path("/t/x_task_1_a.md")) in cmd
+
+
+def test_build_run_cmd_openclaw_matched():
+    cmd = build_run_cmd("openclaw", "qwen3.8-flash-next",
+                        Path("/t/01_x_task_2_b.md"))
+    assert "openclaw" in cmd and "--models-config" in cmd
+    assert any("my_api.lb.json" in c for c in cmd)
+    assert "wcb-lb/qwen3.8-flash-next" in cmd
 
 
 def _mk_tasks(tmp):
