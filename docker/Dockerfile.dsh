@@ -15,8 +15,10 @@ RUN apt-get update \
  && npm cache clean --force
 
 # bench profile: one headless boot per task; provider = LiteLLM LB; xhigh baked
-RUN mkdir -p /root/.dsh/profiles/bench
 COPY docker/dsh-settings.yaml /root/.dsh/settings.yaml
+RUN dsh --profile bench --from-default-profile headless --dump-config > /dev/null \
+ && printf -- '- id: agent-default-model\n  config:\n    provider: wcb-lb\n    model: qwen3.8-flash-next\n    reasoningEffort: xhigh\n' \
+    > /root/.dsh/profiles/bench/cordis.patch.yml
 
 # LB is open on the tailnet; dummy key satisfies the config contract
 ENV WCB_LB_API_KEY=wcb-internal
