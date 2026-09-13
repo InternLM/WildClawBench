@@ -5,8 +5,18 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "script"))
 from nightly_lib import (BACKEND, LEDGER, OUT_ROOT, build_run_cmd, load_ledger,
-                        pending_tasks, record_result, save_ledger, short_id,
-                        window_active)
+                        pending_tasks, record_result, resolve_backend,
+                        save_ledger, short_id, window_active)
+
+
+def test_resolve_backend_precedence(tmp_path, monkeypatch):
+    monkeypatch.delenv("WCB_BACKEND", raising=False)
+    assert resolve_backend(tmp_path) == "dsh"
+    (tmp_path / "output").mkdir()
+    (tmp_path / "output" / "backend.conf").write_text("openclaw\n")
+    assert resolve_backend(tmp_path) == "openclaw"
+    monkeypatch.setenv("WCB_BACKEND", "dsh")
+    assert resolve_backend(tmp_path) == "dsh"
 
 
 def test_backend_defaults_to_dsh_paths():
