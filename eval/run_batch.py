@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from src.agents.base import AgentTaskSpec, BaseAgent
 from src.agents.claudecode import ClaudeCodeAgent
 from src.agents.codex import CodexAgent
+from src.agents.dsh import DshAgent
 from src.agents.openclaw import OpenClawAgent
 from src.utils.cli_args import parse_run_batch_args
 from src.utils.endpoint_utils import (
@@ -315,6 +316,9 @@ def main() -> None:
         )
     elif args.agent_backend == "codex":
         backend = CodexAgent()
+    elif args.agent_backend == "dsh":
+        backend = DshAgent(lb_base_url=os.environ.get(
+            "WCB_LB_BASE_URL", "http://100.64.0.1:4000/v1"))
     elif args.agent_backend == "hermesagent":
         from src.agents.hermesagent import HermesAgentAgent
         backend = HermesAgentAgent(
