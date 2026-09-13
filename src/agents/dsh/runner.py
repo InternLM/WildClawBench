@@ -28,6 +28,7 @@ LB_FALLBACK_URL = "http://host.docker.internal:4000/v1"
 class DshAgent(BaseAgent):
     def __init__(self, lb_base_url: str = "http://100.64.0.1:4000/v1") -> None:
         self.lb_base_url = lb_base_url.rstrip("/")
+        self.lb_api_key = os.environ.get("WCB_LB_API_KEY", "")
 
     @property
     def expects_gateway(self) -> bool:
@@ -64,7 +65,8 @@ class DshAgent(BaseAgent):
             start_time = time.perf_counter()
             agent_proc = run_background(
                 spec.task_id,
-                bash_cmd=(f"cd /tmp_workspace && dsh --profile bench "
+                bash_cmd=(f"export WCB_LB_API_KEY='{self.lb_api_key}' && "
+                          f"cd /tmp_workspace && dsh --profile bench "
                           f"--patch {PATCH_CONTAINER_PATH} '{safe_prompt}'"),
                 log_path=spec.output_dir / "agent.log",
             )
@@ -106,14 +108,15 @@ class DshAgent(BaseAgent):
         return usage
 
     def _probe_lb(self, task_id: str) -> None:
-        cmd = (f"curl -sf -m 10 {self.lb_base_url}/models >/dev/null "
-               f"|| curl -sf -m 10 -o /dev/null {LB_FALLBACK_URL}/models")
+        auth = f"-H 'Authorization: Bearer {self.lb_api_key}' " if self.lb_api_key else ""
+        cmd = (f"curl -sf -m 10 {auth}{self.lb_base_url}/models | grep -q qwen3.8-flash-next "
+               f"|| curl -sf -m 10 {auth}{LB_FALLBACK_URL}/models | grep -q qwen3.8-flash-next")
         r = subprocess.run(["docker", "exec", task_id, "/bin/bash", "-c", cmd],
                            capture_output=True, text=True)
         if r.returncode != 0:
             raise RuntimeError(
-                f"LiteLLM LB unreachable from container {task_id}: tried "
-                f"{self.lb_base_url}/models then {LB_FALLBACK_URL}/models "
+                f"LiteLLM LB not serving qwen3.8-flash-next from container "
+                f"{task_id}: tried {self.lb_base_url}/models then {LB_FALLBACK_URL}/models "
                 f"(spec risk R1): {r.stderr.strip()}")
 
     def _write_patch(self, task_id: str, model: str, rung: str) -> None:
