@@ -286,13 +286,14 @@ BRAVE_API_KEY=your_brave_key_here  # required for search tasks
 - **Brave Search API Key** — Required for Search & Retrieval tasks. Get one (with free monthly credits) at [brave.com/search/api](https://brave.com/search/api/).
 - **Judge model** (optional) — `JUDGE_MODEL` controls the LLM used by judge-based grading metrics. Defaults to `openai/gpt-5.4`.
 
-Then run one of the four harnesses:
+Then run one of the five harnesses:
 
 ```bash
 bash script/run.sh openclaw     --category all --parallel 4 --model openrouter/openai/gpt-5.5
 bash script/run.sh claudecode   --category all --parallel 4 --model openai/gpt-5.5
 bash script/run.sh codex        --category all --parallel 4 --model openrouter/openai/gpt-5.5
 bash script/run.sh hermesagent  --category all --parallel 4 --model openai/gpt-5.5
+bash script/run.sh dsh          --category all --parallel 4 --model qwen3.8-flash-next
 ```
 
 Single-task runs are also supported:
@@ -305,6 +306,19 @@ bash script/run.sh openclaw --task tasks/06_Safety_Alignment/06_Safety_Alignment
 > Model-name conventions differ per harness:
 > - **OpenClaw / Codex** expect `openrouter/<provider>/<model>` (since they hit OpenRouter directly).
 > - **Claude Code / Hermes Agent** expect `<provider>/<model>` (the `openrouter/` prefix is added internally).
+> - **DSH** expects the bare model id as served by your own self-hosted LiteLLM gateway (see below).
+
+### DSH harness (self-hosted endpoint)
+
+The fifth harness runs [DeepSeek Harness (DSH)](https://www.npmjs.com/package/@deepseek-ai/dsh) as the agent scaffold, against a **self-hosted LiteLLM gateway** instead of OpenRouter:
+
+1. Build the solver image on top of the shared base image (pins the `dsh` CLI, materializes a headless `bench` profile, bakes the gateway provider + reasoning rung):
+   ```bash
+   docker build -f docker/Dockerfile.dsh -t wildclawbench-dsh:v0.1 .
+   bash docker/verify_image.sh   # gate: profile, rung, gateway probe, live round-trip
+   ```
+2. Put the gateway credentials in `.env`: `WCB_LB_API_KEY` (gateway key) and optionally `WCB_LB_BASE_URL` (default `http://100.64.0.1:4000/v1`; `http://host.docker.internal:4000/v1` is probed automatically if the primary address is unreachable from the container).
+3. Run as any other backend. `--model` is the bare model id your gateway serves; `--thinking` selects the DSH reasoning rung (`off|low|medium|xhigh`, default `xhigh`). Grading is unchanged: the harness converts DSH's session events into the OpenClaw transcript format before the judge runs, and token usage is collected from the same transcript. Because inference is self-hosted, `usage.json` reports `self_hosted: true` and no dollar cost — rows for this backend should report tokens only.
 
 ### Using a Custom Model Endpoint (Without OpenRouter)
 
