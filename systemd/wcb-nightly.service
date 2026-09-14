@@ -1,0 +1,8 @@
+[Unit]
+Description=WildClawBench dsh nightly (05:00-07:30 America/Chicago window)
+
+[Service]
+Type=oneshot
+Nice=10
+Environment=TZ=America/Chicago
+ExecStart=/home/nathan-white/.local/bin/wcb-nightly

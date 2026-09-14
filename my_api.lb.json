@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "wcb-lb": {
+      "baseUrl": "http://100.64.0.1:4000/v1",
+      "apiKey": "${MY_PROXY_API_KEY}",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "qwen3.8-flash-next",
+          "name": "Qwen3.8 Flash-Next NVFP4 (TP2, LiteLLM LB)"
+        }
+      ]
+    }
+  }
+}

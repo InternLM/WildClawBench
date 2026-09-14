@@ -1,0 +1,10 @@
+[Unit]
+Description=WildClawBench dsh nightly window trigger
+
+[Timer]
+OnCalendar=*-*-* 05:00:00 America/Chicago
+Persistent=false
+AccuracySec=60
+
+[Install]
+WantedBy=timers.target
