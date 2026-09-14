@@ -7,6 +7,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "script"))
 from nightly_lib import (BACKEND, LEDGER, OUT_ROOT, build_run_cmd, load_ledger,
                         pending_tasks, record_result, resolve_backend,
                         save_ledger, short_id, window_active)
+import nightly_lib
+from nightly_lib import _newest_score, run_one
 
 
 def test_resolve_backend_precedence(tmp_path, monkeypatch):
@@ -78,6 +80,40 @@ def test_window_bounds():
     assert window_active(datetime(2026, 9, 14, 5, 1))
     assert not window_active(datetime(2026, 9, 14, 4, 59))
     assert not window_active(datetime(2026, 9, 14, 7, 31))
+
+
+def test_newest_score_finds_plain_score_json(tmp_path, monkeypatch):
+    # Runs write <task>/<run>/score.json — _newest_score must match that name.
+    monkeypatch.setattr(nightly_lib, "OUT_ROOT", tmp_path)
+    task = tmp_path / "01_A" / "01_A_task_1_x"
+    old = task / "qwen_20260914_0500_aaa"
+    new = task / "qwen_20260914_0530_bbb"
+    old.mkdir(parents=True)
+    new.mkdir(parents=True)
+    (old / "score.json").write_text('{"error": "old attempt"}')
+    (new / "score.json").write_text('{"score": 0.9}')
+    import os, time
+    os.utime(old / "score.json", (0, 0))
+    assert _newest_score("01_A", "01_A_task_1_x") == new / "score.json"
+
+
+def test_newest_score_missing_returns_sentinel(tmp_path, monkeypatch):
+    monkeypatch.setattr(nightly_lib, "OUT_ROOT", tmp_path)
+    assert _newest_score("01_A", "01_A_task_1_x") == \
+        tmp_path / "_missing_score.json"
+
+
+def test_run_one_defers_outside_window(tmp_path, monkeypatch):
+    # Window "hard stop": queued tasks past WINDOW_STOP must not launch.
+    monkeypatch.setattr(nightly_lib, "window_active", lambda *a, **k: False)
+    monkeypatch.setattr(nightly_lib, "LEDGER", tmp_path / "l.json")
+    save_ledger(tmp_path / "l.json", {})
+    ran = []
+    monkeypatch.setattr(nightly_lib.subprocess, "run",
+                        lambda *a, **k: ran.append(a))
+    assert run_one(Path("/t/01_A_task_1_x.md")) == "deferred"
+    assert ran == []  # no subprocess, no docker, no ledger write
+    assert load_ledger(tmp_path / "l.json") == {}
 
 
 def test_ledger_atomic_roundtrip(tmp_path):
