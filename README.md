@@ -64,6 +64,7 @@ The evaluation code lives in this repository; the benchmark data ships as three 
 
 ## News
 
+- **2026-09** Qwen's **[Qwen3.8-Omni-Flash release](https://qwen.ai/blog?id=qwen3.8-omni-flash)** includes WildClawBench's multimodal subset (WildClawBench-MM) in its agent evaluations. Thanks for the recognition!
 - **2026-08** Meta's **[Muse Glimmer release](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)** reports WildClawBench evaluation scores. Thanks for the recognition!
 - **2026-08** Released **[WildClawBench-Harbor](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)** — the full 60-task suite in [Harbor](https://github.com/harbor-framework/harbor) format — and **[WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)** — complete agent trajectories from our frontier-model evaluations, browsable in the HF Agent Trace Viewer and continuously updated as new models are evaluated.
 - **2026-07** We expanded the OpenClaw leaderboard with evaluations of the latest frontier models, including **GPT-5.6 Sol, Claude Fable 5, Kimi K3 and etc**.
