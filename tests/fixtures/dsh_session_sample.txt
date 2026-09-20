@@ -1,0 +1,6 @@
+{"type":"session","version":3,"id":"session-abc","createdAt":1,"cwd":"/tmp_workspace"}
+{"type":"user/message","seq":9,"time":2,"data":{"content":[{"type":"text","text":"Do the thing"}],"role":"user"}}
+{"type":"assistant/message","seq":10,"time":3,"data":{"turn":1,"step":1,"usage":{"inputTokens":45096,"outputTokens":161,"totalTokens":45257},"message":{"role":"assistant","content":[{"type":"reasoning","text":"hidden chain"},{"type":"text","text":"working on it"},{"type":"tool-call","id":"call-1","name":"bash","arguments":"{\"command\":\"ls\"}"}]}}}
+{"type":"tool/result","seq":11,"time":4,"data":{"turn":1,"step":1,"message":{"source":{"kind":"tool","callId":"call-1"},"content":[{"type":"tool-result","toolCallId":"call-1","content":[{"type":"text","text":"a.txt"}]}]}}}
+{"type":"assistant/message","seq":12,"time":5,"data":{"turn":1,"step":2,"usage":{"inputTokens":47118,"outputTokens":109,"totalTokens":47227},"message":{"role":"assistant","content":[{"type":"text","text":"done"}]}}}
+{"type":"turn/end","seq":13,"time":6,"data":{"turn":1,"reason":{"kind":"completed"}}}

@@ -1,0 +1,25 @@
+FROM wildclawbench-ubuntu:v1.3
+
+# Base image bakes a proxy ENV that points at the bench authors' network;
+# clear it so this layer builds against the open internet (bench runtime
+# proxy env is controlled separately by docker_utils).
+ENV http_proxy= https_proxy= HTTP_PROXY= HTTPS_PROXY= no_proxy=*
+
+# dsh CLI pinned (spec: exact pin; bump = deliberate PR)
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends zstd ca-certificates curl \
+ && rm -rf /var/lib/apt/lists/* \
+ && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+ && apt-get install -y --no-install-recommends nodejs \
+ && npm install -g @deepseek-ai/dsh@0.1.5-rc.1 \
+ && npm cache clean --force
+
+# bench profile: one headless boot per task; provider = LiteLLM LB; xhigh baked
+COPY docker/dsh-settings.yaml /root/.dsh/settings.yaml
+RUN dsh --profile bench --from-default-profile headless --dump-config > /dev/null \
+ && printf -- '- id: agent-default-model\n  config:\n    provider: wcb-lb\n    model: qwen3.8-flash-next\n    reasoningEffort: xhigh\n' \
+    > /root/.dsh/profiles/bench/cordis.patch.yml
+
+# LB is open on the tailnet; dummy key satisfies the config contract
+ENV WCB_LB_API_KEY=wcb-internal
+WORKDIR /tmp_workspace

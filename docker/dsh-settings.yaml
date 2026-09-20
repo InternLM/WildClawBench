@@ -1,0 +1,24 @@
+llm-pi-ai:
+  providers:
+    wcb-lb:
+      displayName: WildClawBench GB10 LiteLLM LB
+      api: openai-completions
+      baseURL: http://100.64.0.1:4000/v1
+      apiKeyEnv: WCB_LB_API_KEY
+      models:
+        - id: qwen3.8-flash-next
+          name: Qwen3.8 Flash-Next NVFP4 (TP2, LiteLLM LB)
+          contextWindow: 262144
+          maxTokens: 8192
+          input: [text, image]
+          reasoningEfforts:
+            off: none
+            low: low
+            medium: medium
+            xhigh: xhigh
+agent-default-model:
+  provider: wcb-lb
+  model: qwen3.8-flash-next
+  reasoningEffort: xhigh
+permission:
+  defaultPreset: danger-full-access
