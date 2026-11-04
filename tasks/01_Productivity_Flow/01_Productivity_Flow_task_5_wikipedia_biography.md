@@ -11,15 +11,21 @@ Read the **"Biography"** section of **Emperor Huan of Han** (汉桓帝) at:
 
 - https://zh.wikipedia.org/wiki/%E6%B1%89%E6%A1%93%E5%B8%9D
 
+**Use the version of Wikipedia as of 2026-03-20 23:59:59 UTC, not the current live page.**
+
 Identify all the people mentioned in that section, excluding Emperor Huan of Han himself.
 
-For each person who also has a "Biography" section on Wikipedia, save that section's content as a Markdown file named `{person_name}.md`.
+For each person who also has a "Biography" section on Wikipedia (in the version as of 2026-03-20), save that section's content as a Markdown file named `{person_name}.md`.
 
 Use each person's **actual name** consistently (not their title or alias).
 
 Save all the Markdown files to `/tmp_workspace/results/`.
 
 Do not generate any other files or directories.
+
+### Wikipedia Version
+
+All Wikipedia content used in this task, including the Emperor Huan of Han page and every other person's page, must come from the latest revision made at or before **2026-03-20 23:59:59 UTC**. Ignore any edit made after that time. Whether a person has a "Biography" section is also judged on that version.
 
 ### Output Requirements
 
@@ -51,10 +57,10 @@ Do not create any other files or directories in the results directory.
 
 The agent should:
 
-1. Navigate to the Wikipedia page for Emperor Huan of Han
+1. Navigate to the Wikipedia page for Emperor Huan of Han and locate its revision as of 2026-03-20 23:59:59 UTC
 2. Read and parse the "Biography" section to extract all mentioned persons
-3. For each mentioned person, check whether they have a "Biography" section on their own Wikipedia page
-4. For those who do, extract the full Biography section content
+3. For each mentioned person, locate their page's revision as of 2026-03-20 23:59:59 UTC and check whether it has a "Biography" section
+4. For those who do, extract the full Biography section content from that revision
 5. Save each extracted Biography as `results/{person_name}.md` using the person's actual name
 
 The agent may use web browsing, Wikipedia API, or other tools. The final score depends only on the generated Markdown files.
