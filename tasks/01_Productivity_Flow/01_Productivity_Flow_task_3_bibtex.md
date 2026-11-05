@@ -8,14 +8,16 @@ modality: pure-text
 
 ## Prompt
 
-A folder contains 21 arXiv papers already downloaded as PDF files, but the filenames are messy and unreliable. Some of the PDFs may be corrupted versions (e.g., missing pages, scribbles, or partial content).
+A folder contains 21 PDF files: 20 correspond to arXiv papers and one is a non-arXiv paper. The filenames are messy and unreliable. Some of the PDFs may be corrupted versions (e.g., missing pages, scribbles, or partial content).
+
+Identify and process only the 20 arXiv PDFs. Exclude the non-arXiv PDF from the manifest, renamed copies, and BibTeX outputs. Do not modify or delete any original input PDF.
 
 
 The input PDFs are located directly under:
 
 - `/tmp_workspace/`
 
-Your task is to identify the official arXiv paper corresponding to each PDF, recover its exact official arXiv title, count how many figures appear in the provided PDF, and generate the official BibTeX for every paper.
+For each arXiv PDF, identify the corresponding official arXiv paper, recover its exact official arXiv title, count how many figures appear in the provided PDF, and generate its official BibTeX.
 
 Save the results into `/tmp_workspace/results/`. Create the following under that directory:
 - `paper_manifest.json`
@@ -53,7 +55,7 @@ Save a JSON array. Each item must contain exactly these fields:
 Requirements:
 
 - **Include exactly one item for each input arXiv PDF**
-- Do not omit any input PDF
+- Do not omit any input arXiv PDF
 - Do not include extra items
 - `original_filename` must be the original filename from `/tmp_workspace/`
 - `arxiv_id` must be the exact official arXiv identifier
@@ -92,7 +94,7 @@ If you need image understanding or multimodal capabilities, you can call the Ope
 
 The agent should:
 
-1. Inspect each local PDF and determine which arXiv paper it is (for corrupted PDFs, use metadata or web search to identify the paper)
+1. Inspect each local PDF, exclude the non-arXiv paper from all outputs, and identify the corresponding arXiv paper for each remaining PDF (for corrupted PDFs, use metadata or web search to identify the paper)
 2. Recover the exact official arXiv title and arXiv ID
 3. Count how many figures appear in the provided PDF for each paper
 4. Create a renamed copy of each PDF using the required filename rule
