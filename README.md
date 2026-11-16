@@ -267,7 +267,7 @@ The script will:
 - Download SAM3 model weights for Code Intelligence tasks
 
 
-Prerequisites: `yt-dlp`, `ffmpeg`, `gdown`.
+Prerequisites: `yt-dlp`, `ffmpeg`, `modelscope`.
 
 > **Note:** YouTube downloads may require authentication. If you encounter a "Sign in to confirm you're not a bot" error, try one of the following:
 > - [Get cookies.txt locally](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc?pli=1).
@@ -276,14 +276,18 @@ Prerequisites: `yt-dlp`, `ffmpeg`, `gdown`.
 
 ### Run
 
-Set your API keys in the `.env` file:
+Create a local `.env` file from the example, then set your API keys:
+
+```bash
+cp .env.example .env
+```
 
 ```
 OPENROUTER_API_KEY=your_api_key_here
 BRAVE_API_KEY=your_brave_key_here  # required for search tasks
 ```
 
-- **OpenRouter API Key** — Any model available on [OpenRouter](https://openrouter.ai/models) is supported. The default model is defined in the `.env` file as `DEFAULT_MODEL=openrouter/stepfun/step-3.5-flash:free` — replace it with any model you want to evaluate.
+- **OpenRouter API Key** — Any model available on [OpenRouter](https://openrouter.ai/models) is supported. The default model is defined in the `.env` file as `DEFAULT_MODEL=openrouter/anthropic/claude-sonnet-4.6` — replace it with any model you want to evaluate.
 - **Brave Search API Key** — Required for Search & Retrieval tasks. Get one (with free monthly credits) at [brave.com/search/api](https://brave.com/search/api/).
 - **Judge model** (optional) — `JUDGE_MODEL` controls the LLM used by judge-based grading metrics. Defaults to `openai/gpt-5.4`.
 
