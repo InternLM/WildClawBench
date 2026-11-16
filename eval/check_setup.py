@@ -28,8 +28,6 @@ HARNESS_IMAGES = {
     "hermesagent": ("HERMES_DOCKER_IMAGE", "wildclawbench-hermes-agent:v0.5"),
 }
 
-PREPARE_COMMANDS = ("hf", "yt-dlp", "ffmpeg", "modelscope")
-
 
 class Reporter:
     def __init__(self) -> None:
@@ -144,15 +142,14 @@ def check_env_file(report: Reporter, env: dict[str, str], args: argparse.Namespa
     else:
         report.fail("OPENROUTER_BASE_URL must start with http:// or https://")
 
-    if args.category in ("all", "04_Search_Retrieval"):
-        if env_value(env, "BRAVE_API_KEY"):
-            report.ok("BRAVE_API_KEY is set for Search & Retrieval tasks")
-        else:
-            report.fail("BRAVE_API_KEY is empty; Search & Retrieval tasks require Brave Search")
+    if env_value(env, "BRAVE_API_KEY"):
+        report.ok("BRAVE_API_KEY is set")
+    else:
+        report.fail("BRAVE_API_KEY is empty; agents use Brave Search for web search in every task container")
 
     model = args.model or env_value(env, "DEFAULT_MODEL")
     if not model:
-        report.fail("no model provided and DEFAULT_MODEL is empty")
+        report.ok("no --model or DEFAULT_MODEL; run_batch.py will use its built-in default model")
     elif model in {"openrouter/xxx", "xxx"}:
         report.warn("DEFAULT_MODEL still looks like a placeholder; pass --model or update .env")
     else:
@@ -238,20 +235,6 @@ def check_workspace_data(report: Reporter, args: argparse.Namespace) -> None:
     else:
         report.fail("workspace data directory is missing; run: hf download internlm/WildClawBench workspace --repo-type dataset --local-dir .")
 
-    images_dir = ROOT_DIR / "Images"
-    if images_dir.is_dir():
-        report.ok("Images directory exists")
-    else:
-        report.warn("Images directory is missing; this is expected before downloading Docker image tarballs")
-
-
-def check_prepare_commands(report: Reporter) -> None:
-    for command in PREPARE_COMMANDS:
-        if shutil.which(command):
-            report.ok(f"{command} command found")
-        else:
-            report.warn(f"{command} command not found; install it before running script/prepare.sh")
-
 
 def main() -> int:
     args = build_parser().parse_args()
@@ -268,7 +251,6 @@ def main() -> int:
     check_env_file(report, env, args)
     check_docker(report, env, args)
     check_workspace_data(report, args)
-    check_prepare_commands(report)
 
     print("")
     if report.failures:
