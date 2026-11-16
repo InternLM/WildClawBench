@@ -485,7 +485,7 @@ Earlier evaluation details remain available on Google Drive:
 [Roller](https://github.com/Valen-Team/Roller) runs this benchmark on any OpenAI-compatible endpoint and writes the trajectories in the layout of WildClawBench-Trajectories. It reads the same `.env` variables and `my_api.json` as the pipeline above:
 
 ```bash
-pip install git+https://github.com/Valen-Team/Roller.git
+pip install roller-agent
 set -a; . /path/to/WildClawBench/.env; set +a
 
 # Collect and grade: one Docker container per trajectory, graded before the container is removed
