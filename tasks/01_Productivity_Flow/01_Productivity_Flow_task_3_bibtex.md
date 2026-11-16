@@ -8,14 +8,16 @@ modality: pure-text
 
 ## Prompt
 
-A folder contains 21 arXiv papers already downloaded as PDF files, but the filenames are messy and unreliable. Some of the PDFs may be corrupted versions (e.g., missing pages, scribbles, or partial content).
+A folder contains 21 PDF files: 20 correspond to arXiv papers and one is a non-arXiv paper. The filenames are messy and unreliable. Some of the PDFs may be corrupted versions (e.g., missing pages, scribbles, or partial content).
+
+Identify and process only the 20 arXiv PDFs. Exclude the non-arXiv PDF from the manifest, renamed copies, and BibTeX outputs. Do not modify or delete any original input PDF.
 
 
 The input PDFs are located directly under:
 
 - `/tmp_workspace/`
 
-Your task is to identify the official arXiv paper corresponding to each PDF, recover its exact official arXiv title, count how many figures appear in the provided PDF, and generate the official BibTeX for every paper.
+For each arXiv PDF, identify the corresponding official arXiv paper, recover its exact official arXiv title, count how many figures appear in the provided PDF, and generate its official BibTeX.
 
 Save the results into `/tmp_workspace/results/`. Create the following under that directory:
 - `paper_manifest.json`
@@ -53,7 +55,7 @@ Save a JSON array. Each item must contain exactly these fields:
 Requirements:
 
 - **Include exactly one item for each input arXiv PDF**
-- Do not omit any input PDF
+- Do not omit any input arXiv PDF
 - Do not include extra items
 - `original_filename` must be the original filename from `/tmp_workspace/`
 - `arxiv_id` must be the exact official arXiv identifier
@@ -92,7 +94,7 @@ If you need image understanding or multimodal capabilities, you can call the Ope
 
 The agent should:
 
-1. Inspect each local PDF and determine which arXiv paper it is (for corrupted PDFs, use metadata or web search to identify the paper)
+1. Inspect each local PDF, exclude the non-arXiv paper from all outputs, and identify the corresponding arXiv paper for each remaining PDF (for corrupted PDFs, use metadata or web search to identify the paper)
 2. Recover the exact official arXiv title and arXiv ID
 3. Count how many figures appear in the provided PDF for each paper
 4. Create a renamed copy of each PDF using the required filename rule
@@ -107,7 +109,6 @@ The agent may use local PDF inspection, web access, shell commands, scripts, or 
 - [ ] `renamed_papers/` and `bibtex/` are created
 - [ ] The manifest covers all expected arXiv inputs exactly once with no duplicates
 - [ ] No extra unexpected outputs are produced
-- [ ] The task workspace contains only the original input PDFs, `results/`, `gt/`, and `.task_root_snapshot.json` at top level
 - [ ] `results/` contains only `paper_manifest.json`, `renamed_papers/`, and `bibtex/` at top level
 - [ ] Every renamed arXiv PDF is byte-identical to the corresponding input PDF
 - [ ] The predicted arXiv ID for each expected paper is correct
@@ -162,7 +163,6 @@ def grade(**kwargs) -> dict:
     gt_dir = workspace / "gt"
     gt_manifest_path = gt_dir / "gt_manifest.json"
     gt_bibtex_dir = gt_dir
-    root_snapshot_path = workspace / ".task_root_snapshot.json"
 
     if not gt_manifest_path.exists():
         return ZERO
@@ -409,33 +409,17 @@ def grade(**kwargs) -> dict:
                 produced_bib_ids.add(path.stem)
     non_arxiv_bib_ok = produced_bib_ids.issubset(expected_bib_ids)
 
-    task_root_entries = []
-    results_entries = []
-    if root_snapshot_path.exists():
-        try:
-            snapshot = json.loads(root_snapshot_path.read_text(encoding="utf-8"))
-            if isinstance(snapshot, dict):
-                task_root_entries = snapshot.get("task_root_entries", []) or []
-                results_entries = snapshot.get("results_entries", []) or []
-        except Exception:
-            pass
-    if not task_root_entries or not results_entries:
-        task_root_entries = [p.name for p in workspace.iterdir()] if workspace.exists() else []
-        results_entries = (
-            [p.name for p in results_dir.iterdir()]
-            if results_dir.exists() and results_dir.is_dir()
-            else []
-        )
-    allowed_root = set(input_by_name.keys()) | {"results", "gt", ".task_root_snapshot.json"}
-    extra_root_entries = [
-        name for name in task_root_entries if name not in allowed_root
-    ]
+    results_entries = (
+        [p.name for p in results_dir.iterdir()]
+        if results_dir.exists() and results_dir.is_dir()
+        else []
+    )
     extra_results_entries = [
         name
         for name in results_entries
         if name not in {"paper_manifest.json", "renamed_papers", "bibtex"}
     ]
-    extra_workspace_count = len(extra_root_entries) + len(extra_results_entries)
+    extra_workspace_count = len(extra_results_entries)
 
     total = len(gt_items)
     scores["pdf_copies_byte_identical"] = 1.0 if byte_identical_ok and total > 0 else 0.0
