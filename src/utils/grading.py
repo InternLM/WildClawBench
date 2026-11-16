@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 
 load_dotenv()
 TMP_WORKSPACE = os.environ.get("TMP_WORKSPACE", "/tmp_workspace")
+GRADING_TIMEOUT = int(os.environ.get("GRADING_TIMEOUT", "120"))
 
 def _write_score(output_dir: Path, task_id: str, scores: dict) -> None:
     score_path = output_dir / "score.json"
@@ -131,7 +132,7 @@ def run_grading(
             ["docker", "exec", *env_args, task_id, "python3", "/tmp/_grade_runner.py"],
             capture_output=True,
             text=True,
-            timeout=120,
+            timeout=GRADING_TIMEOUT,
         )
         if r.returncode != 0:
             logger.error("[%s] Grading script execution failed: %s", task_id, r.stderr)
