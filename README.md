@@ -19,6 +19,7 @@
 <br>
 [![Harbor Format](https://img.shields.io/badge/⚓_Harbor_Format-WildClawBench--Harbor-blue)](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)
 [![Trajectories](https://img.shields.io/badge/🛤️_Trajectories-WildClawBench--Trajectories-orange)](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)
+[![Roller](https://img.shields.io/badge/🎞️_Collect_Trajectories-Roller-00866F)](https://github.com/Valen-Team/Roller)
 
 </div>
 
@@ -60,10 +61,13 @@ The evaluation code lives in this repository; the benchmark data ships as three 
 |---|---|---|
 | **[WildClawBench](https://huggingface.co/datasets/internlm/WildClawBench)** | Task data, Docker images for all four harnesses | Reproduce the paper's evaluation with this repository's pipeline |
 | **[WildClawBench-Harbor](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)** | All 60 tasks repackaged in the [Harbor](https://github.com/harbor-framework/harbor) format | Evaluate any Harbor-supported agent with a single `harbor run` — no benchmark-specific setup ([details](#run-with-harbor)) |
-| **[WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)** | Complete agent trajectories for the full 60-task suite, across a growing roster of frontier models, plus raw evaluation outputs | Inspect how models actually behave — or mine real long-horizon traces for analysis and training ([details](#agent-trajectories)) |
+| **[WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)** | Graded OpenClaw trajectories of the leaderboard models on the full 60-task suite: one session per run under `traces/`, and a table with the score of every run | Inspect how models actually behave — or mine real long-horizon traces for analysis and training ([details](#agent-trajectories)) |
+
+To collect and grade WildClawBench trajectories for your own model, use [Roller](https://github.com/Valen-Team/Roller) ([details](#collect-trajectories-with-roller)).
 
 ## News
 
+- **2026-11** **[WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)** now holds 720 graded trajectories from 12 leaderboard models, with one trace file per run under `traces/` and a table with the score of every run. To collect trajectories for your own model, see **[Roller](https://github.com/Valen-Team/Roller)**.
 - **2026-09** Qwen's **[Qwen3.8-Omni-Flash release](https://qwen.ai/blog?id=qwen3.8-omni-flash)** includes WildClawBench's multimodal subset (WildClawBench-MM) in its agent evaluations. Thanks for the recognition!
 - **2026-08** Meta's **[Muse Glimmer release](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)** reports WildClawBench evaluation scores. Thanks for the recognition!
 - **2026-08** Released **[WildClawBench-Harbor](https://huggingface.co/datasets/internlm/WildClawBench-Harbor)** — the full 60-task suite in [Harbor](https://github.com/harbor-framework/harbor) format — and **[WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)** — complete agent trajectories from our frontier-model evaluations, browsable in the HF Agent Trace Viewer and continuously updated as new models are evaluated.
@@ -429,8 +433,12 @@ hf download internlm/WildClawBench-Harbor --repo-type dataset --local-dir ./Wild
 hf download internlm/WildClawBench Images/wildclawbench-ubuntu_v1.3.tar --repo-type dataset --local-dir .
 docker load -i Images/wildclawbench-ubuntu_v1.3.tar
 
+# Keys the tasks read: the LLM judge and image understanding (46 tasks), and web search
+export OPENROUTER_API_KEY=...
+export BRAVE_API_KEY=...
+
 # Run the full benchmark (or point -p at a single task directory)
-harbor run -p ./WildClawBench-Harbor -a claude-code -m anthropic/claude-opus-4-1 --n-concurrent 4
+harbor run -p ./WildClawBench-Harbor -a claude-code -m anthropic/claude-opus-5-5 --n-concurrent 4
 ```
 
 See the [WildClawBench-Harbor card](https://huggingface.co/datasets/internlm/WildClawBench-Harbor) for the task layout, environment details, and scoring.
@@ -457,11 +465,10 @@ The subdirectory name is `<short_model>_<timestamp>_<runid>`, where `short_model
 
 ## Agent Trajectories
 
-For independent verification, side-by-side comparison, and trace-level analysis, we release **[internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)**: complete OpenClaw trajectories covering the full 60-task suite for each evaluated model — including recent frontier models such as GPT-5.6 Sol, Claude Fable 5, Claude Opus 4.8, Kimi K3, and more. The collection is continuously updated as new models join the leaderboard; see the [dataset card](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories) for the current roster. The same data is provided in three forms:
+For independent verification, side-by-side comparison, and trace-level analysis, we release **[internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories)**: graded OpenClaw trajectories covering the full 60-task suite for each evaluated model — 12 models and 720 trajectories so far, including GPT-5.6 Sol, Claude Fable 5, Claude Opus 4.8, and Kimi K3. The collection grows as new models join the leaderboard; see the [dataset card](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories) for the current roster. Every path carries an `openclaw-<model>` name:
 
-- **`train.parquet`** — one row per (task, model) with the full message sequence as a JSON array; loads directly with `load_dataset("internlm/WildClawBench-Trajectories")` and renders in the HF Dataset Viewer (inline images replaced by hash placeholders to keep rows small).
-- **`sessions/<model>/<task_id>.jsonl`** — per-session trace files for the HF **Agent Trace Viewer**: open any file, select the *Trace* tab, and step through reasoning blocks, tool calls, tool results, and token usage. These preserve the original inline image data.
-- **`output_*.tar.gz`** — the raw per-task evaluation outputs (scores, usage, logs, agent-produced files) exactly as generated by the pipeline above.
+- **`traces/openclaw-<model>/<task_id>.jsonl`** — the session of one run, with images inline, for the HF **Agent Trace Viewer**: open any file, select the *Trace* tab, and step through reasoning blocks, tool calls, tool results, and token usage.
+- **`data/openclaw-<model>.jsonl`** — one row per run with its score, per-metric scores, status, step and tool-call counts, token usage, and the path of its session; loads directly with `load_dataset("internlm/WildClawBench-Trajectories")` and renders in the HF Dataset Viewer.
 
 Earlier evaluation details remain available on Google Drive:
 
@@ -472,6 +479,26 @@ Earlier evaluation details remain available on Google Drive:
 - Kimi K2.5 Details: [Kimi K2.5](https://drive.google.com/file/d/1Ne7CkE6gtCNR7OQR4ZKcp7qXvNmive9Q/view?usp=drive_link)
 - MiniMax M2.7 Details: [MiniMax M2.7](https://drive.google.com/file/d/15K65XZxkUqKWj3rp-d-gZN0DEL1iu2Kf/view?usp=drive_link)
 - Claude Opus 4.6 Details: [Claude 4.6 Opus](https://drive.google.com/file/d/1qCPxy0-Z-LveiVAmPTVlrh3x2fe9qlU6/view?usp=drive_link)
+
+## Collect Trajectories with Roller
+
+[Roller](https://github.com/Valen-Team/Roller) runs this benchmark on any OpenAI-compatible endpoint and writes the trajectories in the layout of WildClawBench-Trajectories. It reads the same `.env` variables and `my_api.json` as the pipeline above:
+
+```bash
+pip install git+https://github.com/Valen-Team/Roller.git
+set -a; . /path/to/WildClawBench/.env; set +a
+
+# Collect and grade: one Docker container per trajectory, graded before the container is removed
+roller collect --bench wildclawbench --bench-root /path/to/WildClawBench \
+  --model <provider>/<model> --model-config /path/to/WildClawBench/my_api.json \
+  --harness openclaw --openclaw-image wildclawbench-ubuntu:v1.3 \
+  --parallel 4 --output runs --run-name my-model
+
+# Export a Hugging Face dataset folder: traces/, data/ and a results table for the card
+roller export runs/my-model --format hf --output dataset
+```
+
+Roller runs rollouts in parallel, retries failed ones, and resumes an interrupted run with `--resume`. `--harness` also takes `codex`, `claude-code`, and `hermes`. Besides the Hugging Face folder, it exports SFT records with `messages` and `tools`, and [ATIF](https://valen-team.github.io/roller/traces/trajectory-outputs/#atif-export) files that Harbor loads. [Roller-WildClawBench-Trajectories](https://huggingface.co/datasets/Valen-Team/Roller-WildClawBench-Trajectories) is a dataset made this way, and the [WildClawBench guide](https://valen-team.github.io/roller/benches/wildclawbench/) covers the setup.
 
 ## Personal OpenClaw Evaluation
 
