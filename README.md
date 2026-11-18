@@ -500,6 +500,15 @@ roller export runs/my-model --format hf --output dataset
 
 Roller runs rollouts in parallel, retries failed ones, and resumes an interrupted run with `--resume`. `--harness` also takes `codex`, `claude-code`, and `hermes`. Besides the Hugging Face folder, it exports SFT records with `messages` and `tools`, and [ATIF](https://valen-team.github.io/roller/traces/trajectory-outputs/#atif-export) files that Harbor loads. [Roller-WildClawBench-Trajectories](https://huggingface.co/datasets/Valen-Team/Roller-WildClawBench-Trajectories) is a dataset made this way, and the [WildClawBench guide](https://valen-team.github.io/roller/benches/wildclawbench/) covers the setup.
 
+For Roller collections, two additional task images are available on GHCR:
+
+```bash
+docker pull ghcr.io/valen-team/roller-wildclaw-base:1.3-clean.1
+docker pull ghcr.io/valen-team/roller-wildclaw-codex:1.3-codex0.149.0
+```
+
+The base image retains the WildClawBench task environment with personal builder state removed; the Codex image adds Codex CLI 0.149.0. Use the base image with Roller's `--openclaw-image` and the Codex image with `--harness codex --codex-image`. See the [image recipes](https://github.com/Valen-Team/Roller/tree/main/docker/wildclawbench) and the [OpenClaw and Codex collection example](https://github.com/Valen-Team/Roller/tree/main/examples/cookbook/wildclawbench-open-models) for setup, model endpoint requirements, task selection and grading. That example uses features newer than Roller 0.4.0 and describes installation from a Git checkout.
+
 ## Personal OpenClaw Evaluation
 
 "Raising lobsters" has become a phenomenon — users gradually teach their OpenClaw agents new skills, customize personalities, and build up long-term memory through daily interaction. A natural question follows: **whose lobster is better?** Beyond bragging rights, there is real value in understanding which skill combinations, persona designs, and memory strategies actually improve agent performance on a given model. That's why we created the **Personal OpenClaw Leaderboard**. Submit your lobster's results and see how it stacks up!
